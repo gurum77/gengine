@@ -1,0 +1,328 @@
+.TH "D:/MyProject/Trunk/Engine/GEngine/Src/GCommon/GTypes.h" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/MyProject/Trunk/Engine/GEngine/Src/GCommon/GTypes.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'intsafe\&.h'\fP
+.br
+\fC#include 'assert\&.h'\fP
+.br
+\fC#include 'atlstr\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fB_GFLOAT3\fP"
+.br
+.ti -1c
+.RI "struct \fB_GFLOAT4\fP"
+.br
+.ti -1c
+.RI "struct \fB_GDOUBLE2\fP"
+.br
+.ti -1c
+.RI "struct \fB_GDOUBLE3\fP"
+.br
+.ti -1c
+.RI "struct \fB_GDOUBLE4\fP"
+.br
+.ti -1c
+.RI "struct \fBGVERTEX\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBG_EXT_CLASS\fP   __declspec(dllexport)"
+.br
+.ti -1c
+.RI "#define \fBGOUT\fP"
+.br
+.ti -1c
+.RI "#define \fBGINOUT\fP"
+.br
+.ti -1c
+.RI "#define \fBGNONE_ID\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGFIRST_ID\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGDEFAULT_BUFFER_ITEM_ID\fP   \fBGFIRST_ID\fP"
+.br
+.ti -1c
+.RI "#define \fBGID\fP   \fBGUINT32\fP"
+.br
+.ti -1c
+.RI "#define \fBGSAFE_DELETE\fP(a)"
+.br
+.ti -1c
+.RI "#define \fBGNOTRANS\fP(a)   _T(a)"
+.br
+.ti -1c
+.RI "#define \fBGASSERT\fP(a)   assert(a);"
+.br
+.ti -1c
+.RI "#define \fBGIMPLEMENT_OPERATOR_COPY_SUPER\fP   __super::operator =(d);"
+.br
+.ti -1c
+.RI "#define \fBGIMPLEMENT_OPERATOR_COPY\fP(value)   value = d\&.value;"
+.br
+.ti -1c
+.RI "#define \fBGIMPLEMENT_OPERATOR_COPY_ARRAY\fP(value,  class)   \fBGArrayCopy\fP(&value, (void*)&d\&.value, (class*)0);"
+.br
+.ti -1c
+.RI "#define \fBGIMPLEMENT_OPERATOR_COPY_BEGIN\fP(class)   class& class::operator=(const class &d) {"
+.br
+.ti -1c
+.RI "#define \fBGIMPLEMENT_OPERATOR_COPY_END\fP   return *this; }"
+.br
+.ti -1c
+.RI "#define \fBGDEFINE_OPERATOR_COPY\fP(class)   virtual class& operator=(const class &d);"
+.br
+.ti -1c
+.RI "#define \fBGDEFINE_OPERATOR_COPY_NOVIRTUAL\fP(class)   class& operator=(const class &d);"
+.br
+.ti -1c
+.RI "#define \fBGIMPLEMENT_OPERATOR_EQUAL_SUPER\fP   if((__super::operator ==(d)) == false) return false;"
+.br
+.ti -1c
+.RI "#define \fBGIMPLEMENT_OPERATOR_EQUAL\fP(value)   if((value == d\&.value) == false) return false;"
+.br
+.ti -1c
+.RI "#define \fBGIMPLEMENT_OPERATOR_EQUAL_BEGIN\fP(class)   \fBGBOOL\fP class::operator==(const class &d) {"
+.br
+.ti -1c
+.RI "#define \fBGIMPLEMENT_OPERATOR_EQUAL_END\fP   return true; }"
+.br
+.ti -1c
+.RI "#define \fBGDEFINE_OPERATOR_EQUAL\fP(class)   \fBGBOOL\fP operator==(const class &d);"
+.br
+.ti -1c
+.RI "#define \fBGDEFINE_POOL\fP(class)"
+.br
+.ti -1c
+.RI "#define \fBGIMPLEMENT_POOL\fP(class)"
+.br
+.ti -1c
+.RI "#define \fBGPOOL_NEW\fP(class)   new class;"
+.br
+.ti -1c
+.RI "#define \fBGPOOL_DELETE\fP(p)   delete p;"
+.br
+.ti -1c
+.RI "#define \fBGPOOL_RELEASE\fP(class)"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef float \fBGFLOAT\fP"
+.br
+.ti -1c
+.RI "typedef INT32 \fBGINT32\fP"
+.br
+.ti -1c
+.RI "typedef double \fBGDOUBLE\fP"
+.br
+.ti -1c
+.RI "typedef int \fBGINT\fP"
+.br
+.ti -1c
+.RI "typedef bool \fBGBOOL\fP"
+.br
+.ti -1c
+.RI "typedef UINT \fBGUINT\fP"
+.br
+.ti -1c
+.RI "typedef UINT32 \fBGUINT32\fP"
+.br
+.ti -1c
+.RI "typedef UINT64 \fBGUINT64\fP"
+.br
+.ti -1c
+.RI "typedef size_t \fBGSIZE\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBG_EXT_CLASS\fP \fB_GFLOAT3\fP \fBGFLOAT3\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBG_EXT_CLASS\fP \fB_GFLOAT4\fP \fBGFLOAT4\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBG_EXT_CLASS\fP \fB_GDOUBLE2\fP \fBGDOUBLE2\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBG_EXT_CLASS\fP \fB_GDOUBLE3\fP \fBGDOUBLE3\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBG_EXT_CLASS\fP \fB_GDOUBLE4\fP \fBGDOUBLE4\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBPrimitiveTopology\fP { \fBePrimitiveTopologyNone\fP, \fBePrimitiveTopologyPoint\fP, \fBePrimitiveTopologyLine\fP, \fBePrimitiveTopologyTriangle\fP, \fBePrimitiveTopologyCount\fP }"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBGFLOAT\fP \fBGPi\fP = 3\&.1415926535f"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define G_EXT_CLASS   __declspec(dllexport)"
+
+.SS "#define GASSERT(a)   assert(a);"
+
+.SS "#define GDEFAULT_BUFFER_ITEM_ID   \fBGFIRST_ID\fP"
+
+.SS "#define GDEFINE_OPERATOR_COPY(class)   virtual class& operator=(const class &d);"
+
+.SS "#define GDEFINE_OPERATOR_COPY_NOVIRTUAL(class)   class& operator=(const class &d);"
+
+.SS "#define GDEFINE_OPERATOR_EQUAL(class)   \fBGBOOL\fP operator==(const class &d);"
+
+.SS "#define GDEFINE_POOL(class)"
+
+.SS "#define GFIRST_ID   1"
+
+.SS "#define GID   \fBGUINT32\fP"
+
+.SS "#define GIMPLEMENT_OPERATOR_COPY(value)   value = d\&.value;"
+
+.SS "#define GIMPLEMENT_OPERATOR_COPY_ARRAY(value, class)   \fBGArrayCopy\fP(&value, (void*)&d\&.value, (class*)0);"
+
+.SS "#define GIMPLEMENT_OPERATOR_COPY_BEGIN(class)   class& class::operator=(const class &d) {"
+
+.SS "#define GIMPLEMENT_OPERATOR_COPY_END   return *this; }"
+
+.SS "#define GIMPLEMENT_OPERATOR_COPY_SUPER   __super::operator =(d);"
+
+.SS "#define GIMPLEMENT_OPERATOR_EQUAL(value)   if((value == d\&.value) == false) return false;"
+
+.SS "#define GIMPLEMENT_OPERATOR_EQUAL_BEGIN(class)   \fBGBOOL\fP class::operator==(const class &d) {"
+
+.SS "#define GIMPLEMENT_OPERATOR_EQUAL_END   return true; }"
+
+.SS "#define GIMPLEMENT_OPERATOR_EQUAL_SUPER   if((__super::operator ==(d)) == false) return false;"
+
+.SS "#define GIMPLEMENT_POOL(class)"
+
+.SS "#define GINOUT"
+
+.SS "#define GNONE_ID   0"
+
+.SS "#define GNOTRANS(a)   _T(a)"
+
+.SS "#define GOUT"
+
+.SS "#define GPOOL_DELETE(p)   delete p;"
+
+.SS "#define GPOOL_NEW(class)   new class;"
+
+.SS "#define GPOOL_RELEASE(class)"
+
+.SS "#define GSAFE_DELETE(a)"
+\fBValue:\fP
+.PP
+.nf
+if(a)\
+                                                                                            {\
+        delete a;\
+        a = 0;\
+                                                                                            }\
+.fi
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef bool \fBGBOOL\fP"
+
+.SS "typedef double \fBGDOUBLE\fP"
+
+.SS "typedef struct \fBG_EXT_CLASS\fP \fB_GDOUBLE2\fP  \fBGDOUBLE2\fP"
+
+.IP "\(bu" 2
+2개의 double형 
+.PP
+
+.SS "typedef struct \fBG_EXT_CLASS\fP \fB_GDOUBLE3\fP  \fBGDOUBLE3\fP"
+
+.IP "\(bu" 2
+3개의 double형 
+.PP
+
+.SS "typedef struct \fBG_EXT_CLASS\fP \fB_GDOUBLE4\fP  \fBGDOUBLE4\fP"
+
+.IP "\(bu" 2
+4개의 double형 
+.PP
+
+.SS "typedef float \fBGFLOAT\fP"
+
+.IP "\(bu" 2
+데이타 타입 정의 
+.PP
+
+.SS "typedef struct \fBG_EXT_CLASS\fP \fB_GFLOAT3\fP  \fBGFLOAT3\fP"
+
+.IP "\(bu" 2
+3개의 float형 
+.PP
+
+.SS "typedef struct \fBG_EXT_CLASS\fP \fB_GFLOAT4\fP  \fBGFLOAT4\fP"
+
+.IP "\(bu" 2
+4개의 float형 
+.PP
+
+.SS "typedef int \fBGINT\fP"
+
+.SS "typedef INT32 \fBGINT32\fP"
+
+.SS "typedef size_t \fBGSIZE\fP"
+
+.SS "typedef UINT \fBGUINT\fP"
+
+.SS "typedef UINT32 \fBGUINT32\fP"
+
+.SS "typedef UINT64 \fBGUINT64\fP"
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBPrimitiveTopology\fP"
+
+.IP "\(bu" 2
+원시 기하학 정보 
+.PP
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIePrimitiveTopologyNone \fP\fP
+.TP
+\fB\fIePrimitiveTopologyPoint \fP\fP
+.TP
+\fB\fIePrimitiveTopologyLine \fP\fP
+.TP
+\fB\fIePrimitiveTopologyTriangle \fP\fP
+.TP
+\fB\fIePrimitiveTopologyCount \fP\fP
+.SH "Variable Documentation"
+.PP 
+.SS "const \fBGFLOAT\fP GPi = 3\&.1415926535f"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

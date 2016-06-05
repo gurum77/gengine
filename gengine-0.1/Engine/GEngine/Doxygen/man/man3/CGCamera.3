@@ -1,0 +1,194 @@
+.TH "CGCamera" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGCamera \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GCamera\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetTarget\fP (const \fBCGPoint3D\fP &f3Target)"
+.br
+.ti -1c
+.RI "const \fBCGPoint3D\fP & \fBGetTarget\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetEye\fP (const \fBCGPoint3D\fP &f3Eye)"
+.br
+.ti -1c
+.RI "const \fBCGPoint3D\fP & \fBGetEye\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetUp\fP (const \fBCGPoint3D\fP &fUp)"
+.br
+.ti -1c
+.RI "const \fBCGPoint3D\fP & \fBGetUp\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetWidth\fP (const \fBGDOUBLE\fP &dWidth)"
+.br
+.ti -1c
+.RI "const \fBGDOUBLE\fP & \fBGetWidth\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetHeight\fP (const \fBGDOUBLE\fP &dHeight)"
+.br
+.ti -1c
+.RI "const \fBGDOUBLE\fP & \fBGetHeight\fP () const "
+.br
+.ti -1c
+.RI "void \fBZoomIn\fP (const \fBCGPoint3D\fP &ptOrgPos)"
+.br
+.ti -1c
+.RI "void \fBZoomOut\fP (const \fBCGPoint3D\fP &ptOrgPos)"
+.br
+.ti -1c
+.RI "void \fBZoomPan\fP (const \fBCGPoint3D\fP &ptLastPos, const \fBCGPoint3D\fP &ptCurPos)"
+.br
+.ti -1c
+.RI "void \fBZoomAll\fP (const \fBCGCube\fP &cubeBoundary)"
+.br
+.ti -1c
+.RI "void \fBZoomRotate\fP (const \fBGFLOAT\fP &fRotateAngleUp, const \fBGFLOAT\fP &fRotateAngleByHor)"
+.br
+.ti -1c
+.RI "void \fBSetPlaneFrustrum\fP (const \fBCGPlane\fP &plane, const \fBFrustrumPlane\fP &eFrustrum)"
+.br
+.ti -1c
+.RI "const \fBCGPlane\fP & \fBGetPlaneFrustrum\fP (const \fBFrustrumPlane\fP &eFrustrum) const "
+.br
+.ti -1c
+.RI "\fBCGPlane\fP & \fBGetPlaneFrustrum\fP (const \fBFrustrumPlane\fP &eFrustrum)"
+.br
+.ti -1c
+.RI "void \fBSetViewProjInv\fP (const \fBCGMatrix\fP &matInv)"
+.br
+.ti -1c
+.RI "const \fBCGMatrix\fP & \fBGetViewProjInv\fP () const "
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBIsInSphere\fP (const \fBCGPoint3D\fP &ptCenter, const \fBGDOUBLE\fP &dRadius) const "
+.br
+.ti -1c
+.RI "\fBCGCamera\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGCamera\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+카메라 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGCamera::CGCamera ()"
+
+.SS "CGCamera::~CGCamera ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBCGPoint3D\fP & CGCamera::GetEye () const"
+
+.SS "const \fBGDOUBLE\fP & CGCamera::GetHeight () const"
+
+.SS "const \fBCGPlane\fP & CGCamera::GetPlaneFrustrum (const \fBFrustrumPlane\fP & eFrustrum) const"
+
+.SS "\fBCGPlane\fP & CGCamera::GetPlaneFrustrum (const \fBFrustrumPlane\fP & eFrustrum)"
+
+.SS "const \fBCGPoint3D\fP & CGCamera::GetTarget () const"
+
+.SS "const \fBCGPoint3D\fP & CGCamera::GetUp () const"
+
+.SS "const \fBCGMatrix\fP & CGCamera::GetViewProjInv () const"
+
+.SS "const \fBGDOUBLE\fP & CGCamera::GetWidth () const"
+
+.SS "\fBGBOOL\fP CGCamera::IsInSphere (const \fBCGPoint3D\fP & ptCenter, const \fBGDOUBLE\fP & dRadius) const"
+
+.IP "\(bu" 2
+camera 안에 구가 포함되는지?
+.IP "\(bu" 2
+m_planeFrustrum 가 계산되어 있어야 정상적으로 작동한다\&. 
+.PP
+
+.SS "void CGCamera::SetEye (const \fBCGPoint3D\fP & f3Eye)"
+
+.SS "void CGCamera::SetHeight (const \fBGDOUBLE\fP & dHeight)"
+
+.SS "void CGCamera::SetPlaneFrustrum (const \fBCGPlane\fP & plane, const \fBFrustrumPlane\fP & eFrustrum)"
+
+.SS "void CGCamera::SetTarget (const \fBCGPoint3D\fP & f3Target)"
+
+.SS "void CGCamera::SetUp (const \fBCGPoint3D\fP & fUp)"
+
+.SS "void CGCamera::SetViewProjInv (const \fBCGMatrix\fP & matInv)"
+
+.IP "\(bu" 2
+view * project matrix의 역행렬 
+.PP
+
+.SS "void CGCamera::SetWidth (const \fBGDOUBLE\fP & dWidth)"
+
+.SS "void CGCamera::ZoomAll (const \fBCGCube\fP & cubeBoundary)"
+
+.IP "\(bu" 2
+cubeBoundary를 기준으로 zoom all을 한다\&. 
+.PP
+\fBTodo\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+
+.SS "void CGCamera::ZoomIn (const \fBCGPoint3D\fP & ptOrgPos)"
+
+.IP "\(bu" 2
+Zoom In
+.IP "\(bu" 2
+view가 확대되어 보인다\&. 
+.PP
+
+.SS "void CGCamera::ZoomOut (const \fBCGPoint3D\fP & ptOrgPos)"
+
+.IP "\(bu" 2
+Zoom Out
+.IP "\(bu" 2
+view가 축소되어 보인다\&. 
+.PP
+
+.SS "void CGCamera::ZoomPan (const \fBCGPoint3D\fP & ptLastPos, const \fBCGPoint3D\fP & ptCurPos)"
+
+.IP "\(bu" 2
+zoom pan을 한다\&. 
+.PP
+
+.SS "void CGCamera::ZoomRotate (const \fBGFLOAT\fP & fRotateAngleUp, const \fBGFLOAT\fP & fRotateAngleByHor)"
+
+.IP "\(bu" 2
+zoom rotate를 한다\&. 
+.PP
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfRotateAngleUp\fP up vector 를 회전하는 각도 
+.br
+\fIfRotateAngleByHor\fP 가로방향을 기준으로 회전하는 각도 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

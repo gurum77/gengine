@@ -1,0 +1,161 @@
+\hypertarget{class_c_g3_d_action_manager}{}\section{C\+G3\+D\+Action\+Manager Class Reference}
+\label{class_c_g3_d_action_manager}\index{C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}}
+
+
+{\ttfamily \#include $<$G3\+D\+Action\+Manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_action_manager_a5d9e0078b2bc2dde9ee2116572cf7c9c}{Run\+Action} (const C\+Atl\+String \&str\+Action)
+\item 
+\hyperlink{class_c_g3_d_action_base}{C\+G3\+D\+Action\+Base} $\ast$ \hyperlink{class_c_g3_d_action_manager_a121c2d5c207596349fdb4a96a441b3b5}{Find\+Action} (const C\+Atl\+String \&str\+Action)
+\item 
+\hyperlink{class_c_g3_d_action_base}{C\+G3\+D\+Action\+Base} $\ast$ \hyperlink{class_c_g3_d_action_manager_a873c6e75c7bb78c71a8d7b9f3c0de0d3}{Get\+Running\+Action} ()
+\item 
+void \hyperlink{class_c_g3_d_action_manager_ae353bb909ba1a439e07089f27acc8a89}{Set3\+D\+View} (\hyperlink{class_c_g3_d_view}{C\+G3\+D\+View} $\ast$p3\+D\+View)
+\item 
+\hyperlink{class_c_g3_d_view}{C\+G3\+D\+View} $\ast$ \hyperlink{class_c_g3_d_action_manager_ad7871f81f7e9b7a66a3e396526795079}{Get\+View} ()
+\item 
+void \hyperlink{class_c_g3_d_action_manager_a00c9ecbb2c9b8d371ed4d9057e9e43f6}{Pre\+Translate\+Message} (M\+S\+G $\ast$p\+Msg)
+\item 
+\hyperlink{class_c_g_selection_manager}{C\+G\+Selection\+Manager} \& \hyperlink{class_c_g3_d_action_manager_a1086e5a10a607f2cf2f921a360529922}{Get\+Selection\+Manager} ()
+\item 
+void \hyperlink{class_c_g3_d_action_manager_aaa96d6562621542b8547a05c93f958d6}{End\+Running\+Action} ()
+\item 
+\hyperlink{class_c_g3_d_action_manager_a1c39a03fef013cc8b17cc92043d06726}{C\+G3\+D\+Action\+Manager} ()
+\item 
+\hyperlink{class_c_g3_d_action_manager_a3ccbbb2d12428530f550cba714223532}{$\sim$\+C\+G3\+D\+Action\+Manager} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item Action을 사용하기 위한 관리자.
+\item 사용방법
+\begin{DoxyItemize}
+\item 맴버 변수로 선어
+\item G3\+D\+View 설정
+\begin{DoxyItemize}
+\item Set3\+D\+View
+\end{DoxyItemize}
+\item 메세지 전달
+\begin{DoxyItemize}
+\item Pre\+Translate\+Message
+\end{DoxyItemize}
+\item 액션 실행
+\begin{DoxyItemize}
+\item Run\+Action
+\end{DoxyItemize}
+\item 미리보기 D\+B 생성
+\begin{DoxyItemize}
+\item 미리보기 객체를 화면에 표시하기 위해서는 미리보기 D\+B가 있어야 한다. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g3_d_action_manager_a1c39a03fef013cc8b17cc92043d06726}{}\index{C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}!C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}}
+\index{C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}!C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}}
+\subsubsection[{C\+G3\+D\+Action\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G3\+D\+Action\+Manager\+::\+C\+G3\+D\+Action\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_manager_a1c39a03fef013cc8b17cc92043d06726}
+\hypertarget{class_c_g3_d_action_manager_a3ccbbb2d12428530f550cba714223532}{}\index{C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}!````~C\+G3\+D\+Action\+Manager@{$\sim$\+C\+G3\+D\+Action\+Manager}}
+\index{````~C\+G3\+D\+Action\+Manager@{$\sim$\+C\+G3\+D\+Action\+Manager}!C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}}
+\subsubsection[{$\sim$\+C\+G3\+D\+Action\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G3\+D\+Action\+Manager\+::$\sim$\+C\+G3\+D\+Action\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_manager_a3ccbbb2d12428530f550cba714223532}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g3_d_action_manager_aaa96d6562621542b8547a05c93f958d6}{}\index{C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}!End\+Running\+Action@{End\+Running\+Action}}
+\index{End\+Running\+Action@{End\+Running\+Action}!C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}}
+\subsubsection[{End\+Running\+Action()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Manager\+::\+End\+Running\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_manager_aaa96d6562621542b8547a05c93f958d6}
+
+\begin{DoxyItemize}
+\item 실행중인 action을 강제로 종료한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_action_manager_a121c2d5c207596349fdb4a96a441b3b5}{}\index{C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}!Find\+Action@{Find\+Action}}
+\index{Find\+Action@{Find\+Action}!C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}}
+\subsubsection[{Find\+Action(const C\+Atl\+String \&str\+Action)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G3\+D\+Action\+Base} $\ast$ C\+G3\+D\+Action\+Manager\+::\+Find\+Action (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+Action}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_manager_a121c2d5c207596349fdb4a96a441b3b5}
+
+\begin{DoxyItemize}
+\item action을 찾는다.
+\item 없으면 call back을 통해서 만들어서 등록하고 리턴한다.
+\begin{DoxyItemize}
+\item call back도 없으면 N\+U\+L\+L을 리턴한다. 
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{class_c_g3_d_action_manager_a873c6e75c7bb78c71a8d7b9f3c0de0d3}{}\index{C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}!Get\+Running\+Action@{Get\+Running\+Action}}
+\index{Get\+Running\+Action@{Get\+Running\+Action}!C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}}
+\subsubsection[{Get\+Running\+Action()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G3\+D\+Action\+Base} $\ast$ C\+G3\+D\+Action\+Manager\+::\+Get\+Running\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_manager_a873c6e75c7bb78c71a8d7b9f3c0de0d3}
+
+\begin{DoxyItemize}
+\item 실행중인 action을 리턴한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_action_manager_a1086e5a10a607f2cf2f921a360529922}{}\index{C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}!Get\+Selection\+Manager@{Get\+Selection\+Manager}}
+\index{Get\+Selection\+Manager@{Get\+Selection\+Manager}!C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}}
+\subsubsection[{Get\+Selection\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Selection\+Manager} \& C\+G3\+D\+Action\+Manager\+::\+Get\+Selection\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_manager_a1086e5a10a607f2cf2f921a360529922}
+\hypertarget{class_c_g3_d_action_manager_ad7871f81f7e9b7a66a3e396526795079}{}\index{C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}!Get\+View@{Get\+View}}
+\index{Get\+View@{Get\+View}!C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}}
+\subsubsection[{Get\+View()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G3\+D\+View} $\ast$ C\+G3\+D\+Action\+Manager\+::\+Get\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_manager_ad7871f81f7e9b7a66a3e396526795079}
+
+\begin{DoxyItemize}
+\item 3\+D\+View를 리턴한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_action_manager_a00c9ecbb2c9b8d371ed4d9057e9e43f6}{}\index{C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}!Pre\+Translate\+Message@{Pre\+Translate\+Message}}
+\index{Pre\+Translate\+Message@{Pre\+Translate\+Message}!C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}}
+\subsubsection[{Pre\+Translate\+Message(\+M\+S\+G $\ast$p\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Manager\+::\+Pre\+Translate\+Message (
+\begin{DoxyParamCaption}
+\item[{M\+S\+G $\ast$}]{p\+Msg}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_manager_a00c9ecbb2c9b8d371ed4d9057e9e43f6}
+
+\begin{DoxyItemize}
+\item 메세지를 받아서 현재 실행중인 action에 보내준다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_action_manager_a5d9e0078b2bc2dde9ee2116572cf7c9c}{}\index{C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}!Run\+Action@{Run\+Action}}
+\index{Run\+Action@{Run\+Action}!C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}}
+\subsubsection[{Run\+Action(const C\+Atl\+String \&str\+Action)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+Action\+Manager\+::\+Run\+Action (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+Action}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_manager_a5d9e0078b2bc2dde9ee2116572cf7c9c}
+
+\begin{DoxyItemize}
+\item action을 실행한다.
+\item 새로운 action이 실행될때는 이전 action이 정상 종료 된경우(End\+Action이 호출된 경우)이거나, 새로운 action이 강제로 종료시킨 경우이다.(강제로 종료 시킨 경우 이전 action을 정상종료 시켜줄 필요는 없다)
+\item str\+Action이 생성되어 있지 않다면 생성해서 실행한다 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_action_manager_ae353bb909ba1a439e07089f27acc8a89}{}\index{C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}!Set3\+D\+View@{Set3\+D\+View}}
+\index{Set3\+D\+View@{Set3\+D\+View}!C\+G3\+D\+Action\+Manager@{C\+G3\+D\+Action\+Manager}}
+\subsubsection[{Set3\+D\+View(\+C\+G3\+D\+View $\ast$p3\+D\+View)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Manager\+::\+Set3\+D\+View (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G3\+D\+View} $\ast$}]{p3\+D\+View}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_manager_ae353bb909ba1a439e07089f27acc8a89}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g3_d_action_manager_8h}{G3\+D\+Action\+Manager.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g3_d_action_manager_8cpp}{G3\+D\+Action\+Manager.\+cpp}\end{DoxyCompactItemize}

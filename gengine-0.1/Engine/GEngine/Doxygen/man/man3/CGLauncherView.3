@@ -1,0 +1,343 @@
+.TH "CGLauncherView" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGLauncherView \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GLauncherView\&.h>\fP
+.PP
+Inherits CView\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCGLauncherDoc\fP * \fBGetDocument\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBOnDraw\fP (CDC *pDC)"
+.br
+.ti -1c
+.RI "virtual BOOL \fBPreCreateWindow\fP (CREATESTRUCT &cs)"
+.br
+.ti -1c
+.RI "virtual \fB~CGLauncherView\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBOnInitialUpdate\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnPaint\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnSize\fP (UINT nType, int cx, int cy)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnMouseMove\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnControlSpaceview\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnDrawGrid\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnDrawTriangle\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnDrawCylinder\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnDrawBox\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnDrawSphere\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnDrawCircle\fP ()"
+.br
+.ti -1c
+.RI "afx_msg BOOL \fBOnMouseWheel\fP (UINT nFlags, short zDelta, CPoint pt)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnEditDeleteAll\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnEditDelete100objects\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnEditDeletealleach\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnEditDelete100objectseach\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnActionDrawline\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnActionEndaction\fP ()"
+.br
+.ti -1c
+.RI "virtual BOOL \fBPreTranslateMessage\fP (MSG *pMsg)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnSelectSelect100objects\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnSelectSelect100objectseach\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnSelectUnselectall\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnActionSelect\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnDrawPolyline3d\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnSelectDynamichighlight\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnUpdateSelectDynamichighlight\fP (CCmdUI *pCmdUI)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnActionDrawcircle\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnDrawCompoundobject\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnEditMove\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnActionCopy\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnActionRotate2d\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnActionScale\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnDxfImport\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnDrawText\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnDrawFace\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBDrawPolyline2D\fP ()"
+.br
+.ti -1c
+.RI "void \fBDrawLine2D\fP ()"
+.br
+.ti -1c
+.RI "void \fBDrawPoint2D\fP ()"
+.br
+.ti -1c
+.RI "const \fBGDOUBLE\fP \fBGetHeight\fP (const \fBGDOUBLE\fP &dX, const \fBGDOUBLE\fP &dY, const \fBGDOUBLE\fP &dMaxX, const \fBGDOUBLE\fP &dMaxY) const "
+.br
+.ti -1c
+.RI "\fBCGLauncherView\fP ()"
+.br
+.ti -1c
+.RI "virtual BOOL \fBOnPreparePrinting\fP (CPrintInfo *pInfo)"
+.br
+.ti -1c
+.RI "virtual void \fBOnBeginPrinting\fP (CDC *pDC, CPrintInfo *pInfo)"
+.br
+.ti -1c
+.RI "virtual void \fBOnEndPrinting\fP (CDC *pDC, CPrintInfo *pInfo)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBCG3DView\fP * \fBm_pG3DView\fP"
+.br
+.ti -1c
+.RI "\fBCG3DActionManager\fP * \fBm_pActionManager\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGLauncherView::CGLauncherView ()\fC [protected]\fP"
+
+.SS "CGLauncherView::~CGLauncherView ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGLauncherView::DrawLine2D ()\fC [protected]\fP"
+
+.SS "void CGLauncherView::DrawPoint2D ()\fC [protected]\fP"
+
+.SS "void CGLauncherView::DrawPolyline2D ()\fC [protected]\fP"
+
+.SS "\fBCGLauncherDoc\fP * CGLauncherView::GetDocument () const\fC [inline]\fP"
+
+.SS "const \fBGDOUBLE\fP CGLauncherView::GetHeight (const \fBGDOUBLE\fP & dX, const \fBGDOUBLE\fP & dY, const \fBGDOUBLE\fP & dMaxX, const \fBGDOUBLE\fP & dMaxY) const\fC [protected]\fP"
+
+.SS "void CGLauncherView::OnActionCopy ()"
+
+.SS "void CGLauncherView::OnActionDrawcircle ()"
+
+.SS "void CGLauncherView::OnActionDrawline ()"
+
+.IP "\(bu" 2
+run the action to create lines\&. 
+.PP
+
+.SS "void CGLauncherView::OnActionEndaction ()"
+
+.IP "\(bu" 2
+End running action\&. 
+.PP
+
+.SS "void CGLauncherView::OnActionRotate2d ()"
+
+.SS "void CGLauncherView::OnActionScale ()"
+
+.SS "void CGLauncherView::OnActionSelect ()"
+
+.SS "void CGLauncherView::OnBeginPrinting (CDC * pDC, CPrintInfo * pInfo)\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "void CGLauncherView::OnControlSpaceview ()"
+
+.SS "void CGLauncherView::OnDraw (CDC * pDC)\fC [virtual]\fP"
+
+.SS "void CGLauncherView::OnDrawBox ()"
+
+.SS "void CGLauncherView::OnDrawCircle ()"
+
+.SS "void CGLauncherView::OnDrawCompoundobject ()"
+
+.IP "\(bu" 2
+compound object 그리기 테스트 
+.PP
+
+.SS "void CGLauncherView::OnDrawCylinder ()"
+
+.SS "void CGLauncherView::OnDrawFace ()"
+
+.SS "void CGLauncherView::OnDrawGrid ()"
+
+.SS "void CGLauncherView::OnDrawPolyline3d ()"
+
+.SS "void CGLauncherView::OnDrawSphere ()"
+
+.SS "void CGLauncherView::OnDrawText ()"
+
+.IP "\(bu" 2
+text 그리기 
+.PP
+
+.SS "void CGLauncherView::OnDrawTriangle ()"
+
+.SS "void CGLauncherView::OnDxfImport ()"
+
+.IP "\(bu" 2
+dxf import 
+.PP
+
+.SS "void CGLauncherView::OnEditDelete100objects ()"
+
+.IP "\(bu" 2
+100개의 object를 삭제한다\&.
+.IP "\(bu" 2
+100개를 한번에 삭제한다\&. 
+.PP
+
+.SS "void CGLauncherView::OnEditDelete100objectseach ()"
+
+.IP "\(bu" 2
+100개의 object를 삭제한다\&.
+.IP "\(bu" 2
+100개를 각각 삭제한다\&. 
+.PP
+
+.SS "void CGLauncherView::OnEditDeleteAll ()"
+
+.IP "\(bu" 2
+모든 객체를 한번에 삭제하는 함수 
+.PP
+
+.SS "void CGLauncherView::OnEditDeletealleach ()"
+
+.IP "\(bu" 2
+모든 객체를 하나하나 삭제하는 함수 
+.PP
+
+.SS "void CGLauncherView::OnEditMove ()"
+
+.IP "\(bu" 2
+move action 실행 
+.PP
+
+.SS "void CGLauncherView::OnEndPrinting (CDC * pDC, CPrintInfo * pInfo)\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "void CGLauncherView::OnInitialUpdate ()\fC [virtual]\fP"
+
+.SS "void CGLauncherView::OnMouseMove (UINT nFlags, CPoint point)"
+
+.SS "BOOL CGLauncherView::OnMouseWheel (UINT nFlags, short zDelta, CPoint pt)"
+
+.SS "void CGLauncherView::OnPaint ()"
+
+.SS "BOOL CGLauncherView::OnPreparePrinting (CPrintInfo * pInfo)\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "void CGLauncherView::OnSelectDynamichighlight ()"
+
+.IP "\(bu" 2
+dynamic highlight 설정을 변경한다\&. 
+.PP
+
+.SS "void CGLauncherView::OnSelectSelect100objects ()"
+
+.IP "\(bu" 2
+Selects 100 objects once 
+.PP
+
+.SS "void CGLauncherView::OnSelectSelect100objectseach ()"
+
+.IP "\(bu" 2
+Selects 100 objects each 
+.PP
+
+.SS "void CGLauncherView::OnSelectUnselectall ()"
+
+.IP "\(bu" 2
+Unselect all 
+.PP
+
+.SS "void CGLauncherView::OnSize (UINT nType, int cx, int cy)"
+
+.SS "void CGLauncherView::OnUpdateSelectDynamichighlight (CCmdUI * pCmdUI)"
+
+.IP "\(bu" 2
+dynamic highlight에 대한 설정 상황을 메뉴에 체크표시로 한다\&. 
+.PP
+
+.SS "BOOL CGLauncherView::PreCreateWindow (CREATESTRUCT & cs)\fC [virtual]\fP"
+
+.SS "BOOL CGLauncherView::PreTranslateMessage (MSG * pMsg)\fC [virtual]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBCG3DActionManager\fP* CGLauncherView::m_pActionManager\fC [protected]\fP"
+
+.SS "\fBCG3DView\fP* CGLauncherView::m_pG3DView\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

@@ -1,0 +1,9 @@
+﻿Reference에 설치해야 하는 source
+
+1. boost_1_59_0
+   (1) 폴더위치 : Repository - Reference - boost_1_59_0
+   (2) download link : http://sourceforge.net/projects/boost/files/boost-binaries/1.59.0/
+   (3) download file : boost_1_59_0-msvc-12.0-32.exe
+                       boost_1_59_0-msvc-12.0-64.exe
+			  
+   

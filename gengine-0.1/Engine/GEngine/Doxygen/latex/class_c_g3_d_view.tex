@@ -1,0 +1,950 @@
+\hypertarget{class_c_g3_d_view}{}\section{C\+G3\+D\+View Class Reference}
+\label{class_c_g3_d_view}\index{C\+G3\+D\+View@{C\+G3\+D\+View}}
+
+
+{\ttfamily \#include $<$G3\+D\+View.\+h$>$}
+
+Inheritance diagram for C\+G3\+D\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_g3_d_view}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_g3_d_view_ae3a6556009bb00e43baf4d7087921475}{Attr} \{ \hyperlink{class_c_g3_d_view_ae3a6556009bb00e43baf4d7087921475a9ab10c0b993d57d6af9825fb53949112}{e\+Attr\+Zoomming} = 0x00000001
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_view_aa4c947bd440cf3824372b88424a919c9}{Init\+View} (\hyperlink{class_c_g3_d_view_init_data}{C\+G3\+D\+View\+Init\+Data} \&init\+Data)
+\item 
+\hyperlink{class_c_g3_d_view_layer}{C\+G3\+D\+View\+Layer} $\ast$ \hyperlink{class_c_g3_d_view_a0dfb17c6279f6b76a614ce43a346595e}{Get\+View\+Layer} (const C\+Atl\+String \&str\+View\+Layer\+Name)
+\item 
+\hyperlink{class_c_g3_d_d_b}{C\+G3\+D\+D\+B} $\ast$ \hyperlink{class_c_g3_d_view_aed94adad7846ae7d5b4aaab4d6353fbb}{Get\+D\+B} (const C\+Atl\+String \&str\+View\+Layer\+Name)
+\item 
+virtual void \hyperlink{class_c_g3_d_view_aefc8cd44b4d375ac3b03c388b64c6f78}{Regen} (const C\+Atl\+String \&str\+View\+Layer\+Name)
+\item 
+virtual void \hyperlink{class_c_g3_d_view_a05d588d0192488323bcfcbf219cae359}{Regen\+Only\+Added\+Object} (const C\+Atl\+String \&str\+View\+Layer\+Name, \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+virtual void \hyperlink{class_c_g3_d_view_af527f481d9dedb0d3b4dd7141c32f544}{Regen\+Only\+Added\+Object\+Multiple} (const C\+Atl\+String \&str\+View\+Layer\+Name, C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object)
+\item 
+virtual void \hyperlink{class_c_g3_d_view_ac548b357ba302865e820d8fee3d3ea23}{Regen\+Only\+Deleting\+Object} (const C\+Atl\+String \&str\+View\+Layer\+Name, const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+virtual void \hyperlink{class_c_g3_d_view_a2420bc1d545fbe7fedf47e855dcfb6a5}{Regen\+Only\+Deleting\+Object\+Multiple} (const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object)
+\item 
+virtual void \hyperlink{class_c_g3_d_view_a8a6694a9de54a15cd4e94cb2fe1ba772}{Regen\+Only\+Changing\+Color\+Object} (const C\+Atl\+String \&str\+View\+Layer\+Name, const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object, const \hyperlink{class_c_g_color}{C\+G\+Color} \&color)
+\item 
+virtual void \hyperlink{class_c_g3_d_view_ab76493432442f14c16fcb44519e74ee9}{Regen\+Only\+Changing\+Color\+Object\+Multiple} (const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object, const \hyperlink{class_c_g_color}{C\+G\+Color} \&color)
+\item 
+virtual void \hyperlink{class_c_g3_d_view_a37f1356825717a558f79e6ff5e6503b5}{Regen\+Only\+Object} (const C\+Atl\+String \&str\+View\+Layer\+Name, const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+virtual void \hyperlink{class_c_g3_d_view_afe9ece9786fd1f5c178ccbd8f94d32bd}{Regen\+Only\+Object\+Multiple} (const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object)
+\item 
+virtual void \hyperlink{class_c_g3_d_view_ac0f96baa1fed5188b0b9d395c9b0b8a0}{Redraw} ()
+\item 
+void \hyperlink{class_c_g3_d_view_a192ac299a7123f5c1663e416eb8ddd07}{On\+Resize} ()
+\item 
+\hyperlink{class_c_g_camera}{C\+G\+Camera} \& \hyperlink{class_c_g3_d_view_aed8e9e4e44f899d422c4aa82e6bae8dd}{Get\+Camera} ()
+\item 
+void \hyperlink{class_c_g3_d_view_a90b403c7341e001ff61429bf639bf122}{Pre\+Translate\+Message} (M\+S\+G $\ast$p\+Msg)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_view_a27b61807ea71e1caddec76facb0d9603}{Is\+Abort} () const 
+\item 
+void \hyperlink{class_c_g3_d_view_ad8bb5814fe509062a9f7b5f26dda72e2}{Set\+Attr} (const \hyperlink{class_c_g3_d_view_ae3a6556009bb00e43baf4d7087921475}{Attr} \&e\+Attr, const \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \&b\+Set)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_view_aa6a20de71dccb39196c768ed1debc7b8}{Is\+Attr} (const \hyperlink{class_c_g3_d_view_ae3a6556009bb00e43baf4d7087921475}{Attr} \&e\+Attr)
+\item 
+\hyperlink{_g_types_8h_a40d8bc7c06b9e72906852691a4bf888e}{G\+I\+N\+T32} \hyperlink{class_c_g3_d_view_acddf70893c90502391eb74644554d9ba}{Get\+Clien\+Height} () const 
+\item 
+\hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \hyperlink{class_c_g3_d_view_aa10f083d6a1a32ae4e87e854447df1f0}{Calc\+World\+Coordinate\+By\+Window\+Coordinate} (const C\+Point \&pt\+Screen)
+\item 
+\hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \hyperlink{class_c_g3_d_view_ad2e0f1287dc53e3b81d3a882c6a54ac9}{Calc\+World\+Coordinate\+By\+Window\+Coordinate\+With\+Depth} (const C\+Point \&ptwindow, const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+Depth)
+\item 
+C\+Point \hyperlink{class_c_g3_d_view_a2c8cb9988023e6b84767b0379ef03f83}{Calc\+Window\+Coordinate\+By\+World\+Coordinate} (const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+World)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_view_ac66c57492243b3790103ab4156309052}{Calc\+Intersect\+Triangular\+Object\+By\+Ray} (const C\+String \&str\+View\+Layer, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Ray\+Org, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Ray\+Dir, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Intersected\+Object, const \hyperlink{_g_types_8h_a40d8bc7c06b9e72906852691a4bf888e}{G\+I\+N\+T32} \&i\+Count=0)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_view_ad0028c5dcb4b7fdb69b4230cdf6b8fbd}{Calc\+Intersect\+Object\+By\+X\+Y} (const C\+String \&str\+View\+Layer, const C\+Point \&pt, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Intersected\+Object, const \hyperlink{_g_types_8h_a40d8bc7c06b9e72906852691a4bf888e}{G\+I\+N\+T32} \&i\+Count=0)
+\item 
+virtual \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_view_ac034e96c79fe1634021040c4ea2b1a64}{Calc\+Intersect\+Object\+By\+Window} (const C\+String \&str\+View\+Layer, const C\+Point \&pt\+Window1, const C\+Point \&pt\+Window2, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Intersected\+Object, const \hyperlink{_g_types_8h_a40d8bc7c06b9e72906852691a4bf888e}{G\+I\+N\+T32} \&i\+Count=0)
+\item 
+virtual \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ \hyperlink{class_c_g3_d_view_aeb412f47613ba426c47580e4595b061a}{Calc\+Intersect\+Object\+By\+Pickbox} (const C\+String \&str\+View\+Layer, const C\+Point \&pt\+Window, const \hyperlink{_g_types_8h_ac7dd75e8df268a0368c6cb433764fdcb}{G\+S\+I\+Z\+E} \&i\+Pickbox\+Size)
+\item 
+const \hyperlink{class_c_g3_d_view_init_data}{C\+G3\+D\+View\+Init\+Data} \& \hyperlink{class_c_g3_d_view_a48e85bf81912c86d4b18a2f8d03966dc}{Get\+Init\+Data} () const 
+\item 
+void \hyperlink{class_c_g3_d_view_a32f90a1e23f8e5cf4e61970cdad5ea24}{Create\+Vertex\+Index\+Buffer\+By\+Object\+Array\+By\+Buffer\+Item\+I\+D} (const C\+Atl\+String \&str\+View\+Layer\+Name, C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+O\+Bject, const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&buffer\+Item\+I\+D, const \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \&b\+Add=false, const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&I\+D=\hyperlink{_g_types_8h_a124fbb974ba5e89342bd060f0e8f09c1}{G\+F\+I\+R\+S\+T\+\_\+\+I\+D})
+\item 
+void \hyperlink{class_c_g3_d_view_af973e41e937b33d8d5a868ceab39b305}{Init\+Vertex\+Index\+Buffer\+By\+Buffer\+Item\+I\+D} (const C\+String \&str\+View\+Layer\+Name, C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object, const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&buffer\+Item\+I\+D)
+\item 
+\hyperlink{class_c_g3_d_view_ab56c0094148c4e2bbb10c75aff61fdbd}{C\+G3\+D\+View} ()
+\item 
+virtual \hyperlink{class_c_g3_d_view_a039384f0628e4d8c0c88323b1f92eafe}{$\sim$\+C\+G3\+D\+View} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_view_a7af4ef43015da5f851ac69d0e463ef03}{On\+Mouse\+Wheel} (U\+I\+N\+T n\+Flags, short z\+Delta, C\+Point pt)
+\item 
+void \hyperlink{class_c_g3_d_view_a9db3e66f4cb0f955731d840cb1ea97fc}{On\+Mouse\+Move} (U\+I\+N\+T n\+Flags, C\+Point point)
+\item 
+void \hyperlink{class_c_g3_d_view_a3b589204edff37762b9b3bd1ea80c2c9}{On\+M\+Button\+Dbl\+Clk} (U\+I\+N\+T n\+Flags, C\+Point point)
+\item 
+void \hyperlink{class_c_g3_d_view_ad97aeaea01d99505244420a9ba4f9c6f}{Init\+Map\+Object\+By\+Buffer\+Item\+I\+D} (C\+Atl\+Map$<$ \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D}, C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ $\ast$ $>$ \&map)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_view_a435cff19e02a6f76461d383d7e3a5372}{Create\+Frustrum\+Plane\+By\+Window} (const C\+Point \&pt\+Window1, const C\+Point \&pt\+Window2, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} \hyperlink{class_c_g_plane}{C\+G\+Plane} $\ast$p\+Plane\+Frustrum)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_view_a95c2bc199d4c301725276cc0209dc352}{Calc\+Intersect\+Object\+By\+Window\+By\+Buffer\+Item\+I\+D} (const C\+String \&str\+View\+Layer, const C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object, const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&buffer\+Item\+I\+D, const C\+Point \&pt\+Window1, const C\+Point \&pt\+Window2, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Intersected\+Object, const \hyperlink{_g_types_8h_a40d8bc7c06b9e72906852691a4bf888e}{G\+I\+N\+T32} \&i\+Count=0)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_view_a832d39ba4e049aa05de00c6071afa88e}{Calc\+Intersect\+Triangular\+Object\+By\+Ray\+By\+Buffer\+Item\+I\+D} (const C\+String \&str\+View\+Layer, const C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object, const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&buffer\+Item\+I\+D, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Ray\+Org, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Ray\+Dir, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Intersected\+Object, const \hyperlink{_g_types_8h_a40d8bc7c06b9e72906852691a4bf888e}{G\+I\+N\+T32} \&i\+Count=0)
+\item 
+void \hyperlink{class_c_g3_d_view_aac23e07352ca4a01687f8ab9c4307810}{Regen\+Only\+Object\+Multiple\+By\+Buffer\+Item\+I\+D} (const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object, const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&buffer\+Item\+I\+D)
+\item 
+void \hyperlink{class_c_g3_d_view_ab3c9663c0d5168c24f09752e5904cc64}{Regen\+Only\+Changing\+Color\+Object\+Multiple\+By\+Buffer\+Item\+I\+D} (const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object, const \hyperlink{class_c_g_color}{C\+G\+Color} \&color, const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&buffer\+Item\+I\+D)
+\item 
+void \hyperlink{class_c_g3_d_view_a9c9d5aa33edb18d9d4bab97df99e0ff4}{Regen\+Only\+Deleting\+Object\+Multiple\+By\+Buffer\+Item\+I\+D} (const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object, const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&buffer\+Item\+I\+D)
+\item 
+virtual void \hyperlink{class_c_g3_d_view_af50e42c0632c49633dc9d9a053c422d1}{Find\+All\+Trianglaur\+Object\+To\+Intersect\+By\+Ray} (const C\+String \&str\+View\+Layer, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Ray\+Org, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Ray\+Dir, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object)
+\item 
+virtual void \hyperlink{class_c_g3_d_view_ae6a4d739c7ec3d135cfcdda284a918f7}{Find\+All\+Object\+To\+Intersect\+By\+Rectangle} (const C\+String \&str\+View\+Layer, \hyperlink{class_c_g_plane}{C\+G\+Plane} $\ast$p\+Plane\+Frustrum, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object)
+\item 
+virtual void \hyperlink{class_c_g3_d_view_ab02270092cf4823b2f0ee2ff7ab705fa}{Start\+Zoom} ()
+\item 
+virtual void \hyperlink{class_c_g3_d_view_a808a0626bd17033b5c4073db7a6e5649}{End\+Zoom} ()
+\item 
+void \hyperlink{class_c_g3_d_view_a768a48fb812358e434fe69ef673e3aa7}{Get\+Object\+By\+Primitive\+Topology} (const C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object\+Src, const \hyperlink{_g_types_8h_a940e3da6a9b57aae3de0b050e2a7af5e}{Primitive\+Topology} \&e\+Primitive\+Topology, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object\+Tar)
+\item 
+void \hyperlink{class_c_g3_d_view_a849c61b4aafdaab36d5cadb22919a7a4}{Get\+Object\+By\+Buffer\+Layer\+Buffer\+Item\+I\+D} (const C\+String \&str\+View\+Layer, const C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Map$<$ \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D}, C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ $\ast$ $>$ \&map\+Object\+By\+Buffer\+Item\+I\+D)
+\item 
+void \hyperlink{class_c_g3_d_view_a4fa8f4ca2d15b1efe7e1f8cada774ae8}{Optimize\+Property} (const C\+Atl\+String \&str\+View\+Layer\+Name)
+\item 
+void \hyperlink{class_c_g3_d_view_a7755c4e350ad340e013f1345f5b4c89a}{Draw\+Object} ()
+\item 
+void \hyperlink{class_c_g3_d_view_ab8101a92ca52e0c1c5faabe851c2cba6}{Draw\+Object\+By\+Object} (const C\+Atl\+String \&str\+View\+Layer\+Name)
+\item 
+void \hyperlink{class_c_g3_d_view_a2e91ea875abc83c89b65dc3a1804c194}{Draw\+Object\+By\+Primitive\+Topology} (const C\+Atl\+String \&str\+View\+Layer\+Name)
+\item 
+void \hyperlink{class_c_g3_d_view_aaff0a9519911ebf483d0415bd30d1592}{Draw\+Object\+By\+Primitive\+Topology\+By\+Strip\+Vertex\+List\+Index} (const C\+Atl\+String \&str\+View\+Layer\+Name)
+\item 
+void \hyperlink{class_c_g3_d_view_a0dc3d3cf11fba43e6ac7e5fa81234bc9}{Init\+Vertex\+Index\+Buffer} (const C\+Atl\+String \&str\+View\+Layer\+Name)
+\item 
+void \hyperlink{class_c_g3_d_view_abc2a437838adce2483696c368bad3ec7}{Create\+Vertex\+Index\+Buffer} (const C\+Atl\+String \&str\+View\+Layer\+Name)
+\item 
+void \hyperlink{class_c_g3_d_view_a272c8860f8b2967a6787da320c902578}{Create\+Vertex\+Index\+Buffer\+By\+Object\+Manager} (const C\+Atl\+String \&str\+View\+Layer\+Name, \hyperlink{class_c_g_object_manager}{C\+G\+Object\+Manager} \&mng, const \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \&b\+Add=false, const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&I\+D=\hyperlink{_g_types_8h_a124fbb974ba5e89342bd060f0e8f09c1}{G\+F\+I\+R\+S\+T\+\_\+\+I\+D})
+\item 
+void \hyperlink{class_c_g3_d_view_a7e3f5a5609554d257f7ac61d07dad3fa}{Add\+Vertex\+Index\+Buffer} (const C\+Atl\+String \&str\+View\+Layer\+Name, \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object\+Base)
+\item 
+void \hyperlink{class_c_g3_d_view_a4155768c1012ecaec52d01598204a73b}{Add\+Vertex\+Index\+Buffer\+Multiple} (const C\+Atl\+String \&str\+View\+Layer\+Name, C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object)
+\item 
+const C\+Atl\+Map$<$ \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D}, \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ $\ast$ \hyperlink{class_c_g3_d_view_afc6e81cbaee27dfc3092d7f4f6157f57}{Get\+Object\+List} (const C\+Atl\+String \&str\+View\+Layer\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+C\+Point \hyperlink{class_c_g3_d_view_aeac573889f9cd92ce742290fbd3aa810}{m\+\_\+pt\+Last\+Mouse\+Pos}
+\item 
+\hyperlink{class_c_g3_d_view_init_data}{C\+G3\+D\+View\+Init\+Data} \hyperlink{class_c_g3_d_view_adeaabb1134dc71be0edc6cafcfdceae5}{m\+\_\+init\+Data}
+\item 
+\hyperlink{class_c_g_d_c}{C\+G\+D\+C} $\ast$ \hyperlink{class_c_g3_d_view_a3192069b4c6def0c1ab9df02efe36d37}{m\+\_\+p\+D\+C}
+\item 
+\hyperlink{class_c_g_d_c_target_view}{C\+G\+D\+C\+Target\+View} $\ast$ \hyperlink{class_c_g3_d_view_a4e9001b00d6f9318c41cfc4536a7c34c}{m\+\_\+p\+D\+C\+Target\+View}
+\item 
+\hyperlink{class_c_g_camera}{C\+G\+Camera} \hyperlink{class_c_g3_d_view_a3a518f80ba92ae8dfe33eb34a89da6e2}{m\+\_\+camera}
+\item 
+D\+W\+O\+R\+D32 \hyperlink{class_c_g3_d_view_a1c7992e14ec03d22468246c8d496d136}{m\+\_\+dw\+Attr}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_g3_d_view_a0066bb24d9976fa6f552be214b59e211}{C\+G3\+D\+Test}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item 3\+D view
+\item 데이타 관리를 한다. 
+\end{DoxyItemize}
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_c_g3_d_view_ae3a6556009bb00e43baf4d7087921475}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Attr@{Attr}}
+\index{Attr@{Attr}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Attr}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+G3\+D\+View\+::\+Attr}}\label{class_c_g3_d_view_ae3a6556009bb00e43baf4d7087921475}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+Attr\+Zoomming@{e\+Attr\+Zoomming}!C\+G3\+D\+View@{C\+G3\+D\+View}}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!e\+Attr\+Zoomming@{e\+Attr\+Zoomming}}\item[{\em 
+\hypertarget{class_c_g3_d_view_ae3a6556009bb00e43baf4d7087921475a9ab10c0b993d57d6af9825fb53949112}{}e\+Attr\+Zoomming\label{class_c_g3_d_view_ae3a6556009bb00e43baf4d7087921475a9ab10c0b993d57d6af9825fb53949112}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g3_d_view_ab56c0094148c4e2bbb10c75aff61fdbd}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\index{C\+G3\+D\+View@{C\+G3\+D\+View}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{C\+G3\+D\+View()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G3\+D\+View\+::\+C\+G3\+D\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_ab56c0094148c4e2bbb10c75aff61fdbd}
+\hypertarget{class_c_g3_d_view_a039384f0628e4d8c0c88323b1f92eafe}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!````~C\+G3\+D\+View@{$\sim$\+C\+G3\+D\+View}}
+\index{````~C\+G3\+D\+View@{$\sim$\+C\+G3\+D\+View}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{$\sim$\+C\+G3\+D\+View()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G3\+D\+View\+::$\sim$\+C\+G3\+D\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_view_a039384f0628e4d8c0c88323b1f92eafe}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g3_d_view_a7e3f5a5609554d257f7ac61d07dad3fa}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Add\+Vertex\+Index\+Buffer@{Add\+Vertex\+Index\+Buffer}}
+\index{Add\+Vertex\+Index\+Buffer@{Add\+Vertex\+Index\+Buffer}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Add\+Vertex\+Index\+Buffer(const C\+Atl\+String \&str\+View\+Layer\+Name, C\+G\+Object\+Base \&object\+Base)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Add\+Vertex\+Index\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{{\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a7e3f5a5609554d257f7ac61d07dad3fa}
+
+\begin{DoxyItemize}
+\item object 1개의 vertex buffer를 추가한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a4155768c1012ecaec52d01598204a73b}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Add\+Vertex\+Index\+Buffer\+Multiple@{Add\+Vertex\+Index\+Buffer\+Multiple}}
+\index{Add\+Vertex\+Index\+Buffer\+Multiple@{Add\+Vertex\+Index\+Buffer\+Multiple}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Add\+Vertex\+Index\+Buffer\+Multiple(const C\+Atl\+String \&str\+View\+Layer\+Name, C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Add\+Vertex\+Index\+Buffer\+Multiple (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a4155768c1012ecaec52d01598204a73b}
+
+\begin{DoxyItemize}
+\item object 여러개의 vertex buffer를 추가한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_aeb412f47613ba426c47580e4595b061a}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Calc\+Intersect\+Object\+By\+Pickbox@{Calc\+Intersect\+Object\+By\+Pickbox}}
+\index{Calc\+Intersect\+Object\+By\+Pickbox@{Calc\+Intersect\+Object\+By\+Pickbox}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Calc\+Intersect\+Object\+By\+Pickbox(const C\+String \&str\+View\+Layer, const C\+Point \&pt\+Window, const G\+S\+I\+Z\+E \&i\+Pickbox\+Size)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Object\+Base} $\ast$ C\+G3\+D\+View\+::\+Calc\+Intersect\+Object\+By\+Pickbox (
+\begin{DoxyParamCaption}
+\item[{const C\+String \&}]{str\+View\+Layer, }
+\item[{const C\+Point \&}]{pt\+Window, }
+\item[{const {\bf G\+S\+I\+Z\+E} \&}]{i\+Pickbox\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_view_aeb412f47613ba426c47580e4595b061a}
+
+\begin{DoxyItemize}
+\item pickbox에 의해서 교차되는 object를 찾는다.
+\item pickbox에 걸리는 object를 하나 찾는다. 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
+Reimplemented in \hyperlink{class_c_g3_d_space_view_a0ae9fca90ba5f117aa854ad3f6e6f7a4}{C\+G3\+D\+Space\+View}.
+
+\hypertarget{class_c_g3_d_view_ac034e96c79fe1634021040c4ea2b1a64}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Calc\+Intersect\+Object\+By\+Window@{Calc\+Intersect\+Object\+By\+Window}}
+\index{Calc\+Intersect\+Object\+By\+Window@{Calc\+Intersect\+Object\+By\+Window}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Calc\+Intersect\+Object\+By\+Window(const C\+String \&str\+View\+Layer, const C\+Point \&pt\+Window1, const C\+Point \&pt\+Window2, G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Intersected\+Object, const G\+I\+N\+T32 \&i\+Count=0)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+View\+::\+Calc\+Intersect\+Object\+By\+Window (
+\begin{DoxyParamCaption}
+\item[{const C\+String \&}]{str\+View\+Layer, }
+\item[{const C\+Point \&}]{pt\+Window1, }
+\item[{const C\+Point \&}]{pt\+Window2, }
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Intersected\+Object, }
+\item[{const {\bf G\+I\+N\+T32} \&}]{i\+Count = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_view_ac034e96c79fe1634021040c4ea2b1a64}
+
+\begin{DoxyItemize}
+\item window에 의해서 교차되는 object를 계산한다.
+\item window에 의해서 교차되는 object를 계산한다.
+\item window크기의 절두체를 만들어서 검사한다.
+\item 절두체 평면의 바깥에 있는것은 걸리지 않는 것으로 판정한다.
+\item window를 완전히 포함하는 객체를 찾기 위해 Calc\+Intersect\+Object\+By\+Ray와 혼용한다. 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+\begin{DoxyParams}{Parameters}
+{\em i\+Count} & 선택할 객체의 개수\+: 0 -\/ 선택가능한 객체 모두 선택 \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_c_g3_d_space_view_ad35d550805ccc115a15372c63a1490a4}{C\+G3\+D\+Space\+View}.
+
+\hypertarget{class_c_g3_d_view_a95c2bc199d4c301725276cc0209dc352}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Calc\+Intersect\+Object\+By\+Window\+By\+Buffer\+Item\+I\+D@{Calc\+Intersect\+Object\+By\+Window\+By\+Buffer\+Item\+I\+D}}
+\index{Calc\+Intersect\+Object\+By\+Window\+By\+Buffer\+Item\+I\+D@{Calc\+Intersect\+Object\+By\+Window\+By\+Buffer\+Item\+I\+D}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Calc\+Intersect\+Object\+By\+Window\+By\+Buffer\+Item\+I\+D(const C\+String \&str\+View\+Layer, const C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object, const G\+I\+D \&buffer\+Item\+I\+D, const C\+Point \&pt\+Window1, const C\+Point \&pt\+Window2, G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Intersected\+Object, const G\+I\+N\+T32 \&i\+Count=0)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+View\+::\+Calc\+Intersect\+Object\+By\+Window\+By\+Buffer\+Item\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const C\+String \&}]{str\+View\+Layer, }
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object, }
+\item[{const {\bf G\+I\+D} \&}]{buffer\+Item\+I\+D, }
+\item[{const C\+Point \&}]{pt\+Window1, }
+\item[{const C\+Point \&}]{pt\+Window2, }
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Intersected\+Object, }
+\item[{const {\bf G\+I\+N\+T32} \&}]{i\+Count = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a95c2bc199d4c301725276cc0209dc352}
+
+\begin{DoxyItemize}
+\item buffer item id에 존재하는 object에 대해서 window에 교차되는지 검사한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_ad0028c5dcb4b7fdb69b4230cdf6b8fbd}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Calc\+Intersect\+Object\+By\+X\+Y@{Calc\+Intersect\+Object\+By\+X\+Y}}
+\index{Calc\+Intersect\+Object\+By\+X\+Y@{Calc\+Intersect\+Object\+By\+X\+Y}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Calc\+Intersect\+Object\+By\+X\+Y(const C\+String \&str\+View\+Layer, const C\+Point \&pt, G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Intersected\+Object, const G\+I\+N\+T32 \&i\+Count=0)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+View\+::\+Calc\+Intersect\+Object\+By\+X\+Y (
+\begin{DoxyParamCaption}
+\item[{const C\+String \&}]{str\+View\+Layer, }
+\item[{const C\+Point \&}]{pt, }
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Intersected\+Object, }
+\item[{const {\bf G\+I\+N\+T32} \&}]{i\+Count = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_ad0028c5dcb4b7fdb69b4230cdf6b8fbd}
+
+\begin{DoxyItemize}
+\item window 좌표로 객체 교차를 계산한다. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\item 찾으면 T\+R\+U\+E
+\item window 좌표에 걸리는 객체를 찾는다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_ac66c57492243b3790103ab4156309052}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Calc\+Intersect\+Triangular\+Object\+By\+Ray@{Calc\+Intersect\+Triangular\+Object\+By\+Ray}}
+\index{Calc\+Intersect\+Triangular\+Object\+By\+Ray@{Calc\+Intersect\+Triangular\+Object\+By\+Ray}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Calc\+Intersect\+Triangular\+Object\+By\+Ray(const C\+String \&str\+View\+Layer, const C\+G\+Point3\+D \&pt\+Ray\+Org, const C\+G\+Vector3\+D \&v\+Ray\+Dir, G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Intersected\+Object, const G\+I\+N\+T32 \&i\+Count=0)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+View\+::\+Calc\+Intersect\+Triangular\+Object\+By\+Ray (
+\begin{DoxyParamCaption}
+\item[{const C\+String \&}]{str\+View\+Layer, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Ray\+Org, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Ray\+Dir, }
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Intersected\+Object, }
+\item[{const {\bf G\+I\+N\+T32} \&}]{i\+Count = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_ac66c57492243b3790103ab4156309052}
+
+\begin{DoxyItemize}
+\item ray에 의해서 교차되는 object를 계산한다. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\item 찾으면 T\+R\+U\+E
+\item ray에 의해서 교차되는 object를 찾는다.
+\item triangle만 찾을 수 있다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a832d39ba4e049aa05de00c6071afa88e}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Calc\+Intersect\+Triangular\+Object\+By\+Ray\+By\+Buffer\+Item\+I\+D@{Calc\+Intersect\+Triangular\+Object\+By\+Ray\+By\+Buffer\+Item\+I\+D}}
+\index{Calc\+Intersect\+Triangular\+Object\+By\+Ray\+By\+Buffer\+Item\+I\+D@{Calc\+Intersect\+Triangular\+Object\+By\+Ray\+By\+Buffer\+Item\+I\+D}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Calc\+Intersect\+Triangular\+Object\+By\+Ray\+By\+Buffer\+Item\+I\+D(const C\+String \&str\+View\+Layer, const C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object, const G\+I\+D \&buffer\+Item\+I\+D, const C\+G\+Point3\+D \&pt\+Ray\+Org, const C\+G\+Vector3\+D \&v\+Ray\+Dir, G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Intersected\+Object, const G\+I\+N\+T32 \&i\+Count=0)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+View\+::\+Calc\+Intersect\+Triangular\+Object\+By\+Ray\+By\+Buffer\+Item\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const C\+String \&}]{str\+View\+Layer, }
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object, }
+\item[{const {\bf G\+I\+D} \&}]{buffer\+Item\+I\+D, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Ray\+Org, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Ray\+Dir, }
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Intersected\+Object, }
+\item[{const {\bf G\+I\+N\+T32} \&}]{i\+Count = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a832d39ba4e049aa05de00c6071afa88e}
+
+\begin{DoxyItemize}
+\item ray에 의해서 교차되는 object를 찾는다.
+\item triangle만 찾을 수 있다.
+\item buffer item 별로 찾는다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a2c8cb9988023e6b84767b0379ef03f83}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Calc\+Window\+Coordinate\+By\+World\+Coordinate@{Calc\+Window\+Coordinate\+By\+World\+Coordinate}}
+\index{Calc\+Window\+Coordinate\+By\+World\+Coordinate@{Calc\+Window\+Coordinate\+By\+World\+Coordinate}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Calc\+Window\+Coordinate\+By\+World\+Coordinate(const C\+G\+Point3\+D \&pt\+World)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Point C\+G3\+D\+View\+::\+Calc\+Window\+Coordinate\+By\+World\+Coordinate (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+World}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_a2c8cb9988023e6b84767b0379ef03f83}
+
+\begin{DoxyItemize}
+\item world좌표로 window 좌표를 얻는다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_aa10f083d6a1a32ae4e87e854447df1f0}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Calc\+World\+Coordinate\+By\+Window\+Coordinate@{Calc\+World\+Coordinate\+By\+Window\+Coordinate}}
+\index{Calc\+World\+Coordinate\+By\+Window\+Coordinate@{Calc\+World\+Coordinate\+By\+Window\+Coordinate}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Calc\+World\+Coordinate\+By\+Window\+Coordinate(const C\+Point \&pt\+Screen)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Point3\+D} C\+G3\+D\+View\+::\+Calc\+World\+Coordinate\+By\+Window\+Coordinate (
+\begin{DoxyParamCaption}
+\item[{const C\+Point \&}]{pt\+Screen}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_aa10f083d6a1a32ae4e87e854447df1f0}
+
+\begin{DoxyItemize}
+\item window 좌표를 통해서 world 좌표를 얻는다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_ad2e0f1287dc53e3b81d3a882c6a54ac9}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Calc\+World\+Coordinate\+By\+Window\+Coordinate\+With\+Depth@{Calc\+World\+Coordinate\+By\+Window\+Coordinate\+With\+Depth}}
+\index{Calc\+World\+Coordinate\+By\+Window\+Coordinate\+With\+Depth@{Calc\+World\+Coordinate\+By\+Window\+Coordinate\+With\+Depth}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Calc\+World\+Coordinate\+By\+Window\+Coordinate\+With\+Depth(const C\+Point \&ptwindow, const G\+F\+L\+O\+A\+T \&f\+Depth)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Point3\+D} C\+G3\+D\+View\+::\+Calc\+World\+Coordinate\+By\+Window\+Coordinate\+With\+Depth (
+\begin{DoxyParamCaption}
+\item[{const C\+Point \&}]{ptwindow, }
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+Depth}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_ad2e0f1287dc53e3b81d3a882c6a54ac9}
+
+\begin{DoxyItemize}
+\item window좌표와 깊이값을 통해서 world 좌표를 얻는다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a435cff19e02a6f76461d383d7e3a5372}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Create\+Frustrum\+Plane\+By\+Window@{Create\+Frustrum\+Plane\+By\+Window}}
+\index{Create\+Frustrum\+Plane\+By\+Window@{Create\+Frustrum\+Plane\+By\+Window}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Create\+Frustrum\+Plane\+By\+Window(const C\+Point \&pt\+Window1, const C\+Point \&pt\+Window2, G\+O\+U\+T C\+G\+Plane $\ast$p\+Plane\+Frustrum)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+View\+::\+Create\+Frustrum\+Plane\+By\+Window (
+\begin{DoxyParamCaption}
+\item[{const C\+Point \&}]{pt\+Window1, }
+\item[{const C\+Point \&}]{pt\+Window2, }
+\item[{{\bf G\+O\+U\+T} {\bf C\+G\+Plane} $\ast$}]{p\+Plane\+Frustrum}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a435cff19e02a6f76461d383d7e3a5372}
+
+\begin{DoxyItemize}
+\item 2개의 window 좌표로 절두체 평면을 만든다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_abc2a437838adce2483696c368bad3ec7}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Create\+Vertex\+Index\+Buffer@{Create\+Vertex\+Index\+Buffer}}
+\index{Create\+Vertex\+Index\+Buffer@{Create\+Vertex\+Index\+Buffer}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Create\+Vertex\+Index\+Buffer(const C\+Atl\+String \&str\+View\+Layer\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Create\+Vertex\+Index\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_abc2a437838adce2483696c368bad3ec7}
+
+\begin{DoxyItemize}
+\item vertex buffer를 생성한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a32f90a1e23f8e5cf4e61970cdad5ea24}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Create\+Vertex\+Index\+Buffer\+By\+Object\+Array\+By\+Buffer\+Item\+I\+D@{Create\+Vertex\+Index\+Buffer\+By\+Object\+Array\+By\+Buffer\+Item\+I\+D}}
+\index{Create\+Vertex\+Index\+Buffer\+By\+Object\+Array\+By\+Buffer\+Item\+I\+D@{Create\+Vertex\+Index\+Buffer\+By\+Object\+Array\+By\+Buffer\+Item\+I\+D}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Create\+Vertex\+Index\+Buffer\+By\+Object\+Array\+By\+Buffer\+Item\+I\+D(const C\+Atl\+String \&str\+View\+Layer\+Name, C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+O\+Bject, const G\+I\+D \&buffer\+Item\+I\+D, const G\+B\+O\+O\+L \&b\+Add=false, const G\+I\+D \&\+I\+D=\+G\+F\+I\+R\+S\+T\+\_\+\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Create\+Vertex\+Index\+Buffer\+By\+Object\+Array\+By\+Buffer\+Item\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+O\+Bject, }
+\item[{const {\bf G\+I\+D} \&}]{buffer\+Item\+I\+D, }
+\item[{const {\bf G\+B\+O\+O\+L} \&}]{b\+Add = {\ttfamily false}, }
+\item[{const {\bf G\+I\+D} \&}]{I\+D = {\ttfamily {\bf G\+F\+I\+R\+S\+T\+\_\+\+I\+D}}}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_a32f90a1e23f8e5cf4e61970cdad5ea24}
+
+\begin{DoxyItemize}
+\item object array와 buffer item id로 vertex index buffer를 생성한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a272c8860f8b2967a6787da320c902578}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Create\+Vertex\+Index\+Buffer\+By\+Object\+Manager@{Create\+Vertex\+Index\+Buffer\+By\+Object\+Manager}}
+\index{Create\+Vertex\+Index\+Buffer\+By\+Object\+Manager@{Create\+Vertex\+Index\+Buffer\+By\+Object\+Manager}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Create\+Vertex\+Index\+Buffer\+By\+Object\+Manager(const C\+Atl\+String \&str\+View\+Layer\+Name, C\+G\+Object\+Manager \&mng, const G\+B\+O\+O\+L \&b\+Add=false, const G\+I\+D \&\+I\+D=\+G\+F\+I\+R\+S\+T\+\_\+\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Create\+Vertex\+Index\+Buffer\+By\+Object\+Manager (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{{\bf C\+G\+Object\+Manager} \&}]{mng, }
+\item[{const {\bf G\+B\+O\+O\+L} \&}]{b\+Add = {\ttfamily false}, }
+\item[{const {\bf G\+I\+D} \&}]{I\+D = {\ttfamily {\bf G\+F\+I\+R\+S\+T\+\_\+\+I\+D}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a272c8860f8b2967a6787da320c902578}
+
+\begin{DoxyItemize}
+\item object manager로 vertex index buffer를 생성한다.
+\item 이미 vertex index buffer를 할당 받은 객체에 대해서는 삭제하고 생성한다.
+\item 기본 bufer item에 생성한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a7755c4e350ad340e013f1345f5b4c89a}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Draw\+Object@{Draw\+Object}}
+\index{Draw\+Object@{Draw\+Object}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Draw\+Object()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Draw\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a7755c4e350ad340e013f1345f5b4c89a}
+
+\begin{DoxyItemize}
+\item object를 그린다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_ab8101a92ca52e0c1c5faabe851c2cba6}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Draw\+Object\+By\+Object@{Draw\+Object\+By\+Object}}
+\index{Draw\+Object\+By\+Object@{Draw\+Object\+By\+Object}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Draw\+Object\+By\+Object(const C\+Atl\+String \&str\+View\+Layer\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Draw\+Object\+By\+Object (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_ab8101a92ca52e0c1c5faabe851c2cba6}
+
+\begin{DoxyItemize}
+\item object 별로 하나씩 그린다.
+\item object 개수가 많아 질수록 느려진다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a2e91ea875abc83c89b65dc3a1804c194}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Draw\+Object\+By\+Primitive\+Topology@{Draw\+Object\+By\+Primitive\+Topology}}
+\index{Draw\+Object\+By\+Primitive\+Topology@{Draw\+Object\+By\+Primitive\+Topology}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Draw\+Object\+By\+Primitive\+Topology(const C\+Atl\+String \&str\+View\+Layer\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Draw\+Object\+By\+Primitive\+Topology (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a2e91ea875abc83c89b65dc3a1804c194}
+
+\begin{DoxyItemize}
+\item geometry 단위로 묶어서 그린다.
+\item point, line, triangle 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_aaff0a9519911ebf483d0415bd30d1592}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Draw\+Object\+By\+Primitive\+Topology\+By\+Strip\+Vertex\+List\+Index@{Draw\+Object\+By\+Primitive\+Topology\+By\+Strip\+Vertex\+List\+Index}}
+\index{Draw\+Object\+By\+Primitive\+Topology\+By\+Strip\+Vertex\+List\+Index@{Draw\+Object\+By\+Primitive\+Topology\+By\+Strip\+Vertex\+List\+Index}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Draw\+Object\+By\+Primitive\+Topology\+By\+Strip\+Vertex\+List\+Index(const C\+Atl\+String \&str\+View\+Layer\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Draw\+Object\+By\+Primitive\+Topology\+By\+Strip\+Vertex\+List\+Index (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_aaff0a9519911ebf483d0415bd30d1592}
+
+\begin{DoxyItemize}
+\item geometry 단위로 묶어서 그린다.
+\item point, line, triangle
+\item strip vertex, list index 방식으로 그린다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a808a0626bd17033b5c4073db7a6e5649}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!End\+Zoom@{End\+Zoom}}
+\index{End\+Zoom@{End\+Zoom}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{End\+Zoom()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+End\+Zoom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{class_c_g3_d_view_a808a0626bd17033b5c4073db7a6e5649}
+
+\begin{DoxyItemize}
+\item zoom이 끝나고 나서 호출되는 함수 
+\end{DoxyItemize}
+
+Reimplemented in \hyperlink{class_c_g3_d_space_view_a6dfd5d319836c6ddda121a15662121cd}{C\+G3\+D\+Space\+View}.
+
+\hypertarget{class_c_g3_d_view_ae6a4d739c7ec3d135cfcdda284a918f7}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Find\+All\+Object\+To\+Intersect\+By\+Rectangle@{Find\+All\+Object\+To\+Intersect\+By\+Rectangle}}
+\index{Find\+All\+Object\+To\+Intersect\+By\+Rectangle@{Find\+All\+Object\+To\+Intersect\+By\+Rectangle}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Find\+All\+Object\+To\+Intersect\+By\+Rectangle(const C\+String \&str\+View\+Layer, C\+G\+Plane $\ast$p\+Plane\+Frustrum, G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Find\+All\+Object\+To\+Intersect\+By\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{const C\+String \&}]{str\+View\+Layer, }
+\item[{{\bf C\+G\+Plane} $\ast$}]{p\+Plane\+Frustrum, }
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{class_c_g3_d_view_ae6a4d739c7ec3d135cfcdda284a918f7}
+
+\begin{DoxyItemize}
+\item rectangle과 교점 검사를 하기 위한 대상이 되는 object를 찾는다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_af50e42c0632c49633dc9d9a053c422d1}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Find\+All\+Trianglaur\+Object\+To\+Intersect\+By\+Ray@{Find\+All\+Trianglaur\+Object\+To\+Intersect\+By\+Ray}}
+\index{Find\+All\+Trianglaur\+Object\+To\+Intersect\+By\+Ray@{Find\+All\+Trianglaur\+Object\+To\+Intersect\+By\+Ray}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Find\+All\+Trianglaur\+Object\+To\+Intersect\+By\+Ray(const C\+String \&str\+View\+Layer, const C\+G\+Point3\+D \&pt\+Ray\+Org, const C\+G\+Vector3\+D \&v\+Ray\+Dir, G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Find\+All\+Trianglaur\+Object\+To\+Intersect\+By\+Ray (
+\begin{DoxyParamCaption}
+\item[{const C\+String \&}]{str\+View\+Layer, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Ray\+Org, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Ray\+Dir, }
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{class_c_g3_d_view_af50e42c0632c49633dc9d9a053c422d1}
+
+\begin{DoxyItemize}
+\item 반직선과 교점 검사를 하기 위한 대상이 되는 모든 object를 찾는다.
+\item 삼각형으로 이루어진 object만 검사한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_aed8e9e4e44f899d422c4aa82e6bae8dd}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Get\+Camera@{Get\+Camera}}
+\index{Get\+Camera@{Get\+Camera}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Get\+Camera()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Camera} \& C\+G3\+D\+View\+::\+Get\+Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_aed8e9e4e44f899d422c4aa82e6bae8dd}
+\hypertarget{class_c_g3_d_view_acddf70893c90502391eb74644554d9ba}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Get\+Clien\+Height@{Get\+Clien\+Height}}
+\index{Get\+Clien\+Height@{Get\+Clien\+Height}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Get\+Clien\+Height() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+I\+N\+T32} C\+G3\+D\+View\+::\+Get\+Clien\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g3_d_view_acddf70893c90502391eb74644554d9ba}
+\hypertarget{class_c_g3_d_view_aed94adad7846ae7d5b4aaab4d6353fbb}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Get\+D\+B@{Get\+D\+B}}
+\index{Get\+D\+B@{Get\+D\+B}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Get\+D\+B(const C\+Atl\+String \&str\+View\+Layer\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G3\+D\+D\+B} $\ast$ C\+G3\+D\+View\+::\+Get\+D\+B (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_aed94adad7846ae7d5b4aaab4d6353fbb}
+\hypertarget{class_c_g3_d_view_a48e85bf81912c86d4b18a2f8d03966dc}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Get\+Init\+Data@{Get\+Init\+Data}}
+\index{Get\+Init\+Data@{Get\+Init\+Data}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Get\+Init\+Data() const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+G3\+D\+View\+Init\+Data} \& C\+G3\+D\+View\+::\+Get\+Init\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g3_d_view_a48e85bf81912c86d4b18a2f8d03966dc}
+
+\begin{DoxyItemize}
+\item view 초기화 데이타 리턴
+\item 참조만 가능하다
+\item 변경을 하려면 Init\+View 함수를 통해서 변경해야 한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a849c61b4aafdaab36d5cadb22919a7a4}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Get\+Object\+By\+Buffer\+Layer\+Buffer\+Item\+I\+D@{Get\+Object\+By\+Buffer\+Layer\+Buffer\+Item\+I\+D}}
+\index{Get\+Object\+By\+Buffer\+Layer\+Buffer\+Item\+I\+D@{Get\+Object\+By\+Buffer\+Layer\+Buffer\+Item\+I\+D}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Get\+Object\+By\+Buffer\+Layer\+Buffer\+Item\+I\+D(const C\+String \&str\+View\+Layer, const C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object, G\+O\+U\+T C\+Atl\+Map$<$ G\+I\+D, C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ $\ast$ $>$ \&map\+Object\+By\+Buffer\+Item\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Get\+Object\+By\+Buffer\+Layer\+Buffer\+Item\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const C\+String \&}]{str\+View\+Layer, }
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object, }
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Map$<$ {\bf G\+I\+D}, C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ $\ast$ $>$ \&}]{map\+Object\+By\+Buffer\+Item\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a849c61b4aafdaab36d5cadb22919a7a4}
+
+\begin{DoxyItemize}
+\item object를 buffer item별로 구분한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a768a48fb812358e434fe69ef673e3aa7}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Get\+Object\+By\+Primitive\+Topology@{Get\+Object\+By\+Primitive\+Topology}}
+\index{Get\+Object\+By\+Primitive\+Topology@{Get\+Object\+By\+Primitive\+Topology}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Get\+Object\+By\+Primitive\+Topology(const C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object\+Src, const Primitive\+Topology \&e\+Primitive\+Topology, G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object\+Tar)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Get\+Object\+By\+Primitive\+Topology (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object\+Src, }
+\item[{const {\bf Primitive\+Topology} \&}]{e\+Primitive\+Topology, }
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object\+Tar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a768a48fb812358e434fe69ef673e3aa7}
+
+\begin{DoxyItemize}
+\item object를 primitive topology별로 가져온다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_afc6e81cbaee27dfc3092d7f4f6157f57}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Get\+Object\+List@{Get\+Object\+List}}
+\index{Get\+Object\+List@{Get\+Object\+List}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Get\+Object\+List(const C\+Atl\+String \&str\+View\+Layer\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}const C\+Atl\+Map$<$ {\bf G\+I\+D}, {\bf C\+G\+Object\+Base} $\ast$ $>$ $\ast$ C\+G3\+D\+View\+::\+Get\+Object\+List (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_afc6e81cbaee27dfc3092d7f4f6157f57}
+
+\begin{DoxyItemize}
+\item object list를 리턴한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a0dfb17c6279f6b76a614ce43a346595e}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Get\+View\+Layer@{Get\+View\+Layer}}
+\index{Get\+View\+Layer@{Get\+View\+Layer}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Get\+View\+Layer(const C\+Atl\+String \&str\+View\+Layer\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G3\+D\+View\+Layer} $\ast$ C\+G3\+D\+View\+::\+Get\+View\+Layer (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_a0dfb17c6279f6b76a614ce43a346595e}
+
+\begin{DoxyItemize}
+\item view layer를 리턴한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_ad97aeaea01d99505244420a9ba4f9c6f}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Init\+Map\+Object\+By\+Buffer\+Item\+I\+D@{Init\+Map\+Object\+By\+Buffer\+Item\+I\+D}}
+\index{Init\+Map\+Object\+By\+Buffer\+Item\+I\+D@{Init\+Map\+Object\+By\+Buffer\+Item\+I\+D}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Init\+Map\+Object\+By\+Buffer\+Item\+I\+D(\+C\+Atl\+Map$<$ G\+I\+D, C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ $\ast$ $>$ \&map)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Init\+Map\+Object\+By\+Buffer\+Item\+I\+D (
+\begin{DoxyParamCaption}
+\item[{C\+Atl\+Map$<$ {\bf G\+I\+D}, C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ $\ast$ $>$ \&}]{map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_ad97aeaea01d99505244420a9ba4f9c6f}
+
+\begin{DoxyItemize}
+\item buffer item 별 object array를 담고 있는 map 메모리 해제
+\item Get\+Object\+By\+Buffer\+Layer\+Buffer\+Item\+I\+D 함수를 사용해서 map을 구성한 경우 반드시 이 함수로 메모리 해제를 해야함. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a0dc3d3cf11fba43e6ac7e5fa81234bc9}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Init\+Vertex\+Index\+Buffer@{Init\+Vertex\+Index\+Buffer}}
+\index{Init\+Vertex\+Index\+Buffer@{Init\+Vertex\+Index\+Buffer}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Init\+Vertex\+Index\+Buffer(const C\+Atl\+String \&str\+View\+Layer\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Init\+Vertex\+Index\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a0dc3d3cf11fba43e6ac7e5fa81234bc9}
+
+\begin{DoxyItemize}
+\item vertex buffer, index buffer를 초기화 한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_af973e41e937b33d8d5a868ceab39b305}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Init\+Vertex\+Index\+Buffer\+By\+Buffer\+Item\+I\+D@{Init\+Vertex\+Index\+Buffer\+By\+Buffer\+Item\+I\+D}}
+\index{Init\+Vertex\+Index\+Buffer\+By\+Buffer\+Item\+I\+D@{Init\+Vertex\+Index\+Buffer\+By\+Buffer\+Item\+I\+D}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Init\+Vertex\+Index\+Buffer\+By\+Buffer\+Item\+I\+D(const C\+String \&str\+View\+Layer\+Name, C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object, const G\+I\+D \&buffer\+Item\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Init\+Vertex\+Index\+Buffer\+By\+Buffer\+Item\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const C\+String \&}]{str\+View\+Layer\+Name, }
+\item[{C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object, }
+\item[{const {\bf G\+I\+D} \&}]{buffer\+Item\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_af973e41e937b33d8d5a868ceab39b305}
+
+\begin{DoxyItemize}
+\item buffer item 별로 vertex index buffer를 초기화 한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_aa4c947bd440cf3824372b88424a919c9}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Init\+View@{Init\+View}}
+\index{Init\+View@{Init\+View}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Init\+View(\+C\+G3\+D\+View\+Init\+Data \&init\+Data)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+View\+::\+Init\+View (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G3\+D\+View\+Init\+Data} \&}]{init\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_view_aa4c947bd440cf3824372b88424a919c9}
+
+\begin{DoxyItemize}
+\item 3\+D view 초기화 함수
+\item D\+C Target View를 만든다. 
+\end{DoxyItemize}
+
+Reimplemented in \hyperlink{class_c_g3_d_space_view_a1eee8f626fad416899cb8bafcc846a4b}{C\+G3\+D\+Space\+View}.
+
+\hypertarget{class_c_g3_d_view_a27b61807ea71e1caddec76facb0d9603}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Is\+Abort@{Is\+Abort}}
+\index{Is\+Abort@{Is\+Abort}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Is\+Abort() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+View\+::\+Is\+Abort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g3_d_view_a27b61807ea71e1caddec76facb0d9603}
+\hypertarget{class_c_g3_d_view_aa6a20de71dccb39196c768ed1debc7b8}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Is\+Attr@{Is\+Attr}}
+\index{Is\+Attr@{Is\+Attr}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Is\+Attr(const Attr \&e\+Attr)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+View\+::\+Is\+Attr (
+\begin{DoxyParamCaption}
+\item[{const {\bf Attr} \&}]{e\+Attr}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_aa6a20de71dccb39196c768ed1debc7b8}
+\hypertarget{class_c_g3_d_view_a3b589204edff37762b9b3bd1ea80c2c9}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!On\+M\+Button\+Dbl\+Clk@{On\+M\+Button\+Dbl\+Clk}}
+\index{On\+M\+Button\+Dbl\+Clk@{On\+M\+Button\+Dbl\+Clk}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{On\+M\+Button\+Dbl\+Clk(\+U\+I\+N\+T n\+Flags, C\+Point point)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+On\+M\+Button\+Dbl\+Clk (
+\begin{DoxyParamCaption}
+\item[{U\+I\+N\+T}]{n\+Flags, }
+\item[{C\+Point}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a3b589204edff37762b9b3bd1ea80c2c9}
+
+\begin{DoxyItemize}
+\item M\+Button을 Double하면 zoom all이 된다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a9db3e66f4cb0f955731d840cb1ea97fc}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!On\+Mouse\+Move@{On\+Mouse\+Move}}
+\index{On\+Mouse\+Move@{On\+Mouse\+Move}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{On\+Mouse\+Move(\+U\+I\+N\+T n\+Flags, C\+Point point)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+On\+Mouse\+Move (
+\begin{DoxyParamCaption}
+\item[{U\+I\+N\+T}]{n\+Flags, }
+\item[{C\+Point}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a9db3e66f4cb0f955731d840cb1ea97fc}
+
+\begin{DoxyItemize}
+\item mouse move시 동작
+\begin{DoxyItemize}
+\item wheel을 누른채 move를 하면 zoom pan이 동작한다. 
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a7af4ef43015da5f851ac69d0e463ef03}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!On\+Mouse\+Wheel@{On\+Mouse\+Wheel}}
+\index{On\+Mouse\+Wheel@{On\+Mouse\+Wheel}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{On\+Mouse\+Wheel(\+U\+I\+N\+T n\+Flags, short z\+Delta, C\+Point pt)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+View\+::\+On\+Mouse\+Wheel (
+\begin{DoxyParamCaption}
+\item[{U\+I\+N\+T}]{n\+Flags, }
+\item[{short}]{z\+Delta, }
+\item[{C\+Point}]{pt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a7af4ef43015da5f851ac69d0e463ef03}
+
+\begin{DoxyItemize}
+\item mouse wheel을 돌리면 zoom in, out이 된다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a192ac299a7123f5c1663e416eb8ddd07}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!On\+Resize@{On\+Resize}}
+\index{On\+Resize@{On\+Resize}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{On\+Resize()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+On\+Resize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_a192ac299a7123f5c1663e416eb8ddd07}
+\hypertarget{class_c_g3_d_view_a4fa8f4ca2d15b1efe7e1f8cada774ae8}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Optimize\+Property@{Optimize\+Property}}
+\index{Optimize\+Property@{Optimize\+Property}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Optimize\+Property(const C\+Atl\+String \&str\+View\+Layer\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Optimize\+Property (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a4fa8f4ca2d15b1efe7e1f8cada774ae8}
+
+\begin{DoxyItemize}
+\item view layer 의 property를 최적화 한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a90b403c7341e001ff61429bf639bf122}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Pre\+Translate\+Message@{Pre\+Translate\+Message}}
+\index{Pre\+Translate\+Message@{Pre\+Translate\+Message}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Pre\+Translate\+Message(\+M\+S\+G $\ast$p\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Pre\+Translate\+Message (
+\begin{DoxyParamCaption}
+\item[{M\+S\+G $\ast$}]{p\+Msg}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_a90b403c7341e001ff61429bf639bf122}
+\hypertarget{class_c_g3_d_view_ac0f96baa1fed5188b0b9d395c9b0b8a0}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Redraw@{Redraw}}
+\index{Redraw@{Redraw}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Redraw()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Redraw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_view_ac0f96baa1fed5188b0b9d395c9b0b8a0}
+
+\begin{DoxyItemize}
+\item object 갱신한다. 
+\end{DoxyItemize}
+
+Reimplemented in \hyperlink{class_c_g3_d_space_view_a64c5f9295142711855fe1edac4e81574}{C\+G3\+D\+Space\+View}.
+
+\hypertarget{class_c_g3_d_view_aefc8cd44b4d375ac3b03c388b64c6f78}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Regen@{Regen}}
+\index{Regen@{Regen}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Regen(const C\+Atl\+String \&str\+View\+Layer\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Regen (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_view_aefc8cd44b4d375ac3b03c388b64c6f78}
+
+\begin{DoxyItemize}
+\item object를 재생성한다.
+\item object생성은 view layer별로 한다.
+\item 마지막에 redraw는 모든 view layer에 대해서 redraw한다.
+\item quadtree를 재설정한다. 
+\end{DoxyItemize}
+
+Reimplemented in \hyperlink{class_c_g3_d_space_view_aa82b9ba26d5f68761c6a9e0c7d451126}{C\+G3\+D\+Space\+View}.
+
+\hypertarget{class_c_g3_d_view_a05d588d0192488323bcfcbf219cae359}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Regen\+Only\+Added\+Object@{Regen\+Only\+Added\+Object}}
+\index{Regen\+Only\+Added\+Object@{Regen\+Only\+Added\+Object}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Regen\+Only\+Added\+Object(const C\+Atl\+String \&str\+View\+Layer\+Name, C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Regen\+Only\+Added\+Object (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{{\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_view_a05d588d0192488323bcfcbf219cae359}
+
+\begin{DoxyItemize}
+\item 추가된 객체에 대해서만 regen을 한다. 
+\end{DoxyItemize}
+
+Reimplemented in \hyperlink{class_c_g3_d_space_view_a9db364dfec0d9a4fe07fac150e9cb56f}{C\+G3\+D\+Space\+View}.
+
+\hypertarget{class_c_g3_d_view_af527f481d9dedb0d3b4dd7141c32f544}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Regen\+Only\+Added\+Object\+Multiple@{Regen\+Only\+Added\+Object\+Multiple}}
+\index{Regen\+Only\+Added\+Object\+Multiple@{Regen\+Only\+Added\+Object\+Multiple}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Regen\+Only\+Added\+Object\+Multiple(const C\+Atl\+String \&str\+View\+Layer\+Name, C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Regen\+Only\+Added\+Object\+Multiple (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_view_af527f481d9dedb0d3b4dd7141c32f544}
+
+\begin{DoxyItemize}
+\item 추가된 객체 여러개에 대해서만 regen을 한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a8a6694a9de54a15cd4e94cb2fe1ba772}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Regen\+Only\+Changing\+Color\+Object@{Regen\+Only\+Changing\+Color\+Object}}
+\index{Regen\+Only\+Changing\+Color\+Object@{Regen\+Only\+Changing\+Color\+Object}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Regen\+Only\+Changing\+Color\+Object(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+G\+Object\+Base \&object, const C\+G\+Color \&color)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Regen\+Only\+Changing\+Color\+Object (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object, }
+\item[{const {\bf C\+G\+Color} \&}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_view_a8a6694a9de54a15cd4e94cb2fe1ba772}
+
+\begin{DoxyItemize}
+\item object의 color를 변경한다. 
+\end{DoxyItemize}
+
+Reimplemented in \hyperlink{class_c_g3_d_space_view_afc8d6edb1671e556d7117526ae9fa557}{C\+G3\+D\+Space\+View}.
+
+\hypertarget{class_c_g3_d_view_ab76493432442f14c16fcb44519e74ee9}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Regen\+Only\+Changing\+Color\+Object\+Multiple@{Regen\+Only\+Changing\+Color\+Object\+Multiple}}
+\index{Regen\+Only\+Changing\+Color\+Object\+Multiple@{Regen\+Only\+Changing\+Color\+Object\+Multiple}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Regen\+Only\+Changing\+Color\+Object\+Multiple(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object, const C\+G\+Color \&color)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Regen\+Only\+Changing\+Color\+Object\+Multiple (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object, }
+\item[{const {\bf C\+G\+Color} \&}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_view_ab76493432442f14c16fcb44519e74ee9}
+
+
+Reimplemented in \hyperlink{class_c_g3_d_space_view_a2c32fa92784c1093a196342233168b8c}{C\+G3\+D\+Space\+View}.
+
+\hypertarget{class_c_g3_d_view_ab3c9663c0d5168c24f09752e5904cc64}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Regen\+Only\+Changing\+Color\+Object\+Multiple\+By\+Buffer\+Item\+I\+D@{Regen\+Only\+Changing\+Color\+Object\+Multiple\+By\+Buffer\+Item\+I\+D}}
+\index{Regen\+Only\+Changing\+Color\+Object\+Multiple\+By\+Buffer\+Item\+I\+D@{Regen\+Only\+Changing\+Color\+Object\+Multiple\+By\+Buffer\+Item\+I\+D}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Regen\+Only\+Changing\+Color\+Object\+Multiple\+By\+Buffer\+Item\+I\+D(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object, const C\+G\+Color \&color, const G\+I\+D \&buffer\+Item\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Regen\+Only\+Changing\+Color\+Object\+Multiple\+By\+Buffer\+Item\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object, }
+\item[{const {\bf C\+G\+Color} \&}]{color, }
+\item[{const {\bf G\+I\+D} \&}]{buffer\+Item\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_ab3c9663c0d5168c24f09752e5904cc64}
+
+\begin{DoxyItemize}
+\item 색상을 변경하는 object들의 랜더링 정보를 buffer item id별로 갱신한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_ac548b357ba302865e820d8fee3d3ea23}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Regen\+Only\+Deleting\+Object@{Regen\+Only\+Deleting\+Object}}
+\index{Regen\+Only\+Deleting\+Object@{Regen\+Only\+Deleting\+Object}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Regen\+Only\+Deleting\+Object(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Regen\+Only\+Deleting\+Object (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object\+Base}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_view_ac548b357ba302865e820d8fee3d3ea23}
+
+\begin{DoxyItemize}
+\item object 1개의 vertex buffer를 삭제한다. 
+\end{DoxyItemize}
+
+Reimplemented in \hyperlink{class_c_g3_d_space_view_acea820f287c70ae6f0c1b112ce571ac8}{C\+G3\+D\+Space\+View}.
+
+\hypertarget{class_c_g3_d_view_a2420bc1d545fbe7fedf47e855dcfb6a5}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Regen\+Only\+Deleting\+Object\+Multiple@{Regen\+Only\+Deleting\+Object\+Multiple}}
+\index{Regen\+Only\+Deleting\+Object\+Multiple@{Regen\+Only\+Deleting\+Object\+Multiple}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Regen\+Only\+Deleting\+Object\+Multiple(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Regen\+Only\+Deleting\+Object\+Multiple (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_view_a2420bc1d545fbe7fedf47e855dcfb6a5}
+
+\begin{DoxyItemize}
+\item object 여러개의 vertex buffer를 한번에 제거한다.
+\item 기본 buffer item에서 제거한다. 
+\end{DoxyItemize}
+
+Reimplemented in \hyperlink{class_c_g3_d_space_view_ac29abf1bd75a5f266acd6d587e3cfcb2}{C\+G3\+D\+Space\+View}.
+
+\hypertarget{class_c_g3_d_view_a9c9d5aa33edb18d9d4bab97df99e0ff4}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Regen\+Only\+Deleting\+Object\+Multiple\+By\+Buffer\+Item\+I\+D@{Regen\+Only\+Deleting\+Object\+Multiple\+By\+Buffer\+Item\+I\+D}}
+\index{Regen\+Only\+Deleting\+Object\+Multiple\+By\+Buffer\+Item\+I\+D@{Regen\+Only\+Deleting\+Object\+Multiple\+By\+Buffer\+Item\+I\+D}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Regen\+Only\+Deleting\+Object\+Multiple\+By\+Buffer\+Item\+I\+D(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object, const G\+I\+D \&buffer\+Item\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Regen\+Only\+Deleting\+Object\+Multiple\+By\+Buffer\+Item\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object, }
+\item[{const {\bf G\+I\+D} \&}]{buffer\+Item\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a9c9d5aa33edb18d9d4bab97df99e0ff4}
+
+\begin{DoxyItemize}
+\item 삭제될 object의 랜더링 정보를 buffer item id별로 제거한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_a37f1356825717a558f79e6ff5e6503b5}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Regen\+Only\+Object@{Regen\+Only\+Object}}
+\index{Regen\+Only\+Object@{Regen\+Only\+Object}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Regen\+Only\+Object(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Regen\+Only\+Object (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_view_a37f1356825717a558f79e6ff5e6503b5}
+
+\begin{DoxyItemize}
+\item object 1개를 다시 그린다.
+\item object의 정점을 다시 그린다.(정점의 개수가 기존과 동일해야 한다.) 
+\end{DoxyItemize}
+
+Reimplemented in \hyperlink{class_c_g3_d_space_view_a6124759a964a034fb2ec327cc12364f6}{C\+G3\+D\+Space\+View}.
+
+\hypertarget{class_c_g3_d_view_afe9ece9786fd1f5c178ccbd8f94d32bd}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Regen\+Only\+Object\+Multiple@{Regen\+Only\+Object\+Multiple}}
+\index{Regen\+Only\+Object\+Multiple@{Regen\+Only\+Object\+Multiple}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Regen\+Only\+Object\+Multiple(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Regen\+Only\+Object\+Multiple (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_view_afe9ece9786fd1f5c178ccbd8f94d32bd}
+
+\begin{DoxyItemize}
+\item object 여러개를 다시 그린다.
+\item object의 정점을 다시 그린다.(정점의 개수가 기존과 동일해야 한다.) 
+\end{DoxyItemize}
+
+Reimplemented in \hyperlink{class_c_g3_d_space_view_ad30a8db3cc9853abdcd598e170850c1f}{C\+G3\+D\+Space\+View}.
+
+\hypertarget{class_c_g3_d_view_aac23e07352ca4a01687f8ab9c4307810}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Regen\+Only\+Object\+Multiple\+By\+Buffer\+Item\+I\+D@{Regen\+Only\+Object\+Multiple\+By\+Buffer\+Item\+I\+D}}
+\index{Regen\+Only\+Object\+Multiple\+By\+Buffer\+Item\+I\+D@{Regen\+Only\+Object\+Multiple\+By\+Buffer\+Item\+I\+D}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Regen\+Only\+Object\+Multiple\+By\+Buffer\+Item\+I\+D(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object, const G\+I\+D \&buffer\+Item\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Regen\+Only\+Object\+Multiple\+By\+Buffer\+Item\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object, }
+\item[{const {\bf G\+I\+D} \&}]{buffer\+Item\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_aac23e07352ca4a01687f8ab9c4307810}
+
+\begin{DoxyItemize}
+\item object여러개를 buffer item id별로 갱신한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_view_ad8bb5814fe509062a9f7b5f26dda72e2}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Set\+Attr@{Set\+Attr}}
+\index{Set\+Attr@{Set\+Attr}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Set\+Attr(const Attr \&e\+Attr, const G\+B\+O\+O\+L \&b\+Set)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Set\+Attr (
+\begin{DoxyParamCaption}
+\item[{const {\bf Attr} \&}]{e\+Attr, }
+\item[{const {\bf G\+B\+O\+O\+L} \&}]{b\+Set}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_view_ad8bb5814fe509062a9f7b5f26dda72e2}
+\hypertarget{class_c_g3_d_view_ab02270092cf4823b2f0ee2ff7ab705fa}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!Start\+Zoom@{Start\+Zoom}}
+\index{Start\+Zoom@{Start\+Zoom}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{Start\+Zoom()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+View\+::\+Start\+Zoom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{class_c_g3_d_view_ab02270092cf4823b2f0ee2ff7ab705fa}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_g3_d_view_a0066bb24d9976fa6f552be214b59e211}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!C\+G3\+D\+Test@{C\+G3\+D\+Test}}
+\index{C\+G3\+D\+Test@{C\+G3\+D\+Test}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{C\+G3\+D\+Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf C\+G3\+D\+Test}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_c_g3_d_view_a0066bb24d9976fa6f552be214b59e211}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_g3_d_view_a3a518f80ba92ae8dfe33eb34a89da6e2}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!m\+\_\+camera@{m\+\_\+camera}}
+\index{m\+\_\+camera@{m\+\_\+camera}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{m\+\_\+camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Camera} C\+G3\+D\+View\+::m\+\_\+camera\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a3a518f80ba92ae8dfe33eb34a89da6e2}
+\hypertarget{class_c_g3_d_view_a1c7992e14ec03d22468246c8d496d136}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!m\+\_\+dw\+Attr@{m\+\_\+dw\+Attr}}
+\index{m\+\_\+dw\+Attr@{m\+\_\+dw\+Attr}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{m\+\_\+dw\+Attr}]{\setlength{\rightskip}{0pt plus 5cm}D\+W\+O\+R\+D32 C\+G3\+D\+View\+::m\+\_\+dw\+Attr\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a1c7992e14ec03d22468246c8d496d136}
+\hypertarget{class_c_g3_d_view_adeaabb1134dc71be0edc6cafcfdceae5}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!m\+\_\+init\+Data@{m\+\_\+init\+Data}}
+\index{m\+\_\+init\+Data@{m\+\_\+init\+Data}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{m\+\_\+init\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G3\+D\+View\+Init\+Data} C\+G3\+D\+View\+::m\+\_\+init\+Data\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_adeaabb1134dc71be0edc6cafcfdceae5}
+\hypertarget{class_c_g3_d_view_a3192069b4c6def0c1ab9df02efe36d37}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!m\+\_\+p\+D\+C@{m\+\_\+p\+D\+C}}
+\index{m\+\_\+p\+D\+C@{m\+\_\+p\+D\+C}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{m\+\_\+p\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+D\+C}$\ast$ C\+G3\+D\+View\+::m\+\_\+p\+D\+C\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a3192069b4c6def0c1ab9df02efe36d37}
+\hypertarget{class_c_g3_d_view_a4e9001b00d6f9318c41cfc4536a7c34c}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!m\+\_\+p\+D\+C\+Target\+View@{m\+\_\+p\+D\+C\+Target\+View}}
+\index{m\+\_\+p\+D\+C\+Target\+View@{m\+\_\+p\+D\+C\+Target\+View}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{m\+\_\+p\+D\+C\+Target\+View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+D\+C\+Target\+View}$\ast$ C\+G3\+D\+View\+::m\+\_\+p\+D\+C\+Target\+View\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_a4e9001b00d6f9318c41cfc4536a7c34c}
+\hypertarget{class_c_g3_d_view_aeac573889f9cd92ce742290fbd3aa810}{}\index{C\+G3\+D\+View@{C\+G3\+D\+View}!m\+\_\+pt\+Last\+Mouse\+Pos@{m\+\_\+pt\+Last\+Mouse\+Pos}}
+\index{m\+\_\+pt\+Last\+Mouse\+Pos@{m\+\_\+pt\+Last\+Mouse\+Pos}!C\+G3\+D\+View@{C\+G3\+D\+View}}
+\subsubsection[{m\+\_\+pt\+Last\+Mouse\+Pos}]{\setlength{\rightskip}{0pt plus 5cm}C\+Point C\+G3\+D\+View\+::m\+\_\+pt\+Last\+Mouse\+Pos\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_view_aeac573889f9cd92ce742290fbd3aa810}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g3_d_view_8h}{G3\+D\+View.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g3_d_view_8cpp}{G3\+D\+View.\+cpp}\end{DoxyCompactItemize}

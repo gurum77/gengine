@@ -1,0 +1,189 @@
+.TH "CMainFrame" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMainFrame \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MainFrm\&.h>\fP
+.PP
+Inherits CMDIFrameWnd, and CMDIFrameWndEx\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCMainFrame\fP ()"
+.br
+.ti -1c
+.RI "virtual BOOL \fBPreCreateWindow\fP (CREATESTRUCT &cs)"
+.br
+.ti -1c
+.RI "virtual \fB~CMainFrame\fP ()"
+.br
+.ti -1c
+.RI "\fBCMainFrame\fP ()"
+.br
+.ti -1c
+.RI "virtual BOOL \fBPreCreateWindow\fP (CREATESTRUCT &cs)"
+.br
+.ti -1c
+.RI "virtual \fB~CMainFrame\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnControlSpaceview\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "afx_msg int \fBOnCreate\fP (LPCREATESTRUCT lpCreateStruct)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnWindowManager\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnApplicationLook\fP (UINT id)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnUpdateApplicationLook\fP (CCmdUI *pCmdUI)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnViewCaptionBar\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnUpdateViewCaptionBar\fP (CCmdUI *pCmdUI)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnOptions\fP ()"
+.br
+.ti -1c
+.RI "BOOL \fBCreateOutlookBar\fP (CMFCOutlookBar &bar, UINT uiID, CMFCShellTreeCtrl &tree, \fBCCalendarBar\fP &calendar, int nInitialWidth)"
+.br
+.ti -1c
+.RI "BOOL \fBCreateCaptionBar\fP ()"
+.br
+.ti -1c
+.RI "int \fBFindFocusedOutlookWnd\fP (CMFCOutlookBarTabCtrl **ppOutlookWnd)"
+.br
+.ti -1c
+.RI "CMFCOutlookBarTabCtrl * \fBFindOutlookParent\fP (CWnd *pWnd)"
+.br
+.ti -1c
+.RI "afx_msg int \fBOnCreate\fP (LPCREATESTRUCT lpCreateStruct)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "CMFCRibbonBar \fBm_wndRibbonBar\fP"
+.br
+.ti -1c
+.RI "CMFCRibbonApplicationButton \fBm_MainButton\fP"
+.br
+.ti -1c
+.RI "CMFCToolBarImages \fBm_PanelImages\fP"
+.br
+.ti -1c
+.RI "CMFCRibbonStatusBar \fBm_wndStatusBar\fP"
+.br
+.ti -1c
+.RI "\fBCOutlookBar\fP \fBm_wndNavigationBar\fP"
+.br
+.ti -1c
+.RI "CMFCShellTreeCtrl \fBm_wndTree\fP"
+.br
+.ti -1c
+.RI "\fBCCalendarBar\fP \fBm_wndCalendar\fP"
+.br
+.ti -1c
+.RI "CMFCCaptionBar \fBm_wndCaptionBar\fP"
+.br
+.ti -1c
+.RI "CMFCOutlookBarTabCtrl * \fBm_pCurrOutlookWnd\fP"
+.br
+.ti -1c
+.RI "CMFCOutlookBarPane * \fBm_pCurrOutlookPage\fP"
+.br
+.ti -1c
+.RI "CToolBar \fBm_wndToolBar\fP"
+.br
+.ti -1c
+.RI "CStatusBar \fBm_wndStatusBar\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CMainFrame::CMainFrame ()"
+
+.SS "CMainFrame::~CMainFrame ()\fC [virtual]\fP"
+
+.SS "CMainFrame::CMainFrame ()"
+
+.SS "virtual CMainFrame::~CMainFrame ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "BOOL CMainFrame::CreateCaptionBar ()\fC [protected]\fP"
+
+.SS "BOOL CMainFrame::CreateOutlookBar (CMFCOutlookBar & bar, UINT uiID, CMFCShellTreeCtrl & tree, \fBCCalendarBar\fP & calendar, int nInitialWidth)\fC [protected]\fP"
+
+.SS "int CMainFrame::FindFocusedOutlookWnd (CMFCOutlookBarTabCtrl ** ppOutlookWnd)\fC [protected]\fP"
+
+.SS "CMFCOutlookBarTabCtrl* CMainFrame::FindOutlookParent (CWnd * pWnd)\fC [protected]\fP"
+
+.SS "void CMainFrame::OnApplicationLook (UINT id)\fC [protected]\fP"
+
+.SS "void CMainFrame::OnControlSpaceview ()"
+
+.SS "afx_msg int CMainFrame::OnCreate (LPCREATESTRUCT lpCreateStruct)\fC [protected]\fP"
+
+.SS "int CMainFrame::OnCreate (LPCREATESTRUCT lpCreateStruct)\fC [protected]\fP"
+
+.SS "void CMainFrame::OnOptions ()\fC [protected]\fP"
+
+.SS "void CMainFrame::OnUpdateApplicationLook (CCmdUI * pCmdUI)\fC [protected]\fP"
+
+.SS "void CMainFrame::OnUpdateViewCaptionBar (CCmdUI * pCmdUI)\fC [protected]\fP"
+
+.SS "void CMainFrame::OnViewCaptionBar ()\fC [protected]\fP"
+
+.SS "void CMainFrame::OnWindowManager ()\fC [protected]\fP"
+
+.SS "virtual BOOL CMainFrame::PreCreateWindow (CREATESTRUCT & cs)\fC [virtual]\fP"
+
+.SS "BOOL CMainFrame::PreCreateWindow (CREATESTRUCT & cs)\fC [virtual]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "CMFCRibbonApplicationButton CMainFrame::m_MainButton\fC [protected]\fP"
+
+.SS "CMFCToolBarImages CMainFrame::m_PanelImages\fC [protected]\fP"
+
+.SS "CMFCOutlookBarPane* CMainFrame::m_pCurrOutlookPage\fC [protected]\fP"
+
+.SS "CMFCOutlookBarTabCtrl* CMainFrame::m_pCurrOutlookWnd\fC [protected]\fP"
+
+.SS "\fBCCalendarBar\fP CMainFrame::m_wndCalendar\fC [protected]\fP"
+
+.SS "CMFCCaptionBar CMainFrame::m_wndCaptionBar\fC [protected]\fP"
+
+.SS "\fBCOutlookBar\fP CMainFrame::m_wndNavigationBar\fC [protected]\fP"
+
+.SS "CMFCRibbonBar CMainFrame::m_wndRibbonBar\fC [protected]\fP"
+
+.SS "CStatusBar CMainFrame::m_wndStatusBar\fC [protected]\fP"
+
+.SS "CMFCRibbonStatusBar CMainFrame::m_wndStatusBar\fC [protected]\fP"
+
+.SS "CToolBar CMainFrame::m_wndToolBar\fC [protected]\fP"
+
+.SS "CMFCShellTreeCtrl CMainFrame::m_wndTree\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

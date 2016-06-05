@@ -1,0 +1,386 @@
+\hypertarget{classp2t_1_1_triangle}{}\section{p2t\+:\+:Triangle Class Reference}
+\label{classp2t_1_1_triangle}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+
+
+{\ttfamily \#include $<$shapes.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classp2t_1_1_triangle_a9f057674cc3e7c0ed28c8e1237f55bea}{Triangle} (\hyperlink{structp2t_1_1_point}{Point} \&a, \hyperlink{structp2t_1_1_point}{Point} \&b, \hyperlink{structp2t_1_1_point}{Point} \&c)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{structp2t_1_1_point}{Point} $\ast$ \hyperlink{classp2t_1_1_triangle_a3cb89e5408bd4d35194ee6e179ad6df4}{Get\+Point} (const int \&index)
+\item 
+\hyperlink{structp2t_1_1_point}{Point} $\ast$ \hyperlink{classp2t_1_1_triangle_a5b91de7beebeedd89d3ecbb984dbb5bf}{Point\+C\+W} (\hyperlink{structp2t_1_1_point}{Point} \&point)
+\item 
+\hyperlink{structp2t_1_1_point}{Point} $\ast$ \hyperlink{classp2t_1_1_triangle_a8522e2b9fcc5f27dd27bb6c7c3eea515}{Point\+C\+C\+W} (\hyperlink{structp2t_1_1_point}{Point} \&point)
+\item 
+\hyperlink{structp2t_1_1_point}{Point} $\ast$ \hyperlink{classp2t_1_1_triangle_a1bf7aa95b095936c6973d8f84f55d880}{Opposite\+Point} (\hyperlink{classp2t_1_1_triangle}{Triangle} \&t, \hyperlink{structp2t_1_1_point}{Point} \&p)
+\item 
+\hyperlink{classp2t_1_1_triangle}{Triangle} $\ast$ \hyperlink{classp2t_1_1_triangle_a8c3e2865d875d656b8f1d4c8004ca7c3}{Get\+Neighbor} (const int \&index)
+\item 
+void \hyperlink{classp2t_1_1_triangle_abc085307796eddc8e56a4502244f23e3}{Mark\+Neighbor} (\hyperlink{structp2t_1_1_point}{Point} $\ast$p1, \hyperlink{structp2t_1_1_point}{Point} $\ast$p2, \hyperlink{classp2t_1_1_triangle}{Triangle} $\ast$t)
+\item 
+void \hyperlink{classp2t_1_1_triangle_a4397122da4abb7940da1f8609973a8f4}{Mark\+Neighbor} (\hyperlink{classp2t_1_1_triangle}{Triangle} \&t)
+\item 
+void \hyperlink{classp2t_1_1_triangle_a519f4f7a7a72223838d3e49c4745e717}{Mark\+Constrained\+Edge} (const int index)
+\item 
+void \hyperlink{classp2t_1_1_triangle_a40155610e44359717c4689af073bf792}{Mark\+Constrained\+Edge} (\hyperlink{structp2t_1_1_edge}{Edge} \&edge)
+\item 
+void \hyperlink{classp2t_1_1_triangle_a4eaa58a5b6a62a25911ef23cd489ecff}{Mark\+Constrained\+Edge} (\hyperlink{structp2t_1_1_point}{Point} $\ast$p, \hyperlink{structp2t_1_1_point}{Point} $\ast$q)
+\item 
+int \hyperlink{classp2t_1_1_triangle_a0215092bb64e831308bf5fcefd065337}{Index} (const \hyperlink{structp2t_1_1_point}{Point} $\ast$p)
+\item 
+int \hyperlink{classp2t_1_1_triangle_ad63ce0b5e1642a0905f75863720b0f24}{Edge\+Index} (const \hyperlink{structp2t_1_1_point}{Point} $\ast$p1, const \hyperlink{structp2t_1_1_point}{Point} $\ast$p2)
+\item 
+\hyperlink{classp2t_1_1_triangle}{Triangle} $\ast$ \hyperlink{classp2t_1_1_triangle_a1fc0b7c7e75953573ebcf042b19bb8cc}{Neighbor\+C\+W} (\hyperlink{structp2t_1_1_point}{Point} \&point)
+\item 
+\hyperlink{classp2t_1_1_triangle}{Triangle} $\ast$ \hyperlink{classp2t_1_1_triangle_a73e3ecdd02a0d387d7c1727b764fd29e}{Neighbor\+C\+C\+W} (\hyperlink{structp2t_1_1_point}{Point} \&point)
+\item 
+bool \hyperlink{classp2t_1_1_triangle_a9e58db457c2aeedc9e913a387acdbdcc}{Get\+Constrained\+Edge\+C\+C\+W} (\hyperlink{structp2t_1_1_point}{Point} \&p)
+\item 
+bool \hyperlink{classp2t_1_1_triangle_a1b2cb367f2d37df28729554e81a8a349}{Get\+Constrained\+Edge\+C\+W} (\hyperlink{structp2t_1_1_point}{Point} \&p)
+\item 
+void \hyperlink{classp2t_1_1_triangle_a756ab18c4a3ee05dc4b05ed398cd24e8}{Set\+Constrained\+Edge\+C\+C\+W} (\hyperlink{structp2t_1_1_point}{Point} \&p, bool ce)
+\item 
+void \hyperlink{classp2t_1_1_triangle_a4f8c729e2eb81de8ddc87c299a2a4acc}{Set\+Constrained\+Edge\+C\+W} (\hyperlink{structp2t_1_1_point}{Point} \&p, bool ce)
+\item 
+bool \hyperlink{classp2t_1_1_triangle_a49c42af5395b1e91bbdbf60e54a2ed5c}{Get\+Delunay\+Edge\+C\+C\+W} (\hyperlink{structp2t_1_1_point}{Point} \&p)
+\item 
+bool \hyperlink{classp2t_1_1_triangle_af67e361a97a73f3df511c1bb6136bcd0}{Get\+Delunay\+Edge\+C\+W} (\hyperlink{structp2t_1_1_point}{Point} \&p)
+\item 
+void \hyperlink{classp2t_1_1_triangle_a9c03794465c4b11d44fb4a70e293d6b6}{Set\+Delunay\+Edge\+C\+C\+W} (\hyperlink{structp2t_1_1_point}{Point} \&p, bool e)
+\item 
+void \hyperlink{classp2t_1_1_triangle_a88d507283e97e0aa4331879c377debc7}{Set\+Delunay\+Edge\+C\+W} (\hyperlink{structp2t_1_1_point}{Point} \&p, bool e)
+\item 
+bool \hyperlink{classp2t_1_1_triangle_a8a64883e7f85899728fc01e14710eb29}{Contains} (\hyperlink{structp2t_1_1_point}{Point} $\ast$p)
+\item 
+bool \hyperlink{classp2t_1_1_triangle_a6f591a1d0eeea1199f522f5613bab5a3}{Contains} (const \hyperlink{structp2t_1_1_edge}{Edge} \&e)
+\item 
+bool \hyperlink{classp2t_1_1_triangle_aea43a2c5f9bab535b44bd9751498747f}{Contains} (\hyperlink{structp2t_1_1_point}{Point} $\ast$p, \hyperlink{structp2t_1_1_point}{Point} $\ast$q)
+\item 
+void \hyperlink{classp2t_1_1_triangle_a3dcb2db468072495f8f287a749e3cf2a}{Legalize} (\hyperlink{structp2t_1_1_point}{Point} \&point)
+\item 
+void \hyperlink{classp2t_1_1_triangle_ac1c464e079f8c373717640e70a10cba9}{Legalize} (\hyperlink{structp2t_1_1_point}{Point} \&opoint, \hyperlink{structp2t_1_1_point}{Point} \&npoint)
+\item 
+void \hyperlink{classp2t_1_1_triangle_ad09dfbf0bc0917e4f0b32ffa735f5e6f}{Clear} ()
+\item 
+void \hyperlink{classp2t_1_1_triangle_ad832db4869372180797a90afc83f59df}{Clear\+Neighbor} (\hyperlink{classp2t_1_1_triangle}{Triangle} $\ast$triangle)
+\item 
+void \hyperlink{classp2t_1_1_triangle_aae3687cbc5c1b3e4964b3072ab97c463}{Clear\+Neighbors} ()
+\item 
+void \hyperlink{classp2t_1_1_triangle_a435c14700eca2bee3c0e91ad8de051d8}{Clear\+Delunay\+Edges} ()
+\item 
+bool \hyperlink{classp2t_1_1_triangle_a9aaa9ee5f2184be6ffe64fe05b037233}{Is\+Interior} ()
+\item 
+void \hyperlink{classp2t_1_1_triangle_a6b39c78063b3af04d8cc156f4d4758c4}{Is\+Interior} (bool b)
+\item 
+\hyperlink{classp2t_1_1_triangle}{Triangle} \& \hyperlink{classp2t_1_1_triangle_a2623e8f9bcd5267728d77edb30c8dd2d}{Neighbor\+Across} (\hyperlink{structp2t_1_1_point}{Point} \&opoint)
+\item 
+void \hyperlink{classp2t_1_1_triangle_aeca5d9dadee27b9038618be9e450d030}{Debug\+Print} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classp2t_1_1_triangle_a66aea3f70ccfd359372cb747581f1653}{constrained\+\_\+edge} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Flags to determine if an edge is a Constrained edge. \end{DoxyCompactList}\item 
+bool \hyperlink{classp2t_1_1_triangle_acbfdd0dba623a7b5d1dc8b81059c48b5}{delaunay\+\_\+edge} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Flags to determine if an edge is a Delauney edge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classp2t_1_1_triangle_a9f057674cc3e7c0ed28c8e1237f55bea}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Triangle@{Triangle}}
+\index{Triangle@{Triangle}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Triangle(\+Point \&a, Point \&b, Point \&c)}]{\setlength{\rightskip}{0pt plus 5cm}p2t\+::\+Triangle\+::\+Triangle (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{a, }
+\item[{{\bf Point} \&}]{b, }
+\item[{{\bf Point} \&}]{c}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a9f057674cc3e7c0ed28c8e1237f55bea}
+
+
+Constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classp2t_1_1_triangle_ad09dfbf0bc0917e4f0b32ffa735f5e6f}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Clear@{Clear}}
+\index{Clear@{Clear}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Clear()}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_ad09dfbf0bc0917e4f0b32ffa735f5e6f}
+Clears all references to all other triangles and points \hypertarget{classp2t_1_1_triangle_a435c14700eca2bee3c0e91ad8de051d8}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Clear\+Delunay\+Edges@{Clear\+Delunay\+Edges}}
+\index{Clear\+Delunay\+Edges@{Clear\+Delunay\+Edges}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Clear\+Delunay\+Edges()}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Clear\+Delunay\+Edges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a435c14700eca2bee3c0e91ad8de051d8}
+\hypertarget{classp2t_1_1_triangle_ad832db4869372180797a90afc83f59df}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Clear\+Neighbor@{Clear\+Neighbor}}
+\index{Clear\+Neighbor@{Clear\+Neighbor}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Clear\+Neighbor(\+Triangle $\ast$triangle)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Clear\+Neighbor (
+\begin{DoxyParamCaption}
+\item[{{\bf Triangle} $\ast$}]{triangle}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_ad832db4869372180797a90afc83f59df}
+\hypertarget{classp2t_1_1_triangle_aae3687cbc5c1b3e4964b3072ab97c463}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Clear\+Neighbors@{Clear\+Neighbors}}
+\index{Clear\+Neighbors@{Clear\+Neighbors}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Clear\+Neighbors()}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Clear\+Neighbors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_aae3687cbc5c1b3e4964b3072ab97c463}
+\hypertarget{classp2t_1_1_triangle_a8a64883e7f85899728fc01e14710eb29}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Contains@{Contains}}
+\index{Contains@{Contains}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Contains(\+Point $\ast$p)}]{\setlength{\rightskip}{0pt plus 5cm}bool p2t\+::\+Triangle\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classp2t_1_1_triangle_a8a64883e7f85899728fc01e14710eb29}
+\hypertarget{classp2t_1_1_triangle_a6f591a1d0eeea1199f522f5613bab5a3}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Contains@{Contains}}
+\index{Contains@{Contains}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Contains(const Edge \&e)}]{\setlength{\rightskip}{0pt plus 5cm}bool p2t\+::\+Triangle\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf Edge} \&}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classp2t_1_1_triangle_a6f591a1d0eeea1199f522f5613bab5a3}
+\hypertarget{classp2t_1_1_triangle_aea43a2c5f9bab535b44bd9751498747f}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Contains@{Contains}}
+\index{Contains@{Contains}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Contains(\+Point $\ast$p, Point $\ast$q)}]{\setlength{\rightskip}{0pt plus 5cm}bool p2t\+::\+Triangle\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{p, }
+\item[{{\bf Point} $\ast$}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classp2t_1_1_triangle_aea43a2c5f9bab535b44bd9751498747f}
+\hypertarget{classp2t_1_1_triangle_aeca5d9dadee27b9038618be9e450d030}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Debug\+Print@{Debug\+Print}}
+\index{Debug\+Print@{Debug\+Print}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Debug\+Print()}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Debug\+Print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_aeca5d9dadee27b9038618be9e450d030}
+\hypertarget{classp2t_1_1_triangle_ad63ce0b5e1642a0905f75863720b0f24}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Edge\+Index@{Edge\+Index}}
+\index{Edge\+Index@{Edge\+Index}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Edge\+Index(const Point $\ast$p1, const Point $\ast$p2)}]{\setlength{\rightskip}{0pt plus 5cm}int p2t\+::\+Triangle\+::\+Edge\+Index (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{p1, }
+\item[{const {\bf Point} $\ast$}]{p2}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_ad63ce0b5e1642a0905f75863720b0f24}
+\hypertarget{classp2t_1_1_triangle_a9e58db457c2aeedc9e913a387acdbdcc}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Get\+Constrained\+Edge\+C\+C\+W@{Get\+Constrained\+Edge\+C\+C\+W}}
+\index{Get\+Constrained\+Edge\+C\+C\+W@{Get\+Constrained\+Edge\+C\+C\+W}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Get\+Constrained\+Edge\+C\+C\+W(\+Point \&p)}]{\setlength{\rightskip}{0pt plus 5cm}bool p2t\+::\+Triangle\+::\+Get\+Constrained\+Edge\+C\+C\+W (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{p}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a9e58db457c2aeedc9e913a387acdbdcc}
+\hypertarget{classp2t_1_1_triangle_a1b2cb367f2d37df28729554e81a8a349}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Get\+Constrained\+Edge\+C\+W@{Get\+Constrained\+Edge\+C\+W}}
+\index{Get\+Constrained\+Edge\+C\+W@{Get\+Constrained\+Edge\+C\+W}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Get\+Constrained\+Edge\+C\+W(\+Point \&p)}]{\setlength{\rightskip}{0pt plus 5cm}bool p2t\+::\+Triangle\+::\+Get\+Constrained\+Edge\+C\+W (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{p}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a1b2cb367f2d37df28729554e81a8a349}
+\hypertarget{classp2t_1_1_triangle_a49c42af5395b1e91bbdbf60e54a2ed5c}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Get\+Delunay\+Edge\+C\+C\+W@{Get\+Delunay\+Edge\+C\+C\+W}}
+\index{Get\+Delunay\+Edge\+C\+C\+W@{Get\+Delunay\+Edge\+C\+C\+W}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Get\+Delunay\+Edge\+C\+C\+W(\+Point \&p)}]{\setlength{\rightskip}{0pt plus 5cm}bool p2t\+::\+Triangle\+::\+Get\+Delunay\+Edge\+C\+C\+W (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{p}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a49c42af5395b1e91bbdbf60e54a2ed5c}
+\hypertarget{classp2t_1_1_triangle_af67e361a97a73f3df511c1bb6136bcd0}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Get\+Delunay\+Edge\+C\+W@{Get\+Delunay\+Edge\+C\+W}}
+\index{Get\+Delunay\+Edge\+C\+W@{Get\+Delunay\+Edge\+C\+W}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Get\+Delunay\+Edge\+C\+W(\+Point \&p)}]{\setlength{\rightskip}{0pt plus 5cm}bool p2t\+::\+Triangle\+::\+Get\+Delunay\+Edge\+C\+W (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{p}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_af67e361a97a73f3df511c1bb6136bcd0}
+\hypertarget{classp2t_1_1_triangle_a8c3e2865d875d656b8f1d4c8004ca7c3}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Get\+Neighbor@{Get\+Neighbor}}
+\index{Get\+Neighbor@{Get\+Neighbor}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Get\+Neighbor(const int \&index)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Triangle} $\ast$ p2t\+::\+Triangle\+::\+Get\+Neighbor (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classp2t_1_1_triangle_a8c3e2865d875d656b8f1d4c8004ca7c3}
+\hypertarget{classp2t_1_1_triangle_a3cb89e5408bd4d35194ee6e179ad6df4}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Get\+Point@{Get\+Point}}
+\index{Get\+Point@{Get\+Point}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Get\+Point(const int \&index)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} $\ast$ p2t\+::\+Triangle\+::\+Get\+Point (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classp2t_1_1_triangle_a3cb89e5408bd4d35194ee6e179ad6df4}
+\hypertarget{classp2t_1_1_triangle_a0215092bb64e831308bf5fcefd065337}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Index@{Index}}
+\index{Index@{Index}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Index(const Point $\ast$p)}]{\setlength{\rightskip}{0pt plus 5cm}int p2t\+::\+Triangle\+::\+Index (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a0215092bb64e831308bf5fcefd065337}
+\hypertarget{classp2t_1_1_triangle_a9aaa9ee5f2184be6ffe64fe05b037233}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Is\+Interior@{Is\+Interior}}
+\index{Is\+Interior@{Is\+Interior}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Is\+Interior()}]{\setlength{\rightskip}{0pt plus 5cm}bool p2t\+::\+Triangle\+::\+Is\+Interior (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classp2t_1_1_triangle_a9aaa9ee5f2184be6ffe64fe05b037233}
+\hypertarget{classp2t_1_1_triangle_a6b39c78063b3af04d8cc156f4d4758c4}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Is\+Interior@{Is\+Interior}}
+\index{Is\+Interior@{Is\+Interior}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Is\+Interior(bool b)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Is\+Interior (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classp2t_1_1_triangle_a6b39c78063b3af04d8cc156f4d4758c4}
+\hypertarget{classp2t_1_1_triangle_a3dcb2db468072495f8f287a749e3cf2a}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Legalize@{Legalize}}
+\index{Legalize@{Legalize}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Legalize(\+Point \&point)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Legalize (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{point}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a3dcb2db468072495f8f287a749e3cf2a}
+\hypertarget{classp2t_1_1_triangle_ac1c464e079f8c373717640e70a10cba9}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Legalize@{Legalize}}
+\index{Legalize@{Legalize}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Legalize(\+Point \&opoint, Point \&npoint)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Legalize (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{opoint, }
+\item[{{\bf Point} \&}]{npoint}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_ac1c464e079f8c373717640e70a10cba9}
+\hypertarget{classp2t_1_1_triangle_a519f4f7a7a72223838d3e49c4745e717}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Mark\+Constrained\+Edge@{Mark\+Constrained\+Edge}}
+\index{Mark\+Constrained\+Edge@{Mark\+Constrained\+Edge}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Mark\+Constrained\+Edge(const int index)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Mark\+Constrained\+Edge (
+\begin{DoxyParamCaption}
+\item[{const int}]{index}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a519f4f7a7a72223838d3e49c4745e717}
+\hypertarget{classp2t_1_1_triangle_a40155610e44359717c4689af073bf792}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Mark\+Constrained\+Edge@{Mark\+Constrained\+Edge}}
+\index{Mark\+Constrained\+Edge@{Mark\+Constrained\+Edge}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Mark\+Constrained\+Edge(\+Edge \&edge)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Mark\+Constrained\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf Edge} \&}]{edge}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a40155610e44359717c4689af073bf792}
+\hypertarget{classp2t_1_1_triangle_a4eaa58a5b6a62a25911ef23cd489ecff}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Mark\+Constrained\+Edge@{Mark\+Constrained\+Edge}}
+\index{Mark\+Constrained\+Edge@{Mark\+Constrained\+Edge}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Mark\+Constrained\+Edge(\+Point $\ast$p, Point $\ast$q)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Mark\+Constrained\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{p, }
+\item[{{\bf Point} $\ast$}]{q}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a4eaa58a5b6a62a25911ef23cd489ecff}
+\hypertarget{classp2t_1_1_triangle_abc085307796eddc8e56a4502244f23e3}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Mark\+Neighbor@{Mark\+Neighbor}}
+\index{Mark\+Neighbor@{Mark\+Neighbor}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Mark\+Neighbor(\+Point $\ast$p1, Point $\ast$p2, Triangle $\ast$t)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Mark\+Neighbor (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{p1, }
+\item[{{\bf Point} $\ast$}]{p2, }
+\item[{{\bf Triangle} $\ast$}]{t}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_abc085307796eddc8e56a4502244f23e3}
+\hypertarget{classp2t_1_1_triangle_a4397122da4abb7940da1f8609973a8f4}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Mark\+Neighbor@{Mark\+Neighbor}}
+\index{Mark\+Neighbor@{Mark\+Neighbor}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Mark\+Neighbor(\+Triangle \&t)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Mark\+Neighbor (
+\begin{DoxyParamCaption}
+\item[{{\bf Triangle} \&}]{t}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a4397122da4abb7940da1f8609973a8f4}
+\hypertarget{classp2t_1_1_triangle_a2623e8f9bcd5267728d77edb30c8dd2d}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Neighbor\+Across@{Neighbor\+Across}}
+\index{Neighbor\+Across@{Neighbor\+Across}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Neighbor\+Across(\+Point \&opoint)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Triangle} \& p2t\+::\+Triangle\+::\+Neighbor\+Across (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{opoint}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a2623e8f9bcd5267728d77edb30c8dd2d}
+\hypertarget{classp2t_1_1_triangle_a73e3ecdd02a0d387d7c1727b764fd29e}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Neighbor\+C\+C\+W@{Neighbor\+C\+C\+W}}
+\index{Neighbor\+C\+C\+W@{Neighbor\+C\+C\+W}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Neighbor\+C\+C\+W(\+Point \&point)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Triangle} $\ast$ p2t\+::\+Triangle\+::\+Neighbor\+C\+C\+W (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{point}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a73e3ecdd02a0d387d7c1727b764fd29e}
+\hypertarget{classp2t_1_1_triangle_a1fc0b7c7e75953573ebcf042b19bb8cc}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Neighbor\+C\+W@{Neighbor\+C\+W}}
+\index{Neighbor\+C\+W@{Neighbor\+C\+W}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Neighbor\+C\+W(\+Point \&point)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Triangle} $\ast$ p2t\+::\+Triangle\+::\+Neighbor\+C\+W (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{point}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a1fc0b7c7e75953573ebcf042b19bb8cc}
+\hypertarget{classp2t_1_1_triangle_a1bf7aa95b095936c6973d8f84f55d880}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Opposite\+Point@{Opposite\+Point}}
+\index{Opposite\+Point@{Opposite\+Point}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Opposite\+Point(\+Triangle \&t, Point \&p)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} $\ast$ p2t\+::\+Triangle\+::\+Opposite\+Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Triangle} \&}]{t, }
+\item[{{\bf Point} \&}]{p}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a1bf7aa95b095936c6973d8f84f55d880}
+\hypertarget{classp2t_1_1_triangle_a8522e2b9fcc5f27dd27bb6c7c3eea515}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Point\+C\+C\+W@{Point\+C\+C\+W}}
+\index{Point\+C\+C\+W@{Point\+C\+C\+W}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Point\+C\+C\+W(\+Point \&point)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} $\ast$ p2t\+::\+Triangle\+::\+Point\+C\+C\+W (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{point}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a8522e2b9fcc5f27dd27bb6c7c3eea515}
+\hypertarget{classp2t_1_1_triangle_a5b91de7beebeedd89d3ecbb984dbb5bf}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Point\+C\+W@{Point\+C\+W}}
+\index{Point\+C\+W@{Point\+C\+W}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Point\+C\+W(\+Point \&point)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} $\ast$ p2t\+::\+Triangle\+::\+Point\+C\+W (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{point}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a5b91de7beebeedd89d3ecbb984dbb5bf}
+\hypertarget{classp2t_1_1_triangle_a756ab18c4a3ee05dc4b05ed398cd24e8}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Set\+Constrained\+Edge\+C\+C\+W@{Set\+Constrained\+Edge\+C\+C\+W}}
+\index{Set\+Constrained\+Edge\+C\+C\+W@{Set\+Constrained\+Edge\+C\+C\+W}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Set\+Constrained\+Edge\+C\+C\+W(\+Point \&p, bool ce)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Set\+Constrained\+Edge\+C\+C\+W (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{p, }
+\item[{bool}]{ce}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a756ab18c4a3ee05dc4b05ed398cd24e8}
+\hypertarget{classp2t_1_1_triangle_a4f8c729e2eb81de8ddc87c299a2a4acc}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Set\+Constrained\+Edge\+C\+W@{Set\+Constrained\+Edge\+C\+W}}
+\index{Set\+Constrained\+Edge\+C\+W@{Set\+Constrained\+Edge\+C\+W}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Set\+Constrained\+Edge\+C\+W(\+Point \&p, bool ce)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Set\+Constrained\+Edge\+C\+W (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{p, }
+\item[{bool}]{ce}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a4f8c729e2eb81de8ddc87c299a2a4acc}
+\hypertarget{classp2t_1_1_triangle_a9c03794465c4b11d44fb4a70e293d6b6}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Set\+Delunay\+Edge\+C\+C\+W@{Set\+Delunay\+Edge\+C\+C\+W}}
+\index{Set\+Delunay\+Edge\+C\+C\+W@{Set\+Delunay\+Edge\+C\+C\+W}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Set\+Delunay\+Edge\+C\+C\+W(\+Point \&p, bool e)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Set\+Delunay\+Edge\+C\+C\+W (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{p, }
+\item[{bool}]{e}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a9c03794465c4b11d44fb4a70e293d6b6}
+\hypertarget{classp2t_1_1_triangle_a88d507283e97e0aa4331879c377debc7}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!Set\+Delunay\+Edge\+C\+W@{Set\+Delunay\+Edge\+C\+W}}
+\index{Set\+Delunay\+Edge\+C\+W@{Set\+Delunay\+Edge\+C\+W}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{Set\+Delunay\+Edge\+C\+W(\+Point \&p, bool e)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Triangle\+::\+Set\+Delunay\+Edge\+C\+W (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{p, }
+\item[{bool}]{e}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_triangle_a88d507283e97e0aa4331879c377debc7}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classp2t_1_1_triangle_a66aea3f70ccfd359372cb747581f1653}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!constrained\+\_\+edge@{constrained\+\_\+edge}}
+\index{constrained\+\_\+edge@{constrained\+\_\+edge}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{constrained\+\_\+edge}]{\setlength{\rightskip}{0pt plus 5cm}bool p2t\+::\+Triangle\+::constrained\+\_\+edge\mbox{[}3\mbox{]}}\label{classp2t_1_1_triangle_a66aea3f70ccfd359372cb747581f1653}
+
+
+Flags to determine if an edge is a Constrained edge. 
+
+\hypertarget{classp2t_1_1_triangle_acbfdd0dba623a7b5d1dc8b81059c48b5}{}\index{p2t\+::\+Triangle@{p2t\+::\+Triangle}!delaunay\+\_\+edge@{delaunay\+\_\+edge}}
+\index{delaunay\+\_\+edge@{delaunay\+\_\+edge}!p2t\+::\+Triangle@{p2t\+::\+Triangle}}
+\subsubsection[{delaunay\+\_\+edge}]{\setlength{\rightskip}{0pt plus 5cm}bool p2t\+::\+Triangle\+::delaunay\+\_\+edge\mbox{[}3\mbox{]}}\label{classp2t_1_1_triangle_acbfdd0dba623a7b5d1dc8b81059c48b5}
+
+
+Flags to determine if an edge is a Delauney edge. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Common/common/\hyperlink{shapes_8h}{shapes.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Common/common/\hyperlink{shapes_8cc}{shapes.\+cc}\end{DoxyCompactItemize}

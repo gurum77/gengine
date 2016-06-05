@@ -1,0 +1,88 @@
+.TH "CG3DCallBackManager" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CG3DCallBackManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <G3DCallBackManager\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCG3DCallBackManager\fP ()"
+.br
+.ti -1c
+.RI "\fB~CG3DCallBackManager\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBGBOOL\fP \fBAddDrawingCallBack\fP (const CAtlString &strType, \fBG3D_DRAWING_CALLBACK\fP pf)"
+.br
+.ti -1c
+.RI "static \fBG3D_DRAWING_CALLBACK\fP \fBGetDrawingCallBack\fP (const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBAddCreatingActionCallBack\fP (const CAtlString &strAction, \fBG3D_CREATING_ACTION_CALLBACK\fP pf)"
+.br
+.ti -1c
+.RI "static \fBG3D_CREATING_ACTION_CALLBACK\fP \fBGetCreateActionBallBack\fP (const CAtlString &strAction)"
+.br
+.ti -1c
+.RI "static void \fBInit\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+callback manager
+.IP "  \(bu" 4
+drawing callback 
+.PP
+
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CG3DCallBackManager::CG3DCallBackManager ()"
+
+.SS "CG3DCallBackManager::~CG3DCallBackManager ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBGBOOL\fP CG3DCallBackManager::AddCreatingActionCallBack (const CAtlString & strAction, \fBG3D_CREATING_ACTION_CALLBACK\fP pf)\fC [static]\fP"
+
+.IP "\(bu" 2
+action을 create하는 callback을 등록한다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CG3DCallBackManager::AddDrawingCallBack (const CAtlString & strType, \fBG3D_DRAWING_CALLBACK\fP pf)\fC [static]\fP"
+
+.IP "\(bu" 2
+drawing callback을 등록한다\&. 
+.PP
+
+.SS "\fBG3D_CREATING_ACTION_CALLBACK\fP CG3DCallBackManager::GetCreateActionBallBack (const CAtlString & strAction)\fC [static]\fP"
+
+.IP "\(bu" 2
+action을 create하는 callback을 리턴한다\&. 
+.PP
+
+.SS "\fBG3D_DRAWING_CALLBACK\fP CG3DCallBackManager::GetDrawingCallBack (const \fBCGObjectBase\fP & object)\fC [static]\fP"
+
+.IP "\(bu" 2
+object의 drawing callback 함수를 리턴한다\&. 
+.PP
+
+.SS "void CG3DCallBackManager::Init ()\fC [static]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

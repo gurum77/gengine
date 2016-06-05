@@ -1,0 +1,92 @@
+.TH "CGColor" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGColor \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GColor\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetRGB\fP (const \fBGFLOAT3\fP &f3RGB)"
+.br
+.ti -1c
+.RI "const \fBGFLOAT3\fP & \fBGetRGB\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetACADColorIndex\fP (const INT32 &iIdx)"
+.br
+.ti -1c
+.RI "COLORREF \fBFindRGBFromACADColorIndex\fP (const INT32 &iIdx)"
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGColor\fP)"
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_EQUAL\fP (\fBCGColor\fP)"
+.br
+.ti -1c
+.RI "\fBCGColor\fP (const \fBGFLOAT\fP &fR, const \fBGFLOAT\fP &fG, const \fBGFLOAT\fP &fB)"
+.br
+.ti -1c
+.RI "\fBCGColor\fP (const \fBGFLOAT3\fP &f3RGB)"
+.br
+.ti -1c
+.RI "\fBCGColor\fP (const COLORREF &rgb)"
+.br
+.ti -1c
+.RI "\fBCGColor\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGColor\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+color를 가지는 클래스 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGColor::CGColor (const \fBGFLOAT\fP & fR, const \fBGFLOAT\fP & fG, const \fBGFLOAT\fP & fB)"
+
+.SS "CGColor::CGColor (const \fBGFLOAT3\fP & f3RGB)"
+
+.SS "CGColor::CGColor (const COLORREF & rgb)"
+
+.SS "CGColor::CGColor ()"
+
+.SS "CGColor::~CGColor ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "COLORREF CGColor::FindRGBFromACADColorIndex (const INT32 & iIdx)"
+
+.IP "\(bu" 2
+cad index color로 rgb 찾아오기 
+.PP
+
+.SS "CGColor::GDEFINE_OPERATOR_COPY (\fBCGColor\fP)"
+
+.SS "CGColor::GDEFINE_OPERATOR_EQUAL (\fBCGColor\fP)"
+
+.SS "const \fBGFLOAT3\fP & CGColor::GetRGB () const"
+
+.SS "void CGColor::SetACADColorIndex (const INT32 & iIdx)"
+
+.IP "\(bu" 2
+AutoCAD의 color index로 rgb를 설정한다\&. 
+.PP
+
+.SS "\fBGIMPLEMENT_OPERATOR_EQUAL_END\fP void CGColor::SetRGB (const \fBGFLOAT3\fP & f3RGB)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

@@ -1,0 +1,68 @@
+.TH "AABB" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AABB \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GQuadTree\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAABB\fP ()"
+.br
+.ti -1c
+.RI "\fBAABB\fP (const \fBVec2f\fP &bottomLeft, const \fBVec2f\fP &topRight)"
+.br
+.ti -1c
+.RI "\fBVec2f\fP \fBGetCenter\fP () const "
+.br
+.ti -1c
+.RI "\fBVec2f\fP \fBGetDims\fP () const "
+.br
+.ti -1c
+.RI "bool \fBIntersects\fP (const \fBAABB\fP &other)"
+.br
+.ti -1c
+.RI "bool \fBContains\fP (const \fBAABB\fP &other)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBVec2f\fP \fBlowerBound\fP"
+.br
+.ti -1c
+.RI "\fBVec2f\fP \fBupperBound\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "AABB::AABB ()\fC [inline]\fP"
+
+.SS "AABB::AABB (const \fBVec2f\fP & bottomLeft, const \fBVec2f\fP & topRight)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool AABB::Contains (const \fBAABB\fP & other)\fC [inline]\fP"
+
+.SS "\fBVec2f\fP AABB::GetCenter () const\fC [inline]\fP"
+
+.SS "\fBVec2f\fP AABB::GetDims () const\fC [inline]\fP"
+
+.SS "bool AABB::Intersects (const \fBAABB\fP & other)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBVec2f\fP AABB::lowerBound"
+
+.SS "\fBVec2f\fP AABB::upperBound"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

@@ -1,0 +1,87 @@
+.TH "CG3DActionScale" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CG3DActionScale \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <G3DActionScale\&.h>\fP
+.PP
+Inherits \fBCG3DActionMove\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGDEFINE_REGISTE_ACTION\fP (\fBCG3DActionScale\fP,'SCALE')"
+.br
+.ti -1c
+.RI "\fBCG3DActionScale\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~CG3DActionScale\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBRun\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBMoveTempObject\fP ()"
+.br
+.ti -1c
+.RI "void \fBScaleSelectedObject\fP ()"
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBGetScale\fP () const "
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+scale action 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CG3DActionScale::CG3DActionScale (void)"
+
+.SS "CG3DActionScale::~CG3DActionScale (void)\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CG3DActionScale::GDEFINE_REGISTE_ACTION (\fBCG3DActionScale\fP, 'SCALE')"
+
+.SS "\fBGDOUBLE\fP CG3DActionScale::GetScale () const\fC [protected]\fP"
+
+.IP "\(bu" 2
+현재 scale 량을 리턴한다\&. 
+.PP
+
+.SS "void CG3DActionScale::MoveTempObject ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.IP "\(bu" 2
+Temp object를 scale한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionMove\fP\&.
+.SS "void CG3DActionScale::Run ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBCG3DActionMove\fP\&.
+.SS "void CG3DActionScale::ScaleSelectedObject ()\fC [protected]\fP"
+
+.IP "\(bu" 2
+object를 scalling한다\&. 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

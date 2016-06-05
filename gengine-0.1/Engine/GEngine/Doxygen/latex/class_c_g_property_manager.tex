@@ -1,0 +1,130 @@
+\hypertarget{class_c_g_property_manager}{}\section{C\+G\+Property\+Manager Class Reference}
+\label{class_c_g_property_manager}\index{C\+G\+Property\+Manager@{C\+G\+Property\+Manager}}
+
+
+{\ttfamily \#include $<$G\+Property\+Manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_g_property_manager_a6f7d690b21b89583f511ca310fe326e0}{Init\+Property} (const \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \&b\+Create\+Default\+Property=T\+R\+U\+E)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_property_manager_aaad652565644997a952bb6851f2081e8}{Set\+Object\+Color} (\hyperlink{_g_types_8h_a3fc97b512f82d8e1a710da1235f9142a}{G\+I\+N\+O\+U\+T} \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$p\+Obj, const \hyperlink{_g_types_8h_a40d8bc7c06b9e72906852691a4bf888e}{G\+I\+N\+T32} \&i\+Object\+Count, const \hyperlink{class_c_g_color}{C\+G\+Color} \&color)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_property_manager_afa7aa3e26844505204a156aace6d209d}{Set\+Object\+Color} (\hyperlink{_g_types_8h_a3fc97b512f82d8e1a710da1235f9142a}{G\+I\+N\+O\+U\+T} \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$p\+Obj, const \hyperlink{class_c_g_color}{C\+G\+Color} \&color)
+\item 
+void \hyperlink{class_c_g_property_manager_a2c073c4a32589c9f38eabab52126c415}{Optimize} (\hyperlink{class_c_g3_d_d_b}{C\+G3\+D\+D\+B} $\ast$p\+D\+B)
+\item 
+\hyperlink{class_c_g_property}{C\+G\+Property} $\ast$ \hyperlink{class_c_g_property_manager_a420c6cca18fe17ef7f48e02eafa6f1e2}{Find\+Property\+By\+I\+D} (const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&I\+D)
+\item 
+void \hyperlink{class_c_g_property_manager_ac228a052935837c455338b6693c0a452}{Add\+Property} (\hyperlink{class_c_g_property}{C\+G\+Property} $\ast$p\+Property)
+\item 
+\hyperlink{class_c_g_property_manager_a55ee741194fb2e82223493944639df88}{C\+G\+Property\+Manager} ()
+\item 
+\hyperlink{class_c_g_property_manager_a434d8749c184c4117db3642033005366}{$\sim$\+C\+G\+Property\+Manager} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item property 관리하는 클래스 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g_property_manager_a55ee741194fb2e82223493944639df88}{}\index{C\+G\+Property\+Manager@{C\+G\+Property\+Manager}!C\+G\+Property\+Manager@{C\+G\+Property\+Manager}}
+\index{C\+G\+Property\+Manager@{C\+G\+Property\+Manager}!C\+G\+Property\+Manager@{C\+G\+Property\+Manager}}
+\subsubsection[{C\+G\+Property\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Property\+Manager\+::\+C\+G\+Property\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_property_manager_a55ee741194fb2e82223493944639df88}
+\hypertarget{class_c_g_property_manager_a434d8749c184c4117db3642033005366}{}\index{C\+G\+Property\+Manager@{C\+G\+Property\+Manager}!````~C\+G\+Property\+Manager@{$\sim$\+C\+G\+Property\+Manager}}
+\index{````~C\+G\+Property\+Manager@{$\sim$\+C\+G\+Property\+Manager}!C\+G\+Property\+Manager@{C\+G\+Property\+Manager}}
+\subsubsection[{$\sim$\+C\+G\+Property\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Property\+Manager\+::$\sim$\+C\+G\+Property\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_property_manager_a434d8749c184c4117db3642033005366}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g_property_manager_ac228a052935837c455338b6693c0a452}{}\index{C\+G\+Property\+Manager@{C\+G\+Property\+Manager}!Add\+Property@{Add\+Property}}
+\index{Add\+Property@{Add\+Property}!C\+G\+Property\+Manager@{C\+G\+Property\+Manager}}
+\subsubsection[{Add\+Property(\+C\+G\+Property $\ast$p\+Property)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Property\+Manager\+::\+Add\+Property (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G\+Property} $\ast$}]{p\+Property}
+\end{DoxyParamCaption}
+)}\label{class_c_g_property_manager_ac228a052935837c455338b6693c0a452}
+
+\begin{DoxyItemize}
+\item property를 변경한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_property_manager_a420c6cca18fe17ef7f48e02eafa6f1e2}{}\index{C\+G\+Property\+Manager@{C\+G\+Property\+Manager}!Find\+Property\+By\+I\+D@{Find\+Property\+By\+I\+D}}
+\index{Find\+Property\+By\+I\+D@{Find\+Property\+By\+I\+D}!C\+G\+Property\+Manager@{C\+G\+Property\+Manager}}
+\subsubsection[{Find\+Property\+By\+I\+D(const G\+I\+D \&\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Property} $\ast$ C\+G\+Property\+Manager\+::\+Find\+Property\+By\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+I\+D} \&}]{I\+D}
+\end{DoxyParamCaption}
+)}\label{class_c_g_property_manager_a420c6cca18fe17ef7f48e02eafa6f1e2}
+
+\begin{DoxyItemize}
+\item property를 I\+D로 찾는다. 
+\end{DoxyItemize}\hypertarget{class_c_g_property_manager_a6f7d690b21b89583f511ca310fe326e0}{}\index{C\+G\+Property\+Manager@{C\+G\+Property\+Manager}!Init\+Property@{Init\+Property}}
+\index{Init\+Property@{Init\+Property}!C\+G\+Property\+Manager@{C\+G\+Property\+Manager}}
+\subsubsection[{Init\+Property(const G\+B\+O\+O\+L \&b\+Create\+Default\+Property=\+T\+R\+U\+E)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Property\+Manager\+::\+Init\+Property (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+B\+O\+O\+L} \&}]{b\+Create\+Default\+Property = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}\label{class_c_g_property_manager_a6f7d690b21b89583f511ca310fe326e0}
+
+\begin{DoxyItemize}
+\item property를 초기화 한다. 
+\end{DoxyItemize}
+\begin{DoxyParams}{Parameters}
+{\em b\+Create\+Default\+Property} & T\+R\+U\+E \+: 초기화후, 기본 property를 생성한다.( 프로그램 종료시에는 F\+A\+L\+S\+E를 해야함. 기본 property가 없으면 화면에 객체가 보이지 않는다.) \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_g_property_manager_a2c073c4a32589c9f38eabab52126c415}{}\index{C\+G\+Property\+Manager@{C\+G\+Property\+Manager}!Optimize@{Optimize}}
+\index{Optimize@{Optimize}!C\+G\+Property\+Manager@{C\+G\+Property\+Manager}}
+\subsubsection[{Optimize(\+C\+G3\+D\+D\+B $\ast$p\+D\+B)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Property\+Manager\+::\+Optimize (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G3\+D\+D\+B} $\ast$}]{p\+D\+B}
+\end{DoxyParamCaption}
+)}\label{class_c_g_property_manager_a2c073c4a32589c9f38eabab52126c415}
+
+\begin{DoxyItemize}
+\item property들을 병합한다.
+\item 중복된 property에 연결된 object는 유일한 property에 연결된다. 
+\end{DoxyItemize}\hypertarget{class_c_g_property_manager_aaad652565644997a952bb6851f2081e8}{}\index{C\+G\+Property\+Manager@{C\+G\+Property\+Manager}!Set\+Object\+Color@{Set\+Object\+Color}}
+\index{Set\+Object\+Color@{Set\+Object\+Color}!C\+G\+Property\+Manager@{C\+G\+Property\+Manager}}
+\subsubsection[{Set\+Object\+Color(\+G\+I\+N\+O\+U\+T C\+G\+Object\+Base $\ast$p\+Obj, const G\+I\+N\+T32 \&i\+Object\+Count, const C\+G\+Color \&color)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Property\+Manager\+::\+Set\+Object\+Color (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+I\+N\+O\+U\+T} {\bf C\+G\+Object\+Base} $\ast$}]{p\+Obj, }
+\item[{const {\bf G\+I\+N\+T32} \&}]{i\+Object\+Count, }
+\item[{const {\bf C\+G\+Color} \&}]{color}
+\end{DoxyParamCaption}
+)}\label{class_c_g_property_manager_aaad652565644997a952bb6851f2081e8}
+
+\begin{DoxyItemize}
+\item object의 color를 변경한다.
+\item 한번에 여러개의 object color를 변경할 수 있다.
+\item 한번에 여러개의 object를 변경하는 것이 효율적이다. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000012}{Todo}]\end{DoxyRefDesc}
+
+\end{DoxyItemize}\hypertarget{class_c_g_property_manager_afa7aa3e26844505204a156aace6d209d}{}\index{C\+G\+Property\+Manager@{C\+G\+Property\+Manager}!Set\+Object\+Color@{Set\+Object\+Color}}
+\index{Set\+Object\+Color@{Set\+Object\+Color}!C\+G\+Property\+Manager@{C\+G\+Property\+Manager}}
+\subsubsection[{Set\+Object\+Color(\+G\+I\+N\+O\+U\+T C\+G\+Object\+Base $\ast$p\+Obj, const C\+G\+Color \&color)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Property\+Manager\+::\+Set\+Object\+Color (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+I\+N\+O\+U\+T} {\bf C\+G\+Object\+Base} $\ast$}]{p\+Obj, }
+\item[{const {\bf C\+G\+Color} \&}]{color}
+\end{DoxyParamCaption}
+)}\label{class_c_g_property_manager_afa7aa3e26844505204a156aace6d209d}
+
+\begin{DoxyItemize}
+\item object의 color를 설정한다. 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+D\+B/\hyperlink{_g_property_manager_8h}{G\+Property\+Manager.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+D\+B/\hyperlink{_g_property_manager_8cpp}{G\+Property\+Manager.\+cpp}\end{DoxyCompactItemize}

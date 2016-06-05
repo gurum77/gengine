@@ -1,0 +1,212 @@
+.TH "CGPoint2D" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGPoint2D \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GPoint2D\&.h>\fP
+.PP
+Inherited by \fBCGPoint3D\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetPointByXY\fP (const \fBGDOUBLE\fP &dX, const \fBGDOUBLE\fP &dY)"
+.br
+.ti -1c
+.RI "const \fBGDOUBLE\fP & \fBGetX\fP () const "
+.br
+.ti -1c
+.RI "const \fBGFLOAT\fP \fBGetXf\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetX\fP (const \fBGDOUBLE\fP &dX)"
+.br
+.ti -1c
+.RI "const \fBGDOUBLE\fP & \fBGetY\fP () const "
+.br
+.ti -1c
+.RI "const \fBGFLOAT\fP \fBGetYf\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetY\fP (const \fBGDOUBLE\fP &dY)"
+.br
+.ti -1c
+.RI "void \fBMove\fP (const \fBGDOUBLE\fP &dVectorX, const \fBGDOUBLE\fP &dVectorY)"
+.br
+.ti -1c
+.RI "virtual \fBGFLOAT3\fP \fBGetFloat3\fP () const "
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBoperator*\fP (const \fBCGPoint2D\fP &d) const "
+.br
+.ti -1c
+.RI "\fBCGPoint2D\fP \fBoperator\-\fP () const "
+.br
+.ti -1c
+.RI "\fBCGPoint2D\fP \fBoperator+\fP (const \fBCGPoint2D\fP &s) const "
+.br
+.ti -1c
+.RI "\fBCGPoint2D\fP & \fBoperator+=\fP (const \fBCGPoint2D\fP &s)"
+.br
+.ti -1c
+.RI "\fBCGPoint2D\fP \fBoperator\-\fP (const \fBCGPoint2D\fP &s) const "
+.br
+.ti -1c
+.RI "\fBCGPoint2D\fP & \fBoperator\-=\fP (const \fBCGPoint2D\fP &s)"
+.br
+.ti -1c
+.RI "\fBCGPoint2D\fP \fBoperator*\fP (\fBGDOUBLE\fP d) const "
+.br
+.ti -1c
+.RI "\fBCGPoint2D\fP & \fBoperator*=\fP (\fBGDOUBLE\fP d)"
+.br
+.ti -1c
+.RI "\fBCGPoint2D\fP \fBoperator/\fP (\fBGDOUBLE\fP d) const "
+.br
+.ti -1c
+.RI "\fBCGPoint2D\fP & \fBoperator/=\fP (\fBGDOUBLE\fP d)"
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBoperator^\fP (const \fBCGPoint2D\fP &s) const "
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBoperator~\fP () const "
+.br
+.ti -1c
+.RI "BOOL \fBoperator==\fP (const \fBCGPoint2D\fP &s) const "
+.br
+.ti -1c
+.RI "BOOL \fBoperator!=\fP (const \fBCGPoint2D\fP &s) const "
+.br
+.ti -1c
+.RI "\fBCGPoint2D\fP \fBUnit\fP () const "
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBRotate\fP (const \fBCGPoint2D\fP &ptBase, const \fBCGPoint2D\fP &ptAngle)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBRotate\fP (const \fBCGPoint2D\fP &ptAngle)"
+.br
+.ti -1c
+.RI "void \fBScale\fP (const \fBCGPoint2D\fP &ptBase, const \fBGDOUBLE\fP &dScale)"
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGPoint2D\fP)"
+.br
+.ti -1c
+.RI "\fBCGPoint2D\fP (const \fBGDOUBLE\fP &dX, const \fBGDOUBLE\fP &dY)"
+.br
+.ti -1c
+.RI "\fBCGPoint2D\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGPoint2D\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBm_dX\fP"
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBm_dY\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+2D 좌표 클래스 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGPoint2D::CGPoint2D (const \fBGDOUBLE\fP & dX, const \fBGDOUBLE\fP & dY)"
+
+.SS "CGPoint2D::CGPoint2D ()"
+
+.SS "CGPoint2D::~CGPoint2D ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CGPoint2D::GDEFINE_OPERATOR_COPY (\fBCGPoint2D\fP)"
+
+.SS "\fBGFLOAT3\fP CGPoint2D::GetFloat3 () const\fC [virtual]\fP"
+
+.IP "\(bu" 2
+point를 GFLOAT3 타입으로 리턴 
+.PP
+
+.PP
+Reimplemented in \fBCGPoint3D\fP\&.
+.SS "const \fBGDOUBLE\fP & CGPoint2D::GetX () const"
+
+.SS "const \fBGFLOAT\fP CGPoint2D::GetXf () const"
+
+.SS "const \fBGDOUBLE\fP & CGPoint2D::GetY () const"
+
+.SS "const \fBGFLOAT\fP CGPoint2D::GetYf () const"
+
+.SS "void CGPoint2D::Move (const \fBGDOUBLE\fP & dVectorX, const \fBGDOUBLE\fP & dVectorY)"
+
+.SS "BOOL CGPoint2D::operator!= (const \fBCGPoint2D\fP & s) const"
+
+.SS "\fBGDOUBLE\fP CGPoint2D::operator* (const \fBCGPoint2D\fP & d) const"
+
+.IP "\(bu" 2
+외적 
+.PP
+
+.SS "\fBCGPoint2D\fP CGPoint2D::operator* (\fBGDOUBLE\fP d) const"
+
+.SS "\fBCGPoint2D\fP & CGPoint2D::operator*= (\fBGDOUBLE\fP d)"
+
+.SS "\fBCGPoint2D\fP CGPoint2D::operator+ (const \fBCGPoint2D\fP & s) const"
+
+.SS "\fBCGPoint2D\fP & CGPoint2D::operator+= (const \fBCGPoint2D\fP & s)"
+
+.SS "\fBCGPoint2D\fP CGPoint2D::operator\- () const"
+
+.SS "\fBCGPoint2D\fP CGPoint2D::operator\- (const \fBCGPoint2D\fP & s) const"
+
+.SS "\fBCGPoint2D\fP & CGPoint2D::operator\-= (const \fBCGPoint2D\fP & s)"
+
+.SS "\fBCGPoint2D\fP CGPoint2D::operator/ (\fBGDOUBLE\fP d) const"
+
+.SS "\fBCGPoint2D\fP & CGPoint2D::operator/= (\fBGDOUBLE\fP d)"
+
+.SS "BOOL CGPoint2D::operator== (const \fBCGPoint2D\fP & s) const"
+
+.SS "\fBGDOUBLE\fP CGPoint2D::operator^ (const \fBCGPoint2D\fP & s) const"
+
+.SS "\fBGDOUBLE\fP CGPoint2D::operator~ () const"
+
+.SS "\fBGBOOL\fP CGPoint2D::Rotate (const \fBCGPoint2D\fP & ptBase, const \fBCGPoint2D\fP & ptAngle)"
+
+.SS "\fBGBOOL\fP CGPoint2D::Rotate (const \fBCGPoint2D\fP & ptAngle)"
+
+.SS "void CGPoint2D::Scale (const \fBCGPoint2D\fP & ptBase, const \fBGDOUBLE\fP & dScale)"
+
+.SS "void CGPoint2D::SetPointByXY (const \fBGDOUBLE\fP & dX, const \fBGDOUBLE\fP & dY)"
+
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_END\fP void CGPoint2D::SetX (const \fBGDOUBLE\fP & dX)"
+
+.SS "void CGPoint2D::SetY (const \fBGDOUBLE\fP & dY)"
+
+.SS "\fBCGPoint2D\fP CGPoint2D::Unit () const"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGDOUBLE\fP CGPoint2D::m_dX\fC [protected]\fP"
+
+.SS "\fBGDOUBLE\fP CGPoint2D::m_dY\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

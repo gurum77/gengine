@@ -1,0 +1,81 @@
+.TH "CGFontManager" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGFontManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GFontManager\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "BOOL \fBLoadText\fP (const \fBCGText\fP &text, const \fBCGFontProperty\fP &fontProperty)"
+.br
+.ti -1c
+.RI "const CAtlArray< \fBCGPoint3D\fP > & \fBGetOutlinePoint\fP ()"
+.br
+.ti -1c
+.RI "const CAtlArray< INT32 > & \fBGetOutlineIndex\fP ()"
+.br
+.ti -1c
+.RI "const CAtlArray< \fBCGPoint3D\fP > & \fBGetFacePoint\fP ()"
+.br
+.ti -1c
+.RI "const CAtlArray< INT32 > & \fBGetFaceIndex\fP ()"
+.br
+.ti -1c
+.RI "CString \fBFindFontFileName\fP (const CAtlString &strFontName)"
+.br
+.ti -1c
+.RI "\fBCGFontManager\fP (void)"
+.br
+.ti -1c
+.RI "virtual \fB~CGFontManager\fP (void)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+font manager 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGFontManager::CGFontManager (void)"
+
+.SS "CGFontManager::~CGFontManager (void)\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CString CGFontManager::FindFontFileName (const CAtlString & strFontName)"
+
+.IP "\(bu" 2
+파일명에 대한 실제 폰트명을 레지스트리를 통해서 가져온다\&.
+.IP "\(bu" 2
+window font의 경우이다\&.
+.IP "\(bu" 2
+레지스트리를 통해서 가져오는 것은 속도가 느리므로 자주 호출하지 않는 것이 육체적, 정신적으로 이롭다\&. 
+.PP
+
+.SS "const CAtlArray< INT32 > & CGFontManager::GetFaceIndex ()"
+
+.SS "const CAtlArray< \fBCGPoint3D\fP > & CGFontManager::GetFacePoint ()"
+
+.SS "const CAtlArray< INT32 > & CGFontManager::GetOutlineIndex ()"
+
+.SS "const CAtlArray< \fBCGPoint3D\fP > & CGFontManager::GetOutlinePoint ()"
+
+.SS "BOOL CGFontManager::LoadText (const \fBCGText\fP & text, const \fBCGFontProperty\fP & fontProperty)"
+
+.IP "\(bu" 2
+text의 기하학 정보를 로딩한다\&. 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

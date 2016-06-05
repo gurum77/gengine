@@ -1,0 +1,87 @@
+.TH "CGEditManager" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGEditManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GEditManager\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetView\fP (\fBCG3DView\fP *pView)"
+.br
+.ti -1c
+.RI "void \fBSetViewLayerName\fP (const CString &strViewLayerName)"
+.br
+.ti -1c
+.RI "void \fBMoveObject\fP (\fBGINOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrObject, const \fBCGPoint3D\fP &ptSrc, const \fBCGPoint3D\fP &ptTar, const \fBGBOOL\fP &bRedraw)"
+.br
+.ti -1c
+.RI "void \fBCopyObject\fP (\fBGINOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrObject, const \fBCGPoint3D\fP &ptSrc, const \fBCGPoint3D\fP &ptTar, const \fBGBOOL\fP &bRedraw)"
+.br
+.ti -1c
+.RI "void \fBRotate2DObject\fP (\fBGINOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrObject, const \fBCGPoint2D\fP &ptBase, const \fBCGPoint2D\fP &vAng, const \fBGBOOL\fP &bRedraw)"
+.br
+.ti -1c
+.RI "void \fBScaleObject\fP (\fBGINOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrObject, const \fBCGPoint2D\fP &ptBase, const \fBGDOUBLE\fP &dScale, const \fBGBOOL\fP &bRedraw)"
+.br
+.ti -1c
+.RI "\fBCGEditManager\fP (void)"
+.br
+.ti -1c
+.RI "\fB~CGEditManager\fP (void)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+객체 편집을 도와준다\&. 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGEditManager::CGEditManager (void)"
+
+.SS "CGEditManager::~CGEditManager (void)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGEditManager::CopyObject (\fBGINOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrObject, const \fBCGPoint3D\fP & ptSrc, const \fBCGPoint3D\fP & ptTar, const \fBGBOOL\fP & bRedraw)"
+
+.IP "\(bu" 2
+object를 copy 한다\&.
+.IP "\(bu" 2
+sub object는 복사하지 않고 main object에서 다시 생성해야 한다\&.(ID 관리를 main이 하기 때문) 
+.PP
+
+.SS "void CGEditManager::MoveObject (\fBGINOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrObject, const \fBCGPoint3D\fP & ptSrc, const \fBCGPoint3D\fP & ptTar, const \fBGBOOL\fP & bRedraw)"
+
+.IP "\(bu" 2
+object를 move 한다\&. 
+.PP
+
+.SS "void CGEditManager::Rotate2DObject (\fBGINOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrObject, const \fBCGPoint2D\fP & ptBase, const \fBCGPoint2D\fP & vAng, const \fBGBOOL\fP & bRedraw)"
+
+.IP "\(bu" 2
+object를 회전한다\&. 
+.PP
+
+.SS "void CGEditManager::ScaleObject (\fBGINOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrObject, const \fBCGPoint2D\fP & ptBase, const \fBGDOUBLE\fP & dScale, const \fBGBOOL\fP & bRedraw)"
+
+.IP "\(bu" 2
+object를 scaling 한다\&. 
+.PP
+
+.SS "void CGEditManager::SetView (\fBCG3DView\fP * pView)"
+
+.SS "void CGEditManager::SetViewLayerName (const CString & strViewLayerName)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

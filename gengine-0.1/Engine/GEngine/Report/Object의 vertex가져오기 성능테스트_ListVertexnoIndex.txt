@@ -1,0 +1,45 @@
+100 
+type == 0
+	Time to GetAllVertexByPrimitiveTopology 0.001935 sec
+	Time to GetAllVertexByPrimitiveTopology 0.064351 sec
+	Time to GetAllVertexByPrimitiveTopology 0.002499 sec
+	
+type == 1
+	Time to GetAllVertexByPrimitiveTopology 0.002025 sec
+	Time to GetAllVertexByPrimitiveTopology 0.219526 sec
+	Time to GetAllVertexByPrimitiveTopology 0.002710 sec
+	
+type == 2
+	Time to GetAllVertexByPrimitiveTopology 0.002116 sec
+	Time to GetAllVertexByPrimitiveTopology 0.056329 sec
+	Time to GetAllVertexByPrimitiveTopology 0.002431 sec
+	
+500
+type == 0
+	Time to GetAllVertexByPrimitiveTopology 0.059853 sec
+	Time to GetAllVertexByPrimitiveTopology 9.020496 sec
+	Time to GetAllVertexByPrimitiveTopology 0.061803 sec
+
+type == 1
+	Time to GetAllVertexByPrimitiveTopology 0.066723 sec
+	Time to GetAllVertexByPrimitiveTopology 6.645027 sec
+	Time to GetAllVertexByPrimitiveTopology 0.065849 sec
+	
+type == 2
+	Time to GetAllVertexByPrimitiveTopology 0.059133 sec
+	Time to GetAllVertexByPrimitiveTopology 1.402185 sec
+	Time to GetAllVertexByPrimitiveTopology 0.059799 sec
+	
+1000
+type == 0
+	Time to GetAllVertexByPrimitiveTopology 0.258459 sec
+	Time to GetAllVertexByPrimitiveTopology 133.060989 sec
+	Time to GetAllVertexByPrimitiveTopology 0.272742 sec
+type == 1
+	Time to GetAllVertexByPrimitiveTopology 0.263354 sec
+	Time to GetAllVertexByPrimitiveTopology 27.916691 sec
+	Time to GetAllVertexByPrimitiveTopology 0.261429 sec
+type == 2
+	Time to GetAllVertexByPrimitiveTopology 0.238288 sec
+	Time to GetAllVertexByPrimitiveTopology 5.606389 sec
+	Time to GetAllVertexByPrimitiveTopology 0.240317 sec

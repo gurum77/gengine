@@ -1,0 +1,187 @@
+.TH "CGPoint3D" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGPoint3D \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GPoint3D\&.h>\fP
+.PP
+Inherits \fBCGPoint2D\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const \fBGDOUBLE\fP & \fBGetZ\fP () const "
+.br
+.ti -1c
+.RI "const \fBGFLOAT\fP \fBGetZf\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetZ\fP (const \fBGDOUBLE\fP &dZ)"
+.br
+.ti -1c
+.RI "void \fBSetPointByXYZ\fP (const \fBGDOUBLE\fP &dX, const \fBGDOUBLE\fP &dY, const \fBGDOUBLE\fP &dZ)"
+.br
+.ti -1c
+.RI "virtual \fBGFLOAT3\fP \fBGetFloat3\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetPointByFloat3\fP (const \fBGFLOAT3\fP &f3)"
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP \fBoperator\-\fP () const "
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP \fBoperator+\fP (const \fBCGPoint3D\fP &s) const "
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP & \fBoperator+=\fP (const \fBCGPoint3D\fP &s)"
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP \fBoperator\-\fP (const \fBCGPoint3D\fP &s) const "
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP & \fBoperator\-=\fP (const \fBCGPoint3D\fP &s)"
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP \fBoperator*\fP (\fBGDOUBLE\fP d) const "
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP & \fBoperator*=\fP (\fBGDOUBLE\fP d)"
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP \fBoperator/\fP (\fBGDOUBLE\fP d) const "
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP & \fBoperator/=\fP (\fBGDOUBLE\fP d)"
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP \fBoperator*\fP (const \fBCGPoint3D\fP &s) const "
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBoperator^\fP (const \fBCGPoint3D\fP &s) const "
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBoperator~\fP () const "
+.br
+.ti -1c
+.RI "BOOL \fBoperator==\fP (const \fBCGPoint3D\fP &s) const "
+.br
+.ti -1c
+.RI "BOOL \fBoperator!=\fP (const \fBCGPoint3D\fP &s) const "
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP \fBUnit\fP () const "
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBRotate\fP (const \fBCGPoint3D\fP &ptBase, const \fBCGPoint3D\fP &vAxis, const \fBCGPoint2D\fP &ptAngle)"
+.br
+.ti -1c
+.RI "void \fBScale\fP (const \fBCGPoint3D\fP &ptBase, const \fBGDOUBLE\fP &dScale)"
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGPoint3D\fP)"
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP (const \fBCGPoint3D\fP &s)"
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP (const \fBCGPoint2D\fP &s)"
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP (const \fBGDOUBLE\fP &dX, const \fBGDOUBLE\fP &dY, const \fBGDOUBLE\fP &dZ)"
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGPoint3D\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+3차원 좌표 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGPoint3D::CGPoint3D (const \fBCGPoint3D\fP & s)"
+
+.SS "CGPoint3D::CGPoint3D (const \fBCGPoint2D\fP & s)"
+
+.SS "CGPoint3D::CGPoint3D (const \fBGDOUBLE\fP & dX, const \fBGDOUBLE\fP & dY, const \fBGDOUBLE\fP & dZ)"
+
+.SS "CGPoint3D::CGPoint3D ()"
+
+.SS "CGPoint3D::~CGPoint3D ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CGPoint3D::GDEFINE_OPERATOR_COPY (\fBCGPoint3D\fP)"
+
+.SS "\fBGFLOAT3\fP CGPoint3D::GetFloat3 () const\fC [virtual]\fP"
+
+.IP "\(bu" 2
+point를 GFLOAT3 타입으로 리턴 
+.PP
+
+.PP
+Reimplemented from \fBCGPoint2D\fP\&.
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_SUPER\fP \fBGIMPLEMENT_OPERATOR_COPY_END\fP const \fBGDOUBLE\fP & CGPoint3D::GetZ () const"
+
+.SS "const \fBGFLOAT\fP CGPoint3D::GetZf () const"
+
+.SS "BOOL CGPoint3D::operator!= (const \fBCGPoint3D\fP & s) const"
+
+.SS "\fBCGPoint3D\fP CGPoint3D::operator* (\fBGDOUBLE\fP d) const"
+
+.SS "\fBCGPoint3D\fP CGPoint3D::operator* (const \fBCGPoint3D\fP & s) const"
+
+.SS "\fBCGPoint3D\fP & CGPoint3D::operator*= (\fBGDOUBLE\fP d)"
+
+.SS "\fBCGPoint3D\fP CGPoint3D::operator+ (const \fBCGPoint3D\fP & s) const"
+
+.SS "\fBCGPoint3D\fP & CGPoint3D::operator+= (const \fBCGPoint3D\fP & s)"
+
+.SS "\fBCGPoint3D\fP CGPoint3D::operator\- () const"
+
+.SS "\fBCGPoint3D\fP CGPoint3D::operator\- (const \fBCGPoint3D\fP & s) const"
+
+.SS "\fBCGPoint3D\fP & CGPoint3D::operator\-= (const \fBCGPoint3D\fP & s)"
+
+.SS "\fBCGPoint3D\fP CGPoint3D::operator/ (\fBGDOUBLE\fP d) const"
+
+.SS "\fBCGPoint3D\fP & CGPoint3D::operator/= (\fBGDOUBLE\fP d)"
+
+.SS "BOOL CGPoint3D::operator== (const \fBCGPoint3D\fP & s) const"
+
+.SS "\fBGDOUBLE\fP CGPoint3D::operator^ (const \fBCGPoint3D\fP & s) const"
+
+.SS "\fBGDOUBLE\fP CGPoint3D::operator~ () const"
+
+.SS "\fBGBOOL\fP CGPoint3D::Rotate (const \fBCGPoint3D\fP & ptBase, const \fBCGPoint3D\fP & vAxis, const \fBCGPoint2D\fP & ptAngle)"
+
+.IP "\(bu" 2
+ptBase 좌표와 ptAxis축방향을 기준으로 ptAngle만큼 회전한다\&. 
+.PP
+
+.SS "void CGPoint3D::Scale (const \fBCGPoint3D\fP & ptBase, const \fBGDOUBLE\fP & dScale)"
+
+.SS "void CGPoint3D::SetPointByFloat3 (const \fBGFLOAT3\fP & f3)"
+
+.SS "void CGPoint3D::SetPointByXYZ (const \fBGDOUBLE\fP & dX, const \fBGDOUBLE\fP & dY, const \fBGDOUBLE\fP & dZ)"
+
+.SS "void CGPoint3D::SetZ (const \fBGDOUBLE\fP & dZ)"
+
+.SS "\fBCGPoint3D\fP CGPoint3D::Unit () const"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

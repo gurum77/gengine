@@ -1,0 +1,98 @@
+.TH "CGFontProperty" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGFontProperty \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GFontProperty\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBAlign\fP { \fBeAlignLeft\fP, \fBeAlignMiddle\fP, \fBeAlignRight\fP, \fBeAlignCenter\fP, \fBeAlignRightTop\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetFontName\fP (const CAtlString &strFontName)"
+.br
+.ti -1c
+.RI "const CAtlString & \fBGetFontName\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetFontHeight\fP (const \fBGFLOAT\fP &fFontHeight)"
+.br
+.ti -1c
+.RI "const \fBGFLOAT\fP & \fBGetFontHeight\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetAlign\fP (const \fBCGFontProperty::Align\fP &eAlign)"
+.br
+.ti -1c
+.RI "const \fBCGFontProperty::Align\fP & \fBGetAlign\fP () const "
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGFontProperty\fP)"
+.br
+.ti -1c
+.RI "\fBCGFontProperty\fP (void)"
+.br
+.ti -1c
+.RI "virtual \fB~CGFontProperty\fP (void)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+font 속성 
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCGFontProperty::Align\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeAlignLeft \fP\fP
+.TP
+\fB\fIeAlignMiddle \fP\fP
+.TP
+\fB\fIeAlignRight \fP\fP
+.TP
+\fB\fIeAlignCenter \fP\fP
+.TP
+\fB\fIeAlignRightTop \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGFontProperty::CGFontProperty (void)"
+
+.SS "CGFontProperty::~CGFontProperty (void)\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CGFontProperty::GDEFINE_OPERATOR_COPY (\fBCGFontProperty\fP)"
+
+.SS "const \fBCGFontProperty::Align\fP & CGFontProperty::GetAlign () const"
+
+.SS "const \fBGFLOAT\fP & CGFontProperty::GetFontHeight () const"
+
+.SS "const CAtlString & CGFontProperty::GetFontName () const"
+
+.SS "void CGFontProperty::SetAlign (const \fBCGFontProperty::Align\fP & eAlign)"
+
+.SS "void CGFontProperty::SetFontHeight (const \fBGFLOAT\fP & fFontHeight)"
+
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_END\fP void CGFontProperty::SetFontName (const CAtlString & strFontName)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

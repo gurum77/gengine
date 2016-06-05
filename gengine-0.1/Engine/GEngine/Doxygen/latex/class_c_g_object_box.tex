@@ -1,0 +1,212 @@
+\hypertarget{class_c_g_object_box}{}\section{C\+G\+Object\+Box Class Reference}
+\label{class_c_g_object_box}\index{C\+G\+Object\+Box@{C\+G\+Object\+Box}}
+
+
+{\ttfamily \#include $<$G\+Object\+Box.\+h$>$}
+
+Inheritance diagram for C\+G\+Object\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_g_object_box}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_g_object_box_a4dc621e83fd3d373fac4bb8f89f5b0e5}{Set\+Box} (const \hyperlink{class_c_g_box}{C\+G\+Box} \&box)
+\item 
+const \hyperlink{class_c_g_box}{C\+G\+Box} \& \hyperlink{class_c_g_object_box_adee59da28bce99ebd31c2adc6f242fa1}{Get\+Box} () const 
+\item 
+virtual void \hyperlink{class_c_g_object_box_ab9c283d92715d0f7c47f116df393bb26}{Move} (const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Move)
+\item 
+virtual void \hyperlink{class_c_g_object_box_a5055a2fc9c1822889fdf8d88ed1f545b}{Rotate} (const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Base, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Axis, const \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \&v\+Ang)
+\item 
+virtual void \hyperlink{class_c_g_object_box_a505453fcb6129e56da601074f41d1b5c}{Scale} (const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Base, const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \&d\+Scale)
+\item 
+virtual void \hyperlink{class_c_g_object_box_aeee2539ce593f02eacff53a5b3fab594}{Calc\+Boundary} ()
+\item 
+virtual const void \hyperlink{class_c_g_object_box_aef3cbcc5140c7b636b06abe214e123a5}{Get\+All\+Vertex\+By\+Primitive\+Topology} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{struct_g_v_e_r_t_e_x}{G\+V\+E\+R\+T\+E\+X} $>$ \&arr\+Vertex) const 
+\item 
+virtual const void \hyperlink{class_c_g_object_box_ae4d7052d9a188de08fec7e5142b6eb39}{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{struct_g_v_e_r_t_e_x}{G\+V\+E\+R\+T\+E\+X} $>$ \&arr\+Vertex, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{_g_types_8h_a2e1a1c77d1349057202e2f34e071019c}{G\+U\+I\+N\+T32} $>$ \&arr\+Index) const 
+\item 
+virtual C\+Atl\+String \hyperlink{class_c_g_object_box_a783a8fdbe4d892defa672ab08e288606}{Get\+Str\+Type} () const 
+\item 
+virtual \hyperlink{_g_types_8h_a940e3da6a9b57aae3de0b050e2a7af5e}{Primitive\+Topology} \hyperlink{class_c_g_object_box_a821d5518513d9a8ddd75b0beedf03c42}{Get\+Primitive\+Topology} () const 
+\item 
+\hyperlink{class_c_g_object_box_ae5570838fc019cccb7f7afb4cbfeeeb4}{C\+G\+Object\+Box} ()
+\item 
+virtual \hyperlink{class_c_g_object_box_af669f6b044ae945121e6db40b97c3d0a}{$\sim$\+C\+G\+Object\+Box} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item box object 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g_object_box_ae5570838fc019cccb7f7afb4cbfeeeb4}{}\index{C\+G\+Object\+Box@{C\+G\+Object\+Box}!C\+G\+Object\+Box@{C\+G\+Object\+Box}}
+\index{C\+G\+Object\+Box@{C\+G\+Object\+Box}!C\+G\+Object\+Box@{C\+G\+Object\+Box}}
+\subsubsection[{C\+G\+Object\+Box()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+C\+O\+P\+Y\+\_\+\+S\+U\+P\+E\+R} {\bf G\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+C\+O\+P\+Y\+\_\+\+E\+N\+D} C\+G\+Object\+Box\+::\+C\+G\+Object\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_box_ae5570838fc019cccb7f7afb4cbfeeeb4}
+\hypertarget{class_c_g_object_box_af669f6b044ae945121e6db40b97c3d0a}{}\index{C\+G\+Object\+Box@{C\+G\+Object\+Box}!````~C\+G\+Object\+Box@{$\sim$\+C\+G\+Object\+Box}}
+\index{````~C\+G\+Object\+Box@{$\sim$\+C\+G\+Object\+Box}!C\+G\+Object\+Box@{C\+G\+Object\+Box}}
+\subsubsection[{$\sim$\+C\+G\+Object\+Box()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Object\+Box\+::$\sim$\+C\+G\+Object\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g_object_box_af669f6b044ae945121e6db40b97c3d0a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g_object_box_aeee2539ce593f02eacff53a5b3fab594}{}\index{C\+G\+Object\+Box@{C\+G\+Object\+Box}!Calc\+Boundary@{Calc\+Boundary}}
+\index{Calc\+Boundary@{Calc\+Boundary}!C\+G\+Object\+Box@{C\+G\+Object\+Box}}
+\subsubsection[{Calc\+Boundary()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Box\+::\+Calc\+Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g_object_box_aeee2539ce593f02eacff53a5b3fab594}
+
+\begin{DoxyItemize}
+\item boundary는 대략 계산한다. (빠른속도를 위해서) 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g_object_base_a9e85d6655f30b79aa434a8ad55e51371}{C\+G\+Object\+Base}.
+
+\hypertarget{class_c_g_object_box_ae4d7052d9a188de08fec7e5142b6eb39}{}\index{C\+G\+Object\+Box@{C\+G\+Object\+Box}!Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology@{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology}}
+\index{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology@{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology}!C\+G\+Object\+Box@{C\+G\+Object\+Box}}
+\subsubsection[{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology(\+G\+O\+U\+T C\+Atl\+Array$<$ G\+V\+E\+R\+T\+E\+X $>$ \&arr\+Vertex, G\+O\+U\+T C\+Atl\+Array$<$ G\+U\+I\+N\+T32 $>$ \&arr\+Index) const }]{\setlength{\rightskip}{0pt plus 5cm}const void C\+G\+Object\+Box\+::\+Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf G\+V\+E\+R\+T\+E\+X} $>$ \&}]{arr\+Vertex, }
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf G\+U\+I\+N\+T32} $>$ \&}]{arr\+Index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g_object_box_ae4d7052d9a188de08fec7e5142b6eb39}
+
+\begin{DoxyItemize}
+\item vertex buffer에 추가할 strip vertex와 list index를 가져온다.
+\item object를 그리기 위해서는 반드시 재정의가 필요하다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g_object_base_a0f72743afd6f673274209f36651cf978}{C\+G\+Object\+Base}.
+
+\hypertarget{class_c_g_object_box_aef3cbcc5140c7b636b06abe214e123a5}{}\index{C\+G\+Object\+Box@{C\+G\+Object\+Box}!Get\+All\+Vertex\+By\+Primitive\+Topology@{Get\+All\+Vertex\+By\+Primitive\+Topology}}
+\index{Get\+All\+Vertex\+By\+Primitive\+Topology@{Get\+All\+Vertex\+By\+Primitive\+Topology}!C\+G\+Object\+Box@{C\+G\+Object\+Box}}
+\subsubsection[{Get\+All\+Vertex\+By\+Primitive\+Topology(\+G\+O\+U\+T C\+Atl\+Array$<$ G\+V\+E\+R\+T\+E\+X $>$ \&arr\+Vertex) const }]{\setlength{\rightskip}{0pt plus 5cm}const void C\+G\+Object\+Box\+::\+Get\+All\+Vertex\+By\+Primitive\+Topology (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf G\+V\+E\+R\+T\+E\+X} $>$ \&}]{arr\+Vertex}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g_object_box_aef3cbcc5140c7b636b06abe214e123a5}
+
+\begin{DoxyItemize}
+\item vertex buffer에 추가할 vertex를 가져온다.
+\item object를 그리기 위해서는 반드시 재정의가 필요하다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g_object_base_a8191037be2e80b9b39217bc9c32834c5}{C\+G\+Object\+Base}.
+
+\hypertarget{class_c_g_object_box_adee59da28bce99ebd31c2adc6f242fa1}{}\index{C\+G\+Object\+Box@{C\+G\+Object\+Box}!Get\+Box@{Get\+Box}}
+\index{Get\+Box@{Get\+Box}!C\+G\+Object\+Box@{C\+G\+Object\+Box}}
+\subsubsection[{Get\+Box() const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+G\+Box} \& C\+G\+Object\+Box\+::\+Get\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_object_box_adee59da28bce99ebd31c2adc6f242fa1}
+\hypertarget{class_c_g_object_box_a821d5518513d9a8ddd75b0beedf03c42}{}\index{C\+G\+Object\+Box@{C\+G\+Object\+Box}!Get\+Primitive\+Topology@{Get\+Primitive\+Topology}}
+\index{Get\+Primitive\+Topology@{Get\+Primitive\+Topology}!C\+G\+Object\+Box@{C\+G\+Object\+Box}}
+\subsubsection[{Get\+Primitive\+Topology() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Primitive\+Topology} C\+G\+Object\+Box\+::\+Get\+Primitive\+Topology (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_g_object_box_a821d5518513d9a8ddd75b0beedf03c42}
+
+\begin{DoxyItemize}
+\item object의 vertex의 primitive topology를 리턴한다.
+\item object는 한가지 primitive topology만 가질 수 있다.(다양한 primitive topology가 필요하다면 object를 여러개 가지도록 하면 된다) 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g_object_base_ad0092032844236a27523dcb99c6ce684}{C\+G\+Object\+Base}.
+
+\hypertarget{class_c_g_object_box_a783a8fdbe4d892defa672ab08e288606}{}\index{C\+G\+Object\+Box@{C\+G\+Object\+Box}!Get\+Str\+Type@{Get\+Str\+Type}}
+\index{Get\+Str\+Type@{Get\+Str\+Type}!C\+G\+Object\+Box@{C\+G\+Object\+Box}}
+\subsubsection[{Get\+Str\+Type() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Atl\+String C\+G\+Object\+Box\+::\+Get\+Str\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_g_object_box_a783a8fdbe4d892defa672ab08e288606}
+
+\begin{DoxyItemize}
+\item object의 타입을 리턴한다.
+\item 유일한 string이어야 한다.
+\item 반드시 재정의 되어야 한다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g_object_base_a661df83e98eb60ed3f87609c110c4c6b}{C\+G\+Object\+Base}.
+
+\hypertarget{class_c_g_object_box_ab9c283d92715d0f7c47f116df393bb26}{}\index{C\+G\+Object\+Box@{C\+G\+Object\+Box}!Move@{Move}}
+\index{Move@{Move}!C\+G\+Object\+Box@{C\+G\+Object\+Box}}
+\subsubsection[{Move(const C\+G\+Vector3\+D \&v\+Move)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Box\+::\+Move (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Move}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g_object_box_ab9c283d92715d0f7c47f116df393bb26}
+
+\begin{DoxyItemize}
+\item object를 move한다. 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g_object_base_a6a1ea0c753ab6d2c98ee417d9d2b04e2}{C\+G\+Object\+Base}.
+
+\hypertarget{class_c_g_object_box_a5055a2fc9c1822889fdf8d88ed1f545b}{}\index{C\+G\+Object\+Box@{C\+G\+Object\+Box}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!C\+G\+Object\+Box@{C\+G\+Object\+Box}}
+\subsubsection[{Rotate(const C\+G\+Point3\+D \&pt\+Base, const C\+G\+Vector3\+D \&v\+Axis, const C\+G\+Point2\+D \&v\+Ang)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Box\+::\+Rotate (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Base, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Axis, }
+\item[{const {\bf C\+G\+Point2\+D} \&}]{v\+Ang}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g_object_box_a5055a2fc9c1822889fdf8d88ed1f545b}
+
+\begin{DoxyItemize}
+\item object를 rotate한다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g_object_base_af99d2f7fe3f25ca09d6090c8779a6971}{C\+G\+Object\+Base}.
+
+\hypertarget{class_c_g_object_box_a505453fcb6129e56da601074f41d1b5c}{}\index{C\+G\+Object\+Box@{C\+G\+Object\+Box}!Scale@{Scale}}
+\index{Scale@{Scale}!C\+G\+Object\+Box@{C\+G\+Object\+Box}}
+\subsubsection[{Scale(const C\+G\+Point3\+D \&pt\+Base, const G\+D\+O\+U\+B\+L\+E \&d\+Scale)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Box\+::\+Scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Base, }
+\item[{const {\bf G\+D\+O\+U\+B\+L\+E} \&}]{d\+Scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g_object_box_a505453fcb6129e56da601074f41d1b5c}
+
+\begin{DoxyItemize}
+\item object를 scale한다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g_object_base_abb41464e473e673693d9cc471c4efb7c}{C\+G\+Object\+Base}.
+
+\hypertarget{class_c_g_object_box_a4dc621e83fd3d373fac4bb8f89f5b0e5}{}\index{C\+G\+Object\+Box@{C\+G\+Object\+Box}!Set\+Box@{Set\+Box}}
+\index{Set\+Box@{Set\+Box}!C\+G\+Object\+Box@{C\+G\+Object\+Box}}
+\subsubsection[{Set\+Box(const C\+G\+Box \&box)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Box\+::\+Set\+Box (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Box} \&}]{box}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_box_a4dc621e83fd3d373fac4bb8f89f5b0e5}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+D\+B/\hyperlink{_g_object_box_8h}{G\+Object\+Box.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+D\+B/\hyperlink{_g_object_box_8cpp}{G\+Object\+Box.\+cpp}\end{DoxyCompactItemize}

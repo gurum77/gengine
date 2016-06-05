@@ -1,0 +1,238 @@
+\hypertarget{namespacep2t}{}\section{p2t Namespace Reference}
+\label{namespacep2t}\index{p2t@{p2t}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classp2t_1_1_advancing_front}{Advancing\+Front}
+\item 
+class \hyperlink{classp2t_1_1_c_d_t}{C\+D\+T}
+\item 
+struct \hyperlink{structp2t_1_1_edge}{Edge}
+\item 
+struct \hyperlink{structp2t_1_1_node}{Node}
+\item 
+struct \hyperlink{structp2t_1_1_point}{Point}
+\item 
+class \hyperlink{classp2t_1_1_sweep}{Sweep}
+\item 
+class \hyperlink{classp2t_1_1_sweep_context}{Sweep\+Context}
+\item 
+class \hyperlink{classp2t_1_1_triangle}{Triangle}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacep2t_a3ffe1d5b88773615026d5e590e3662eb}{Orientation} \{ \hyperlink{namespacep2t_a3ffe1d5b88773615026d5e590e3662eba005d0f4a800b4d758e8a40eb756c8d3b}{C\+W}, 
+\hyperlink{namespacep2t_a3ffe1d5b88773615026d5e590e3662eba953e6ad6ac330aa719772fafeffa971a}{C\+C\+W}, 
+\hyperlink{namespacep2t_a3ffe1d5b88773615026d5e590e3662ebad6bd308f4c1c9cd1a39bd4ae8e7d5387}{C\+O\+L\+L\+I\+N\+E\+A\+R}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacep2t_ab82db1108f5abd29df4537180f6e639c}{cmp} (const \hyperlink{structp2t_1_1_point}{Point} $\ast$a, const \hyperlink{structp2t_1_1_point}{Point} $\ast$b)
+\item 
+\hyperlink{structp2t_1_1_point}{Point} \hyperlink{namespacep2t_a98db07c78d588aa4e68ffdaadd503d45}{operator+} (const \hyperlink{structp2t_1_1_point}{Point} \&a, const \hyperlink{structp2t_1_1_point}{Point} \&b)
+\begin{DoxyCompactList}\small\item\em Add two points\+\_\+ component-\/wise. \end{DoxyCompactList}\item 
+\hyperlink{structp2t_1_1_point}{Point} \hyperlink{namespacep2t_adebd7f2104fff7945192e249aaeed77f}{operator-\/} (const \hyperlink{structp2t_1_1_point}{Point} \&a, const \hyperlink{structp2t_1_1_point}{Point} \&b)
+\begin{DoxyCompactList}\small\item\em Subtract two points\+\_\+ component-\/wise. \end{DoxyCompactList}\item 
+\hyperlink{structp2t_1_1_point}{Point} \hyperlink{namespacep2t_a4f005ffa2a5d03029a3619fb8110c4a9}{operator$\ast$} (double s, const \hyperlink{structp2t_1_1_point}{Point} \&a)
+\begin{DoxyCompactList}\small\item\em Multiply point by scalar. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacep2t_ac84d990aed3d2218987d6846a8249fb8}{operator==} (const \hyperlink{structp2t_1_1_point}{Point} \&a, const \hyperlink{structp2t_1_1_point}{Point} \&b)
+\item 
+bool \hyperlink{namespacep2t_aef209c6c873f146ba2c2ff1f2174f9f6}{operator!=} (const \hyperlink{structp2t_1_1_point}{Point} \&a, const \hyperlink{structp2t_1_1_point}{Point} \&b)
+\item 
+double \hyperlink{namespacep2t_a7f992d12c1c4fecfd9914e9f6d871f2d}{Dot} (const \hyperlink{structp2t_1_1_point}{Point} \&a, const \hyperlink{structp2t_1_1_point}{Point} \&b)
+\begin{DoxyCompactList}\small\item\em Peform the dot product on two vectors. \end{DoxyCompactList}\item 
+double \hyperlink{namespacep2t_afc804f5616661c8a9ddb798cdeb4564e}{Cross} (const \hyperlink{structp2t_1_1_point}{Point} \&a, const \hyperlink{structp2t_1_1_point}{Point} \&b)
+\begin{DoxyCompactList}\small\item\em Perform the cross product on two vectors. In 2\+D this produces a scalar. \end{DoxyCompactList}\item 
+\hyperlink{structp2t_1_1_point}{Point} \hyperlink{namespacep2t_aea08cc5eefe8a698251b03beabff716a}{Cross} (const \hyperlink{structp2t_1_1_point}{Point} \&a, double s)
+\item 
+\hyperlink{structp2t_1_1_point}{Point} \hyperlink{namespacep2t_a4feb1c03edd4b6c664a920e540c2395e}{Cross} (const double s, const \hyperlink{structp2t_1_1_point}{Point} \&a)
+\item 
+\hyperlink{namespacep2t_a3ffe1d5b88773615026d5e590e3662eb}{Orientation} \hyperlink{namespacep2t_acd412577d8e78b224f040528a42bf19f}{Orient2d} (\hyperlink{structp2t_1_1_point}{Point} \&pa, \hyperlink{structp2t_1_1_point}{Point} \&pb, \hyperlink{structp2t_1_1_point}{Point} \&pc)
+\item 
+bool \hyperlink{namespacep2t_a6051bac23e9a0b66687571b932d88e10}{In\+Scan\+Area} (\hyperlink{structp2t_1_1_point}{Point} \&pa, \hyperlink{structp2t_1_1_point}{Point} \&pb, \hyperlink{structp2t_1_1_point}{Point} \&pc, \hyperlink{structp2t_1_1_point}{Point} \&pd)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \hyperlink{namespacep2t_a8f5d342ebd2614a9169a41fa6952b5f9}{P\+I\+\_\+3div4} = 3 $\ast$ M\+\_\+\+P\+I / 4
+\item 
+const double \hyperlink{namespacep2t_abd7f6949620798fa69359d45d8c46f98}{P\+I\+\_\+div2} = 1.\+57079632679489661923
+\item 
+const double \hyperlink{namespacep2t_ac5421d160ad8cd832c3cf6483d378e24}{E\+P\+S\+I\+L\+O\+N} = 1e-\/12
+\item 
+const double \hyperlink{namespacep2t_aed2c5457dd827e0781c4dbfa6adfb583}{k\+Alpha} = 0.\+3
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Mason Green \href{mailto:mason.green@gmail.com}{\tt mason.\+green@gmail.\+com}
+\end{DoxyAuthor}
+Sweep-\/line, Constrained Delauney Triangulation (\hyperlink{classp2t_1_1_c_d_t}{C\+D\+T}) See\+: Domiter, V. and Zalik, B.(2008)\textquotesingle{}Sweep-\/line algorithm for constrained Delaunay triangulation\textquotesingle{}, International Journal of Geographical Information Science
+
+\char`\"{}\+Flip\+Scan\char`\"{} Constrained \hyperlink{structp2t_1_1_edge}{Edge} Algorithm invented by Thomas 흂l?, \href{mailto:thahlen@gmail.com}{\tt thahlen@gmail.\+com} 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespacep2t_a3ffe1d5b88773615026d5e590e3662eb}{}\index{p2t@{p2t}!Orientation@{Orientation}}
+\index{Orientation@{Orientation}!p2t@{p2t}}
+\subsubsection[{Orientation}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf p2t\+::\+Orientation}}\label{namespacep2t_a3ffe1d5b88773615026d5e590e3662eb}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\+W@{C\+W}!p2t@{p2t}}\index{p2t@{p2t}!C\+W@{C\+W}}\item[{\em 
+\hypertarget{namespacep2t_a3ffe1d5b88773615026d5e590e3662eba005d0f4a800b4d758e8a40eb756c8d3b}{}C\+W\label{namespacep2t_a3ffe1d5b88773615026d5e590e3662eba005d0f4a800b4d758e8a40eb756c8d3b}
+}]\index{C\+C\+W@{C\+C\+W}!p2t@{p2t}}\index{p2t@{p2t}!C\+C\+W@{C\+C\+W}}\item[{\em 
+\hypertarget{namespacep2t_a3ffe1d5b88773615026d5e590e3662eba953e6ad6ac330aa719772fafeffa971a}{}C\+C\+W\label{namespacep2t_a3ffe1d5b88773615026d5e590e3662eba953e6ad6ac330aa719772fafeffa971a}
+}]\index{C\+O\+L\+L\+I\+N\+E\+A\+R@{C\+O\+L\+L\+I\+N\+E\+A\+R}!p2t@{p2t}}\index{p2t@{p2t}!C\+O\+L\+L\+I\+N\+E\+A\+R@{C\+O\+L\+L\+I\+N\+E\+A\+R}}\item[{\em 
+\hypertarget{namespacep2t_a3ffe1d5b88773615026d5e590e3662ebad6bd308f4c1c9cd1a39bd4ae8e7d5387}{}C\+O\+L\+L\+I\+N\+E\+A\+R\label{namespacep2t_a3ffe1d5b88773615026d5e590e3662ebad6bd308f4c1c9cd1a39bd4ae8e7d5387}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacep2t_ab82db1108f5abd29df4537180f6e639c}{}\index{p2t@{p2t}!cmp@{cmp}}
+\index{cmp@{cmp}!p2t@{p2t}}
+\subsubsection[{cmp(const Point $\ast$a, const Point $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}bool p2t\+::cmp (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{a, }
+\item[{const {\bf Point} $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespacep2t_ab82db1108f5abd29df4537180f6e639c}
+\hypertarget{namespacep2t_afc804f5616661c8a9ddb798cdeb4564e}{}\index{p2t@{p2t}!Cross@{Cross}}
+\index{Cross@{Cross}!p2t@{p2t}}
+\subsubsection[{Cross(const Point \&a, const Point \&b)}]{\setlength{\rightskip}{0pt plus 5cm}double p2t\+::\+Cross (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{a, }
+\item[{const {\bf Point} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespacep2t_afc804f5616661c8a9ddb798cdeb4564e}
+
+
+Perform the cross product on two vectors. In 2\+D this produces a scalar. 
+
+\hypertarget{namespacep2t_aea08cc5eefe8a698251b03beabff716a}{}\index{p2t@{p2t}!Cross@{Cross}}
+\index{Cross@{Cross}!p2t@{p2t}}
+\subsubsection[{Cross(const Point \&a, double s)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} p2t\+::\+Cross (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{a, }
+\item[{double}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespacep2t_aea08cc5eefe8a698251b03beabff716a}
+Perform the cross product on a point and a scalar. In 2\+D this produces a point. \hypertarget{namespacep2t_a4feb1c03edd4b6c664a920e540c2395e}{}\index{p2t@{p2t}!Cross@{Cross}}
+\index{Cross@{Cross}!p2t@{p2t}}
+\subsubsection[{Cross(const double s, const Point \&a)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} p2t\+::\+Cross (
+\begin{DoxyParamCaption}
+\item[{const double}]{s, }
+\item[{const {\bf Point} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespacep2t_a4feb1c03edd4b6c664a920e540c2395e}
+Perform the cross product on a scalar and a point. In 2\+D this produces a point. \hypertarget{namespacep2t_a7f992d12c1c4fecfd9914e9f6d871f2d}{}\index{p2t@{p2t}!Dot@{Dot}}
+\index{Dot@{Dot}!p2t@{p2t}}
+\subsubsection[{Dot(const Point \&a, const Point \&b)}]{\setlength{\rightskip}{0pt plus 5cm}double p2t\+::\+Dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{a, }
+\item[{const {\bf Point} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespacep2t_a7f992d12c1c4fecfd9914e9f6d871f2d}
+
+
+Peform the dot product on two vectors. 
+
+\hypertarget{namespacep2t_a6051bac23e9a0b66687571b932d88e10}{}\index{p2t@{p2t}!In\+Scan\+Area@{In\+Scan\+Area}}
+\index{In\+Scan\+Area@{In\+Scan\+Area}!p2t@{p2t}}
+\subsubsection[{In\+Scan\+Area(\+Point \&pa, Point \&pb, Point \&pc, Point \&pd)}]{\setlength{\rightskip}{0pt plus 5cm}bool p2t\+::\+In\+Scan\+Area (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{pa, }
+\item[{{\bf Point} \&}]{pb, }
+\item[{{\bf Point} \&}]{pc, }
+\item[{{\bf Point} \&}]{pd}
+\end{DoxyParamCaption}
+)}\label{namespacep2t_a6051bac23e9a0b66687571b932d88e10}
+\hypertarget{namespacep2t_aef209c6c873f146ba2c2ff1f2174f9f6}{}\index{p2t@{p2t}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!p2t@{p2t}}
+\subsubsection[{operator"!=(const Point \&a, const Point \&b)}]{\setlength{\rightskip}{0pt plus 5cm}bool p2t\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{a, }
+\item[{const {\bf Point} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespacep2t_aef209c6c873f146ba2c2ff1f2174f9f6}
+\hypertarget{namespacep2t_a4f005ffa2a5d03029a3619fb8110c4a9}{}\index{p2t@{p2t}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!p2t@{p2t}}
+\subsubsection[{operator$\ast$(double s, const Point \&a)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} p2t\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{double}]{s, }
+\item[{const {\bf Point} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespacep2t_a4f005ffa2a5d03029a3619fb8110c4a9}
+
+
+Multiply point by scalar. 
+
+\hypertarget{namespacep2t_a98db07c78d588aa4e68ffdaadd503d45}{}\index{p2t@{p2t}!operator+@{operator+}}
+\index{operator+@{operator+}!p2t@{p2t}}
+\subsubsection[{operator+(const Point \&a, const Point \&b)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} p2t\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{a, }
+\item[{const {\bf Point} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespacep2t_a98db07c78d588aa4e68ffdaadd503d45}
+
+
+Add two points\+\_\+ component-\/wise. 
+
+\hypertarget{namespacep2t_adebd7f2104fff7945192e249aaeed77f}{}\index{p2t@{p2t}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!p2t@{p2t}}
+\subsubsection[{operator-\/(const Point \&a, const Point \&b)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} p2t\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{a, }
+\item[{const {\bf Point} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespacep2t_adebd7f2104fff7945192e249aaeed77f}
+
+
+Subtract two points\+\_\+ component-\/wise. 
+
+\hypertarget{namespacep2t_ac84d990aed3d2218987d6846a8249fb8}{}\index{p2t@{p2t}!operator==@{operator==}}
+\index{operator==@{operator==}!p2t@{p2t}}
+\subsubsection[{operator==(const Point \&a, const Point \&b)}]{\setlength{\rightskip}{0pt plus 5cm}bool p2t\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{a, }
+\item[{const {\bf Point} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespacep2t_ac84d990aed3d2218987d6846a8249fb8}
+\hypertarget{namespacep2t_acd412577d8e78b224f040528a42bf19f}{}\index{p2t@{p2t}!Orient2d@{Orient2d}}
+\index{Orient2d@{Orient2d}!p2t@{p2t}}
+\subsubsection[{Orient2d(\+Point \&pa, Point \&pb, Point \&pc)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Orientation} p2t\+::\+Orient2d (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{pa, }
+\item[{{\bf Point} \&}]{pb, }
+\item[{{\bf Point} \&}]{pc}
+\end{DoxyParamCaption}
+)}\label{namespacep2t_acd412577d8e78b224f040528a42bf19f}
+Forumla to calculate signed area~\newline
+ Positive if C\+C\+W~\newline
+ Negative if C\+W~\newline
+ 0 if collinear~\newline
+ 
+\begin{DoxyPre}
+A[P1,P2,P3]  =  (x1*y2 - y1*x2) + (x2*y3 - y2*x3) + (x3*y1 - y3*x1)
+             =  (x1-x3)*(y2-y3) - (y1-y3)*(x2-x3)
+\end{DoxyPre}
+ 
+
+\subsection{Variable Documentation}
+\hypertarget{namespacep2t_ac5421d160ad8cd832c3cf6483d378e24}{}\index{p2t@{p2t}!E\+P\+S\+I\+L\+O\+N@{E\+P\+S\+I\+L\+O\+N}}
+\index{E\+P\+S\+I\+L\+O\+N@{E\+P\+S\+I\+L\+O\+N}!p2t@{p2t}}
+\subsubsection[{E\+P\+S\+I\+L\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}const double p2t\+::\+E\+P\+S\+I\+L\+O\+N = 1e-\/12}\label{namespacep2t_ac5421d160ad8cd832c3cf6483d378e24}
+\hypertarget{namespacep2t_aed2c5457dd827e0781c4dbfa6adfb583}{}\index{p2t@{p2t}!k\+Alpha@{k\+Alpha}}
+\index{k\+Alpha@{k\+Alpha}!p2t@{p2t}}
+\subsubsection[{k\+Alpha}]{\setlength{\rightskip}{0pt plus 5cm}const double p2t\+::k\+Alpha = 0.\+3}\label{namespacep2t_aed2c5457dd827e0781c4dbfa6adfb583}
+\hypertarget{namespacep2t_a8f5d342ebd2614a9169a41fa6952b5f9}{}\index{p2t@{p2t}!P\+I\+\_\+3div4@{P\+I\+\_\+3div4}}
+\index{P\+I\+\_\+3div4@{P\+I\+\_\+3div4}!p2t@{p2t}}
+\subsubsection[{P\+I\+\_\+3div4}]{\setlength{\rightskip}{0pt plus 5cm}const double p2t\+::\+P\+I\+\_\+3div4 = 3 $\ast$ M\+\_\+\+P\+I / 4}\label{namespacep2t_a8f5d342ebd2614a9169a41fa6952b5f9}
+\hypertarget{namespacep2t_abd7f6949620798fa69359d45d8c46f98}{}\index{p2t@{p2t}!P\+I\+\_\+div2@{P\+I\+\_\+div2}}
+\index{P\+I\+\_\+div2@{P\+I\+\_\+div2}!p2t@{p2t}}
+\subsubsection[{P\+I\+\_\+div2}]{\setlength{\rightskip}{0pt plus 5cm}const double p2t\+::\+P\+I\+\_\+div2 = 1.\+57079632679489661923}\label{namespacep2t_abd7f6949620798fa69359d45d8c46f98}

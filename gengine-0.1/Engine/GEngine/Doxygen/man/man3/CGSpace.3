@@ -1,0 +1,252 @@
+.TH "CGSpace" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGSpace \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GSpace\&.h>\fP
+.PP
+Inherits \fBCGObjectBase\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBAttr\fP { \fBeAttrLoaded\fP = 0x00000001, \fBeAttrUnloaded\fP = 0x00000002, \fBeAttrDrawBoundary\fP = 0x00000004, \fBeAttrDrawObject\fP = 0x00000008, \fBeAttrChanged\fP = 0x00000010 }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGSIZE\fP \fBGetObjectCount\fP () const "
+.br
+.ti -1c
+.RI "\fBGSIZE\fP \fBGetSpaceCount\fP () const "
+.br
+.ti -1c
+.RI "void \fBLoad\fP ()"
+.br
+.ti -1c
+.RI "void \fBUnload\fP ()"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBAddObject\fP (const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBRemoveObject\fP (const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBIsAttr\fP (const \fBCGSpace::Attr\fP &eAttr) const "
+.br
+.ti -1c
+.RI "void \fBSetAttr\fP (const \fBCGSpace::Attr\fP &eAttr, const \fBGBOOL\fP &bSet)"
+.br
+.ti -1c
+.RI "void \fBUpdateSimpleShape\fP (const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "const CAtlMap< \fBGID\fP, \fBGBOOL\fP > & \fBGetObjectMap\fP () const "
+.br
+.ti -1c
+.RI "const CAtlMap< \fBGID\fP, \fBGBOOL\fP > & \fBGetSpaceMap\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBCalcBoundary\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBPrimitiveTopology\fP \fBGetPrimitiveTopology\fP () const "
+.br
+.ti -1c
+.RI "const void \fBGetAllVertex\fP (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > &arrVertex) const "
+.br
+.ti -1c
+.RI "virtual const void \fBGetAllVertexByPrimitiveTopology\fP (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > &arrVertex) const "
+.br
+.ti -1c
+.RI "virtual const void \fBGetAllStripVertexListIndexByPrimitiveTopology\fP (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > &arrVertex, \fBGOUT\fP CAtlArray< \fBGUINT32\fP > &arrIndex) const "
+.br
+.ti -1c
+.RI "\fBGDEFINE_REGISTE_OBJECT\fP (\fBCGSpace\fP)"
+.br
+.ti -1c
+.RI "\fBCGSpace\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGSpace\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+공간정보 object
+.IP "\(bu" 2
+space는 동적으로 생성되거나 사라진다\&. 따라서 unload한다고 파일로 저장되지 않는다\&.
+.IP "\(bu" 2
+파일로 저장할 경우 파일 확장자는 g3s이다\&. 
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCGSpace::Attr\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeAttrLoaded \fP\fP
+.TP
+\fB\fIeAttrUnloaded \fP\fP
+.TP
+\fB\fIeAttrDrawBoundary \fP\fP
+.TP
+\fB\fIeAttrDrawObject \fP\fP
+.TP
+\fB\fIeAttrChanged \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_SUPER\fP \fBGIMPLEMENT_OPERATOR_COPY_END\fP CGSpace::CGSpace ()"
+
+.SS "CGSpace::~CGSpace ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBGBOOL\fP CGSpace::AddObject (const \fBCGObjectBase\fP & object)"
+
+.IP "\(bu" 2
+object를 space에 추가한다\&.
+.IP "\(bu" 2
+space의 개략 형상을 갱신한다\&. 
+.PP
+
+.SS "void CGSpace::CalcBoundary ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+space는 boundary를 작아지게 하지 않는다\&.
+.IP "  \(bu" 4
+계속해서 커지기만 한다\&.
+.IP "  \(bu" 4
+따라서, InitBoundary의 개념은 없다\&. 
+.PP
+
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "CGSpace::GDEFINE_REGISTE_OBJECT (\fBCGSpace\fP)"
+
+.SS "const void CGSpace::GetAllStripVertexListIndexByPrimitiveTopology (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > & arrVertex, \fBGOUT\fP CAtlArray< \fBGUINT32\fP > & arrIndex) const\fC [virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer에 추가할 strip vertex와 list index를 가져온다\&.
+.IP "\(bu" 2
+object를 그리기 위해서는 반드시 재정의가 필요하다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "const void CGSpace::GetAllVertex (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > & arrVertex) const"
+
+.SS "const void CGSpace::GetAllVertexByPrimitiveTopology (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > & arrVertex) const\fC [virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer에 추가할 vertex를 가져온다\&.
+.IP "\(bu" 2
+object를 그리기 위해서는 반드시 재정의가 필요하다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "\fBGSIZE\fP CGSpace::GetObjectCount () const"
+
+.IP "\(bu" 2
+포함하고 있는 object의 개수를 리턴한다\&. 
+.PP
+
+.SS "const CAtlMap< \fBGID\fP, \fBGBOOL\fP > & CGSpace::GetObjectMap () const"
+
+.IP "\(bu" 2
+space에 포함되어 있는 object의 map을 리턴한다\&. 
+.PP
+
+.SS "virtual \fBPrimitiveTopology\fP CGSpace::GetPrimitiveTopology () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.IP "\(bu" 2
+object의 vertex의 primitive topology를 리턴한다\&.
+.IP "\(bu" 2
+object는 한가지 primitive topology만 가질 수 있다\&.(다양한 primitive topology가 필요하다면 object를 여러개 가지도록 하면 된다) 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "\fBGSIZE\fP CGSpace::GetSpaceCount () const"
+
+.IP "\(bu" 2
+포함하고 있는 space의 개수를 리턴한다\&. 
+.PP
+
+.SS "const CAtlMap< \fBGID\fP, \fBGBOOL\fP > & CGSpace::GetSpaceMap () const"
+
+.SS "\fBGBOOL\fP CGSpace::IsAttr (const \fBCGSpace::Attr\fP & eAttr) const"
+
+.IP "\(bu" 2
+속성이 설정되어 있는지 판별한다\&. 
+.PP
+
+.SS "void CGSpace::Load ()"
+
+.IP "\(bu" 2
+file에 저장된 object를 memory로 로딩한다\&.
+.IP "\(bu" 2
+sub space의 내용까지 모두 로딩하지는 않는다\&.
+.IP "\(bu" 2
+
+.PP
+
+.SS "\fBGBOOL\fP CGSpace::RemoveObject (const \fBCGObjectBase\fP & object)"
+
+.IP "\(bu" 2
+object를 space에서 제거한다\&.
+.IP "\(bu" 2
+space의 개략 형상을 갱신한다\&.
+.IP "\(bu" 2
+space의 boundary를 재계산하지 않는다\&.
+.IP "  \(bu" 4
+space는 팽창만 한다\&.(작아지는 것은 비용이 너무 큼) 
+.PP
+
+.PP
+
+.SS "void CGSpace::SetAttr (const \fBCGSpace::Attr\fP & eAttr, const \fBGBOOL\fP & bSet)"
+
+.IP "\(bu" 2
+속성을 설정한다\&. 
+.PP
+
+.SS "void CGSpace::Unload ()"
+
+.IP "\(bu" 2
+memory에 로딩되어 있는 object를 파일로 저장하고, 메모리에서 모두 삭제한다\&. 
+.PP
+
+.SS "void CGSpace::UpdateSimpleShape (const \fBCGObjectBase\fP & object)"
+
+.IP "\(bu" 2
+space의 개략형상을 update한다\&. 
+.PP
+\fBTodo\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

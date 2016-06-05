@@ -1,0 +1,147 @@
+.TH "QuadTreeNode< ELEMENT >" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+QuadTreeNode< ELEMENT > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GQuadTree\&.hpp>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBAttr\fP { \fBeAttrInMemory\fP = 0x00000001, \fBeAttrInFile\fP = 0x00000002, \fBeAttrWillSaveFile\fP = 0x0000004, \fBeAttrCount\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetAttr\fP (const \fBAttr\fP &eAttr, const bool &bSet)"
+.br
+.ti -1c
+.RI "bool \fBGetAttr\fP (const \fBAttr\fP &eAttr) const "
+.br
+.ti -1c
+.RI "bool \fBGetAttr\fP (const DWORD32 &dwAttr) const "
+.br
+.ti -1c
+.RI "void \fBGetAllNode\fP (CAtlList< \fBQuadTreeNode\fP< ELEMENT > * > &listRet)"
+.br
+.ti -1c
+.RI "void \fBSaveMemoryToFile\fP ()"
+.br
+.ti -1c
+.RI "void \fBLoadMemoryFromFile\fP ()"
+.br
+.ti -1c
+.RI "\fBAABB\fP \fBGetRegion\fP () const "
+.br
+.ti -1c
+.RI "void \fBGetAllOccupant\fP (CAtlList< \fBQuadTreeOccupant\fP * > &listRet)"
+.br
+.ti -1c
+.RI "void \fBGetAllOccupant\fP (CAtlArray< ELEMENT * > &arrRet)"
+.br
+.ti -1c
+.RI "CString \fBGetGuid\fP ()"
+.br
+.ti -1c
+.RI "INT32 \fBGetNumOccupants\fP ()"
+.br
+.ti -1c
+.RI "\fBQuadTreeNode\fP (const \fBAABB\fP &newRegion, unsigned int numLevels, \fBQuadTreeNode\fP< ELEMENT > *pParent=NULL, void *pContainer=NULL)"
+.br
+.ti -1c
+.RI "\fB~QuadTreeNode\fP ()"
+.br
+.ti -1c
+.RI "ELEMENT * \fBAddOccupant\fP (ELEMENT &oc)"
+.br
+.ti -1c
+.RI "void \fBQuery\fP (const \fBAABB\fP &queryRegion, CAtlList< \fBQuadTreeOccupant\fP * > &queryResult)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBQuadTreeNode< ELEMENT >\fP"
+.br
+.ti -1c
+.RI "class \fBQuadTree< ELEMENT >\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "template<class ELEMENT> enum \fBQuadTreeNode::Attr\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeAttrInMemory \fP\fP
+.TP
+\fB\fIeAttrInFile \fP\fP
+.TP
+\fB\fIeAttrWillSaveFile \fP\fP
+.TP
+\fB\fIeAttrCount \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class ELEMENT> \fBQuadTreeNode\fP< ELEMENT >::\fBQuadTreeNode\fP (const \fBAABB\fP & newRegion, unsigned int numLevels, \fBQuadTreeNode\fP< ELEMENT > * pParent = \fCNULL\fP, void * pContainer = \fCNULL\fP)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> \fBQuadTreeNode\fP< ELEMENT >::~\fBQuadTreeNode\fP ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class ELEMENT> ELEMENT* \fBQuadTreeNode\fP< ELEMENT >::AddOccupant (ELEMENT & oc)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBQuadTreeNode\fP< ELEMENT >::GetAllNode (CAtlList< \fBQuadTreeNode\fP< ELEMENT > * > & listRet)\fC [inline]\fP"
+
+.IP "\(bu" 2
+모든 노드를 가져옴\&.(본인 포함) 
+.PP
+
+.SS "template<class ELEMENT> void \fBQuadTreeNode\fP< ELEMENT >::GetAllOccupant (CAtlList< \fBQuadTreeOccupant\fP * > & listRet)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBQuadTreeNode\fP< ELEMENT >::GetAllOccupant (CAtlArray< ELEMENT * > & arrRet)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> bool \fBQuadTreeNode\fP< ELEMENT >::GetAttr (const \fBAttr\fP & eAttr) const\fC [inline]\fP"
+
+.SS "template<class ELEMENT> bool \fBQuadTreeNode\fP< ELEMENT >::GetAttr (const DWORD32 & dwAttr) const\fC [inline]\fP"
+
+.SS "template<class ELEMENT> CString \fBQuadTreeNode\fP< ELEMENT >::GetGuid ()\fC [inline]\fP"
+
+.SS "template<class ELEMENT> INT32 \fBQuadTreeNode\fP< ELEMENT >::GetNumOccupants ()\fC [inline]\fP"
+
+.SS "template<class ELEMENT> \fBAABB\fP \fBQuadTreeNode\fP< ELEMENT >::GetRegion () const\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBQuadTreeNode\fP< ELEMENT >::LoadMemoryFromFile ()\fC [inline]\fP"
+
+.IP "\(bu" 2
+QuadTreeOccupant를 파일에서 읽어와서 메모리에 넣는다\&. 
+.PP
+
+.SS "template<class ELEMENT> void \fBQuadTreeNode\fP< ELEMENT >::Query (const \fBAABB\fP & queryRegion, CAtlList< \fBQuadTreeOccupant\fP * > & queryResult)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBQuadTreeNode\fP< ELEMENT >::SaveMemoryToFile ()\fC [inline]\fP"
+
+.IP "\(bu" 2
+QuadTreeOccupant를 파일로 저장하고 QuadTreeOccupant를 초기화 한다\&. 
+.PP
+
+.SS "template<class ELEMENT> void \fBQuadTreeNode\fP< ELEMENT >::SetAttr (const \fBAttr\fP & eAttr, const bool & bSet)\fC [inline]\fP"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "template<class ELEMENT> friend class \fBQuadTree\fP< ELEMENT >\fC [friend]\fP"
+
+.SS "template<class ELEMENT> friend class \fBQuadTreeNode\fP< ELEMENT >\fC [friend]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

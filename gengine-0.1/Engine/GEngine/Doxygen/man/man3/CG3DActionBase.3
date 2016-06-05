@@ -1,0 +1,229 @@
+.TH "CG3DActionBase" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CG3DActionBase \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <G3DActionBase\&.h>\fP
+.PP
+Inherited by \fBCG3DActionCreateCircle\fP, \fBCG3DActionCreateLine\fP, and \fBCG3DActionSelect\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetActionManager\fP (\fBCG3DActionManager\fP *pActionManager)"
+.br
+.ti -1c
+.RI "virtual void \fBStartAction\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBEndAction\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBOnMouseMove\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "virtual void \fBOnLButtonDblClk\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "virtual void \fBOnLButtonDown\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "virtual void \fBOnLButtonUp\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "virtual void \fBOnRButtonDown\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "virtual void \fBFlushPreview\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBCreatePreview\fP ()"
+.br
+.ti -1c
+.RI "virtual CAtlString \fBGetStrType\fP ()=0"
+.br
+.ti -1c
+.RI "\fBCG3DActionBase\fP ()"
+.br
+.ti -1c
+.RI "\fB~CG3DActionBase\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCG3DView\fP * \fBGetView\fP ()"
+.br
+.ti -1c
+.RI "\fBCG3DDB\fP * \fBGetPreviewDB\fP ()"
+.br
+.ti -1c
+.RI "\fBCG3DDB\fP * \fBGetTempDB\fP ()"
+.br
+.ti -1c
+.RI "void \fBRegenPreviewDB\fP ()"
+.br
+.ti -1c
+.RI "void \fBRegenTempDB\fP ()"
+.br
+.ti -1c
+.RI "void \fBCopySelectedObjectToTempDB\fP ()"
+.br
+.ti -1c
+.RI "void \fBInitPreviewDB\fP ()"
+.br
+.ti -1c
+.RI "void \fBInitTempDB\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBCG3DActionManager\fP * \fBm_pActionManager\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+action base 클래스
+.IP "\(bu" 2
+user defined action을 만들기 위해서는 반드시 상속받아야 한다\&.
+.IP "\(bu" 2
+action 등록 방법
+.IP "  \(bu" 4
+action 개발시 : action header에서 GDEFINE_REGISTE_ACTION 사용해서 등록
+.IP "  \(bu" 4
+action 사용시 : 사용할 프로젝트에서 GIMPLEMENT_REGISTE_ACTION 사용해서 등록 
+.PP
+
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CG3DActionBase::CG3DActionBase ()"
+
+.SS "CG3DActionBase::~CG3DActionBase ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CG3DActionBase::CopySelectedObjectToTempDB ()\fC [protected]\fP"
+
+.IP "\(bu" 2
+선택된 object를 preview DB로 복사한다\&. 
+.PP
+
+.SS "void CG3DActionBase::CreatePreview ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+action에 미리보기 객체가 있는 경우 이 함수를 재정의 하여 미리보기 객체를 그리도록 구현해야 한다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCG3DActionMove\fP, \fBCG3DActionCreateCircle\fP, \fBCG3DActionCreateLine\fP, and \fBCG3DActionSelect\fP\&.
+.SS "void CG3DActionBase::EndAction ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+action이 끝날때 호출되어야 하는 가상함수이다\&.
+.IP "\(bu" 2
+개발자가 직접 호출해야 한다\&.
+.IP "\(bu" 2
+action이 종료된 후 마지막에 호출된다\&.
+.IP "\(bu" 2
+action이 종료되면 default action을 다시 실행한다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCG3DActionSelect\fP, \fBCG3DActionMove\fP, \fBCG3DActionCreateCircle\fP, and \fBCG3DActionCreateLine\fP\&.
+.SS "void CG3DActionBase::FlushPreview ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+action에 미리보기 객체가 있는 경우 이 함수를 재정의 하여 미리보기 객체를 view에서 지우도록 구현해야 한다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCG3DActionSelect\fP\&.
+.SS "\fBCG3DDB\fP * CG3DActionBase::GetPreviewDB ()\fC [protected]\fP"
+
+.IP "\(bu" 2
+preview DB를 리턴한다\&. 
+.PP
+
+.SS "virtual CAtlString CG3DActionBase::GetStrType ()\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+action의 종류를 구분할 수 있는 string 
+.PP
+
+.SS "\fBCG3DDB\fP * CG3DActionBase::GetTempDB ()\fC [protected]\fP"
+
+.IP "\(bu" 2
+Temp DB를 리턴한다\&. 
+.PP
+
+.SS "\fBCG3DView\fP * CG3DActionBase::GetView ()\fC [protected]\fP"
+
+.SS "void CG3DActionBase::InitPreviewDB ()\fC [protected]\fP"
+
+.IP "\(bu" 2
+preview db를 초기화 한다\&. 
+.PP
+
+.SS "void CG3DActionBase::InitTempDB ()\fC [protected]\fP"
+
+.SS "void CG3DActionBase::OnLButtonDblClk (UINT nFlags, CPoint point)\fC [virtual]\fP"
+
+.SS "void CG3DActionBase::OnLButtonDown (UINT nFlags, CPoint point)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCG3DActionMove\fP, \fBCG3DActionCreateCircle\fP, \fBCG3DActionCreateLine\fP, and \fBCG3DActionSelect\fP\&.
+.SS "void CG3DActionBase::OnLButtonUp (UINT nFlags, CPoint point)\fC [virtual]\fP"
+
+.SS "void CG3DActionBase::OnMouseMove (UINT nFlags, CPoint point)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+마우스 이벤트 핸들러이다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCG3DActionMove\fP, \fBCG3DActionCreateCircle\fP, \fBCG3DActionCreateLine\fP, and \fBCG3DActionSelect\fP\&.
+.SS "void CG3DActionBase::OnRButtonDown (UINT nFlags, CPoint point)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCG3DActionMove\fP\&.
+.SS "void CG3DActionBase::RegenPreviewDB ()\fC [protected]\fP"
+
+.IP "\(bu" 2
+preview를 regen한다\&. 
+.PP
+
+.SS "void CG3DActionBase::RegenTempDB ()\fC [protected]\fP"
+
+.IP "\(bu" 2
+TempDB를 regen한다\&. 
+.PP
+
+.SS "void CG3DActionBase::SetActionManager (\fBCG3DActionManager\fP * pActionManager)"
+
+.SS "void CG3DActionBase::StartAction ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+action이 시작되면서 action manager에 으해서 가장 먼저 호출되는 가상함수이다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCG3DActionSelect\fP, \fBCG3DActionMove\fP, \fBCG3DActionCreateCircle\fP, and \fBCG3DActionCreateLine\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBCG3DActionManager\fP* CG3DActionBase::m_pActionManager\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

@@ -1,0 +1,79 @@
+.TH "CGPolyline3D" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGPolyline3D \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GPolyline3D\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetPoint\fP (const CAtlArray< \fBCGPoint3D\fP > &arrPoint)"
+.br
+.ti -1c
+.RI "const CAtlArray< \fBCGPoint3D\fP > & \fBGetPoint\fP () const "
+.br
+.ti -1c
+.RI "INT32 \fBGetCountPoint\fP () const "
+.br
+.ti -1c
+.RI "void \fBMove\fP (const \fBCGVector3D\fP &vMove)"
+.br
+.ti -1c
+.RI "void \fBRotate\fP (const \fBCGPoint3D\fP &ptBase, const \fBCGVector3D\fP &vAxis, const \fBCGPoint2D\fP &vAng)"
+.br
+.ti -1c
+.RI "void \fBScale\fP (const \fBCGPoint3D\fP &ptBase, const \fBGDOUBLE\fP &dScale)"
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGPolyline3D\fP)"
+.br
+.ti -1c
+.RI "\fBCGPolyline3D\fP (const \fBCGPolyline3D\fP &d)"
+.br
+.ti -1c
+.RI "\fBCGPolyline3D\fP (void)"
+.br
+.ti -1c
+.RI "\fB~CGPolyline3D\fP (void)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+polyline 3D 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGPolyline3D::CGPolyline3D (const \fBCGPolyline3D\fP & d)"
+
+.SS "CGPolyline3D::CGPolyline3D (void)"
+
+.SS "CGPolyline3D::~CGPolyline3D (void)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CGPolyline3D::GDEFINE_OPERATOR_COPY (\fBCGPolyline3D\fP)"
+
+.SS "INT32 CGPolyline3D::GetCountPoint () const"
+
+.SS "const CAtlArray< \fBCGPoint3D\fP > & CGPolyline3D::GetPoint () const"
+
+.SS "void CGPolyline3D::Move (const \fBCGVector3D\fP & vMove)"
+
+.SS "void CGPolyline3D::Rotate (const \fBCGPoint3D\fP & ptBase, const \fBCGVector3D\fP & vAxis, const \fBCGPoint2D\fP & vAng)"
+
+.SS "void CGPolyline3D::Scale (const \fBCGPoint3D\fP & ptBase, const \fBGDOUBLE\fP & dScale)"
+
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_END\fP void CGPolyline3D::SetPoint (const CAtlArray< \fBCGPoint3D\fP > & arrPoint)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

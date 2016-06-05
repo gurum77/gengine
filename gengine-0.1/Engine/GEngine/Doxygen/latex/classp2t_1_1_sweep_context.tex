@@ -1,0 +1,261 @@
+\hypertarget{classp2t_1_1_sweep_context}{}\section{p2t\+:\+:Sweep\+Context Class Reference}
+\label{classp2t_1_1_sweep_context}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+
+
+{\ttfamily \#include $<$sweep\+\_\+context.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structp2t_1_1_sweep_context_1_1_basin}{Basin}
+\item 
+struct \hyperlink{structp2t_1_1_sweep_context_1_1_edge_event}{Edge\+Event}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classp2t_1_1_sweep_context_a2b500da0d77926f92fdcf41e45164ef4}{Sweep\+Context} (std\+::vector$<$ \hyperlink{structp2t_1_1_point}{Point} $\ast$ $>$ polyline)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classp2t_1_1_sweep_context_a4275f1eb166fe4c69d18670898c65f98}{$\sim$\+Sweep\+Context} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classp2t_1_1_sweep_context_abd31ac7cc3ba9d418e08d5583ae7d32e}{set\+\_\+head} (\hyperlink{structp2t_1_1_point}{Point} $\ast$p1)
+\item 
+\hyperlink{structp2t_1_1_point}{Point} $\ast$ \hyperlink{classp2t_1_1_sweep_context_a18a228af449cec5e739b4303be83ddf1}{head} ()
+\item 
+void \hyperlink{classp2t_1_1_sweep_context_ac685ab377d5f1b184b4bb94e151a2af9}{set\+\_\+tail} (\hyperlink{structp2t_1_1_point}{Point} $\ast$p1)
+\item 
+\hyperlink{structp2t_1_1_point}{Point} $\ast$ \hyperlink{classp2t_1_1_sweep_context_a160d5f2ff0f93af7a577a36949a04623}{tail} ()
+\item 
+int \hyperlink{classp2t_1_1_sweep_context_a4ef94d299d632dee275dd511d7434c2d}{point\+\_\+count} ()
+\item 
+\hyperlink{structp2t_1_1_node}{Node} \& \hyperlink{classp2t_1_1_sweep_context_a501b441e104acc9504e5c3aa471b2f32}{Locate\+Node} (\hyperlink{structp2t_1_1_point}{Point} \&point)
+\item 
+void \hyperlink{classp2t_1_1_sweep_context_a0ea069bc88f6f7cd4b0022d988017d8d}{Remove\+Node} (\hyperlink{structp2t_1_1_node}{Node} $\ast$node)
+\item 
+void \hyperlink{classp2t_1_1_sweep_context_a09710e3b918586ccfed9f96553896a29}{Create\+Advancing\+Front} (std\+::vector$<$ \hyperlink{structp2t_1_1_node}{Node} $\ast$ $>$ nodes)
+\item 
+void \hyperlink{classp2t_1_1_sweep_context_aa1c59ec4b2bc6d6f3b248c452d6993c1}{Map\+Triangle\+To\+Nodes} (\hyperlink{classp2t_1_1_triangle}{Triangle} \&t)
+\begin{DoxyCompactList}\small\item\em Try to map a node to all sides of this triangle that don\textquotesingle{}t have a neighbor. \end{DoxyCompactList}\item 
+void \hyperlink{classp2t_1_1_sweep_context_a9ae8715f961ca7e61cc5a986f6afbe12}{Add\+To\+Map} (\hyperlink{classp2t_1_1_triangle}{Triangle} $\ast$triangle)
+\item 
+\hyperlink{structp2t_1_1_point}{Point} $\ast$ \hyperlink{classp2t_1_1_sweep_context_a72e8032e135d9cd6c44b2d93cbfbc033}{Get\+Point} (const int \&index)
+\item 
+\hyperlink{structp2t_1_1_point}{Point} $\ast$ \hyperlink{classp2t_1_1_sweep_context_ae37f1dcc28825cffc9a0a7509686167f}{Get\+Points} ()
+\item 
+void \hyperlink{classp2t_1_1_sweep_context_a7fb0c50ea27a52a1f912809404657f89}{Remove\+From\+Map} (\hyperlink{classp2t_1_1_triangle}{Triangle} $\ast$triangle)
+\item 
+void \hyperlink{classp2t_1_1_sweep_context_a728034555eeb9eb84651e6709869300e}{Add\+Hole} (std\+::vector$<$ \hyperlink{structp2t_1_1_point}{Point} $\ast$ $>$ polyline)
+\item 
+void \hyperlink{classp2t_1_1_sweep_context_a1197bffb2102eef7615a143ee5ce0437}{Add\+Point} (\hyperlink{structp2t_1_1_point}{Point} $\ast$point)
+\item 
+\hyperlink{classp2t_1_1_advancing_front}{Advancing\+Front} $\ast$ \hyperlink{classp2t_1_1_sweep_context_a38f01ceff16d463a0f1d60ca272cb89e}{front} ()
+\item 
+void \hyperlink{classp2t_1_1_sweep_context_a37a0e33f03be651567ae13cd65c25161}{Mesh\+Clean} (\hyperlink{classp2t_1_1_triangle}{Triangle} \&triangle)
+\item 
+std\+::vector$<$ \hyperlink{classp2t_1_1_triangle}{Triangle} $\ast$ $>$ \hyperlink{classp2t_1_1_sweep_context_ac714e672f00f408108089bcf07f8d9d2}{Get\+Triangles} ()
+\item 
+std\+::list$<$ \hyperlink{classp2t_1_1_triangle}{Triangle} $\ast$ $>$ \hyperlink{classp2t_1_1_sweep_context_a313ad6a03436268cfaa521846c57ac8a}{Get\+Map} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{structp2t_1_1_edge}{Edge} $\ast$ $>$ \hyperlink{classp2t_1_1_sweep_context_ab5da3232dd8284254ecdedbec3047ea0}{edge\+\_\+list}
+\item 
+\hyperlink{structp2t_1_1_sweep_context_1_1_basin}{Basin} \hyperlink{classp2t_1_1_sweep_context_a79c599f974533a926b6a9ec73870e7d4}{basin}
+\item 
+\hyperlink{structp2t_1_1_sweep_context_1_1_edge_event}{Edge\+Event} \hyperlink{classp2t_1_1_sweep_context_a86a138afe29697cfcd33158ec59c663e}{edge\+\_\+event}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classp2t_1_1_sweep_context_a908f328c298fc585c89c0ab14546aeba}{Sweep}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classp2t_1_1_sweep_context_a2b500da0d77926f92fdcf41e45164ef4}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Sweep\+Context@{Sweep\+Context}}
+\index{Sweep\+Context@{Sweep\+Context}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Sweep\+Context(std\+::vector$<$ Point $\ast$ $>$ polyline)}]{\setlength{\rightskip}{0pt plus 5cm}p2t\+::\+Sweep\+Context\+::\+Sweep\+Context (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Point} $\ast$ $>$}]{polyline}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_a2b500da0d77926f92fdcf41e45164ef4}
+
+
+Constructor. 
+
+\hypertarget{classp2t_1_1_sweep_context_a4275f1eb166fe4c69d18670898c65f98}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!````~Sweep\+Context@{$\sim$\+Sweep\+Context}}
+\index{````~Sweep\+Context@{$\sim$\+Sweep\+Context}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{$\sim$\+Sweep\+Context()}]{\setlength{\rightskip}{0pt plus 5cm}p2t\+::\+Sweep\+Context\+::$\sim$\+Sweep\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_a4275f1eb166fe4c69d18670898c65f98}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classp2t_1_1_sweep_context_a728034555eeb9eb84651e6709869300e}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Add\+Hole@{Add\+Hole}}
+\index{Add\+Hole@{Add\+Hole}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Add\+Hole(std\+::vector$<$ Point $\ast$ $>$ polyline)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Sweep\+Context\+::\+Add\+Hole (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Point} $\ast$ $>$}]{polyline}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_a728034555eeb9eb84651e6709869300e}
+\hypertarget{classp2t_1_1_sweep_context_a1197bffb2102eef7615a143ee5ce0437}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Add\+Point@{Add\+Point}}
+\index{Add\+Point@{Add\+Point}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Add\+Point(\+Point $\ast$point)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Sweep\+Context\+::\+Add\+Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{point}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_a1197bffb2102eef7615a143ee5ce0437}
+\hypertarget{classp2t_1_1_sweep_context_a9ae8715f961ca7e61cc5a986f6afbe12}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Add\+To\+Map@{Add\+To\+Map}}
+\index{Add\+To\+Map@{Add\+To\+Map}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Add\+To\+Map(\+Triangle $\ast$triangle)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Sweep\+Context\+::\+Add\+To\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf Triangle} $\ast$}]{triangle}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_a9ae8715f961ca7e61cc5a986f6afbe12}
+\hypertarget{classp2t_1_1_sweep_context_a09710e3b918586ccfed9f96553896a29}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Create\+Advancing\+Front@{Create\+Advancing\+Front}}
+\index{Create\+Advancing\+Front@{Create\+Advancing\+Front}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Create\+Advancing\+Front(std\+::vector$<$ Node $\ast$ $>$ nodes)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Sweep\+Context\+::\+Create\+Advancing\+Front (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Node} $\ast$ $>$}]{nodes}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_a09710e3b918586ccfed9f96553896a29}
+\hypertarget{classp2t_1_1_sweep_context_a38f01ceff16d463a0f1d60ca272cb89e}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!front@{front}}
+\index{front@{front}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{front()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Advancing\+Front} $\ast$ p2t\+::\+Sweep\+Context\+::front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classp2t_1_1_sweep_context_a38f01ceff16d463a0f1d60ca272cb89e}
+\hypertarget{classp2t_1_1_sweep_context_a313ad6a03436268cfaa521846c57ac8a}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Get\+Map@{Get\+Map}}
+\index{Get\+Map@{Get\+Map}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Get\+Map()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<$ {\bf Triangle} $\ast$ $>$ p2t\+::\+Sweep\+Context\+::\+Get\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_a313ad6a03436268cfaa521846c57ac8a}
+\hypertarget{classp2t_1_1_sweep_context_a72e8032e135d9cd6c44b2d93cbfbc033}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Get\+Point@{Get\+Point}}
+\index{Get\+Point@{Get\+Point}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Get\+Point(const int \&index)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} $\ast$ p2t\+::\+Sweep\+Context\+::\+Get\+Point (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{index}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_a72e8032e135d9cd6c44b2d93cbfbc033}
+\hypertarget{classp2t_1_1_sweep_context_ae37f1dcc28825cffc9a0a7509686167f}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Get\+Points@{Get\+Points}}
+\index{Get\+Points@{Get\+Points}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Get\+Points()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point}$\ast$ p2t\+::\+Sweep\+Context\+::\+Get\+Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_ae37f1dcc28825cffc9a0a7509686167f}
+\hypertarget{classp2t_1_1_sweep_context_ac714e672f00f408108089bcf07f8d9d2}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Get\+Triangles@{Get\+Triangles}}
+\index{Get\+Triangles@{Get\+Triangles}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Get\+Triangles()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Triangle} $\ast$ $>$ p2t\+::\+Sweep\+Context\+::\+Get\+Triangles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_ac714e672f00f408108089bcf07f8d9d2}
+\hypertarget{classp2t_1_1_sweep_context_a18a228af449cec5e739b4303be83ddf1}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!head@{head}}
+\index{head@{head}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{head()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} $\ast$ p2t\+::\+Sweep\+Context\+::head (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classp2t_1_1_sweep_context_a18a228af449cec5e739b4303be83ddf1}
+\hypertarget{classp2t_1_1_sweep_context_a501b441e104acc9504e5c3aa471b2f32}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Locate\+Node@{Locate\+Node}}
+\index{Locate\+Node@{Locate\+Node}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Locate\+Node(\+Point \&point)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} \& p2t\+::\+Sweep\+Context\+::\+Locate\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{point}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_a501b441e104acc9504e5c3aa471b2f32}
+\hypertarget{classp2t_1_1_sweep_context_aa1c59ec4b2bc6d6f3b248c452d6993c1}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Map\+Triangle\+To\+Nodes@{Map\+Triangle\+To\+Nodes}}
+\index{Map\+Triangle\+To\+Nodes@{Map\+Triangle\+To\+Nodes}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Map\+Triangle\+To\+Nodes(\+Triangle \&t)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Sweep\+Context\+::\+Map\+Triangle\+To\+Nodes (
+\begin{DoxyParamCaption}
+\item[{{\bf Triangle} \&}]{t}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_aa1c59ec4b2bc6d6f3b248c452d6993c1}
+
+
+Try to map a node to all sides of this triangle that don\textquotesingle{}t have a neighbor. 
+
+\hypertarget{classp2t_1_1_sweep_context_a37a0e33f03be651567ae13cd65c25161}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Mesh\+Clean@{Mesh\+Clean}}
+\index{Mesh\+Clean@{Mesh\+Clean}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Mesh\+Clean(\+Triangle \&triangle)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Sweep\+Context\+::\+Mesh\+Clean (
+\begin{DoxyParamCaption}
+\item[{{\bf Triangle} \&}]{triangle}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_a37a0e33f03be651567ae13cd65c25161}
+\hypertarget{classp2t_1_1_sweep_context_a4ef94d299d632dee275dd511d7434c2d}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!point\+\_\+count@{point\+\_\+count}}
+\index{point\+\_\+count@{point\+\_\+count}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{point\+\_\+count()}]{\setlength{\rightskip}{0pt plus 5cm}int p2t\+::\+Sweep\+Context\+::point\+\_\+count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classp2t_1_1_sweep_context_a4ef94d299d632dee275dd511d7434c2d}
+\hypertarget{classp2t_1_1_sweep_context_a7fb0c50ea27a52a1f912809404657f89}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Remove\+From\+Map@{Remove\+From\+Map}}
+\index{Remove\+From\+Map@{Remove\+From\+Map}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Remove\+From\+Map(\+Triangle $\ast$triangle)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Sweep\+Context\+::\+Remove\+From\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf Triangle} $\ast$}]{triangle}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_a7fb0c50ea27a52a1f912809404657f89}
+\hypertarget{classp2t_1_1_sweep_context_a0ea069bc88f6f7cd4b0022d988017d8d}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Remove\+Node@{Remove\+Node}}
+\index{Remove\+Node@{Remove\+Node}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Remove\+Node(\+Node $\ast$node)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Sweep\+Context\+::\+Remove\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_sweep_context_a0ea069bc88f6f7cd4b0022d988017d8d}
+\hypertarget{classp2t_1_1_sweep_context_abd31ac7cc3ba9d418e08d5583ae7d32e}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!set\+\_\+head@{set\+\_\+head}}
+\index{set\+\_\+head@{set\+\_\+head}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{set\+\_\+head(\+Point $\ast$p1)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Sweep\+Context\+::set\+\_\+head (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{p1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classp2t_1_1_sweep_context_abd31ac7cc3ba9d418e08d5583ae7d32e}
+\hypertarget{classp2t_1_1_sweep_context_ac685ab377d5f1b184b4bb94e151a2af9}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!set\+\_\+tail@{set\+\_\+tail}}
+\index{set\+\_\+tail@{set\+\_\+tail}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{set\+\_\+tail(\+Point $\ast$p1)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+Sweep\+Context\+::set\+\_\+tail (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{p1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classp2t_1_1_sweep_context_ac685ab377d5f1b184b4bb94e151a2af9}
+\hypertarget{classp2t_1_1_sweep_context_a160d5f2ff0f93af7a577a36949a04623}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!tail@{tail}}
+\index{tail@{tail}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{tail()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} $\ast$ p2t\+::\+Sweep\+Context\+::tail (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classp2t_1_1_sweep_context_a160d5f2ff0f93af7a577a36949a04623}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classp2t_1_1_sweep_context_a908f328c298fc585c89c0ab14546aeba}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!Sweep@{Sweep}}
+\index{Sweep@{Sweep}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{Sweep}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Sweep}\hspace{0.3cm}{\ttfamily [friend]}}\label{classp2t_1_1_sweep_context_a908f328c298fc585c89c0ab14546aeba}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classp2t_1_1_sweep_context_a79c599f974533a926b6a9ec73870e7d4}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!basin@{basin}}
+\index{basin@{basin}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{basin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Basin} p2t\+::\+Sweep\+Context\+::basin}\label{classp2t_1_1_sweep_context_a79c599f974533a926b6a9ec73870e7d4}
+\hypertarget{classp2t_1_1_sweep_context_a86a138afe29697cfcd33158ec59c663e}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!edge\+\_\+event@{edge\+\_\+event}}
+\index{edge\+\_\+event@{edge\+\_\+event}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{edge\+\_\+event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Edge\+Event} p2t\+::\+Sweep\+Context\+::edge\+\_\+event}\label{classp2t_1_1_sweep_context_a86a138afe29697cfcd33158ec59c663e}
+\hypertarget{classp2t_1_1_sweep_context_ab5da3232dd8284254ecdedbec3047ea0}{}\index{p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}!edge\+\_\+list@{edge\+\_\+list}}
+\index{edge\+\_\+list@{edge\+\_\+list}!p2t\+::\+Sweep\+Context@{p2t\+::\+Sweep\+Context}}
+\subsubsection[{edge\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Edge}$\ast$$>$ p2t\+::\+Sweep\+Context\+::edge\+\_\+list}\label{classp2t_1_1_sweep_context_ab5da3232dd8284254ecdedbec3047ea0}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Common/sweep/\hyperlink{sweep__context_8h}{sweep\+\_\+context.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Common/sweep/\hyperlink{sweep__context_8cc}{sweep\+\_\+context.\+cc}\end{DoxyCompactItemize}

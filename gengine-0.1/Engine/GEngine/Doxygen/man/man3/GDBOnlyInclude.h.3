@@ -1,0 +1,70 @@
+.TH "D:/MyProject/Trunk/Engine/GEngine/Src/GDB/GDBOnlyInclude.h" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/MyProject/Trunk/Engine/GEngine/Src/GDB/GDBOnlyInclude.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'GGeometryGenerator\&.h'\fP
+.br
+\fC#include 'GObjectBase\&.h'\fP
+.br
+\fC#include 'GCompoundObjectBase\&.h'\fP
+.br
+\fC#include 'GObjectPoint2D\&.h'\fP
+.br
+\fC#include 'GObjectLine2D\&.h'\fP
+.br
+\fC#include 'GObjectPolyline2D\&.h'\fP
+.br
+\fC#include 'GObjectPolyline3D\&.h'\fP
+.br
+\fC#include 'GObjectTriangleStrip\&.h'\fP
+.br
+\fC#include 'GObjectCylinder\&.h'\fP
+.br
+\fC#include 'GObjectSphere\&.h'\fP
+.br
+\fC#include 'GObjectBox\&.h'\fP
+.br
+\fC#include 'GObjectCircle3D\&.h'\fP
+.br
+\fC#include 'GObjectCar\&.h'\fP
+.br
+\fC#include 'GObjectText\&.h'\fP
+.br
+\fC#include 'GObjectFace\&.h'\fP
+.br
+\fC#include 'GObjectManager\&.h'\fP
+.br
+\fC#include 'GProperty\&.h'\fP
+.br
+\fC#include 'GPropertyManager\&.h'\fP
+.br
+\fC#include 'GFontManager\&.h'\fP
+.br
+\fC#include 'G3DDB\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGDEFINE_REGISTE_OBJECT\fP(class_name)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define GDEFINE_REGISTE_OBJECT(class_name)"
+\fBValue:\fP
+.PP
+.nf
+virtual CGObjectBase *NewObject() { return GPOOL_NEW(class_name); };\
+    virtual CGObjectBase& operator=(const CGObjectBase &d) { *((class_name*)this) = ((class_name&)d); return *this; };\\
+	GDEFINE_POOL(class_name)\\
+	GDEFINE_OPERATOR_COPY(class_name)\
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

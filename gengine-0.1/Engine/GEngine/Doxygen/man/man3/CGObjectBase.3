@@ -1,0 +1,384 @@
+.TH "CGObjectBase" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGObjectBase \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GObjectBase\&.h>\fP
+.PP
+Inherited by \fBCGCompoundObjectBase\fP, \fBCGObjectBox\fP, \fBCGObjectCircle3D\fP, \fBCGObjectCylinder\fP, \fBCGObjectFace\fP, \fBCGObjectLine2D\fP, \fBCGObjectPoint2D\fP, \fBCGObjectPolyline2D\fP, \fBCGObjectPolyline3D\fP, \fBCGObjectSphere\fP, \fBCGObjectTriangleStrip\fP, and \fBCGSpace\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBInitID\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetID\fP (const \fBGID\fP &ID)"
+.br
+.ti -1c
+.RI "const \fBGID\fP & \fBGetID\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetParentID\fP (const \fBGID\fP &ID)"
+.br
+.ti -1c
+.RI "const \fBGID\fP & \fBGetParentID\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetPropertyID\fP (const \fBGID\fP &ID)"
+.br
+.ti -1c
+.RI "const \fBGID\fP & \fBGetPropertyID\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetVertexOffset\fP (const \fBGUINT32\fP &uOffset)"
+.br
+.ti -1c
+.RI "const \fBGUINT32\fP & \fBGetVertexOffset\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetVertexCount\fP (const \fBGUINT32\fP &uCount)"
+.br
+.ti -1c
+.RI "const \fBGUINT32\fP & \fBGetVertexCount\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetIndexOffset\fP (const \fBGUINT32\fP &uOffset)"
+.br
+.ti -1c
+.RI "const \fBGUINT32\fP & \fBGetIndexOffset\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetIndexCount\fP (const \fBGUINT32\fP &uCount)"
+.br
+.ti -1c
+.RI "const \fBGUINT32\fP & \fBGetIndexCount\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetBoundary\fP (const \fBCGCube\fP &cubeBoundary)"
+.br
+.ti -1c
+.RI "const \fBCGCube\fP & \fBGetBoundary\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetDB\fP (\fBCG3DDB\fP *pDB)"
+.br
+.ti -1c
+.RI "\fBCG3DDB\fP * \fBGetDB\fP ()"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBGetRGBA\fP (\fBGOUT\fP \fBGFLOAT4\fP &f4RGBA) const "
+.br
+.ti -1c
+.RI "virtual void \fBMove\fP (const \fBCGVector3D\fP &vMove)"
+.br
+.ti -1c
+.RI "virtual void \fBRotate\fP (const \fBCGPoint3D\fP &ptBase, const \fBCGVector3D\fP &vAxis, const \fBCGPoint2D\fP &vAng)"
+.br
+.ti -1c
+.RI "virtual void \fBScale\fP (const \fBCGPoint3D\fP &ptBase, const \fBGDOUBLE\fP &dScale)"
+.br
+.ti -1c
+.RI "virtual void \fBCalcBoundary\fP ()"
+.br
+.ti -1c
+.RI "const \fBGID\fP \fBGetBufferItemID\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetBufferItemID\fP (const \fBGID\fP &bufferItemID)"
+.br
+.ti -1c
+.RI "const void \fBGetAllVertex\fP (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > &arrVertex) const "
+.br
+.ti -1c
+.RI "virtual const void \fBGetAllVertexByPrimitiveTopology\fP (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > &arrVertex) const "
+.br
+.ti -1c
+.RI "virtual const void \fBGetAllStripVertexListIndexByPrimitiveTopology\fP (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > &arrVertex, \fBGOUT\fP CAtlArray< \fBGUINT32\fP > &arrIndex) const "
+.br
+.ti -1c
+.RI "virtual CAtlString \fBGetStrType\fP () const "
+.br
+.ti -1c
+.RI "virtual \fBPrimitiveTopology\fP \fBGetPrimitiveTopology\fP () const "
+.br
+.ti -1c
+.RI "\fBGDEFINE_POOL\fP (\fBCGObjectBase\fP)"
+.br
+.ti -1c
+.RI "virtual \fBCGObjectBase\fP * \fBNewObject\fP ()=0"
+.br
+.ti -1c
+.RI "virtual \fBCGObjectBase\fP * \fBCloneObject\fP ()"
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGObjectBase\fP)"
+.br
+.ti -1c
+.RI "\fBCGObjectBase\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~CGObjectBase\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBGID\fP \fBm_ID\fP"
+.br
+.ti -1c
+.RI "\fBGID\fP \fBm_propertyID\fP"
+.br
+.ti -1c
+.RI "\fBGID\fP \fBm_parentID\fP"
+.br
+.ti -1c
+.RI "\fBGID\fP \fBm_bufferItemID\fP"
+.br
+.ti -1c
+.RI "\fBGUINT32\fP \fBm_uVertexOffset\fP"
+.br
+.ti -1c
+.RI "\fBGUINT32\fP \fBm_uVertexCount\fP"
+.br
+.ti -1c
+.RI "\fBGUINT32\fP \fBm_uIndexOffset\fP"
+.br
+.ti -1c
+.RI "\fBGUINT32\fP \fBm_uIndexCount\fP"
+.br
+.ti -1c
+.RI "\fBCGCube\fP \fBm_cubeBoundary\fP"
+.br
+.ti -1c
+.RI "\fBCG3DDB\fP * \fBm_pDB\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+object의 기본 클래스
+.IP "\(bu" 2
+Object 개발시 주의 사항 ----------------------------
+.IP "  \(bu" 4
+GDEFINE_REGISTE_OBJECT 를 헤더에 정의해서 object를 등록한다\&.
+.IP "  \(bu" 4
+GIMPLEMENT_POOL, GIMPLEMENT_OPERATOR_COPY_BEGIN, GIMPLEMENT_OPERATOR_COPY_END 를 소스에 정의한다\&.(GDEFINE_REGISTE_OBJECT와 항상 커플로 필요하다) 
+.PP
+
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGObjectBase::CGObjectBase ()"
+
+.SS "CGObjectBase::~CGObjectBase ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGObjectBase::CalcBoundary ()\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCGSpace\fP, \fBCGObjectFace\fP, \fBCGObjectCar\fP, \fBCGObjectText\fP, \fBCGObjectPolyline2D\fP, \fBCGObjectLine2D\fP, \fBCGObjectPoint2D\fP, \fBCGObjectPolyline3D\fP, \fBCGObjectSphere\fP, \fBCGObjectBox\fP, \fBCGObjectCircle3D\fP, \fBCGObjectCylinder\fP, and \fBCGObjectTriangleStrip\fP\&.
+.SS "\fBCGObjectBase\fP * CGObjectBase::CloneObject ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object의 사본을 만든다\&.
+.IP "\(bu" 2
+ID와 vertex info는 복사하지 않는다\&. 
+.PP
+
+.SS "CGObjectBase::GDEFINE_OPERATOR_COPY (\fBCGObjectBase\fP)"
+
+.SS "CGObjectBase::GDEFINE_POOL (\fBCGObjectBase\fP)"
+
+.SS "const void CGObjectBase::GetAllStripVertexListIndexByPrimitiveTopology (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > & arrVertex, \fBGOUT\fP CAtlArray< \fBGUINT32\fP > & arrIndex) const\fC [virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer에 추가할 strip vertex와 list index를 가져온다\&.
+.IP "\(bu" 2
+object를 그리기 위해서는 반드시 재정의가 필요하다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCGSpace\fP, \fBCGObjectFace\fP, \fBCGObjectCar\fP, \fBCGObjectText\fP, \fBCGObjectPolyline2D\fP, \fBCGObjectLine2D\fP, \fBCGObjectPoint2D\fP, \fBCGObjectPolyline3D\fP, \fBCGObjectSphere\fP, \fBCGObjectBox\fP, \fBCGObjectCircle3D\fP, \fBCGObjectCylinder\fP, and \fBCGObjectTriangleStrip\fP\&.
+.SS "const void CGObjectBase::GetAllVertex (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > & arrVertex) const"
+
+.IP "\(bu" 2
+vertex buffer에 추가할 vertex를 모두 가져온다\&. 
+.PP
+
+.SS "const void CGObjectBase::GetAllVertexByPrimitiveTopology (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > & arrVertex) const\fC [virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer에 추가할 vertex를 가져온다\&.
+.IP "\(bu" 2
+object를 그리기 위해서는 반드시 재정의가 필요하다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCGSpace\fP, \fBCGObjectFace\fP, \fBCGObjectCar\fP, \fBCGObjectText\fP, \fBCGObjectPolyline2D\fP, \fBCGObjectLine2D\fP, \fBCGObjectPoint2D\fP, \fBCGObjectPolyline3D\fP, \fBCGObjectSphere\fP, \fBCGObjectBox\fP, \fBCGObjectCircle3D\fP, \fBCGObjectCylinder\fP, and \fBCGObjectTriangleStrip\fP\&.
+.SS "const \fBCGCube\fP & CGObjectBase::GetBoundary () const"
+
+.SS "const \fBGID\fP CGObjectBase::GetBufferItemID () const"
+
+.IP "\(bu" 2
+vertex buffer layer의 Item ID를 리턴한다\&. 
+.PP
+
+.SS "\fBCG3DDB\fP * CGObjectBase::GetDB ()"
+
+.SS "const \fBGID\fP & CGObjectBase::GetID () const"
+
+.SS "const \fBGUINT32\fP & CGObjectBase::GetIndexCount () const"
+
+.SS "const \fBGUINT32\fP & CGObjectBase::GetIndexOffset () const"
+
+.SS "const \fBGID\fP & CGObjectBase::GetParentID () const"
+
+.SS "virtual \fBPrimitiveTopology\fP CGObjectBase::GetPrimitiveTopology () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.IP "\(bu" 2
+object의 vertex의 primitive topology를 리턴한다\&.
+.IP "\(bu" 2
+object는 한가지 primitive topology만 가질 수 있다\&.(다양한 primitive topology가 필요하다면 object를 여러개 가지도록 하면 된다) 
+.PP
+
+.PP
+Reimplemented in \fBCGSpace\fP, \fBCGObjectFace\fP, \fBCGObjectCar\fP, \fBCGObjectText\fP, \fBCGObjectPolyline2D\fP, \fBCGObjectLine2D\fP, \fBCGObjectPoint2D\fP, \fBCGObjectPolyline3D\fP, \fBCGObjectSphere\fP, \fBCGObjectBox\fP, \fBCGObjectCircle3D\fP, \fBCGObjectCylinder\fP, and \fBCGObjectTriangleStrip\fP\&.
+.SS "const \fBGID\fP & CGObjectBase::GetPropertyID () const"
+
+.SS "\fBGBOOL\fP CGObjectBase::GetRGBA (\fBGOUT\fP \fBGFLOAT4\fP & f4RGBA) const"
+
+.IP "\(bu" 2
+object의 RGBA값을 읽는다\&.
+.IP "\(bu" 2
+m_pDB가 없다면 가져오지 못한다\&. 
+.PP
+
+.SS "virtual CAtlString CGObjectBase::GetStrType () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.IP "\(bu" 2
+object의 타입을 리턴한다\&.
+.IP "\(bu" 2
+유일한 string이어야 한다\&.
+.IP "\(bu" 2
+반드시 재정의 되어야 한다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCGObjectFace\fP, \fBCGObjectCar\fP, \fBCGObjectText\fP, \fBCGObjectPolyline2D\fP, \fBCGObjectLine2D\fP, \fBCGObjectPoint2D\fP, \fBCGObjectPolyline3D\fP, \fBCGObjectSphere\fP, \fBCGObjectBox\fP, \fBCGObjectCircle3D\fP, \fBCGObjectCylinder\fP, and \fBCGObjectTriangleStrip\fP\&.
+.SS "const \fBGUINT32\fP & CGObjectBase::GetVertexCount () const"
+
+.SS "const \fBGUINT32\fP & CGObjectBase::GetVertexOffset () const"
+
+.SS "void CGObjectBase::InitID ()"
+
+.SS "void CGObjectBase::Move (const \fBCGVector3D\fP & vMove)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object를 move한다\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP 
+.RE
+.PP
+
+.PP
+
+.PP
+Reimplemented in \fBCGObjectFace\fP, \fBCGObjectText\fP, \fBCGObjectCar\fP, \fBCGObjectPolyline2D\fP, \fBCGObjectLine2D\fP, \fBCGObjectBox\fP, \fBCGObjectCircle3D\fP, \fBCGObjectCylinder\fP, \fBCGObjectPoint2D\fP, \fBCGObjectPolyline3D\fP, \fBCGObjectSphere\fP, and \fBCGObjectTriangleStrip\fP\&.
+.SS "virtual \fBCGObjectBase\fP* CGObjectBase::NewObject ()\fC [pure virtual]\fP"
+
+.SS "void CGObjectBase::Rotate (const \fBCGPoint3D\fP & ptBase, const \fBCGVector3D\fP & vAxis, const \fBCGPoint2D\fP & vAng)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object를 rotate한다\&. 
+.PP
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIptBase\fP 회전 기준좌표 
+.br
+\fIvAxis\fP 회전 기준 축 
+.br
+\fIvAng\fP 회전 각 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBCGObjectFace\fP, \fBCGObjectText\fP, \fBCGObjectCar\fP, \fBCGObjectPolyline2D\fP, \fBCGObjectLine2D\fP, \fBCGObjectBox\fP, \fBCGObjectCircle3D\fP, \fBCGObjectCylinder\fP, \fBCGObjectPoint2D\fP, \fBCGObjectPolyline3D\fP, \fBCGObjectSphere\fP, and \fBCGObjectTriangleStrip\fP\&.
+.SS "void CGObjectBase::Scale (const \fBCGPoint3D\fP & ptBase, const \fBGDOUBLE\fP & dScale)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object를 scale한다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCGObjectFace\fP, \fBCGObjectText\fP, \fBCGObjectCar\fP, \fBCGObjectPolyline2D\fP, \fBCGObjectLine2D\fP, \fBCGObjectBox\fP, \fBCGObjectCircle3D\fP, \fBCGObjectCylinder\fP, \fBCGObjectPoint2D\fP, \fBCGObjectPolyline3D\fP, \fBCGObjectSphere\fP, and \fBCGObjectTriangleStrip\fP\&.
+.SS "void CGObjectBase::SetBoundary (const \fBCGCube\fP & cubeBoundary)"
+
+.SS "void CGObjectBase::SetBufferItemID (const \fBGID\fP & bufferItemID)"
+
+.SS "void CGObjectBase::SetDB (\fBCG3DDB\fP * pDB)"
+
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_END\fP void CGObjectBase::SetID (const \fBGID\fP & ID)"
+
+.IP "\(bu" 2
+object의 id이다\&. 
+.PP
+
+.SS "void CGObjectBase::SetIndexCount (const \fBGUINT32\fP & uCount)"
+
+.SS "void CGObjectBase::SetIndexOffset (const \fBGUINT32\fP & uOffset)"
+
+.SS "void CGObjectBase::SetParentID (const \fBGID\fP & ID)"
+
+.IP "\(bu" 2
+부모 object의 ID를 설정한다\&. 
+.PP
+
+.SS "void CGObjectBase::SetPropertyID (const \fBGID\fP & ID)"
+
+.IP "\(bu" 2
+object property의 id이다\&. 
+.PP
+
+.SS "void CGObjectBase::SetVertexCount (const \fBGUINT32\fP & uCount)"
+
+.SS "void CGObjectBase::SetVertexOffset (const \fBGUINT32\fP & uOffset)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGID\fP CGObjectBase::m_bufferItemID\fC [protected]\fP"
+
+.SS "\fBCGCube\fP CGObjectBase::m_cubeBoundary\fC [protected]\fP"
+
+.SS "\fBGID\fP CGObjectBase::m_ID\fC [protected]\fP"
+
+.SS "\fBGID\fP CGObjectBase::m_parentID\fC [protected]\fP"
+
+.SS "\fBCG3DDB\fP* CGObjectBase::m_pDB\fC [protected]\fP"
+
+.SS "\fBGID\fP CGObjectBase::m_propertyID\fC [protected]\fP"
+
+.SS "\fBGUINT32\fP CGObjectBase::m_uIndexCount\fC [protected]\fP"
+
+.SS "\fBGUINT32\fP CGObjectBase::m_uIndexOffset\fC [protected]\fP"
+
+.SS "\fBGUINT32\fP CGObjectBase::m_uVertexCount\fC [protected]\fP"
+
+.SS "\fBGUINT32\fP CGObjectBase::m_uVertexOffset\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

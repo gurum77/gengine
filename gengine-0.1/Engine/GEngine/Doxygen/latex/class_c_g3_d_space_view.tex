@@ -1,0 +1,449 @@
+\hypertarget{class_c_g3_d_space_view}{}\section{C\+G3\+D\+Space\+View Class Reference}
+\label{class_c_g3_d_space_view}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+
+
+{\ttfamily \#include $<$G3\+D\+Space\+View.\+h$>$}
+
+Inheritance diagram for C\+G3\+D\+Space\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_g3_d_space_view}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_g3_d_space_view_a41938b01269706c0aa66a46634d379b0}{Attr} \{ \hyperlink{class_c_g3_d_space_view_a41938b01269706c0aa66a46634d379b0a52b81a23d5a3b83d9b808e23015bb888}{e\+Attr\+Display\+Space} = 0x00000001, 
+\hyperlink{class_c_g3_d_space_view_a41938b01269706c0aa66a46634d379b0a919956879c03b94c4717b463671daba9}{e\+Attr\+Lock\+End\+Zoom} = 0x00000002
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_g_space_manager}{C\+G\+Space\+Manager} \& \hyperlink{class_c_g3_d_space_view_a8a3f64750952ecc6b120eb4272f0c68b}{Get\+Space\+Manager} ()
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_space_view_a515fde24d4036a93c09c5e9de590f638}{Is\+Attr} (const \hyperlink{class_c_g3_d_space_view_a41938b01269706c0aa66a46634d379b0}{Attr} \&e\+Attr) const 
+\item 
+const D\+W\+O\+R\+D32 \& \hyperlink{class_c_g3_d_space_view_ab5ddfadff524dc7a36385f3f807f88ea}{Get\+Attr} () const 
+\item 
+void \hyperlink{class_c_g3_d_space_view_ad0358b2aab30055dfa168ce1cfa74e67}{Set\+Attr} (const D\+W\+O\+R\+D32 \&dw\+Attr)
+\item 
+void \hyperlink{class_c_g3_d_space_view_af1072de04a87854e12b9a4ab6e3ad60e}{Set\+Select\+Manager} (\hyperlink{class_c_g_selection_manager}{C\+G\+Selection\+Manager} $\ast$p\+Select\+Manager)
+\item 
+\hyperlink{class_c_g_selection_manager}{C\+G\+Selection\+Manager} $\ast$ \hyperlink{class_c_g3_d_space_view_a187cc6a255fcc931963a1a2a787165ab}{Get\+Select\+Manager} ()
+\item 
+virtual \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_space_view_a1eee8f626fad416899cb8bafcc846a4b}{Init\+View} (\hyperlink{class_c_g3_d_view_init_data}{C\+G3\+D\+View\+Init\+Data} \&init\+Data)
+\item 
+virtual void \hyperlink{class_c_g3_d_space_view_aa82b9ba26d5f68761c6a9e0c7d451126}{Regen} (const C\+Atl\+String \&str\+View\+Layer\+Name)
+\item 
+virtual void \hyperlink{class_c_g3_d_space_view_a9db364dfec0d9a4fe07fac150e9cb56f}{Regen\+Only\+Added\+Object} (const C\+Atl\+String \&str\+View\+Layer\+Name, \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+virtual void \hyperlink{class_c_g3_d_space_view_acea820f287c70ae6f0c1b112ce571ac8}{Regen\+Only\+Deleting\+Object} (const C\+Atl\+String \&str\+View\+Layer\+Name, const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+virtual void \hyperlink{class_c_g3_d_space_view_ac29abf1bd75a5f266acd6d587e3cfcb2}{Regen\+Only\+Deleting\+Object\+Multiple} (const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object)
+\item 
+virtual void \hyperlink{class_c_g3_d_space_view_afc8d6edb1671e556d7117526ae9fa557}{Regen\+Only\+Changing\+Color\+Object} (const C\+Atl\+String \&str\+View\+Layer\+Name, const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object, const \hyperlink{class_c_g_color}{C\+G\+Color} \&color)
+\item 
+virtual void \hyperlink{class_c_g3_d_space_view_a2c32fa92784c1093a196342233168b8c}{Regen\+Only\+Changing\+Color\+Object\+Multiple} (const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object, const \hyperlink{class_c_g_color}{C\+G\+Color} \&color)
+\item 
+virtual void \hyperlink{class_c_g3_d_space_view_a6124759a964a034fb2ec327cc12364f6}{Regen\+Only\+Object} (const C\+Atl\+String \&str\+View\+Layer\+Name, const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+virtual void \hyperlink{class_c_g3_d_space_view_ad30a8db3cc9853abdcd598e170850c1f}{Regen\+Only\+Object\+Multiple} (const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object)
+\item 
+virtual void \hyperlink{class_c_g3_d_space_view_a64c5f9295142711855fe1edac4e81574}{Redraw} ()
+\item 
+virtual \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_space_view_ad35d550805ccc115a15372c63a1490a4}{Calc\+Intersect\+Object\+By\+Window} (const C\+String \&str\+View\+Layer, const C\+Point \&pt\+Window1, const C\+Point \&pt\+Window2, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Intersected\+Object, const \hyperlink{_g_types_8h_a40d8bc7c06b9e72906852691a4bf888e}{G\+I\+N\+T32} \&i\+Count=0)
+\item 
+virtual \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ \hyperlink{class_c_g3_d_space_view_a0ae9fca90ba5f117aa854ad3f6e6f7a4}{Calc\+Intersect\+Object\+By\+Pickbox} (const C\+String \&str\+View\+Layer, const C\+Point \&pt\+Window, const \hyperlink{_g_types_8h_ac7dd75e8df268a0368c6cb433764fdcb}{G\+S\+I\+Z\+E} \&i\+Pickbox\+Size)
+\item 
+\hyperlink{class_c_g3_d_space_view_a8333cc6be767deea88b494d98a5ea48b}{C\+G3\+D\+Space\+View} ()
+\item 
+virtual \hyperlink{class_c_g3_d_space_view_a25a8a15c94452878c764a9a322bb9437}{$\sim$\+C\+G3\+D\+Space\+View} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static U\+I\+N\+T W\+I\+N\+A\+P\+I \hyperlink{class_c_g3_d_space_view_a52923271597a322ef6168461f3310672}{Thread\+\_\+\+End\+Zoom} (L\+P\+V\+O\+I\+D)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g3_d_space_view_a5aca5ec0fd7cef848aa9d41b10bf08b3}{Is\+Regenable\+Layer} (const C\+Atl\+String \&str\+View\+Layer\+Name) const 
+\item 
+void \hyperlink{class_c_g3_d_space_view_a7b2ab69e7a9e8d0a0c9f2b9117980bc0}{Regen\+Only\+Deleting\+Space\+By\+Object} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+virtual void \hyperlink{class_c_g3_d_space_view_a6dfd5d319836c6ddda121a15662121cd}{End\+Zoom} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_g_space_manager}{C\+G\+Space\+Manager} \hyperlink{class_c_g3_d_space_view_add0273d1c28e0d7370498aa953da1824}{m\+\_\+space\+Manager}
+\item 
+D\+W\+O\+R\+D32 \hyperlink{class_c_g3_d_space_view_a7d864ed2b5edb36c67802b090a959855}{m\+\_\+dw\+Attr}
+\item 
+\hyperlink{class_c_g_selection_manager}{C\+G\+Selection\+Manager} $\ast$ \hyperlink{class_c_g3_d_space_view_af4baa948247532603af5eb5f2be6d942}{m\+\_\+p\+Select\+Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item space view
+\item C\+G3\+D\+Space\+View는 C\+G3\+D\+View에 비해 대용량처리가 가능하지만 속도가 느리고, 멀티뷰가 지원되지 않는다는 단점이 있다.
+\item 사용법
+\begin{DoxyItemize}
+\item \hyperlink{class_c_g3_d_view}{C\+G3\+D\+View} 와 동일한 과정을 거침
+\item C\+G\+Select\+Manager 설정
+\begin{DoxyItemize}
+\item space 선택을 지원하기 위해서는 select manager가 설정되어야 한다. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_c_g3_d_space_view_a41938b01269706c0aa66a46634d379b0}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Attr@{Attr}}
+\index{Attr@{Attr}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Attr}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+G3\+D\+Space\+View\+::\+Attr}}\label{class_c_g3_d_space_view_a41938b01269706c0aa66a46634d379b0}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+Attr\+Display\+Space@{e\+Attr\+Display\+Space}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!e\+Attr\+Display\+Space@{e\+Attr\+Display\+Space}}\item[{\em 
+\hypertarget{class_c_g3_d_space_view_a41938b01269706c0aa66a46634d379b0a52b81a23d5a3b83d9b808e23015bb888}{}e\+Attr\+Display\+Space\label{class_c_g3_d_space_view_a41938b01269706c0aa66a46634d379b0a52b81a23d5a3b83d9b808e23015bb888}
+}]\index{e\+Attr\+Lock\+End\+Zoom@{e\+Attr\+Lock\+End\+Zoom}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!e\+Attr\+Lock\+End\+Zoom@{e\+Attr\+Lock\+End\+Zoom}}\item[{\em 
+\hypertarget{class_c_g3_d_space_view_a41938b01269706c0aa66a46634d379b0a919956879c03b94c4717b463671daba9}{}e\+Attr\+Lock\+End\+Zoom\label{class_c_g3_d_space_view_a41938b01269706c0aa66a46634d379b0a919956879c03b94c4717b463671daba9}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g3_d_space_view_a8333cc6be767deea88b494d98a5ea48b}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{C\+G3\+D\+Space\+View()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G3\+D\+Space\+View\+::\+C\+G3\+D\+Space\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_space_view_a8333cc6be767deea88b494d98a5ea48b}
+\hypertarget{class_c_g3_d_space_view_a25a8a15c94452878c764a9a322bb9437}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!````~C\+G3\+D\+Space\+View@{$\sim$\+C\+G3\+D\+Space\+View}}
+\index{````~C\+G3\+D\+Space\+View@{$\sim$\+C\+G3\+D\+Space\+View}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{$\sim$\+C\+G3\+D\+Space\+View()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G3\+D\+Space\+View\+::$\sim$\+C\+G3\+D\+Space\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_space_view_a25a8a15c94452878c764a9a322bb9437}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g3_d_space_view_a0ae9fca90ba5f117aa854ad3f6e6f7a4}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Calc\+Intersect\+Object\+By\+Pickbox@{Calc\+Intersect\+Object\+By\+Pickbox}}
+\index{Calc\+Intersect\+Object\+By\+Pickbox@{Calc\+Intersect\+Object\+By\+Pickbox}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Calc\+Intersect\+Object\+By\+Pickbox(const C\+String \&str\+View\+Layer, const C\+Point \&pt\+Window, const G\+S\+I\+Z\+E \&i\+Pickbox\+Size)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Object\+Base} $\ast$ C\+G3\+D\+Space\+View\+::\+Calc\+Intersect\+Object\+By\+Pickbox (
+\begin{DoxyParamCaption}
+\item[{const C\+String \&}]{str\+View\+Layer, }
+\item[{const C\+Point \&}]{pt\+Window, }
+\item[{const {\bf G\+S\+I\+Z\+E} \&}]{i\+Pickbox\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_space_view_a0ae9fca90ba5f117aa854ad3f6e6f7a4}
+
+\begin{DoxyItemize}
+\item pickbox에 교차되는 object를 찾는다.
+\item object를 기본적으로 검사하고 나서, 없는 경우 space에서 검사한다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_view_aeb412f47613ba426c47580e4595b061a}{C\+G3\+D\+View}.
+
+\hypertarget{class_c_g3_d_space_view_ad35d550805ccc115a15372c63a1490a4}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Calc\+Intersect\+Object\+By\+Window@{Calc\+Intersect\+Object\+By\+Window}}
+\index{Calc\+Intersect\+Object\+By\+Window@{Calc\+Intersect\+Object\+By\+Window}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Calc\+Intersect\+Object\+By\+Window(const C\+String \&str\+View\+Layer, const C\+Point \&pt\+Window1, const C\+Point \&pt\+Window2, G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Intersected\+Object, const G\+I\+N\+T32 \&i\+Count=0)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+Space\+View\+::\+Calc\+Intersect\+Object\+By\+Window (
+\begin{DoxyParamCaption}
+\item[{const C\+String \&}]{str\+View\+Layer, }
+\item[{const C\+Point \&}]{pt\+Window1, }
+\item[{const C\+Point \&}]{pt\+Window2, }
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Intersected\+Object, }
+\item[{const {\bf G\+I\+N\+T32} \&}]{i\+Count = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_space_view_ad35d550805ccc115a15372c63a1490a4}
+
+\begin{DoxyItemize}
+\item window에 교차되는 object를 찾는다.
+\item object를 기본으로 검사하고 나서 추가로 space를 검사한다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_view_ac034e96c79fe1634021040c4ea2b1a64}{C\+G3\+D\+View}.
+
+\hypertarget{class_c_g3_d_space_view_a6dfd5d319836c6ddda121a15662121cd}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!End\+Zoom@{End\+Zoom}}
+\index{End\+Zoom@{End\+Zoom}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{End\+Zoom()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Space\+View\+::\+End\+Zoom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{class_c_g3_d_space_view_a6dfd5d319836c6ddda121a15662121cd}
+
+\begin{DoxyItemize}
+\item zoom이 끝나고 나면 호출되는 함수이다.
+\item space를 카메라 위치에 따라 재정리한다.
+\begin{DoxyItemize}
+\item unloading 되어야 하는 space를 선별해서 화면에서 지우고, 파일로 저장하고 메모리에서 제거한다.
+\item loading 되어야 하는 space를 선별해서 파일에서 메모리로 loading하고, 화면에 그린다. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_view_a808a0626bd17033b5c4073db7a6e5649}{C\+G3\+D\+View}.
+
+\hypertarget{class_c_g3_d_space_view_ab5ddfadff524dc7a36385f3f807f88ea}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Get\+Attr@{Get\+Attr}}
+\index{Get\+Attr@{Get\+Attr}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Get\+Attr() const }]{\setlength{\rightskip}{0pt plus 5cm}const D\+W\+O\+R\+D32 \& C\+G3\+D\+Space\+View\+::\+Get\+Attr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g3_d_space_view_ab5ddfadff524dc7a36385f3f807f88ea}
+\hypertarget{class_c_g3_d_space_view_a187cc6a255fcc931963a1a2a787165ab}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Get\+Select\+Manager@{Get\+Select\+Manager}}
+\index{Get\+Select\+Manager@{Get\+Select\+Manager}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Get\+Select\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Selection\+Manager} $\ast$ C\+G3\+D\+Space\+View\+::\+Get\+Select\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_space_view_a187cc6a255fcc931963a1a2a787165ab}
+\hypertarget{class_c_g3_d_space_view_a8a3f64750952ecc6b120eb4272f0c68b}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Get\+Space\+Manager@{Get\+Space\+Manager}}
+\index{Get\+Space\+Manager@{Get\+Space\+Manager}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Get\+Space\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Space\+Manager} \& C\+G3\+D\+Space\+View\+::\+Get\+Space\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_space_view_a8a3f64750952ecc6b120eb4272f0c68b}
+
+\begin{DoxyItemize}
+\item space manager를 리턴한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_space_view_a1eee8f626fad416899cb8bafcc846a4b}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Init\+View@{Init\+View}}
+\index{Init\+View@{Init\+View}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Init\+View(\+C\+G3\+D\+View\+Init\+Data \&init\+Data)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+Space\+View\+::\+Init\+View (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G3\+D\+View\+Init\+Data} \&}]{init\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_space_view_a1eee8f626fad416899cb8bafcc846a4b}
+
+\begin{DoxyItemize}
+\item space를 그리기 위한 layer를 추가한다.
+\item 이미 동일한 layer가 있다면 삭제되므로 경고를 한다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_view_aa4c947bd440cf3824372b88424a919c9}{C\+G3\+D\+View}.
+
+\hypertarget{class_c_g3_d_space_view_a515fde24d4036a93c09c5e9de590f638}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Is\+Attr@{Is\+Attr}}
+\index{Is\+Attr@{Is\+Attr}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Is\+Attr(const Attr \&e\+Attr) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+Space\+View\+::\+Is\+Attr (
+\begin{DoxyParamCaption}
+\item[{const {\bf Attr} \&}]{e\+Attr}
+\end{DoxyParamCaption}
+) const}\label{class_c_g3_d_space_view_a515fde24d4036a93c09c5e9de590f638}
+\hypertarget{class_c_g3_d_space_view_a5aca5ec0fd7cef848aa9d41b10bf08b3}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Is\+Regenable\+Layer@{Is\+Regenable\+Layer}}
+\index{Is\+Regenable\+Layer@{Is\+Regenable\+Layer}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Is\+Regenable\+Layer(const C\+Atl\+String \&str\+View\+Layer\+Name) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G3\+D\+Space\+View\+::\+Is\+Regenable\+Layer (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_space_view_a5aca5ec0fd7cef848aa9d41b10bf08b3}
+
+\begin{DoxyItemize}
+\item regen 대상인 layer인지?
+\item space layer는 직접적인 regen 대상이 아니다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_space_view_a64c5f9295142711855fe1edac4e81574}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Redraw@{Redraw}}
+\index{Redraw@{Redraw}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Redraw()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Space\+View\+::\+Redraw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_space_view_a64c5f9295142711855fe1edac4e81574}
+
+\begin{DoxyItemize}
+\item object 갱신한다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_view_ac0f96baa1fed5188b0b9d395c9b0b8a0}{C\+G3\+D\+View}.
+
+\hypertarget{class_c_g3_d_space_view_aa82b9ba26d5f68761c6a9e0c7d451126}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Regen@{Regen}}
+\index{Regen@{Regen}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Regen(const C\+Atl\+String \&str\+View\+Layer\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Space\+View\+::\+Regen (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_space_view_aa82b9ba26d5f68761c6a9e0c7d451126}
+
+\begin{DoxyItemize}
+\item 모든 object를 다시 계산하여 그린다.
+\item 현재 load되어 있는 obect의 space 소속을 모두 갱신한다 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_view_aefc8cd44b4d375ac3b03c388b64c6f78}{C\+G3\+D\+View}.
+
+\hypertarget{class_c_g3_d_space_view_a9db364dfec0d9a4fe07fac150e9cb56f}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Regen\+Only\+Added\+Object@{Regen\+Only\+Added\+Object}}
+\index{Regen\+Only\+Added\+Object@{Regen\+Only\+Added\+Object}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Regen\+Only\+Added\+Object(const C\+Atl\+String \&str\+View\+Layer\+Name, C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Space\+View\+::\+Regen\+Only\+Added\+Object (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{{\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_space_view_a9db364dfec0d9a4fe07fac150e9cb56f}
+
+\begin{DoxyItemize}
+\item object가 추가되고 나서 화면에 그려지기 위해 호출되는 함수이다.
+\item space view에서는 화면에 그려지기 전에 space에 들어가는 과정을 거친다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_view_a05d588d0192488323bcfcbf219cae359}{C\+G3\+D\+View}.
+
+\hypertarget{class_c_g3_d_space_view_afc8d6edb1671e556d7117526ae9fa557}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Regen\+Only\+Changing\+Color\+Object@{Regen\+Only\+Changing\+Color\+Object}}
+\index{Regen\+Only\+Changing\+Color\+Object@{Regen\+Only\+Changing\+Color\+Object}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Regen\+Only\+Changing\+Color\+Object(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+G\+Object\+Base \&object, const C\+G\+Color \&color)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Space\+View\+::\+Regen\+Only\+Changing\+Color\+Object (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object, }
+\item[{const {\bf C\+G\+Color} \&}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_space_view_afc8d6edb1671e556d7117526ae9fa557}
+
+\begin{DoxyItemize}
+\item object의 color 변경을 view에 반영한다.
+\item vertex buffer를 변경한다.
+\item object의 color변경은 소속 space를 변경하는 영향을 끼치지 않는다.
+\item object의 color변경은 space의 개략형상에만 영향을 미친다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_view_a8a6694a9de54a15cd4e94cb2fe1ba772}{C\+G3\+D\+View}.
+
+\hypertarget{class_c_g3_d_space_view_a2c32fa92784c1093a196342233168b8c}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Regen\+Only\+Changing\+Color\+Object\+Multiple@{Regen\+Only\+Changing\+Color\+Object\+Multiple}}
+\index{Regen\+Only\+Changing\+Color\+Object\+Multiple@{Regen\+Only\+Changing\+Color\+Object\+Multiple}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Regen\+Only\+Changing\+Color\+Object\+Multiple(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object, const C\+G\+Color \&color)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Space\+View\+::\+Regen\+Only\+Changing\+Color\+Object\+Multiple (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object, }
+\item[{const {\bf C\+G\+Color} \&}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_space_view_a2c32fa92784c1093a196342233168b8c}
+
+\begin{DoxyItemize}
+\item object의 color 변경을 view에 반영한다.
+\item vertex buffer를 변경한다.
+\item object의 color변경은 소속 space를 변경하는 영향을 끼치지 않는다.
+\item object의 color변경은 space의 개략형상에만 영향을 미친다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_view_ab76493432442f14c16fcb44519e74ee9}{C\+G3\+D\+View}.
+
+\hypertarget{class_c_g3_d_space_view_acea820f287c70ae6f0c1b112ce571ac8}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Regen\+Only\+Deleting\+Object@{Regen\+Only\+Deleting\+Object}}
+\index{Regen\+Only\+Deleting\+Object@{Regen\+Only\+Deleting\+Object}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Regen\+Only\+Deleting\+Object(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Space\+View\+::\+Regen\+Only\+Deleting\+Object (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_space_view_acea820f287c70ae6f0c1b112ce571ac8}
+
+\begin{DoxyItemize}
+\item object가 삭제되고 나서 view에서 object의 rendering 결과를 제거한다.(vertex buffer를 제거한다) 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_view_ac548b357ba302865e820d8fee3d3ea23}{C\+G3\+D\+View}.
+
+\hypertarget{class_c_g3_d_space_view_ac29abf1bd75a5f266acd6d587e3cfcb2}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Regen\+Only\+Deleting\+Object\+Multiple@{Regen\+Only\+Deleting\+Object\+Multiple}}
+\index{Regen\+Only\+Deleting\+Object\+Multiple@{Regen\+Only\+Deleting\+Object\+Multiple}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Regen\+Only\+Deleting\+Object\+Multiple(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Space\+View\+::\+Regen\+Only\+Deleting\+Object\+Multiple (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_space_view_ac29abf1bd75a5f266acd6d587e3cfcb2}
+
+\begin{DoxyItemize}
+\item object가 삭제되고 나서 view에서 object의 rendering 결과를 제거한다.(vertex buffer를 제거한다) 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_view_a2420bc1d545fbe7fedf47e855dcfb6a5}{C\+G3\+D\+View}.
+
+\hypertarget{class_c_g3_d_space_view_a7b2ab69e7a9e8d0a0c9f2b9117980bc0}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Regen\+Only\+Deleting\+Space\+By\+Object@{Regen\+Only\+Deleting\+Space\+By\+Object}}
+\index{Regen\+Only\+Deleting\+Space\+By\+Object@{Regen\+Only\+Deleting\+Space\+By\+Object}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Regen\+Only\+Deleting\+Space\+By\+Object(const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Space\+View\+::\+Regen\+Only\+Deleting\+Space\+By\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_space_view_a7b2ab69e7a9e8d0a0c9f2b9117980bc0}
+
+\begin{DoxyItemize}
+\item 삭제될 object를 포함하는 space를 갱신한다.
+\item 포함하고 있는 object나 space가 없으면 삭제한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_space_view_a6124759a964a034fb2ec327cc12364f6}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Regen\+Only\+Object@{Regen\+Only\+Object}}
+\index{Regen\+Only\+Object@{Regen\+Only\+Object}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Regen\+Only\+Object(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Space\+View\+::\+Regen\+Only\+Object (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_space_view_a6124759a964a034fb2ec327cc12364f6}
+
+\begin{DoxyItemize}
+\item object 1개를 다시 그리기 한다. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]\end{DoxyRefDesc}
+
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_view_a37f1356825717a558f79e6ff5e6503b5}{C\+G3\+D\+View}.
+
+\hypertarget{class_c_g3_d_space_view_ad30a8db3cc9853abdcd598e170850c1f}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Regen\+Only\+Object\+Multiple@{Regen\+Only\+Object\+Multiple}}
+\index{Regen\+Only\+Object\+Multiple@{Regen\+Only\+Object\+Multiple}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Regen\+Only\+Object\+Multiple(const C\+Atl\+String \&str\+View\+Layer\+Name, const C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Space\+View\+::\+Regen\+Only\+Object\+Multiple (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+View\+Layer\+Name, }
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_space_view_ad30a8db3cc9853abdcd598e170850c1f}
+
+\begin{DoxyItemize}
+\item object 여러개를 다시 그리기 한다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_view_afe9ece9786fd1f5c178ccbd8f94d32bd}{C\+G3\+D\+View}.
+
+\hypertarget{class_c_g3_d_space_view_ad0358b2aab30055dfa168ce1cfa74e67}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Set\+Attr@{Set\+Attr}}
+\index{Set\+Attr@{Set\+Attr}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Set\+Attr(const D\+W\+O\+R\+D32 \&dw\+Attr)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Space\+View\+::\+Set\+Attr (
+\begin{DoxyParamCaption}
+\item[{const D\+W\+O\+R\+D32 \&}]{dw\+Attr}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_space_view_ad0358b2aab30055dfa168ce1cfa74e67}
+\hypertarget{class_c_g3_d_space_view_af1072de04a87854e12b9a4ab6e3ad60e}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Set\+Select\+Manager@{Set\+Select\+Manager}}
+\index{Set\+Select\+Manager@{Set\+Select\+Manager}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Set\+Select\+Manager(\+C\+G\+Selection\+Manager $\ast$p\+Select\+Manager)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Space\+View\+::\+Set\+Select\+Manager (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G\+Selection\+Manager} $\ast$}]{p\+Select\+Manager}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_space_view_af1072de04a87854e12b9a4ab6e3ad60e}
+
+\begin{DoxyItemize}
+\item space view는 객체를 숨겼다가 보였다가 한다.
+\item 객체의 선택상태를 유지하기 위해서는 select manager가 필요하다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_space_view_a52923271597a322ef6168461f3310672}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!Thread\+\_\+\+End\+Zoom@{Thread\+\_\+\+End\+Zoom}}
+\index{Thread\+\_\+\+End\+Zoom@{Thread\+\_\+\+End\+Zoom}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{Thread\+\_\+\+End\+Zoom(\+L\+P\+V\+O\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}U\+I\+N\+T W\+I\+N\+A\+P\+I C\+G3\+D\+Space\+View\+::\+Thread\+\_\+\+End\+Zoom (
+\begin{DoxyParamCaption}
+\item[{L\+P\+V\+O\+I\+D}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g3_d_space_view_a52923271597a322ef6168461f3310672}
+
+\begin{DoxyItemize}
+\item end zoom 시 주요 동작을 수행하는 스레드 함수 
+\end{DoxyItemize}
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_g3_d_space_view_a7d864ed2b5edb36c67802b090a959855}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!m\+\_\+dw\+Attr@{m\+\_\+dw\+Attr}}
+\index{m\+\_\+dw\+Attr@{m\+\_\+dw\+Attr}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{m\+\_\+dw\+Attr}]{\setlength{\rightskip}{0pt plus 5cm}D\+W\+O\+R\+D32 C\+G3\+D\+Space\+View\+::m\+\_\+dw\+Attr\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_space_view_a7d864ed2b5edb36c67802b090a959855}
+\hypertarget{class_c_g3_d_space_view_af4baa948247532603af5eb5f2be6d942}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!m\+\_\+p\+Select\+Manager@{m\+\_\+p\+Select\+Manager}}
+\index{m\+\_\+p\+Select\+Manager@{m\+\_\+p\+Select\+Manager}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{m\+\_\+p\+Select\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Selection\+Manager}$\ast$ C\+G3\+D\+Space\+View\+::m\+\_\+p\+Select\+Manager\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_space_view_af4baa948247532603af5eb5f2be6d942}
+\hypertarget{class_c_g3_d_space_view_add0273d1c28e0d7370498aa953da1824}{}\index{C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}!m\+\_\+space\+Manager@{m\+\_\+space\+Manager}}
+\index{m\+\_\+space\+Manager@{m\+\_\+space\+Manager}!C\+G3\+D\+Space\+View@{C\+G3\+D\+Space\+View}}
+\subsubsection[{m\+\_\+space\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Space\+Manager} C\+G3\+D\+Space\+View\+::m\+\_\+space\+Manager\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_space_view_add0273d1c28e0d7370498aa953da1824}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g3_d_space_view_8h}{G3\+D\+Space\+View.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g3_d_space_view_8cpp}{G3\+D\+Space\+View.\+cpp}\end{DoxyCompactItemize}

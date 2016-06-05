@@ -1,0 +1,81 @@
+
+\begin{DoxyRefList}
+\item[\label{todo__todo000001}%
+\hypertarget{todo__todo000001}{}%
+Member \hyperlink{class_c_g3_d_space_view_a6124759a964a034fb2ec327cc12364f6}{C\+G3\+D\+Space\+View\+:\+:Regen\+Only\+Object} (const C\+Atl\+String \&str\+View\+Layer\+Name, const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)]
+\begin{DoxyItemize}
+\item space를 이동하는 경우 object의 buffer item I\+D가 바뀐다. 그 순간 object 와 buffer item id와 연결이 깨진다.. 동기화를 잘 해줘야 할듯..!!!!! ( 심각!!! )  
+\end{DoxyItemize}
+\item[\label{todo__todo000009}%
+\hypertarget{todo__todo000009}{}%
+Class \hyperlink{class_c_g_arc3_d}{C\+G\+Arc3\+D} ]
+\begin{DoxyItemize}
+\item 구현해야함.  
+\end{DoxyItemize}
+\item[\label{todo__todo000002}%
+\hypertarget{todo__todo000002}{}%
+Member \hyperlink{class_c_g_camera_a84b7228a3b51e6380f14dec44614f70b}{C\+G\+Camera\+:\+:Zoom\+All} (const \hyperlink{class_c_g_cube}{C\+G\+Cube} \&cube\+Boundary)]
+\begin{DoxyItemize}
+\item 2\+D 평면만 동작한다.  
+\end{DoxyItemize}
+\item[\label{todo__todo000003}%
+\hypertarget{todo__todo000003}{}%
+Member \hyperlink{class_c_g_d_c_direct_x11_a35ffa13a9749e751c2bc2fdd261295ec}{C\+G\+D\+C\+Direct\+X11\+:\+:Calc\+World\+Coordinate\+By\+Window\+Coordinate} (\hyperlink{class_c_g_d_c_target_view}{C\+G\+D\+C\+Target\+View} $\ast$p\+D\+C\+Target\+View, const C\+Point \&pt\+Window)]
+\begin{DoxyItemize}
+\item 3\+D view에서는 테스트가 안됨. 평면뷰 기준으로 계산하고 있음.  
+\end{DoxyItemize}
+\item[\label{todo__todo000011}%
+\hypertarget{todo__todo000011}{}%
+Member \hyperlink{class_c_g_object_face_a59e5de6a240b6638ab66e52e44708b3d}{C\+G\+Object\+Face\+:\+:Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology} (G\+O\+U\+T C\+Atl\+Array$<$ G\+V\+E\+R\+T\+E\+X $>$ \&arr\+Vertex, G\+O\+U\+T C\+Atl\+Array$<$ G\+U\+I\+N\+T32 $>$ \&arr\+Index) const ]
+\begin{DoxyItemize}
+\item 구현해야함  
+\end{DoxyItemize}
+\item[\label{todo__todo000012}%
+\hypertarget{todo__todo000012}{}%
+Member \hyperlink{class_c_g_property_manager_aaad652565644997a952bb6851f2081e8}{C\+G\+Property\+Manager\+:\+:Set\+Object\+Color} (G\+I\+N\+O\+U\+T \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$p\+Obj, const G\+I\+N\+T32 \&i\+Object\+Count, const \hyperlink{class_c_g_color}{C\+G\+Color} \&color)]
+\begin{DoxyItemize}
+\item 속도 체크 해야함(매우 중요)
+\begin{DoxyItemize}
+\item line 200만개 설정
+\begin{DoxyItemize}
+\item G\+B\+O\+O\+L \hyperlink{class_c_g_property_manager_aaad652565644997a952bb6851f2081e8}{Set\+Object\+Color(\+G\+I\+N\+O\+U\+T C\+G\+Object\+Base $\ast$p\+Obj, const G\+I\+N\+T32 \&i\+Object\+Count, const C\+G\+Color \&color)}; \+: 14초
+\item G\+B\+O\+O\+L \hyperlink{class_c_g_property_manager_afa7aa3e26844505204a156aace6d209d}{Set\+Object\+Color(\+G\+I\+N\+O\+U\+T C\+G\+Object\+Base $\ast$p\+Obj, const C\+G\+Color \&color)}; \+: 8초  
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item[\label{todo__todo000004}%
+\hypertarget{todo__todo000004}{}%
+Member \hyperlink{class_c_g_space_a4041d193b8f5f02ab925d35022d49395}{C\+G\+Space\+:\+:Update\+Simple\+Shape} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)]
+\begin{DoxyItemize}
+\item 나중에.. 아주 나중에 개략형상을 이미지화 해보면 어떨까 싶음...
+\item 현재는 그냥 마지막에 추가된 객체의 색으로 뿌릴것임..  
+\end{DoxyItemize}
+\item[\label{todo__todo000008}%
+\hypertarget{todo__todo000008}{}%
+Member \hyperlink{class_c_g_space_manager_a71d9200f1ec5166b5ffbe603e9cac2a0}{C\+G\+Space\+Manager\+:\+:Create\+Optimized\+Space\+For\+O\+Bject} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)]
+\begin{DoxyItemize}
+\item 고민중...
+\begin{DoxyItemize}
+\item space의 크기를 동적으로 커지게 할지?(quadtree를 빠르게 갱신할 수 있어야 한다. 될까)
+\item space의 크기를 고정시킬지?(quadtree를 갱신하지 않아도 되지만, space의 개수가 너무 많이 늘어날 수 있다) -\/ 우선선정 \+: 기본 크기를 좀 키워서 과도한 개수늚을 최소화한다.  
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item[\label{todo__todo000005}%
+\hypertarget{todo__todo000005}{}%
+Member \hyperlink{class_c_g_space_manager_a589bd71d0ccbd424c0e2e4bd4e591d20}{C\+G\+Space\+Manager\+:\+:Find\+Space\+In\+View} (G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Space $\ast$ $>$ \&arr\+Space)]
+\begin{DoxyItemize}
+\item 코딩해야함(현재 모든 space가 보이는 것으로 한다)  
+\end{DoxyItemize}
+\item[\label{todo__todo000006}%
+\hypertarget{todo__todo000006}{}%
+Member \hyperlink{class_c_g_space_manager_a5a5ec91ddf3252a0e965a46105100422}{C\+G\+Space\+Manager\+:\+:Find\+Space\+Out\+Of\+View} (G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Space $\ast$ $>$ \&arr\+Space)]
+\begin{DoxyItemize}
+\item 코딩해야함(현재 모든 space가 보이는 것으로 한다)  
+\end{DoxyItemize}
+\item[\label{todo__todo000010}%
+\hypertarget{todo__todo000010}{}%
+Class \hyperlink{struct_g_v_e_r_t_e_x}{G\+V\+E\+R\+T\+E\+X} ]
+\begin{DoxyItemize}
+\item vertex별로 색상을 가질 수 있도록 해야 하는지 검토해서 적용한다. 
+\end{DoxyItemize}
+\end{DoxyRefList}

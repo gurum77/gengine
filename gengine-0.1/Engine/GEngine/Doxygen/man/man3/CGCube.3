@@ -1,0 +1,180 @@
+.TH "CGCube" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGCube \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GCube\&.h>\fP
+.PP
+Inherits \fBCGRect\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetZMin\fP (const \fBGDOUBLE\fP &dZMin)"
+.br
+.ti -1c
+.RI "const \fBGDOUBLE\fP & \fBGetZMin\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetZMax\fP (const \fBGDOUBLE\fP &dZMax)"
+.br
+.ti -1c
+.RI "const \fBGDOUBLE\fP & \fBGetZMax\fP () const "
+.br
+.ti -1c
+.RI "void \fBOffset\fP (const \fBGDOUBLE\fP &dOffset)"
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP \fBGetCubeCenter\fP () const "
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBGetRadius\fP () const "
+.br
+.ti -1c
+.RI "void \fBGetAllPoint3D\fP (\fBGOUT\fP CAtlArray< \fBCGPoint3D\fP > &arrPoint3D) const "
+.br
+.ti -1c
+.RI "void \fBSetByPoint2D\fP (const \fBCGPoint2D\fP &point2D)"
+.br
+.ti -1c
+.RI "void \fBSetByPoint3D\fP (const \fBCGPoint3D\fP &point3D)"
+.br
+.ti -1c
+.RI "void \fBSetByPoint3DArray\fP (const CAtlArray< \fBCGPoint3D\fP > &arrPoint3D)"
+.br
+.ti -1c
+.RI "void \fBMergeByPoint2D\fP (const \fBCGPoint2D\fP &point2D)"
+.br
+.ti -1c
+.RI "void \fBMergeByPoint3D\fP (const \fBCGPoint3D\fP &point3D)"
+.br
+.ti -1c
+.RI "void \fBMergeByCube\fP (const \fBCGCube\fP &cube)"
+.br
+.ti -1c
+.RI "void \fBInit\fP ()"
+.br
+.ti -1c
+.RI "void \fBMove\fP (const \fBCGVector3D\fP &vMove)"
+.br
+.ti -1c
+.RI "void \fBRotate\fP (const \fBCGPoint3D\fP &ptBase, const \fBCGVector3D\fP &vAxis, const \fBCGPoint2D\fP &vAng)"
+.br
+.ti -1c
+.RI "void \fBScale\fP (const \fBCGPoint3D\fP &ptBase, const \fBGDOUBLE\fP &dScale)"
+.br
+.ti -1c
+.RI "void \fBScale\fP (const \fBGDOUBLE\fP &dScale)"
+.br
+.ti -1c
+.RI "\fBCGCube\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGCube\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGCube::CGCube ()"
+
+.SS "CGCube::~CGCube ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGCube::GetAllPoint3D (\fBGOUT\fP CAtlArray< \fBCGPoint3D\fP > & arrPoint3D) const"
+
+.IP "\(bu" 2
+cube의 모서리 좌표를 가져온다\&. 
+.PP
+
+.SS "\fBCGPoint3D\fP CGCube::GetCubeCenter () const"
+
+.IP "\(bu" 2
+cube의 중심좌표를 리턴한다\&. 
+.PP
+
+.SS "\fBGDOUBLE\fP CGCube::GetRadius () const"
+
+.IP "\(bu" 2
+cube를 포함하는 반지름\&. 
+.PP
+
+.SS "const \fBGDOUBLE\fP & CGCube::GetZMax () const"
+
+.SS "const \fBGDOUBLE\fP & CGCube::GetZMin () const"
+
+.SS "void CGCube::Init ()"
+
+.SS "void CGCube::MergeByCube (const \fBCGCube\fP & cube)"
+
+.SS "void CGCube::MergeByPoint2D (const \fBCGPoint2D\fP & point2D)"
+
+.IP "\(bu" 2
+point2D를 merge한다\&. 
+.PP
+
+.SS "void CGCube::MergeByPoint3D (const \fBCGPoint3D\fP & point3D)"
+
+.IP "\(bu" 2
+point3D를 merge한다\&. 
+.PP
+
+.SS "void CGCube::Move (const \fBCGVector3D\fP & vMove)"
+
+.IP "\(bu" 2
+cube를 move한다\&. 
+.PP
+
+.SS "void CGCube::Offset (const \fBGDOUBLE\fP & dOffset)"
+
+.IP "\(bu" 2
+cube 의 크기를 offset한다\&. 
+.PP
+
+.SS "void CGCube::Rotate (const \fBCGPoint3D\fP & ptBase, const \fBCGVector3D\fP & vAxis, const \fBCGPoint2D\fP & vAng)"
+
+.IP "\(bu" 2
+cube를 회전한다\&. 
+.PP
+
+.SS "void CGCube::Scale (const \fBCGPoint3D\fP & ptBase, const \fBGDOUBLE\fP & dScale)"
+
+.SS "void CGCube::Scale (const \fBGDOUBLE\fP & dScale)"
+
+.IP "\(bu" 2
+cube의 크기를 변경한다\&.
+.IP "\(bu" 2
+center를 기준으로 변경한다\&. 
+.PP
+
+.SS "void CGCube::SetByPoint2D (const \fBCGPoint2D\fP & point2D)"
+
+.IP "\(bu" 2
+point2D로 초기화한다\&. 
+.PP
+
+.SS "void CGCube::SetByPoint3D (const \fBCGPoint3D\fP & point3D)"
+
+.IP "\(bu" 2
+point3D로 초기화한다\&. 
+.PP
+
+.SS "void CGCube::SetByPoint3DArray (const CAtlArray< \fBCGPoint3D\fP > & arrPoint3D)"
+
+.IP "\(bu" 2
+3d point로 cube를 설정한다\&. 
+.PP
+
+.SS "void CGCube::SetZMax (const \fBGDOUBLE\fP & dZMax)"
+
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_SUPER\fP \fBGIMPLEMENT_OPERATOR_COPY_END\fP \fBGIMPLEMENT_OPERATOR_EQUAL_SUPER\fP \fBGIMPLEMENT_OPERATOR_EQUAL_END\fP void CGCube::SetZMin (const \fBGDOUBLE\fP & dZMin)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

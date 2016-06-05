@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['perpendicularfrompointtoline',['PerpendicularFromPointToLine',['../class_c_g_math.html#af46db59addb0c8aaa9a718ccc41294a0',1,'CGMath::PerpendicularFromPointToLine(const CGPoint3D &amp;ptFrom, const CGPoint3D &amp;ptLine, const CGVector3D &amp;vDirLine)'],['../class_c_g_math.html#af42338cab327e3c554362d596779e515',1,'CGMath::PerpendicularFromPointToLine(const CGPoint2D &amp;ptFrom, const CGPoint2D &amp;ptLine, const CGVector2D &amp;vDirLine)']]],
+  ['perpendicularofvector',['PerpendicularOfVector',['../class_c_g_math.html#a50c391ac6b473457b2c0613656af3a41',1,'CGMath']]],
+  ['planedotpoint',['PlaneDotPoint',['../class_c_g_math.html#a52b9ce20a6668cd63b16b9bd6ac66980',1,'CGMath']]],
+  ['planedotxyz',['PlaneDotXYZ',['../class_c_g_math.html#a882da02bd111efff6617717cd311ba2a',1,'CGMath']]],
+  ['planefrom3point',['PlaneFrom3Point',['../class_c_g_math.html#a129bf3db1c4cc7ad8a314ca624443daa',1,'CGMath']]],
+  ['planefrustrumfromxyrateandviewprojmatrixinverse',['PlaneFrustrumFromXYRateAndViewProjMatrixInverse',['../class_c_g_math.html#a617307dee1011495bfbd82d1c6782ba6',1,'CGMath']]],
+  ['point',['Point',['../structp2t_1_1_point.html#a7e573e8b3c263b088a2141d4977850b7',1,'p2t::Point::Point()'],['../structp2t_1_1_point.html#a60c0ed4b0d109b9172a50555220ebdc3',1,'p2t::Point::Point(double x, double y)']]],
+  ['point2i',['Point2i',['../class_point2i.html#af90f5bb70aef38844c94109b3b081c36',1,'Point2i::Point2i(const int &amp;X, const int &amp;Y)'],['../class_point2i.html#a66e4d60fa9ff01cda5ed179d4ddc6223',1,'Point2i::Point2i()']]],
+  ['point_5fcount',['point_count',['../classp2t_1_1_sweep_context.html#a4ef94d299d632dee275dd511d7434c2d',1,'p2t::SweepContext']]],
+  ['pointccw',['PointCCW',['../classp2t_1_1_triangle.html#a8522e2b9fcc5f27dd27bb6c7c3eea515',1,'p2t::Triangle']]],
+  ['pointcw',['PointCW',['../classp2t_1_1_triangle.html#a5b91de7beebeedd89d3ecbb984dbb5bf',1,'p2t::Triangle']]],
+  ['polygontotrianglestrip',['PolygonToTriangleStrip',['../class_c_g_math.html#ae82d5a794bde42d891c0028f8ba869d3',1,'CGMath']]],
+  ['polygontotrianglestripbypoly2tri',['PolygonToTriangleStripByPoly2Tri',['../class_c_g_math.html#a5e322e6b450e25be8e98c93ff803f314',1,'CGMath']]],
+  ['polygontotrianglestripbytriangulate',['PolygonToTriangleStripByTriangulate',['../class_c_g_math.html#a137dac2c77a5d11a1ec4e6a731da2dd6',1,'CGMath']]],
+  ['precreatewindow',['PreCreateWindow',['../class_c_child_frame.html#afe5999283ada65f5b1f9fbabb288a8fe',1,'CChildFrame::PreCreateWindow()'],['../class_c_g_engine_launcher_view.html#aabf2253be3e468e4b4c427ca84c17cbd',1,'CGEngineLauncherView::PreCreateWindow()'],['../class_c_main_frame.html#a549bf677c955c2898c3c683321633c16',1,'CMainFrame::PreCreateWindow()'],['../class_c_child_frame.html#a260657cfcce56429622305b582eb7da6',1,'CChildFrame::PreCreateWindow()'],['../class_c_g_launcher_view.html#a6019657dec65c1877860d774a3a62531',1,'CGLauncherView::PreCreateWindow()'],['../class_c_main_frame.html#a645bfaa1de80605bf2e9600a7502f5ba',1,'CMainFrame::PreCreateWindow()']]],
+  ['preloadstate',['PreLoadState',['../class_c_g_engine_launcher_app.html#a41ed00144e7fb895a80b996d63bb15f6',1,'CGEngineLauncherApp']]],
+  ['preparedrawscene',['PrepareDrawScene',['../class_c_g_d_c.html#a5bc4b6cfcd3f3feaeec185d6ab98a68b',1,'CGDC::PrepareDrawScene()'],['../class_c_g_d_c_direct_x11.html#a51b03aa91e1ab51c8ada59e39a5f035c',1,'CGDCDirectX11::PrepareDrawScene()']]],
+  ['pretranslatemessage',['PreTranslateMessage',['../class_c_g3_d_action_manager.html#a00c9ecbb2c9b8d371ed4d9057e9e43f6',1,'CG3DActionManager::PreTranslateMessage()'],['../class_c_g3_d_view.html#a90b403c7341e001ff61429bf639bf122',1,'CG3DView::PreTranslateMessage()'],['../class_c_calendar_bar.html#ab2240585a89fd3a97172ebcd90157a1b',1,'CCalendarBar::PreTranslateMessage()'],['../class_c_g_engine_launcher_view.html#a75b3445bc9921ee1fd8c5cdeac009c12',1,'CGEngineLauncherView::PreTranslateMessage()'],['../class_c_dlg_space_view.html#aa04e7e9124754e71e539bbf0fad11a85',1,'CDlgSpaceView::PreTranslateMessage()'],['../class_c_g_launcher_view.html#af1cf43ceb6b046b072ac37df0bb1b191',1,'CGLauncherView::PreTranslateMessage()']]],
+  ['process',['Process',['../class_triangulate.html#af4fac09e290332de51db7253ddd3af52',1,'Triangulate::Process(const Vector2dVector &amp;contour, Vector2dVector &amp;result)'],['../class_triangulate.html#a309367fe200406ae2bb200d84e1a6947',1,'Triangulate::Process(const Vector2dVector &amp;contour, Vector2dVector &amp;result)']]]
+];

@@ -1,0 +1,163 @@
+.TH "CGSelectionManager" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGSelectionManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GSelectionManager\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBAttr\fP { \fBeAttrDynamicHighlight\fP = 0x00000001, \fBeAttrSelectAllSubObject\fP = 0x00000002 }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSelect\fP (\fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "void \fBSelect\fP (CAtlArray< \fBCGObjectBase\fP * > &arrObject)"
+.br
+.ti -1c
+.RI "void \fBUnSelect\fP (\fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "void \fBUnselectAll\fP ()"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBIsSelected\fP (\fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "void \fBRedraw\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetView\fP (\fBCG3DView\fP *pView)"
+.br
+.ti -1c
+.RI "void \fBSetViewLayerName\fP (const CString &strViewLayerName)"
+.br
+.ti -1c
+.RI "const CString & \fBGetViewLayerName\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetPickBoxSize\fP (const \fBGSIZE\fP &pickBoxSize)"
+.br
+.ti -1c
+.RI "const \fBGSIZE\fP & \fBGetPickBoxSize\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetAttr\fP (const \fBAttr\fP &eAttr, const \fBGBOOL\fP &bSet)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBIsAttr\fP (const \fBAttr\fP &eAttr) const "
+.br
+.ti -1c
+.RI "void \fBGetAllObject\fP (\fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrObject)"
+.br
+.ti -1c
+.RI "\fBCGSelectionManager\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGSelectionManager\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+object 선택 관리자\&.
+.IP "\(bu" 2
+object의 선택상황을 관리한다\&. 
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCGSelectionManager::Attr\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeAttrDynamicHighlight \fP\fP
+.TP
+\fB\fIeAttrSelectAllSubObject \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGSelectionManager::CGSelectionManager ()"
+
+.SS "CGSelectionManager::~CGSelectionManager ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGSelectionManager::GetAllObject (\fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrObject)"
+
+.IP "\(bu" 2
+선택 한 object를 가져온다\&. 
+.PP
+
+.SS "const \fBGSIZE\fP & CGSelectionManager::GetPickBoxSize () const"
+
+.SS "const CString & CGSelectionManager::GetViewLayerName () const"
+
+.SS "\fBGBOOL\fP CGSelectionManager::IsAttr (const \fBAttr\fP & eAttr) const"
+
+.SS "\fBGBOOL\fP CGSelectionManager::IsSelected (\fBCGObjectBase\fP & object)"
+
+.IP "\(bu" 2
+object가 선택되어 있는지 판단한다\&. 
+.PP
+
+.SS "void CGSelectionManager::Redraw ()"
+
+.IP "\(bu" 2
+화면에 rendering된 상태의 object의 vertex들을 선택상태로 다시 그리기를 한다\&. 
+.PP
+
+.SS "void CGSelectionManager::Select (\fBCGObjectBase\fP & object)"
+
+.IP "\(bu" 2
+object를 선택표시한다\&. 
+.PP
+
+.SS "void CGSelectionManager::Select (CAtlArray< \fBCGObjectBase\fP * > & arrObject)"
+
+.IP "\(bu" 2
+object 여러개를 선택한다\&. 
+.PP
+
+.SS "void CGSelectionManager::SetAttr (const \fBAttr\fP & eAttr, const \fBGBOOL\fP & bSet)"
+
+.SS "void CGSelectionManager::SetPickBoxSize (const \fBGSIZE\fP & pickBoxSize)"
+
+.SS "void CGSelectionManager::SetView (\fBCG3DView\fP * pView)"
+
+.SS "void CGSelectionManager::SetViewLayerName (const CString & strViewLayerName)"
+
+.IP "\(bu" 2
+object들이 있는 view layer name을 지정한다\&.
+.IP "\(bu" 2
+반드시 object와 동일한 view layer 이어야 한다\&. 
+.PP
+
+.SS "void CGSelectionManager::UnSelect (\fBCGObjectBase\fP & object)"
+
+.IP "\(bu" 2
+object의 선택표시를 해제한다\&. 
+.PP
+
+.SS "void CGSelectionManager::UnselectAll ()"
+
+.IP "\(bu" 2
+모든 object를 선택해제 한다\&. 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

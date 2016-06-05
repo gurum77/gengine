@@ -1,0 +1,126 @@
+.TH "p2t::Point" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+p2t::Point \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <shapes\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPoint\fP ()"
+.br
+.RI "\fIDefault constructor does nothing (for performance)\&. \fP"
+.ti -1c
+.RI "\fBPoint\fP (double \fBx\fP, double \fBy\fP)"
+.br
+.RI "\fIConstruct using coordinates\&. \fP"
+.ti -1c
+.RI "void \fBset_zero\fP ()"
+.br
+.RI "\fISet this point to all zeros\&. \fP"
+.ti -1c
+.RI "void \fBset\fP (double x_, double y_)"
+.br
+.RI "\fISet this point to some specified coordinates\&. \fP"
+.ti -1c
+.RI "\fBPoint\fP \fBoperator\-\fP () const "
+.br
+.RI "\fINegate this point\&. \fP"
+.ti -1c
+.RI "void \fBoperator+=\fP (const \fBPoint\fP &v)"
+.br
+.RI "\fIAdd a point to this point\&. \fP"
+.ti -1c
+.RI "void \fBoperator\-=\fP (const \fBPoint\fP &v)"
+.br
+.RI "\fISubtract a point from this point\&. \fP"
+.ti -1c
+.RI "void \fBoperator*=\fP (double a)"
+.br
+.RI "\fIMultiply this point by a scalar\&. \fP"
+.ti -1c
+.RI "double \fBLength\fP () const "
+.br
+.RI "\fIGet the length of this point (the norm)\&. \fP"
+.ti -1c
+.RI "double \fBNormalize\fP ()"
+.br
+.RI "\fIConvert this point into a unit point\&. Returns the Length\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBx\fP"
+.br
+.ti -1c
+.RI "double \fBy\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBEdge\fP * > \fBedge_list\fP"
+.br
+.RI "\fIThe edges this point constitutes an upper ending point\&. \fP"
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "p2t::Point::Point ()\fC [inline]\fP"
+
+.PP
+Default constructor does nothing (for performance)\&. 
+.SS "p2t::Point::Point (double x, double y)\fC [inline]\fP"
+
+.PP
+Construct using coordinates\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "double p2t::Point::Length () const\fC [inline]\fP"
+
+.PP
+Get the length of this point (the norm)\&. 
+.SS "double p2t::Point::Normalize ()\fC [inline]\fP"
+
+.PP
+Convert this point into a unit point\&. Returns the Length\&. 
+.SS "void p2t::Point::operator*= (double a)\fC [inline]\fP"
+
+.PP
+Multiply this point by a scalar\&. 
+.SS "void p2t::Point::operator+= (const \fBPoint\fP & v)\fC [inline]\fP"
+
+.PP
+Add a point to this point\&. 
+.SS "\fBPoint\fP p2t::Point::operator\- () const\fC [inline]\fP"
+
+.PP
+Negate this point\&. 
+.SS "void p2t::Point::operator\-= (const \fBPoint\fP & v)\fC [inline]\fP"
+
+.PP
+Subtract a point from this point\&. 
+.SS "void p2t::Point::set (double x_, double y_)\fC [inline]\fP"
+
+.PP
+Set this point to some specified coordinates\&. 
+.SS "void p2t::Point::set_zero ()\fC [inline]\fP"
+
+.PP
+Set this point to all zeros\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBEdge\fP*> p2t::Point::edge_list"
+
+.PP
+The edges this point constitutes an upper ending point\&. 
+.SS "double p2t::Point::x"
+
+.SS "double p2t::Point::y"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

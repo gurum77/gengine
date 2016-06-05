@@ -1,0 +1,153 @@
+.TH "CGObjectPolyline3D" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGObjectPolyline3D \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GObjectPolyline3D\&.h>\fP
+.PP
+Inherits \fBCGObjectBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetPolyline3D\fP (const \fBCGPolyline3D\fP &polyline3D)"
+.br
+.ti -1c
+.RI "const \fBCGPolyline3D\fP & \fBGetPolyline3D\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBMove\fP (const \fBCGVector3D\fP &vMove)"
+.br
+.ti -1c
+.RI "virtual void \fBRotate\fP (const \fBCGPoint3D\fP &ptBase, const \fBCGVector3D\fP &vAxis, const \fBCGPoint2D\fP &vAng)"
+.br
+.ti -1c
+.RI "virtual void \fBScale\fP (const \fBCGPoint3D\fP &ptBase, const \fBGDOUBLE\fP &dScale)"
+.br
+.ti -1c
+.RI "virtual void \fBCalcBoundary\fP ()"
+.br
+.ti -1c
+.RI "virtual const void \fBGetAllVertexByPrimitiveTopology\fP (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > &arrVertex) const "
+.br
+.ti -1c
+.RI "virtual const void \fBGetAllStripVertexListIndexByPrimitiveTopology\fP (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > &arrVertex, \fBGOUT\fP CAtlArray< \fBGUINT32\fP > &arrIndex) const "
+.br
+.ti -1c
+.RI "virtual CAtlString \fBGetStrType\fP () const "
+.br
+.ti -1c
+.RI "virtual \fBPrimitiveTopology\fP \fBGetPrimitiveTopology\fP () const "
+.br
+.ti -1c
+.RI "\fBCGObjectPolyline3D\fP (void)"
+.br
+.ti -1c
+.RI "virtual \fB~CGObjectPolyline3D\fP (void)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+3d polyline 객체 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGObjectPolyline3D::CGObjectPolyline3D (void)"
+
+.SS "CGObjectPolyline3D::~CGObjectPolyline3D (void)\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGObjectPolyline3D::CalcBoundary ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "const void CGObjectPolyline3D::GetAllStripVertexListIndexByPrimitiveTopology (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > & arrVertex, \fBGOUT\fP CAtlArray< \fBGUINT32\fP > & arrIndex) const\fC [virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer에 추가할 strip vertex와 list index를 가져온다\&.
+.IP "\(bu" 2
+object를 그리기 위해서는 반드시 재정의가 필요하다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "const void CGObjectPolyline3D::GetAllVertexByPrimitiveTopology (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > & arrVertex) const\fC [virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer에 추가할 vertex를 가져온다\&.
+.IP "\(bu" 2
+object를 그리기 위해서는 반드시 재정의가 필요하다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "const \fBCGPolyline3D\fP & CGObjectPolyline3D::GetPolyline3D () const"
+
+.SS "virtual \fBPrimitiveTopology\fP CGObjectPolyline3D::GetPrimitiveTopology () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.IP "\(bu" 2
+object의 vertex의 primitive topology를 리턴한다\&.
+.IP "\(bu" 2
+object는 한가지 primitive topology만 가질 수 있다\&.(다양한 primitive topology가 필요하다면 object를 여러개 가지도록 하면 된다) 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "virtual CAtlString CGObjectPolyline3D::GetStrType () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.IP "\(bu" 2
+object의 타입을 리턴한다\&.
+.IP "\(bu" 2
+유일한 string이어야 한다\&.
+.IP "\(bu" 2
+반드시 재정의 되어야 한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "void CGObjectPolyline3D::Move (const \fBCGVector3D\fP & vMove)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object를 move한다\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP 
+.RE
+.PP
+
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "void CGObjectPolyline3D::Rotate (const \fBCGPoint3D\fP & ptBase, const \fBCGVector3D\fP & vAxis, const \fBCGPoint2D\fP & vAng)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object를 rotate한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "void CGObjectPolyline3D::Scale (const \fBCGPoint3D\fP & ptBase, const \fBGDOUBLE\fP & dScale)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object를 scale한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_SUPER\fP \fBGIMPLEMENT_OPERATOR_COPY_END\fP void CGObjectPolyline3D::SetPolyline3D (const \fBCGPolyline3D\fP & polyline3D)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

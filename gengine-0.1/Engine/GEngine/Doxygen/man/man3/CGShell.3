@@ -1,0 +1,71 @@
+.TH "CGShell" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGShell \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GShell\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCGShell\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGShell\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static CAtlString \fBGetExtPath\fP ()"
+.br
+.ti -1c
+.RI "static CAtlString \fBNewGuid\fP ()"
+.br
+.ti -1c
+.RI "static BOOL \fBGetWinVer\fP (LPTSTR lpszVersion, int nVersionSize, int *pnVersion)"
+.br
+.ti -1c
+.RI "static LONG \fBGetNextNameValue\fP (HKEY key, LPCTSTR pszSubkey, LPTSTR pszName, LPTSTR pszData)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+shell 명령 관련 기능 모음 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGShell::CGShell ()"
+
+.SS "CGShell::~CGShell ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CAtlString CGShell::GetExtPath ()\fC [static]\fP"
+
+.IP "\(bu" 2
+프로그램의 실행경로를 가져온다\&. 
+.PP
+
+.SS "LONG CGShell::GetNextNameValue (HKEY key, LPCTSTR pszSubkey, LPTSTR pszName, LPTSTR pszData)\fC [static]\fP"
+
+.SS "BOOL CGShell::GetWinVer (LPTSTR lpszVersion, int nVersionSize, int * pnVersion)\fC [static]\fP"
+
+.SS "CAtlString CGShell::NewGuid ()\fC [static]\fP"
+
+.IP "\(bu" 2
+GUID 를 string으로 만들어서 리턴한다\&. 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

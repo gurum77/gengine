@@ -1,0 +1,227 @@
+.TH "p2t::Triangle" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+p2t::Triangle \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <shapes\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTriangle\fP (\fBPoint\fP &a, \fBPoint\fP &b, \fBPoint\fP &c)"
+.br
+.RI "\fIConstructor\&. \fP"
+.ti -1c
+.RI "\fBPoint\fP * \fBGetPoint\fP (const int &index)"
+.br
+.ti -1c
+.RI "\fBPoint\fP * \fBPointCW\fP (\fBPoint\fP &point)"
+.br
+.ti -1c
+.RI "\fBPoint\fP * \fBPointCCW\fP (\fBPoint\fP &point)"
+.br
+.ti -1c
+.RI "\fBPoint\fP * \fBOppositePoint\fP (\fBTriangle\fP &t, \fBPoint\fP &p)"
+.br
+.ti -1c
+.RI "\fBTriangle\fP * \fBGetNeighbor\fP (const int &index)"
+.br
+.ti -1c
+.RI "void \fBMarkNeighbor\fP (\fBPoint\fP *p1, \fBPoint\fP *p2, \fBTriangle\fP *t)"
+.br
+.ti -1c
+.RI "void \fBMarkNeighbor\fP (\fBTriangle\fP &t)"
+.br
+.ti -1c
+.RI "void \fBMarkConstrainedEdge\fP (const int index)"
+.br
+.ti -1c
+.RI "void \fBMarkConstrainedEdge\fP (\fBEdge\fP &edge)"
+.br
+.ti -1c
+.RI "void \fBMarkConstrainedEdge\fP (\fBPoint\fP *p, \fBPoint\fP *q)"
+.br
+.ti -1c
+.RI "int \fBIndex\fP (const \fBPoint\fP *p)"
+.br
+.ti -1c
+.RI "int \fBEdgeIndex\fP (const \fBPoint\fP *p1, const \fBPoint\fP *p2)"
+.br
+.ti -1c
+.RI "\fBTriangle\fP * \fBNeighborCW\fP (\fBPoint\fP &point)"
+.br
+.ti -1c
+.RI "\fBTriangle\fP * \fBNeighborCCW\fP (\fBPoint\fP &point)"
+.br
+.ti -1c
+.RI "bool \fBGetConstrainedEdgeCCW\fP (\fBPoint\fP &p)"
+.br
+.ti -1c
+.RI "bool \fBGetConstrainedEdgeCW\fP (\fBPoint\fP &p)"
+.br
+.ti -1c
+.RI "void \fBSetConstrainedEdgeCCW\fP (\fBPoint\fP &p, bool ce)"
+.br
+.ti -1c
+.RI "void \fBSetConstrainedEdgeCW\fP (\fBPoint\fP &p, bool ce)"
+.br
+.ti -1c
+.RI "bool \fBGetDelunayEdgeCCW\fP (\fBPoint\fP &p)"
+.br
+.ti -1c
+.RI "bool \fBGetDelunayEdgeCW\fP (\fBPoint\fP &p)"
+.br
+.ti -1c
+.RI "void \fBSetDelunayEdgeCCW\fP (\fBPoint\fP &p, bool e)"
+.br
+.ti -1c
+.RI "void \fBSetDelunayEdgeCW\fP (\fBPoint\fP &p, bool e)"
+.br
+.ti -1c
+.RI "bool \fBContains\fP (\fBPoint\fP *p)"
+.br
+.ti -1c
+.RI "bool \fBContains\fP (const \fBEdge\fP &e)"
+.br
+.ti -1c
+.RI "bool \fBContains\fP (\fBPoint\fP *p, \fBPoint\fP *q)"
+.br
+.ti -1c
+.RI "void \fBLegalize\fP (\fBPoint\fP &point)"
+.br
+.ti -1c
+.RI "void \fBLegalize\fP (\fBPoint\fP &opoint, \fBPoint\fP &npoint)"
+.br
+.ti -1c
+.RI "void \fBClear\fP ()"
+.br
+.ti -1c
+.RI "void \fBClearNeighbor\fP (\fBTriangle\fP *triangle)"
+.br
+.ti -1c
+.RI "void \fBClearNeighbors\fP ()"
+.br
+.ti -1c
+.RI "void \fBClearDelunayEdges\fP ()"
+.br
+.ti -1c
+.RI "bool \fBIsInterior\fP ()"
+.br
+.ti -1c
+.RI "void \fBIsInterior\fP (bool b)"
+.br
+.ti -1c
+.RI "\fBTriangle\fP & \fBNeighborAcross\fP (\fBPoint\fP &opoint)"
+.br
+.ti -1c
+.RI "void \fBDebugPrint\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBconstrained_edge\fP [3]"
+.br
+.RI "\fIFlags to determine if an edge is a Constrained edge\&. \fP"
+.ti -1c
+.RI "bool \fBdelaunay_edge\fP [3]"
+.br
+.RI "\fIFlags to determine if an edge is a Delauney edge\&. \fP"
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "p2t::Triangle::Triangle (\fBPoint\fP & a, \fBPoint\fP & b, \fBPoint\fP & c)"
+
+.PP
+Constructor\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void p2t::Triangle::Clear ()"
+Clears all references to all other triangles and points 
+.SS "void p2t::Triangle::ClearDelunayEdges ()"
+
+.SS "void p2t::Triangle::ClearNeighbor (\fBTriangle\fP * triangle)"
+
+.SS "void p2t::Triangle::ClearNeighbors ()"
+
+.SS "bool p2t::Triangle::Contains (\fBPoint\fP * p)\fC [inline]\fP"
+
+.SS "bool p2t::Triangle::Contains (const \fBEdge\fP & e)\fC [inline]\fP"
+
+.SS "bool p2t::Triangle::Contains (\fBPoint\fP * p, \fBPoint\fP * q)\fC [inline]\fP"
+
+.SS "void p2t::Triangle::DebugPrint ()"
+
+.SS "int p2t::Triangle::EdgeIndex (const \fBPoint\fP * p1, const \fBPoint\fP * p2)"
+
+.SS "bool p2t::Triangle::GetConstrainedEdgeCCW (\fBPoint\fP & p)"
+
+.SS "bool p2t::Triangle::GetConstrainedEdgeCW (\fBPoint\fP & p)"
+
+.SS "bool p2t::Triangle::GetDelunayEdgeCCW (\fBPoint\fP & p)"
+
+.SS "bool p2t::Triangle::GetDelunayEdgeCW (\fBPoint\fP & p)"
+
+.SS "\fBTriangle\fP * p2t::Triangle::GetNeighbor (const int & index)\fC [inline]\fP"
+
+.SS "\fBPoint\fP * p2t::Triangle::GetPoint (const int & index)\fC [inline]\fP"
+
+.SS "int p2t::Triangle::Index (const \fBPoint\fP * p)"
+
+.SS "bool p2t::Triangle::IsInterior ()\fC [inline]\fP"
+
+.SS "void p2t::Triangle::IsInterior (bool b)\fC [inline]\fP"
+
+.SS "void p2t::Triangle::Legalize (\fBPoint\fP & point)"
+
+.SS "void p2t::Triangle::Legalize (\fBPoint\fP & opoint, \fBPoint\fP & npoint)"
+
+.SS "void p2t::Triangle::MarkConstrainedEdge (const int index)"
+
+.SS "void p2t::Triangle::MarkConstrainedEdge (\fBEdge\fP & edge)"
+
+.SS "void p2t::Triangle::MarkConstrainedEdge (\fBPoint\fP * p, \fBPoint\fP * q)"
+
+.SS "void p2t::Triangle::MarkNeighbor (\fBPoint\fP * p1, \fBPoint\fP * p2, \fBTriangle\fP * t)"
+
+.SS "void p2t::Triangle::MarkNeighbor (\fBTriangle\fP & t)"
+
+.SS "\fBTriangle\fP & p2t::Triangle::NeighborAcross (\fBPoint\fP & opoint)"
+
+.SS "\fBTriangle\fP * p2t::Triangle::NeighborCCW (\fBPoint\fP & point)"
+
+.SS "\fBTriangle\fP * p2t::Triangle::NeighborCW (\fBPoint\fP & point)"
+
+.SS "\fBPoint\fP * p2t::Triangle::OppositePoint (\fBTriangle\fP & t, \fBPoint\fP & p)"
+
+.SS "\fBPoint\fP * p2t::Triangle::PointCCW (\fBPoint\fP & point)"
+
+.SS "\fBPoint\fP * p2t::Triangle::PointCW (\fBPoint\fP & point)"
+
+.SS "void p2t::Triangle::SetConstrainedEdgeCCW (\fBPoint\fP & p, bool ce)"
+
+.SS "void p2t::Triangle::SetConstrainedEdgeCW (\fBPoint\fP & p, bool ce)"
+
+.SS "void p2t::Triangle::SetDelunayEdgeCCW (\fBPoint\fP & p, bool e)"
+
+.SS "void p2t::Triangle::SetDelunayEdgeCW (\fBPoint\fP & p, bool e)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "bool p2t::Triangle::constrained_edge[3]"
+
+.PP
+Flags to determine if an edge is a Constrained edge\&. 
+.SS "bool p2t::Triangle::delaunay_edge[3]"
+
+.PP
+Flags to determine if an edge is a Delauney edge\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

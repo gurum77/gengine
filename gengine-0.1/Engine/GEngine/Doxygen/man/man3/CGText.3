@@ -1,0 +1,79 @@
+.TH "CGText" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGText \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GText\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetText\fP (const CAtlString &strText)"
+.br
+.ti -1c
+.RI "const CAtlString & \fBGetText\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetPos\fP (const \fBCGPoint3D\fP &ptBase)"
+.br
+.ti -1c
+.RI "const \fBCGPoint3D\fP & \fBGetPos\fP () const "
+.br
+.ti -1c
+.RI "void \fBMove\fP (const \fBCGVector3D\fP &vMove)"
+.br
+.ti -1c
+.RI "void \fBRotate\fP (const \fBCGPoint3D\fP &ptBase, const \fBCGPoint2D\fP &vAng)"
+.br
+.ti -1c
+.RI "void \fBScale\fP (const \fBCGPoint3D\fP &ptBase, const \fBGDOUBLE\fP &dScale)"
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGText\fP)"
+.br
+.ti -1c
+.RI "\fBCGText\fP (void)"
+.br
+.ti -1c
+.RI "virtual \fB~CGText\fP (void)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+text data 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGText::CGText (void)"
+
+.SS "CGText::~CGText (void)\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CGText::GDEFINE_OPERATOR_COPY (\fBCGText\fP)"
+
+.SS "const \fBCGPoint3D\fP & CGText::GetPos () const"
+
+.SS "const CAtlString & CGText::GetText () const"
+
+.SS "void CGText::Move (const \fBCGVector3D\fP & vMove)"
+
+.SS "void CGText::Rotate (const \fBCGPoint3D\fP & ptBase, const \fBCGPoint2D\fP & vAng)"
+
+.SS "void CGText::Scale (const \fBCGPoint3D\fP & ptBase, const \fBGDOUBLE\fP & dScale)"
+
+.SS "void CGText::SetPos (const \fBCGPoint3D\fP & ptBase)"
+
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_END\fP void CGText::SetText (const CAtlString & strText)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

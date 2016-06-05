@@ -1,0 +1,243 @@
+.TH "CGQuadTree< ELEMENT >" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGQuadTree< ELEMENT > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GQuadTree\&.hpp>\fP
+.PP
+Inherits \fBQuadTree< ELEMENT >\fP\&.
+.PP
+Inherited by \fBCGMultiQuadTree< ELEMENT >\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBAttr\fP { \fBeAttrManageNodeByFile\fP = 0x00000001, \fBeAttrCount\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAABB\fP \fBGetRegion\fP () const "
+.br
+.ti -1c
+.RI "float \fBGetMaxSegmentLength\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetMaxSegmentLength\fP (const double &dMaxSegmentLength)"
+.br
+.ti -1c
+.RI "void \fBSetAttr\fP (const DWORD32 &dwAttr)"
+.br
+.ti -1c
+.RI "void \fBSetAttr\fP (const \fBAttr\fP &eAttr, const bool &bSet)"
+.br
+.ti -1c
+.RI "DWORD32 \fBGetAttr\fP () const "
+.br
+.ti -1c
+.RI "bool \fBGetAttr\fP (const \fBAttr\fP &eAttr) const "
+.br
+.ti -1c
+.RI "void \fBGetAllElement\fP (CAtlArray< ELEMENT * > &arrEleRet)"
+.br
+.ti -1c
+.RI "void \fBGetAllNode\fP (CAtlList< \fBQuadTreeNode\fP< ELEMENT > * > &listRet)"
+.br
+.ti -1c
+.RI "void \fBGetAllInFileNode\fP (CAtlList< \fBQuadTreeNode\fP< ELEMENT > * > &listRet)"
+.br
+.ti -1c
+.RI "void \fBGetAllInMemoryNode\fP (CAtlList< \fBQuadTreeNode\fP< ELEMENT > * > &listRet)"
+.br
+.ti -1c
+.RI "void \fBSaveFileAllNode\fP ()"
+.br
+.ti -1c
+.RI "void \fBFindElementByRegion\fP (const \fBAABB\fP &rc, CAtlList< \fBCGQuadTreeElement\fP * > &listRet)"
+.br
+.ti -1c
+.RI "void \fBFindElementBySeg\fP (const \fBVec2f\fP &xy1, const \fBVec2f\fP &xy2, CAtlList< \fBCGQuadTreeElement\fP * > &listRet)"
+.br
+.ti -1c
+.RI "void \fBFindElementByPos\fP (const \fBVec2f\fP &xy, CAtlList< \fBCGQuadTreeElement\fP * > &listRet)"
+.br
+.ti -1c
+.RI "void \fBFindElementByAttr\fP (const DWORD32 &dwAttr, CAtlList< \fBCGQuadTreeElement\fP * > &listRet)"
+.br
+.ti -1c
+.RI "bool \fBIsExistElement\fP ()"
+.br
+.ti -1c
+.RI "INT32 \fBGetCountElement\fP ()"
+.br
+.ti -1c
+.RI "virtual ELEMENT * \fBAddElement\fP (ELEMENT &element)"
+.br
+.ti -1c
+.RI "\fBCGQuadTree\fP (const \fBAABB\fP &startRegion)"
+.br
+.ti -1c
+.RI "\fB~CGQuadTree\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBInitElement\fP (CAtlList< \fBCGQuadTreeElement\fP * > &listRet)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetWillFileSaveToAllNode\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetNotWillFileSave\fP (CAtlList< \fBQuadTreeOccupant\fP * > &listRet)"
+.br
+.ti -1c
+.RI "void \fBSaveFileWillFileSavdAllNode\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "DWORD32 \fBm_dwAttr\fP"
+.br
+.ti -1c
+.RI "\fBAABB\fP \fBm_rcRegion\fP"
+.br
+.ti -1c
+.RI "float \fBm_fMaxSegmentLength\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class ELEMENT>class CGQuadTree< ELEMENT >"
+
+.IP "\(bu" 2
+quadtree 클래스 
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "template<class ELEMENT> enum \fBCGQuadTree::Attr\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeAttrManageNodeByFile \fP\fP
+.TP
+\fB\fIeAttrCount \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class ELEMENT> \fBCGQuadTree\fP< ELEMENT >::\fBCGQuadTree\fP (const \fBAABB\fP & startRegion)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> \fBCGQuadTree\fP< ELEMENT >::~\fBCGQuadTree\fP ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class ELEMENT> virtual ELEMENT* \fBCGQuadTree\fP< ELEMENT >::AddElement (ELEMENT & element)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCGMultiQuadTree< ELEMENT >\fP\&.
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::FindElementByAttr (const DWORD32 & dwAttr, CAtlList< \fBCGQuadTreeElement\fP * > & listRet)\fC [inline]\fP"
+
+.IP "\(bu" 2
+속성에 의해서 element를 가져온다\&.
+.IP "\(bu" 2
+주로 저장할때 호출됨\&. 
+.PP
+
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::FindElementByPos (const \fBVec2f\fP & xy, CAtlList< \fBCGQuadTreeElement\fP * > & listRet)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::FindElementByRegion (const \fBAABB\fP & rc, CAtlList< \fBCGQuadTreeElement\fP * > & listRet)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::FindElementBySeg (const \fBVec2f\fP & xy1, const \fBVec2f\fP & xy2, CAtlList< \fBCGQuadTreeElement\fP * > & listRet)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::GetAllElement (CAtlArray< ELEMENT * > & arrEleRet)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::GetAllInFileNode (CAtlList< \fBQuadTreeNode\fP< ELEMENT > * > & listRet)\fC [inline]\fP"
+
+.IP "\(bu" 2
+file로 저장된 node를 모두 가져온다\&.
+.IP "\(bu" 2
+test를 위한 코드이다\&. 
+.PP
+
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::GetAllInMemoryNode (CAtlList< \fBQuadTreeNode\fP< ELEMENT > * > & listRet)\fC [inline]\fP"
+
+.IP "\(bu" 2
+memory로 저장된 node를 모두 가져온다\&.
+.IP "\(bu" 2
+test를 위한 코드이다\&. 
+.PP
+
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::GetAllNode (CAtlList< \fBQuadTreeNode\fP< ELEMENT > * > & listRet)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> DWORD32 \fBCGQuadTree\fP< ELEMENT >::GetAttr () const\fC [inline]\fP"
+
+.SS "template<class ELEMENT> bool \fBCGQuadTree\fP< ELEMENT >::GetAttr (const \fBAttr\fP & eAttr) const\fC [inline]\fP"
+
+.SS "template<class ELEMENT> INT32 \fBCGQuadTree\fP< ELEMENT >::GetCountElement ()\fC [inline]\fP"
+
+.SS "template<class ELEMENT> float \fBCGQuadTree\fP< ELEMENT >::GetMaxSegmentLength () const\fC [inline]\fP"
+
+.SS "template<class ELEMENT> \fBAABB\fP \fBCGQuadTree\fP< ELEMENT >::GetRegion () const\fC [inline]\fP"
+
+.SS "template<class ELEMENT> static void \fBCGQuadTree\fP< ELEMENT >::InitElement (CAtlList< \fBCGQuadTreeElement\fP * > & listRet)\fC [inline]\fP, \fC [static]\fP"
+
+.SS "template<class ELEMENT> bool \fBCGQuadTree\fP< ELEMENT >::IsExistElement ()\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::SaveFileAllNode ()\fC [inline]\fP"
+
+.IP "\(bu" 2
+모든 노드를 파일로 저장한다\&. 
+.PP
+
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::SaveFileWillFileSavdAllNode ()\fC [inline]\fP, \fC [protected]\fP"
+
+.IP "\(bu" 2
+save 될 에정인 node를 모두 save한다\&. 
+.PP
+
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::SetAttr (const DWORD32 & dwAttr)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::SetAttr (const \fBAttr\fP & eAttr, const bool & bSet)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::SetMaxSegmentLength (const double & dMaxSegmentLength)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::SetNotWillFileSave (CAtlList< \fBQuadTreeOccupant\fP * > & listRet)\fC [inline]\fP, \fC [protected]\fP"
+
+.IP "\(bu" 2
+save 될 예정 설정은 해제한다\&. 
+.PP
+
+.SS "template<class ELEMENT> void \fBCGQuadTree\fP< ELEMENT >::SetWillFileSaveToAllNode ()\fC [inline]\fP, \fC [protected]\fP"
+
+.IP "\(bu" 2
+quadtree를 serialize한다\&. 
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class ELEMENT> DWORD32 \fBCGQuadTree\fP< ELEMENT >::m_dwAttr\fC [protected]\fP"
+
+.SS "template<class ELEMENT> float \fBCGQuadTree\fP< ELEMENT >::m_fMaxSegmentLength\fC [protected]\fP"
+
+.SS "template<class ELEMENT> \fBAABB\fP \fBCGQuadTree\fP< ELEMENT >::m_rcRegion\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

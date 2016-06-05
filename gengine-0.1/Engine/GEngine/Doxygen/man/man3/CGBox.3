@@ -1,0 +1,107 @@
+.TH "CGBox" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGBox \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GBox\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetPos\fP (const \fBCGPoint3D\fP &pt, const \fBGBOOL\fP &bStt)"
+.br
+.ti -1c
+.RI "const \fBCGPoint3D\fP & \fBGetPos\fP (const \fBGBOOL\fP &bStt) const "
+.br
+.ti -1c
+.RI "void \fBSetWidth\fP (const \fBGFLOAT\fP &fWidth)"
+.br
+.ti -1c
+.RI "const \fBGFLOAT\fP & \fBGetWidth\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetHeight\fP (const \fBGFLOAT\fP &fHeight)"
+.br
+.ti -1c
+.RI "const \fBGFLOAT\fP & \fBGetHeight\fP () const "
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBGetDepth\fP () const "
+.br
+.ti -1c
+.RI "\fBCGVector3D\fP \fBGetVector\fP () const "
+.br
+.ti -1c
+.RI "void \fBMove\fP (const \fBCGVector3D\fP &vMove)"
+.br
+.ti -1c
+.RI "void \fBRotate\fP (const \fBCGPoint3D\fP &ptBase, const \fBCGVector3D\fP &vAxis, const \fBCGPoint2D\fP &vAng)"
+.br
+.ti -1c
+.RI "void \fBScale\fP (const \fBCGPoint3D\fP &ptBase, const \fBGDOUBLE\fP &dScale)"
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGBox\fP)"
+.br
+.ti -1c
+.RI "\fBCGBox\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGBox\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+Box 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGBox::CGBox ()"
+
+.SS "CGBox::~CGBox ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CGBox::GDEFINE_OPERATOR_COPY (\fBCGBox\fP)"
+
+.SS "\fBGDOUBLE\fP CGBox::GetDepth () const"
+
+.IP "\(bu" 2
+box의 depth를 계산해서 리턴한다\&. 
+.PP
+
+.SS "const \fBGFLOAT\fP & CGBox::GetHeight () const"
+
+.SS "const \fBCGPoint3D\fP & CGBox::GetPos (const \fBGBOOL\fP & bStt) const"
+
+.SS "\fBCGVector3D\fP CGBox::GetVector () const"
+
+.IP "\(bu" 2
+box의 depth 방향을 계산해서 리턴한다\&. 
+.PP
+
+.SS "const \fBGFLOAT\fP & CGBox::GetWidth () const"
+
+.SS "void CGBox::Move (const \fBCGVector3D\fP & vMove)"
+
+.SS "void CGBox::Rotate (const \fBCGPoint3D\fP & ptBase, const \fBCGVector3D\fP & vAxis, const \fBCGPoint2D\fP & vAng)"
+
+.SS "void CGBox::Scale (const \fBCGPoint3D\fP & ptBase, const \fBGDOUBLE\fP & dScale)"
+
+.SS "void CGBox::SetHeight (const \fBGFLOAT\fP & fHeight)"
+
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_END\fP void CGBox::SetPos (const \fBCGPoint3D\fP & pt, const \fBGBOOL\fP & bStt)"
+
+.SS "void CGBox::SetWidth (const \fBGFLOAT\fP & fWidth)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

@@ -1,0 +1,706 @@
+.TH "CG3DView" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CG3DView \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <G3DView\&.h>\fP
+.PP
+Inherited by \fBCG3DSpaceView\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBAttr\fP { \fBeAttrZoomming\fP = 0x00000001 }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fBGBOOL\fP \fBInitView\fP (\fBCG3DViewInitData\fP &initData)"
+.br
+.ti -1c
+.RI "\fBCG3DViewLayer\fP * \fBGetViewLayer\fP (const CAtlString &strViewLayerName)"
+.br
+.ti -1c
+.RI "\fBCG3DDB\fP * \fBGetDB\fP (const CAtlString &strViewLayerName)"
+.br
+.ti -1c
+.RI "virtual void \fBRegen\fP (const CAtlString &strViewLayerName)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyAddedObject\fP (const CAtlString &strViewLayerName, \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyAddedObjectMultiple\fP (const CAtlString &strViewLayerName, CAtlArray< \fBCGObjectBase\fP * > &arrObject)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyDeletingObject\fP (const CAtlString &strViewLayerName, const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyDeletingObjectMultiple\fP (const CAtlString &strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > &arrObject)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyChangingColorObject\fP (const CAtlString &strViewLayerName, const \fBCGObjectBase\fP &object, const \fBCGColor\fP &color)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyChangingColorObjectMultiple\fP (const CAtlString &strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > &arrObject, const \fBCGColor\fP &color)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyObject\fP (const CAtlString &strViewLayerName, const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyObjectMultiple\fP (const CAtlString &strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > &arrObject)"
+.br
+.ti -1c
+.RI "virtual void \fBRedraw\fP ()"
+.br
+.ti -1c
+.RI "void \fBOnResize\fP ()"
+.br
+.ti -1c
+.RI "\fBCGCamera\fP & \fBGetCamera\fP ()"
+.br
+.ti -1c
+.RI "void \fBPreTranslateMessage\fP (MSG *pMsg)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBIsAbort\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetAttr\fP (const \fBAttr\fP &eAttr, const \fBGBOOL\fP &bSet)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBIsAttr\fP (const \fBAttr\fP &eAttr)"
+.br
+.ti -1c
+.RI "\fBGINT32\fP \fBGetClienHeight\fP () const "
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP \fBCalcWorldCoordinateByWindowCoordinate\fP (const CPoint &ptScreen)"
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP \fBCalcWorldCoordinateByWindowCoordinateWithDepth\fP (const CPoint &ptwindow, const \fBGFLOAT\fP &fDepth)"
+.br
+.ti -1c
+.RI "CPoint \fBCalcWindowCoordinateByWorldCoordinate\fP (const \fBCGPoint3D\fP &ptWorld)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBCalcIntersectTriangularObjectByRay\fP (const CString &strViewLayer, const \fBCGPoint3D\fP &ptRayOrg, const \fBCGVector3D\fP &vRayDir, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrIntersectedObject, const \fBGINT32\fP &iCount=0)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBCalcIntersectObjectByXY\fP (const CString &strViewLayer, const CPoint &pt, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrIntersectedObject, const \fBGINT32\fP &iCount=0)"
+.br
+.ti -1c
+.RI "virtual \fBGBOOL\fP \fBCalcIntersectObjectByWindow\fP (const CString &strViewLayer, const CPoint &ptWindow1, const CPoint &ptWindow2, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrIntersectedObject, const \fBGINT32\fP &iCount=0)"
+.br
+.ti -1c
+.RI "virtual \fBCGObjectBase\fP * \fBCalcIntersectObjectByPickbox\fP (const CString &strViewLayer, const CPoint &ptWindow, const \fBGSIZE\fP &iPickboxSize)"
+.br
+.ti -1c
+.RI "const \fBCG3DViewInitData\fP & \fBGetInitData\fP () const "
+.br
+.ti -1c
+.RI "void \fBCreateVertexIndexBufferByObjectArrayByBufferItemID\fP (const CAtlString &strViewLayerName, CAtlArray< \fBCGObjectBase\fP * > &arrOBject, const \fBGID\fP &bufferItemID, const \fBGBOOL\fP &bAdd=false, const \fBGID\fP &ID=\fBGFIRST_ID\fP)"
+.br
+.ti -1c
+.RI "void \fBInitVertexIndexBufferByBufferItemID\fP (const CString &strViewLayerName, CAtlArray< \fBCGObjectBase\fP * > &arrObject, const \fBGID\fP &bufferItemID)"
+.br
+.ti -1c
+.RI "\fBCG3DView\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~CG3DView\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGBOOL\fP \fBOnMouseWheel\fP (UINT nFlags, short zDelta, CPoint pt)"
+.br
+.ti -1c
+.RI "void \fBOnMouseMove\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "void \fBOnMButtonDblClk\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "void \fBInitMapObjectByBufferItemID\fP (CAtlMap< \fBGID\fP, CAtlArray< \fBCGObjectBase\fP * > * > &map)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBCreateFrustrumPlaneByWindow\fP (const CPoint &ptWindow1, const CPoint &ptWindow2, \fBGOUT\fP \fBCGPlane\fP *pPlaneFrustrum)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBCalcIntersectObjectByWindowByBufferItemID\fP (const CString &strViewLayer, const CAtlArray< \fBCGObjectBase\fP * > &arrObject, const \fBGID\fP &bufferItemID, const CPoint &ptWindow1, const CPoint &ptWindow2, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrIntersectedObject, const \fBGINT32\fP &iCount=0)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBCalcIntersectTriangularObjectByRayByBufferItemID\fP (const CString &strViewLayer, const CAtlArray< \fBCGObjectBase\fP * > &arrObject, const \fBGID\fP &bufferItemID, const \fBCGPoint3D\fP &ptRayOrg, const \fBCGVector3D\fP &vRayDir, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrIntersectedObject, const \fBGINT32\fP &iCount=0)"
+.br
+.ti -1c
+.RI "void \fBRegenOnlyObjectMultipleByBufferItemID\fP (const CAtlString &strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > &arrObject, const \fBGID\fP &bufferItemID)"
+.br
+.ti -1c
+.RI "void \fBRegenOnlyChangingColorObjectMultipleByBufferItemID\fP (const CAtlString &strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > &arrObject, const \fBCGColor\fP &color, const \fBGID\fP &bufferItemID)"
+.br
+.ti -1c
+.RI "void \fBRegenOnlyDeletingObjectMultipleByBufferItemID\fP (const CAtlString &strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > &arrObject, const \fBGID\fP &bufferItemID)"
+.br
+.ti -1c
+.RI "virtual void \fBFindAllTrianglaurObjectToIntersectByRay\fP (const CString &strViewLayer, const \fBCGPoint3D\fP &ptRayOrg, const \fBCGVector3D\fP &vRayDir, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrObject)"
+.br
+.ti -1c
+.RI "virtual void \fBFindAllObjectToIntersectByRectangle\fP (const CString &strViewLayer, \fBCGPlane\fP *pPlaneFrustrum, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrObject)"
+.br
+.ti -1c
+.RI "virtual void \fBStartZoom\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBEndZoom\fP ()"
+.br
+.ti -1c
+.RI "void \fBGetObjectByPrimitiveTopology\fP (const CAtlArray< \fBCGObjectBase\fP * > &arrObjectSrc, const \fBPrimitiveTopology\fP &ePrimitiveTopology, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrObjectTar)"
+.br
+.ti -1c
+.RI "void \fBGetObjectByBufferLayerBufferItemID\fP (const CString &strViewLayer, const CAtlArray< \fBCGObjectBase\fP * > &arrObject, \fBGOUT\fP CAtlMap< \fBGID\fP, CAtlArray< \fBCGObjectBase\fP * > * > &mapObjectByBufferItemID)"
+.br
+.ti -1c
+.RI "void \fBOptimizeProperty\fP (const CAtlString &strViewLayerName)"
+.br
+.ti -1c
+.RI "void \fBDrawObject\fP ()"
+.br
+.ti -1c
+.RI "void \fBDrawObjectByObject\fP (const CAtlString &strViewLayerName)"
+.br
+.ti -1c
+.RI "void \fBDrawObjectByPrimitiveTopology\fP (const CAtlString &strViewLayerName)"
+.br
+.ti -1c
+.RI "void \fBDrawObjectByPrimitiveTopologyByStripVertexListIndex\fP (const CAtlString &strViewLayerName)"
+.br
+.ti -1c
+.RI "void \fBInitVertexIndexBuffer\fP (const CAtlString &strViewLayerName)"
+.br
+.ti -1c
+.RI "void \fBCreateVertexIndexBuffer\fP (const CAtlString &strViewLayerName)"
+.br
+.ti -1c
+.RI "void \fBCreateVertexIndexBufferByObjectManager\fP (const CAtlString &strViewLayerName, \fBCGObjectManager\fP &mng, const \fBGBOOL\fP &bAdd=false, const \fBGID\fP &ID=\fBGFIRST_ID\fP)"
+.br
+.ti -1c
+.RI "void \fBAddVertexIndexBuffer\fP (const CAtlString &strViewLayerName, \fBCGObjectBase\fP &objectBase)"
+.br
+.ti -1c
+.RI "void \fBAddVertexIndexBufferMultiple\fP (const CAtlString &strViewLayerName, CAtlArray< \fBCGObjectBase\fP * > &arrObject)"
+.br
+.ti -1c
+.RI "const CAtlMap< \fBGID\fP, \fBCGObjectBase\fP * > * \fBGetObjectList\fP (const CAtlString &strViewLayerName)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "CPoint \fBm_ptLastMousePos\fP"
+.br
+.ti -1c
+.RI "\fBCG3DViewInitData\fP \fBm_initData\fP"
+.br
+.ti -1c
+.RI "\fBCGDC\fP * \fBm_pDC\fP"
+.br
+.ti -1c
+.RI "\fBCGDCTargetView\fP * \fBm_pDCTargetView\fP"
+.br
+.ti -1c
+.RI "\fBCGCamera\fP \fBm_camera\fP"
+.br
+.ti -1c
+.RI "DWORD32 \fBm_dwAttr\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBCG3DTest\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+3D view
+.IP "\(bu" 2
+데이타 관리를 한다\&. 
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCG3DView::Attr\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeAttrZoomming \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CG3DView::CG3DView ()"
+
+.SS "CG3DView::~CG3DView ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CG3DView::AddVertexIndexBuffer (const CAtlString & strViewLayerName, \fBCGObjectBase\fP & object)\fC [protected]\fP"
+
+.IP "\(bu" 2
+object 1개의 vertex buffer를 추가한다\&. 
+.PP
+
+.SS "void CG3DView::AddVertexIndexBufferMultiple (const CAtlString & strViewLayerName, CAtlArray< \fBCGObjectBase\fP * > & arrObject)\fC [protected]\fP"
+
+.IP "\(bu" 2
+object 여러개의 vertex buffer를 추가한다\&. 
+.PP
+
+.SS "\fBCGObjectBase\fP * CG3DView::CalcIntersectObjectByPickbox (const CString & strViewLayer, const CPoint & ptWindow, const \fBGSIZE\fP & iPickboxSize)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+pickbox에 의해서 교차되는 object를 찾는다\&.
+.IP "\(bu" 2
+pickbox에 걸리는 object를 하나 찾는다\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP 
+.RE
+.PP
+
+.PP
+
+.PP
+Reimplemented in \fBCG3DSpaceView\fP\&.
+.SS "\fBGBOOL\fP CG3DView::CalcIntersectObjectByWindow (const CString & strViewLayer, const CPoint & ptWindow1, const CPoint & ptWindow2, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrIntersectedObject, const \fBGINT32\fP & iCount = \fC0\fP)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+window에 의해서 교차되는 object를 계산한다\&.
+.IP "\(bu" 2
+window에 의해서 교차되는 object를 계산한다\&.
+.IP "\(bu" 2
+window크기의 절두체를 만들어서 검사한다\&.
+.IP "\(bu" 2
+절두체 평면의 바깥에 있는것은 걸리지 않는 것으로 판정한다\&.
+.IP "\(bu" 2
+window를 완전히 포함하는 객체를 찾기 위해 CalcIntersectObjectByRay와 혼용한다\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP 
+.RE
+.PP
+
+.PP
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIiCount\fP 선택할 객체의 개수: 0 - 선택가능한 객체 모두 선택 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBCG3DSpaceView\fP\&.
+.SS "\fBGBOOL\fP CG3DView::CalcIntersectObjectByWindowByBufferItemID (const CString & strViewLayer, const CAtlArray< \fBCGObjectBase\fP * > & arrObject, const \fBGID\fP & bufferItemID, const CPoint & ptWindow1, const CPoint & ptWindow2, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrIntersectedObject, const \fBGINT32\fP & iCount = \fC0\fP)\fC [protected]\fP"
+
+.IP "\(bu" 2
+buffer item id에 존재하는 object에 대해서 window에 교차되는지 검사한다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CG3DView::CalcIntersectObjectByXY (const CString & strViewLayer, const CPoint & pt, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrIntersectedObject, const \fBGINT32\fP & iCount = \fC0\fP)"
+
+.IP "\(bu" 2
+window 좌표로 객체 교차를 계산한다\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.RE
+.PP
+
+.IP "\(bu" 2
+찾으면 TRUE
+.IP "\(bu" 2
+window 좌표에 걸리는 객체를 찾는다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CG3DView::CalcIntersectTriangularObjectByRay (const CString & strViewLayer, const \fBCGPoint3D\fP & ptRayOrg, const \fBCGVector3D\fP & vRayDir, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrIntersectedObject, const \fBGINT32\fP & iCount = \fC0\fP)"
+
+.IP "\(bu" 2
+ray에 의해서 교차되는 object를 계산한다\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.RE
+.PP
+
+.IP "\(bu" 2
+찾으면 TRUE
+.IP "\(bu" 2
+ray에 의해서 교차되는 object를 찾는다\&.
+.IP "\(bu" 2
+triangle만 찾을 수 있다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CG3DView::CalcIntersectTriangularObjectByRayByBufferItemID (const CString & strViewLayer, const CAtlArray< \fBCGObjectBase\fP * > & arrObject, const \fBGID\fP & bufferItemID, const \fBCGPoint3D\fP & ptRayOrg, const \fBCGVector3D\fP & vRayDir, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrIntersectedObject, const \fBGINT32\fP & iCount = \fC0\fP)\fC [protected]\fP"
+
+.IP "\(bu" 2
+ray에 의해서 교차되는 object를 찾는다\&.
+.IP "\(bu" 2
+triangle만 찾을 수 있다\&.
+.IP "\(bu" 2
+buffer item 별로 찾는다\&. 
+.PP
+
+.SS "CPoint CG3DView::CalcWindowCoordinateByWorldCoordinate (const \fBCGPoint3D\fP & ptWorld)"
+
+.IP "\(bu" 2
+world좌표로 window 좌표를 얻는다\&. 
+.PP
+
+.SS "\fBCGPoint3D\fP CG3DView::CalcWorldCoordinateByWindowCoordinate (const CPoint & ptScreen)"
+
+.IP "\(bu" 2
+window 좌표를 통해서 world 좌표를 얻는다\&. 
+.PP
+
+.SS "\fBCGPoint3D\fP CG3DView::CalcWorldCoordinateByWindowCoordinateWithDepth (const CPoint & ptwindow, const \fBGFLOAT\fP & fDepth)"
+
+.IP "\(bu" 2
+window좌표와 깊이값을 통해서 world 좌표를 얻는다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CG3DView::CreateFrustrumPlaneByWindow (const CPoint & ptWindow1, const CPoint & ptWindow2, \fBGOUT\fP \fBCGPlane\fP * pPlaneFrustrum)\fC [protected]\fP"
+
+.IP "\(bu" 2
+2개의 window 좌표로 절두체 평면을 만든다\&. 
+.PP
+
+.SS "void CG3DView::CreateVertexIndexBuffer (const CAtlString & strViewLayerName)\fC [protected]\fP"
+
+.IP "\(bu" 2
+vertex buffer를 생성한다\&. 
+.PP
+
+.SS "void CG3DView::CreateVertexIndexBufferByObjectArrayByBufferItemID (const CAtlString & strViewLayerName, CAtlArray< \fBCGObjectBase\fP * > & arrOBject, const \fBGID\fP & bufferItemID, const \fBGBOOL\fP & bAdd = \fCfalse\fP, const \fBGID\fP & ID = \fC\fBGFIRST_ID\fP\fP)"
+
+.IP "\(bu" 2
+object array와 buffer item id로 vertex index buffer를 생성한다\&. 
+.PP
+
+.SS "void CG3DView::CreateVertexIndexBufferByObjectManager (const CAtlString & strViewLayerName, \fBCGObjectManager\fP & mng, const \fBGBOOL\fP & bAdd = \fCfalse\fP, const \fBGID\fP & ID = \fC\fBGFIRST_ID\fP\fP)\fC [protected]\fP"
+
+.IP "\(bu" 2
+object manager로 vertex index buffer를 생성한다\&.
+.IP "\(bu" 2
+이미 vertex index buffer를 할당 받은 객체에 대해서는 삭제하고 생성한다\&.
+.IP "\(bu" 2
+기본 bufer item에 생성한다\&. 
+.PP
+
+.SS "void CG3DView::DrawObject ()\fC [protected]\fP"
+
+.IP "\(bu" 2
+object를 그린다\&. 
+.PP
+
+.SS "void CG3DView::DrawObjectByObject (const CAtlString & strViewLayerName)\fC [protected]\fP"
+
+.IP "\(bu" 2
+object 별로 하나씩 그린다\&.
+.IP "\(bu" 2
+object 개수가 많아 질수록 느려진다\&. 
+.PP
+
+.SS "void CG3DView::DrawObjectByPrimitiveTopology (const CAtlString & strViewLayerName)\fC [protected]\fP"
+
+.IP "\(bu" 2
+geometry 단위로 묶어서 그린다\&.
+.IP "\(bu" 2
+point, line, triangle 
+.PP
+
+.SS "void CG3DView::DrawObjectByPrimitiveTopologyByStripVertexListIndex (const CAtlString & strViewLayerName)\fC [protected]\fP"
+
+.IP "\(bu" 2
+geometry 단위로 묶어서 그린다\&.
+.IP "\(bu" 2
+point, line, triangle
+.IP "\(bu" 2
+strip vertex, list index 방식으로 그린다\&. 
+.PP
+
+.SS "void CG3DView::EndZoom ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.IP "\(bu" 2
+zoom이 끝나고 나서 호출되는 함수 
+.PP
+
+.PP
+Reimplemented in \fBCG3DSpaceView\fP\&.
+.SS "void CG3DView::FindAllObjectToIntersectByRectangle (const CString & strViewLayer, \fBCGPlane\fP * pPlaneFrustrum, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrObject)\fC [protected]\fP, \fC [virtual]\fP"
+
+.IP "\(bu" 2
+rectangle과 교점 검사를 하기 위한 대상이 되는 object를 찾는다\&. 
+.PP
+
+.SS "void CG3DView::FindAllTrianglaurObjectToIntersectByRay (const CString & strViewLayer, const \fBCGPoint3D\fP & ptRayOrg, const \fBCGVector3D\fP & vRayDir, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrObject)\fC [protected]\fP, \fC [virtual]\fP"
+
+.IP "\(bu" 2
+반직선과 교점 검사를 하기 위한 대상이 되는 모든 object를 찾는다\&.
+.IP "\(bu" 2
+삼각형으로 이루어진 object만 검사한다\&. 
+.PP
+
+.SS "\fBCGCamera\fP & CG3DView::GetCamera ()"
+
+.SS "\fBGINT32\fP CG3DView::GetClienHeight () const"
+
+.SS "\fBCG3DDB\fP * CG3DView::GetDB (const CAtlString & strViewLayerName)"
+
+.SS "const \fBCG3DViewInitData\fP & CG3DView::GetInitData () const"
+
+.IP "\(bu" 2
+view 초기화 데이타 리턴
+.IP "\(bu" 2
+참조만 가능하다
+.IP "\(bu" 2
+변경을 하려면 InitView 함수를 통해서 변경해야 한다\&. 
+.PP
+
+.SS "void CG3DView::GetObjectByBufferLayerBufferItemID (const CString & strViewLayer, const CAtlArray< \fBCGObjectBase\fP * > & arrObject, \fBGOUT\fP CAtlMap< \fBGID\fP, CAtlArray< \fBCGObjectBase\fP * > * > & mapObjectByBufferItemID)\fC [protected]\fP"
+
+.IP "\(bu" 2
+object를 buffer item별로 구분한다\&. 
+.PP
+
+.SS "void CG3DView::GetObjectByPrimitiveTopology (const CAtlArray< \fBCGObjectBase\fP * > & arrObjectSrc, const \fBPrimitiveTopology\fP & ePrimitiveTopology, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrObjectTar)\fC [protected]\fP"
+
+.IP "\(bu" 2
+object를 primitive topology별로 가져온다\&. 
+.PP
+
+.SS "const CAtlMap< \fBGID\fP, \fBCGObjectBase\fP * > * CG3DView::GetObjectList (const CAtlString & strViewLayerName)\fC [protected]\fP"
+
+.IP "\(bu" 2
+object list를 리턴한다\&. 
+.PP
+
+.SS "\fBCG3DViewLayer\fP * CG3DView::GetViewLayer (const CAtlString & strViewLayerName)"
+
+.IP "\(bu" 2
+view layer를 리턴한다\&. 
+.PP
+
+.SS "void CG3DView::InitMapObjectByBufferItemID (CAtlMap< \fBGID\fP, CAtlArray< \fBCGObjectBase\fP * > * > & map)\fC [protected]\fP"
+
+.IP "\(bu" 2
+buffer item 별 object array를 담고 있는 map 메모리 해제
+.IP "\(bu" 2
+GetObjectByBufferLayerBufferItemID 함수를 사용해서 map을 구성한 경우 반드시 이 함수로 메모리 해제를 해야함\&. 
+.PP
+
+.SS "void CG3DView::InitVertexIndexBuffer (const CAtlString & strViewLayerName)\fC [protected]\fP"
+
+.IP "\(bu" 2
+vertex buffer, index buffer를 초기화 한다\&. 
+.PP
+
+.SS "void CG3DView::InitVertexIndexBufferByBufferItemID (const CString & strViewLayerName, CAtlArray< \fBCGObjectBase\fP * > & arrObject, const \fBGID\fP & bufferItemID)"
+
+.IP "\(bu" 2
+buffer item 별로 vertex index buffer를 초기화 한다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CG3DView::InitView (\fBCG3DViewInitData\fP & initData)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+3D view 초기화 함수
+.IP "\(bu" 2
+DC Target View를 만든다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCG3DSpaceView\fP\&.
+.SS "\fBGBOOL\fP CG3DView::IsAbort () const"
+
+.SS "\fBGBOOL\fP CG3DView::IsAttr (const \fBAttr\fP & eAttr)"
+
+.SS "void CG3DView::OnMButtonDblClk (UINT nFlags, CPoint point)\fC [protected]\fP"
+
+.IP "\(bu" 2
+MButton을 Double하면 zoom all이 된다\&. 
+.PP
+
+.SS "void CG3DView::OnMouseMove (UINT nFlags, CPoint point)\fC [protected]\fP"
+
+.IP "\(bu" 2
+mouse move시 동작
+.IP "  \(bu" 4
+wheel을 누른채 move를 하면 zoom pan이 동작한다\&. 
+.PP
+
+.PP
+
+.SS "\fBGBOOL\fP CG3DView::OnMouseWheel (UINT nFlags, short zDelta, CPoint pt)\fC [protected]\fP"
+
+.IP "\(bu" 2
+mouse wheel을 돌리면 zoom in, out이 된다\&. 
+.PP
+
+.SS "void CG3DView::OnResize ()"
+
+.SS "void CG3DView::OptimizeProperty (const CAtlString & strViewLayerName)\fC [protected]\fP"
+
+.IP "\(bu" 2
+view layer 의 property를 최적화 한다\&. 
+.PP
+
+.SS "void CG3DView::PreTranslateMessage (MSG * pMsg)"
+
+.SS "void CG3DView::Redraw ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object 갱신한다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCG3DSpaceView\fP\&.
+.SS "void CG3DView::Regen (const CAtlString & strViewLayerName)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object를 재생성한다\&.
+.IP "\(bu" 2
+object생성은 view layer별로 한다\&.
+.IP "\(bu" 2
+마지막에 redraw는 모든 view layer에 대해서 redraw한다\&.
+.IP "\(bu" 2
+quadtree를 재설정한다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCG3DSpaceView\fP\&.
+.SS "void CG3DView::RegenOnlyAddedObject (const CAtlString & strViewLayerName, \fBCGObjectBase\fP & object)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+추가된 객체에 대해서만 regen을 한다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCG3DSpaceView\fP\&.
+.SS "void CG3DView::RegenOnlyAddedObjectMultiple (const CAtlString & strViewLayerName, CAtlArray< \fBCGObjectBase\fP * > & arrObject)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+추가된 객체 여러개에 대해서만 regen을 한다\&. 
+.PP
+
+.SS "void CG3DView::RegenOnlyChangingColorObject (const CAtlString & strViewLayerName, const \fBCGObjectBase\fP & object, const \fBCGColor\fP & color)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object의 color를 변경한다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCG3DSpaceView\fP\&.
+.SS "void CG3DView::RegenOnlyChangingColorObjectMultiple (const CAtlString & strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > & arrObject, const \fBCGColor\fP & color)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCG3DSpaceView\fP\&.
+.SS "void CG3DView::RegenOnlyChangingColorObjectMultipleByBufferItemID (const CAtlString & strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > & arrObject, const \fBCGColor\fP & color, const \fBGID\fP & bufferItemID)\fC [protected]\fP"
+
+.IP "\(bu" 2
+색상을 변경하는 object들의 랜더링 정보를 buffer item id별로 갱신한다\&. 
+.PP
+
+.SS "void CG3DView::RegenOnlyDeletingObject (const CAtlString & strViewLayerName, const \fBCGObjectBase\fP & objectBase)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object 1개의 vertex buffer를 삭제한다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCG3DSpaceView\fP\&.
+.SS "void CG3DView::RegenOnlyDeletingObjectMultiple (const CAtlString & strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > & arrObject)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object 여러개의 vertex buffer를 한번에 제거한다\&.
+.IP "\(bu" 2
+기본 buffer item에서 제거한다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCG3DSpaceView\fP\&.
+.SS "void CG3DView::RegenOnlyDeletingObjectMultipleByBufferItemID (const CAtlString & strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > & arrObject, const \fBGID\fP & bufferItemID)\fC [protected]\fP"
+
+.IP "\(bu" 2
+삭제될 object의 랜더링 정보를 buffer item id별로 제거한다\&. 
+.PP
+
+.SS "void CG3DView::RegenOnlyObject (const CAtlString & strViewLayerName, const \fBCGObjectBase\fP & object)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object 1개를 다시 그린다\&.
+.IP "\(bu" 2
+object의 정점을 다시 그린다\&.(정점의 개수가 기존과 동일해야 한다\&.) 
+.PP
+
+.PP
+Reimplemented in \fBCG3DSpaceView\fP\&.
+.SS "void CG3DView::RegenOnlyObjectMultiple (const CAtlString & strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > & arrObject)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object 여러개를 다시 그린다\&.
+.IP "\(bu" 2
+object의 정점을 다시 그린다\&.(정점의 개수가 기존과 동일해야 한다\&.) 
+.PP
+
+.PP
+Reimplemented in \fBCG3DSpaceView\fP\&.
+.SS "void CG3DView::RegenOnlyObjectMultipleByBufferItemID (const CAtlString & strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > & arrObject, const \fBGID\fP & bufferItemID)\fC [protected]\fP"
+
+.IP "\(bu" 2
+object여러개를 buffer item id별로 갱신한다\&. 
+.PP
+
+.SS "void CG3DView::SetAttr (const \fBAttr\fP & eAttr, const \fBGBOOL\fP & bSet)"
+
+.SS "void CG3DView::StartZoom ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBCG3DTest\fP\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBCGCamera\fP CG3DView::m_camera\fC [protected]\fP"
+
+.SS "DWORD32 CG3DView::m_dwAttr\fC [protected]\fP"
+
+.SS "\fBCG3DViewInitData\fP CG3DView::m_initData\fC [protected]\fP"
+
+.SS "\fBCGDC\fP* CG3DView::m_pDC\fC [protected]\fP"
+
+.SS "\fBCGDCTargetView\fP* CG3DView::m_pDCTargetView\fC [protected]\fP"
+
+.SS "CPoint CG3DView::m_ptLastMousePos\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

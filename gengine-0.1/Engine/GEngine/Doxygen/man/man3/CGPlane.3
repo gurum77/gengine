@@ -1,0 +1,70 @@
+.TH "CGPlane" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGPlane \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GPoint3D\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetDist\fP (const \fBGDOUBLE\fP &dDist)"
+.br
+.ti -1c
+.RI "const \fBGDOUBLE\fP & \fBGetDist\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetNormal\fP (const \fBCGVector3D\fP &vNormal)"
+.br
+.ti -1c
+.RI "const \fBCGVector3D\fP & \fBGetNormal\fP () const "
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGPlane\fP)"
+.br
+.ti -1c
+.RI "\fBCGPlane\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGPlane\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+평면을 정의한다\&.
+.IP "\(bu" 2
+평면의 좌표와 법선벡터를 가진다\&. 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_END\fP CGPlane::CGPlane ()"
+
+.SS "CGPlane::~CGPlane ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CGPlane::GDEFINE_OPERATOR_COPY (\fBCGPlane\fP)"
+
+.SS "const \fBGDOUBLE\fP & CGPlane::GetDist () const"
+
+.SS "const \fBCGVector3D\fP & CGPlane::GetNormal () const"
+
+.SS "void CGPlane::SetDist (const \fBGDOUBLE\fP & dDist)"
+
+.IP "\(bu" 2
+원점에서의 평면까지 법선방향으로의 거리 
+.PP
+
+.SS "void CGPlane::SetNormal (const \fBCGVector3D\fP & vNormal)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

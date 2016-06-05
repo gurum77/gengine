@@ -1,0 +1,109 @@
+.TH "CGGeometryGenerator" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGGeometryGenerator \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GGeometryGenerator\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCGGeometryGenerator\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGGeometryGenerator\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBGBOOL\fP \fBGenerateGrid\fP (const \fBGDOUBLE\fP &dWidth, const \fBGDOUBLE\fP &dDepth, const \fBGUINT32\fP &uM, const \fBGUINT32\fP &uN, \fBGOUT\fP \fBCGTriangleStrip\fP &triangleStrip)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBGenerateBox\fP (const \fBGDOUBLE\fP &dWidth, const \fBGDOUBLE\fP &dHeight, const \fBGDOUBLE\fP &dDepth, \fBGOUT\fP \fBCGTriangleStrip\fP &triangleStrip)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBGenerateSphere\fP (const \fBGDOUBLE\fP &dRadius, const \fBGUINT32\fP &uSliceCount, const \fBGUINT32\fP &uStackCount, \fBGOUT\fP \fBCGTriangleStrip\fP &triangleStrip)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBGenerateCylinder\fP (const \fBGDOUBLE\fP &dBottomRadius, const \fBGDOUBLE\fP &dTopRadius, const \fBGDOUBLE\fP &dHeight, const \fBGUINT32\fP &uSliceCount, const \fBGUINT32\fP &uStackCount, \fBGOUT\fP \fBCGTriangleStrip\fP &triangleStrip)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBGenerateCircle\fP (const \fBGDOUBLE\fP &dRadius, const \fBGUINT32\fP &uSliceCount, \fBGOUT\fP CAtlArray< \fBCGPoint3D\fP > &arrPolyline)"
+.br
+.ti -1c
+.RI "static void \fBConvertTriangleStripToTriangleList\fP (const \fBCGTriangleStrip\fP &triangleStrip, \fBTriangleStripPoint\fP &triangleList)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+기하학 도형 생성
+.IP "\(bu" 2
+Grid, box, cylinder, sphere등을 triangle strip 형태로 만든다\&.
+.IP "\(bu" 2
+parameter
+.IP "  \(bu" 4
+dWidth : X 방향 크기
+.IP "  \(bu" 4
+dDepth : Y 방향 크기
+.IP "  \(bu" 4
+dHeight : Z 방향 크기 
+.PP
+
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGGeometryGenerator::CGGeometryGenerator ()"
+
+.SS "CGGeometryGenerator::~CGGeometryGenerator ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGGeometryGenerator::ConvertTriangleStripToTriangleList (const \fBCGTriangleStrip\fP & triangleStrip, \fBTriangleStripPoint\fP & triangleList)\fC [static]\fP"
+
+.IP "\(bu" 2
+triangle strip 을 striangle list형태로 변경한다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CGGeometryGenerator::GenerateBox (const \fBGDOUBLE\fP & dWidth, const \fBGDOUBLE\fP & dHeight, const \fBGDOUBLE\fP & dDepth, \fBGOUT\fP \fBCGTriangleStrip\fP & triangleStrip)\fC [static]\fP"
+
+.IP "\(bu" 2
+box를 triangle strip 형태로 생성하는 함수 
+.PP
+
+.SS "\fBGBOOL\fP CGGeometryGenerator::GenerateCircle (const \fBGDOUBLE\fP & dRadius, const \fBGUINT32\fP & uSliceCount, \fBGOUT\fP CAtlArray< \fBCGPoint3D\fP > & arrPolyline)\fC [static]\fP"
+
+.IP "\(bu" 2
+circle을 polyline 형태로 만들어 낸다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CGGeometryGenerator::GenerateCylinder (const \fBGDOUBLE\fP & dBottomRadius, const \fBGDOUBLE\fP & dTopRadius, const \fBGDOUBLE\fP & dHeight, const \fBGUINT32\fP & uSliceCount, const \fBGUINT32\fP & uStackCount, \fBGOUT\fP \fBCGTriangleStrip\fP & triangleStrip)\fC [static]\fP"
+
+.IP "\(bu" 2
+cylinder를 triangle strip 형식으로 만든다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CGGeometryGenerator::GenerateGrid (const \fBGDOUBLE\fP & dWidth, const \fBGDOUBLE\fP & dDepth, const \fBGUINT32\fP & uM, const \fBGUINT32\fP & uN, \fBGOUT\fP \fBCGTriangleStrip\fP & triangleStrip)\fC [static]\fP"
+
+.IP "\(bu" 2
+grid를 triangle strip 형태로 생성하는 함수 
+.PP
+
+.SS "\fBGBOOL\fP CGGeometryGenerator::GenerateSphere (const \fBGDOUBLE\fP & dRadius, const \fBGUINT32\fP & uSliceCount, const \fBGUINT32\fP & uStackCount, \fBGOUT\fP \fBCGTriangleStrip\fP & triangleStrip)\fC [static]\fP"
+
+.IP "\(bu" 2
+sphere를 triangle strip 형태로 생성하는 함수 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

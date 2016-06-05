@@ -1,0 +1,80 @@
+.TH "CGTimer" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGTimer \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GTimer\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCGTimer\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGTimer\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBStart\fP ()"
+.br
+.ti -1c
+.RI "static void \fBEnd\fP (const CAtlString &strHeader=\fBGNOTRANS\fP(''))"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static LARGE_INTEGER \fBm_swFreq\fP"
+.br
+.ti -1c
+.RI "static LARGE_INTEGER \fBm_swStart\fP"
+.br
+.ti -1c
+.RI "static LARGE_INTEGER \fBm_swEnd\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+timer 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGTimer::CGTimer ()"
+
+.SS "CGTimer::~CGTimer ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGTimer::End (const CAtlString & strHeader = \fC\fBGNOTRANS\fP('')\fP)\fC [static]\fP"
+
+.IP "\(bu" 2
+message를 출력한다\&.
+.IP "\(bu" 2
+한글이 들어가는 경우 출력 안될수도 있다\&. 
+.PP
+
+.SS "void CGTimer::Start ()\fC [static]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "LARGE_INTEGER CGTimer::m_swEnd\fC [static]\fP"
+
+.SS "LARGE_INTEGER CGTimer::m_swFreq\fC [static]\fP"
+
+.SS "LARGE_INTEGER CGTimer::m_swStart\fC [static]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

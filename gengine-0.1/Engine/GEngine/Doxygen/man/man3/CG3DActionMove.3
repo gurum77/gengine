@@ -1,0 +1,184 @@
+.TH "CG3DActionMove" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CG3DActionMove \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <G3DActionMove\&.h>\fP
+.PP
+Inherits \fBCG3DActionSelect\fP\&.
+.PP
+Inherited by \fBCG3DActionCopy\fP, \fBCG3DActionRotate2D\fP, and \fBCG3DActionScale\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBStartAction\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBEndAction\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBOnLButtonDown\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "virtual void \fBOnRButtonDown\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "virtual void \fBOnMouseMove\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "virtual void \fBCreatePreview\fP ()"
+.br
+.ti -1c
+.RI "\fBGDEFINE_REGISTE_ACTION\fP (\fBCG3DActionMove\fP,'MOVE')"
+.br
+.ti -1c
+.RI "\fBCG3DActionMove\fP (void)"
+.br
+.ti -1c
+.RI "virtual \fB~CG3DActionMove\fP (void)"
+.br
+.in -1c
+.SS "Protected Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBStep\fP { \fBeStepMoveSelectObject\fP = CG3DActionSelect::eStepSecondPoint, \fBeStepMoveFirstPoint\fP, \fBeStepMoveSecondPoint\fP }"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBMoveSelectedObject\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBMoveTempObject\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBRun\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBCGPoint3D\fP \fBm_ptMove\fP [2]"
+.br
+.ti -1c
+.RI "\fBCGVector3D\fP \fBm_vMoved\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+move action 
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCG3DActionMove::Step\fP\fC [protected]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeStepMoveSelectObject \fP\fP
+.TP
+\fB\fIeStepMoveFirstPoint \fP\fP
+.TP
+\fB\fIeStepMoveSecondPoint \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CG3DActionMove::CG3DActionMove (void)"
+
+.SS "CG3DActionMove::~CG3DActionMove (void)\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CG3DActionMove::CreatePreview ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+action에 미리보기 객체가 있는 경우 이 함수를 재정의 하여 미리보기 객체를 그리도록 구현해야 한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionSelect\fP\&.
+.SS "void CG3DActionMove::EndAction ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+action이 끝날때 호출되어야 하는 가상함수이다\&.
+.IP "\(bu" 2
+개발자가 직접 호출해야 한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionSelect\fP\&.
+.SS "CG3DActionMove::GDEFINE_REGISTE_ACTION (\fBCG3DActionMove\fP, 'MOVE')"
+
+.SS "void CG3DActionMove::MoveSelectedObject ()\fC [protected]\fP"
+
+.IP "\(bu" 2
+선택된 object를 move를 한다\&. 
+.PP
+
+.SS "void CG3DActionMove::MoveTempObject ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.IP "\(bu" 2
+Temp Object를 이동한다\&. 
+.PP
+
+.PP
+Reimplemented in \fBCG3DActionRotate2D\fP, and \fBCG3DActionScale\fP\&.
+.SS "void CG3DActionMove::OnLButtonDown (UINT nFlags, CPoint point)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+마우스 이벤트 핸들러이다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionSelect\fP\&.
+.SS "void CG3DActionMove::OnMouseMove (UINT nFlags, CPoint point)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+마우스 이벤트 핸들러이다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionSelect\fP\&.
+.SS "void CG3DActionMove::OnRButtonDown (UINT nFlags, CPoint point)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+마우스 오른 버튼 클릭 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionBase\fP\&.
+.SS "void CG3DActionMove::Run ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCG3DActionCopy\fP, \fBCG3DActionRotate2D\fP, and \fBCG3DActionScale\fP\&.
+.SS "void CG3DActionMove::StartAction ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+action이 시작되면서 action manager에 으해서 가장 먼저 호출되는 가상함수이다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionSelect\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBCGPoint3D\fP CG3DActionMove::m_ptMove[2]\fC [protected]\fP"
+
+.SS "\fBCGVector3D\fP CG3DActionMove::m_vMoved\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

@@ -1,0 +1,105 @@
+\hypertarget{classp2t_1_1_c_d_t}{}\section{p2t\+:\+:C\+D\+T Class Reference}
+\label{classp2t_1_1_c_d_t}\index{p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}}
+
+
+{\ttfamily \#include $<$cdt.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classp2t_1_1_c_d_t_aa804ca33ada37778d79d887b0588bc23}{C\+D\+T} (std\+::vector$<$ \hyperlink{structp2t_1_1_point}{Point} $\ast$ $>$ polyline)
+\item 
+\hyperlink{classp2t_1_1_c_d_t_af1b16e2c9ad6d145f953ddbe721c7cb4}{$\sim$\+C\+D\+T} ()
+\item 
+void \hyperlink{classp2t_1_1_c_d_t_a447b752ce434d0fbf7f6183eb30839ca}{Add\+Hole} (std\+::vector$<$ \hyperlink{structp2t_1_1_point}{Point} $\ast$ $>$ polyline)
+\item 
+void \hyperlink{classp2t_1_1_c_d_t_acf36ab360e46f084c7df31acc7d845c1}{Add\+Point} (\hyperlink{structp2t_1_1_point}{Point} $\ast$point)
+\item 
+void \hyperlink{classp2t_1_1_c_d_t_a6ba702d81df16da88e3ae80705d7d276}{Triangulate} ()
+\item 
+std\+::vector$<$ \hyperlink{classp2t_1_1_triangle}{Triangle} $\ast$ $>$ \hyperlink{classp2t_1_1_c_d_t_ac7f372972e6b94d678323d1a3378b443}{Get\+Triangles} ()
+\item 
+std\+::list$<$ \hyperlink{classp2t_1_1_triangle}{Triangle} $\ast$ $>$ \hyperlink{classp2t_1_1_c_d_t_a4491cea3f797ec485f34dd3c7d62050f}{Get\+Map} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classp2t_1_1_c_d_t_aa804ca33ada37778d79d887b0588bc23}{}\index{p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}!C\+D\+T@{C\+D\+T}}
+\index{C\+D\+T@{C\+D\+T}!p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}}
+\subsubsection[{C\+D\+T(std\+::vector$<$ Point $\ast$ $>$ polyline)}]{\setlength{\rightskip}{0pt plus 5cm}p2t\+::\+C\+D\+T\+::\+C\+D\+T (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Point} $\ast$ $>$}]{polyline}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_c_d_t_aa804ca33ada37778d79d887b0588bc23}
+Constructor -\/ add polyline with non repeating points
+
+
+\begin{DoxyParams}{Parameters}
+{\em polyline} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classp2t_1_1_c_d_t_af1b16e2c9ad6d145f953ddbe721c7cb4}{}\index{p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}!````~C\+D\+T@{$\sim$\+C\+D\+T}}
+\index{````~C\+D\+T@{$\sim$\+C\+D\+T}!p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}}
+\subsubsection[{$\sim$\+C\+D\+T()}]{\setlength{\rightskip}{0pt plus 5cm}p2t\+::\+C\+D\+T\+::$\sim$\+C\+D\+T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_c_d_t_af1b16e2c9ad6d145f953ddbe721c7cb4}
+Destructor -\/ clean up memory 
+
+\subsection{Member Function Documentation}
+\hypertarget{classp2t_1_1_c_d_t_a447b752ce434d0fbf7f6183eb30839ca}{}\index{p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}!Add\+Hole@{Add\+Hole}}
+\index{Add\+Hole@{Add\+Hole}!p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}}
+\subsubsection[{Add\+Hole(std\+::vector$<$ Point $\ast$ $>$ polyline)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+C\+D\+T\+::\+Add\+Hole (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Point} $\ast$ $>$}]{polyline}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_c_d_t_a447b752ce434d0fbf7f6183eb30839ca}
+Add a hole
+
+
+\begin{DoxyParams}{Parameters}
+{\em polyline} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classp2t_1_1_c_d_t_acf36ab360e46f084c7df31acc7d845c1}{}\index{p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}!Add\+Point@{Add\+Point}}
+\index{Add\+Point@{Add\+Point}!p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}}
+\subsubsection[{Add\+Point(\+Point $\ast$point)}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+C\+D\+T\+::\+Add\+Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{point}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_c_d_t_acf36ab360e46f084c7df31acc7d845c1}
+Add a steiner point
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classp2t_1_1_c_d_t_a4491cea3f797ec485f34dd3c7d62050f}{}\index{p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}!Get\+Map@{Get\+Map}}
+\index{Get\+Map@{Get\+Map}!p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}}
+\subsubsection[{Get\+Map()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<$ {\bf p2t\+::\+Triangle} $\ast$ $>$ p2t\+::\+C\+D\+T\+::\+Get\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_c_d_t_a4491cea3f797ec485f34dd3c7d62050f}
+Get triangle map \hypertarget{classp2t_1_1_c_d_t_ac7f372972e6b94d678323d1a3378b443}{}\index{p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}!Get\+Triangles@{Get\+Triangles}}
+\index{Get\+Triangles@{Get\+Triangles}!p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}}
+\subsubsection[{Get\+Triangles()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf p2t\+::\+Triangle} $\ast$ $>$ p2t\+::\+C\+D\+T\+::\+Get\+Triangles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_c_d_t_ac7f372972e6b94d678323d1a3378b443}
+Get \hyperlink{classp2t_1_1_c_d_t}{C\+D\+T} triangles \hypertarget{classp2t_1_1_c_d_t_a6ba702d81df16da88e3ae80705d7d276}{}\index{p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}!Triangulate@{Triangulate}}
+\index{Triangulate@{Triangulate}!p2t\+::\+C\+D\+T@{p2t\+::\+C\+D\+T}}
+\subsubsection[{Triangulate()}]{\setlength{\rightskip}{0pt plus 5cm}void p2t\+::\+C\+D\+T\+::\+Triangulate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classp2t_1_1_c_d_t_a6ba702d81df16da88e3ae80705d7d276}
+\hyperlink{class_triangulate}{Triangulate} -\/ do this A\+F\+T\+E\+R you\textquotesingle{}ve added the polyline, holes, and Steiner points 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Common/sweep/\hyperlink{cdt_8h}{cdt.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Common/sweep/\hyperlink{cdt_8cc}{cdt.\+cc}\end{DoxyCompactItemize}

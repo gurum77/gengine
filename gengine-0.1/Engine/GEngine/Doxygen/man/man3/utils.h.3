@@ -1,0 +1,64 @@
+.TH "D:/MyProject/Trunk/Engine/GEngine/Src/GCommon/common/utils.h" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/MyProject/Trunk/Engine/GEngine/Src/GCommon/common/utils.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <exception>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBp2t\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_USE_MATH_DEFINES\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBp2t::Orientation\fP { \fBp2t::CW\fP, \fBp2t::CCW\fP, \fBp2t::COLLINEAR\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "Orientation \fBp2t::Orient2d\fP (Point &pa, Point &pb, Point &pc)"
+.br
+.ti -1c
+.RI "bool \fBp2t::InScanArea\fP (Point &pa, Point &pb, Point &pc, Point &pd)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const double \fBp2t::PI_3div4\fP = 3 * M_PI / 4"
+.br
+.ti -1c
+.RI "const double \fBp2t::PI_div2\fP = 1\&.57079632679489661923"
+.br
+.ti -1c
+.RI "const double \fBp2t::EPSILON\fP = 1e\-12"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define _USE_MATH_DEFINES"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

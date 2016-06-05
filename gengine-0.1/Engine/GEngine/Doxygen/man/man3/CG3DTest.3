@@ -1,0 +1,108 @@
+.TH "CG3DTest" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CG3DTest \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <G3DTest\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBTest\fP { \fBeTest_EqualObjectVertexInfoAndVertexBuffer\fP = 0x00000001, \fBeTest_EqualSpaceAndBufferItem\fP = 0x00000002, \fBeTest_EquanObjectNumOfSpaceManagerAndObjectNumOfSpace\fP = 0x00000004, \fBeTest_EqualMapObjectByBufferItemIDAndObjectArray\fP = 0x00000008, \fBeTest_All\fP = 0xFFFFFFFF }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCG3DTest\fP (void)"
+.br
+.ti -1c
+.RI "\fB~CG3DTest\fP (void)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBTest_All\fP (\fBCG3DView\fP *pView)"
+.br
+.ti -1c
+.RI "static void \fBTest_EqualObjectVertexInfoAndVertexBuffer\fP (\fBCG3DView\fP *pView)"
+.br
+.ti -1c
+.RI "static void \fBTest_EqualSpaceAndBufferItem\fP (\fBCG3DView\fP *pView)"
+.br
+.ti -1c
+.RI "static void \fBTest_EquanObjectNumOfSpaceManagerAndObjectNumOfSpace\fP (\fBCGSpaceManager\fP *pSpaceMng)"
+.br
+.ti -1c
+.RI "static void \fBTest_EqualMapObjectByBufferItemIDAndObjectArray\fP (const CAtlMap< \fBGID\fP, CAtlArray< \fBCGObjectBase\fP * > * > &mapObjectByBufferItemID, const CAtlArray< \fBCGObjectBase\fP * > &arrObject)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+G3D DLL에 대한 각종 테스트 함수 
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCG3DTest::Test\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeTest_EqualObjectVertexInfoAndVertexBuffer \fP\fP
+.TP
+\fB\fIeTest_EqualSpaceAndBufferItem \fP\fP
+.TP
+\fB\fIeTest_EquanObjectNumOfSpaceManagerAndObjectNumOfSpace \fP\fP
+.TP
+\fB\fIeTest_EqualMapObjectByBufferItemIDAndObjectArray \fP\fP
+.TP
+\fB\fIeTest_All \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CG3DTest::CG3DTest (void)"
+
+.SS "CG3DTest::~CG3DTest (void)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CG3DTest::Test_All (\fBCG3DView\fP * pView)\fC [static]\fP"
+
+.SS "void CG3DTest::Test_EqualMapObjectByBufferItemIDAndObjectArray (const CAtlMap< \fBGID\fP, CAtlArray< \fBCGObjectBase\fP * > * > & mapObjectByBufferItemID, const CAtlArray< \fBCGObjectBase\fP * > & arrObject)\fC [static]\fP"
+
+.IP "\(bu" 2
+buffer item 별로 분류한 map에 포함된 object와 거기에 사용된 object의 개수가 일치하는지 검사한다\&. 
+.PP
+
+.SS "void CG3DTest::Test_EqualObjectVertexInfoAndVertexBuffer (\fBCG3DView\fP * pView)\fC [static]\fP"
+
+.IP "\(bu" 2
+object의 vertex info 와 dc의 vertex buffer 의 정보가 일치하느지 테스트 한다\&. 
+.PP
+
+.SS "void CG3DTest::Test_EqualSpaceAndBufferItem (\fBCG3DView\fP * pView)\fC [static]\fP"
+
+.IP "\(bu" 2
+space와 buffer item의 개수가 일치하는지 체크한다\&. 
+.PP
+
+.SS "void CG3DTest::Test_EquanObjectNumOfSpaceManagerAndObjectNumOfSpace (\fBCGSpaceManager\fP * pSpaceMng)\fC [static]\fP"
+
+.IP "\(bu" 2
+space manager에 등록된 object의 개수와 모든 space에 포함된 object의 개수는 같아야 한다\&. 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

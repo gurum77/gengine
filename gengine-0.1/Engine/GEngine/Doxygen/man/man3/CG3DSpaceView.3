@@ -1,0 +1,353 @@
+.TH "CG3DSpaceView" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CG3DSpaceView \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <G3DSpaceView\&.h>\fP
+.PP
+Inherits \fBCG3DView\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBAttr\fP { \fBeAttrDisplaySpace\fP = 0x00000001, \fBeAttrLockEndZoom\fP = 0x00000002 }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCGSpaceManager\fP & \fBGetSpaceManager\fP ()"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBIsAttr\fP (const \fBAttr\fP &eAttr) const "
+.br
+.ti -1c
+.RI "const DWORD32 & \fBGetAttr\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetAttr\fP (const DWORD32 &dwAttr)"
+.br
+.ti -1c
+.RI "void \fBSetSelectManager\fP (\fBCGSelectionManager\fP *pSelectManager)"
+.br
+.ti -1c
+.RI "\fBCGSelectionManager\fP * \fBGetSelectManager\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBGBOOL\fP \fBInitView\fP (\fBCG3DViewInitData\fP &initData)"
+.br
+.ti -1c
+.RI "virtual void \fBRegen\fP (const CAtlString &strViewLayerName)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyAddedObject\fP (const CAtlString &strViewLayerName, \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyDeletingObject\fP (const CAtlString &strViewLayerName, const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyDeletingObjectMultiple\fP (const CAtlString &strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > &arrObject)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyChangingColorObject\fP (const CAtlString &strViewLayerName, const \fBCGObjectBase\fP &object, const \fBCGColor\fP &color)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyChangingColorObjectMultiple\fP (const CAtlString &strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > &arrObject, const \fBCGColor\fP &color)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyObject\fP (const CAtlString &strViewLayerName, const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "virtual void \fBRegenOnlyObjectMultiple\fP (const CAtlString &strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > &arrObject)"
+.br
+.ti -1c
+.RI "virtual void \fBRedraw\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBGBOOL\fP \fBCalcIntersectObjectByWindow\fP (const CString &strViewLayer, const CPoint &ptWindow1, const CPoint &ptWindow2, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrIntersectedObject, const \fBGINT32\fP &iCount=0)"
+.br
+.ti -1c
+.RI "virtual \fBCGObjectBase\fP * \fBCalcIntersectObjectByPickbox\fP (const CString &strViewLayer, const CPoint &ptWindow, const \fBGSIZE\fP &iPickboxSize)"
+.br
+.ti -1c
+.RI "\fBCG3DSpaceView\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~CG3DSpaceView\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static UINT WINAPI \fBThread_EndZoom\fP (LPVOID)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGBOOL\fP \fBIsRegenableLayer\fP (const CAtlString &strViewLayerName) const "
+.br
+.ti -1c
+.RI "void \fBRegenOnlyDeletingSpaceByObject\fP (const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "virtual void \fBEndZoom\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBCGSpaceManager\fP \fBm_spaceManager\fP"
+.br
+.ti -1c
+.RI "DWORD32 \fBm_dwAttr\fP"
+.br
+.ti -1c
+.RI "\fBCGSelectionManager\fP * \fBm_pSelectManager\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+space view
+.IP "\(bu" 2
+CG3DSpaceView는 CG3DView에 비해 대용량처리가 가능하지만 속도가 느리고, 멀티뷰가 지원되지 않는다는 단점이 있다\&.
+.IP "\(bu" 2
+사용법
+.IP "  \(bu" 4
+\fBCG3DView\fP 와 동일한 과정을 거침
+.IP "  \(bu" 4
+CGSelectManager 설정
+.IP "    \(bu" 6
+space 선택을 지원하기 위해서는 select manager가 설정되어야 한다\&. 
+.PP
+
+.PP
+
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCG3DSpaceView::Attr\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeAttrDisplaySpace \fP\fP
+.TP
+\fB\fIeAttrLockEndZoom \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CG3DSpaceView::CG3DSpaceView ()"
+
+.SS "CG3DSpaceView::~CG3DSpaceView ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCGObjectBase\fP * CG3DSpaceView::CalcIntersectObjectByPickbox (const CString & strViewLayer, const CPoint & ptWindow, const \fBGSIZE\fP & iPickboxSize)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+pickbox에 교차되는 object를 찾는다\&.
+.IP "\(bu" 2
+object를 기본적으로 검사하고 나서, 없는 경우 space에서 검사한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DView\fP\&.
+.SS "\fBGBOOL\fP CG3DSpaceView::CalcIntersectObjectByWindow (const CString & strViewLayer, const CPoint & ptWindow1, const CPoint & ptWindow2, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrIntersectedObject, const \fBGINT32\fP & iCount = \fC0\fP)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+window에 교차되는 object를 찾는다\&.
+.IP "\(bu" 2
+object를 기본으로 검사하고 나서 추가로 space를 검사한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DView\fP\&.
+.SS "void CG3DSpaceView::EndZoom ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.IP "\(bu" 2
+zoom이 끝나고 나면 호출되는 함수이다\&.
+.IP "\(bu" 2
+space를 카메라 위치에 따라 재정리한다\&.
+.IP "  \(bu" 4
+unloading 되어야 하는 space를 선별해서 화면에서 지우고, 파일로 저장하고 메모리에서 제거한다\&.
+.IP "  \(bu" 4
+loading 되어야 하는 space를 선별해서 파일에서 메모리로 loading하고, 화면에 그린다\&. 
+.PP
+
+.PP
+
+.PP
+Reimplemented from \fBCG3DView\fP\&.
+.SS "const DWORD32 & CG3DSpaceView::GetAttr () const"
+
+.SS "\fBCGSelectionManager\fP * CG3DSpaceView::GetSelectManager ()"
+
+.SS "\fBCGSpaceManager\fP & CG3DSpaceView::GetSpaceManager ()"
+
+.IP "\(bu" 2
+space manager를 리턴한다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CG3DSpaceView::InitView (\fBCG3DViewInitData\fP & initData)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+space를 그리기 위한 layer를 추가한다\&.
+.IP "\(bu" 2
+이미 동일한 layer가 있다면 삭제되므로 경고를 한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DView\fP\&.
+.SS "\fBGBOOL\fP CG3DSpaceView::IsAttr (const \fBAttr\fP & eAttr) const"
+
+.SS "\fBGBOOL\fP CG3DSpaceView::IsRegenableLayer (const CAtlString & strViewLayerName) const\fC [protected]\fP"
+
+.IP "\(bu" 2
+regen 대상인 layer인지?
+.IP "\(bu" 2
+space layer는 직접적인 regen 대상이 아니다\&. 
+.PP
+
+.SS "void CG3DSpaceView::Redraw ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object 갱신한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DView\fP\&.
+.SS "void CG3DSpaceView::Regen (const CAtlString & strViewLayerName)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+모든 object를 다시 계산하여 그린다\&.
+.IP "\(bu" 2
+현재 load되어 있는 obect의 space 소속을 모두 갱신한다 
+.PP
+
+.PP
+Reimplemented from \fBCG3DView\fP\&.
+.SS "void CG3DSpaceView::RegenOnlyAddedObject (const CAtlString & strViewLayerName, \fBCGObjectBase\fP & object)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object가 추가되고 나서 화면에 그려지기 위해 호출되는 함수이다\&.
+.IP "\(bu" 2
+space view에서는 화면에 그려지기 전에 space에 들어가는 과정을 거친다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DView\fP\&.
+.SS "void CG3DSpaceView::RegenOnlyChangingColorObject (const CAtlString & strViewLayerName, const \fBCGObjectBase\fP & object, const \fBCGColor\fP & color)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object의 color 변경을 view에 반영한다\&.
+.IP "\(bu" 2
+vertex buffer를 변경한다\&.
+.IP "\(bu" 2
+object의 color변경은 소속 space를 변경하는 영향을 끼치지 않는다\&.
+.IP "\(bu" 2
+object의 color변경은 space의 개략형상에만 영향을 미친다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DView\fP\&.
+.SS "void CG3DSpaceView::RegenOnlyChangingColorObjectMultiple (const CAtlString & strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > & arrObject, const \fBCGColor\fP & color)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object의 color 변경을 view에 반영한다\&.
+.IP "\(bu" 2
+vertex buffer를 변경한다\&.
+.IP "\(bu" 2
+object의 color변경은 소속 space를 변경하는 영향을 끼치지 않는다\&.
+.IP "\(bu" 2
+object의 color변경은 space의 개략형상에만 영향을 미친다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DView\fP\&.
+.SS "void CG3DSpaceView::RegenOnlyDeletingObject (const CAtlString & strViewLayerName, const \fBCGObjectBase\fP & object)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object가 삭제되고 나서 view에서 object의 rendering 결과를 제거한다\&.(vertex buffer를 제거한다) 
+.PP
+
+.PP
+Reimplemented from \fBCG3DView\fP\&.
+.SS "void CG3DSpaceView::RegenOnlyDeletingObjectMultiple (const CAtlString & strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > & arrObject)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object가 삭제되고 나서 view에서 object의 rendering 결과를 제거한다\&.(vertex buffer를 제거한다) 
+.PP
+
+.PP
+Reimplemented from \fBCG3DView\fP\&.
+.SS "void CG3DSpaceView::RegenOnlyDeletingSpaceByObject (const \fBCGObjectBase\fP & object)\fC [protected]\fP"
+
+.IP "\(bu" 2
+삭제될 object를 포함하는 space를 갱신한다\&.
+.IP "\(bu" 2
+포함하고 있는 object나 space가 없으면 삭제한다\&. 
+.PP
+
+.SS "void CG3DSpaceView::RegenOnlyObject (const CAtlString & strViewLayerName, const \fBCGObjectBase\fP & object)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object 1개를 다시 그리기 한다\&. 
+.PP
+\fBTodo\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+
+.PP
+Reimplemented from \fBCG3DView\fP\&.
+.SS "void CG3DSpaceView::RegenOnlyObjectMultiple (const CAtlString & strViewLayerName, const CAtlArray< \fBCGObjectBase\fP * > & arrObject)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object 여러개를 다시 그리기 한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DView\fP\&.
+.SS "void CG3DSpaceView::SetAttr (const DWORD32 & dwAttr)"
+
+.SS "void CG3DSpaceView::SetSelectManager (\fBCGSelectionManager\fP * pSelectManager)"
+
+.IP "\(bu" 2
+space view는 객체를 숨겼다가 보였다가 한다\&.
+.IP "\(bu" 2
+객체의 선택상태를 유지하기 위해서는 select manager가 필요하다\&. 
+.PP
+
+.SS "UINT WINAPI CG3DSpaceView::Thread_EndZoom (LPVOID p)\fC [static]\fP"
+
+.IP "\(bu" 2
+end zoom 시 주요 동작을 수행하는 스레드 함수 
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "DWORD32 CG3DSpaceView::m_dwAttr\fC [protected]\fP"
+
+.SS "\fBCGSelectionManager\fP* CG3DSpaceView::m_pSelectManager\fC [protected]\fP"
+
+.SS "\fBCGSpaceManager\fP CG3DSpaceView::m_spaceManager\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

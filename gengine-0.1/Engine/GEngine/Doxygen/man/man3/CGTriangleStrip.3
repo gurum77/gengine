@@ -1,0 +1,115 @@
+.TH "CGTriangleStrip" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGTriangleStrip \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GTriangleStrip\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetPoint\fP (\fBTriangleStripPoint\fP &point)"
+.br
+.ti -1c
+.RI "const \fBTriangleStripPoint\fP & \fBGetPoint\fP () const "
+.br
+.ti -1c
+.RI "\fBTriangleStripPoint\fP & \fBGetPoint\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetIndex\fP (\fBTriangleStripIndex\fP &index)"
+.br
+.ti -1c
+.RI "const \fBTriangleStripIndex\fP & \fBGetIndex\fP () const "
+.br
+.ti -1c
+.RI "\fBTriangleStripIndex\fP & \fBGetIndex\fP ()"
+.br
+.ti -1c
+.RI "void \fBTransform\fP (const \fBCGPoint3D\fP &ptFrom, const \fBCGPoint3D\fP &ptTo, const \fBCGVector3D\fP &vAxisFrom, const \fBCGVector3D\fP &vAxisTo)"
+.br
+.ti -1c
+.RI "void \fBTransform\fP (const \fBCGPoint3D\fP &ptFrom, const \fBCGPoint3D\fP &ptTo, const \fBCGVector3D\fP &vAxisXFrom, const \fBCGVector3D\fP &vAxisYFrom, const \fBCGVector3D\fP &vAxisXTo, const \fBCGVector3D\fP &vAxisYTo)"
+.br
+.ti -1c
+.RI "void \fBMove\fP (const \fBCGPoint3D\fP &ptFrom, const \fBCGPoint3D\fP &ptTo)"
+.br
+.ti -1c
+.RI "void \fBMove\fP (const \fBCGVector3D\fP &vMove)"
+.br
+.ti -1c
+.RI "void \fBRotate\fP (const \fBCGPoint3D\fP &ptBase, const \fBCGVector3D\fP &vAxis, const \fBCGPoint2D\fP &vAng)"
+.br
+.ti -1c
+.RI "void \fBScale\fP (const \fBCGPoint3D\fP &ptBase, const \fBGDOUBLE\fP &dScale)"
+.br
+.ti -1c
+.RI "\fBCGTriangleStrip\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGTriangleStrip\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+삼각망 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGTriangleStrip::CGTriangleStrip ()"
+
+.SS "CGTriangleStrip::~CGTriangleStrip ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBTriangleStripIndex\fP & CGTriangleStrip::GetIndex () const"
+
+.SS "\fBTriangleStripIndex\fP & CGTriangleStrip::GetIndex ()"
+
+.SS "const \fBTriangleStripPoint\fP & CGTriangleStrip::GetPoint () const"
+
+.SS "\fBTriangleStripPoint\fP & CGTriangleStrip::GetPoint ()"
+
+.SS "void CGTriangleStrip::Move (const \fBCGPoint3D\fP & ptFrom, const \fBCGPoint3D\fP & ptTo)"
+
+.IP "\(bu" 2
+move만 한다\&. 
+.PP
+
+.SS "void CGTriangleStrip::Move (const \fBCGVector3D\fP & vMove)"
+
+.SS "void CGTriangleStrip::Rotate (const \fBCGPoint3D\fP & ptBase, const \fBCGVector3D\fP & vAxis, const \fBCGPoint2D\fP & vAng)"
+
+.SS "void CGTriangleStrip::Scale (const \fBCGPoint3D\fP & ptBase, const \fBGDOUBLE\fP & dScale)"
+
+.SS "void CGTriangleStrip::SetIndex (\fBTriangleStripIndex\fP & index)"
+
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_END\fP void CGTriangleStrip::SetPoint (\fBTriangleStripPoint\fP & point)"
+
+.SS "void CGTriangleStrip::Transform (const \fBCGPoint3D\fP & ptFrom, const \fBCGPoint3D\fP & ptTo, const \fBCGVector3D\fP & vAxisFrom, const \fBCGVector3D\fP & vAxisTo)"
+
+.IP "\(bu" 2
+move, rotate를 연속해서 한다\&.
+.IP "\(bu" 2
+1개의 축을 기준으로 하므로 나머지 1개의 축은 임의로 결정된다\&.
+.IP "\(bu" 2
+축이 변하지 않을 경우 이동만 한다\&. 
+.PP
+
+.SS "void CGTriangleStrip::Transform (const \fBCGPoint3D\fP & ptFrom, const \fBCGPoint3D\fP & ptTo, const \fBCGVector3D\fP & vAxisXFrom, const \fBCGVector3D\fP & vAxisYFrom, const \fBCGVector3D\fP & vAxisXTo, const \fBCGVector3D\fP & vAxisYTo)"
+
+.IP "\(bu" 2
+move, rotate 를 연속해서 함\&. 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

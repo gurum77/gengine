@@ -1,0 +1,99 @@
+\hypertarget{class_vector2d}{}\section{Vector2d Class Reference}
+\label{class_vector2d}\index{Vector2d@{Vector2d}}
+
+
+{\ttfamily \#include $<$Triangulate.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vector2d_ab8c057e74fb250442e3114ef597ca49f}{Vector2d} (float x, float y)
+\item 
+float \hyperlink{class_vector2d_af7e3481fd89003bfdd2755e8537dcebc}{Get\+X} (void) const 
+\item 
+float \hyperlink{class_vector2d_a192288b009a6b11ae8a01e87104771da}{Get\+Y} (void) const 
+\item 
+void \hyperlink{class_vector2d_a9b8d70f0ba6f785652ea64d5c7bf82c1}{Set} (float x, float y)
+\item 
+\hyperlink{class_vector2d_ab8c057e74fb250442e3114ef597ca49f}{Vector2d} (float x, float y)
+\item 
+float \hyperlink{class_vector2d_af7e3481fd89003bfdd2755e8537dcebc}{Get\+X} (void) const 
+\item 
+float \hyperlink{class_vector2d_a192288b009a6b11ae8a01e87104771da}{Get\+Y} (void) const 
+\item 
+void \hyperlink{class_vector2d_a9b8d70f0ba6f785652ea64d5c7bf82c1}{Set} (float x, float y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Static class to triangulate any contour/polygon efficiently You should replace \hyperlink{class_vector2d}{Vector2d} with whatever your own Vector class might be. Does not support polygons with holes. Uses S\+T\+L vectors to represent a dynamic array of vertices. This code snippet was submitted to Flip\+Code.\+com by John W. Ratcliff (\href{mailto:jratcliff@verant.com}{\tt jratcliff@verant.\+com}) on July 22, 2000 I did not write the original code/algorithm for this this triangulator, in fact, I can\textquotesingle{}t even remember where I found it in the first place. However, I did rework it into the following black-\/box static class so you can make easy use of it in your own code. Simply replace \hyperlink{class_vector2d}{Vector2d} with whatever your own Vector implementation might be. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_vector2d_ab8c057e74fb250442e3114ef597ca49f}{}\index{Vector2d@{Vector2d}!Vector2d@{Vector2d}}
+\index{Vector2d@{Vector2d}!Vector2d@{Vector2d}}
+\subsubsection[{Vector2d(float x, float y)}]{\setlength{\rightskip}{0pt plus 5cm}Vector2d\+::\+Vector2d (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_vector2d_ab8c057e74fb250442e3114ef597ca49f}
+\hypertarget{class_vector2d_ab8c057e74fb250442e3114ef597ca49f}{}\index{Vector2d@{Vector2d}!Vector2d@{Vector2d}}
+\index{Vector2d@{Vector2d}!Vector2d@{Vector2d}}
+\subsubsection[{Vector2d(float x, float y)}]{\setlength{\rightskip}{0pt plus 5cm}Vector2d\+::\+Vector2d (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_vector2d_ab8c057e74fb250442e3114ef597ca49f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_vector2d_af7e3481fd89003bfdd2755e8537dcebc}{}\index{Vector2d@{Vector2d}!Get\+X@{Get\+X}}
+\index{Get\+X@{Get\+X}!Vector2d@{Vector2d}}
+\subsubsection[{Get\+X(void) const }]{\setlength{\rightskip}{0pt plus 5cm}float Vector2d\+::\+Get\+X (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_vector2d_af7e3481fd89003bfdd2755e8537dcebc}
+\hypertarget{class_vector2d_af7e3481fd89003bfdd2755e8537dcebc}{}\index{Vector2d@{Vector2d}!Get\+X@{Get\+X}}
+\index{Get\+X@{Get\+X}!Vector2d@{Vector2d}}
+\subsubsection[{Get\+X(void) const }]{\setlength{\rightskip}{0pt plus 5cm}float Vector2d\+::\+Get\+X (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_vector2d_af7e3481fd89003bfdd2755e8537dcebc}
+\hypertarget{class_vector2d_a192288b009a6b11ae8a01e87104771da}{}\index{Vector2d@{Vector2d}!Get\+Y@{Get\+Y}}
+\index{Get\+Y@{Get\+Y}!Vector2d@{Vector2d}}
+\subsubsection[{Get\+Y(void) const }]{\setlength{\rightskip}{0pt plus 5cm}float Vector2d\+::\+Get\+Y (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_vector2d_a192288b009a6b11ae8a01e87104771da}
+\hypertarget{class_vector2d_a192288b009a6b11ae8a01e87104771da}{}\index{Vector2d@{Vector2d}!Get\+Y@{Get\+Y}}
+\index{Get\+Y@{Get\+Y}!Vector2d@{Vector2d}}
+\subsubsection[{Get\+Y(void) const }]{\setlength{\rightskip}{0pt plus 5cm}float Vector2d\+::\+Get\+Y (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_vector2d_a192288b009a6b11ae8a01e87104771da}
+\hypertarget{class_vector2d_a9b8d70f0ba6f785652ea64d5c7bf82c1}{}\index{Vector2d@{Vector2d}!Set@{Set}}
+\index{Set@{Set}!Vector2d@{Vector2d}}
+\subsubsection[{Set(float x, float y)}]{\setlength{\rightskip}{0pt plus 5cm}void Vector2d\+::\+Set (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_vector2d_a9b8d70f0ba6f785652ea64d5c7bf82c1}
+\hypertarget{class_vector2d_a9b8d70f0ba6f785652ea64d5c7bf82c1}{}\index{Vector2d@{Vector2d}!Set@{Set}}
+\index{Set@{Set}!Vector2d@{Vector2d}}
+\subsubsection[{Set(float x, float y)}]{\setlength{\rightskip}{0pt plus 5cm}void Vector2d\+::\+Set (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_vector2d_a9b8d70f0ba6f785652ea64d5c7bf82c1}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Common/\+Triangulate/\hyperlink{_triangulate_2_triangulate_8h}{Triangulate.\+h}\end{DoxyCompactItemize}

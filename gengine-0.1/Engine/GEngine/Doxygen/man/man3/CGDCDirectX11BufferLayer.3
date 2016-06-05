@@ -1,0 +1,123 @@
+.TH "CGDCDirectX11BufferLayer" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGDCDirectX11BufferLayer \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GDCDirectX11BufferLayer\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetName\fP (const CString &strName)"
+.br
+.ti -1c
+.RI "const CString & \fBGetName\fP () const "
+.br
+.ti -1c
+.RI "void \fBInitItem\fP ()"
+.br
+.ti -1c
+.RI "void \fBAddItem\fP (\fBCGDCDirectX11BufferLayerItem\fP *pItem)"
+.br
+.ti -1c
+.RI "\fBCGDCDirectX11BufferLayerItem\fP * \fBFindItemByID\fP (const \fBGID\fP &ID, const \fBGBOOL\fP &bCreateIfNone=false)"
+.br
+.ti -1c
+.RI "const CAtlMap< \fBGID\fP, \fBCGDCDirectX11BufferLayerItem\fP * > & \fBGetMap\fP () const "
+.br
+.ti -1c
+.RI "void \fBGetAllItemID\fP (\fBGOUT\fP CAtlArray< \fBGID\fP > &arrID) const "
+.br
+.ti -1c
+.RI "void \fBInitIndexBuffer\fP (const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID=\fBGNONE_ID\fP)"
+.br
+.ti -1c
+.RI "void \fBInitVertexBuffer\fP (const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID=\fBGNONE_ID\fP)"
+.br
+.ti -1c
+.RI "\fBCGDCDirectX11BufferLayer\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGDCDirectX11BufferLayer\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+Directx11의 buffer layer(vertex buffer, index buffer(todo))
+.IP "\(bu" 2
+vertex buffer를 새로 만드는 비용이 크기 때문에 자주 변경되는 buffer만 별도로 관리할 수 있도록 하기 위한 개념이다\&. 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGDCDirectX11BufferLayer::CGDCDirectX11BufferLayer ()"
+
+.SS "CGDCDirectX11BufferLayer::~CGDCDirectX11BufferLayer ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGDCDirectX11BufferLayer::AddItem (\fBCGDCDirectX11BufferLayerItem\fP * pItem)"
+
+.SS "\fBCGDCDirectX11BufferLayerItem\fP * CGDCDirectX11BufferLayer::FindItemByID (const \fBGID\fP & ID, const \fBGBOOL\fP & bCreateIfNone = \fCfalse\fP)"
+
+.IP "\(bu" 2
+item을 id로 찾는다\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP 
+.RE
+.PP
+
+.PP
+
+.SS "void CGDCDirectX11BufferLayer::GetAllItemID (\fBGOUT\fP CAtlArray< \fBGID\fP > & arrID) const"
+
+.IP "\(bu" 2
+모든 item의 ID를 가져온다\&. 
+.PP
+
+.SS "const CAtlMap< \fBGID\fP, \fBCGDCDirectX11BufferLayerItem\fP * > & CGDCDirectX11BufferLayer::GetMap () const"
+
+.SS "const CString & CGDCDirectX11BufferLayer::GetName () const"
+
+.SS "void CGDCDirectX11BufferLayer::InitIndexBuffer (const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID = \fC\fBGNONE_ID\fP\fP)"
+
+.IP "\(bu" 2
+index buffer를 초기화 한다\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP 
+.RE
+.PP
+
+.PP
+
+.SS "void CGDCDirectX11BufferLayer::InitItem ()"
+
+.SS "void CGDCDirectX11BufferLayer::InitVertexBuffer (const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID = \fC\fBGNONE_ID\fP\fP)"
+
+.IP "\(bu" 2
+vertex buffer를 초기화 한다\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP 
+.RE
+.PP
+
+.PP
+
+.SS "void CGDCDirectX11BufferLayer::SetName (const CString & strName)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

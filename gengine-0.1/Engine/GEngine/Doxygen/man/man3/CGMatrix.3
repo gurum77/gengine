@@ -1,0 +1,174 @@
+.TH "CGMatrix" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGMatrix \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GMatrix\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBoperator()\fP (UINT Row, UINT Column) CONST"
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP & \fBoperator()\fP (UINT Row, UINT Column)"
+.br
+.ti -1c
+.RI "\fBCGMatrix\fP & \fBoperator=\fP (CONST \fBCGMatrix\fP &M)"
+.br
+.ti -1c
+.RI "\fBCGMatrix\fP & \fBoperator*=\fP (CONST \fBCGMatrix\fP &M)"
+.br
+.ti -1c
+.RI "\fBCGMatrix\fP \fBoperator*\fP (CONST \fBCGMatrix\fP &M) CONST"
+.br
+.ti -1c
+.RI "\fBCGMatrix\fP (\fBGDOUBLE\fP m00, \fBGDOUBLE\fP m01, \fBGDOUBLE\fP m02, \fBGDOUBLE\fP m03, \fBGDOUBLE\fP m10, \fBGDOUBLE\fP m11, \fBGDOUBLE\fP m12, \fBGDOUBLE\fP m13, \fBGDOUBLE\fP m20, \fBGDOUBLE\fP m21, \fBGDOUBLE\fP m22, \fBGDOUBLE\fP m23, \fBGDOUBLE\fP m30, \fBGDOUBLE\fP m31, \fBGDOUBLE\fP m32, \fBGDOUBLE\fP m33)"
+.br
+.ti -1c
+.RI "\fBCGMatrix\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGMatrix\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_11\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_12\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_13\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_14\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_21\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_22\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_23\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_24\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_31\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_32\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_33\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_34\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_41\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_42\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_43\fP"
+.br
+.ti -1c
+.RI "      \fBGDOUBLE\fP \fB_44\fP"
+.br
+.ti -1c
+.RI "   } "
+.br
+.ti -1c
+.RI "   \fBGDOUBLE\fP \fBm\fP [4][4]"
+.br
+.ti -1c
+.RI "}; "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+4 x 4 matrix 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGMatrix::CGMatrix (\fBGDOUBLE\fP m00, \fBGDOUBLE\fP m01, \fBGDOUBLE\fP m02, \fBGDOUBLE\fP m03, \fBGDOUBLE\fP m10, \fBGDOUBLE\fP m11, \fBGDOUBLE\fP m12, \fBGDOUBLE\fP m13, \fBGDOUBLE\fP m20, \fBGDOUBLE\fP m21, \fBGDOUBLE\fP m22, \fBGDOUBLE\fP m23, \fBGDOUBLE\fP m30, \fBGDOUBLE\fP m31, \fBGDOUBLE\fP m32, \fBGDOUBLE\fP m33)"
+
+.SS "CGMatrix::CGMatrix ()"
+
+.SS "CGMatrix::~CGMatrix ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBGDOUBLE\fP CGMatrix::operator() (UINT Row, UINT Column)\fC [inline]\fP"
+
+.SS "\fBGDOUBLE\fP& CGMatrix::operator() (UINT Row, UINT Column)\fC [inline]\fP"
+
+.SS "\fBCGMatrix\fP CGMatrix::operator* (CONST \fBCGMatrix\fP & M)"
+
+.SS "\fBCGMatrix\fP & CGMatrix::operator*= (CONST \fBCGMatrix\fP & M)"
+
+.SS "\fBCGMatrix\fP & CGMatrix::operator= (CONST \fBCGMatrix\fP & M)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "union { \&.\&.\&. } "
+
+.SS "\fBGDOUBLE\fP CGMatrix::_11"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_12"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_13"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_14"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_21"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_22"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_23"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_24"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_31"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_32"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_33"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_34"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_41"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_42"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_43"
+
+.SS "\fBGDOUBLE\fP CGMatrix::_44"
+
+.SS "\fBGDOUBLE\fP CGMatrix::m[4][4]"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

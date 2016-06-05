@@ -1,0 +1,78 @@
+.TH "p2t::CDT" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+p2t::CDT \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cdt\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCDT\fP (std::vector< \fBPoint\fP * > polyline)"
+.br
+.ti -1c
+.RI "\fB~CDT\fP ()"
+.br
+.ti -1c
+.RI "void \fBAddHole\fP (std::vector< \fBPoint\fP * > polyline)"
+.br
+.ti -1c
+.RI "void \fBAddPoint\fP (\fBPoint\fP *point)"
+.br
+.ti -1c
+.RI "void \fBTriangulate\fP ()"
+.br
+.ti -1c
+.RI "std::vector< \fBTriangle\fP * > \fBGetTriangles\fP ()"
+.br
+.ti -1c
+.RI "std::list< \fBTriangle\fP * > \fBGetMap\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "p2t::CDT::CDT (std::vector< \fBPoint\fP * > polyline)"
+Constructor - add polyline with non repeating points
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpolyline\fP 
+.RE
+.PP
+
+.SS "p2t::CDT::~CDT ()"
+Destructor - clean up memory 
+.SH "Member Function Documentation"
+.PP 
+.SS "void p2t::CDT::AddHole (std::vector< \fBPoint\fP * > polyline)"
+Add a hole
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpolyline\fP 
+.RE
+.PP
+
+.SS "void p2t::CDT::AddPoint (\fBPoint\fP * point)"
+Add a steiner point
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpoint\fP 
+.RE
+.PP
+
+.SS "std::list< \fBp2t::Triangle\fP * > p2t::CDT::GetMap ()"
+Get triangle map 
+.SS "std::vector< \fBp2t::Triangle\fP * > p2t::CDT::GetTriangles ()"
+Get \fBCDT\fP triangles 
+.SS "void p2t::CDT::Triangulate ()"
+\fBTriangulate\fP - do this AFTER you've added the polyline, holes, and Steiner points 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

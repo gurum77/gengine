@@ -1,0 +1,271 @@
+\hypertarget{class_c_g_camera}{}\section{C\+G\+Camera Class Reference}
+\label{class_c_g_camera}\index{C\+G\+Camera@{C\+G\+Camera}}
+
+
+{\ttfamily \#include $<$G\+Camera.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_g_camera_aa30f2489089e6b43b6142d92d246a24e}{Set\+Target} (const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&f3\+Target)
+\item 
+const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \& \hyperlink{class_c_g_camera_aabf0d7b1f8af48eccec2c5cc5a1efe2f}{Get\+Target} () const 
+\item 
+void \hyperlink{class_c_g_camera_a4e3980059c323effae1c8b20b2335e59}{Set\+Eye} (const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&f3\+Eye)
+\item 
+const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \& \hyperlink{class_c_g_camera_a46f8a91cc5b9391f8a0e8fd1a60cef19}{Get\+Eye} () const 
+\item 
+void \hyperlink{class_c_g_camera_ae93a2df8533aa4fb9148677e3adcf6f8}{Set\+Up} (const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&f\+Up)
+\item 
+const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \& \hyperlink{class_c_g_camera_a0e3b83ef4683a1e12069fb0ecc2562b8}{Get\+Up} () const 
+\item 
+void \hyperlink{class_c_g_camera_a07a1bdd8f70ec0c41163dd1a9761df1c}{Set\+Width} (const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \&d\+Width)
+\item 
+const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \& \hyperlink{class_c_g_camera_ac18c78c33ea969bdd76490cad4c11295}{Get\+Width} () const 
+\item 
+void \hyperlink{class_c_g_camera_a6eea4153d3fd5cfd2c5b87417e1b1809}{Set\+Height} (const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \&d\+Height)
+\item 
+const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \& \hyperlink{class_c_g_camera_a171cf90a66857be9e1f31199952398ea}{Get\+Height} () const 
+\item 
+void \hyperlink{class_c_g_camera_a19295431de67f03c3208740307225c9a}{Zoom\+In} (const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Org\+Pos)
+\item 
+void \hyperlink{class_c_g_camera_ab73063011d972f6d6d7d2969f819b50d}{Zoom\+Out} (const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Org\+Pos)
+\item 
+void \hyperlink{class_c_g_camera_a96c4bfe03528e6287d867a954f2e0d9f}{Zoom\+Pan} (const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Last\+Pos, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Cur\+Pos)
+\item 
+void \hyperlink{class_c_g_camera_a84b7228a3b51e6380f14dec44614f70b}{Zoom\+All} (const \hyperlink{class_c_g_cube}{C\+G\+Cube} \&cube\+Boundary)
+\item 
+void \hyperlink{class_c_g_camera_a9e31ef05d433303052f16f15933dd28c}{Zoom\+Rotate} (const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+Rotate\+Angle\+Up, const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+Rotate\+Angle\+By\+Hor)
+\item 
+void \hyperlink{class_c_g_camera_a606681108b77febee786290a1c264fe4}{Set\+Plane\+Frustrum} (const \hyperlink{class_c_g_plane}{C\+G\+Plane} \&plane, const \hyperlink{_g_math_8h_ad69d320b6ff140b383ec268a4e9482f2}{Frustrum\+Plane} \&e\+Frustrum)
+\item 
+const \hyperlink{class_c_g_plane}{C\+G\+Plane} \& \hyperlink{class_c_g_camera_adeac62b178ed27f5afc845bc17829398}{Get\+Plane\+Frustrum} (const \hyperlink{_g_math_8h_ad69d320b6ff140b383ec268a4e9482f2}{Frustrum\+Plane} \&e\+Frustrum) const 
+\item 
+\hyperlink{class_c_g_plane}{C\+G\+Plane} \& \hyperlink{class_c_g_camera_ac0ce44c308c0909c5d88a823c1a8b571}{Get\+Plane\+Frustrum} (const \hyperlink{_g_math_8h_ad69d320b6ff140b383ec268a4e9482f2}{Frustrum\+Plane} \&e\+Frustrum)
+\item 
+void \hyperlink{class_c_g_camera_a2bc0a34b92db432b5eba111019838935}{Set\+View\+Proj\+Inv} (const \hyperlink{class_c_g_matrix}{C\+G\+Matrix} \&mat\+Inv)
+\item 
+const \hyperlink{class_c_g_matrix}{C\+G\+Matrix} \& \hyperlink{class_c_g_camera_aefd93b86fd8a37b6be6ec9990a1e5e6b}{Get\+View\+Proj\+Inv} () const 
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_camera_acb0bf0c53233a9f27ce7682160e7230d}{Is\+In\+Sphere} (const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Center, const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \&d\+Radius) const 
+\item 
+\hyperlink{class_c_g_camera_abb6d2b67420410308679c1a6bc22e8ee}{C\+G\+Camera} ()
+\item 
+\hyperlink{class_c_g_camera_a9fcce03c2ef4f6eb3a001a21b9fec01e}{$\sim$\+C\+G\+Camera} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item 카메라 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g_camera_abb6d2b67420410308679c1a6bc22e8ee}{}\index{C\+G\+Camera@{C\+G\+Camera}!C\+G\+Camera@{C\+G\+Camera}}
+\index{C\+G\+Camera@{C\+G\+Camera}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{C\+G\+Camera()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Camera\+::\+C\+G\+Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_abb6d2b67420410308679c1a6bc22e8ee}
+\hypertarget{class_c_g_camera_a9fcce03c2ef4f6eb3a001a21b9fec01e}{}\index{C\+G\+Camera@{C\+G\+Camera}!````~C\+G\+Camera@{$\sim$\+C\+G\+Camera}}
+\index{````~C\+G\+Camera@{$\sim$\+C\+G\+Camera}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{$\sim$\+C\+G\+Camera()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Camera\+::$\sim$\+C\+G\+Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_a9fcce03c2ef4f6eb3a001a21b9fec01e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g_camera_a46f8a91cc5b9391f8a0e8fd1a60cef19}{}\index{C\+G\+Camera@{C\+G\+Camera}!Get\+Eye@{Get\+Eye}}
+\index{Get\+Eye@{Get\+Eye}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Get\+Eye() const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+G\+Point3\+D} \& C\+G\+Camera\+::\+Get\+Eye (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_camera_a46f8a91cc5b9391f8a0e8fd1a60cef19}
+\hypertarget{class_c_g_camera_a171cf90a66857be9e1f31199952398ea}{}\index{C\+G\+Camera@{C\+G\+Camera}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Get\+Height() const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf G\+D\+O\+U\+B\+L\+E} \& C\+G\+Camera\+::\+Get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_camera_a171cf90a66857be9e1f31199952398ea}
+\hypertarget{class_c_g_camera_adeac62b178ed27f5afc845bc17829398}{}\index{C\+G\+Camera@{C\+G\+Camera}!Get\+Plane\+Frustrum@{Get\+Plane\+Frustrum}}
+\index{Get\+Plane\+Frustrum@{Get\+Plane\+Frustrum}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Get\+Plane\+Frustrum(const Frustrum\+Plane \&e\+Frustrum) const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+G\+Plane} \& C\+G\+Camera\+::\+Get\+Plane\+Frustrum (
+\begin{DoxyParamCaption}
+\item[{const {\bf Frustrum\+Plane} \&}]{e\+Frustrum}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_camera_adeac62b178ed27f5afc845bc17829398}
+\hypertarget{class_c_g_camera_ac0ce44c308c0909c5d88a823c1a8b571}{}\index{C\+G\+Camera@{C\+G\+Camera}!Get\+Plane\+Frustrum@{Get\+Plane\+Frustrum}}
+\index{Get\+Plane\+Frustrum@{Get\+Plane\+Frustrum}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Get\+Plane\+Frustrum(const Frustrum\+Plane \&e\+Frustrum)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Plane} \& C\+G\+Camera\+::\+Get\+Plane\+Frustrum (
+\begin{DoxyParamCaption}
+\item[{const {\bf Frustrum\+Plane} \&}]{e\+Frustrum}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_ac0ce44c308c0909c5d88a823c1a8b571}
+\hypertarget{class_c_g_camera_aabf0d7b1f8af48eccec2c5cc5a1efe2f}{}\index{C\+G\+Camera@{C\+G\+Camera}!Get\+Target@{Get\+Target}}
+\index{Get\+Target@{Get\+Target}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Get\+Target() const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+G\+Point3\+D} \& C\+G\+Camera\+::\+Get\+Target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_camera_aabf0d7b1f8af48eccec2c5cc5a1efe2f}
+\hypertarget{class_c_g_camera_a0e3b83ef4683a1e12069fb0ecc2562b8}{}\index{C\+G\+Camera@{C\+G\+Camera}!Get\+Up@{Get\+Up}}
+\index{Get\+Up@{Get\+Up}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Get\+Up() const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+G\+Point3\+D} \& C\+G\+Camera\+::\+Get\+Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_camera_a0e3b83ef4683a1e12069fb0ecc2562b8}
+\hypertarget{class_c_g_camera_aefd93b86fd8a37b6be6ec9990a1e5e6b}{}\index{C\+G\+Camera@{C\+G\+Camera}!Get\+View\+Proj\+Inv@{Get\+View\+Proj\+Inv}}
+\index{Get\+View\+Proj\+Inv@{Get\+View\+Proj\+Inv}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Get\+View\+Proj\+Inv() const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+G\+Matrix} \& C\+G\+Camera\+::\+Get\+View\+Proj\+Inv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_camera_aefd93b86fd8a37b6be6ec9990a1e5e6b}
+\hypertarget{class_c_g_camera_ac18c78c33ea969bdd76490cad4c11295}{}\index{C\+G\+Camera@{C\+G\+Camera}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Get\+Width() const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf G\+D\+O\+U\+B\+L\+E} \& C\+G\+Camera\+::\+Get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_camera_ac18c78c33ea969bdd76490cad4c11295}
+\hypertarget{class_c_g_camera_acb0bf0c53233a9f27ce7682160e7230d}{}\index{C\+G\+Camera@{C\+G\+Camera}!Is\+In\+Sphere@{Is\+In\+Sphere}}
+\index{Is\+In\+Sphere@{Is\+In\+Sphere}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Is\+In\+Sphere(const C\+G\+Point3\+D \&pt\+Center, const G\+D\+O\+U\+B\+L\+E \&d\+Radius) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Camera\+::\+Is\+In\+Sphere (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Center, }
+\item[{const {\bf G\+D\+O\+U\+B\+L\+E} \&}]{d\+Radius}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_camera_acb0bf0c53233a9f27ce7682160e7230d}
+
+\begin{DoxyItemize}
+\item camera 안에 구가 포함되는지?
+\item m\+\_\+plane\+Frustrum 가 계산되어 있어야 정상적으로 작동한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_camera_a4e3980059c323effae1c8b20b2335e59}{}\index{C\+G\+Camera@{C\+G\+Camera}!Set\+Eye@{Set\+Eye}}
+\index{Set\+Eye@{Set\+Eye}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Set\+Eye(const C\+G\+Point3\+D \&f3\+Eye)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Camera\+::\+Set\+Eye (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point3\+D} \&}]{f3\+Eye}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_a4e3980059c323effae1c8b20b2335e59}
+\hypertarget{class_c_g_camera_a6eea4153d3fd5cfd2c5b87417e1b1809}{}\index{C\+G\+Camera@{C\+G\+Camera}!Set\+Height@{Set\+Height}}
+\index{Set\+Height@{Set\+Height}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Set\+Height(const G\+D\+O\+U\+B\+L\+E \&d\+Height)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Camera\+::\+Set\+Height (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+D\+O\+U\+B\+L\+E} \&}]{d\+Height}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_a6eea4153d3fd5cfd2c5b87417e1b1809}
+\hypertarget{class_c_g_camera_a606681108b77febee786290a1c264fe4}{}\index{C\+G\+Camera@{C\+G\+Camera}!Set\+Plane\+Frustrum@{Set\+Plane\+Frustrum}}
+\index{Set\+Plane\+Frustrum@{Set\+Plane\+Frustrum}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Set\+Plane\+Frustrum(const C\+G\+Plane \&plane, const Frustrum\+Plane \&e\+Frustrum)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Camera\+::\+Set\+Plane\+Frustrum (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Plane} \&}]{plane, }
+\item[{const {\bf Frustrum\+Plane} \&}]{e\+Frustrum}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_a606681108b77febee786290a1c264fe4}
+\hypertarget{class_c_g_camera_aa30f2489089e6b43b6142d92d246a24e}{}\index{C\+G\+Camera@{C\+G\+Camera}!Set\+Target@{Set\+Target}}
+\index{Set\+Target@{Set\+Target}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Set\+Target(const C\+G\+Point3\+D \&f3\+Target)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Camera\+::\+Set\+Target (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point3\+D} \&}]{f3\+Target}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_aa30f2489089e6b43b6142d92d246a24e}
+\hypertarget{class_c_g_camera_ae93a2df8533aa4fb9148677e3adcf6f8}{}\index{C\+G\+Camera@{C\+G\+Camera}!Set\+Up@{Set\+Up}}
+\index{Set\+Up@{Set\+Up}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Set\+Up(const C\+G\+Point3\+D \&f\+Up)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Camera\+::\+Set\+Up (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point3\+D} \&}]{f\+Up}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_ae93a2df8533aa4fb9148677e3adcf6f8}
+\hypertarget{class_c_g_camera_a2bc0a34b92db432b5eba111019838935}{}\index{C\+G\+Camera@{C\+G\+Camera}!Set\+View\+Proj\+Inv@{Set\+View\+Proj\+Inv}}
+\index{Set\+View\+Proj\+Inv@{Set\+View\+Proj\+Inv}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Set\+View\+Proj\+Inv(const C\+G\+Matrix \&mat\+Inv)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Camera\+::\+Set\+View\+Proj\+Inv (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Matrix} \&}]{mat\+Inv}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_a2bc0a34b92db432b5eba111019838935}
+
+\begin{DoxyItemize}
+\item view $\ast$ project matrix의 역행렬 
+\end{DoxyItemize}\hypertarget{class_c_g_camera_a07a1bdd8f70ec0c41163dd1a9761df1c}{}\index{C\+G\+Camera@{C\+G\+Camera}!Set\+Width@{Set\+Width}}
+\index{Set\+Width@{Set\+Width}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Set\+Width(const G\+D\+O\+U\+B\+L\+E \&d\+Width)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Camera\+::\+Set\+Width (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+D\+O\+U\+B\+L\+E} \&}]{d\+Width}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_a07a1bdd8f70ec0c41163dd1a9761df1c}
+\hypertarget{class_c_g_camera_a84b7228a3b51e6380f14dec44614f70b}{}\index{C\+G\+Camera@{C\+G\+Camera}!Zoom\+All@{Zoom\+All}}
+\index{Zoom\+All@{Zoom\+All}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Zoom\+All(const C\+G\+Cube \&cube\+Boundary)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Camera\+::\+Zoom\+All (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Cube} \&}]{cube\+Boundary}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_a84b7228a3b51e6380f14dec44614f70b}
+
+\begin{DoxyItemize}
+\item cube\+Boundary를 기준으로 zoom all을 한다. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]\end{DoxyRefDesc}
+
+\end{DoxyItemize}\hypertarget{class_c_g_camera_a19295431de67f03c3208740307225c9a}{}\index{C\+G\+Camera@{C\+G\+Camera}!Zoom\+In@{Zoom\+In}}
+\index{Zoom\+In@{Zoom\+In}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Zoom\+In(const C\+G\+Point3\+D \&pt\+Org\+Pos)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Camera\+::\+Zoom\+In (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Org\+Pos}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_a19295431de67f03c3208740307225c9a}
+
+\begin{DoxyItemize}
+\item Zoom In
+\item view가 확대되어 보인다. 
+\end{DoxyItemize}\hypertarget{class_c_g_camera_ab73063011d972f6d6d7d2969f819b50d}{}\index{C\+G\+Camera@{C\+G\+Camera}!Zoom\+Out@{Zoom\+Out}}
+\index{Zoom\+Out@{Zoom\+Out}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Zoom\+Out(const C\+G\+Point3\+D \&pt\+Org\+Pos)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Camera\+::\+Zoom\+Out (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Org\+Pos}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_ab73063011d972f6d6d7d2969f819b50d}
+
+\begin{DoxyItemize}
+\item Zoom Out
+\item view가 축소되어 보인다. 
+\end{DoxyItemize}\hypertarget{class_c_g_camera_a96c4bfe03528e6287d867a954f2e0d9f}{}\index{C\+G\+Camera@{C\+G\+Camera}!Zoom\+Pan@{Zoom\+Pan}}
+\index{Zoom\+Pan@{Zoom\+Pan}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Zoom\+Pan(const C\+G\+Point3\+D \&pt\+Last\+Pos, const C\+G\+Point3\+D \&pt\+Cur\+Pos)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Camera\+::\+Zoom\+Pan (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Last\+Pos, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Cur\+Pos}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_a96c4bfe03528e6287d867a954f2e0d9f}
+
+\begin{DoxyItemize}
+\item zoom pan을 한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_camera_a9e31ef05d433303052f16f15933dd28c}{}\index{C\+G\+Camera@{C\+G\+Camera}!Zoom\+Rotate@{Zoom\+Rotate}}
+\index{Zoom\+Rotate@{Zoom\+Rotate}!C\+G\+Camera@{C\+G\+Camera}}
+\subsubsection[{Zoom\+Rotate(const G\+F\+L\+O\+A\+T \&f\+Rotate\+Angle\+Up, const G\+F\+L\+O\+A\+T \&f\+Rotate\+Angle\+By\+Hor)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Camera\+::\+Zoom\+Rotate (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+Rotate\+Angle\+Up, }
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+Rotate\+Angle\+By\+Hor}
+\end{DoxyParamCaption}
+)}\label{class_c_g_camera_a9e31ef05d433303052f16f15933dd28c}
+
+\begin{DoxyItemize}
+\item zoom rotate를 한다. 
+\end{DoxyItemize}
+\begin{DoxyParams}{Parameters}
+{\em f\+Rotate\+Angle\+Up} & up vector 를 회전하는 각도 \\
+\hline
+{\em f\+Rotate\+Angle\+By\+Hor} & 가로방향을 기준으로 회전하는 각도 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g_camera_8h}{G\+Camera.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g_camera_8cpp}{G\+Camera.\+cpp}\end{DoxyCompactItemize}

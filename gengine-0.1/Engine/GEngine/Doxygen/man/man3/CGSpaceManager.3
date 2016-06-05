@@ -1,0 +1,329 @@
+.TH "CGSpaceManager" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGSpaceManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GSpaceManager\&.h>\fP
+.PP
+Inherits \fBCG3DDB\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBSpaceAlgorithm\fP { \fBeSpaceAlgorithm_SizeByRateOfObjectSize\fP, \fBeSpaceAlgorithm_SizeByFix\fP }"
+.br
+.ti -1c
+.RI "enum \fBAttr\fP { \fBeAttrCreateAroundSpace\fP = 0x00000001, \fBeAttrAll\fP = 0xFFFFFFFF }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCGSpace\fP * \fBCreateOptimizedSpaceForOBject\fP (const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "const \fBCGSpaceManager::SpaceAlgorithm\fP & \fBGetSpaceAlgorithm\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetSpaceAlgorithm\fP (const \fBCGSpaceManager::SpaceAlgorithm\fP &eSpaceAlgorithm)"
+.br
+.ti -1c
+.RI "\fBCGCube\fP \fBCalcBoundary\fP () const "
+.br
+.ti -1c
+.RI "\fBCGSpace\fP * \fBUpdateSimpleSpaceByObject\fP (const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "void \fBUnloadSpace\fP (\fBGINOUT\fP \fBCGSpace\fP &space)"
+.br
+.ti -1c
+.RI "void \fBLoadSpace\fP (\fBGINOUT\fP \fBCGSpace\fP &space)"
+.br
+.ti -1c
+.RI "void \fBUnloadAllOutOfView\fP ()"
+.br
+.ti -1c
+.RI "void \fBLoadAllInView\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetView\fP (\fBCG3DView\fP *pView)"
+.br
+.ti -1c
+.RI "void \fBInitSpace\fP ()"
+.br
+.ti -1c
+.RI "\fBCGSpace\fP * \fBAddObject\fP (const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "\fBCGSpace\fP * \fBRemoveObject\fP (const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "\fBCGSpace\fP * \fBFindSpaceByObjectID\fP (const \fBGID\fP &ID)"
+.br
+.ti -1c
+.RI "\fBCGSpace\fP * \fBFindOptimizedSpaceForObject\fP (const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBDeleteSpace\fP (\fBCGSpace\fP &space)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBMoveObjectToSpace\fP (const \fBCGObjectBase\fP &object, \fBCGSpace\fP &toSpace)"
+.br
+.ti -1c
+.RI "void \fBFindSpaceInView\fP (\fBGOUT\fP CAtlArray< \fBCGSpace\fP * > &arrSpace)"
+.br
+.ti -1c
+.RI "void \fBFindSpaceOutOfView\fP (\fBGOUT\fP CAtlArray< \fBCGSpace\fP * > &arrSpace)"
+.br
+.ti -1c
+.RI "void \fBRegenOnlySpace\fP (\fBGINOUT\fP \fBCGSpace\fP &space)"
+.br
+.ti -1c
+.RI "\fBCGSpaceManager\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGSpaceManager\fP ()"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBCG3DTest\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+space manager
+.IP "\(bu" 2
+space가 화면에 보여야 하는지판단한다\&.
+.IP "\(bu" 2
+space를 상황에 맞게 화면에 표시한다\&.
+.IP "  \(bu" 4
+개략형상으로 보여야 하는지, 실제 모양으로 보여야 하는지 판단한다\&. 
+.PP
+
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCGSpaceManager::Attr\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeAttrCreateAroundSpace \fP\fP
+.TP
+\fB\fIeAttrAll \fP\fP
+.SS "enum \fBCGSpaceManager::SpaceAlgorithm\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeSpaceAlgorithm_SizeByRateOfObjectSize \fP\fP
+.TP
+\fB\fIeSpaceAlgorithm_SizeByFix \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGSpaceManager::CGSpaceManager ()"
+
+.SS "CGSpaceManager::~CGSpaceManager ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCGSpace\fP * CGSpaceManager::AddObject (const \fBCGObjectBase\fP & object)"
+
+.IP "\(bu" 2
+object 추가
+.IP "\(bu" 2
+첫번째 추가시 object를 포함할 수 있는 크기의 space가 생성된다\&.
+.IP "\(bu" 2
+이후 object 추가시 포함될 수 있는 포함가능 space가 있는지 검색하고, 없으면 새로운 space가 생성된다\&.
+.IP "\(bu" 2
+포함가능 space인지 판단하는 기준
+.IP "  \(bu" 4
+object의 크기가 space에 포함될 수 있는 크기범위 내인지 판단한다\&.(포함될 수 있는 object의 크기 범위가 차이가 많이 나면 space를 표시하는 수준의 zooming시 object가 제대로 보여야 하는 경우가 발생할 수 있다)
+.IP "  \(bu" 4
+기존의 object들과 너무 멀리 떨어져 있으면 안된다\&.
+.PP
+
+.IP "\(bu" 2
+object가 포함되면 개략형상을 갱신한다\&. 
+.PP
+
+.SS "\fBCGCube\fP CGSpaceManager::CalcBoundary () const"
+
+.IP "\(bu" 2
+space전체의 boundary를 계산한다\&. 
+.PP
+
+.SS "\fBCGSpace\fP * CGSpaceManager::CreateOptimizedSpaceForOBject (const \fBCGObjectBase\fP & object)"
+
+.IP "\(bu" 2
+object가 포함되기에 최적인 space를 새로 생성한다\&.
+.IP "\(bu" 2
+quadtree에 space를 최초로 등록한다\&.
+.IP "\(bu" 2
+최적 space 조건(중요도 ★★★★★, 난이도 ★★★★★) 
+.PP
+\fBTodo\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+
+.SS "\fBGBOOL\fP CGSpaceManager::DeleteSpace (\fBCGSpace\fP & space)"
+
+.IP "\(bu" 2
+space를 삭제한다\&. 
+.PP
+
+.SS "\fBCGSpace\fP * CGSpaceManager::FindOptimizedSpaceForObject (const \fBCGObjectBase\fP & object)"
+
+.IP "\(bu" 2
+object가 포함되기에 최적인 space를 찾는다\&.
+.IP "\(bu" 2
+없으면 NULL을 리턴한다\&.
+.IP "\(bu" 2
+찾는 조건(중요도 ★★★★★, 난이도 ★★★★★)
+.IP "  1." 6
+object 크기의 x배를 포함할 수 있거나 걸쳐지는 space 
+.PP
+
+.PP
+
+.SS "\fBCGSpace\fP * CGSpaceManager::FindSpaceByObjectID (const \fBGID\fP & ID)"
+
+.IP "\(bu" 2
+object ID를 직접 포함하고 있는 space를 찾는다\&. 
+.PP
+
+.SS "void CGSpaceManager::FindSpaceInView (\fBGOUT\fP CAtlArray< \fBCGSpace\fP * > & arrSpace)"
+
+.IP "\(bu" 2
+view에 보일 space를 모두 찾는다\&.
+.IP "\(bu" 2
+quadtree 를 통해서 찾는다\&. 
+.PP
+\fBTodo\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+
+.SS "void CGSpaceManager::FindSpaceOutOfView (\fBGOUT\fP CAtlArray< \fBCGSpace\fP * > & arrSpace)"
+
+.IP "\(bu" 2
+view에 보이지 않을 space를 모두 찾는다\&.
+.IP "\(bu" 2
+octree를 통해서 찾는다 
+.PP
+\fBTodo\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+
+.SS "const \fBCGSpaceManager::SpaceAlgorithm\fP & CGSpaceManager::GetSpaceAlgorithm () const"
+
+.SS "void CGSpaceManager::InitSpace ()"
+
+.IP "\(bu" 2
+space를 초기화 한다\&. 
+.PP
+
+.SS "void CGSpaceManager::LoadAllInView ()"
+
+.IP "\(bu" 2
+view에 보여야 하는 모든 것들을 loading 한다\&.
+.IP "\(bu" 2
+loading을 하고 나면 view에 그린다\&. 
+.PP
+
+.SS "void CGSpaceManager::LoadSpace (\fBGINOUT\fP \fBCGSpace\fP & space)"
+
+.IP "\(bu" 2
+space를 load한다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CGSpaceManager::MoveObjectToSpace (const \fBCGObjectBase\fP & object, \fBCGSpace\fP & toSpace)"
+
+.IP "\(bu" 2
+object를 다른 space로 이동한다\&. 
+.PP
+
+.SS "void CGSpaceManager::RegenOnlySpace (\fBGINOUT\fP \fBCGSpace\fP & space)"
+
+.IP "\(bu" 2
+space를 다시 그리기를 한다\&.
+.IP "\(bu" 2
+현재 상황에 맞게 다시 그리기를 한다\&.
+.IP "\(bu" 2
+현재 상황을 판단하지는 않는다\&. 
+.PP
+
+.SS "\fBCGSpace\fP * CGSpaceManager::RemoveObject (const \fBCGObjectBase\fP & object)"
+
+.IP "\(bu" 2
+object 삭제
+.IP "\(bu" 2
+현재 포함 되어 있는 space에서 object를 삭제한다\&.
+.IP "\(bu" 2
+space에 object나 space가 하나도 남아 있지 않게 되면 space는 삭제된다\&. 
+.PP
+
+.SS "void CGSpaceManager::SetSpaceAlgorithm (const \fBCGSpaceManager::SpaceAlgorithm\fP & eSpaceAlgorithm)"
+
+.SS "void CGSpaceManager::SetView (\fBCG3DView\fP * pView)"
+
+.SS "void CGSpaceManager::UnloadAllOutOfView ()"
+
+.IP "\(bu" 2
+view를 벗어난 모든 것들을 unloading 한다\&.
+.IP "\(bu" 2
+unloading하기 전에 vertex buffer에서 제외시켜야 한다\&.
+.IP "\(bu" 2
+조건
+.IP "  \(bu" 4
+카메라에서 너무 멀어서 아주 작게 보이는 경우 
+.PP
+
+.PP
+
+.SS "void CGSpaceManager::UnloadSpace (\fBGINOUT\fP \fBCGSpace\fP & space)"
+
+.IP "\(bu" 2
+space를 unload한다\&.
+.IP "\(bu" 2
+regen도 한다\&. 
+.PP
+
+.SS "\fBCGSpace\fP * CGSpaceManager::UpdateSimpleSpaceByObject (const \fBCGObjectBase\fP & object)"
+
+.IP "\(bu" 2
+object가 소속되어 있는 space의 simple shape(개략형상)을 갱신한다\&. 
+.PP
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBCG3DTest\fP\fC [friend]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

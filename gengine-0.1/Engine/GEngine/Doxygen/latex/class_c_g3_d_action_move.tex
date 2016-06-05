@@ -1,0 +1,247 @@
+\hypertarget{class_c_g3_d_action_move}{}\section{C\+G3\+D\+Action\+Move Class Reference}
+\label{class_c_g3_d_action_move}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+
+
+{\ttfamily \#include $<$G3\+D\+Action\+Move.\+h$>$}
+
+Inheritance diagram for C\+G3\+D\+Action\+Move\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_g3_d_action_move}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_g3_d_action_move_a0f8a21c7c120a78f827895f16ab412e0}{Start\+Action} ()
+\item 
+virtual void \hyperlink{class_c_g3_d_action_move_a2c0bb537241c8d06df5c04c3496f8c41}{End\+Action} ()
+\item 
+virtual void \hyperlink{class_c_g3_d_action_move_ae4983d0e4ae5c5d0454892284ac80d1b}{On\+L\+Button\+Down} (U\+I\+N\+T n\+Flags, C\+Point point)
+\item 
+virtual void \hyperlink{class_c_g3_d_action_move_a5584227c9c0237210f35f24fa9ccd0c0}{On\+R\+Button\+Down} (U\+I\+N\+T n\+Flags, C\+Point point)
+\item 
+virtual void \hyperlink{class_c_g3_d_action_move_a20e84aa5d874de2732421ce1b68156aa}{On\+Mouse\+Move} (U\+I\+N\+T n\+Flags, C\+Point point)
+\item 
+virtual void \hyperlink{class_c_g3_d_action_move_afc45078b9adf02046022d7cf8efa17c7}{Create\+Preview} ()
+\item 
+\hyperlink{class_c_g3_d_action_move_aa9c669a84025ba3d786d6b015f350de0}{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+A\+C\+T\+I\+O\+N} (\hyperlink{class_c_g3_d_action_move}{C\+G3\+D\+Action\+Move},\char`\"{}M\+O\+V\+E\char`\"{})
+\item 
+\hyperlink{class_c_g3_d_action_move_af26608b085f65465368230372eb2af75}{C\+G3\+D\+Action\+Move} (void)
+\item 
+virtual \hyperlink{class_c_g3_d_action_move_acd71fbec1c0ab9cd287b492e10688c60}{$\sim$\+C\+G3\+D\+Action\+Move} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_g3_d_action_move_aa199db43e2fc824a87f8aa03dca6bb0f}{Step} \{ \hyperlink{class_c_g3_d_action_move_aa199db43e2fc824a87f8aa03dca6bb0facdb55e83c9ae553cb1518d2258a80f6d}{e\+Step\+Move\+Select\+Object} = C\+G3\+D\+Action\+Select\+:\+:e\+Step\+Second\+Point, 
+\hyperlink{class_c_g3_d_action_move_aa199db43e2fc824a87f8aa03dca6bb0fa7ea5574adcdb974f08eb2a3c6c0f219e}{e\+Step\+Move\+First\+Point}, 
+\hyperlink{class_c_g3_d_action_move_aa199db43e2fc824a87f8aa03dca6bb0fa19ca959a82e7b7bf1d3074266b270e92}{e\+Step\+Move\+Second\+Point}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_g3_d_action_move_a0b3df4bc9ba9cea497c408440bbbfa14}{Move\+Selected\+Object} ()
+\item 
+virtual void \hyperlink{class_c_g3_d_action_move_a445e4dbee7042a41fafa6276d9e0b352}{Move\+Temp\+Object} ()
+\item 
+virtual void \hyperlink{class_c_g3_d_action_move_ac52089a819f969304c8918f1a87411aa}{Run} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \hyperlink{class_c_g3_d_action_move_a7b4b01175e91ee12c2dc6714372acdbf}{m\+\_\+pt\+Move} \mbox{[}2\mbox{]}
+\item 
+\hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \hyperlink{class_c_g3_d_action_move_a601d0a4ab20bc6722313042f9bd26610}{m\+\_\+v\+Moved}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item move action 
+\end{DoxyItemize}
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_c_g3_d_action_move_aa199db43e2fc824a87f8aa03dca6bb0f}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!Step@{Step}}
+\index{Step@{Step}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{Step}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+G3\+D\+Action\+Move\+::\+Step}\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_action_move_aa199db43e2fc824a87f8aa03dca6bb0f}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+Step\+Move\+Select\+Object@{e\+Step\+Move\+Select\+Object}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!e\+Step\+Move\+Select\+Object@{e\+Step\+Move\+Select\+Object}}\item[{\em 
+\hypertarget{class_c_g3_d_action_move_aa199db43e2fc824a87f8aa03dca6bb0facdb55e83c9ae553cb1518d2258a80f6d}{}e\+Step\+Move\+Select\+Object\label{class_c_g3_d_action_move_aa199db43e2fc824a87f8aa03dca6bb0facdb55e83c9ae553cb1518d2258a80f6d}
+}]\index{e\+Step\+Move\+First\+Point@{e\+Step\+Move\+First\+Point}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!e\+Step\+Move\+First\+Point@{e\+Step\+Move\+First\+Point}}\item[{\em 
+\hypertarget{class_c_g3_d_action_move_aa199db43e2fc824a87f8aa03dca6bb0fa7ea5574adcdb974f08eb2a3c6c0f219e}{}e\+Step\+Move\+First\+Point\label{class_c_g3_d_action_move_aa199db43e2fc824a87f8aa03dca6bb0fa7ea5574adcdb974f08eb2a3c6c0f219e}
+}]\index{e\+Step\+Move\+Second\+Point@{e\+Step\+Move\+Second\+Point}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!e\+Step\+Move\+Second\+Point@{e\+Step\+Move\+Second\+Point}}\item[{\em 
+\hypertarget{class_c_g3_d_action_move_aa199db43e2fc824a87f8aa03dca6bb0fa19ca959a82e7b7bf1d3074266b270e92}{}e\+Step\+Move\+Second\+Point\label{class_c_g3_d_action_move_aa199db43e2fc824a87f8aa03dca6bb0fa19ca959a82e7b7bf1d3074266b270e92}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g3_d_action_move_af26608b085f65465368230372eb2af75}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{C\+G3\+D\+Action\+Move(void)}]{\setlength{\rightskip}{0pt plus 5cm}C\+G3\+D\+Action\+Move\+::\+C\+G3\+D\+Action\+Move (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_move_af26608b085f65465368230372eb2af75}
+\hypertarget{class_c_g3_d_action_move_acd71fbec1c0ab9cd287b492e10688c60}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!````~C\+G3\+D\+Action\+Move@{$\sim$\+C\+G3\+D\+Action\+Move}}
+\index{````~C\+G3\+D\+Action\+Move@{$\sim$\+C\+G3\+D\+Action\+Move}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{$\sim$\+C\+G3\+D\+Action\+Move(void)}]{\setlength{\rightskip}{0pt plus 5cm}C\+G3\+D\+Action\+Move\+::$\sim$\+C\+G3\+D\+Action\+Move (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_action_move_acd71fbec1c0ab9cd287b492e10688c60}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g3_d_action_move_afc45078b9adf02046022d7cf8efa17c7}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!Create\+Preview@{Create\+Preview}}
+\index{Create\+Preview@{Create\+Preview}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{Create\+Preview()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Move\+::\+Create\+Preview (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_action_move_afc45078b9adf02046022d7cf8efa17c7}
+
+\begin{DoxyItemize}
+\item action에 미리보기 객체가 있는 경우 이 함수를 재정의 하여 미리보기 객체를 그리도록 구현해야 한다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_action_select_a563c0a69d516cc5b1496c3d45adf9ba9}{C\+G3\+D\+Action\+Select}.
+
+\hypertarget{class_c_g3_d_action_move_a2c0bb537241c8d06df5c04c3496f8c41}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!End\+Action@{End\+Action}}
+\index{End\+Action@{End\+Action}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{End\+Action()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Move\+::\+End\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_action_move_a2c0bb537241c8d06df5c04c3496f8c41}
+
+\begin{DoxyItemize}
+\item action이 끝날때 호출되어야 하는 가상함수이다.
+\item 개발자가 직접 호출해야 한다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_action_select_adddb97c8edb1f085ce52ea7a102fad6d}{C\+G3\+D\+Action\+Select}.
+
+\hypertarget{class_c_g3_d_action_move_aa9c669a84025ba3d786d6b015f350de0}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+A\+C\+T\+I\+O\+N@{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+A\+C\+T\+I\+O\+N}}
+\index{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+A\+C\+T\+I\+O\+N@{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+A\+C\+T\+I\+O\+N}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+A\+C\+T\+I\+O\+N(\+C\+G3\+D\+Action\+Move,""M\+O\+V\+E"")}]{\setlength{\rightskip}{0pt plus 5cm}C\+G3\+D\+Action\+Move\+::\+G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+A\+C\+T\+I\+O\+N (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G3\+D\+Action\+Move}}]{, }
+\item[{\char`\"{}M\+O\+V\+E\char`\"{}}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_move_aa9c669a84025ba3d786d6b015f350de0}
+\hypertarget{class_c_g3_d_action_move_a0b3df4bc9ba9cea497c408440bbbfa14}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!Move\+Selected\+Object@{Move\+Selected\+Object}}
+\index{Move\+Selected\+Object@{Move\+Selected\+Object}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{Move\+Selected\+Object()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Move\+::\+Move\+Selected\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_action_move_a0b3df4bc9ba9cea497c408440bbbfa14}
+
+\begin{DoxyItemize}
+\item 선택된 object를 move를 한다. 
+\end{DoxyItemize}\hypertarget{class_c_g3_d_action_move_a445e4dbee7042a41fafa6276d9e0b352}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!Move\+Temp\+Object@{Move\+Temp\+Object}}
+\index{Move\+Temp\+Object@{Move\+Temp\+Object}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{Move\+Temp\+Object()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Move\+::\+Move\+Temp\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{class_c_g3_d_action_move_a445e4dbee7042a41fafa6276d9e0b352}
+
+\begin{DoxyItemize}
+\item Temp Object를 이동한다. 
+\end{DoxyItemize}
+
+Reimplemented in \hyperlink{class_c_g3_d_action_rotate2_d_ad6a47a3b986c7328124bf9e1b9142b31}{C\+G3\+D\+Action\+Rotate2\+D}, and \hyperlink{class_c_g3_d_action_scale_ac78e1c95d1074b9b0b0f946bcf923485}{C\+G3\+D\+Action\+Scale}.
+
+\hypertarget{class_c_g3_d_action_move_ae4983d0e4ae5c5d0454892284ac80d1b}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!On\+L\+Button\+Down@{On\+L\+Button\+Down}}
+\index{On\+L\+Button\+Down@{On\+L\+Button\+Down}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{On\+L\+Button\+Down(\+U\+I\+N\+T n\+Flags, C\+Point point)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Move\+::\+On\+L\+Button\+Down (
+\begin{DoxyParamCaption}
+\item[{U\+I\+N\+T}]{n\+Flags, }
+\item[{C\+Point}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_action_move_ae4983d0e4ae5c5d0454892284ac80d1b}
+
+\begin{DoxyItemize}
+\item 마우스 이벤트 핸들러이다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_action_select_a089552c6ce2adaf337602973fd98d84a}{C\+G3\+D\+Action\+Select}.
+
+\hypertarget{class_c_g3_d_action_move_a20e84aa5d874de2732421ce1b68156aa}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!On\+Mouse\+Move@{On\+Mouse\+Move}}
+\index{On\+Mouse\+Move@{On\+Mouse\+Move}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{On\+Mouse\+Move(\+U\+I\+N\+T n\+Flags, C\+Point point)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Move\+::\+On\+Mouse\+Move (
+\begin{DoxyParamCaption}
+\item[{U\+I\+N\+T}]{n\+Flags, }
+\item[{C\+Point}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_action_move_a20e84aa5d874de2732421ce1b68156aa}
+
+\begin{DoxyItemize}
+\item 마우스 이벤트 핸들러이다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_action_select_a570c8779b8f11cf26c8d62356d6ad1d2}{C\+G3\+D\+Action\+Select}.
+
+\hypertarget{class_c_g3_d_action_move_a5584227c9c0237210f35f24fa9ccd0c0}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!On\+R\+Button\+Down@{On\+R\+Button\+Down}}
+\index{On\+R\+Button\+Down@{On\+R\+Button\+Down}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{On\+R\+Button\+Down(\+U\+I\+N\+T n\+Flags, C\+Point point)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Move\+::\+On\+R\+Button\+Down (
+\begin{DoxyParamCaption}
+\item[{U\+I\+N\+T}]{n\+Flags, }
+\item[{C\+Point}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_action_move_a5584227c9c0237210f35f24fa9ccd0c0}
+
+\begin{DoxyItemize}
+\item 마우스 오른 버튼 클릭 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_action_base_af60805c7f847129a394b13e4f67b5b09}{C\+G3\+D\+Action\+Base}.
+
+\hypertarget{class_c_g3_d_action_move_ac52089a819f969304c8918f1a87411aa}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!Run@{Run}}
+\index{Run@{Run}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{Run()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Move\+::\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{class_c_g3_d_action_move_ac52089a819f969304c8918f1a87411aa}
+
+
+Reimplemented in \hyperlink{class_c_g3_d_action_copy_a6f6fcdefa9134fe9af6db0933b1db95c}{C\+G3\+D\+Action\+Copy}, \hyperlink{class_c_g3_d_action_rotate2_d_a5d358d4ec96dade0d5abefbe0ad346fa}{C\+G3\+D\+Action\+Rotate2\+D}, and \hyperlink{class_c_g3_d_action_scale_abbdf9f2b0878ded769ee0d19b4778516}{C\+G3\+D\+Action\+Scale}.
+
+\hypertarget{class_c_g3_d_action_move_a0f8a21c7c120a78f827895f16ab412e0}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!Start\+Action@{Start\+Action}}
+\index{Start\+Action@{Start\+Action}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{Start\+Action()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Move\+::\+Start\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_action_move_a0f8a21c7c120a78f827895f16ab412e0}
+
+\begin{DoxyItemize}
+\item action이 시작되면서 action manager에 으해서 가장 먼저 호출되는 가상함수이다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_action_select_a45e05f0516abe52906246744a548f003}{C\+G3\+D\+Action\+Select}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_g3_d_action_move_a7b4b01175e91ee12c2dc6714372acdbf}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!m\+\_\+pt\+Move@{m\+\_\+pt\+Move}}
+\index{m\+\_\+pt\+Move@{m\+\_\+pt\+Move}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{m\+\_\+pt\+Move}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Point3\+D} C\+G3\+D\+Action\+Move\+::m\+\_\+pt\+Move\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_action_move_a7b4b01175e91ee12c2dc6714372acdbf}
+\hypertarget{class_c_g3_d_action_move_a601d0a4ab20bc6722313042f9bd26610}{}\index{C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}!m\+\_\+v\+Moved@{m\+\_\+v\+Moved}}
+\index{m\+\_\+v\+Moved@{m\+\_\+v\+Moved}!C\+G3\+D\+Action\+Move@{C\+G3\+D\+Action\+Move}}
+\subsubsection[{m\+\_\+v\+Moved}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Vector3\+D} C\+G3\+D\+Action\+Move\+::m\+\_\+v\+Moved\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_action_move_a601d0a4ab20bc6722313042f9bd26610}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g3_d_action_move_8h}{G3\+D\+Action\+Move.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g3_d_action_move_8cpp}{G3\+D\+Action\+Move.\+cpp}\end{DoxyCompactItemize}

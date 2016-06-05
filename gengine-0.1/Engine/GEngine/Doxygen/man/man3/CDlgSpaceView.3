@@ -1,0 +1,167 @@
+.TH "CDlgSpaceView" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CDlgSpaceView \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <DlgSpaceView\&.h>\fP
+.PP
+Inherits CDialogEx\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum { \fBIDD\fP = IDD_DIALOG_SPACE_VIEW }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCDlgSpaceView\fP (CWnd *pParent=NULL)"
+.br
+.ti -1c
+.RI "virtual \fB~CDlgSpaceView\fP ()"
+.br
+.ti -1c
+.RI "virtual BOOL \fBOnInitDialog\fP ()"
+.br
+.ti -1c
+.RI "afx_msg BOOL \fBOnMouseWheel\fP (UINT nFlags, short zDelta, CPoint pt)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnMouseMove\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnPaint\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnSize\fP (UINT nType, int cx, int cy)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnBnClickedButtonGlauncherDraw\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnBnClickedButtonGlauncherDeleteall\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnBnClickedButtonGlauncherDrawRealtime\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnMButtonUp\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnBnClickedButtonGlauncherSelect\fP ()"
+.br
+.ti -1c
+.RI "virtual BOOL \fBPreTranslateMessage\fP (MSG *pMsg)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnBnClickedButtonGlauncherUnselect\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnBnClickedCheckViewSpace\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "UINT \fBm_iObjectNum\fP"
+.br
+.ti -1c
+.RI "long \fBm_nAllObjectNum\fP"
+.br
+.ti -1c
+.RI "long \fBm_nAllSpaceNum\fP"
+.br
+.ti -1c
+.RI "long \fBm_nVisibleSpaceNum\fP"
+.br
+.ti -1c
+.RI "CButton \fBm_chkViewSpace\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBDoDataExchange\fP (CDataExchange *pDX)"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "anonymous enum"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIIDD \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CDlgSpaceView::CDlgSpaceView (CWnd * pParent = \fCNULL\fP)"
+
+.SS "CDlgSpaceView::~CDlgSpaceView ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CDlgSpaceView::DoDataExchange (CDataExchange * pDX)\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "void CDlgSpaceView::OnBnClickedButtonGlauncherDeleteall ()"
+
+.IP "\(bu" 2
+모든 객체 삭제 
+.PP
+
+.SS "void CDlgSpaceView::OnBnClickedButtonGlauncherDraw ()"
+
+.SS "void CDlgSpaceView::OnBnClickedButtonGlauncherDrawRealtime ()"
+
+.SS "void CDlgSpaceView::OnBnClickedButtonGlauncherSelect ()"
+
+.IP "\(bu" 2
+select action을 실행한다\&. 
+.PP
+
+.SS "void CDlgSpaceView::OnBnClickedButtonGlauncherUnselect ()"
+
+.IP "\(bu" 2
+선택해제 한다\&. 
+.PP
+
+.SS "void CDlgSpaceView::OnBnClickedCheckViewSpace ()"
+
+.SS "BOOL CDlgSpaceView::OnInitDialog ()\fC [virtual]\fP"
+
+.SS "void CDlgSpaceView::OnMButtonUp (UINT nFlags, CPoint point)"
+
+.SS "void CDlgSpaceView::OnMouseMove (UINT nFlags, CPoint point)"
+
+.SS "BOOL CDlgSpaceView::OnMouseWheel (UINT nFlags, short zDelta, CPoint pt)"
+
+.SS "void CDlgSpaceView::OnPaint ()"
+
+.SS "void CDlgSpaceView::OnSize (UINT nType, int cx, int cy)"
+
+.SS "BOOL CDlgSpaceView::PreTranslateMessage (MSG * pMsg)\fC [virtual]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "CButton CDlgSpaceView::m_chkViewSpace"
+
+.SS "UINT CDlgSpaceView::m_iObjectNum"
+
+.SS "long CDlgSpaceView::m_nAllObjectNum"
+
+.SS "long CDlgSpaceView::m_nAllSpaceNum"
+
+.SS "long CDlgSpaceView::m_nVisibleSpaceNum"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

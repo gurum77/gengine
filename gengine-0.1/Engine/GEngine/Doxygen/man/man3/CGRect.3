@@ -1,0 +1,168 @@
+.TH "CGRect" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGRect \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GRect\&.h>\fP
+.PP
+Inherited by \fBCGCube\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetLeft\fP (const \fBGDOUBLE\fP &dLeft)"
+.br
+.ti -1c
+.RI "const \fBGDOUBLE\fP & \fBGetLeft\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetTop\fP (const \fBGDOUBLE\fP &dTop)"
+.br
+.ti -1c
+.RI "const \fBGDOUBLE\fP \fBGetTop\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetRight\fP (const \fBGDOUBLE\fP &dRight)"
+.br
+.ti -1c
+.RI "const \fBGDOUBLE\fP \fBGetRight\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetBottom\fP (const \fBGDOUBLE\fP &dBottom)"
+.br
+.ti -1c
+.RI "const \fBGDOUBLE\fP \fBGetBottom\fP () const "
+.br
+.ti -1c
+.RI "\fBCGPoint2D\fP \fBGetCenter\fP () const "
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBGetWidth\fP () const "
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBGetHeight\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetByPoint2D\fP (const \fBCGPoint2D\fP &point2D)"
+.br
+.ti -1c
+.RI "void \fBMergeByPoint2D\fP (const \fBCGPoint2D\fP &point2D)"
+.br
+.ti -1c
+.RI "void \fBMergeByRect\fP (const \fBCGRect\fP &rect)"
+.br
+.ti -1c
+.RI "void \fBInit\fP ()"
+.br
+.ti -1c
+.RI "BOOL \fBIsEmpty\fP () const "
+.br
+.ti -1c
+.RI "BOOL \fBIsIncludePos\fP (const \fBCGPoint2D\fP &pt) const "
+.br
+.ti -1c
+.RI "\fBCGRect\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGRect\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBm_dLeft\fP"
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBm_dTop\fP"
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBm_dRight\fP"
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBm_dBottom\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+rect 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGRect::CGRect ()"
+
+.SS "CGRect::~CGRect ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBGDOUBLE\fP CGRect::GetBottom () const"
+
+.SS "\fBCGPoint2D\fP CGRect::GetCenter () const"
+
+.SS "\fBGDOUBLE\fP CGRect::GetHeight () const"
+
+.SS "const \fBGDOUBLE\fP & CGRect::GetLeft () const"
+
+.SS "const \fBGDOUBLE\fP CGRect::GetRight () const"
+
+.SS "const \fBGDOUBLE\fP CGRect::GetTop () const"
+
+.SS "\fBGDOUBLE\fP CGRect::GetWidth () const"
+
+.SS "void CGRect::Init ()"
+
+.SS "BOOL CGRect::IsEmpty () const"
+
+.IP "\(bu" 2
+값이 없는지? 
+.PP
+
+.SS "BOOL CGRect::IsIncludePos (const \fBCGPoint2D\fP & pt) const"
+
+.IP "\(bu" 2
+좌표를 포함하고 있는지 판단한다\&. 
+.PP
+
+.SS "void CGRect::MergeByPoint2D (const \fBCGPoint2D\fP & point2D)"
+
+.IP "\(bu" 2
+point2D를 merge한다\&. 
+.PP
+
+.SS "void CGRect::MergeByRect (const \fBCGRect\fP & rect)"
+
+.SS "void CGRect::SetBottom (const \fBGDOUBLE\fP & dBottom)"
+
+.SS "void CGRect::SetByPoint2D (const \fBCGPoint2D\fP & point2D)"
+
+.IP "\(bu" 2
+point2D로 초기화한다\&. 
+.PP
+
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_END\fP \fBGIMPLEMENT_OPERATOR_EQUAL_END\fP void CGRect::SetLeft (const \fBGDOUBLE\fP & dLeft)"
+
+.SS "void CGRect::SetRight (const \fBGDOUBLE\fP & dRight)"
+
+.SS "void CGRect::SetTop (const \fBGDOUBLE\fP & dTop)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGDOUBLE\fP CGRect::m_dBottom\fC [protected]\fP"
+
+.SS "\fBGDOUBLE\fP CGRect::m_dLeft\fC [protected]\fP"
+
+.SS "\fBGDOUBLE\fP CGRect::m_dRight\fC [protected]\fP"
+
+.SS "\fBGDOUBLE\fP CGRect::m_dTop\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

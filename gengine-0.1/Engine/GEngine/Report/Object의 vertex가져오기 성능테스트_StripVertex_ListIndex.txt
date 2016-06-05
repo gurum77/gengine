@@ -1,0 +1,15 @@
+100
+type == 0
+	Time to GetAllStripVertexListIndexByPrimitiveTopology : 0.001958 sec
+	Time to GetAllStripVertexListIndexByPrimitiveTopology : 0.098826 sec
+	Time to GetAllStripVertexListIndexByPrimitiveTopology : 0.002435 sec
+type == 2
+	Time to GetAllStripVertexListIndexByPrimitiveTopology : 0.002002 sec
+	Time to GetAllStripVertexListIndexByPrimitiveTopology : 0.083210 sec
+	Time to GetAllStripVertexListIndexByPrimitiveTopology : 0.002440 sec
+	
+500
+type == 2
+	Time to GetAllStripVertexListIndexByPrimitiveTopology : 0.059492 sec
+	Time to GetAllStripVertexListIndexByPrimitiveTopology : 2.127233 sec
+	Time to GetAllStripVertexListIndexByPrimitiveTopology : 0.060128 sec

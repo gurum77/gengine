@@ -1,0 +1,45 @@
+\hypertarget{_g_d_b_only_include_8h}{}\section{D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+D\+B/\+G\+D\+B\+Only\+Include.h File Reference}
+\label{_g_d_b_only_include_8h}\index{D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+D\+B/\+G\+D\+B\+Only\+Include.\+h@{D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+D\+B/\+G\+D\+B\+Only\+Include.\+h}}
+{\ttfamily \#include \char`\"{}G\+Geometry\+Generator.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Object\+Base.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Compound\+Object\+Base.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Object\+Point2\+D.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Object\+Line2\+D.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Object\+Polyline2\+D.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Object\+Polyline3\+D.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Object\+Triangle\+Strip.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Object\+Cylinder.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Object\+Sphere.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Object\+Box.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Object\+Circle3\+D.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Object\+Car.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Object\+Text.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Object\+Face.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Object\+Manager.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Property.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Property\+Manager.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+Font\+Manager.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G3\+D\+D\+B.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_g_d_b_only_include_8h_ac88387f2673aef2825e9b015146b55b5}{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+O\+B\+J\+E\+C\+T}(class\+\_\+name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_g_d_b_only_include_8h_ac88387f2673aef2825e9b015146b55b5}{}\index{G\+D\+B\+Only\+Include.\+h@{G\+D\+B\+Only\+Include.\+h}!G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+O\+B\+J\+E\+C\+T@{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+O\+B\+J\+E\+C\+T}}
+\index{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+O\+B\+J\+E\+C\+T@{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+O\+B\+J\+E\+C\+T}!G\+D\+B\+Only\+Include.\+h@{G\+D\+B\+Only\+Include.\+h}}
+\subsubsection[{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+O\+B\+J\+E\+C\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+O\+B\+J\+E\+C\+T(
+\begin{DoxyParamCaption}
+\item[{}]{class\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{_g_d_b_only_include_8h_ac88387f2673aef2825e9b015146b55b5}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{virtual} \hyperlink{class_c_g_object_base}{CGObjectBase} *NewObject() \{ \textcolor{keywordflow}{return} \hyperlink{_g_types_8h_a73be456ef69cc73525c258ce3153f80a}{GPOOL\_NEW}(class\_name); \};\(\backslash\)
+    virtual \hyperlink{class_c_g_object_base}{CGObjectBase}& operator=(\textcolor{keyword}{const} \hyperlink{class_c_g_object_base}{CGObjectBase} &d) \{ *((class\_name*)\textcolor{keyword}{this}) =
+       ((class\_name&)d); \textcolor{keywordflow}{return} *\textcolor{keyword}{this}; \};\hyperlink{_g_types_8h_a5535ea81d29b9ee80478611ac933dc8c}{\(\backslash\)}
+\hyperlink{_g_types_8h_a5535ea81d29b9ee80478611ac933dc8c}{    GDEFINE\_POOL}(class\_name)\hyperlink{_g_types_8h_a5be2e153a8bb6067842300198305307a}{\(\backslash\)}
+\hyperlink{_g_types_8h_a5be2e153a8bb6067842300198305307a}{    GDEFINE\_OPERATOR\_COPY}(class\_name)\(\backslash\)
+\end{DoxyCode}

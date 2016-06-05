@@ -1,0 +1,97 @@
+.TH "CGCylinder" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGCylinder \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GCylinder\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetPos\fP (const \fBCGPoint3D\fP &pt, const \fBGBOOL\fP &bStt)"
+.br
+.ti -1c
+.RI "const \fBCGPoint3D\fP & \fBGetPos\fP (const \fBGBOOL\fP &bStt) const "
+.br
+.ti -1c
+.RI "void \fBSetRadius\fP (const \fBGFLOAT\fP &fRadius, const \fBGBOOL\fP &bStt)"
+.br
+.ti -1c
+.RI "const \fBGFLOAT\fP & \fBGetRadius\fP (const \fBGBOOL\fP &bStt) const "
+.br
+.ti -1c
+.RI "\fBGDOUBLE\fP \fBGetHeight\fP () const "
+.br
+.ti -1c
+.RI "\fBCGVector3D\fP \fBGetVector\fP () const "
+.br
+.ti -1c
+.RI "void \fBMove\fP (const \fBCGVector3D\fP &vMove)"
+.br
+.ti -1c
+.RI "void \fBRotate\fP (const \fBCGPoint3D\fP &ptBase, const \fBCGVector3D\fP &vAxis, const \fBCGPoint2D\fP &vAng)"
+.br
+.ti -1c
+.RI "void \fBScale\fP (const \fBCGPoint3D\fP &ptBase, const \fBGDOUBLE\fP &dScale)"
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGCylinder\fP)"
+.br
+.ti -1c
+.RI "\fBCGCylinder\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGCylinder\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+cylinder 데이타 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGCylinder::CGCylinder ()"
+
+.SS "CGCylinder::~CGCylinder ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CGCylinder::GDEFINE_OPERATOR_COPY (\fBCGCylinder\fP)"
+
+.SS "\fBGDOUBLE\fP CGCylinder::GetHeight () const"
+
+.IP "\(bu" 2
+cylinder 의 높이를 계산해서 리턴한다\&. 
+.PP
+
+.SS "const \fBCGPoint3D\fP & CGCylinder::GetPos (const \fBGBOOL\fP & bStt) const"
+
+.SS "const \fBGFLOAT\fP & CGCylinder::GetRadius (const \fBGBOOL\fP & bStt) const"
+
+.SS "\fBCGVector3D\fP CGCylinder::GetVector () const"
+
+.IP "\(bu" 2
+cylinder의 방향을 계산해서 리턴한다\&. 
+.PP
+
+.SS "void CGCylinder::Move (const \fBCGVector3D\fP & vMove)"
+
+.SS "void CGCylinder::Rotate (const \fBCGPoint3D\fP & ptBase, const \fBCGVector3D\fP & vAxis, const \fBCGPoint2D\fP & vAng)"
+
+.SS "void CGCylinder::Scale (const \fBCGPoint3D\fP & ptBase, const \fBGDOUBLE\fP & dScale)"
+
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_END\fP void CGCylinder::SetPos (const \fBCGPoint3D\fP & pt, const \fBGBOOL\fP & bStt)"
+
+.SS "void CGCylinder::SetRadius (const \fBGFLOAT\fP & fRadius, const \fBGBOOL\fP & bStt)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

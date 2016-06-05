@@ -1,0 +1,43 @@
+\hypertarget{shapes_8h}{}\section{D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Common/common/shapes.h File Reference}
+\label{shapes_8h}\index{D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Common/common/shapes.\+h@{D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Common/common/shapes.\+h}}
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$cstddef$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structp2t_1_1_point}{p2t\+::\+Point}
+\item 
+struct \hyperlink{structp2t_1_1_edge}{p2t\+::\+Edge}
+\item 
+class \hyperlink{classp2t_1_1_triangle}{p2t\+::\+Triangle}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacep2t}{p2t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacep2t_ab82db1108f5abd29df4537180f6e639c}{p2t\+::cmp} (const Point $\ast$a, const Point $\ast$b)
+\item 
+Point \hyperlink{namespacep2t_a98db07c78d588aa4e68ffdaadd503d45}{p2t\+::operator+} (const Point \&a, const Point \&b)
+\begin{DoxyCompactList}\small\item\em Add two points\+\_\+ component-\/wise. \end{DoxyCompactList}\item 
+Point \hyperlink{namespacep2t_adebd7f2104fff7945192e249aaeed77f}{p2t\+::operator-\/} (const Point \&a, const Point \&b)
+\begin{DoxyCompactList}\small\item\em Subtract two points\+\_\+ component-\/wise. \end{DoxyCompactList}\item 
+Point \hyperlink{namespacep2t_a4f005ffa2a5d03029a3619fb8110c4a9}{p2t\+::operator$\ast$} (double s, const Point \&a)
+\begin{DoxyCompactList}\small\item\em Multiply point by scalar. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacep2t_ac84d990aed3d2218987d6846a8249fb8}{p2t\+::operator==} (const Point \&a, const Point \&b)
+\item 
+bool \hyperlink{namespacep2t_aef209c6c873f146ba2c2ff1f2174f9f6}{p2t\+::operator!=} (const Point \&a, const Point \&b)
+\item 
+double \hyperlink{namespacep2t_a7f992d12c1c4fecfd9914e9f6d871f2d}{p2t\+::\+Dot} (const Point \&a, const Point \&b)
+\begin{DoxyCompactList}\small\item\em Peform the dot product on two vectors. \end{DoxyCompactList}\item 
+double \hyperlink{namespacep2t_afc804f5616661c8a9ddb798cdeb4564e}{p2t\+::\+Cross} (const Point \&a, const Point \&b)
+\begin{DoxyCompactList}\small\item\em Perform the cross product on two vectors. In 2\+D this produces a scalar. \end{DoxyCompactList}\item 
+Point \hyperlink{namespacep2t_aea08cc5eefe8a698251b03beabff716a}{p2t\+::\+Cross} (const Point \&a, double s)
+\item 
+Point \hyperlink{namespacep2t_a4feb1c03edd4b6c664a920e540c2395e}{p2t\+::\+Cross} (const double s, const Point \&a)
+\end{DoxyCompactItemize}

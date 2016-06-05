@@ -1,0 +1,133 @@
+.TH "CG3DActionCreateCircle" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CG3DActionCreateCircle \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <G3DActionCreateCircle\&.h>\fP
+.PP
+Inherits \fBCG3DActionBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBStartAction\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBEndAction\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBOnLButtonDown\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "virtual void \fBOnMouseMove\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "virtual void \fBCreatePreview\fP ()"
+.br
+.ti -1c
+.RI "\fBGDEFINE_REGISTE_ACTION\fP (\fBCG3DActionCreateCircle\fP,'CREATE CIRCLE')"
+.br
+.ti -1c
+.RI "\fBCG3DActionCreateCircle\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~CG3DActionCreateCircle\fP ()"
+.br
+.in -1c
+.SS "Protected Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBStep\fP { \fBeStepCenter\fP, \fBeStepRadius\fP }"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBStep\fP \fBm_eStep\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+원 그리기 액션 
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCG3DActionCreateCircle::Step\fP\fC [protected]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeStepCenter \fP\fP
+.TP
+\fB\fIeStepRadius \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CG3DActionCreateCircle::CG3DActionCreateCircle ()"
+
+.SS "CG3DActionCreateCircle::~CG3DActionCreateCircle ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CG3DActionCreateCircle::CreatePreview ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+action에 미리보기 객체가 있는 경우 이 함수를 재정의 하여 미리보기 객체를 그리도록 구현해야 한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionBase\fP\&.
+.SS "void CG3DActionCreateCircle::EndAction ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+action이 끝날때 호출되어야 하는 가상함수이다\&.
+.IP "\(bu" 2
+개발자가 직접 호출해야 한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionBase\fP\&.
+.SS "CG3DActionCreateCircle::GDEFINE_REGISTE_ACTION (\fBCG3DActionCreateCircle\fP, 'CREATE CIRCLE')"
+
+.SS "void CG3DActionCreateCircle::OnLButtonDown (UINT nFlags, CPoint point)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+마우스 이벤트 핸들러이다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionBase\fP\&.
+.SS "void CG3DActionCreateCircle::OnMouseMove (UINT nFlags, CPoint point)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+마우스 이벤트 핸들러이다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionBase\fP\&.
+.SS "void CG3DActionCreateCircle::StartAction ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+action이 시작되면서 action manager에 으해서 가장 먼저 호출되는 가상함수이다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionBase\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBStep\fP CG3DActionCreateCircle::m_eStep\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

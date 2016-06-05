@@ -1,0 +1,108 @@
+.TH "Vec2f" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Vec2f \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GQuadTree\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVec2f\fP ()"
+.br
+.ti -1c
+.RI "\fBVec2f\fP (const float &X, const float &Y)"
+.br
+.ti -1c
+.RI "\fBVec2f\fP \fBoperator*\fP (const float &scale) const "
+.br
+.ti -1c
+.RI "\fBVec2f\fP \fBoperator/\fP (const float &scale) const "
+.br
+.ti -1c
+.RI "\fBVec2f\fP \fBoperator+\fP (const \fBVec2f\fP &other) const "
+.br
+.ti -1c
+.RI "\fBVec2f\fP \fBoperator\-\fP (const \fBVec2f\fP &other) const "
+.br
+.ti -1c
+.RI "\fBVec2f\fP \fBoperator\-\fP () const "
+.br
+.ti -1c
+.RI "const \fBVec2f\fP & \fBoperator*=\fP (const float &scale)"
+.br
+.ti -1c
+.RI "const \fBVec2f\fP & \fBoperator/=\fP (const float &scale)"
+.br
+.ti -1c
+.RI "const \fBVec2f\fP & \fBoperator+=\fP (const \fBVec2f\fP &other)"
+.br
+.ti -1c
+.RI "const \fBVec2f\fP & \fBoperator\-=\fP (const \fBVec2f\fP &other)"
+.br
+.ti -1c
+.RI "float \fBmagnitude\fP () const "
+.br
+.ti -1c
+.RI "float \fBmagnitudeSquared\fP () const "
+.br
+.ti -1c
+.RI "\fBVec2f\fP \fBnormalize\fP () const "
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float \fBx\fP"
+.br
+.ti -1c
+.RI "float \fBy\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Vec2f::Vec2f ()\fC [inline]\fP"
+
+.SS "Vec2f::Vec2f (const float & X, const float & Y)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "float Vec2f::magnitude () const\fC [inline]\fP"
+
+.SS "float Vec2f::magnitudeSquared () const\fC [inline]\fP"
+
+.SS "\fBVec2f\fP Vec2f::normalize () const\fC [inline]\fP"
+
+.SS "\fBVec2f\fP Vec2f::operator* (const float & scale) const\fC [inline]\fP"
+
+.SS "const \fBVec2f\fP& Vec2f::operator*= (const float & scale)\fC [inline]\fP"
+
+.SS "\fBVec2f\fP Vec2f::operator+ (const \fBVec2f\fP & other) const\fC [inline]\fP"
+
+.SS "const \fBVec2f\fP& Vec2f::operator+= (const \fBVec2f\fP & other)\fC [inline]\fP"
+
+.SS "\fBVec2f\fP Vec2f::operator\- (const \fBVec2f\fP & other) const\fC [inline]\fP"
+
+.SS "\fBVec2f\fP Vec2f::operator\- () const\fC [inline]\fP"
+
+.SS "const \fBVec2f\fP& Vec2f::operator\-= (const \fBVec2f\fP & other)\fC [inline]\fP"
+
+.SS "\fBVec2f\fP Vec2f::operator/ (const float & scale) const\fC [inline]\fP"
+
+.SS "const \fBVec2f\fP& Vec2f::operator/= (const float & scale)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "float Vec2f::x"
+
+.SS "float Vec2f::y"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

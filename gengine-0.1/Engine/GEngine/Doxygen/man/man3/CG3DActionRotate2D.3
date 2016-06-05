@@ -1,0 +1,78 @@
+.TH "CG3DActionRotate2D" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CG3DActionRotate2D \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <G3DActionRotate2D\&.h>\fP
+.PP
+Inherits \fBCG3DActionMove\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGDEFINE_REGISTE_ACTION\fP (\fBCG3DActionRotate2D\fP,'ROTATE2D')"
+.br
+.ti -1c
+.RI "\fBCG3DActionRotate2D\fP (void)"
+.br
+.ti -1c
+.RI "virtual \fB~CG3DActionRotate2D\fP (void)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBRun\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBMoveTempObject\fP ()"
+.br
+.ti -1c
+.RI "void \fBRotateSelectedObject\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+rotate action 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CG3DActionRotate2D::CG3DActionRotate2D (void)"
+
+.SS "CG3DActionRotate2D::~CG3DActionRotate2D (void)\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CG3DActionRotate2D::GDEFINE_REGISTE_ACTION (\fBCG3DActionRotate2D\fP, 'ROTATE2D')"
+
+.SS "void CG3DActionRotate2D::MoveTempObject ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.IP "\(bu" 2
+Temp object를 rotate한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionMove\fP\&.
+.SS "void CG3DActionRotate2D::RotateSelectedObject ()\fC [protected]\fP"
+
+.IP "\(bu" 2
+object를 copy한다\&. 
+.PP
+
+.SS "void CG3DActionRotate2D::Run ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBCG3DActionMove\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

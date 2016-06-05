@@ -1,0 +1,83 @@
+.TH "CG3DCallBackDrawingObject" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CG3DCallBackDrawingObject \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <G3DCallBackDrawingObject\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCG3DCallBackDrawingObject\fP ()"
+.br
+.ti -1c
+.RI "\fB~CG3DCallBackDrawingObject\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBDrawObjectPoint2D\fP (\fBCGDC\fP *pDC, const \fBCGObjectBase\fP *pObject)"
+.br
+.ti -1c
+.RI "static void \fBDrawObjectLine2D\fP (\fBCGDC\fP *pDC, const \fBCGObjectBase\fP *pObject)"
+.br
+.ti -1c
+.RI "static void \fBDrawObjectPolyline2D\fP (\fBCGDC\fP *pDC, const \fBCGObjectBase\fP *pObject)"
+.br
+.ti -1c
+.RI "static void \fBDrawObjectTriangleStrip\fP (\fBCGDC\fP *pDC, const \fBCGObjectBase\fP *pObject)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+drawing callback
+.IP "  \(bu" 4
+line2d 
+.PP
+
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CG3DCallBackDrawingObject::CG3DCallBackDrawingObject ()"
+
+.SS "CG3DCallBackDrawingObject::~CG3DCallBackDrawingObject ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CG3DCallBackDrawingObject::DrawObjectLine2D (\fBCGDC\fP * pDC, const \fBCGObjectBase\fP * pObject)\fC [static]\fP"
+
+.IP "\(bu" 2
+Line2D 를 그리는 callback 
+.PP
+
+.SS "void CG3DCallBackDrawingObject::DrawObjectPoint2D (\fBCGDC\fP * pDC, const \fBCGObjectBase\fP * pObject)\fC [static]\fP"
+
+.IP "\(bu" 2
+Point2D 를 그리는 callback 
+.PP
+
+.SS "void CG3DCallBackDrawingObject::DrawObjectPolyline2D (\fBCGDC\fP * pDC, const \fBCGObjectBase\fP * pObject)\fC [static]\fP"
+
+.IP "\(bu" 2
+Polyline2D 를 그리는 callback 
+.PP
+
+.SS "void CG3DCallBackDrawingObject::DrawObjectTriangleStrip (\fBCGDC\fP * pDC, const \fBCGObjectBase\fP * pObject)\fC [static]\fP"
+
+.IP "\(bu" 2
+triangle strip을 그리는 call back 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

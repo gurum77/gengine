@@ -1,0 +1,94 @@
+.TH "CCalendarBar" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CCalendarBar \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CalendarBar\&.h>\fP
+.PP
+Inherits CWnd\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCCalendarBar\fP ()"
+.br
+.ti -1c
+.RI "virtual BOOL \fBCreate\fP (const RECT &rect, CWnd *pParentWnd, UINT nID=(UINT)\-1)"
+.br
+.ti -1c
+.RI "virtual BOOL \fBPreTranslateMessage\fP (MSG *pMsg)"
+.br
+.ti -1c
+.RI "virtual \fB~CCalendarBar\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "afx_msg int \fBOnCreate\fP (LPCREATESTRUCT lpCreateStruct)"
+.br
+.ti -1c
+.RI "afx_msg BOOL \fBOnEraseBkgnd\fP (CDC *pDC)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnSize\fP (UINT nType, int cx, int cy)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnPaint\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnSetFocus\fP (CWnd *pOldWnd)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "CMonthCalCtrl \fBm_wndCalendar\fP"
+.br
+.ti -1c
+.RI "int \fBm_nMyCalendarsY\fP"
+.br
+.ti -1c
+.RI "CImageList \fBm_Images\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CCalendarBar::CCalendarBar ()"
+
+.SS "CCalendarBar::~CCalendarBar ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "BOOL CCalendarBar::Create (const RECT & rect, CWnd * pParentWnd, UINT nID = \fC(UINT)\-1\fP)\fC [virtual]\fP"
+
+.SS "int CCalendarBar::OnCreate (LPCREATESTRUCT lpCreateStruct)\fC [protected]\fP"
+
+.SS "BOOL CCalendarBar::OnEraseBkgnd (CDC * pDC)\fC [protected]\fP"
+
+.SS "void CCalendarBar::OnPaint ()\fC [protected]\fP"
+
+.SS "void CCalendarBar::OnSetFocus (CWnd * pOldWnd)\fC [protected]\fP"
+
+.SS "void CCalendarBar::OnSize (UINT nType, int cx, int cy)\fC [protected]\fP"
+
+.SS "BOOL CCalendarBar::PreTranslateMessage (MSG * pMsg)\fC [virtual]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "CImageList CCalendarBar::m_Images\fC [protected]\fP"
+
+.SS "int CCalendarBar::m_nMyCalendarsY\fC [protected]\fP"
+
+.SS "CMonthCalCtrl CCalendarBar::m_wndCalendar\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

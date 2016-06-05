@@ -1,0 +1,136 @@
+\hypertarget{class_c_calendar_bar}{}\section{C\+Calendar\+Bar Class Reference}
+\label{class_c_calendar_bar}\index{C\+Calendar\+Bar@{C\+Calendar\+Bar}}
+
+
+{\ttfamily \#include $<$Calendar\+Bar.\+h$>$}
+
+Inheritance diagram for C\+Calendar\+Bar\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_calendar_bar}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_calendar_bar_a80e9382c554edae25ed17648ec1e5f54}{C\+Calendar\+Bar} ()
+\item 
+virtual B\+O\+O\+L \hyperlink{class_c_calendar_bar_a63e33b61f13ffff5f02f89d475690536}{Create} (const R\+E\+C\+T \&rect, C\+Wnd $\ast$p\+Parent\+Wnd, U\+I\+N\+T n\+I\+D=(U\+I\+N\+T)-\/1)
+\item 
+virtual B\+O\+O\+L \hyperlink{class_c_calendar_bar_ab2240585a89fd3a97172ebcd90157a1b}{Pre\+Translate\+Message} (M\+S\+G $\ast$p\+Msg)
+\item 
+virtual \hyperlink{class_c_calendar_bar_a3ffd6e18195fbd73c8042e346da1f8e3}{$\sim$\+C\+Calendar\+Bar} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+afx\+\_\+msg int \hyperlink{class_c_calendar_bar_a433926b607504c33c9397d8ea1e7e128}{On\+Create} (L\+P\+C\+R\+E\+A\+T\+E\+S\+T\+R\+U\+C\+T lp\+Create\+Struct)
+\item 
+afx\+\_\+msg B\+O\+O\+L \hyperlink{class_c_calendar_bar_aa52db6de67ea1671951dd2e08ac8cbd2}{On\+Erase\+Bkgnd} (C\+D\+C $\ast$p\+D\+C)
+\item 
+afx\+\_\+msg void \hyperlink{class_c_calendar_bar_a06e736ce379fab94c8abe150eba4c4d7}{On\+Size} (U\+I\+N\+T n\+Type, int cx, int cy)
+\item 
+afx\+\_\+msg void \hyperlink{class_c_calendar_bar_a6b27805b7d959d222166dc5e4e09904b}{On\+Paint} ()
+\item 
+afx\+\_\+msg void \hyperlink{class_c_calendar_bar_a571ed2666caa05790866b7643a0f10ec}{On\+Set\+Focus} (C\+Wnd $\ast$p\+Old\+Wnd)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+C\+Month\+Cal\+Ctrl \hyperlink{class_c_calendar_bar_af5d7828517c10cb4d3012f223898fc8f}{m\+\_\+wnd\+Calendar}
+\item 
+int \hyperlink{class_c_calendar_bar_a55f9fc3decac1b735b1bd08cf544688e}{m\+\_\+n\+My\+Calendars\+Y}
+\item 
+C\+Image\+List \hyperlink{class_c_calendar_bar_a296434a5f88514ffbc3457e838836be9}{m\+\_\+\+Images}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_calendar_bar_a80e9382c554edae25ed17648ec1e5f54}{}\index{C\+Calendar\+Bar@{C\+Calendar\+Bar}!C\+Calendar\+Bar@{C\+Calendar\+Bar}}
+\index{C\+Calendar\+Bar@{C\+Calendar\+Bar}!C\+Calendar\+Bar@{C\+Calendar\+Bar}}
+\subsubsection[{C\+Calendar\+Bar()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Calendar\+Bar\+::\+C\+Calendar\+Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_calendar_bar_a80e9382c554edae25ed17648ec1e5f54}
+\hypertarget{class_c_calendar_bar_a3ffd6e18195fbd73c8042e346da1f8e3}{}\index{C\+Calendar\+Bar@{C\+Calendar\+Bar}!````~C\+Calendar\+Bar@{$\sim$\+C\+Calendar\+Bar}}
+\index{````~C\+Calendar\+Bar@{$\sim$\+C\+Calendar\+Bar}!C\+Calendar\+Bar@{C\+Calendar\+Bar}}
+\subsubsection[{$\sim$\+C\+Calendar\+Bar()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Calendar\+Bar\+::$\sim$\+C\+Calendar\+Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_calendar_bar_a3ffd6e18195fbd73c8042e346da1f8e3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_calendar_bar_a63e33b61f13ffff5f02f89d475690536}{}\index{C\+Calendar\+Bar@{C\+Calendar\+Bar}!Create@{Create}}
+\index{Create@{Create}!C\+Calendar\+Bar@{C\+Calendar\+Bar}}
+\subsubsection[{Create(const R\+E\+C\+T \&rect, C\+Wnd $\ast$p\+Parent\+Wnd, U\+I\+N\+T n\+I\+D=(\+U\+I\+N\+T)-\/1)}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L C\+Calendar\+Bar\+::\+Create (
+\begin{DoxyParamCaption}
+\item[{const R\+E\+C\+T \&}]{rect, }
+\item[{C\+Wnd $\ast$}]{p\+Parent\+Wnd, }
+\item[{U\+I\+N\+T}]{n\+I\+D = {\ttfamily (UINT)-\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_calendar_bar_a63e33b61f13ffff5f02f89d475690536}
+\hypertarget{class_c_calendar_bar_a433926b607504c33c9397d8ea1e7e128}{}\index{C\+Calendar\+Bar@{C\+Calendar\+Bar}!On\+Create@{On\+Create}}
+\index{On\+Create@{On\+Create}!C\+Calendar\+Bar@{C\+Calendar\+Bar}}
+\subsubsection[{On\+Create(\+L\+P\+C\+R\+E\+A\+T\+E\+S\+T\+R\+U\+C\+T lp\+Create\+Struct)}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Calendar\+Bar\+::\+On\+Create (
+\begin{DoxyParamCaption}
+\item[{L\+P\+C\+R\+E\+A\+T\+E\+S\+T\+R\+U\+C\+T}]{lp\+Create\+Struct}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_calendar_bar_a433926b607504c33c9397d8ea1e7e128}
+\hypertarget{class_c_calendar_bar_aa52db6de67ea1671951dd2e08ac8cbd2}{}\index{C\+Calendar\+Bar@{C\+Calendar\+Bar}!On\+Erase\+Bkgnd@{On\+Erase\+Bkgnd}}
+\index{On\+Erase\+Bkgnd@{On\+Erase\+Bkgnd}!C\+Calendar\+Bar@{C\+Calendar\+Bar}}
+\subsubsection[{On\+Erase\+Bkgnd(\+C\+D\+C $\ast$p\+D\+C)}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L C\+Calendar\+Bar\+::\+On\+Erase\+Bkgnd (
+\begin{DoxyParamCaption}
+\item[{C\+D\+C $\ast$}]{p\+D\+C}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_calendar_bar_aa52db6de67ea1671951dd2e08ac8cbd2}
+\hypertarget{class_c_calendar_bar_a6b27805b7d959d222166dc5e4e09904b}{}\index{C\+Calendar\+Bar@{C\+Calendar\+Bar}!On\+Paint@{On\+Paint}}
+\index{On\+Paint@{On\+Paint}!C\+Calendar\+Bar@{C\+Calendar\+Bar}}
+\subsubsection[{On\+Paint()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Calendar\+Bar\+::\+On\+Paint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_calendar_bar_a6b27805b7d959d222166dc5e4e09904b}
+\hypertarget{class_c_calendar_bar_a571ed2666caa05790866b7643a0f10ec}{}\index{C\+Calendar\+Bar@{C\+Calendar\+Bar}!On\+Set\+Focus@{On\+Set\+Focus}}
+\index{On\+Set\+Focus@{On\+Set\+Focus}!C\+Calendar\+Bar@{C\+Calendar\+Bar}}
+\subsubsection[{On\+Set\+Focus(\+C\+Wnd $\ast$p\+Old\+Wnd)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Calendar\+Bar\+::\+On\+Set\+Focus (
+\begin{DoxyParamCaption}
+\item[{C\+Wnd $\ast$}]{p\+Old\+Wnd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_calendar_bar_a571ed2666caa05790866b7643a0f10ec}
+\hypertarget{class_c_calendar_bar_a06e736ce379fab94c8abe150eba4c4d7}{}\index{C\+Calendar\+Bar@{C\+Calendar\+Bar}!On\+Size@{On\+Size}}
+\index{On\+Size@{On\+Size}!C\+Calendar\+Bar@{C\+Calendar\+Bar}}
+\subsubsection[{On\+Size(\+U\+I\+N\+T n\+Type, int cx, int cy)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Calendar\+Bar\+::\+On\+Size (
+\begin{DoxyParamCaption}
+\item[{U\+I\+N\+T}]{n\+Type, }
+\item[{int}]{cx, }
+\item[{int}]{cy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_calendar_bar_a06e736ce379fab94c8abe150eba4c4d7}
+\hypertarget{class_c_calendar_bar_ab2240585a89fd3a97172ebcd90157a1b}{}\index{C\+Calendar\+Bar@{C\+Calendar\+Bar}!Pre\+Translate\+Message@{Pre\+Translate\+Message}}
+\index{Pre\+Translate\+Message@{Pre\+Translate\+Message}!C\+Calendar\+Bar@{C\+Calendar\+Bar}}
+\subsubsection[{Pre\+Translate\+Message(\+M\+S\+G $\ast$p\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L C\+Calendar\+Bar\+::\+Pre\+Translate\+Message (
+\begin{DoxyParamCaption}
+\item[{M\+S\+G $\ast$}]{p\+Msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_calendar_bar_ab2240585a89fd3a97172ebcd90157a1b}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_calendar_bar_a296434a5f88514ffbc3457e838836be9}{}\index{C\+Calendar\+Bar@{C\+Calendar\+Bar}!m\+\_\+\+Images@{m\+\_\+\+Images}}
+\index{m\+\_\+\+Images@{m\+\_\+\+Images}!C\+Calendar\+Bar@{C\+Calendar\+Bar}}
+\subsubsection[{m\+\_\+\+Images}]{\setlength{\rightskip}{0pt plus 5cm}C\+Image\+List C\+Calendar\+Bar\+::m\+\_\+\+Images\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_calendar_bar_a296434a5f88514ffbc3457e838836be9}
+\hypertarget{class_c_calendar_bar_a55f9fc3decac1b735b1bd08cf544688e}{}\index{C\+Calendar\+Bar@{C\+Calendar\+Bar}!m\+\_\+n\+My\+Calendars\+Y@{m\+\_\+n\+My\+Calendars\+Y}}
+\index{m\+\_\+n\+My\+Calendars\+Y@{m\+\_\+n\+My\+Calendars\+Y}!C\+Calendar\+Bar@{C\+Calendar\+Bar}}
+\subsubsection[{m\+\_\+n\+My\+Calendars\+Y}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Calendar\+Bar\+::m\+\_\+n\+My\+Calendars\+Y\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_calendar_bar_a55f9fc3decac1b735b1bd08cf544688e}
+\hypertarget{class_c_calendar_bar_af5d7828517c10cb4d3012f223898fc8f}{}\index{C\+Calendar\+Bar@{C\+Calendar\+Bar}!m\+\_\+wnd\+Calendar@{m\+\_\+wnd\+Calendar}}
+\index{m\+\_\+wnd\+Calendar@{m\+\_\+wnd\+Calendar}!C\+Calendar\+Bar@{C\+Calendar\+Bar}}
+\subsubsection[{m\+\_\+wnd\+Calendar}]{\setlength{\rightskip}{0pt plus 5cm}C\+Month\+Cal\+Ctrl C\+Calendar\+Bar\+::m\+\_\+wnd\+Calendar\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_calendar_bar_af5d7828517c10cb4d3012f223898fc8f}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Engine\+Launcher/\hyperlink{_calendar_bar_8h}{Calendar\+Bar.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Engine\+Launcher/\hyperlink{_calendar_bar_8cpp}{Calendar\+Bar.\+cpp}\end{DoxyCompactItemize}

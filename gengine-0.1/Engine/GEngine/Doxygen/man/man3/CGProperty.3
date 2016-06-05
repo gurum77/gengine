@@ -1,0 +1,102 @@
+.TH "CGProperty" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGProperty \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GProperty\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetID\fP (const \fBGID\fP &ID)"
+.br
+.ti -1c
+.RI "const \fBGID\fP & \fBGetID\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetName\fP (const CString &strName)"
+.br
+.ti -1c
+.RI "const CString & \fBGetName\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetColor\fP (const \fBCGColor\fP &color)"
+.br
+.ti -1c
+.RI "const \fBCGColor\fP & \fBGetColor\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetAlpha\fP (const \fBGFLOAT\fP &fAlpha)"
+.br
+.ti -1c
+.RI "const \fBGFLOAT\fP & \fBGetAlpha\fP () const "
+.br
+.ti -1c
+.RI "CAtlString \fBGetStrProperty\fP () const "
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGProperty\fP)"
+.br
+.ti -1c
+.RI "\fBCGProperty\fP (const \fBCGProperty\fP &d)"
+.br
+.ti -1c
+.RI "\fBCGProperty\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGProperty\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+객체의 속성을 가진다\&. 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGProperty::CGProperty (const \fBCGProperty\fP & d)"
+
+.SS "CGProperty::CGProperty ()"
+
+.SS "CGProperty::~CGProperty ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CGProperty::GDEFINE_OPERATOR_COPY (\fBCGProperty\fP)"
+
+.SS "const \fBGFLOAT\fP & CGProperty::GetAlpha () const"
+
+.SS "const \fBCGColor\fP & CGProperty::GetColor () const"
+
+.SS "const \fBGID\fP & CGProperty::GetID () const"
+
+.SS "const CString & CGProperty::GetName () const"
+
+.SS "CAtlString CGProperty::GetStrProperty () const"
+
+.IP "\(bu" 2
+property를 string으로 리턴한다\&. 
+.PP
+
+.SS "void CGProperty::SetAlpha (const \fBGFLOAT\fP & fAlpha)"
+
+.SS "void CGProperty::SetColor (const \fBCGColor\fP & color)"
+
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_END\fP void CGProperty::SetID (const \fBGID\fP & ID)"
+
+.SS "void CGProperty::SetName (const CString & strName)"
+
+.IP "\(bu" 2
+property의 이름을 설정한다\&. 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

@@ -1,0 +1,220 @@
+\hypertarget{class_c_g_selection_manager}{}\section{C\+G\+Selection\+Manager Class Reference}
+\label{class_c_g_selection_manager}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+
+
+{\ttfamily \#include $<$G\+Selection\+Manager.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_g_selection_manager_aab4b2c908e93e2d28ab119d441d70b18}{Attr} \{ \hyperlink{class_c_g_selection_manager_aab4b2c908e93e2d28ab119d441d70b18a29b5aeff790fa542d67a6d8aaa38d5a7}{e\+Attr\+Dynamic\+Highlight} = 0x00000001, 
+\hyperlink{class_c_g_selection_manager_aab4b2c908e93e2d28ab119d441d70b18a9e17ca81225faa92b827e10d5bed659c}{e\+Attr\+Select\+All\+Sub\+Object} = 0x00000002
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_g_selection_manager_aa4da7a1df1f0c7dc45f011b6ed5eca1c}{Select} (\hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+void \hyperlink{class_c_g_selection_manager_aacfaa13ffa45ba8209d4a0f614a756eb}{Select} (C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object)
+\item 
+void \hyperlink{class_c_g_selection_manager_ae91f54f3dafb5d1f58157a30f342387c}{Un\+Select} (\hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+void \hyperlink{class_c_g_selection_manager_ae6367522d4e57d57346ae54ea0a6eb03}{Unselect\+All} ()
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_selection_manager_a3290a680a184c830fb1632cac97b3973}{Is\+Selected} (\hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+void \hyperlink{class_c_g_selection_manager_a2ba62850c8892b94deee3503992cf29f}{Redraw} ()
+\item 
+void \hyperlink{class_c_g_selection_manager_a64aa504d70f8e93631181c0aff2fcaaa}{Set\+View} (\hyperlink{class_c_g3_d_view}{C\+G3\+D\+View} $\ast$p\+View)
+\item 
+void \hyperlink{class_c_g_selection_manager_ae379da48212e5d9df4a12fc32bbd7f9e}{Set\+View\+Layer\+Name} (const C\+String \&str\+View\+Layer\+Name)
+\item 
+const C\+String \& \hyperlink{class_c_g_selection_manager_aed946eb76c5c75bcda1c2c15af6fd523}{Get\+View\+Layer\+Name} () const 
+\item 
+void \hyperlink{class_c_g_selection_manager_aabb3c7b605a91d7549c31392503a2bbd}{Set\+Pick\+Box\+Size} (const \hyperlink{_g_types_8h_ac7dd75e8df268a0368c6cb433764fdcb}{G\+S\+I\+Z\+E} \&pick\+Box\+Size)
+\item 
+const \hyperlink{_g_types_8h_ac7dd75e8df268a0368c6cb433764fdcb}{G\+S\+I\+Z\+E} \& \hyperlink{class_c_g_selection_manager_a1aede63c1207f11cf2239888650409a8}{Get\+Pick\+Box\+Size} () const 
+\item 
+void \hyperlink{class_c_g_selection_manager_af44239e28ef601284f9b2ab13b09e30f}{Set\+Attr} (const \hyperlink{class_c_g_selection_manager_aab4b2c908e93e2d28ab119d441d70b18}{Attr} \&e\+Attr, const \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \&b\+Set)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_selection_manager_ae335adbc002bb35ef57e27aacac983f1}{Is\+Attr} (const \hyperlink{class_c_g_selection_manager_aab4b2c908e93e2d28ab119d441d70b18}{Attr} \&e\+Attr) const 
+\item 
+void \hyperlink{class_c_g_selection_manager_ad36f38abdece837bac5416c15512c726}{Get\+All\+Object} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object)
+\item 
+\hyperlink{class_c_g_selection_manager_a11aa3fa97a7308e8cda7d71cd80b6673}{C\+G\+Selection\+Manager} ()
+\item 
+\hyperlink{class_c_g_selection_manager_aac6b5710af3a1a5ead867b214f7e2268}{$\sim$\+C\+G\+Selection\+Manager} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item object 선택 관리자.
+\item object의 선택상황을 관리한다. 
+\end{DoxyItemize}
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_c_g_selection_manager_aab4b2c908e93e2d28ab119d441d70b18}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Attr@{Attr}}
+\index{Attr@{Attr}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Attr}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+G\+Selection\+Manager\+::\+Attr}}\label{class_c_g_selection_manager_aab4b2c908e93e2d28ab119d441d70b18}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+Attr\+Dynamic\+Highlight@{e\+Attr\+Dynamic\+Highlight}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!e\+Attr\+Dynamic\+Highlight@{e\+Attr\+Dynamic\+Highlight}}\item[{\em 
+\hypertarget{class_c_g_selection_manager_aab4b2c908e93e2d28ab119d441d70b18a29b5aeff790fa542d67a6d8aaa38d5a7}{}e\+Attr\+Dynamic\+Highlight\label{class_c_g_selection_manager_aab4b2c908e93e2d28ab119d441d70b18a29b5aeff790fa542d67a6d8aaa38d5a7}
+}]\index{e\+Attr\+Select\+All\+Sub\+Object@{e\+Attr\+Select\+All\+Sub\+Object}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!e\+Attr\+Select\+All\+Sub\+Object@{e\+Attr\+Select\+All\+Sub\+Object}}\item[{\em 
+\hypertarget{class_c_g_selection_manager_aab4b2c908e93e2d28ab119d441d70b18a9e17ca81225faa92b827e10d5bed659c}{}e\+Attr\+Select\+All\+Sub\+Object\label{class_c_g_selection_manager_aab4b2c908e93e2d28ab119d441d70b18a9e17ca81225faa92b827e10d5bed659c}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g_selection_manager_a11aa3fa97a7308e8cda7d71cd80b6673}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{C\+G\+Selection\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Selection\+Manager\+::\+C\+G\+Selection\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_selection_manager_a11aa3fa97a7308e8cda7d71cd80b6673}
+\hypertarget{class_c_g_selection_manager_aac6b5710af3a1a5ead867b214f7e2268}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!````~C\+G\+Selection\+Manager@{$\sim$\+C\+G\+Selection\+Manager}}
+\index{````~C\+G\+Selection\+Manager@{$\sim$\+C\+G\+Selection\+Manager}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{$\sim$\+C\+G\+Selection\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Selection\+Manager\+::$\sim$\+C\+G\+Selection\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_selection_manager_aac6b5710af3a1a5ead867b214f7e2268}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g_selection_manager_ad36f38abdece837bac5416c15512c726}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Get\+All\+Object@{Get\+All\+Object}}
+\index{Get\+All\+Object@{Get\+All\+Object}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Get\+All\+Object(\+G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Selection\+Manager\+::\+Get\+All\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_selection_manager_ad36f38abdece837bac5416c15512c726}
+
+\begin{DoxyItemize}
+\item 선택 한 object를 가져온다. 
+\end{DoxyItemize}\hypertarget{class_c_g_selection_manager_a1aede63c1207f11cf2239888650409a8}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Get\+Pick\+Box\+Size@{Get\+Pick\+Box\+Size}}
+\index{Get\+Pick\+Box\+Size@{Get\+Pick\+Box\+Size}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Get\+Pick\+Box\+Size() const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf G\+S\+I\+Z\+E} \& C\+G\+Selection\+Manager\+::\+Get\+Pick\+Box\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_selection_manager_a1aede63c1207f11cf2239888650409a8}
+\hypertarget{class_c_g_selection_manager_aed946eb76c5c75bcda1c2c15af6fd523}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Get\+View\+Layer\+Name@{Get\+View\+Layer\+Name}}
+\index{Get\+View\+Layer\+Name@{Get\+View\+Layer\+Name}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Get\+View\+Layer\+Name() const }]{\setlength{\rightskip}{0pt plus 5cm}const C\+String \& C\+G\+Selection\+Manager\+::\+Get\+View\+Layer\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_selection_manager_aed946eb76c5c75bcda1c2c15af6fd523}
+\hypertarget{class_c_g_selection_manager_ae335adbc002bb35ef57e27aacac983f1}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Is\+Attr@{Is\+Attr}}
+\index{Is\+Attr@{Is\+Attr}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Is\+Attr(const Attr \&e\+Attr) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Selection\+Manager\+::\+Is\+Attr (
+\begin{DoxyParamCaption}
+\item[{const {\bf Attr} \&}]{e\+Attr}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_selection_manager_ae335adbc002bb35ef57e27aacac983f1}
+\hypertarget{class_c_g_selection_manager_a3290a680a184c830fb1632cac97b3973}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Is\+Selected@{Is\+Selected}}
+\index{Is\+Selected@{Is\+Selected}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Is\+Selected(\+C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Selection\+Manager\+::\+Is\+Selected (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_selection_manager_a3290a680a184c830fb1632cac97b3973}
+
+\begin{DoxyItemize}
+\item object가 선택되어 있는지 판단한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_selection_manager_a2ba62850c8892b94deee3503992cf29f}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Redraw@{Redraw}}
+\index{Redraw@{Redraw}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Redraw()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Selection\+Manager\+::\+Redraw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_selection_manager_a2ba62850c8892b94deee3503992cf29f}
+
+\begin{DoxyItemize}
+\item 화면에 rendering된 상태의 object의 vertex들을 선택상태로 다시 그리기를 한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_selection_manager_aa4da7a1df1f0c7dc45f011b6ed5eca1c}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Select@{Select}}
+\index{Select@{Select}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Select(\+C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Selection\+Manager\+::\+Select (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_selection_manager_aa4da7a1df1f0c7dc45f011b6ed5eca1c}
+
+\begin{DoxyItemize}
+\item object를 선택표시한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_selection_manager_aacfaa13ffa45ba8209d4a0f614a756eb}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Select@{Select}}
+\index{Select@{Select}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Select(\+C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Selection\+Manager\+::\+Select (
+\begin{DoxyParamCaption}
+\item[{C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_selection_manager_aacfaa13ffa45ba8209d4a0f614a756eb}
+
+\begin{DoxyItemize}
+\item object 여러개를 선택한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_selection_manager_af44239e28ef601284f9b2ab13b09e30f}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Set\+Attr@{Set\+Attr}}
+\index{Set\+Attr@{Set\+Attr}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Set\+Attr(const Attr \&e\+Attr, const G\+B\+O\+O\+L \&b\+Set)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Selection\+Manager\+::\+Set\+Attr (
+\begin{DoxyParamCaption}
+\item[{const {\bf Attr} \&}]{e\+Attr, }
+\item[{const {\bf G\+B\+O\+O\+L} \&}]{b\+Set}
+\end{DoxyParamCaption}
+)}\label{class_c_g_selection_manager_af44239e28ef601284f9b2ab13b09e30f}
+\hypertarget{class_c_g_selection_manager_aabb3c7b605a91d7549c31392503a2bbd}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Set\+Pick\+Box\+Size@{Set\+Pick\+Box\+Size}}
+\index{Set\+Pick\+Box\+Size@{Set\+Pick\+Box\+Size}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Set\+Pick\+Box\+Size(const G\+S\+I\+Z\+E \&pick\+Box\+Size)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Selection\+Manager\+::\+Set\+Pick\+Box\+Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+S\+I\+Z\+E} \&}]{pick\+Box\+Size}
+\end{DoxyParamCaption}
+)}\label{class_c_g_selection_manager_aabb3c7b605a91d7549c31392503a2bbd}
+\hypertarget{class_c_g_selection_manager_a64aa504d70f8e93631181c0aff2fcaaa}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Set\+View@{Set\+View}}
+\index{Set\+View@{Set\+View}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Set\+View(\+C\+G3\+D\+View $\ast$p\+View)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Selection\+Manager\+::\+Set\+View (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G3\+D\+View} $\ast$}]{p\+View}
+\end{DoxyParamCaption}
+)}\label{class_c_g_selection_manager_a64aa504d70f8e93631181c0aff2fcaaa}
+\hypertarget{class_c_g_selection_manager_ae379da48212e5d9df4a12fc32bbd7f9e}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Set\+View\+Layer\+Name@{Set\+View\+Layer\+Name}}
+\index{Set\+View\+Layer\+Name@{Set\+View\+Layer\+Name}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Set\+View\+Layer\+Name(const C\+String \&str\+View\+Layer\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Selection\+Manager\+::\+Set\+View\+Layer\+Name (
+\begin{DoxyParamCaption}
+\item[{const C\+String \&}]{str\+View\+Layer\+Name}
+\end{DoxyParamCaption}
+)}\label{class_c_g_selection_manager_ae379da48212e5d9df4a12fc32bbd7f9e}
+
+\begin{DoxyItemize}
+\item object들이 있는 view layer name을 지정한다.
+\item 반드시 object와 동일한 view layer 이어야 한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_selection_manager_ae91f54f3dafb5d1f58157a30f342387c}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Un\+Select@{Un\+Select}}
+\index{Un\+Select@{Un\+Select}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Un\+Select(\+C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Selection\+Manager\+::\+Un\+Select (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_selection_manager_ae91f54f3dafb5d1f58157a30f342387c}
+
+\begin{DoxyItemize}
+\item object의 선택표시를 해제한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_selection_manager_ae6367522d4e57d57346ae54ea0a6eb03}{}\index{C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}!Unselect\+All@{Unselect\+All}}
+\index{Unselect\+All@{Unselect\+All}!C\+G\+Selection\+Manager@{C\+G\+Selection\+Manager}}
+\subsubsection[{Unselect\+All()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Selection\+Manager\+::\+Unselect\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_selection_manager_ae6367522d4e57d57346ae54ea0a6eb03}
+
+\begin{DoxyItemize}
+\item 모든 object를 선택해제 한다. 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g_selection_manager_8h}{G\+Selection\+Manager.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g_selection_manager_8cpp}{G\+Selection\+Manager.\+cpp}\end{DoxyCompactItemize}

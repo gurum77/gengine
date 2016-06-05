@@ -1,0 +1,143 @@
+.TH "CG3DViewInitData" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CG3DViewInitData \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <G3DViewInitData\&.h>\fP
+.PP
+Inherits \fBCGDCTargetViewInitData\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBDrawObjectMethod\fP { \fBeDrawObjectMethodByObject\fP, \fBeDrawObjectMethodByPrimitiveTopologyByListVertexNoIndex\fP, \fBeDrawObjectMethodByPrimitiveTopologyByStripVertexListIndex\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetDrawObjectMethod\fP (const \fBDrawObjectMethod\fP &eDrawObjectMethod)"
+.br
+.ti -1c
+.RI "const \fBCG3DViewInitData::DrawObjectMethod\fP & \fBGetDrawObjectMethod\fP () const "
+.br
+.ti -1c
+.RI "void \fBAddViewLayer\fP (\fBCG3DViewLayer\fP *pViewLayer)"
+.br
+.ti -1c
+.RI "\fBGINT32\fP \fBGetViewLayerCount\fP () const "
+.br
+.ti -1c
+.RI "\fBCG3DViewLayer\fP * \fBGetViewLayer\fP (const CAtlString &strName)"
+.br
+.ti -1c
+.RI "void \fBInitViewLayer\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetDC\fP (\fBCGDC\fP *pDC)"
+.br
+.ti -1c
+.RI "\fBCGDC\fP * \fBGetDC\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetBackgroundColor\fP (const \fBCGColor\fP &color)"
+.br
+.ti -1c
+.RI "const \fBCGColor\fP & \fBGetBackgroundColor\fP () const "
+.br
+.ti -1c
+.RI "void \fBGetAllViewLayer\fP (\fBGOUT\fP CAtlArray< \fBCG3DViewLayer\fP * > &arrViewLayer)"
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCG3DViewInitData\fP)"
+.br
+.ti -1c
+.RI "\fBCG3DViewInitData\fP ()"
+.br
+.ti -1c
+.RI "\fB~CG3DViewInitData\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+G3Dview init data 
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCG3DViewInitData::DrawObjectMethod\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeDrawObjectMethodByObject \fP\fP
+.TP
+\fB\fIeDrawObjectMethodByPrimitiveTopologyByListVertexNoIndex \fP\fP
+.TP
+\fB\fIeDrawObjectMethodByPrimitiveTopologyByStripVertexListIndex \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CG3DViewInitData::CG3DViewInitData ()"
+
+.SS "CG3DViewInitData::~CG3DViewInitData ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CG3DViewInitData::AddViewLayer (\fBCG3DViewLayer\fP * pViewLayer)"
+
+.IP "\(bu" 2
+view layer를 추가한다\&.
+.IP "\(bu" 2
+반드시 이름이 있어야 한다\&. 
+.PP
+
+.SS "CG3DViewInitData::GDEFINE_OPERATOR_COPY (\fBCG3DViewInitData\fP)"
+
+.SS "void CG3DViewInitData::GetAllViewLayer (\fBGOUT\fP CAtlArray< \fBCG3DViewLayer\fP * > & arrViewLayer)"
+
+.SS "const \fBCGColor\fP & CG3DViewInitData::GetBackgroundColor () const"
+
+.SS "\fBCGDC\fP * CG3DViewInitData::GetDC ()"
+
+.SS "const \fBCG3DViewInitData::DrawObjectMethod\fP & CG3DViewInitData::GetDrawObjectMethod () const"
+
+.SS "\fBCG3DViewLayer\fP * CG3DViewInitData::GetViewLayer (const CAtlString & strName)"
+
+.IP "\(bu" 2
+view layer를 리턴한다\&.
+.IP "\(bu" 2
+name으로 찾는다\&. 
+.PP
+
+.SS "\fBGINT32\fP CG3DViewInitData::GetViewLayerCount () const"
+
+.SS "void CG3DViewInitData::InitViewLayer ()"
+
+.SS "void CG3DViewInitData::SetBackgroundColor (const \fBCGColor\fP & color)"
+
+.SS "void CG3DViewInitData::SetDC (\fBCGDC\fP * pDC)"
+
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_END\fP void CG3DViewInitData::SetDrawObjectMethod (const \fBDrawObjectMethod\fP & eDrawObjectMethod)"
+
+.IP "\(bu" 2
+object를 그리는 방법을 설정한다\&.
+.IP "  \(bu" 4
+eDrawObjectMethodByObject ; object단위로 그린다\&.
+.IP "  \(bu" 4
+eDrawObjectMethodByPrimitiveTopology : object를 원시 기하학 단위로 쪼개서 같은 종류를 모두 묶어서 한번에 그린다\&. 
+.PP
+
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

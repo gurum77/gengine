@@ -1,0 +1,143 @@
+.TH "CG3DActionManager" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CG3DActionManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <G3DActionManager\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGBOOL\fP \fBRunAction\fP (const CAtlString &strAction)"
+.br
+.ti -1c
+.RI "\fBCG3DActionBase\fP * \fBFindAction\fP (const CAtlString &strAction)"
+.br
+.ti -1c
+.RI "\fBCG3DActionBase\fP * \fBGetRunningAction\fP ()"
+.br
+.ti -1c
+.RI "void \fBSet3DView\fP (\fBCG3DView\fP *p3DView)"
+.br
+.ti -1c
+.RI "\fBCG3DView\fP * \fBGetView\fP ()"
+.br
+.ti -1c
+.RI "void \fBPreTranslateMessage\fP (MSG *pMsg)"
+.br
+.ti -1c
+.RI "\fBCGSelectionManager\fP & \fBGetSelectionManager\fP ()"
+.br
+.ti -1c
+.RI "void \fBEndRunningAction\fP ()"
+.br
+.ti -1c
+.RI "\fBCG3DActionManager\fP ()"
+.br
+.ti -1c
+.RI "\fB~CG3DActionManager\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+Action을 사용하기 위한 관리자\&.
+.IP "\(bu" 2
+사용방법
+.IP "  \(bu" 4
+맴버 변수로 선어
+.IP "  \(bu" 4
+G3DView 설정
+.IP "    \(bu" 6
+Set3DView
+.PP
+
+.IP "  \(bu" 4
+메세지 전달
+.IP "    \(bu" 6
+PreTranslateMessage
+.PP
+
+.IP "  \(bu" 4
+액션 실행
+.IP "    \(bu" 6
+RunAction
+.PP
+
+.IP "  \(bu" 4
+미리보기 DB 생성
+.IP "    \(bu" 6
+미리보기 객체를 화면에 표시하기 위해서는 미리보기 DB가 있어야 한다\&. 
+.PP
+
+.PP
+
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CG3DActionManager::CG3DActionManager ()"
+
+.SS "CG3DActionManager::~CG3DActionManager ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CG3DActionManager::EndRunningAction ()"
+
+.IP "\(bu" 2
+실행중인 action을 강제로 종료한다\&. 
+.PP
+
+.SS "\fBCG3DActionBase\fP * CG3DActionManager::FindAction (const CAtlString & strAction)"
+
+.IP "\(bu" 2
+action을 찾는다\&.
+.IP "\(bu" 2
+없으면 call back을 통해서 만들어서 등록하고 리턴한다\&.
+.IP "  \(bu" 4
+call back도 없으면 NULL을 리턴한다\&. 
+.PP
+
+.PP
+
+.SS "\fBCG3DActionBase\fP * CG3DActionManager::GetRunningAction ()"
+
+.IP "\(bu" 2
+실행중인 action을 리턴한다\&. 
+.PP
+
+.SS "\fBCGSelectionManager\fP & CG3DActionManager::GetSelectionManager ()"
+
+.SS "\fBCG3DView\fP * CG3DActionManager::GetView ()"
+
+.IP "\(bu" 2
+3DView를 리턴한다\&. 
+.PP
+
+.SS "void CG3DActionManager::PreTranslateMessage (MSG * pMsg)"
+
+.IP "\(bu" 2
+메세지를 받아서 현재 실행중인 action에 보내준다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CG3DActionManager::RunAction (const CAtlString & strAction)"
+
+.IP "\(bu" 2
+action을 실행한다\&.
+.IP "\(bu" 2
+새로운 action이 실행될때는 이전 action이 정상 종료 된경우(EndAction이 호출된 경우)이거나, 새로운 action이 강제로 종료시킨 경우이다\&.(강제로 종료 시킨 경우 이전 action을 정상종료 시켜줄 필요는 없다)
+.IP "\(bu" 2
+strAction이 생성되어 있지 않다면 생성해서 실행한다 
+.PP
+
+.SS "void CG3DActionManager::Set3DView (\fBCG3DView\fP * p3DView)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

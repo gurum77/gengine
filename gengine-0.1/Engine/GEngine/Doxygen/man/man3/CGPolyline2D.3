@@ -1,0 +1,79 @@
+.TH "CGPolyline2D" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGPolyline2D \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GPolyline2D\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetPoint\fP (const CAtlArray< \fBCGPoint2D\fP > &arrPoint)"
+.br
+.ti -1c
+.RI "const CAtlArray< \fBCGPoint2D\fP > & \fBGetPoint\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetEL\fP (const \fBGFLOAT\fP &fEL)"
+.br
+.ti -1c
+.RI "const \fBGFLOAT\fP & \fBGetEL\fP () const "
+.br
+.ti -1c
+.RI "void \fBMove\fP (const \fBCGVector3D\fP &vMove)"
+.br
+.ti -1c
+.RI "void \fBRotate\fP (const \fBCGPoint3D\fP &ptBase, const \fBCGPoint2D\fP &vAng)"
+.br
+.ti -1c
+.RI "void \fBScale\fP (const \fBCGPoint3D\fP &ptBase, const \fBGDOUBLE\fP &dScale)"
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGPolyline2D\fP)"
+.br
+.ti -1c
+.RI "\fBCGPolyline2D\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGPolyline2D\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+polyline2D 데이타 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGPolyline2D::CGPolyline2D ()"
+
+.SS "CGPolyline2D::~CGPolyline2D ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CGPolyline2D::GDEFINE_OPERATOR_COPY (\fBCGPolyline2D\fP)"
+
+.SS "const \fBGFLOAT\fP & CGPolyline2D::GetEL () const"
+
+.SS "const CAtlArray< \fBCGPoint2D\fP > & CGPolyline2D::GetPoint () const"
+
+.SS "void CGPolyline2D::Move (const \fBCGVector3D\fP & vMove)"
+
+.SS "void CGPolyline2D::Rotate (const \fBCGPoint3D\fP & ptBase, const \fBCGPoint2D\fP & vAng)"
+
+.SS "void CGPolyline2D::Scale (const \fBCGPoint3D\fP & ptBase, const \fBGDOUBLE\fP & dScale)"
+
+.SS "void CGPolyline2D::SetEL (const \fBGFLOAT\fP & fEL)"
+
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_END\fP void CGPolyline2D::SetPoint (const CAtlArray< \fBCGPoint2D\fP > & arrPoint)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

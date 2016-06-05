@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugUnicode_vc10|Win32">
+      <Configuration>DebugUnicode_vc10</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugUnicode_vc10|x64">
+      <Configuration>DebugUnicode_vc10</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugUnicode_vc12|Win32">
+      <Configuration>DebugUnicode_vc12</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugUnicode_vc12|x64">
+      <Configuration>DebugUnicode_vc12</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseUnicode_vc10|Win32">
+      <Configuration>ReleaseUnicode_vc10</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseUnicode_vc10|x64">
+      <Configuration>ReleaseUnicode_vc10</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseUnicode_vc12|Win32">
+      <Configuration>ReleaseUnicode_vc12</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseUnicode_vc12|x64">
+      <Configuration>ReleaseUnicode_vc12</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7C28C448-C97D-44F7-8341-C332793349E4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>G3D</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc12|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc10|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc12|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc10|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc12|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc10|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc12|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc10|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc12|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc10|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc12|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc10|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc12|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc10|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc12|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc10|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc12|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)_Obj\</IntDir>
+    <IncludePath>../../../../Lib/DirectX11/Effects11/Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>../../../../Lib/DirectX11/Effects11/bin/Win32/Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc10|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)_Obj\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc12|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>../../../../Lib/DirectX11/Effects11/bin/x64/debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <IntDir>$(Platform)\$(Configuration)_Obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc10|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <IntDir>$(Platform)\$(Configuration)_Obj\</IntDir>
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc12|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>../../../../Lib/DirectX11/Effects11/Bin/win32/Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc10|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>../../../../Lib/DirectX11/Effects11/Bin/Win32/Release_vc10;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)_Obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc12|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>../../../../Lib/DirectX11/Effects11/bin/x64/release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc10|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>../../../../Lib/DirectX11/Effects11/Bin/x64/Release_vc10;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)_Obj\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc12|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_XKEYCHECK_H;WIN32;_DEBUG;_WINDOWS;_USRDLL;G3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../GCommon;../../Include;../../../../Reference/boost_1_59_0;../../../../lib/freetype-2.6.2/include;../../../../lib/directx11/effects11/inc</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;d3dx11d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;Effects11D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;MSVCP120d.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc10|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;G3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../GCommon;../../Include;../../../../Reference/boost_1_59_0;../../../../lib/freetype-2.6.2/include;../../../../Lib/DirectX11/Effects11/Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;d3dx11d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;Effects11D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;MSVCP120d.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>../../../../Lib/DirectX11/Effects11/Bin/Win32/Debug_vc10</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc12|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_XKEYCHECK_H;WIN32;_DEBUG;_WINDOWS;_USRDLL;G3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../GCommon;../../Include;../../../../Reference/boost_1_59_0;../../../../lib/freetype-2.6.2/include;../../../../lib/directx11/effects11/inc</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;d3dx11d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;Effects11D.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc10|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;G3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../GCommon;../../Include;../../../../Reference/boost_1_59_0;../../../../lib/freetype-2.6.2/include;../../../../Lib/DirectX11/Effects11/Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dx11d.lib;D3DCompiler.lib;Effects11d.lib;dxerr.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;MSVCP120d.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>../../../../Lib/DirectX11/Effects11/Bin/x64/Debug_vc10</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc12|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_XKEYCHECK_H;WIN32;NDEBUG;_WINDOWS;_USRDLL;G3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../GCommon;../../Include;../../../../Reference/boost_1_59_0;../../../../lib/freetype-2.6.2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;D3DCompiler.lib;Effects11.lib;dxerr.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc10|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;G3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../GCommon;../../Include;../../../../Reference/boost_1_59_0;../../../../lib/freetype-2.6.2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;D3DCompiler.lib;Effects11.lib;dxerr.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc12|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_XKEYCHECK_H;WIN32;NDEBUG;_WINDOWS;_USRDLL;G3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../GCommon;../../Include;../../../../Reference/boost_1_59_0;../../../../lib/freetype-2.6.2/include;../../../../lib/directx11/effects11/inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;D3DCompiler.lib;Effects11.lib;dxerr.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode_vc10|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;G3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../GCommon;../../Include;../../../../Reference/boost_1_59_0;../../../../lib/freetype-2.6.2/include;../../../../Lib/DirectX11/Effects11/Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;D3DCompiler.lib;Effects11.lib;dxerr.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Lib\DirectX11\Common\Effects.h" />
+    <ClInclude Include="..\..\..\..\Lib\DirectX11\Common\LightHelper.h" />
+    <ClInclude Include="..\..\..\..\Lib\DirectX11\Common\Vertex.h" />
+    <ClInclude Include="..\..\..\..\Lib\DirectX11\Common\xnacollision.h" />
+    <ClInclude Include="G3DActionBase.h" />
+    <ClInclude Include="G3DActionCopy.h" />
+    <ClInclude Include="G3DActionCreateCircle.h" />
+    <ClInclude Include="G3DActionCreateLine.h" />
+    <ClInclude Include="G3DActionManager.h" />
+    <ClInclude Include="G3DActionMove.h" />
+    <ClInclude Include="G3DActionRotate2D.h" />
+    <ClInclude Include="G3DActionScale.h" />
+    <ClInclude Include="G3DActionSelect.h" />
+    <ClInclude Include="G3DAPI.h" />
+    <ClInclude Include="G3DCallBackDrawingObject.h" />
+    <ClInclude Include="G3DCallBackManager.h" />
+    <ClInclude Include="G3DDefine.h" />
+    <ClInclude Include="G3DSpaceView.h" />
+    <ClInclude Include="G3DTest.h" />
+    <ClInclude Include="G3DView.h" />
+    <ClInclude Include="G3DViewInitData.h" />
+    <ClInclude Include="G3DViewLayer.h" />
+    <ClInclude Include="GCamera.h" />
+    <ClInclude Include="GCommandBarBase.h" />
+    <ClInclude Include="GDC.h" />
+    <ClInclude Include="GDCBufferLayerItemIdentifier.h" />
+    <ClInclude Include="GDCDirectX11.h" />
+    <ClInclude Include="GDCDirectX11BufferLayer.h" />
+    <ClInclude Include="GDCDirectX11BufferLayerItem.h" />
+    <ClInclude Include="GDCDirectX11LightManager.h" />
+    <ClInclude Include="GDCDirectX11MaterialItem.h" />
+    <ClInclude Include="GDCDirectX11MaterialManager.h" />
+    <ClInclude Include="GDCDirectX11TargetView.h" />
+    <ClInclude Include="GDCDirectX11TextureManager.h" />
+    <ClInclude Include="GDCDirectX11TextureItem.h" />
+    <ClInclude Include="GDCInitData.h" />
+    <ClInclude Include="GDCTargetView.h" />
+    <ClInclude Include="GDCTargetViewInitData.h" />
+    <ClInclude Include="GDirectX11Util.h" />
+    <ClInclude Include="GEditManager.h" />
+    <ClInclude Include="GFog.h" />
+    <ClInclude Include="GSelectionManager.h" />
+    <ClInclude Include="GSpace.h" />
+    <ClInclude Include="GSpaceManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Lib\DirectX11\Common\Effects.cpp" />
+    <ClCompile Include="..\..\..\..\Lib\DirectX11\Common\LightHelper.cpp" />
+    <ClCompile Include="..\..\..\..\Lib\DirectX11\Common\Vertex.cpp" />
+    <ClCompile Include="..\..\..\..\Lib\DirectX11\Common\xnacollision.cpp" />
+    <ClCompile Include="G3DActionBase.cpp" />
+    <ClCompile Include="G3DActionCopy.cpp" />
+    <ClCompile Include="G3DActionCreateCircle.cpp" />
+    <ClCompile Include="G3DActionCreateLine.cpp" />
+    <ClCompile Include="G3DActionManager.cpp" />
+    <ClCompile Include="G3DActionMove.cpp" />
+    <ClCompile Include="G3DActionRotate2D.cpp" />
+    <ClCompile Include="G3DActionScale.cpp" />
+    <ClCompile Include="G3DActionSelect.cpp" />
+    <ClCompile Include="G3DAPI.cpp" />
+    <ClCompile Include="G3DCallBackDrawingObject.cpp" />
+    <ClCompile Include="G3DCallBackManager.cpp" />
+    <ClCompile Include="G3DDefine.cpp" />
+    <ClCompile Include="G3DSpaceView.cpp" />
+    <ClCompile Include="G3DTest.cpp" />
+    <ClCompile Include="G3DView.cpp" />
+    <ClCompile Include="G3DViewInitData.cpp" />
+    <ClCompile Include="G3DViewLayer.cpp" />
+    <ClCompile Include="GCamera.cpp" />
+    <ClCompile Include="GCommandBarBase.cpp" />
+    <ClCompile Include="GDC.cpp" />
+    <ClCompile Include="GDCBufferLayerItemIdentifier.cpp" />
+    <ClCompile Include="GDCDirectX11.cpp" />
+    <ClCompile Include="GDCDirectX11BufferLayer.cpp" />
+    <ClCompile Include="GDCDirectX11BufferLayerItem.cpp" />
+    <ClCompile Include="GDCDirectX11LightManager.cpp" />
+    <ClCompile Include="GDCDirectX11MaterialItem.cpp" />
+    <ClCompile Include="GDCDirectX11MaterialManager.cpp" />
+    <ClCompile Include="GDCDirectX11TargetView.cpp" />
+    <ClCompile Include="GDCDirectX11TextureManager.cpp" />
+    <ClCompile Include="GDCDirectX11TextureItem.cpp" />
+    <ClCompile Include="GDCInitData.cpp" />
+    <ClCompile Include="GDCTargetView.cpp" />
+    <ClCompile Include="GDCTargetViewInitData.cpp" />
+    <ClCompile Include="GDirectX11Util.cpp" />
+    <ClCompile Include="GEditManager.cpp" />
+    <ClCompile Include="GFog.cpp" />
+    <ClCompile Include="GSelectionManager.cpp" />
+    <ClCompile Include="GSpace.cpp" />
+    <ClCompile Include="GSpaceManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GCommon\GCommon.vcxproj">
+      <Project>{9e8ffd81-136f-4ad5-bb63-d7b6755693b8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GDB\GDB.vcxproj">
+      <Project>{127109f6-3f8a-4297-977e-183b9b87650e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Lib\DirectX11\FX\LightTex.fx">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc10|Win32'">fxc /Fc /Od /Zi /T fx_5_0 /Fo "%(RelativeDir)\%(Filename).fxo" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc10|Win32'">fxc compile for debug: %(FullPath)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc10|Win32'">%(RelativeDir)\%(Filename).fxo</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Lib\DirectX11\FX\color.fx">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc10|Win32'">fxc /Fc /Od /Zi /T fx_5_0 /Fo "%(RelativeDir)\%(Filename).fxo" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc10|Win32'">fxc compile for debug: %(FullPath)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugUnicode_vc10|Win32'">%(RelativeDir)\%(Filename).fxo</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

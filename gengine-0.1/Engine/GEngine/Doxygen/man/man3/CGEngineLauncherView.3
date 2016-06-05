@@ -1,0 +1,324 @@
+.TH "CGEngineLauncherView" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGEngineLauncherView \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GEngineLauncherView\&.h>\fP
+.PP
+Inherits CView\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const \fBGDOUBLE\fP \fBGetHeight\fP (const \fBGDOUBLE\fP &dX, const \fBGDOUBLE\fP &dY, const \fBGDOUBLE\fP &dMaxX, const \fBGDOUBLE\fP &dMaxY) const "
+.br
+.ti -1c
+.RI "void \fBRedrawAllView\fP ()"
+.br
+.ti -1c
+.RI "void \fBDrawPolyline2D\fP ()"
+.br
+.ti -1c
+.RI "void \fBDrawLine2D\fP ()"
+.br
+.ti -1c
+.RI "void \fBDrawPoint2D\fP ()"
+.br
+.ti -1c
+.RI "\fBCGEngineLauncherDoc\fP * \fBGetDocument\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBOnDraw\fP (CDC *pDC)"
+.br
+.ti -1c
+.RI "virtual BOOL \fBPreCreateWindow\fP (CREATESTRUCT &cs)"
+.br
+.ti -1c
+.RI "virtual \fB~CGEngineLauncherView\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnPaint\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBOnInitialUpdate\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnSize\fP (UINT nType, int cx, int cy)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnFileDrawgrid\fP ()"
+.br
+.ti -1c
+.RI "afx_msg BOOL \fBOnMouseWheel\fP (UINT nFlags, short zDelta, CPoint pt)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonG3dviewDialog\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnMouseMove\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonSelect\fP ()"
+.br
+.ti -1c
+.RI "virtual BOOL \fBPreTranslateMessage\fP (MSG *pMsg)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonEndaction\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnActivate\fP (UINT nState, CWnd *pWndOther, BOOL bMinimized)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnSetFocus\fP (CWnd *pOldWnd)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnKillFocus\fP (CWnd *pNewWnd)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonDeleteAllObject\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonDeleteAllObjectEach\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnMButtonDblClk\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonDraw2dline\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonDelete100Objects\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonDelete100ObjectsEach\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonSelect100ObjectsEach\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonSelect100Objects\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonUnselectAll\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonDrawTriangle\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonDrawCylinder\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonDrawBox\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonDrawSphere\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonDrawCircle\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnButtonG3dspaceviewDialog\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCGEngineLauncherView\fP ()"
+.br
+.ti -1c
+.RI "virtual BOOL \fBOnPreparePrinting\fP (CPrintInfo *pInfo)"
+.br
+.ti -1c
+.RI "virtual void \fBOnBeginPrinting\fP (CDC *pDC, CPrintInfo *pInfo)"
+.br
+.ti -1c
+.RI "virtual void \fBOnEndPrinting\fP (CDC *pDC, CPrintInfo *pInfo)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnFilePrintPreview\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnRButtonUp\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnContextMenu\fP (CWnd *pWnd, CPoint point)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBCG3DView\fP * \fBm_pG3DView\fP"
+.br
+.ti -1c
+.RI "\fBCG3DActionManager\fP * \fBm_pActionManager\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGEngineLauncherView::CGEngineLauncherView ()\fC [protected]\fP"
+
+.SS "CGEngineLauncherView::~CGEngineLauncherView ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGEngineLauncherView::DrawLine2D ()"
+
+.SS "void CGEngineLauncherView::DrawPoint2D ()"
+
+.SS "void CGEngineLauncherView::DrawPolyline2D ()"
+
+.SS "\fBCGEngineLauncherDoc\fP * CGEngineLauncherView::GetDocument () const\fC [inline]\fP"
+
+.SS "const \fBGDOUBLE\fP CGEngineLauncherView::GetHeight (const \fBGDOUBLE\fP & dX, const \fBGDOUBLE\fP & dY, const \fBGDOUBLE\fP & dMaxX, const \fBGDOUBLE\fP & dMaxY) const"
+
+.SS "void CGEngineLauncherView::OnActivate (UINT nState, CWnd * pWndOther, BOOL bMinimized)"
+
+.SS "void CGEngineLauncherView::OnBeginPrinting (CDC * pDC, CPrintInfo * pInfo)\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "void CGEngineLauncherView::OnButtonDelete100Objects ()"
+
+.IP "\(bu" 2
+100개의 object를 삭제한다\&.
+.IP "\(bu" 2
+100개를 한번에 삭제한다\&. 
+.PP
+
+.SS "void CGEngineLauncherView::OnButtonDelete100ObjectsEach ()"
+
+.IP "\(bu" 2
+100개의 object를 삭제한다\&.
+.IP "\(bu" 2
+100개를 각각 삭제한다\&. 
+.PP
+
+.SS "void CGEngineLauncherView::OnButtonDeleteAllObject ()"
+
+.IP "\(bu" 2
+모든 객체를 한번에 삭제하는 함수 
+.PP
+
+.SS "void CGEngineLauncherView::OnButtonDeleteAllObjectEach ()"
+
+.IP "\(bu" 2
+모든 객체를 하나하나 삭제하는 함수 
+.PP
+
+.SS "void CGEngineLauncherView::OnButtonDraw2dline ()"
+
+.SS "void CGEngineLauncherView::OnButtonDrawBox ()"
+
+.IP "\(bu" 2
+box 를 그린다\&. 
+.PP
+
+.SS "void CGEngineLauncherView::OnButtonDrawCircle ()"
+
+.IP "\(bu" 2
+circle 그리기 
+.PP
+
+.SS "void CGEngineLauncherView::OnButtonDrawCylinder ()"
+
+.IP "\(bu" 2
+cylinder를 그린다\&. 
+.PP
+
+.SS "void CGEngineLauncherView::OnButtonDrawSphere ()"
+
+.IP "\(bu" 2
+sphere 를 그린다\&. 
+.PP
+
+.SS "void CGEngineLauncherView::OnButtonDrawTriangle ()"
+
+.IP "\(bu" 2
+triangle을 그린다\&. 
+.PP
+
+.SS "void CGEngineLauncherView::OnButtonEndaction ()"
+
+.SS "void CGEngineLauncherView::OnButtonG3dspaceviewDialog ()"
+
+.SS "void CGEngineLauncherView::OnButtonG3dviewDialog ()"
+
+.IP "\(bu" 2
+g3d view dialog 보여주기 
+.PP
+
+.SS "void CGEngineLauncherView::OnButtonSelect ()"
+
+.SS "void CGEngineLauncherView::OnButtonSelect100Objects ()"
+
+.IP "\(bu" 2
+object 100개를 한번에 선택 
+.PP
+
+.SS "void CGEngineLauncherView::OnButtonSelect100ObjectsEach ()"
+
+.IP "\(bu" 2
+100개의 object를 각각 선택한다\&. 
+.PP
+
+.SS "void CGEngineLauncherView::OnButtonUnselectAll ()"
+
+.IP "\(bu" 2
+unselect all 
+.PP
+
+.SS "void CGEngineLauncherView::OnContextMenu (CWnd * pWnd, CPoint point)\fC [protected]\fP"
+
+.SS "void CGEngineLauncherView::OnDraw (CDC * pDC)\fC [virtual]\fP"
+
+.SS "void CGEngineLauncherView::OnEndPrinting (CDC * pDC, CPrintInfo * pInfo)\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "void CGEngineLauncherView::OnFileDrawgrid ()"
+
+.IP "\(bu" 2
+그리드 그리기 
+.PP
+
+.SS "void CGEngineLauncherView::OnFilePrintPreview ()\fC [protected]\fP"
+
+.SS "void CGEngineLauncherView::OnInitialUpdate ()\fC [virtual]\fP"
+
+.SS "void CGEngineLauncherView::OnKillFocus (CWnd * pNewWnd)"
+
+.SS "void CGEngineLauncherView::OnMButtonDblClk (UINT nFlags, CPoint point)"
+
+.SS "void CGEngineLauncherView::OnMouseMove (UINT nFlags, CPoint point)"
+
+.SS "BOOL CGEngineLauncherView::OnMouseWheel (UINT nFlags, short zDelta, CPoint pt)"
+
+.SS "void CGEngineLauncherView::OnPaint ()"
+
+.SS "BOOL CGEngineLauncherView::OnPreparePrinting (CPrintInfo * pInfo)\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "void CGEngineLauncherView::OnRButtonUp (UINT nFlags, CPoint point)\fC [protected]\fP"
+
+.SS "void CGEngineLauncherView::OnSetFocus (CWnd * pOldWnd)"
+
+.SS "void CGEngineLauncherView::OnSize (UINT nType, int cx, int cy)"
+
+.SS "BOOL CGEngineLauncherView::PreCreateWindow (CREATESTRUCT & cs)\fC [virtual]\fP"
+
+.SS "BOOL CGEngineLauncherView::PreTranslateMessage (MSG * pMsg)\fC [virtual]\fP"
+
+.SS "void CGEngineLauncherView::RedrawAllView ()"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBCG3DActionManager\fP* CGEngineLauncherView::m_pActionManager\fC [protected]\fP"
+
+.SS "\fBCG3DView\fP* CGEngineLauncherView::m_pG3DView\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

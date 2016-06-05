@@ -1,0 +1,137 @@
+.TH "D:/MyProject/Trunk/Engine/GEngine/Src/G3D/G3DOnlyInclude.h" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/MyProject/Trunk/Engine/GEngine/Src/G3D/G3DOnlyInclude.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'windows\&.h'\fP
+.br
+\fC#include 'GCamera\&.h'\fP
+.br
+\fC#include 'GDCInitData\&.h'\fP
+.br
+\fC#include 'GDCTargetViewInitData\&.h'\fP
+.br
+\fC#include 'G3DViewLayer\&.h'\fP
+.br
+\fC#include 'G3DViewInitData\&.h'\fP
+.br
+\fC#include 'GDCTargetView\&.h'\fP
+.br
+\fC#include 'GDC\&.h'\fP
+.br
+\fC#include 'GDirectX11Util\&.h'\fP
+.br
+\fC#include 'GDCDirectX11TargetView\&.h'\fP
+.br
+\fC#include 'GDCDirectX11BufferLayerItem\&.h'\fP
+.br
+\fC#include 'GDCDirectX11BufferLayer\&.h'\fP
+.br
+\fC#include 'GDCDirectX11\&.h'\fP
+.br
+\fC#include 'G3DDefine\&.h'\fP
+.br
+\fC#include 'G3DCallBackDrawingObject\&.h'\fP
+.br
+\fC#include 'G3DCallBackManager\&.h'\fP
+.br
+\fC#include 'G3DView\&.h'\fP
+.br
+\fC#include 'GSpace\&.h'\fP
+.br
+\fC#include 'GSpaceManager\&.h'\fP
+.br
+\fC#include 'G3DSpaceView\&.h'\fP
+.br
+\fC#include 'GSelectionManager\&.h'\fP
+.br
+\fC#include 'GEditManager\&.h'\fP
+.br
+\fC#include 'G3DActionBase\&.h'\fP
+.br
+\fC#include 'G3DActionSelect\&.h'\fP
+.br
+\fC#include 'G3DActionCreateLine\&.h'\fP
+.br
+\fC#include 'G3DActionCreateCircle\&.h'\fP
+.br
+\fC#include 'G3DActionMove\&.h'\fP
+.br
+\fC#include 'G3DActionCopy\&.h'\fP
+.br
+\fC#include 'G3DActionRotate2D\&.h'\fP
+.br
+\fC#include 'G3DActionScale\&.h'\fP
+.br
+\fC#include 'G3DActionManager\&.h'\fP
+.br
+\fC#include 'G3DTest\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGIF_NO_DC_TARGET_VIEW\fP   if(!m_pDCTargetView) { return; }"
+.br
+.ti -1c
+.RI "#define \fBGIF_NO_DC_TARGET_VIEW_RETURN\fP(a)   if(!m_pDCTargetView) { return(a); }"
+.br
+.ti -1c
+.RI "#define \fBGIF_NO_DB\fP   if(!m_pDB) { return; }"
+.br
+.ti -1c
+.RI "#define \fBGIF_NO_DC\fP   if(!m_pDC) { return; }"
+.br
+.ti -1c
+.RI "#define \fBGIF_NO_DB_RETURN\fP(a)   if(!m_pDB) { return a; }"
+.br
+.ti -1c
+.RI "#define \fBGIF_NO_DC_RETURN\fP(a)   if(!m_pDC) { return a; }"
+.br
+.ti -1c
+.RI "#define \fBGPOINT3D_TO_XMVECTOR\fP(a)   XMVectorSet(a\&.GetXf(), a\&.GetYf(), a\&.GetZf(), 1\&.0f)"
+.br
+.ti -1c
+.RI "#define \fBGVECTOR3D_TO_XMVECTOR\fP(a)   XMVectorSet(a\&.GetXf(), a\&.GetYf(), a\&.GetZf(), 0\&.0f)"
+.br
+.ti -1c
+.RI "#define \fBGDEFINE_REGISTE_ACTION\fP(class_name,  action_name)"
+.br
+.ti -1c
+.RI "#define \fBGIMPLEMENT_REGISTE_ACTION\fP(class_name,  action_name)   \fBCG3DCallBackManager::AddCreatingActionCallBack\fP(\fBGNOTRANS\fP(action_name), class_name::Create##class_name)\\"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define GDEFINE_REGISTE_ACTION(class_name, action_name)"
+\fBValue:\fP
+.PP
+.nf
+virtual CAtlString GetStrType() { return GNOTRANS(action_name); };\
+    static CG3DActionBase* Create##class_name() { return (CG3DActionBase*)(new class_name); }\
+.fi
+.SS "#define GIF_NO_DB   if(!m_pDB) { return; }"
+
+.SS "#define GIF_NO_DB_RETURN(a)   if(!m_pDB) { return a; }"
+
+.SS "#define GIF_NO_DC   if(!m_pDC) { return; }"
+
+.SS "#define GIF_NO_DC_RETURN(a)   if(!m_pDC) { return a; }"
+
+.SS "#define GIF_NO_DC_TARGET_VIEW   if(!m_pDCTargetView) { return; }"
+
+.SS "#define GIF_NO_DC_TARGET_VIEW_RETURN(a)   if(!m_pDCTargetView) { return(a); }"
+
+.SS "#define GIMPLEMENT_REGISTE_ACTION(class_name, action_name)   \fBCG3DCallBackManager::AddCreatingActionCallBack\fP(\fBGNOTRANS\fP(action_name), class_name::Create##class_name)\\"
+
+.SS "#define GPOINT3D_TO_XMVECTOR(a)   XMVectorSet(a\&.GetXf(), a\&.GetYf(), a\&.GetZf(), 1\&.0f)"
+
+.SS "#define GVECTOR3D_TO_XMVECTOR(a)   XMVectorSet(a\&.GetXf(), a\&.GetYf(), a\&.GetZf(), 0\&.0f)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

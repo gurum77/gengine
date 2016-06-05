@@ -1,0 +1,178 @@
+\hypertarget{class_c_g3_d_action_create_line}{}\section{C\+G3\+D\+Action\+Create\+Line Class Reference}
+\label{class_c_g3_d_action_create_line}\index{C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}}
+
+
+{\ttfamily \#include $<$G3\+D\+Action\+Create\+Line.\+h$>$}
+
+Inheritance diagram for C\+G3\+D\+Action\+Create\+Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_g3_d_action_create_line}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_g3_d_action_create_line_a35ac8fd2cabe6090a6853c38975deeec}{Start\+Action} ()
+\item 
+virtual void \hyperlink{class_c_g3_d_action_create_line_add942590d89b1cd53fe4723cf8d54f02}{End\+Action} ()
+\item 
+virtual void \hyperlink{class_c_g3_d_action_create_line_a37425d6f7e78ebf4e4e457c7bdf69ded}{On\+L\+Button\+Down} (U\+I\+N\+T n\+Flags, C\+Point point)
+\item 
+virtual void \hyperlink{class_c_g3_d_action_create_line_ad313c05b01dd1a7d84a11a5b153f4e01}{On\+Mouse\+Move} (U\+I\+N\+T n\+Flags, C\+Point point)
+\item 
+virtual void \hyperlink{class_c_g3_d_action_create_line_a9cd5c5ca033f832e895441fd3b60777f}{Create\+Preview} ()
+\item 
+\hyperlink{class_c_g3_d_action_create_line_a5d0d1f4d153549458c631f8d0b495be7}{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+A\+C\+T\+I\+O\+N} (\hyperlink{class_c_g3_d_action_create_line}{C\+G3\+D\+Action\+Create\+Line},\char`\"{}C\+R\+E\+A\+T\+E L\+I\+N\+E\char`\"{})
+\item 
+\hyperlink{class_c_g3_d_action_create_line_af3208d37b3cd0f7ab8d68f4e05eb413f}{C\+G3\+D\+Action\+Create\+Line} ()
+\item 
+\hyperlink{class_c_g3_d_action_create_line_a7fe006174c4ebafd7930d1456dfda752}{$\sim$\+C\+G3\+D\+Action\+Create\+Line} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_g3_d_action_create_line_a784596d7cc159c7acb99e58abbfba9c7}{Step} \{ \hyperlink{class_c_g3_d_action_create_line_a784596d7cc159c7acb99e58abbfba9c7aba977110ad5375a92738b70af6d11132}{e\+Step\+First\+Point}, 
+\hyperlink{class_c_g3_d_action_create_line_a784596d7cc159c7acb99e58abbfba9c7a5819ee4d473ad1a919cd5a5504d7e427}{e\+Step\+Second\+Point}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_g3_d_action_create_line_a784596d7cc159c7acb99e58abbfba9c7}{Step} \hyperlink{class_c_g3_d_action_create_line_a9016c274e361d0c161ac2d797c94b966}{m\+\_\+e\+Step}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item line을 생성하는 action 
+\end{DoxyItemize}
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_c_g3_d_action_create_line_a784596d7cc159c7acb99e58abbfba9c7}{}\index{C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}!Step@{Step}}
+\index{Step@{Step}!C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}}
+\subsubsection[{Step}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+G3\+D\+Action\+Create\+Line\+::\+Step}\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_action_create_line_a784596d7cc159c7acb99e58abbfba9c7}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+Step\+First\+Point@{e\+Step\+First\+Point}!C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}}\index{C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}!e\+Step\+First\+Point@{e\+Step\+First\+Point}}\item[{\em 
+\hypertarget{class_c_g3_d_action_create_line_a784596d7cc159c7acb99e58abbfba9c7aba977110ad5375a92738b70af6d11132}{}e\+Step\+First\+Point\label{class_c_g3_d_action_create_line_a784596d7cc159c7acb99e58abbfba9c7aba977110ad5375a92738b70af6d11132}
+}]\index{e\+Step\+Second\+Point@{e\+Step\+Second\+Point}!C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}}\index{C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}!e\+Step\+Second\+Point@{e\+Step\+Second\+Point}}\item[{\em 
+\hypertarget{class_c_g3_d_action_create_line_a784596d7cc159c7acb99e58abbfba9c7a5819ee4d473ad1a919cd5a5504d7e427}{}e\+Step\+Second\+Point\label{class_c_g3_d_action_create_line_a784596d7cc159c7acb99e58abbfba9c7a5819ee4d473ad1a919cd5a5504d7e427}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g3_d_action_create_line_af3208d37b3cd0f7ab8d68f4e05eb413f}{}\index{C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}!C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}}
+\index{C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}!C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}}
+\subsubsection[{C\+G3\+D\+Action\+Create\+Line()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G3\+D\+Action\+Create\+Line\+::\+C\+G3\+D\+Action\+Create\+Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_create_line_af3208d37b3cd0f7ab8d68f4e05eb413f}
+\hypertarget{class_c_g3_d_action_create_line_a7fe006174c4ebafd7930d1456dfda752}{}\index{C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}!````~C\+G3\+D\+Action\+Create\+Line@{$\sim$\+C\+G3\+D\+Action\+Create\+Line}}
+\index{````~C\+G3\+D\+Action\+Create\+Line@{$\sim$\+C\+G3\+D\+Action\+Create\+Line}!C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}}
+\subsubsection[{$\sim$\+C\+G3\+D\+Action\+Create\+Line()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G3\+D\+Action\+Create\+Line\+::$\sim$\+C\+G3\+D\+Action\+Create\+Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_create_line_a7fe006174c4ebafd7930d1456dfda752}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g3_d_action_create_line_a9cd5c5ca033f832e895441fd3b60777f}{}\index{C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}!Create\+Preview@{Create\+Preview}}
+\index{Create\+Preview@{Create\+Preview}!C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}}
+\subsubsection[{Create\+Preview()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Create\+Line\+::\+Create\+Preview (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_action_create_line_a9cd5c5ca033f832e895441fd3b60777f}
+
+\begin{DoxyItemize}
+\item action에 미리보기 객체가 있는 경우 이 함수를 재정의 하여 미리보기 객체를 그리도록 구현해야 한다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_action_base_abfd3bf878d8234a2c839a865637b6514}{C\+G3\+D\+Action\+Base}.
+
+\hypertarget{class_c_g3_d_action_create_line_add942590d89b1cd53fe4723cf8d54f02}{}\index{C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}!End\+Action@{End\+Action}}
+\index{End\+Action@{End\+Action}!C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}}
+\subsubsection[{End\+Action()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Create\+Line\+::\+End\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_action_create_line_add942590d89b1cd53fe4723cf8d54f02}
+
+\begin{DoxyItemize}
+\item action이 끝날때 호출되어야 하는 가상함수이다.
+\item 개발자가 직접 호출해야 한다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_action_base_ad1ff5e9a791fd2389d788f1ab954333e}{C\+G3\+D\+Action\+Base}.
+
+\hypertarget{class_c_g3_d_action_create_line_a5d0d1f4d153549458c631f8d0b495be7}{}\index{C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}!G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+A\+C\+T\+I\+O\+N@{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+A\+C\+T\+I\+O\+N}}
+\index{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+A\+C\+T\+I\+O\+N@{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+A\+C\+T\+I\+O\+N}!C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}}
+\subsubsection[{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+A\+C\+T\+I\+O\+N(\+C\+G3\+D\+Action\+Create\+Line,""C\+R\+E\+A\+T\+E L\+I\+N\+E"")}]{\setlength{\rightskip}{0pt plus 5cm}C\+G3\+D\+Action\+Create\+Line\+::\+G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+A\+C\+T\+I\+O\+N (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G3\+D\+Action\+Create\+Line}}]{, }
+\item[{\char`\"{}C\+R\+E\+A\+T\+E L\+I\+N\+E\char`\"{}}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_g3_d_action_create_line_a5d0d1f4d153549458c631f8d0b495be7}
+\hypertarget{class_c_g3_d_action_create_line_a37425d6f7e78ebf4e4e457c7bdf69ded}{}\index{C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}!On\+L\+Button\+Down@{On\+L\+Button\+Down}}
+\index{On\+L\+Button\+Down@{On\+L\+Button\+Down}!C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}}
+\subsubsection[{On\+L\+Button\+Down(\+U\+I\+N\+T n\+Flags, C\+Point point)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Create\+Line\+::\+On\+L\+Button\+Down (
+\begin{DoxyParamCaption}
+\item[{U\+I\+N\+T}]{n\+Flags, }
+\item[{C\+Point}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_action_create_line_a37425d6f7e78ebf4e4e457c7bdf69ded}
+
+\begin{DoxyItemize}
+\item 마우스 이벤트 핸들러이다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_action_base_af82093e160d3c737c734d64cc32c84dc}{C\+G3\+D\+Action\+Base}.
+
+\hypertarget{class_c_g3_d_action_create_line_ad313c05b01dd1a7d84a11a5b153f4e01}{}\index{C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}!On\+Mouse\+Move@{On\+Mouse\+Move}}
+\index{On\+Mouse\+Move@{On\+Mouse\+Move}!C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}}
+\subsubsection[{On\+Mouse\+Move(\+U\+I\+N\+T n\+Flags, C\+Point point)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Create\+Line\+::\+On\+Mouse\+Move (
+\begin{DoxyParamCaption}
+\item[{U\+I\+N\+T}]{n\+Flags, }
+\item[{C\+Point}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_action_create_line_ad313c05b01dd1a7d84a11a5b153f4e01}
+
+\begin{DoxyItemize}
+\item 마우스 이벤트 핸들러이다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_action_base_a3c7a49e84a681baa6375e28588b8d7f0}{C\+G3\+D\+Action\+Base}.
+
+\hypertarget{class_c_g3_d_action_create_line_a35ac8fd2cabe6090a6853c38975deeec}{}\index{C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}!Start\+Action@{Start\+Action}}
+\index{Start\+Action@{Start\+Action}!C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}}
+\subsubsection[{Start\+Action()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G3\+D\+Action\+Create\+Line\+::\+Start\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g3_d_action_create_line_a35ac8fd2cabe6090a6853c38975deeec}
+
+\begin{DoxyItemize}
+\item action이 시작되면서 action manager에 으해서 가장 먼저 호출되는 가상함수이다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g3_d_action_base_afaa3c0d456deadd08cad7e7ea4444a1e}{C\+G3\+D\+Action\+Base}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_g3_d_action_create_line_a9016c274e361d0c161ac2d797c94b966}{}\index{C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}!m\+\_\+e\+Step@{m\+\_\+e\+Step}}
+\index{m\+\_\+e\+Step@{m\+\_\+e\+Step}!C\+G3\+D\+Action\+Create\+Line@{C\+G3\+D\+Action\+Create\+Line}}
+\subsubsection[{m\+\_\+e\+Step}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Step} C\+G3\+D\+Action\+Create\+Line\+::m\+\_\+e\+Step\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g3_d_action_create_line_a9016c274e361d0c161ac2d797c94b966}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g3_d_action_create_line_8h}{G3\+D\+Action\+Create\+Line.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g3_d_action_create_line_8cpp}{G3\+D\+Action\+Create\+Line.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,157 @@
+\hypertarget{class_c_g_d_c_direct_x11_buffer_layer}{}\section{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer Class Reference}
+\label{class_c_g_d_c_direct_x11_buffer_layer}\index{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}}
+
+
+{\ttfamily \#include $<$G\+D\+C\+Direct\+X11\+Buffer\+Layer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_g_d_c_direct_x11_buffer_layer_a0e071fedeb529e654264223267194285}{Set\+Name} (const C\+String \&str\+Name)
+\item 
+const C\+String \& \hyperlink{class_c_g_d_c_direct_x11_buffer_layer_a79f2e361adea18937c665b64d1fb9af3}{Get\+Name} () const 
+\item 
+void \hyperlink{class_c_g_d_c_direct_x11_buffer_layer_ae90065e7b4b8416f0658f72cbe18c978}{Init\+Item} ()
+\item 
+void \hyperlink{class_c_g_d_c_direct_x11_buffer_layer_ab86545ea75a894b793a349e8fcbe794d}{Add\+Item} (\hyperlink{class_c_g_d_c_direct_x11_buffer_layer_item}{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+Item} $\ast$p\+Item)
+\item 
+\hyperlink{class_c_g_d_c_direct_x11_buffer_layer_item}{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+Item} $\ast$ \hyperlink{class_c_g_d_c_direct_x11_buffer_layer_aa0bf8672660b7b2df45f46d40e4c0916}{Find\+Item\+By\+I\+D} (const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&I\+D, const \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \&b\+Create\+If\+None=false)
+\item 
+const C\+Atl\+Map$<$ \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D}, \hyperlink{class_c_g_d_c_direct_x11_buffer_layer_item}{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+Item} $\ast$ $>$ \& \hyperlink{class_c_g_d_c_direct_x11_buffer_layer_a10e1f6026aac649406e3573bc1010d60}{Get\+Map} () const 
+\item 
+void \hyperlink{class_c_g_d_c_direct_x11_buffer_layer_a54f3d35d944100efe39c96fdca09088b}{Get\+All\+Item\+I\+D} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} $>$ \&arr\+I\+D) const 
+\item 
+void \hyperlink{class_c_g_d_c_direct_x11_buffer_layer_a1ee40609a5b44f7d709c44612f11858c}{Init\+Index\+Buffer} (const \hyperlink{_g_types_8h_a940e3da6a9b57aae3de0b050e2a7af5e}{Primitive\+Topology} \&e\+Primitive\+Topology, const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&I\+D=\hyperlink{_g_types_8h_a3d3e95c8557b67abe2ddd1726a2e4d9a}{G\+N\+O\+N\+E\+\_\+\+I\+D})
+\item 
+void \hyperlink{class_c_g_d_c_direct_x11_buffer_layer_a28f821793734fda0969f5362324835b1}{Init\+Vertex\+Buffer} (const \hyperlink{_g_types_8h_a940e3da6a9b57aae3de0b050e2a7af5e}{Primitive\+Topology} \&e\+Primitive\+Topology, const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&I\+D=\hyperlink{_g_types_8h_a3d3e95c8557b67abe2ddd1726a2e4d9a}{G\+N\+O\+N\+E\+\_\+\+I\+D})
+\item 
+\hyperlink{class_c_g_d_c_direct_x11_buffer_layer_a5dfb75c4c0ce70be3f1babc987447777}{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer} ()
+\item 
+\hyperlink{class_c_g_d_c_direct_x11_buffer_layer_a6bad3520b0c88925da9817b013548a06}{$\sim$\+C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item Directx11의 buffer layer(vertex buffer, index buffer(todo))
+\item vertex buffer를 새로 만드는 비용이 크기 때문에 자주 변경되는 buffer만 별도로 관리할 수 있도록 하기 위한 개념이다. 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g_d_c_direct_x11_buffer_layer_a5dfb75c4c0ce70be3f1babc987447777}{}\index{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}!C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}}
+\index{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}!C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}}
+\subsubsection[{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+::\+C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_d_c_direct_x11_buffer_layer_a5dfb75c4c0ce70be3f1babc987447777}
+\hypertarget{class_c_g_d_c_direct_x11_buffer_layer_a6bad3520b0c88925da9817b013548a06}{}\index{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}!````~C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{$\sim$\+C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}}
+\index{````~C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{$\sim$\+C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}!C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}}
+\subsubsection[{$\sim$\+C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+::$\sim$\+C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_d_c_direct_x11_buffer_layer_a6bad3520b0c88925da9817b013548a06}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g_d_c_direct_x11_buffer_layer_ab86545ea75a894b793a349e8fcbe794d}{}\index{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}!Add\+Item@{Add\+Item}}
+\index{Add\+Item@{Add\+Item}!C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}}
+\subsubsection[{Add\+Item(\+C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+Item $\ast$p\+Item)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+::\+Add\+Item (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+Item} $\ast$}]{p\+Item}
+\end{DoxyParamCaption}
+)}\label{class_c_g_d_c_direct_x11_buffer_layer_ab86545ea75a894b793a349e8fcbe794d}
+\hypertarget{class_c_g_d_c_direct_x11_buffer_layer_aa0bf8672660b7b2df45f46d40e4c0916}{}\index{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}!Find\+Item\+By\+I\+D@{Find\+Item\+By\+I\+D}}
+\index{Find\+Item\+By\+I\+D@{Find\+Item\+By\+I\+D}!C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}}
+\subsubsection[{Find\+Item\+By\+I\+D(const G\+I\+D \&\+I\+D, const G\+B\+O\+O\+L \&b\+Create\+If\+None=false)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+Item} $\ast$ C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+::\+Find\+Item\+By\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+I\+D} \&}]{I\+D, }
+\item[{const {\bf G\+B\+O\+O\+L} \&}]{b\+Create\+If\+None = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_c_g_d_c_direct_x11_buffer_layer_aa0bf8672660b7b2df45f46d40e4c0916}
+
+\begin{DoxyItemize}
+\item item을 id로 찾는다. 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\hypertarget{class_c_g_d_c_direct_x11_buffer_layer_a54f3d35d944100efe39c96fdca09088b}{}\index{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}!Get\+All\+Item\+I\+D@{Get\+All\+Item\+I\+D}}
+\index{Get\+All\+Item\+I\+D@{Get\+All\+Item\+I\+D}!C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}}
+\subsubsection[{Get\+All\+Item\+I\+D(\+G\+O\+U\+T C\+Atl\+Array$<$ G\+I\+D $>$ \&arr\+I\+D) const }]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+::\+Get\+All\+Item\+I\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf G\+I\+D} $>$ \&}]{arr\+I\+D}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_d_c_direct_x11_buffer_layer_a54f3d35d944100efe39c96fdca09088b}
+
+\begin{DoxyItemize}
+\item 모든 item의 I\+D를 가져온다. 
+\end{DoxyItemize}\hypertarget{class_c_g_d_c_direct_x11_buffer_layer_a10e1f6026aac649406e3573bc1010d60}{}\index{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}!Get\+Map@{Get\+Map}}
+\index{Get\+Map@{Get\+Map}!C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}}
+\subsubsection[{Get\+Map() const }]{\setlength{\rightskip}{0pt plus 5cm}const C\+Atl\+Map$<$ {\bf G\+I\+D}, {\bf C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+Item} $\ast$ $>$ \& C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+::\+Get\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_d_c_direct_x11_buffer_layer_a10e1f6026aac649406e3573bc1010d60}
+\hypertarget{class_c_g_d_c_direct_x11_buffer_layer_a79f2e361adea18937c665b64d1fb9af3}{}\index{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}}
+\subsubsection[{Get\+Name() const }]{\setlength{\rightskip}{0pt plus 5cm}const C\+String \& C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_d_c_direct_x11_buffer_layer_a79f2e361adea18937c665b64d1fb9af3}
+\hypertarget{class_c_g_d_c_direct_x11_buffer_layer_a1ee40609a5b44f7d709c44612f11858c}{}\index{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}!Init\+Index\+Buffer@{Init\+Index\+Buffer}}
+\index{Init\+Index\+Buffer@{Init\+Index\+Buffer}!C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}}
+\subsubsection[{Init\+Index\+Buffer(const Primitive\+Topology \&e\+Primitive\+Topology, const G\+I\+D \&\+I\+D=\+G\+N\+O\+N\+E\+\_\+\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+::\+Init\+Index\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const {\bf Primitive\+Topology} \&}]{e\+Primitive\+Topology, }
+\item[{const {\bf G\+I\+D} \&}]{I\+D = {\ttfamily {\bf G\+N\+O\+N\+E\+\_\+\+I\+D}}}
+\end{DoxyParamCaption}
+)}\label{class_c_g_d_c_direct_x11_buffer_layer_a1ee40609a5b44f7d709c44612f11858c}
+
+\begin{DoxyItemize}
+\item index buffer를 초기화 한다. 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\hypertarget{class_c_g_d_c_direct_x11_buffer_layer_ae90065e7b4b8416f0658f72cbe18c978}{}\index{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}!Init\+Item@{Init\+Item}}
+\index{Init\+Item@{Init\+Item}!C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}}
+\subsubsection[{Init\+Item()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+::\+Init\+Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_d_c_direct_x11_buffer_layer_ae90065e7b4b8416f0658f72cbe18c978}
+\hypertarget{class_c_g_d_c_direct_x11_buffer_layer_a28f821793734fda0969f5362324835b1}{}\index{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}!Init\+Vertex\+Buffer@{Init\+Vertex\+Buffer}}
+\index{Init\+Vertex\+Buffer@{Init\+Vertex\+Buffer}!C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}}
+\subsubsection[{Init\+Vertex\+Buffer(const Primitive\+Topology \&e\+Primitive\+Topology, const G\+I\+D \&\+I\+D=\+G\+N\+O\+N\+E\+\_\+\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+::\+Init\+Vertex\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const {\bf Primitive\+Topology} \&}]{e\+Primitive\+Topology, }
+\item[{const {\bf G\+I\+D} \&}]{I\+D = {\ttfamily {\bf G\+N\+O\+N\+E\+\_\+\+I\+D}}}
+\end{DoxyParamCaption}
+)}\label{class_c_g_d_c_direct_x11_buffer_layer_a28f821793734fda0969f5362324835b1}
+
+\begin{DoxyItemize}
+\item vertex buffer를 초기화 한다. 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\hypertarget{class_c_g_d_c_direct_x11_buffer_layer_a0e071fedeb529e654264223267194285}{}\index{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}!Set\+Name@{Set\+Name}}
+\index{Set\+Name@{Set\+Name}!C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer@{C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer}}
+\subsubsection[{Set\+Name(const C\+String \&str\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+D\+C\+Direct\+X11\+Buffer\+Layer\+::\+Set\+Name (
+\begin{DoxyParamCaption}
+\item[{const C\+String \&}]{str\+Name}
+\end{DoxyParamCaption}
+)}\label{class_c_g_d_c_direct_x11_buffer_layer_a0e071fedeb529e654264223267194285}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g_d_c_direct_x11_buffer_layer_8h}{G\+D\+C\+Direct\+X11\+Buffer\+Layer.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g_d_c_direct_x11_buffer_layer_8cpp}{G\+D\+C\+Direct\+X11\+Buffer\+Layer.\+cpp}\end{DoxyCompactItemize}

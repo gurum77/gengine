@@ -1,0 +1,342 @@
+\hypertarget{class_c_g_quad_tree}{}\section{C\+G\+Quad\+Tree$<$ E\+L\+E\+M\+E\+N\+T $>$ Class Template Reference}
+\label{class_c_g_quad_tree}\index{C\+G\+Quad\+Tree$<$ E\+L\+E\+M\+E\+N\+T $>$@{C\+G\+Quad\+Tree$<$ E\+L\+E\+M\+E\+N\+T $>$}}
+
+
+{\ttfamily \#include $<$G\+Quad\+Tree.\+hpp$>$}
+
+Inheritance diagram for C\+G\+Quad\+Tree$<$ E\+L\+E\+M\+E\+N\+T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_g_quad_tree}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_g_quad_tree_a236a06574bc2a4206959053a2339982e}{Attr} \{ \hyperlink{class_c_g_quad_tree_a236a06574bc2a4206959053a2339982eaadcfb618dd4ad318798e7aa516198e30}{e\+Attr\+Manage\+Node\+By\+File} = 0x00000001, 
+\hyperlink{class_c_g_quad_tree_a236a06574bc2a4206959053a2339982ea3837dff656475b7b1f5261e856c2190d}{e\+Attr\+Count}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_a_a_b_b}{A\+A\+B\+B} \hyperlink{class_c_g_quad_tree_a4009c22cb4e5bdfbd0d969189d409513}{Get\+Region} () const 
+\item 
+float \hyperlink{class_c_g_quad_tree_a839c02875e78dc762378da5247657ea8}{Get\+Max\+Segment\+Length} () const 
+\item 
+void \hyperlink{class_c_g_quad_tree_aab1acfc45f65a7a7dc8a74393e9f3804}{Set\+Max\+Segment\+Length} (const double \&d\+Max\+Segment\+Length)
+\item 
+void \hyperlink{class_c_g_quad_tree_a117fea806b387f66f0ef5628699be4db}{Set\+Attr} (const D\+W\+O\+R\+D32 \&dw\+Attr)
+\item 
+void \hyperlink{class_c_g_quad_tree_a15ace47567ee830469d271ecbe0cbf76}{Set\+Attr} (const \hyperlink{class_c_g_quad_tree_a236a06574bc2a4206959053a2339982e}{Attr} \&e\+Attr, const bool \&b\+Set)
+\item 
+D\+W\+O\+R\+D32 \hyperlink{class_c_g_quad_tree_a323c16b260db865deb47e60a2b19ff31}{Get\+Attr} () const 
+\item 
+bool \hyperlink{class_c_g_quad_tree_a0cbea589044da0ff249693c69a3e3fb2}{Get\+Attr} (const \hyperlink{class_c_g_quad_tree_a236a06574bc2a4206959053a2339982e}{Attr} \&e\+Attr) const 
+\item 
+void \hyperlink{class_c_g_quad_tree_ab6ff21001ea591dce7335e6958a0c506}{Get\+All\+Element} (C\+Atl\+Array$<$ E\+L\+E\+M\+E\+N\+T $\ast$ $>$ \&arr\+Ele\+Ret)
+\item 
+void \hyperlink{class_c_g_quad_tree_af82bd25d509d30a5a068c75901797197}{Get\+All\+Node} (C\+Atl\+List$<$ \hyperlink{class_quad_tree_node}{Quad\+Tree\+Node}$<$ E\+L\+E\+M\+E\+N\+T $>$ $\ast$ $>$ \&list\+Ret)
+\item 
+void \hyperlink{class_c_g_quad_tree_a5b7a730fb6372f36c486097327165066}{Get\+All\+In\+File\+Node} (C\+Atl\+List$<$ \hyperlink{class_quad_tree_node}{Quad\+Tree\+Node}$<$ E\+L\+E\+M\+E\+N\+T $>$ $\ast$ $>$ \&list\+Ret)
+\item 
+void \hyperlink{class_c_g_quad_tree_a0536685dfa4a23d099fa1f8480ea2830}{Get\+All\+In\+Memory\+Node} (C\+Atl\+List$<$ \hyperlink{class_quad_tree_node}{Quad\+Tree\+Node}$<$ E\+L\+E\+M\+E\+N\+T $>$ $\ast$ $>$ \&list\+Ret)
+\item 
+void \hyperlink{class_c_g_quad_tree_afe737245a182e8058ac19a018b7dcbd8}{Save\+File\+All\+Node} ()
+\item 
+void \hyperlink{class_c_g_quad_tree_ac2adf0ae2779ef580d12f187b6bdc9ac}{Find\+Element\+By\+Region} (const \hyperlink{struct_a_a_b_b}{A\+A\+B\+B} \&rc, C\+Atl\+List$<$ \hyperlink{class_c_g_quad_tree_element}{C\+G\+Quad\+Tree\+Element} $\ast$ $>$ \&list\+Ret)
+\item 
+void \hyperlink{class_c_g_quad_tree_a33ee431b660c2f5f605f42b4e1db9f41}{Find\+Element\+By\+Seg} (const \hyperlink{class_vec2f}{Vec2f} \&xy1, const \hyperlink{class_vec2f}{Vec2f} \&xy2, C\+Atl\+List$<$ \hyperlink{class_c_g_quad_tree_element}{C\+G\+Quad\+Tree\+Element} $\ast$ $>$ \&list\+Ret)
+\item 
+void \hyperlink{class_c_g_quad_tree_a74ea41913d7fca3fae276df61d695f19}{Find\+Element\+By\+Pos} (const \hyperlink{class_vec2f}{Vec2f} \&xy, C\+Atl\+List$<$ \hyperlink{class_c_g_quad_tree_element}{C\+G\+Quad\+Tree\+Element} $\ast$ $>$ \&list\+Ret)
+\item 
+void \hyperlink{class_c_g_quad_tree_a02597d27187c696e16960f85b065a841}{Find\+Element\+By\+Attr} (const D\+W\+O\+R\+D32 \&dw\+Attr, C\+Atl\+List$<$ \hyperlink{class_c_g_quad_tree_element}{C\+G\+Quad\+Tree\+Element} $\ast$ $>$ \&list\+Ret)
+\item 
+bool \hyperlink{class_c_g_quad_tree_a37925cd393647b6c70f95c899faa8f50}{Is\+Exist\+Element} ()
+\item 
+I\+N\+T32 \hyperlink{class_c_g_quad_tree_aa44c08b98bec2375582a582a16717766}{Get\+Count\+Element} ()
+\item 
+virtual E\+L\+E\+M\+E\+N\+T $\ast$ \hyperlink{class_c_g_quad_tree_aee432c03fd9016d45c8b6c555fde9925}{Add\+Element} (E\+L\+E\+M\+E\+N\+T \&element)
+\item 
+\hyperlink{class_c_g_quad_tree_ad13921cff7421f2d0d883e725ffe3134}{C\+G\+Quad\+Tree} (const \hyperlink{struct_a_a_b_b}{A\+A\+B\+B} \&start\+Region)
+\item 
+\hyperlink{class_c_g_quad_tree_a736964839ed7a0b2479c8c4f8af4bcf1}{$\sim$\+C\+G\+Quad\+Tree} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_c_g_quad_tree_a51afa9c162db376b19b751554d77e7e0}{Init\+Element} (C\+Atl\+List$<$ \hyperlink{class_c_g_quad_tree_element}{C\+G\+Quad\+Tree\+Element} $\ast$ $>$ \&list\+Ret)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_g_quad_tree_a3a7ffd2954e727a42f1f12950e659673}{Set\+Will\+File\+Save\+To\+All\+Node} ()
+\item 
+void \hyperlink{class_c_g_quad_tree_a2169e5fa40743cf1eba4390e854bde58}{Set\+Not\+Will\+File\+Save} (C\+Atl\+List$<$ \hyperlink{class_quad_tree_occupant}{Quad\+Tree\+Occupant} $\ast$ $>$ \&list\+Ret)
+\item 
+void \hyperlink{class_c_g_quad_tree_aacc89b7c0b94b32cd362e9d8634391fe}{Save\+File\+Will\+File\+Savd\+All\+Node} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+D\+W\+O\+R\+D32 \hyperlink{class_c_g_quad_tree_afd877e6e52d2e1a8ebf81b100f4f4b9b}{m\+\_\+dw\+Attr}
+\item 
+\hyperlink{struct_a_a_b_b}{A\+A\+B\+B} \hyperlink{class_c_g_quad_tree_ad2c6d0ba557e981c73c21cde5f7cdbc4}{m\+\_\+rc\+Region}
+\item 
+float \hyperlink{class_c_g_quad_tree_ae8d52b50ee3731209be5004325e31914}{m\+\_\+f\+Max\+Segment\+Length}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class E\+L\+E\+M\+E\+N\+T$>$class C\+G\+Quad\+Tree$<$ E\+L\+E\+M\+E\+N\+T $>$}
+
+
+\begin{DoxyItemize}
+\item quadtree 클래스 
+\end{DoxyItemize}
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_c_g_quad_tree_a236a06574bc2a4206959053a2339982e}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Attr@{Attr}}
+\index{Attr@{Attr}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Attr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ enum {\bf C\+G\+Quad\+Tree\+::\+Attr}}\label{class_c_g_quad_tree_a236a06574bc2a4206959053a2339982e}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+Attr\+Manage\+Node\+By\+File@{e\+Attr\+Manage\+Node\+By\+File}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!e\+Attr\+Manage\+Node\+By\+File@{e\+Attr\+Manage\+Node\+By\+File}}\item[{\em 
+\hypertarget{class_c_g_quad_tree_a236a06574bc2a4206959053a2339982eaadcfb618dd4ad318798e7aa516198e30}{}e\+Attr\+Manage\+Node\+By\+File\label{class_c_g_quad_tree_a236a06574bc2a4206959053a2339982eaadcfb618dd4ad318798e7aa516198e30}
+}]\index{e\+Attr\+Count@{e\+Attr\+Count}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!e\+Attr\+Count@{e\+Attr\+Count}}\item[{\em 
+\hypertarget{class_c_g_quad_tree_a236a06574bc2a4206959053a2339982ea3837dff656475b7b1f5261e856c2190d}{}e\+Attr\+Count\label{class_c_g_quad_tree_a236a06574bc2a4206959053a2339982ea3837dff656475b7b1f5261e856c2190d}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g_quad_tree_ad13921cff7421f2d0d883e725ffe3134}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{C\+G\+Quad\+Tree(const A\+A\+B\+B \&start\+Region)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::{\bf C\+G\+Quad\+Tree} (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B} \&}]{start\+Region}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_ad13921cff7421f2d0d883e725ffe3134}
+\hypertarget{class_c_g_quad_tree_a736964839ed7a0b2479c8c4f8af4bcf1}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!````~C\+G\+Quad\+Tree@{$\sim$\+C\+G\+Quad\+Tree}}
+\index{````~C\+G\+Quad\+Tree@{$\sim$\+C\+G\+Quad\+Tree}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{$\sim$\+C\+G\+Quad\+Tree()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::$\sim${\bf C\+G\+Quad\+Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_a736964839ed7a0b2479c8c4f8af4bcf1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g_quad_tree_aee432c03fd9016d45c8b6c555fde9925}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Add\+Element@{Add\+Element}}
+\index{Add\+Element@{Add\+Element}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Add\+Element(\+E\+L\+E\+M\+E\+N\+T \&element)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ virtual E\+L\+E\+M\+E\+N\+T$\ast$ {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Add\+Element (
+\begin{DoxyParamCaption}
+\item[{E\+L\+E\+M\+E\+N\+T \&}]{element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_g_quad_tree_aee432c03fd9016d45c8b6c555fde9925}
+
+
+Reimplemented in \hyperlink{class_c_g_multi_quad_tree_ae7192b9d985c14322179d9ebf1b252c7}{C\+G\+Multi\+Quad\+Tree$<$ E\+L\+E\+M\+E\+N\+T $>$}.
+
+\hypertarget{class_c_g_quad_tree_a02597d27187c696e16960f85b065a841}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Find\+Element\+By\+Attr@{Find\+Element\+By\+Attr}}
+\index{Find\+Element\+By\+Attr@{Find\+Element\+By\+Attr}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Find\+Element\+By\+Attr(const D\+W\+O\+R\+D32 \&dw\+Attr, C\+Atl\+List$<$ C\+G\+Quad\+Tree\+Element $\ast$ $>$ \&list\+Ret)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Find\+Element\+By\+Attr (
+\begin{DoxyParamCaption}
+\item[{const D\+W\+O\+R\+D32 \&}]{dw\+Attr, }
+\item[{C\+Atl\+List$<$ {\bf C\+G\+Quad\+Tree\+Element} $\ast$ $>$ \&}]{list\+Ret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_a02597d27187c696e16960f85b065a841}
+
+\begin{DoxyItemize}
+\item 속성에 의해서 element를 가져온다.
+\item 주로 저장할때 호출됨. 
+\end{DoxyItemize}\hypertarget{class_c_g_quad_tree_a74ea41913d7fca3fae276df61d695f19}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Find\+Element\+By\+Pos@{Find\+Element\+By\+Pos}}
+\index{Find\+Element\+By\+Pos@{Find\+Element\+By\+Pos}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Find\+Element\+By\+Pos(const Vec2f \&xy, C\+Atl\+List$<$ C\+G\+Quad\+Tree\+Element $\ast$ $>$ \&list\+Ret)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Find\+Element\+By\+Pos (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2f} \&}]{xy, }
+\item[{C\+Atl\+List$<$ {\bf C\+G\+Quad\+Tree\+Element} $\ast$ $>$ \&}]{list\+Ret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_a74ea41913d7fca3fae276df61d695f19}
+\hypertarget{class_c_g_quad_tree_ac2adf0ae2779ef580d12f187b6bdc9ac}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Find\+Element\+By\+Region@{Find\+Element\+By\+Region}}
+\index{Find\+Element\+By\+Region@{Find\+Element\+By\+Region}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Find\+Element\+By\+Region(const A\+A\+B\+B \&rc, C\+Atl\+List$<$ C\+G\+Quad\+Tree\+Element $\ast$ $>$ \&list\+Ret)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Find\+Element\+By\+Region (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B} \&}]{rc, }
+\item[{C\+Atl\+List$<$ {\bf C\+G\+Quad\+Tree\+Element} $\ast$ $>$ \&}]{list\+Ret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_ac2adf0ae2779ef580d12f187b6bdc9ac}
+\hypertarget{class_c_g_quad_tree_a33ee431b660c2f5f605f42b4e1db9f41}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Find\+Element\+By\+Seg@{Find\+Element\+By\+Seg}}
+\index{Find\+Element\+By\+Seg@{Find\+Element\+By\+Seg}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Find\+Element\+By\+Seg(const Vec2f \&xy1, const Vec2f \&xy2, C\+Atl\+List$<$ C\+G\+Quad\+Tree\+Element $\ast$ $>$ \&list\+Ret)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Find\+Element\+By\+Seg (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2f} \&}]{xy1, }
+\item[{const {\bf Vec2f} \&}]{xy2, }
+\item[{C\+Atl\+List$<$ {\bf C\+G\+Quad\+Tree\+Element} $\ast$ $>$ \&}]{list\+Ret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_a33ee431b660c2f5f605f42b4e1db9f41}
+\hypertarget{class_c_g_quad_tree_ab6ff21001ea591dce7335e6958a0c506}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Get\+All\+Element@{Get\+All\+Element}}
+\index{Get\+All\+Element@{Get\+All\+Element}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Get\+All\+Element(\+C\+Atl\+Array$<$ E\+L\+E\+M\+E\+N\+T $\ast$ $>$ \&arr\+Ele\+Ret)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Get\+All\+Element (
+\begin{DoxyParamCaption}
+\item[{C\+Atl\+Array$<$ E\+L\+E\+M\+E\+N\+T $\ast$ $>$ \&}]{arr\+Ele\+Ret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_ab6ff21001ea591dce7335e6958a0c506}
+\hypertarget{class_c_g_quad_tree_a5b7a730fb6372f36c486097327165066}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Get\+All\+In\+File\+Node@{Get\+All\+In\+File\+Node}}
+\index{Get\+All\+In\+File\+Node@{Get\+All\+In\+File\+Node}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Get\+All\+In\+File\+Node(\+C\+Atl\+List$<$ Quad\+Tree\+Node$<$ E\+L\+E\+M\+E\+N\+T $>$ $\ast$ $>$ \&list\+Ret)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Get\+All\+In\+File\+Node (
+\begin{DoxyParamCaption}
+\item[{C\+Atl\+List$<$ {\bf Quad\+Tree\+Node}$<$ E\+L\+E\+M\+E\+N\+T $>$ $\ast$ $>$ \&}]{list\+Ret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_a5b7a730fb6372f36c486097327165066}
+
+\begin{DoxyItemize}
+\item file로 저장된 node를 모두 가져온다.
+\item test를 위한 코드이다. 
+\end{DoxyItemize}\hypertarget{class_c_g_quad_tree_a0536685dfa4a23d099fa1f8480ea2830}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Get\+All\+In\+Memory\+Node@{Get\+All\+In\+Memory\+Node}}
+\index{Get\+All\+In\+Memory\+Node@{Get\+All\+In\+Memory\+Node}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Get\+All\+In\+Memory\+Node(\+C\+Atl\+List$<$ Quad\+Tree\+Node$<$ E\+L\+E\+M\+E\+N\+T $>$ $\ast$ $>$ \&list\+Ret)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Get\+All\+In\+Memory\+Node (
+\begin{DoxyParamCaption}
+\item[{C\+Atl\+List$<$ {\bf Quad\+Tree\+Node}$<$ E\+L\+E\+M\+E\+N\+T $>$ $\ast$ $>$ \&}]{list\+Ret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_a0536685dfa4a23d099fa1f8480ea2830}
+
+\begin{DoxyItemize}
+\item memory로 저장된 node를 모두 가져온다.
+\item test를 위한 코드이다. 
+\end{DoxyItemize}\hypertarget{class_c_g_quad_tree_af82bd25d509d30a5a068c75901797197}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Get\+All\+Node@{Get\+All\+Node}}
+\index{Get\+All\+Node@{Get\+All\+Node}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Get\+All\+Node(\+C\+Atl\+List$<$ Quad\+Tree\+Node$<$ E\+L\+E\+M\+E\+N\+T $>$ $\ast$ $>$ \&list\+Ret)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Get\+All\+Node (
+\begin{DoxyParamCaption}
+\item[{C\+Atl\+List$<$ {\bf Quad\+Tree\+Node}$<$ E\+L\+E\+M\+E\+N\+T $>$ $\ast$ $>$ \&}]{list\+Ret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_af82bd25d509d30a5a068c75901797197}
+\hypertarget{class_c_g_quad_tree_a323c16b260db865deb47e60a2b19ff31}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Get\+Attr@{Get\+Attr}}
+\index{Get\+Attr@{Get\+Attr}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Get\+Attr() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ D\+W\+O\+R\+D32 {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Get\+Attr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_a323c16b260db865deb47e60a2b19ff31}
+\hypertarget{class_c_g_quad_tree_a0cbea589044da0ff249693c69a3e3fb2}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Get\+Attr@{Get\+Attr}}
+\index{Get\+Attr@{Get\+Attr}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Get\+Attr(const Attr \&e\+Attr) const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ bool {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Get\+Attr (
+\begin{DoxyParamCaption}
+\item[{const {\bf Attr} \&}]{e\+Attr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_a0cbea589044da0ff249693c69a3e3fb2}
+\hypertarget{class_c_g_quad_tree_aa44c08b98bec2375582a582a16717766}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Get\+Count\+Element@{Get\+Count\+Element}}
+\index{Get\+Count\+Element@{Get\+Count\+Element}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Get\+Count\+Element()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ I\+N\+T32 {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Get\+Count\+Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_aa44c08b98bec2375582a582a16717766}
+\hypertarget{class_c_g_quad_tree_a839c02875e78dc762378da5247657ea8}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Get\+Max\+Segment\+Length@{Get\+Max\+Segment\+Length}}
+\index{Get\+Max\+Segment\+Length@{Get\+Max\+Segment\+Length}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Get\+Max\+Segment\+Length() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ float {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Get\+Max\+Segment\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_a839c02875e78dc762378da5247657ea8}
+\hypertarget{class_c_g_quad_tree_a4009c22cb4e5bdfbd0d969189d409513}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Get\+Region@{Get\+Region}}
+\index{Get\+Region@{Get\+Region}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Get\+Region() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ {\bf A\+A\+B\+B} {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Get\+Region (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_a4009c22cb4e5bdfbd0d969189d409513}
+\hypertarget{class_c_g_quad_tree_a51afa9c162db376b19b751554d77e7e0}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Init\+Element@{Init\+Element}}
+\index{Init\+Element@{Init\+Element}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Init\+Element(\+C\+Atl\+List$<$ C\+G\+Quad\+Tree\+Element $\ast$ $>$ \&list\+Ret)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ static void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Init\+Element (
+\begin{DoxyParamCaption}
+\item[{C\+Atl\+List$<$ {\bf C\+G\+Quad\+Tree\+Element} $\ast$ $>$ \&}]{list\+Ret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_c_g_quad_tree_a51afa9c162db376b19b751554d77e7e0}
+\hypertarget{class_c_g_quad_tree_a37925cd393647b6c70f95c899faa8f50}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Is\+Exist\+Element@{Is\+Exist\+Element}}
+\index{Is\+Exist\+Element@{Is\+Exist\+Element}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Is\+Exist\+Element()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ bool {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Is\+Exist\+Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_a37925cd393647b6c70f95c899faa8f50}
+\hypertarget{class_c_g_quad_tree_afe737245a182e8058ac19a018b7dcbd8}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Save\+File\+All\+Node@{Save\+File\+All\+Node}}
+\index{Save\+File\+All\+Node@{Save\+File\+All\+Node}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Save\+File\+All\+Node()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Save\+File\+All\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_afe737245a182e8058ac19a018b7dcbd8}
+
+\begin{DoxyItemize}
+\item 모든 노드를 파일로 저장한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_quad_tree_aacc89b7c0b94b32cd362e9d8634391fe}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Save\+File\+Will\+File\+Savd\+All\+Node@{Save\+File\+Will\+File\+Savd\+All\+Node}}
+\index{Save\+File\+Will\+File\+Savd\+All\+Node@{Save\+File\+Will\+File\+Savd\+All\+Node}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Save\+File\+Will\+File\+Savd\+All\+Node()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Save\+File\+Will\+File\+Savd\+All\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{class_c_g_quad_tree_aacc89b7c0b94b32cd362e9d8634391fe}
+
+\begin{DoxyItemize}
+\item save 될 에정인 node를 모두 save한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_quad_tree_a117fea806b387f66f0ef5628699be4db}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Set\+Attr@{Set\+Attr}}
+\index{Set\+Attr@{Set\+Attr}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Set\+Attr(const D\+W\+O\+R\+D32 \&dw\+Attr)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Set\+Attr (
+\begin{DoxyParamCaption}
+\item[{const D\+W\+O\+R\+D32 \&}]{dw\+Attr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_a117fea806b387f66f0ef5628699be4db}
+\hypertarget{class_c_g_quad_tree_a15ace47567ee830469d271ecbe0cbf76}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Set\+Attr@{Set\+Attr}}
+\index{Set\+Attr@{Set\+Attr}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Set\+Attr(const Attr \&e\+Attr, const bool \&b\+Set)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Set\+Attr (
+\begin{DoxyParamCaption}
+\item[{const {\bf Attr} \&}]{e\+Attr, }
+\item[{const bool \&}]{b\+Set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_a15ace47567ee830469d271ecbe0cbf76}
+\hypertarget{class_c_g_quad_tree_aab1acfc45f65a7a7dc8a74393e9f3804}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Set\+Max\+Segment\+Length@{Set\+Max\+Segment\+Length}}
+\index{Set\+Max\+Segment\+Length@{Set\+Max\+Segment\+Length}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Set\+Max\+Segment\+Length(const double \&d\+Max\+Segment\+Length)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Set\+Max\+Segment\+Length (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{d\+Max\+Segment\+Length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_g_quad_tree_aab1acfc45f65a7a7dc8a74393e9f3804}
+\hypertarget{class_c_g_quad_tree_a2169e5fa40743cf1eba4390e854bde58}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Set\+Not\+Will\+File\+Save@{Set\+Not\+Will\+File\+Save}}
+\index{Set\+Not\+Will\+File\+Save@{Set\+Not\+Will\+File\+Save}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Set\+Not\+Will\+File\+Save(\+C\+Atl\+List$<$ Quad\+Tree\+Occupant $\ast$ $>$ \&list\+Ret)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Set\+Not\+Will\+File\+Save (
+\begin{DoxyParamCaption}
+\item[{C\+Atl\+List$<$ {\bf Quad\+Tree\+Occupant} $\ast$ $>$ \&}]{list\+Ret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{class_c_g_quad_tree_a2169e5fa40743cf1eba4390e854bde58}
+
+\begin{DoxyItemize}
+\item save 될 예정 설정은 해제한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_quad_tree_a3a7ffd2954e727a42f1f12950e659673}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!Set\+Will\+File\+Save\+To\+All\+Node@{Set\+Will\+File\+Save\+To\+All\+Node}}
+\index{Set\+Will\+File\+Save\+To\+All\+Node@{Set\+Will\+File\+Save\+To\+All\+Node}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{Set\+Will\+File\+Save\+To\+All\+Node()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ void {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::Set\+Will\+File\+Save\+To\+All\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{class_c_g_quad_tree_a3a7ffd2954e727a42f1f12950e659673}
+
+\begin{DoxyItemize}
+\item quadtree를 serialize한다. 
+\end{DoxyItemize}
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_g_quad_tree_afd877e6e52d2e1a8ebf81b100f4f4b9b}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!m\+\_\+dw\+Attr@{m\+\_\+dw\+Attr}}
+\index{m\+\_\+dw\+Attr@{m\+\_\+dw\+Attr}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{m\+\_\+dw\+Attr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ D\+W\+O\+R\+D32 {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::m\+\_\+dw\+Attr\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g_quad_tree_afd877e6e52d2e1a8ebf81b100f4f4b9b}
+\hypertarget{class_c_g_quad_tree_ae8d52b50ee3731209be5004325e31914}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!m\+\_\+f\+Max\+Segment\+Length@{m\+\_\+f\+Max\+Segment\+Length}}
+\index{m\+\_\+f\+Max\+Segment\+Length@{m\+\_\+f\+Max\+Segment\+Length}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{m\+\_\+f\+Max\+Segment\+Length}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ float {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::m\+\_\+f\+Max\+Segment\+Length\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g_quad_tree_ae8d52b50ee3731209be5004325e31914}
+\hypertarget{class_c_g_quad_tree_ad2c6d0ba557e981c73c21cde5f7cdbc4}{}\index{C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}!m\+\_\+rc\+Region@{m\+\_\+rc\+Region}}
+\index{m\+\_\+rc\+Region@{m\+\_\+rc\+Region}!C\+G\+Quad\+Tree@{C\+G\+Quad\+Tree}}
+\subsubsection[{m\+\_\+rc\+Region}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E\+L\+E\+M\+E\+N\+T$>$ {\bf A\+A\+B\+B} {\bf C\+G\+Quad\+Tree}$<$ E\+L\+E\+M\+E\+N\+T $>$\+::m\+\_\+rc\+Region\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_g_quad_tree_ad2c6d0ba557e981c73c21cde5f7cdbc4}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Common/\hyperlink{_g_quad_tree_8hpp}{G\+Quad\+Tree.\+hpp}\end{DoxyCompactItemize}

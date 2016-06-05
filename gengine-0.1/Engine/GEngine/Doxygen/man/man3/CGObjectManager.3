@@ -1,0 +1,325 @@
+.TH "CGObjectManager" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGObjectManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GObjectManager\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBAttr\fP { \fBeAttrDisplayOnlyTextOutline\fP = 0x00000001 }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCGObjectBase\fP * \fBGetFirstObjectByType\fP (const CAtlString &strType)"
+.br
+.ti -1c
+.RI "\fBCGObjectBase\fP * \fBFindObjectByID\fP (const \fBGID\fP &ID)"
+.br
+.ti -1c
+.RI "void \fBInitObject\fP ()"
+.br
+.ti -1c
+.RI "void \fBAddObject\fP (\fBCGObjectBase\fP *pObj, const \fBGBOOL\fP &bNewID=TRUE)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBDeleteObject\fP (\fBCGObjectBase\fP *pObj)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBDeleteObject\fP (CAtlArray< \fBCGObjectBase\fP * > &arrObj)"
+.br
+.ti -1c
+.RI "\fBCGObjectBase\fP * \fBGetRootObject\fP (const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "\fBCGObjectBase\fP * \fBGetParentObject\fP (const \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "void \fBGetAllSubObject\fP (const \fBCGObjectBase\fP &object, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrObject)"
+.br
+.ti -1c
+.RI "void \fBGetAllVertex\fP (\fBGOUT\fP CAtlList< \fBGVERTEX\fP > &listVertex)"
+.br
+.ti -1c
+.RI "void \fBGetAllVertex\fP (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > &arrVertex, CAtlArray< \fBCGObjectBase\fP * > *pArrObject=NULL)"
+.br
+.ti -1c
+.RI "void \fBGetAllVertexByPrimitiveTopology\fP (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > &arrVertex, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGUINT32\fP &iStartVertexOffset=0, CAtlArray< \fBCGObjectBase\fP * > *pArrObject=NULL)"
+.br
+.ti -1c
+.RI "void \fBGetAllStripVertexListIndexByPrimitiveTopology\fP (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > &arrVertex, \fBGOUT\fP CAtlArray< \fBGUINT32\fP > &arrIndex, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGUINT32\fP &iStartVertexOffset=0, const \fBGUINT32\fP &iStartIndexOffset=0, CAtlArray< \fBCGObjectBase\fP * > *pArrObject=NULL)"
+.br
+.ti -1c
+.RI "void \fBMoveVertexBufferByDeletingObject\fP (const \fBGUINT32\fP &uVertexOffset, const \fBGUINT32\fP &uVertexCount, const \fBPrimitiveTopology\fP &ePrimitiveTopology)"
+.br
+.ti -1c
+.RI "void \fBMoveIndexBufferByDeletingObject\fP (const \fBGUINT32\fP &uIndexOffset, const \fBGUINT32\fP &uIndexCount, const \fBPrimitiveTopology\fP &ePrimitiveTopology)"
+.br
+.ti -1c
+.RI "void \fBUpdateVertexOffset\fP (const \fBGVERTEX\fP *pVertex, const \fBGSIZE\fP &iVertexCount)"
+.br
+.ti -1c
+.RI "\fBCGCube\fP \fBCalcBoundary\fP () const "
+.br
+.ti -1c
+.RI "const CAtlMap< \fBGID\fP, \fBCGObjectBase\fP * > & \fBGetObjectList\fP () const "
+.br
+.ti -1c
+.RI "CAtlMap< \fBGID\fP, \fBCGObjectBase\fP * > & \fBGetObjectList\fP ()"
+.br
+.ti -1c
+.RI "void \fBGetAllObject\fP (\fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > &arrObject)"
+.br
+.ti -1c
+.RI "void \fBSetMatTransform\fP (const \fBCGMatrix\fP &matTransform)"
+.br
+.ti -1c
+.RI "const \fBCGMatrix\fP & \fBGetMatTransform\fP () const "
+.br
+.ti -1c
+.RI "\fBCGMatrix\fP & \fBGetMatTransform\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetAttr\fP (const DWORD32 &dwAttr)"
+.br
+.ti -1c
+.RI "const DWORD32 & \fBGetAttr\fP () const "
+.br
+.ti -1c
+.RI "\fBCGObjectManager\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGObjectManager\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+객체 관리 
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCGObjectManager::Attr\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeAttrDisplayOnlyTextOutline \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGObjectManager::CGObjectManager ()"
+
+.SS "CGObjectManager::~CGObjectManager ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGObjectManager::AddObject (\fBCGObjectBase\fP * pObj, const \fBGBOOL\fP & bNewID = \fCTRUE\fP)"
+
+.IP "\(bu" 2
+object를 등록한다\&. 
+.PP
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbNewID\fP true : object에 새 ID를 발급한다\&. 
+.RE
+.PP
+
+.SS "\fBCGCube\fP CGObjectManager::CalcBoundary () const"
+
+.IP "\(bu" 2
+전체 객체의 boundary를 계산한다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CGObjectManager::DeleteObject (\fBCGObjectBase\fP * pObj)"
+
+.IP "\(bu" 2
+object를 삭제한다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CGObjectManager::DeleteObject (CAtlArray< \fBCGObjectBase\fP * > & arrObj)"
+
+.IP "\(bu" 2
+object 여러개를 삭제한다\&. 
+.PP
+
+.SS "\fBCGObjectBase\fP * CGObjectManager::FindObjectByID (const \fBGID\fP & ID)"
+
+.IP "\(bu" 2
+object를 ID로 찾는다\&. 
+.PP
+
+.SS "void CGObjectManager::GetAllObject (\fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrObject)"
+
+.IP "\(bu" 2
+모든 object를 배열에 담는다\&. 
+.PP
+
+.SS "void CGObjectManager::GetAllStripVertexListIndexByPrimitiveTopology (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > & arrVertex, \fBGOUT\fP CAtlArray< \fBGUINT32\fP > & arrIndex, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGUINT32\fP & iStartVertexOffset = \fC0\fP, const \fBGUINT32\fP & iStartIndexOffset = \fC0\fP, CAtlArray< \fBCGObjectBase\fP * > * pArrObject = \fCNULL\fP)"
+
+.IP "\(bu" 2
+모든 object의 strip vertex와 list index를 가져온다\&. 
+.PP
+
+.SS "void CGObjectManager::GetAllSubObject (const \fBCGObjectBase\fP & object, \fBGOUT\fP CAtlArray< \fBCGObjectBase\fP * > & arrObject)"
+
+.IP "\(bu" 2
+compound object의 모든 sub object를 가져온다\&. 
+.PP
+
+.SS "void CGObjectManager::GetAllVertex (\fBGOUT\fP CAtlList< \fBGVERTEX\fP > & listVertex)"
+
+.IP "\(bu" 2
+모든 object의 vertex를 가져온다\&. 
+.PP
+
+.SS "void CGObjectManager::GetAllVertex (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > & arrVertex, CAtlArray< \fBCGObjectBase\fP * > * pArrObject = \fCNULL\fP)"
+
+.SS "void CGObjectManager::GetAllVertexByPrimitiveTopology (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > & arrVertex, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGUINT32\fP & iStartVertexOffset = \fC0\fP, CAtlArray< \fBCGObjectBase\fP * > * pArrObject = \fCNULL\fP)"
+
+.IP "\(bu" 2
+모든 object의 모든 vertex를 가져온다\&.
+.IP "\(bu" 2
+ePrimitiveTopology별로 가져온다\&.
+.IP "\(bu" 2
+vertex 추가방식별 성능 측정
+.IP "  \(bu" 4
+1000 * 1000 * 2 개
+.IP "  \(bu" 4
+type == 0
+.IP "    \(bu" 6
+Time to GetAllVertexByPrimitiveTopology 0\&.258459 sec
+.IP "    \(bu" 6
+Time to GetAllVertexByPrimitiveTopology 133\&.060989 sec
+.IP "    \(bu" 6
+Time to GetAllVertexByPrimitiveTopology 0\&.272742 sec
+.PP
+
+.IP "  \(bu" 4
+type == 1
+.IP "    \(bu" 6
+Time to GetAllVertexByPrimitiveTopology 0\&.263354 sec
+.IP "    \(bu" 6
+Time to GetAllVertexByPrimitiveTopology 27\&.916691 sec
+.IP "    \(bu" 6
+Time to GetAllVertexByPrimitiveTopology 0\&.261429 sec
+.PP
+
+.IP "  \(bu" 4
+type == 2
+.IP "    \(bu" 6
+Time to GetAllVertexByPrimitiveTopology 0\&.238288 sec
+.IP "    \(bu" 6
+Time to GetAllVertexByPrimitiveTopology 5\&.606389 sec
+.IP "    \(bu" 6
+Time to GetAllVertexByPrimitiveTopology 0\&.240317 sec 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP 
+.RE
+.PP
+
+.PP
+
+.PP
+
+.PP
+
+.SS "const DWORD32 & CGObjectManager::GetAttr () const"
+
+.SS "\fBCGObjectBase\fP * CGObjectManager::GetFirstObjectByType (const CAtlString & strType)"
+
+.IP "\(bu" 2
+type별 첫번째 object를 리턴한다\&. 
+.PP
+
+.SS "const \fBCGMatrix\fP & CGObjectManager::GetMatTransform () const"
+
+.SS "\fBCGMatrix\fP & CGObjectManager::GetMatTransform ()"
+
+.SS "const CAtlMap< \fBGID\fP, \fBCGObjectBase\fP * > & CGObjectManager::GetObjectList () const"
+
+.IP "\(bu" 2
+object list를 리턴한다\&.
+.IP "\(bu" 2
+참조용이다\&.(수정불가) 
+.PP
+
+.SS "CAtlMap< \fBGID\fP, \fBCGObjectBase\fP * > & CGObjectManager::GetObjectList ()"
+
+.IP "\(bu" 2
+수정가능한 object list를 리턴한다\&. 
+.PP
+
+.SS "\fBCGObjectBase\fP * CGObjectManager::GetParentObject (const \fBCGObjectBase\fP & object)"
+
+.IP "\(bu" 2
+object의 parent object를 리턴한다\&. 
+.PP
+
+.SS "\fBCGObjectBase\fP * CGObjectManager::GetRootObject (const \fBCGObjectBase\fP & object)"
+
+.IP "\(bu" 2
+object의 최상위 object를 리턴한다\&. 
+.PP
+
+.SS "void CGObjectManager::InitObject ()"
+
+.IP "\(bu" 2
+모든 object를 삭제한다\&.
+.IP "\(bu" 2
+object를 하나씩 삭제하는 것 보다 빠르다\&. 
+.PP
+
+.SS "void CGObjectManager::MoveIndexBufferByDeletingObject (const \fBGUINT32\fP & uIndexOffset, const \fBGUINT32\fP & uIndexCount, const \fBPrimitiveTopology\fP & ePrimitiveTopology)"
+
+.IP "\(bu" 2
+object 삭제에 따른 다른 object의 index buffer offset값을 이동한다\&. 
+.PP
+
+.SS "void CGObjectManager::MoveVertexBufferByDeletingObject (const \fBGUINT32\fP & uVertexOffset, const \fBGUINT32\fP & uVertexCount, const \fBPrimitiveTopology\fP & ePrimitiveTopology)"
+
+.IP "\(bu" 2
+object 삭제에 따른 다른 object의 vertex buffer offset값을 이동한다\&. 
+.PP
+
+.SS "void CGObjectManager::SetAttr (const DWORD32 & dwAttr)"
+
+.SS "void CGObjectManager::SetMatTransform (const \fBCGMatrix\fP & matTransform)"
+
+.IP "\(bu" 2
+object 전체에 영향을 주는 좌표변환 matrix를 설정한다\&. 
+.PP
+
+.SS "void CGObjectManager::UpdateVertexOffset (const \fBGVERTEX\fP * pVertex, const \fBGSIZE\fP & iVertexCount)"
+
+.IP "\(bu" 2
+object들의 vertex offset을 갱신한다\&. 
+.PP
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpVertex\fP vertex buffer의 pointer 
+.br
+\fIiVertexCount\fP vertex buffer의 개수 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

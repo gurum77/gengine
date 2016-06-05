@@ -1,0 +1,197 @@
+.TH "QuadTree< ELEMENT >" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+QuadTree< ELEMENT > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GQuadTree\&.hpp>\fP
+.PP
+Inherited by \fBCGQuadTree< ELEMENT >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetProtectSavedNodeFile\fP (const bool &bProtectSavedNodeFile)"
+.br
+.ti -1c
+.RI "bool \fBGetProtectSavedNodeFile\fP () const "
+.br
+.ti -1c
+.RI "ELEMENT * \fBAddOccupantFast\fP (CAtlArray< ELEMENT > &arr, ELEMENT &ele)"
+.br
+.ti -1c
+.RI "UINT32 \fBGetMaxLevel\fP ()"
+.br
+.ti -1c
+.RI "UINT32 \fBGetGrowSizeOccupants\fP ()"
+.br
+.ti -1c
+.RI "CString \fBGetGuid\fP ()"
+.br
+.ti -1c
+.RI "CString \fBGetPath\fP ()"
+.br
+.ti -1c
+.RI "\fBQuadTree\fP (const \fBAABB\fP &startRegion)"
+.br
+.ti -1c
+.RI "\fB~QuadTree\fP ()"
+.br
+.ti -1c
+.RI "\fBQuadTreeNode\fP< ELEMENT > * \fBGetRootNode\fP ()"
+.br
+.ti -1c
+.RI "ELEMENT * \fBAddOccupant\fP (ELEMENT &oc)"
+.br
+.ti -1c
+.RI "void \fBClearTree\fP (const \fBAABB\fP &newStartRegion)"
+.br
+.ti -1c
+.RI "void \fBSetMaxLevel\fP (const UINT32 &nMaxLevel)"
+.br
+.ti -1c
+.RI "void \fBSetGrowSizeOccupants\fP (const UINT32 &nMaxOccupants)"
+.br
+.ti -1c
+.RI "void \fBSetGuid\fP (const CString &strGuid)"
+.br
+.ti -1c
+.RI "void \fBSetPath\fP (const CString &strPath)"
+.br
+.ti -1c
+.RI "void \fBQuery\fP (const \fBAABB\fP &queryRegion, CAtlList< \fBQuadTreeOccupant\fP * > &queryResult)"
+.br
+.ti -1c
+.RI "unsigned int \fBGetNumOccupants\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBInitOutsideRoot\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "CAtlArray< ELEMENT > \fBoutsideRoot\fP"
+.br
+.ti -1c
+.RI "\fBQuadTreeNode\fP< ELEMENT > * \fBrootNode\fP"
+.br
+.ti -1c
+.RI "UINT32 \fBm_nMaxLevel\fP"
+.br
+.ti -1c
+.RI "UINT32 \fBm_nGrowSizeOccupants\fP"
+.br
+.ti -1c
+.RI "bool \fBm_bProtectSavedNodeFile\fP"
+.br
+.ti -1c
+.RI "CString \fBm_strGuid\fP"
+.br
+.ti -1c
+.RI "CString \fBm_strPath\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class ELEMENT> \fBQuadTree\fP< ELEMENT >::\fBQuadTree\fP (const \fBAABB\fP & startRegion)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> \fBQuadTree\fP< ELEMENT >::~\fBQuadTree\fP ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class ELEMENT> ELEMENT* \fBQuadTree\fP< ELEMENT >::AddOccupant (ELEMENT & oc)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> ELEMENT* \fBQuadTree\fP< ELEMENT >::AddOccupantFast (CAtlArray< ELEMENT > & arr, ELEMENT & ele)\fC [inline]\fP"
+
+.IP "\(bu" 2
+array에 element를 빠르게 추가한다\&.
+.IP "\(bu" 2
+grow size를 적용한다\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.RE
+.PP
+
+.IP "\(bu" 2
+추가된 ELEMENT의 pointer를 리턴한다\&. 
+.PP
+
+.SS "template<class ELEMENT> void \fBQuadTree\fP< ELEMENT >::ClearTree (const \fBAABB\fP & newStartRegion)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> UINT32 \fBQuadTree\fP< ELEMENT >::GetGrowSizeOccupants ()\fC [inline]\fP"
+
+.SS "template<class ELEMENT> CString \fBQuadTree\fP< ELEMENT >::GetGuid ()\fC [inline]\fP"
+
+.SS "template<class ELEMENT> UINT32 \fBQuadTree\fP< ELEMENT >::GetMaxLevel ()\fC [inline]\fP"
+
+.SS "template<class ELEMENT> unsigned int \fBQuadTree\fP< ELEMENT >::GetNumOccupants ()\fC [inline]\fP"
+
+.SS "template<class ELEMENT> CString \fBQuadTree\fP< ELEMENT >::GetPath ()\fC [inline]\fP"
+
+.SS "template<class ELEMENT> bool \fBQuadTree\fP< ELEMENT >::GetProtectSavedNodeFile () const\fC [inline]\fP"
+
+.SS "template<class ELEMENT> \fBQuadTreeNode\fP<ELEMENT>* \fBQuadTree\fP< ELEMENT >::GetRootNode ()\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBQuadTree\fP< ELEMENT >::InitOutsideRoot ()\fC [inline]\fP, \fC [protected]\fP"
+
+.SS "template<class ELEMENT> void \fBQuadTree\fP< ELEMENT >::Query (const \fBAABB\fP & queryRegion, CAtlList< \fBQuadTreeOccupant\fP * > & queryResult)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBQuadTree\fP< ELEMENT >::SetGrowSizeOccupants (const UINT32 & nMaxOccupants)\fC [inline]\fP"
+
+.IP "\(bu" 2
+max occupants를 설정하면 rootnode를 다시 만들자\&. 
+.PP
+
+.SS "template<class ELEMENT> void \fBQuadTree\fP< ELEMENT >::SetGuid (const CString & strGuid)\fC [inline]\fP"
+
+.IP "\(bu" 2
+quadtree의 guid
+.IP "\(bu" 2
+multi quadtree에서는 sub 가 모두 main과 동일한 guid를 가진다\&.
+.IP "\(bu" 2
+node를 파일로 보관할때 directory명이 된다\&. 
+.PP
+
+.SS "template<class ELEMENT> void \fBQuadTree\fP< ELEMENT >::SetMaxLevel (const UINT32 & nMaxLevel)\fC [inline]\fP"
+
+.SS "template<class ELEMENT> void \fBQuadTree\fP< ELEMENT >::SetPath (const CString & strPath)\fC [inline]\fP"
+
+.IP "\(bu" 2
+파일저장시 경로
+.IP "\(bu" 2
+기본값(\&.\\) 
+.PP
+
+.SS "template<class ELEMENT> void \fBQuadTree\fP< ELEMENT >::SetProtectSavedNodeFile (const bool & bProtectSavedNodeFile)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class ELEMENT> bool \fBQuadTree\fP< ELEMENT >::m_bProtectSavedNodeFile\fC [protected]\fP"
+
+.SS "template<class ELEMENT> UINT32 \fBQuadTree\fP< ELEMENT >::m_nGrowSizeOccupants\fC [protected]\fP"
+
+.SS "template<class ELEMENT> UINT32 \fBQuadTree\fP< ELEMENT >::m_nMaxLevel\fC [protected]\fP"
+
+.SS "template<class ELEMENT> CString \fBQuadTree\fP< ELEMENT >::m_strGuid\fC [protected]\fP"
+
+.SS "template<class ELEMENT> CString \fBQuadTree\fP< ELEMENT >::m_strPath\fC [protected]\fP"
+
+.SS "template<class ELEMENT> CAtlArray<ELEMENT> \fBQuadTree\fP< ELEMENT >::outsideRoot\fC [protected]\fP"
+
+.SS "template<class ELEMENT> \fBQuadTreeNode\fP<ELEMENT>* \fBQuadTree\fP< ELEMENT >::rootNode\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

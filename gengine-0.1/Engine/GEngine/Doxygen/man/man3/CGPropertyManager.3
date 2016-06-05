@@ -1,0 +1,113 @@
+.TH "CGPropertyManager" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGPropertyManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GPropertyManager\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBInitProperty\fP (const \fBGBOOL\fP &bCreateDefaultProperty=TRUE)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBSetObjectColor\fP (\fBGINOUT\fP \fBCGObjectBase\fP *pObj, const \fBGINT32\fP &iObjectCount, const \fBCGColor\fP &color)"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBSetObjectColor\fP (\fBGINOUT\fP \fBCGObjectBase\fP *pObj, const \fBCGColor\fP &color)"
+.br
+.ti -1c
+.RI "void \fBOptimize\fP (\fBCG3DDB\fP *pDB)"
+.br
+.ti -1c
+.RI "\fBCGProperty\fP * \fBFindPropertyByID\fP (const \fBGID\fP &ID)"
+.br
+.ti -1c
+.RI "void \fBAddProperty\fP (\fBCGProperty\fP *pProperty)"
+.br
+.ti -1c
+.RI "\fBCGPropertyManager\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGPropertyManager\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+property 관리하는 클래스 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGPropertyManager::CGPropertyManager ()"
+
+.SS "CGPropertyManager::~CGPropertyManager ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGPropertyManager::AddProperty (\fBCGProperty\fP * pProperty)"
+
+.IP "\(bu" 2
+property를 변경한다\&. 
+.PP
+
+.SS "\fBCGProperty\fP * CGPropertyManager::FindPropertyByID (const \fBGID\fP & ID)"
+
+.IP "\(bu" 2
+property를 ID로 찾는다\&. 
+.PP
+
+.SS "void CGPropertyManager::InitProperty (const \fBGBOOL\fP & bCreateDefaultProperty = \fCTRUE\fP)"
+
+.IP "\(bu" 2
+property를 초기화 한다\&. 
+.PP
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbCreateDefaultProperty\fP TRUE : 초기화후, 기본 property를 생성한다\&.( 프로그램 종료시에는 FALSE를 해야함\&. 기본 property가 없으면 화면에 객체가 보이지 않는다\&.) 
+.RE
+.PP
+
+.SS "void CGPropertyManager::Optimize (\fBCG3DDB\fP * pDB)"
+
+.IP "\(bu" 2
+property들을 병합한다\&.
+.IP "\(bu" 2
+중복된 property에 연결된 object는 유일한 property에 연결된다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CGPropertyManager::SetObjectColor (\fBGINOUT\fP \fBCGObjectBase\fP * pObj, const \fBGINT32\fP & iObjectCount, const \fBCGColor\fP & color)"
+
+.IP "\(bu" 2
+object의 color를 변경한다\&.
+.IP "\(bu" 2
+한번에 여러개의 object color를 변경할 수 있다\&.
+.IP "\(bu" 2
+한번에 여러개의 object를 변경하는 것이 효율적이다\&. 
+.PP
+\fBTodo\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+
+.SS "\fBGBOOL\fP CGPropertyManager::SetObjectColor (\fBGINOUT\fP \fBCGObjectBase\fP * pObj, const \fBCGColor\fP & color)"
+
+.IP "\(bu" 2
+object의 color를 설정한다\&. 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

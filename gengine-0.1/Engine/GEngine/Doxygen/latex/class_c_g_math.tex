@@ -1,0 +1,552 @@
+\hypertarget{class_c_g_math}{}\section{C\+G\+Math Class Reference}
+\label{class_c_g_math}\index{C\+G\+Math@{C\+G\+Math}}
+
+
+{\ttfamily \#include $<$G\+Math.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_g_math_a349fb12012c0328af792a972aeba4447}{C\+G\+Math} ()
+\item 
+\hyperlink{class_c_g_math_a008b7b9d332592e3e04cb63cfadb5b35}{$\sim$\+C\+G\+Math} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_math_ad570310cd00417e7ad0b2cd5a0eb647c}{Match\+Plane\+And\+Line} (const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Plane\+Pos, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Plane\+Normal, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Line\+Pos, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&pt\+Line\+Dir, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Match)
+\item 
+static \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \hyperlink{class_c_g_math_aaedcd0f81b5402dcbee7713c36cd3f66}{Radian\+To\+Vector} (const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \&d\+Radian)
+\item 
+static \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \hyperlink{class_c_g_math_a77eaf7d98149b1947fa549947a334d87}{Radian\+To\+Vector3\+D} (const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \&d\+Radian)
+\item 
+static \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \hyperlink{class_c_g_math_af75f32d951fd54d5802a52d4b4cc3fb6}{Degree\+To\+Radian} (const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \&d\+Degree)
+\item 
+static \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \hyperlink{class_c_g_math_af9a5673aeea1f761611d6808c69b0791}{Radian\+To\+Degree} (const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \&d\+Radian)
+\item 
+static \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \hyperlink{class_c_g_math_acb3c1f04751eb60e65ac5db0df33545e}{Vector\+To\+Degree} (const \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \&v\+Ang)
+\item 
+static \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \hyperlink{class_c_g_math_ac17eda3bc5b654f926cf8de056a74514}{Vector\+To\+Radian} (const \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \&v\+Ang)
+\item 
+static void \hyperlink{class_c_g_math_ab32ff36b7697357cca847463783c35be}{Transform} (\hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} $\ast$p\+Pos, const \hyperlink{_g_types_8h_ac7dd75e8df268a0368c6cb433764fdcb}{G\+S\+I\+Z\+E} \&u\+Size\+Pos, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+From, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+To, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Axis\+X\+From, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Axis\+Y\+From, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Axis\+X\+To, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Axis\+Y\+To)
+\item 
+static void \hyperlink{class_c_g_math_a54bdbccecf50771330c2e696d46dc78a}{Transform\+By\+Matrix} (\hyperlink{_g_types_8h_a3fc97b512f82d8e1a710da1235f9142a}{G\+I\+N\+O\+U\+T} \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pos, const \hyperlink{class_c_g_matrix}{C\+G\+Matrix} \&mat)
+\item 
+static \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \hyperlink{class_c_g_math_a50c391ac6b473457b2c0613656af3a41}{Perpendicular\+Of\+Vector} (const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v)
+\item 
+static \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \hyperlink{class_c_g_math_a2403987ed4bcce1f7292ab35708de9bf}{Normal\+Of2\+Axis} (const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Axis1, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Axis2)
+\item 
+static \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \hyperlink{class_c_g_math_af46db59addb0c8aaa9a718ccc41294a0}{Perpendicular\+From\+Point\+To\+Line} (const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+From, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Line, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Dir\+Line)
+\item 
+static \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \hyperlink{class_c_g_math_af42338cab327e3c554362d596779e515}{Perpendicular\+From\+Point\+To\+Line} (const \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \&pt\+From, const \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \&pt\+Line, const \hyperlink{_g_point2_d_8h_aff6ea6caec53d1335aa72b3dc75ef8ec}{C\+G\+Vector2\+D} \&v\+Dir\+Line)
+\item 
+static void \hyperlink{class_c_g_math_a129bf3db1c4cc7ad8a314ca624443daa}{Plane\+From3\+Point} (const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt1, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt2, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt3, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} \hyperlink{class_c_g_plane}{C\+G\+Plane} \&plane)
+\item 
+static \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \hyperlink{class_c_g_math_a52b9ce20a6668cd63b16b9bd6ac66980}{Plane\+Dot\+Point} (const \hyperlink{class_c_g_plane}{C\+G\+Plane} \&plane, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt)
+\item 
+static \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \hyperlink{class_c_g_math_a882da02bd111efff6617717cd311ba2a}{Plane\+Dot\+X\+Y\+Z} (const \hyperlink{class_c_g_plane}{C\+G\+Plane} \&plane, const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+X, const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+Y, const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+Z)
+\item 
+static \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_math_a617307dee1011495bfbd82d1c6782ba6}{Plane\+Frustrum\+From\+X\+Y\+Rate\+And\+View\+Proj\+Matrix\+Inverse} (const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+Left, const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+Top, const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+Right, const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+Bottom, const \hyperlink{class_c_g_matrix}{C\+G\+Matrix} \&mat\+View\+Proj\+Inv, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} \hyperlink{class_c_g_plane}{C\+G\+Plane} $\ast$p\+Plane\+Frustrum)
+\item 
+static \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_math_a137dac2c77a5d11a1ec4e6a731da2dd6}{Polygon\+To\+Triangle\+Strip\+By\+Triangulate} (const C\+Atl\+Array$<$ \hyperlink{_g_polyline3_d_8h_aaff14096de7e2f1a640c0942e4bd70da}{C\+G\+Polygon} $>$ \&arr\+Polygon, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} \hyperlink{class_c_g_triangle_strip}{C\+G\+Triangle\+Strip} \&triangle\+Strip)
+\item 
+static \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_math_a5e322e6b450e25be8e98c93ff803f314}{Polygon\+To\+Triangle\+Strip\+By\+Poly2\+Tri} (const C\+Atl\+Array$<$ \hyperlink{_g_polyline3_d_8h_aaff14096de7e2f1a640c0942e4bd70da}{C\+G\+Polygon} $>$ \&arr\+Polygon, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} \hyperlink{class_c_g_triangle_strip}{C\+G\+Triangle\+Strip} \&triangle\+Strip)
+\item 
+static \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_math_ae82d5a794bde42d891c0028f8ba869d3}{Polygon\+To\+Triangle\+Strip} (const C\+Atl\+Array$<$ \hyperlink{_g_polyline3_d_8h_aaff14096de7e2f1a640c0942e4bd70da}{C\+G\+Polygon} $>$ \&arr\+Polygon, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} \hyperlink{class_c_g_triangle_strip}{C\+G\+Triangle\+Strip} \&triangle\+Strip)
+\item 
+static \hyperlink{class_c_g_rect}{C\+G\+Rect} \hyperlink{class_c_g_math_ac3b11b5e4cd4f7900a60164d3cc0da18}{Boundary\+From\+Point\+Array} (const C\+Atl\+Array$<$ \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} $>$ \&arr\+Point)
+\item 
+static \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_math_adaef8e61a5d5de6cce106ee177f8cbe4}{Is\+C\+C\+W2\+D} (const \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \&pt1, const \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \&pt2, const \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \&pt3)
+\item 
+static void \hyperlink{class_c_g_math_a28f443611d5a02240443ba6644cf7810}{Matrix\+Transform} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} \hyperlink{class_c_g_matrix}{C\+G\+Matrix} \&mat\+Transform, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+From, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+To, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Axis\+X\+From, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Axis\+Y\+From, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Axis\+X\+To, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Axis\+Y\+To)
+\item 
+static void \hyperlink{class_c_g_math_a11a1609dbae99a47b518b0a18a403733}{Matrix\+Identity} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} \hyperlink{class_c_g_matrix}{C\+G\+Matrix} \&mat)
+\item 
+static void \hyperlink{class_c_g_math_a0cc1bbb81343dff7a7d7b8ba7c257b53}{Matrix\+Affine\+Transformation} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} \hyperlink{class_c_g_matrix}{C\+G\+Matrix} \&mat\+Transform, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Origin, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Scale, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Rotate\+Axis, const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \&d\+Rotate\+Angle\+Radian, const \hyperlink{_g_point3_d_8h_aa7e73d39f4c991acb5a13c84b498366d}{C\+G\+Vector3\+D} \&v\+Move)
+\item 
+static void \hyperlink{class_c_g_math_ab938a5dc9d79f1a83cc9b1a03fde5d16}{Matrix\+From\+X\+M\+M\+A\+T\+R\+I\+X} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} \hyperlink{class_c_g_matrix}{C\+G\+Matrix} \&mat, const void $\ast$p\+Matrix)
+\item 
+static \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_math_a9e2b9a072592109d7c46508014085cb0}{Include\+Point\+In\+Segment} (const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Seg1, const \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} \&pt\+Seg2, const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \&d\+Tol=0.\+0001)
+\item 
+static \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_math_a7fd0d95eb2baf6b5c45abd2aa9e1cae8}{Include\+Point\+In\+Segment} (const \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \&pt, const \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \&pt\+Seg1, const \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \&pt\+Seg2, const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \&d\+Tol=0.\+0001)
+\item 
+static \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_math_a679f412376490d469dc05bd41daa892d}{Intersect\+X\+Y\+Z\+Frustrum} (const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+X, const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+Y, const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+Z, const \hyperlink{class_c_g_plane}{C\+G\+Plane} $\ast$p\+Plane\+Frustrum)
+\item 
+static \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_math_a5fa56b2057978eadfc65cd38221f944b}{Intersect\+Segment\+Rectangle} (const \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \&pt\+Seg1, const \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \&pt\+Seg2, const \hyperlink{class_c_g_point2_d}{C\+G\+Point2\+D} \&pt\+Rect\+Center, const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \&d\+Rect\+Width\+Half, const \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} \&d\+Rect\+Height\+Half, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} \hyperlink{_g_types_8h_afd05ac85f90ee8e2a733928545462cd4}{G\+D\+O\+U\+B\+L\+E} $\ast$pd\+Dist)
+\item 
+static \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_math_ad6b210102d8c83899a268b87da18139f}{Intersect\+Sphere\+Frustrum} (const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+X, const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+Y, const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+Z, const \hyperlink{_g_types_8h_abf6eba8223df62f199b811a6c52ff2ef}{G\+F\+L\+O\+A\+T} \&f\+Radius, const \hyperlink{class_c_g_plane}{C\+G\+Plane} $\ast$p\+Plane\+Frustrum)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item 간단한 수학 계산관련
+\item 입력값에 대한 예외처리는 하지 않는다.
+\begin{DoxyItemize}
+\item 속도위주의 함수들이기 때문
+\item caller가 예외처리를 해야함(여기서 예외처리 함수를 제공할 수는 있다) 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g_math_a349fb12012c0328af792a972aeba4447}{}\index{C\+G\+Math@{C\+G\+Math}!C\+G\+Math@{C\+G\+Math}}
+\index{C\+G\+Math@{C\+G\+Math}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{C\+G\+Math()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Math\+::\+C\+G\+Math (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_math_a349fb12012c0328af792a972aeba4447}
+\hypertarget{class_c_g_math_a008b7b9d332592e3e04cb63cfadb5b35}{}\index{C\+G\+Math@{C\+G\+Math}!````~C\+G\+Math@{$\sim$\+C\+G\+Math}}
+\index{````~C\+G\+Math@{$\sim$\+C\+G\+Math}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{$\sim$\+C\+G\+Math()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Math\+::$\sim$\+C\+G\+Math (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_math_a008b7b9d332592e3e04cb63cfadb5b35}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g_math_ac3b11b5e4cd4f7900a60164d3cc0da18}{}\index{C\+G\+Math@{C\+G\+Math}!Boundary\+From\+Point\+Array@{Boundary\+From\+Point\+Array}}
+\index{Boundary\+From\+Point\+Array@{Boundary\+From\+Point\+Array}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Boundary\+From\+Point\+Array(const C\+Atl\+Array$<$ C\+G\+Point3\+D $>$ \&arr\+Point)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Rect} C\+G\+Math\+::\+Boundary\+From\+Point\+Array (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Point3\+D} $>$ \&}]{arr\+Point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_ac3b11b5e4cd4f7900a60164d3cc0da18}
+
+\begin{DoxyItemize}
+\item point array의 boundary를 계산한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_af75f32d951fd54d5802a52d4b4cc3fb6}{}\index{C\+G\+Math@{C\+G\+Math}!Degree\+To\+Radian@{Degree\+To\+Radian}}
+\index{Degree\+To\+Radian@{Degree\+To\+Radian}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Degree\+To\+Radian(const G\+D\+O\+U\+B\+L\+E \&d\+Degree)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+D\+O\+U\+B\+L\+E} C\+G\+Math\+::\+Degree\+To\+Radian (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+D\+O\+U\+B\+L\+E} \&}]{d\+Degree}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_af75f32d951fd54d5802a52d4b4cc3fb6}
+
+\begin{DoxyItemize}
+\item degree를 radian으로 변환한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a9e2b9a072592109d7c46508014085cb0}{}\index{C\+G\+Math@{C\+G\+Math}!Include\+Point\+In\+Segment@{Include\+Point\+In\+Segment}}
+\index{Include\+Point\+In\+Segment@{Include\+Point\+In\+Segment}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Include\+Point\+In\+Segment(const C\+G\+Point3\+D \&pt, const C\+G\+Point3\+D \&pt\+Seg1, const C\+G\+Point3\+D \&pt\+Seg2, const G\+D\+O\+U\+B\+L\+E \&d\+Tol=0.\+0001)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Math\+::\+Include\+Point\+In\+Segment (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Seg1, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Seg2, }
+\item[{const {\bf G\+D\+O\+U\+B\+L\+E} \&}]{d\+Tol = {\ttfamily 0.0001}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a9e2b9a072592109d7c46508014085cb0}
+
+\begin{DoxyItemize}
+\item 점이 선 사이에 포함되어 있는지? 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a7fd0d95eb2baf6b5c45abd2aa9e1cae8}{}\index{C\+G\+Math@{C\+G\+Math}!Include\+Point\+In\+Segment@{Include\+Point\+In\+Segment}}
+\index{Include\+Point\+In\+Segment@{Include\+Point\+In\+Segment}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Include\+Point\+In\+Segment(const C\+G\+Point2\+D \&pt, const C\+G\+Point2\+D \&pt\+Seg1, const C\+G\+Point2\+D \&pt\+Seg2, const G\+D\+O\+U\+B\+L\+E \&d\+Tol=0.\+0001)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Math\+::\+Include\+Point\+In\+Segment (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point2\+D} \&}]{pt, }
+\item[{const {\bf C\+G\+Point2\+D} \&}]{pt\+Seg1, }
+\item[{const {\bf C\+G\+Point2\+D} \&}]{pt\+Seg2, }
+\item[{const {\bf G\+D\+O\+U\+B\+L\+E} \&}]{d\+Tol = {\ttfamily 0.0001}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a7fd0d95eb2baf6b5c45abd2aa9e1cae8}
+
+\begin{DoxyItemize}
+\item 점이 선 사이에 포함되어 있는지? 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a5fa56b2057978eadfc65cd38221f944b}{}\index{C\+G\+Math@{C\+G\+Math}!Intersect\+Segment\+Rectangle@{Intersect\+Segment\+Rectangle}}
+\index{Intersect\+Segment\+Rectangle@{Intersect\+Segment\+Rectangle}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Intersect\+Segment\+Rectangle(const C\+G\+Point2\+D \&pt\+Seg1, const C\+G\+Point2\+D \&pt\+Seg2, const C\+G\+Point2\+D \&pt\+Rect\+Center, const G\+D\+O\+U\+B\+L\+E \&d\+Rect\+Width\+Half, const G\+D\+O\+U\+B\+L\+E \&d\+Rect\+Height\+Half, G\+O\+U\+T G\+D\+O\+U\+B\+L\+E $\ast$pd\+Dist)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Math\+::\+Intersect\+Segment\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point2\+D} \&}]{pt\+Seg1, }
+\item[{const {\bf C\+G\+Point2\+D} \&}]{pt\+Seg2, }
+\item[{const {\bf C\+G\+Point2\+D} \&}]{pt\+Rect\+Center, }
+\item[{const {\bf G\+D\+O\+U\+B\+L\+E} \&}]{d\+Rect\+Width\+Half, }
+\item[{const {\bf G\+D\+O\+U\+B\+L\+E} \&}]{d\+Rect\+Height\+Half, }
+\item[{{\bf G\+O\+U\+T} {\bf G\+D\+O\+U\+B\+L\+E} $\ast$}]{pd\+Dist}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a5fa56b2057978eadfc65cd38221f944b}
+
+\begin{DoxyItemize}
+\item segment와 rectangle이 교차되는지? 
+\end{DoxyItemize}
+\begin{DoxyParams}{Parameters}
+{\em pt\+Seg1} & segment의 start point \\
+\hline
+{\em pt\+Seg2} & segment의 end point \\
+\hline
+{\em pt\+Rect\+Center} & rectangle의 center point \\
+\hline
+{\em d\+Rect\+Width\+Half} & rectangle의 width의 1/2 \\
+\hline
+{\em d\+Rect\+Height\+Half} & rectangle의 height의 1/2 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_g_math_ad6b210102d8c83899a268b87da18139f}{}\index{C\+G\+Math@{C\+G\+Math}!Intersect\+Sphere\+Frustrum@{Intersect\+Sphere\+Frustrum}}
+\index{Intersect\+Sphere\+Frustrum@{Intersect\+Sphere\+Frustrum}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Intersect\+Sphere\+Frustrum(const G\+F\+L\+O\+A\+T \&f\+X, const G\+F\+L\+O\+A\+T \&f\+Y, const G\+F\+L\+O\+A\+T \&f\+Z, const G\+F\+L\+O\+A\+T \&f\+Radius, const C\+G\+Plane $\ast$p\+Plane\+Frustrum)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Math\+::\+Intersect\+Sphere\+Frustrum (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+X, }
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+Y, }
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+Z, }
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+Radius, }
+\item[{const {\bf C\+G\+Plane} $\ast$}]{p\+Plane\+Frustrum}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_ad6b210102d8c83899a268b87da18139f}
+
+\begin{DoxyItemize}
+\item sphere와 frustrum이 교차되는지? 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a679f412376490d469dc05bd41daa892d}{}\index{C\+G\+Math@{C\+G\+Math}!Intersect\+X\+Y\+Z\+Frustrum@{Intersect\+X\+Y\+Z\+Frustrum}}
+\index{Intersect\+X\+Y\+Z\+Frustrum@{Intersect\+X\+Y\+Z\+Frustrum}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Intersect\+X\+Y\+Z\+Frustrum(const G\+F\+L\+O\+A\+T \&f\+X, const G\+F\+L\+O\+A\+T \&f\+Y, const G\+F\+L\+O\+A\+T \&f\+Z, const C\+G\+Plane $\ast$p\+Plane\+Frustrum)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Math\+::\+Intersect\+X\+Y\+Z\+Frustrum (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+X, }
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+Y, }
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+Z, }
+\item[{const {\bf C\+G\+Plane} $\ast$}]{p\+Plane\+Frustrum}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a679f412376490d469dc05bd41daa892d}
+
+\begin{DoxyItemize}
+\item X\+Y\+Z와 frustrum이 교차되는지?
+\item X\+Y\+Z가 frustrum에 포함되어 있는지 판단한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_adaef8e61a5d5de6cce106ee177f8cbe4}{}\index{C\+G\+Math@{C\+G\+Math}!Is\+C\+C\+W2\+D@{Is\+C\+C\+W2\+D}}
+\index{Is\+C\+C\+W2\+D@{Is\+C\+C\+W2\+D}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Is\+C\+C\+W2\+D(const C\+G\+Point2\+D \&pt1, const C\+G\+Point2\+D \&pt2, const C\+G\+Point2\+D \&pt3)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Math\+::\+Is\+C\+C\+W2\+D (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point2\+D} \&}]{pt1, }
+\item[{const {\bf C\+G\+Point2\+D} \&}]{pt2, }
+\item[{const {\bf C\+G\+Point2\+D} \&}]{pt3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_adaef8e61a5d5de6cce106ee177f8cbe4}
+
+\begin{DoxyItemize}
+\item 2\+D point 3개가 시계 반시계방향으로 회전하는지? 
+\end{DoxyItemize}\hypertarget{class_c_g_math_ad570310cd00417e7ad0b2cd5a0eb647c}{}\index{C\+G\+Math@{C\+G\+Math}!Match\+Plane\+And\+Line@{Match\+Plane\+And\+Line}}
+\index{Match\+Plane\+And\+Line@{Match\+Plane\+And\+Line}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Match\+Plane\+And\+Line(const C\+G\+Point3\+D \&pt\+Plane\+Pos, const C\+G\+Vector3\+D \&v\+Plane\+Normal, const C\+G\+Point3\+D \&pt\+Line\+Pos, const C\+G\+Vector3\+D \&pt\+Line\+Dir, G\+O\+U\+T C\+G\+Point3\+D \&pt\+Match)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Math\+::\+Match\+Plane\+And\+Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Plane\+Pos, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Plane\+Normal, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Line\+Pos, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Line\+Dir, }
+\item[{{\bf G\+O\+U\+T} {\bf C\+G\+Point3\+D} \&}]{pt\+Match}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_ad570310cd00417e7ad0b2cd5a0eb647c}
+
+\begin{DoxyItemize}
+\item 평면과 선분의 교점을 계산한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a0cc1bbb81343dff7a7d7b8ba7c257b53}{}\index{C\+G\+Math@{C\+G\+Math}!Matrix\+Affine\+Transformation@{Matrix\+Affine\+Transformation}}
+\index{Matrix\+Affine\+Transformation@{Matrix\+Affine\+Transformation}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Matrix\+Affine\+Transformation(\+G\+O\+U\+T C\+G\+Matrix \&mat\+Transform, const C\+G\+Point3\+D \&pt\+Origin, const C\+G\+Vector3\+D \&v\+Scale, const C\+G\+Vector3\+D \&v\+Rotate\+Axis, const G\+D\+O\+U\+B\+L\+E \&d\+Rotate\+Angle\+Radian, const C\+G\+Vector3\+D \&v\+Move)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Math\+::\+Matrix\+Affine\+Transformation (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} {\bf C\+G\+Matrix} \&}]{mat\+Transform, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Origin, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Scale, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Rotate\+Axis, }
+\item[{const {\bf G\+D\+O\+U\+B\+L\+E} \&}]{d\+Rotate\+Angle\+Radian, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Move}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a0cc1bbb81343dff7a7d7b8ba7c257b53}
+
+\begin{DoxyItemize}
+\item scale(임의의 점 기준), rotate(임의의 점 기준), move가 적용된 matrix를 만든다.
+\item 주의 \+: 정밀도 떨어짐(double 을 float으로 강제 변환해서 만듦) 
+\end{DoxyItemize}\hypertarget{class_c_g_math_ab938a5dc9d79f1a83cc9b1a03fde5d16}{}\index{C\+G\+Math@{C\+G\+Math}!Matrix\+From\+X\+M\+M\+A\+T\+R\+I\+X@{Matrix\+From\+X\+M\+M\+A\+T\+R\+I\+X}}
+\index{Matrix\+From\+X\+M\+M\+A\+T\+R\+I\+X@{Matrix\+From\+X\+M\+M\+A\+T\+R\+I\+X}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Matrix\+From\+X\+M\+M\+A\+T\+R\+I\+X(\+G\+O\+U\+T C\+G\+Matrix \&mat, const void $\ast$p\+Matrix)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Math\+::\+Matrix\+From\+X\+M\+M\+A\+T\+R\+I\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} {\bf C\+G\+Matrix} \&}]{mat, }
+\item[{const void $\ast$}]{p\+Matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_ab938a5dc9d79f1a83cc9b1a03fde5d16}
+
+\begin{DoxyItemize}
+\item X\+M\+M\+A\+T\+R\+I\+X로 G\+Matrix를 만든다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a11a1609dbae99a47b518b0a18a403733}{}\index{C\+G\+Math@{C\+G\+Math}!Matrix\+Identity@{Matrix\+Identity}}
+\index{Matrix\+Identity@{Matrix\+Identity}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Matrix\+Identity(\+G\+O\+U\+T C\+G\+Matrix \&mat)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Math\+::\+Matrix\+Identity (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} {\bf C\+G\+Matrix} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a11a1609dbae99a47b518b0a18a403733}
+
+\begin{DoxyItemize}
+\item identity matrix를 만든다.
+\item 좌표변환에 영향이 없는 초기화의 역할을 한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a28f443611d5a02240443ba6644cf7810}{}\index{C\+G\+Math@{C\+G\+Math}!Matrix\+Transform@{Matrix\+Transform}}
+\index{Matrix\+Transform@{Matrix\+Transform}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Matrix\+Transform(\+G\+O\+U\+T C\+G\+Matrix \&mat\+Transform, const C\+G\+Point3\+D \&pt\+From, const C\+G\+Point3\+D \&pt\+To, const C\+G\+Vector3\+D \&v\+Axis\+X\+From, const C\+G\+Vector3\+D \&v\+Axis\+Y\+From, const C\+G\+Vector3\+D \&v\+Axis\+X\+To, const C\+G\+Vector3\+D \&v\+Axis\+Y\+To)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Math\+::\+Matrix\+Transform (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} {\bf C\+G\+Matrix} \&}]{mat\+Transform, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+From, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+To, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Axis\+X\+From, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Axis\+Y\+From, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Axis\+X\+To, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Axis\+Y\+To}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a28f443611d5a02240443ba6644cf7810}
+
+\begin{DoxyItemize}
+\item 좌표변환 matrix를 만든다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a2403987ed4bcce1f7292ab35708de9bf}{}\index{C\+G\+Math@{C\+G\+Math}!Normal\+Of2\+Axis@{Normal\+Of2\+Axis}}
+\index{Normal\+Of2\+Axis@{Normal\+Of2\+Axis}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Normal\+Of2\+Axis(const C\+G\+Vector3\+D \&v\+Axis1, const C\+G\+Vector3\+D \&v\+Axis2)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Vector3\+D} C\+G\+Math\+::\+Normal\+Of2\+Axis (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Axis1, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Axis2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a2403987ed4bcce1f7292ab35708de9bf}
+
+\begin{DoxyItemize}
+\item 2개의 축에 대한 법선 vector를 계산해서 리턴한다.
+\item 2 vector의 외적을 계산한다.(곱) 
+\end{DoxyItemize}\hypertarget{class_c_g_math_af46db59addb0c8aaa9a718ccc41294a0}{}\index{C\+G\+Math@{C\+G\+Math}!Perpendicular\+From\+Point\+To\+Line@{Perpendicular\+From\+Point\+To\+Line}}
+\index{Perpendicular\+From\+Point\+To\+Line@{Perpendicular\+From\+Point\+To\+Line}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Perpendicular\+From\+Point\+To\+Line(const C\+G\+Point3\+D \&pt\+From, const C\+G\+Point3\+D \&pt\+Line, const C\+G\+Vector3\+D \&v\+Dir\+Line)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Point3\+D} C\+G\+Math\+::\+Perpendicular\+From\+Point\+To\+Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+From, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+Line, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Dir\+Line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_af46db59addb0c8aaa9a718ccc41294a0}
+
+\begin{DoxyItemize}
+\item 3\+D Point 에서 3\+D Line으로 수직인 좌표를 찾는다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_af42338cab327e3c554362d596779e515}{}\index{C\+G\+Math@{C\+G\+Math}!Perpendicular\+From\+Point\+To\+Line@{Perpendicular\+From\+Point\+To\+Line}}
+\index{Perpendicular\+From\+Point\+To\+Line@{Perpendicular\+From\+Point\+To\+Line}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Perpendicular\+From\+Point\+To\+Line(const C\+G\+Point2\+D \&pt\+From, const C\+G\+Point2\+D \&pt\+Line, const C\+G\+Vector2\+D \&v\+Dir\+Line)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Point2\+D} C\+G\+Math\+::\+Perpendicular\+From\+Point\+To\+Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point2\+D} \&}]{pt\+From, }
+\item[{const {\bf C\+G\+Point2\+D} \&}]{pt\+Line, }
+\item[{const {\bf C\+G\+Vector2\+D} \&}]{v\+Dir\+Line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_af42338cab327e3c554362d596779e515}
+
+\begin{DoxyItemize}
+\item 2\+D Point 에서 2\+D Line으로 수직인 좌표를 찾는다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a50c391ac6b473457b2c0613656af3a41}{}\index{C\+G\+Math@{C\+G\+Math}!Perpendicular\+Of\+Vector@{Perpendicular\+Of\+Vector}}
+\index{Perpendicular\+Of\+Vector@{Perpendicular\+Of\+Vector}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Perpendicular\+Of\+Vector(const C\+G\+Vector3\+D \&v)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Vector3\+D} C\+G\+Math\+::\+Perpendicular\+Of\+Vector (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a50c391ac6b473457b2c0613656af3a41}
+
+\begin{DoxyItemize}
+\item vector의 수직 vector를 리턴한다.
+\item 3\+D vector의 수직 vector는 무수히 존재한다.
+\item 무수히 존재하는 vector중 하나를 리턴한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a52b9ce20a6668cd63b16b9bd6ac66980}{}\index{C\+G\+Math@{C\+G\+Math}!Plane\+Dot\+Point@{Plane\+Dot\+Point}}
+\index{Plane\+Dot\+Point@{Plane\+Dot\+Point}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Plane\+Dot\+Point(const C\+G\+Plane \&plane, const C\+G\+Point3\+D \&pt)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+D\+O\+U\+B\+L\+E} C\+G\+Math\+::\+Plane\+Dot\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Plane} \&}]{plane, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a52b9ce20a6668cd63b16b9bd6ac66980}
+
+\begin{DoxyItemize}
+\item 평면과 좌표의 곱 \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\item 0 \+: 좌표가 평면상에 있음
+\item -\/1 \+: 좌표가 평면 뒤에 있음(법선방향 반대쪽)
+\item 1 \+: 좌표가 평면 앞에 있음.(법선방향 쪽) 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a882da02bd111efff6617717cd311ba2a}{}\index{C\+G\+Math@{C\+G\+Math}!Plane\+Dot\+X\+Y\+Z@{Plane\+Dot\+X\+Y\+Z}}
+\index{Plane\+Dot\+X\+Y\+Z@{Plane\+Dot\+X\+Y\+Z}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Plane\+Dot\+X\+Y\+Z(const C\+G\+Plane \&plane, const G\+F\+L\+O\+A\+T \&f\+X, const G\+F\+L\+O\+A\+T \&f\+Y, const G\+F\+L\+O\+A\+T \&f\+Z)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+D\+O\+U\+B\+L\+E} C\+G\+Math\+::\+Plane\+Dot\+X\+Y\+Z (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Plane} \&}]{plane, }
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+X, }
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+Y, }
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+Z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a882da02bd111efff6617717cd311ba2a}
+
+\begin{DoxyItemize}
+\item 평면과 좌표의 곱
+\item float 좌표 \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\item 0 \+: 좌표가 평면상에 있음
+\item -\/1 \+: 좌표가 평면 뒤에 있음(법선방향 반대쪽)
+\item 1 \+: 좌표가 평면 앞에 있음.(법선방향 쪽) 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a129bf3db1c4cc7ad8a314ca624443daa}{}\index{C\+G\+Math@{C\+G\+Math}!Plane\+From3\+Point@{Plane\+From3\+Point}}
+\index{Plane\+From3\+Point@{Plane\+From3\+Point}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Plane\+From3\+Point(const C\+G\+Point3\+D \&pt1, const C\+G\+Point3\+D \&pt2, const C\+G\+Point3\+D \&pt3, G\+O\+U\+T C\+G\+Plane \&plane)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Math\+::\+Plane\+From3\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt1, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt2, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt3, }
+\item[{{\bf G\+O\+U\+T} {\bf C\+G\+Plane} \&}]{plane}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a129bf3db1c4cc7ad8a314ca624443daa}
+
+\begin{DoxyItemize}
+\item 세점에서 평면을 계산해 낸다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a617307dee1011495bfbd82d1c6782ba6}{}\index{C\+G\+Math@{C\+G\+Math}!Plane\+Frustrum\+From\+X\+Y\+Rate\+And\+View\+Proj\+Matrix\+Inverse@{Plane\+Frustrum\+From\+X\+Y\+Rate\+And\+View\+Proj\+Matrix\+Inverse}}
+\index{Plane\+Frustrum\+From\+X\+Y\+Rate\+And\+View\+Proj\+Matrix\+Inverse@{Plane\+Frustrum\+From\+X\+Y\+Rate\+And\+View\+Proj\+Matrix\+Inverse}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Plane\+Frustrum\+From\+X\+Y\+Rate\+And\+View\+Proj\+Matrix\+Inverse(const G\+F\+L\+O\+A\+T \&f\+Left, const G\+F\+L\+O\+A\+T \&f\+Top, const G\+F\+L\+O\+A\+T \&f\+Right, const G\+F\+L\+O\+A\+T \&f\+Bottom, const C\+G\+Matrix \&mat\+View\+Proj\+Inv, G\+O\+U\+T C\+G\+Plane $\ast$p\+Plane\+Frustrum)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Math\+::\+Plane\+Frustrum\+From\+X\+Y\+Rate\+And\+View\+Proj\+Matrix\+Inverse (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+Left, }
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+Top, }
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+Right, }
+\item[{const {\bf G\+F\+L\+O\+A\+T} \&}]{f\+Bottom, }
+\item[{const {\bf C\+G\+Matrix} \&}]{mat\+View\+Proj\+Inv, }
+\item[{{\bf G\+O\+U\+T} {\bf C\+G\+Plane} $\ast$}]{p\+Plane\+Frustrum}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a617307dee1011495bfbd82d1c6782ba6}
+
+\begin{DoxyItemize}
+\item view proj 역행렬과 window 좌, 상, 우, 하의 상대적위치(-\/1, 1, 1, -\/1이 가장자리)로 절두체 평면 6개를 계산한다. 
+\end{DoxyItemize}
+\begin{DoxyParams}{Parameters}
+{\em f\+Left} & window의 좌측위치(좌측끝은 -\/1) \\
+\hline
+{\em f\+Top} & window의 상단위치(상단끝은 1) \\
+\hline
+{\em f\+Right} & window의 우측위치(우측끝은 1) \\
+\hline
+{\em f\+Bottom} & window의 하단위치(하단끝은 -\/1) \\
+\hline
+{\em mat\+View\+Proj\+Inv} & view $\ast$ project의 inverse matrix \\
+\hline
+{\em p\+Plane\+Frustrum} & 절두체 평면 계산결과를 담을 변수(6개 배열의 포인터) \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_g_math_ae82d5a794bde42d891c0028f8ba869d3}{}\index{C\+G\+Math@{C\+G\+Math}!Polygon\+To\+Triangle\+Strip@{Polygon\+To\+Triangle\+Strip}}
+\index{Polygon\+To\+Triangle\+Strip@{Polygon\+To\+Triangle\+Strip}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Polygon\+To\+Triangle\+Strip(const C\+Atl\+Array$<$ C\+G\+Polygon $>$ \&arr\+Polygon, G\+O\+U\+T C\+G\+Triangle\+Strip \&triangle\+Strip)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Math\+::\+Polygon\+To\+Triangle\+Strip (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Polygon} $>$ \&}]{arr\+Polygon, }
+\item[{{\bf G\+O\+U\+T} {\bf C\+G\+Triangle\+Strip} \&}]{triangle\+Strip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_ae82d5a794bde42d891c0028f8ba869d3}
+\hypertarget{class_c_g_math_a5e322e6b450e25be8e98c93ff803f314}{}\index{C\+G\+Math@{C\+G\+Math}!Polygon\+To\+Triangle\+Strip\+By\+Poly2\+Tri@{Polygon\+To\+Triangle\+Strip\+By\+Poly2\+Tri}}
+\index{Polygon\+To\+Triangle\+Strip\+By\+Poly2\+Tri@{Polygon\+To\+Triangle\+Strip\+By\+Poly2\+Tri}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Polygon\+To\+Triangle\+Strip\+By\+Poly2\+Tri(const C\+Atl\+Array$<$ C\+G\+Polygon $>$ \&arr\+Polygon, G\+O\+U\+T C\+G\+Triangle\+Strip \&triangle\+Strip)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Math\+::\+Polygon\+To\+Triangle\+Strip\+By\+Poly2\+Tri (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Polygon} $>$ \&}]{arr\+Polygon, }
+\item[{{\bf G\+O\+U\+T} {\bf C\+G\+Triangle\+Strip} \&}]{triangle\+Strip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a5e322e6b450e25be8e98c93ff803f314}
+
+\begin{DoxyItemize}
+\item polygon을 triangle strip으로 변환
+\item Poly2\+Tri source code를 사용한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a137dac2c77a5d11a1ec4e6a731da2dd6}{}\index{C\+G\+Math@{C\+G\+Math}!Polygon\+To\+Triangle\+Strip\+By\+Triangulate@{Polygon\+To\+Triangle\+Strip\+By\+Triangulate}}
+\index{Polygon\+To\+Triangle\+Strip\+By\+Triangulate@{Polygon\+To\+Triangle\+Strip\+By\+Triangulate}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Polygon\+To\+Triangle\+Strip\+By\+Triangulate(const C\+Atl\+Array$<$ C\+G\+Polygon $>$ \&arr\+Polygon, G\+O\+U\+T C\+G\+Triangle\+Strip \&triangle\+Strip)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Math\+::\+Polygon\+To\+Triangle\+Strip\+By\+Triangulate (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+Array$<$ {\bf C\+G\+Polygon} $>$ \&}]{arr\+Polygon, }
+\item[{{\bf G\+O\+U\+T} {\bf C\+G\+Triangle\+Strip} \&}]{triangle\+Strip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a137dac2c77a5d11a1ec4e6a731da2dd6}
+
+\begin{DoxyItemize}
+\item polygon을 triangle strip으로 변환
+\item \hyperlink{class_triangulate}{Triangulate} source code를 사용한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_af9a5673aeea1f761611d6808c69b0791}{}\index{C\+G\+Math@{C\+G\+Math}!Radian\+To\+Degree@{Radian\+To\+Degree}}
+\index{Radian\+To\+Degree@{Radian\+To\+Degree}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Radian\+To\+Degree(const G\+D\+O\+U\+B\+L\+E \&d\+Radian)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+D\+O\+U\+B\+L\+E} C\+G\+Math\+::\+Radian\+To\+Degree (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+D\+O\+U\+B\+L\+E} \&}]{d\+Radian}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_af9a5673aeea1f761611d6808c69b0791}
+
+\begin{DoxyItemize}
+\item radian을 degree로 변환 
+\end{DoxyItemize}\hypertarget{class_c_g_math_aaedcd0f81b5402dcbee7713c36cd3f66}{}\index{C\+G\+Math@{C\+G\+Math}!Radian\+To\+Vector@{Radian\+To\+Vector}}
+\index{Radian\+To\+Vector@{Radian\+To\+Vector}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Radian\+To\+Vector(const G\+D\+O\+U\+B\+L\+E \&d\+Radian)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Point2\+D} C\+G\+Math\+::\+Radian\+To\+Vector (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+D\+O\+U\+B\+L\+E} \&}]{d\+Radian}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_aaedcd0f81b5402dcbee7713c36cd3f66}
+
+\begin{DoxyItemize}
+\item radian를 vector로 변환한다.
+\item Degree를 vector로 변환하는 함수는 지원 하지 않을 예정이다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_a77eaf7d98149b1947fa549947a334d87}{}\index{C\+G\+Math@{C\+G\+Math}!Radian\+To\+Vector3\+D@{Radian\+To\+Vector3\+D}}
+\index{Radian\+To\+Vector3\+D@{Radian\+To\+Vector3\+D}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Radian\+To\+Vector3\+D(const G\+D\+O\+U\+B\+L\+E \&d\+Radian)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Vector3\+D} C\+G\+Math\+::\+Radian\+To\+Vector3\+D (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+D\+O\+U\+B\+L\+E} \&}]{d\+Radian}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a77eaf7d98149b1947fa549947a334d87}
+\hypertarget{class_c_g_math_ab32ff36b7697357cca847463783c35be}{}\index{C\+G\+Math@{C\+G\+Math}!Transform@{Transform}}
+\index{Transform@{Transform}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Transform(\+C\+G\+Point3\+D $\ast$p\+Pos, const G\+S\+I\+Z\+E \&u\+Size\+Pos, const C\+G\+Point3\+D \&pt\+From, const C\+G\+Point3\+D \&pt\+To, const C\+G\+Vector3\+D \&v\+Axis\+X\+From, const C\+G\+Vector3\+D \&v\+Axis\+Y\+From, const C\+G\+Vector3\+D \&v\+Axis\+X\+To, const C\+G\+Vector3\+D \&v\+Axis\+Y\+To)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Math\+::\+Transform (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G\+Point3\+D} $\ast$}]{p\+Pos, }
+\item[{const {\bf G\+S\+I\+Z\+E} \&}]{u\+Size\+Pos, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+From, }
+\item[{const {\bf C\+G\+Point3\+D} \&}]{pt\+To, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Axis\+X\+From, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Axis\+Y\+From, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Axis\+X\+To, }
+\item[{const {\bf C\+G\+Vector3\+D} \&}]{v\+Axis\+Y\+To}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_ab32ff36b7697357cca847463783c35be}
+
+\begin{DoxyItemize}
+\item \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} 배열의 좌표변환을 한다. 
+\end{DoxyItemize}
+\begin{DoxyParams}{Parameters}
+{\em p\+Pos} & 좌표 배열의 포인터 \\
+\hline
+{\em u\+Size\+Pos} & 좌표의 개수 \\
+\hline
+{\em pt\+From} & 이동 / 회전의 기준이 되는 좌표 \\
+\hline
+{\em pt\+To} & 좌표 이동의 목적지 \\
+\hline
+{\em v\+Axis\+X\+From} & 회전의 기준이 되는 X축 벡터 \\
+\hline
+{\em v\+Axis\+Y\+From} & 회전의 기준이 되는 Y축 벡터 \\
+\hline
+{\em v\+Axis\+X\+To} & 회전 후 X축 벡터 \\
+\hline
+{\em v\+Axis\+Y\+To} & 회전 후 Y축 벡터 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_g_math_a54bdbccecf50771330c2e696d46dc78a}{}\index{C\+G\+Math@{C\+G\+Math}!Transform\+By\+Matrix@{Transform\+By\+Matrix}}
+\index{Transform\+By\+Matrix@{Transform\+By\+Matrix}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Transform\+By\+Matrix(\+G\+I\+N\+O\+U\+T C\+G\+Point3\+D \&pos, const C\+G\+Matrix \&mat)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Math\+::\+Transform\+By\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+I\+N\+O\+U\+T} {\bf C\+G\+Point3\+D} \&}]{pos, }
+\item[{const {\bf C\+G\+Matrix} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_a54bdbccecf50771330c2e696d46dc78a}
+
+\begin{DoxyItemize}
+\item point를 matrix로 변환한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_math_acb3c1f04751eb60e65ac5db0df33545e}{}\index{C\+G\+Math@{C\+G\+Math}!Vector\+To\+Degree@{Vector\+To\+Degree}}
+\index{Vector\+To\+Degree@{Vector\+To\+Degree}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Vector\+To\+Degree(const C\+G\+Point2\+D \&v\+Ang)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+D\+O\+U\+B\+L\+E} C\+G\+Math\+::\+Vector\+To\+Degree (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point2\+D} \&}]{v\+Ang}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_acb3c1f04751eb60e65ac5db0df33545e}
+
+\begin{DoxyItemize}
+\item vector 를 degree로 변환 
+\end{DoxyItemize}\hypertarget{class_c_g_math_ac17eda3bc5b654f926cf8de056a74514}{}\index{C\+G\+Math@{C\+G\+Math}!Vector\+To\+Radian@{Vector\+To\+Radian}}
+\index{Vector\+To\+Radian@{Vector\+To\+Radian}!C\+G\+Math@{C\+G\+Math}}
+\subsubsection[{Vector\+To\+Radian(const C\+G\+Point2\+D \&v\+Ang)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+D\+O\+U\+B\+L\+E} C\+G\+Math\+::\+Vector\+To\+Radian (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Point2\+D} \&}]{v\+Ang}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_g_math_ac17eda3bc5b654f926cf8de056a74514}
+
+\begin{DoxyItemize}
+\item vector를 radian으로 변환 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Common/\hyperlink{_g_math_8h}{G\+Math.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+Common/\hyperlink{_g_math_8cpp}{G\+Math.\+cpp}\end{DoxyCompactItemize}

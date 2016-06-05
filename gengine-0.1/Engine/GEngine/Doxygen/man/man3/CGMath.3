@@ -1,0 +1,421 @@
+.TH "CGMath" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGMath \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GMath\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCGMath\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGMath\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBGBOOL\fP \fBMatchPlaneAndLine\fP (const \fBCGPoint3D\fP &ptPlanePos, const \fBCGVector3D\fP &vPlaneNormal, const \fBCGPoint3D\fP &ptLinePos, const \fBCGVector3D\fP &ptLineDir, \fBGOUT\fP \fBCGPoint3D\fP &ptMatch)"
+.br
+.ti -1c
+.RI "static \fBCGPoint2D\fP \fBRadianToVector\fP (const \fBGDOUBLE\fP &dRadian)"
+.br
+.ti -1c
+.RI "static \fBCGVector3D\fP \fBRadianToVector3D\fP (const \fBGDOUBLE\fP &dRadian)"
+.br
+.ti -1c
+.RI "static \fBGDOUBLE\fP \fBDegreeToRadian\fP (const \fBGDOUBLE\fP &dDegree)"
+.br
+.ti -1c
+.RI "static \fBGDOUBLE\fP \fBRadianToDegree\fP (const \fBGDOUBLE\fP &dRadian)"
+.br
+.ti -1c
+.RI "static \fBGDOUBLE\fP \fBVectorToDegree\fP (const \fBCGPoint2D\fP &vAng)"
+.br
+.ti -1c
+.RI "static \fBGDOUBLE\fP \fBVectorToRadian\fP (const \fBCGPoint2D\fP &vAng)"
+.br
+.ti -1c
+.RI "static void \fBTransform\fP (\fBCGPoint3D\fP *pPos, const \fBGSIZE\fP &uSizePos, const \fBCGPoint3D\fP &ptFrom, const \fBCGPoint3D\fP &ptTo, const \fBCGVector3D\fP &vAxisXFrom, const \fBCGVector3D\fP &vAxisYFrom, const \fBCGVector3D\fP &vAxisXTo, const \fBCGVector3D\fP &vAxisYTo)"
+.br
+.ti -1c
+.RI "static void \fBTransformByMatrix\fP (\fBGINOUT\fP \fBCGPoint3D\fP &pos, const \fBCGMatrix\fP &mat)"
+.br
+.ti -1c
+.RI "static \fBCGVector3D\fP \fBPerpendicularOfVector\fP (const \fBCGVector3D\fP &v)"
+.br
+.ti -1c
+.RI "static \fBCGVector3D\fP \fBNormalOf2Axis\fP (const \fBCGVector3D\fP &vAxis1, const \fBCGVector3D\fP &vAxis2)"
+.br
+.ti -1c
+.RI "static \fBCGPoint3D\fP \fBPerpendicularFromPointToLine\fP (const \fBCGPoint3D\fP &ptFrom, const \fBCGPoint3D\fP &ptLine, const \fBCGVector3D\fP &vDirLine)"
+.br
+.ti -1c
+.RI "static \fBCGPoint2D\fP \fBPerpendicularFromPointToLine\fP (const \fBCGPoint2D\fP &ptFrom, const \fBCGPoint2D\fP &ptLine, const \fBCGVector2D\fP &vDirLine)"
+.br
+.ti -1c
+.RI "static void \fBPlaneFrom3Point\fP (const \fBCGPoint3D\fP &pt1, const \fBCGPoint3D\fP &pt2, const \fBCGPoint3D\fP &pt3, \fBGOUT\fP \fBCGPlane\fP &plane)"
+.br
+.ti -1c
+.RI "static \fBGDOUBLE\fP \fBPlaneDotPoint\fP (const \fBCGPlane\fP &plane, const \fBCGPoint3D\fP &pt)"
+.br
+.ti -1c
+.RI "static \fBGDOUBLE\fP \fBPlaneDotXYZ\fP (const \fBCGPlane\fP &plane, const \fBGFLOAT\fP &fX, const \fBGFLOAT\fP &fY, const \fBGFLOAT\fP &fZ)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBPlaneFrustrumFromXYRateAndViewProjMatrixInverse\fP (const \fBGFLOAT\fP &fLeft, const \fBGFLOAT\fP &fTop, const \fBGFLOAT\fP &fRight, const \fBGFLOAT\fP &fBottom, const \fBCGMatrix\fP &matViewProjInv, \fBGOUT\fP \fBCGPlane\fP *pPlaneFrustrum)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBPolygonToTriangleStripByTriangulate\fP (const CAtlArray< \fBCGPolygon\fP > &arrPolygon, \fBGOUT\fP \fBCGTriangleStrip\fP &triangleStrip)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBPolygonToTriangleStripByPoly2Tri\fP (const CAtlArray< \fBCGPolygon\fP > &arrPolygon, \fBGOUT\fP \fBCGTriangleStrip\fP &triangleStrip)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBPolygonToTriangleStrip\fP (const CAtlArray< \fBCGPolygon\fP > &arrPolygon, \fBGOUT\fP \fBCGTriangleStrip\fP &triangleStrip)"
+.br
+.ti -1c
+.RI "static \fBCGRect\fP \fBBoundaryFromPointArray\fP (const CAtlArray< \fBCGPoint3D\fP > &arrPoint)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBIsCCW2D\fP (const \fBCGPoint2D\fP &pt1, const \fBCGPoint2D\fP &pt2, const \fBCGPoint2D\fP &pt3)"
+.br
+.ti -1c
+.RI "static void \fBMatrixTransform\fP (\fBGOUT\fP \fBCGMatrix\fP &matTransform, const \fBCGPoint3D\fP &ptFrom, const \fBCGPoint3D\fP &ptTo, const \fBCGVector3D\fP &vAxisXFrom, const \fBCGVector3D\fP &vAxisYFrom, const \fBCGVector3D\fP &vAxisXTo, const \fBCGVector3D\fP &vAxisYTo)"
+.br
+.ti -1c
+.RI "static void \fBMatrixIdentity\fP (\fBGOUT\fP \fBCGMatrix\fP &mat)"
+.br
+.ti -1c
+.RI "static void \fBMatrixAffineTransformation\fP (\fBGOUT\fP \fBCGMatrix\fP &matTransform, const \fBCGPoint3D\fP &ptOrigin, const \fBCGVector3D\fP &vScale, const \fBCGVector3D\fP &vRotateAxis, const \fBGDOUBLE\fP &dRotateAngleRadian, const \fBCGVector3D\fP &vMove)"
+.br
+.ti -1c
+.RI "static void \fBMatrixFromXMMATRIX\fP (\fBGOUT\fP \fBCGMatrix\fP &mat, const void *pMatrix)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBIncludePointInSegment\fP (const \fBCGPoint3D\fP &pt, const \fBCGPoint3D\fP &ptSeg1, const \fBCGPoint3D\fP &ptSeg2, const \fBGDOUBLE\fP &dTol=0\&.0001)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBIncludePointInSegment\fP (const \fBCGPoint2D\fP &pt, const \fBCGPoint2D\fP &ptSeg1, const \fBCGPoint2D\fP &ptSeg2, const \fBGDOUBLE\fP &dTol=0\&.0001)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBIntersectXYZFrustrum\fP (const \fBGFLOAT\fP &fX, const \fBGFLOAT\fP &fY, const \fBGFLOAT\fP &fZ, const \fBCGPlane\fP *pPlaneFrustrum)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBIntersectSegmentRectangle\fP (const \fBCGPoint2D\fP &ptSeg1, const \fBCGPoint2D\fP &ptSeg2, const \fBCGPoint2D\fP &ptRectCenter, const \fBGDOUBLE\fP &dRectWidthHalf, const \fBGDOUBLE\fP &dRectHeightHalf, \fBGOUT\fP \fBGDOUBLE\fP *pdDist)"
+.br
+.ti -1c
+.RI "static \fBGBOOL\fP \fBIntersectSphereFrustrum\fP (const \fBGFLOAT\fP &fX, const \fBGFLOAT\fP &fY, const \fBGFLOAT\fP &fZ, const \fBGFLOAT\fP &fRadius, const \fBCGPlane\fP *pPlaneFrustrum)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+간단한 수학 계산관련
+.IP "\(bu" 2
+입력값에 대한 예외처리는 하지 않는다\&.
+.IP "  \(bu" 4
+속도위주의 함수들이기 때문
+.IP "  \(bu" 4
+caller가 예외처리를 해야함(여기서 예외처리 함수를 제공할 수는 있다) 
+.PP
+
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGMath::CGMath ()"
+
+.SS "CGMath::~CGMath ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCGRect\fP CGMath::BoundaryFromPointArray (const CAtlArray< \fBCGPoint3D\fP > & arrPoint)\fC [static]\fP"
+
+.IP "\(bu" 2
+point array의 boundary를 계산한다\&. 
+.PP
+
+.SS "\fBGDOUBLE\fP CGMath::DegreeToRadian (const \fBGDOUBLE\fP & dDegree)\fC [static]\fP"
+
+.IP "\(bu" 2
+degree를 radian으로 변환한다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CGMath::IncludePointInSegment (const \fBCGPoint3D\fP & pt, const \fBCGPoint3D\fP & ptSeg1, const \fBCGPoint3D\fP & ptSeg2, const \fBGDOUBLE\fP & dTol = \fC0\&.0001\fP)\fC [static]\fP"
+
+.IP "\(bu" 2
+점이 선 사이에 포함되어 있는지? 
+.PP
+
+.SS "\fBGBOOL\fP CGMath::IncludePointInSegment (const \fBCGPoint2D\fP & pt, const \fBCGPoint2D\fP & ptSeg1, const \fBCGPoint2D\fP & ptSeg2, const \fBGDOUBLE\fP & dTol = \fC0\&.0001\fP)\fC [static]\fP"
+
+.IP "\(bu" 2
+점이 선 사이에 포함되어 있는지? 
+.PP
+
+.SS "\fBGBOOL\fP CGMath::IntersectSegmentRectangle (const \fBCGPoint2D\fP & ptSeg1, const \fBCGPoint2D\fP & ptSeg2, const \fBCGPoint2D\fP & ptRectCenter, const \fBGDOUBLE\fP & dRectWidthHalf, const \fBGDOUBLE\fP & dRectHeightHalf, \fBGOUT\fP \fBGDOUBLE\fP * pdDist)\fC [static]\fP"
+
+.IP "\(bu" 2
+segment와 rectangle이 교차되는지? 
+.PP
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIptSeg1\fP segment의 start point 
+.br
+\fIptSeg2\fP segment의 end point 
+.br
+\fIptRectCenter\fP rectangle의 center point 
+.br
+\fIdRectWidthHalf\fP rectangle의 width의 1/2 
+.br
+\fIdRectHeightHalf\fP rectangle의 height의 1/2 
+.RE
+.PP
+
+.SS "\fBGBOOL\fP CGMath::IntersectSphereFrustrum (const \fBGFLOAT\fP & fX, const \fBGFLOAT\fP & fY, const \fBGFLOAT\fP & fZ, const \fBGFLOAT\fP & fRadius, const \fBCGPlane\fP * pPlaneFrustrum)\fC [static]\fP"
+
+.IP "\(bu" 2
+sphere와 frustrum이 교차되는지? 
+.PP
+
+.SS "\fBGBOOL\fP CGMath::IntersectXYZFrustrum (const \fBGFLOAT\fP & fX, const \fBGFLOAT\fP & fY, const \fBGFLOAT\fP & fZ, const \fBCGPlane\fP * pPlaneFrustrum)\fC [static]\fP"
+
+.IP "\(bu" 2
+XYZ와 frustrum이 교차되는지?
+.IP "\(bu" 2
+XYZ가 frustrum에 포함되어 있는지 판단한다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CGMath::IsCCW2D (const \fBCGPoint2D\fP & pt1, const \fBCGPoint2D\fP & pt2, const \fBCGPoint2D\fP & pt3)\fC [static]\fP"
+
+.IP "\(bu" 2
+2D point 3개가 시계 반시계방향으로 회전하는지? 
+.PP
+
+.SS "\fBGBOOL\fP CGMath::MatchPlaneAndLine (const \fBCGPoint3D\fP & ptPlanePos, const \fBCGVector3D\fP & vPlaneNormal, const \fBCGPoint3D\fP & ptLinePos, const \fBCGVector3D\fP & vLineDir, \fBGOUT\fP \fBCGPoint3D\fP & ptMatch)\fC [static]\fP"
+
+.IP "\(bu" 2
+평면과 선분의 교점을 계산한다\&. 
+.PP
+
+.SS "void CGMath::MatrixAffineTransformation (\fBGOUT\fP \fBCGMatrix\fP & matTransform, const \fBCGPoint3D\fP & ptOrigin, const \fBCGVector3D\fP & vScale, const \fBCGVector3D\fP & vRotateAxis, const \fBGDOUBLE\fP & dRotateAngleRadian, const \fBCGVector3D\fP & vMove)\fC [static]\fP"
+
+.IP "\(bu" 2
+scale(임의의 점 기준), rotate(임의의 점 기준), move가 적용된 matrix를 만든다\&.
+.IP "\(bu" 2
+주의 : 정밀도 떨어짐(double 을 float으로 강제 변환해서 만듦) 
+.PP
+
+.SS "void CGMath::MatrixFromXMMATRIX (\fBGOUT\fP \fBCGMatrix\fP & mat, const void * pMatrix)\fC [static]\fP"
+
+.IP "\(bu" 2
+XMMATRIX로 GMatrix를 만든다\&. 
+.PP
+
+.SS "void CGMath::MatrixIdentity (\fBGOUT\fP \fBCGMatrix\fP & mat)\fC [static]\fP"
+
+.IP "\(bu" 2
+identity matrix를 만든다\&.
+.IP "\(bu" 2
+좌표변환에 영향이 없는 초기화의 역할을 한다\&. 
+.PP
+
+.SS "void CGMath::MatrixTransform (\fBGOUT\fP \fBCGMatrix\fP & matTransform, const \fBCGPoint3D\fP & ptFrom, const \fBCGPoint3D\fP & ptTo, const \fBCGVector3D\fP & vAxisXFrom, const \fBCGVector3D\fP & vAxisYFrom, const \fBCGVector3D\fP & vAxisXTo, const \fBCGVector3D\fP & vAxisYTo)\fC [static]\fP"
+
+.IP "\(bu" 2
+좌표변환 matrix를 만든다\&. 
+.PP
+
+.SS "\fBCGVector3D\fP CGMath::NormalOf2Axis (const \fBCGVector3D\fP & vAxis1, const \fBCGVector3D\fP & vAxis2)\fC [static]\fP"
+
+.IP "\(bu" 2
+2개의 축에 대한 법선 vector를 계산해서 리턴한다\&.
+.IP "\(bu" 2
+2 vector의 외적을 계산한다\&.(곱) 
+.PP
+
+.SS "\fBCGPoint3D\fP CGMath::PerpendicularFromPointToLine (const \fBCGPoint3D\fP & ptFrom, const \fBCGPoint3D\fP & ptLine, const \fBCGVector3D\fP & vDirLine)\fC [static]\fP"
+
+.IP "\(bu" 2
+3D Point 에서 3D Line으로 수직인 좌표를 찾는다\&. 
+.PP
+
+.SS "\fBCGPoint2D\fP CGMath::PerpendicularFromPointToLine (const \fBCGPoint2D\fP & ptFrom, const \fBCGPoint2D\fP & ptLine, const \fBCGVector2D\fP & vDirLine)\fC [static]\fP"
+
+.IP "\(bu" 2
+2D Point 에서 2D Line으로 수직인 좌표를 찾는다\&. 
+.PP
+
+.SS "\fBCGVector3D\fP CGMath::PerpendicularOfVector (const \fBCGVector3D\fP & v)\fC [static]\fP"
+
+.IP "\(bu" 2
+vector의 수직 vector를 리턴한다\&.
+.IP "\(bu" 2
+3D vector의 수직 vector는 무수히 존재한다\&.
+.IP "\(bu" 2
+무수히 존재하는 vector중 하나를 리턴한다\&. 
+.PP
+
+.SS "\fBGDOUBLE\fP CGMath::PlaneDotPoint (const \fBCGPlane\fP & plane, const \fBCGPoint3D\fP & pt)\fC [static]\fP"
+
+.IP "\(bu" 2
+평면과 좌표의 곱 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.RE
+.PP
+
+.IP "\(bu" 2
+0 : 좌표가 평면상에 있음
+.IP "\(bu" 2
+-1 : 좌표가 평면 뒤에 있음(법선방향 반대쪽)
+.IP "\(bu" 2
+1 : 좌표가 평면 앞에 있음\&.(법선방향 쪽) 
+.PP
+
+.SS "\fBGDOUBLE\fP CGMath::PlaneDotXYZ (const \fBCGPlane\fP & plane, const \fBGFLOAT\fP & fX, const \fBGFLOAT\fP & fY, const \fBGFLOAT\fP & fZ)\fC [static]\fP"
+
+.IP "\(bu" 2
+평면과 좌표의 곱
+.IP "\(bu" 2
+float 좌표 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.RE
+.PP
+
+.IP "\(bu" 2
+0 : 좌표가 평면상에 있음
+.IP "\(bu" 2
+-1 : 좌표가 평면 뒤에 있음(법선방향 반대쪽)
+.IP "\(bu" 2
+1 : 좌표가 평면 앞에 있음\&.(법선방향 쪽) 
+.PP
+
+.SS "void CGMath::PlaneFrom3Point (const \fBCGPoint3D\fP & pt1, const \fBCGPoint3D\fP & pt2, const \fBCGPoint3D\fP & pt3, \fBGOUT\fP \fBCGPlane\fP & plane)\fC [static]\fP"
+
+.IP "\(bu" 2
+세점에서 평면을 계산해 낸다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CGMath::PlaneFrustrumFromXYRateAndViewProjMatrixInverse (const \fBGFLOAT\fP & fLeft, const \fBGFLOAT\fP & fTop, const \fBGFLOAT\fP & fRight, const \fBGFLOAT\fP & fBottom, const \fBCGMatrix\fP & matViewProjInv, \fBGOUT\fP \fBCGPlane\fP * pPlaneFrustrum)\fC [static]\fP"
+
+.IP "\(bu" 2
+view proj 역행렬과 window 좌, 상, 우, 하의 상대적위치(-1, 1, 1, -1이 가장자리)로 절두체 평면 6개를 계산한다\&. 
+.PP
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfLeft\fP window의 좌측위치(좌측끝은 -1) 
+.br
+\fIfTop\fP window의 상단위치(상단끝은 1) 
+.br
+\fIfRight\fP window의 우측위치(우측끝은 1) 
+.br
+\fIfBottom\fP window의 하단위치(하단끝은 -1) 
+.br
+\fImatViewProjInv\fP view * project의 inverse matrix 
+.br
+\fIpPlaneFrustrum\fP 절두체 평면 계산결과를 담을 변수(6개 배열의 포인터) 
+.RE
+.PP
+
+.SS "\fBGBOOL\fP CGMath::PolygonToTriangleStrip (const CAtlArray< \fBCGPolygon\fP > & arrPolygon, \fBGOUT\fP \fBCGTriangleStrip\fP & triangleStrip)\fC [static]\fP"
+
+.SS "\fBGBOOL\fP CGMath::PolygonToTriangleStripByPoly2Tri (const CAtlArray< \fBCGPolygon\fP > & arrPolygon, \fBGOUT\fP \fBCGTriangleStrip\fP & triangleStrip)\fC [static]\fP"
+
+.IP "\(bu" 2
+polygon을 triangle strip으로 변환
+.IP "\(bu" 2
+Poly2Tri source code를 사용한다\&. 
+.PP
+
+.SS "\fBGBOOL\fP CGMath::PolygonToTriangleStripByTriangulate (const CAtlArray< \fBCGPolygon\fP > & arrPolygon, \fBGOUT\fP \fBCGTriangleStrip\fP & triangleStrip)\fC [static]\fP"
+
+.IP "\(bu" 2
+polygon을 triangle strip으로 변환
+.IP "\(bu" 2
+\fBTriangulate\fP source code를 사용한다\&. 
+.PP
+
+.SS "\fBGDOUBLE\fP CGMath::RadianToDegree (const \fBGDOUBLE\fP & dRadian)\fC [static]\fP"
+
+.IP "\(bu" 2
+radian을 degree로 변환 
+.PP
+
+.SS "\fBCGPoint2D\fP CGMath::RadianToVector (const \fBGDOUBLE\fP & dRadian)\fC [static]\fP"
+
+.IP "\(bu" 2
+radian를 vector로 변환한다\&.
+.IP "\(bu" 2
+Degree를 vector로 변환하는 함수는 지원 하지 않을 예정이다\&. 
+.PP
+
+.SS "\fBCGVector3D\fP CGMath::RadianToVector3D (const \fBGDOUBLE\fP & dRadian)\fC [static]\fP"
+
+.SS "void CGMath::Transform (\fBCGPoint3D\fP * pPos, const \fBGSIZE\fP & uSizePos, const \fBCGPoint3D\fP & ptFrom, const \fBCGPoint3D\fP & ptTo, const \fBCGVector3D\fP & vAxisXFrom, const \fBCGVector3D\fP & vAxisYFrom, const \fBCGVector3D\fP & vAxisXTo, const \fBCGVector3D\fP & vAxisYTo)\fC [static]\fP"
+
+.IP "\(bu" 2
+\fBCGPoint3D\fP 배열의 좌표변환을 한다\&. 
+.PP
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpPos\fP 좌표 배열의 포인터 
+.br
+\fIuSizePos\fP 좌표의 개수 
+.br
+\fIptFrom\fP 이동 / 회전의 기준이 되는 좌표 
+.br
+\fIptTo\fP 좌표 이동의 목적지 
+.br
+\fIvAxisXFrom\fP 회전의 기준이 되는 X축 벡터 
+.br
+\fIvAxisYFrom\fP 회전의 기준이 되는 Y축 벡터 
+.br
+\fIvAxisXTo\fP 회전 후 X축 벡터 
+.br
+\fIvAxisYTo\fP 회전 후 Y축 벡터 
+.RE
+.PP
+
+.SS "void CGMath::TransformByMatrix (\fBGINOUT\fP \fBCGPoint3D\fP & pos, const \fBCGMatrix\fP & mat)\fC [static]\fP"
+
+.IP "\(bu" 2
+point를 matrix로 변환한다\&. 
+.PP
+
+.SS "\fBGDOUBLE\fP CGMath::VectorToDegree (const \fBCGPoint2D\fP & vAng)\fC [static]\fP"
+
+.IP "\(bu" 2
+vector 를 degree로 변환 
+.PP
+
+.SS "\fBGDOUBLE\fP CGMath::VectorToRadian (const \fBCGPoint2D\fP & vAng)\fC [static]\fP"
+
+.IP "\(bu" 2
+vector를 radian으로 변환 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

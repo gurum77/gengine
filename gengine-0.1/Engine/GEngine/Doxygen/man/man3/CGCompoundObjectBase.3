@@ -1,0 +1,111 @@
+.TH "CGCompoundObjectBase" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGCompoundObjectBase \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GCompoundObjectBase\&.h>\fP
+.PP
+Inherits \fBCGObjectBase\fP\&.
+.PP
+Inherited by \fBCGObjectCar\fP, and \fBCGObjectText\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBGenerateSubObject\fP ()=0"
+.br
+.ti -1c
+.RI "void \fBInitSubObjectID\fP ()"
+.br
+.ti -1c
+.RI "\fBGINT32\fP \fBGetSubObjectIDCount\fP () const "
+.br
+.ti -1c
+.RI "void \fBAddSubObject\fP (\fBCGObjectBase\fP *pObject)"
+.br
+.ti -1c
+.RI "CAtlMap< \fBGID\fP, \fBGBOOL\fP > & \fBGetSubObjectIDList\fP ()"
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGCompoundObjectBase\fP)"
+.br
+.ti -1c
+.RI "\fBCGCompoundObjectBase\fP (void)"
+.br
+.ti -1c
+.RI "virtual \fB~CGCompoundObjectBase\fP (void)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBGenerateSubObjectOfSubObject\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "CAtlMap< \fBGID\fP, \fBGBOOL\fP > \fBm_mapSubObjectID\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+복합객체 base
+.IP "\(bu" 2
+다양한 속성을 가질 수 있는 객체이다\&. 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_SUPER\fP \fBGIMPLEMENT_OPERATOR_COPY_END\fP CGCompoundObjectBase::CGCompoundObjectBase (void)"
+
+.SS "CGCompoundObjectBase::~CGCompoundObjectBase (void)\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGCompoundObjectBase::AddSubObject (\fBCGObjectBase\fP * pObject)"
+
+.IP "\(bu" 2
+sub object를 추가한다\&. 
+.PP
+
+.SS "CGCompoundObjectBase::GDEFINE_OPERATOR_COPY (\fBCGCompoundObjectBase\fP)"
+
+.SS "virtual void CGCompoundObjectBase::GenerateSubObject ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCGObjectCar\fP, and \fBCGObjectText\fP\&.
+.SS "void CGCompoundObjectBase::GenerateSubObjectOfSubObject ()\fC [protected]\fP"
+
+.IP "\(bu" 2
+sub object의 sub object를 모두 생성한다
+.IP "\(bu" 2
+compound object의 GenerateSubObject 함수 말미에 꼭 호출해줘야 sub object의 sub object가 정상적으로 생성이 된다\&. 
+.PP
+
+.SS "\fBGINT32\fP CGCompoundObjectBase::GetSubObjectIDCount () const"
+
+.SS "CAtlMap< \fBGID\fP, \fBGBOOL\fP > & CGCompoundObjectBase::GetSubObjectIDList ()"
+
+.SS "void CGCompoundObjectBase::InitSubObjectID ()"
+
+.IP "\(bu" 2
+compound object는 sub object의 id 만 보관을 하고 실제로는 object manager가 모두 관리한다\&. 
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "CAtlMap<\fBGID\fP, \fBGBOOL\fP> CGCompoundObjectBase::m_mapSubObjectID\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

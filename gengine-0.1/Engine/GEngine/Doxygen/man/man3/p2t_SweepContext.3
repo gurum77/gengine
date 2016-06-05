@@ -1,0 +1,178 @@
+.TH "p2t::SweepContext" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+p2t::SweepContext \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <sweep_context\&.h>\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBBasin\fP"
+.br
+.ti -1c
+.RI "struct \fBEdgeEvent\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSweepContext\fP (std::vector< \fBPoint\fP * > polyline)"
+.br
+.RI "\fIConstructor\&. \fP"
+.ti -1c
+.RI "\fB~SweepContext\fP ()"
+.br
+.RI "\fIDestructor\&. \fP"
+.ti -1c
+.RI "void \fBset_head\fP (\fBPoint\fP *p1)"
+.br
+.ti -1c
+.RI "\fBPoint\fP * \fBhead\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_tail\fP (\fBPoint\fP *p1)"
+.br
+.ti -1c
+.RI "\fBPoint\fP * \fBtail\fP ()"
+.br
+.ti -1c
+.RI "int \fBpoint_count\fP ()"
+.br
+.ti -1c
+.RI "\fBNode\fP & \fBLocateNode\fP (\fBPoint\fP &point)"
+.br
+.ti -1c
+.RI "void \fBRemoveNode\fP (\fBNode\fP *node)"
+.br
+.ti -1c
+.RI "void \fBCreateAdvancingFront\fP (std::vector< \fBNode\fP * > nodes)"
+.br
+.ti -1c
+.RI "void \fBMapTriangleToNodes\fP (\fBTriangle\fP &t)"
+.br
+.RI "\fITry to map a node to all sides of this triangle that don't have a neighbor\&. \fP"
+.ti -1c
+.RI "void \fBAddToMap\fP (\fBTriangle\fP *triangle)"
+.br
+.ti -1c
+.RI "\fBPoint\fP * \fBGetPoint\fP (const int &index)"
+.br
+.ti -1c
+.RI "\fBPoint\fP * \fBGetPoints\fP ()"
+.br
+.ti -1c
+.RI "void \fBRemoveFromMap\fP (\fBTriangle\fP *triangle)"
+.br
+.ti -1c
+.RI "void \fBAddHole\fP (std::vector< \fBPoint\fP * > polyline)"
+.br
+.ti -1c
+.RI "void \fBAddPoint\fP (\fBPoint\fP *point)"
+.br
+.ti -1c
+.RI "\fBAdvancingFront\fP * \fBfront\fP ()"
+.br
+.ti -1c
+.RI "void \fBMeshClean\fP (\fBTriangle\fP &triangle)"
+.br
+.ti -1c
+.RI "std::vector< \fBTriangle\fP * > \fBGetTriangles\fP ()"
+.br
+.ti -1c
+.RI "std::list< \fBTriangle\fP * > \fBGetMap\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBEdge\fP * > \fBedge_list\fP"
+.br
+.ti -1c
+.RI "\fBBasin\fP \fBbasin\fP"
+.br
+.ti -1c
+.RI "\fBEdgeEvent\fP \fBedge_event\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBSweep\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "p2t::SweepContext::SweepContext (std::vector< \fBPoint\fP * > polyline)"
+
+.PP
+Constructor\&. 
+.SS "p2t::SweepContext::~SweepContext ()"
+
+.PP
+Destructor\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void p2t::SweepContext::AddHole (std::vector< \fBPoint\fP * > polyline)"
+
+.SS "void p2t::SweepContext::AddPoint (\fBPoint\fP * point)"
+
+.SS "void p2t::SweepContext::AddToMap (\fBTriangle\fP * triangle)"
+
+.SS "void p2t::SweepContext::CreateAdvancingFront (std::vector< \fBNode\fP * > nodes)"
+
+.SS "\fBAdvancingFront\fP * p2t::SweepContext::front ()\fC [inline]\fP"
+
+.SS "std::list< \fBTriangle\fP * > p2t::SweepContext::GetMap ()"
+
+.SS "\fBPoint\fP * p2t::SweepContext::GetPoint (const int & index)"
+
+.SS "\fBPoint\fP* p2t::SweepContext::GetPoints ()"
+
+.SS "std::vector< \fBTriangle\fP * > p2t::SweepContext::GetTriangles ()"
+
+.SS "\fBPoint\fP * p2t::SweepContext::head ()\fC [inline]\fP"
+
+.SS "\fBNode\fP & p2t::SweepContext::LocateNode (\fBPoint\fP & point)"
+
+.SS "void p2t::SweepContext::MapTriangleToNodes (\fBTriangle\fP & t)"
+
+.PP
+Try to map a node to all sides of this triangle that don't have a neighbor\&. 
+.SS "void p2t::SweepContext::MeshClean (\fBTriangle\fP & triangle)"
+
+.SS "int p2t::SweepContext::point_count ()\fC [inline]\fP"
+
+.SS "void p2t::SweepContext::RemoveFromMap (\fBTriangle\fP * triangle)"
+
+.SS "void p2t::SweepContext::RemoveNode (\fBNode\fP * node)"
+
+.SS "void p2t::SweepContext::set_head (\fBPoint\fP * p1)\fC [inline]\fP"
+
+.SS "void p2t::SweepContext::set_tail (\fBPoint\fP * p1)\fC [inline]\fP"
+
+.SS "\fBPoint\fP * p2t::SweepContext::tail ()\fC [inline]\fP"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBSweep\fP\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBBasin\fP p2t::SweepContext::basin"
+
+.SS "\fBEdgeEvent\fP p2t::SweepContext::edge_event"
+
+.SS "std::vector<\fBEdge\fP*> p2t::SweepContext::edge_list"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

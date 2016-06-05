@@ -1,0 +1,574 @@
+.TH "CGDC" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGDC \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GDC\&.h>\fP
+.PP
+Inherited by \fBCGDCDirectX11\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBGetAllBufferLayerItemID\fP (const CString &strViewLayer, \fBGOUT\fP CAtlArray< \fBGID\fP > &arrID)=0"
+.br
+.ti -1c
+.RI "virtual \fBGBOOL\fP \fBInitDC\fP (const \fBCGDCInitData\fP &initData)=0"
+.br
+.ti -1c
+.RI "virtual \fBGBOOL\fP \fBSetCamera\fP (\fBCGDCTargetView\fP *pDCTargetView, \fBGINOUT\fP \fBCGCamera\fP &camera)=0"
+.br
+.ti -1c
+.RI "virtual \fBGBOOL\fP \fBSetWorldTransform\fP (\fBCGDCTargetView\fP *pDCTargetView, const \fBCGMatrix\fP &matTransform)=0"
+.br
+.ti -1c
+.RI "virtual \fBGBOOL\fP \fBOnResize\fP (\fBCGDCTargetView\fP *pDCTargetView, const \fBCGDCTargetViewInitData\fP &initData)=0"
+.br
+.ti -1c
+.RI "virtual void \fBPrepareDrawScene\fP (\fBCGDCTargetView\fP *pDCTargetView)=0"
+.br
+.ti -1c
+.RI "virtual void \fBCompleteDrawScene\fP (\fBCGDCTargetView\fP *pDCTargetView)=0"
+.br
+.ti -1c
+.RI "virtual void \fBDrawPointList\fP (const \fBGUINT\fP &uVertexOffset, const \fBGUINT\fP &uVertexCount)=0"
+.br
+.ti -1c
+.RI "virtual void \fBDrawPointListIndexed\fP (const \fBGUINT\fP &uIndexOffset, const \fBGUINT\fP &uIndexCount)=0"
+.br
+.ti -1c
+.RI "virtual void \fBDrawLine\fP (const \fBGUINT\fP &uVertexOffset, const \fBGUINT\fP &uVertexCount)=0"
+.br
+.ti -1c
+.RI "virtual void \fBDrawLineList\fP (const \fBGUINT\fP &uVertexOffset, const \fBGUINT\fP &uVertexCount)=0"
+.br
+.ti -1c
+.RI "virtual void \fBDrawLineListIndexed\fP (const \fBGUINT\fP &uIndexOffset, const \fBGUINT\fP &uIndexCount)=0"
+.br
+.ti -1c
+.RI "virtual void \fBDrawTriangleList\fP (const \fBGUINT\fP &uVertexOffset, const \fBGUINT\fP &uVertexCount)=0"
+.br
+.ti -1c
+.RI "virtual void \fBDrawTriangleListIndexed\fP (const \fBGUINT\fP &uIndexOffset, const \fBGUINT\fP &uIndexCount)=0"
+.br
+.ti -1c
+.RI "virtual void \fBInitVertexBuffer\fP (const CString &strLayerName, const \fBGID\fP &ID=\fBGNONE_ID\fP)=0"
+.br
+.ti -1c
+.RI "virtual void \fBInitIndexBuffer\fP (const CString &strLayerName, const \fBGID\fP &ID=\fBGNONE_ID\fP)=0"
+.br
+.ti -1c
+.RI "virtual void \fBSetCurVertexBuffer\fP (const CString &strLayerName, const \fBPrimitiveTopology\fP &eUseVertexBuffer, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual void \fBSetCurIndexBuffer\fP (const CString &strLayerName, const \fBPrimitiveTopology\fP &eUseVertexBuffer, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual void \fBCreateVertexBuffer\fP (const CString &strLayerName, const CAtlArray< \fBGVERTEX\fP > &arr, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual void \fBCreateIndexBuffer\fP (const CString &strLayerName, const CAtlArray< \fBGUINT32\fP > &arr, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual void \fBAddVertexBuffer\fP (const CString &strLayerName, const CAtlArray< \fBGVERTEX\fP > &arr, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual void \fBAddIndexBuffer\fP (const CString &strLayerName, const CAtlArray< \fBGUINT32\fP > &arr, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual void \fBDeleteVertexBuffer\fP (const CString &strLayerName, const \fBGUINT32\fP &uDeleteVertexOffset, const \fBGUINT32\fP &uDeleteVertexSize, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual void \fBDeleteVertexBufferMultiple\fP (const CString &strLayerName, const std::map< \fBGUINT32\fP, \fBGUINT32\fP > &mapVertexOffsetCount, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual void \fBDeleteIndexBuffer\fP (const CString &strLayerName, const \fBGUINT32\fP &uDeleteIndexOffset, const \fBGUINT32\fP &uDeleteIndexSize, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual void \fBDeleteIndexBufferMultiple\fP (const CString &strLayerName, const std::map< \fBGUINT32\fP, \fBGUINT32\fP > &mapIndexOffsetCount, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual \fBGVERTEX\fP * \fBOpenVertexBuffer\fP (const CString &strLayerName, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual \fBGUINT32\fP * \fBOpenIndexBuffer\fP (const CString &strLayerName, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual void \fBCloseVertexBuffer\fP (const CString &strLayerName, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual void \fBCloseIndexBuffer\fP (const CString &strLayerName, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual \fBCGPoint3D\fP \fBCalcWorldCoordinateByWindowCoordinate\fP (\fBCGDCTargetView\fP *pDCTargetView, const CPoint &ptWindow)=0"
+.br
+.ti -1c
+.RI "virtual \fBCGPoint3D\fP \fBCalcWorldCoordinateByWindowCoordinateWithDepth\fP (\fBCGDCTargetView\fP *pDCTargetView, const CPoint &ptwindow, const \fBGFLOAT\fP &fDepth)=0"
+.br
+.ti -1c
+.RI "virtual CPoint \fBCalcWindowCoordinateByWorldCoordinate\fP (\fBCGDCTargetView\fP *pDCTargetView, const \fBCGPoint3D\fP &ptWorld)=0"
+.br
+.ti -1c
+.RI "virtual \fBCGDCTargetView\fP * \fBCreateDCTargetView\fP (const \fBCGDCTargetViewInitData\fP &initData)=0"
+.br
+.ti -1c
+.RI "virtual void \fBSetPrimitiveVertexCount\fP (const CString &strLayerName, const \fBGUINT\fP &uPrimitiveVertexCount, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual \fBGUINT\fP \fBGetPrimitiveVertexCount\fP (const CString &strLayerName, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "virtual \fBGUINT\fP \fBGetPrimitiveIndexCount\fP (const CString &strLayerName, const \fBPrimitiveTopology\fP &ePrimitiveTopology, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "void \fBSetCurBufferLayer\fP (const CAtlString &strLayerName)"
+.br
+.ti -1c
+.RI "virtual \fBGBOOL\fP \fBAddBufferLayer\fP (const CAtlString &strLayerName)=0"
+.br
+.ti -1c
+.RI "virtual \fBGBOOL\fP \fBAddBufferLayerItem\fP (const CAtlString &strLayerName, const \fBGID\fP &ID)=0"
+.br
+.ti -1c
+.RI "void \fBSetBackgroundColor\fP (const \fBCGColor\fP &color)"
+.br
+.ti -1c
+.RI "\fBCGDCTargetView\fP * \fBGetLastTargetView\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetAbort\fP (const \fBGBOOL\fP &bAbort)"
+.br
+.ti -1c
+.RI "const \fBGBOOL\fP & \fBGetAbort\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetLock\fP (const \fBGBOOL\fP &bLock)"
+.br
+.ti -1c
+.RI "const \fBGBOOL\fP & \fBGetLoock\fP () const "
+.br
+.ti -1c
+.RI "\fBCGDC\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~CGDC\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBCGColor\fP \fBm_backgroundColor\fP"
+.br
+.ti -1c
+.RI "\fBCGDCTargetView\fP * \fBm_pLastTargetView\fP"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBm_bAbort\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+DC
+.IP "\(bu" 2
+정보를 화면에 표시한다\&.
+.IP "\(bu" 2
+데이타 관리는 하지 않는다\&.
+.IP "\(bu" 2
+graphics library와 직접 통신한다\&. 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGDC::CGDC ()"
+
+.SS "CGDC::~CGDC ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual \fBGBOOL\fP CGDC::AddBufferLayer (const CAtlString & strLayerName)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+buffer layer를 추가한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual \fBGBOOL\fP CGDC::AddBufferLayerItem (const CAtlString & strLayerName, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+buffer layer item을 추가한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::AddIndexBuffer (const CString & strLayerName, const CAtlArray< \fBGUINT32\fP > & arr, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+index buffer에 vertex를 추가한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::AddVertexBuffer (const CString & strLayerName, const CAtlArray< \fBGVERTEX\fP > & arr, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer에 vertex를 추가한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual CPoint CGDC::CalcWindowCoordinateByWorldCoordinate (\fBCGDCTargetView\fP * pDCTargetView, const \fBCGPoint3D\fP & ptWorld)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+world 좌표를 통해서 window 좌표를 얻는다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual \fBCGPoint3D\fP CGDC::CalcWorldCoordinateByWindowCoordinate (\fBCGDCTargetView\fP * pDCTargetView, const CPoint & ptWindow)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+window 좌표를 통해서 world 좌표를 얻는다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual \fBCGPoint3D\fP CGDC::CalcWorldCoordinateByWindowCoordinateWithDepth (\fBCGDCTargetView\fP * pDCTargetView, const CPoint & ptwindow, const \fBGFLOAT\fP & fDepth)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+window 좌표와 깊이값을 통해서 world 좌표를 얻는다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::CloseIndexBuffer (const CString & strLayerName, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+index buffer를 close한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::CloseVertexBuffer (const CString & strLayerName, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer를 close한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::CompleteDrawScene (\fBCGDCTargetView\fP * pDCTargetView)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+장면 그리기를 완료한다\&.
+.IP "\(bu" 2
+buffer에 그려진 장면을 view로 swap한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual \fBCGDCTargetView\fP* CGDC::CreateDCTargetView (const \fBCGDCTargetViewInitData\fP & initData)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+DC가 뿌려지는 view를 생성한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::CreateIndexBuffer (const CString & strLayerName, const CAtlArray< \fBGUINT32\fP > & arr, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+index buffer를 생성한다\&. @ 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::CreateVertexBuffer (const CString & strLayerName, const CAtlArray< \fBGVERTEX\fP > & arr, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer를 생성한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::DeleteIndexBuffer (const CString & strLayerName, const \fBGUINT32\fP & uDeleteIndexOffset, const \fBGUINT32\fP & uDeleteIndexSize, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+index buffer의 일부분을 삭제한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::DeleteIndexBufferMultiple (const CString & strLayerName, const std::map< \fBGUINT32\fP, \fBGUINT32\fP > & mapIndexOffsetCount, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::DeleteVertexBuffer (const CString & strLayerName, const \fBGUINT32\fP & uDeleteVertexOffset, const \fBGUINT32\fP & uDeleteVertexSize, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer의 일부분을 삭제한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::DeleteVertexBufferMultiple (const CString & strLayerName, const std::map< \fBGUINT32\fP, \fBGUINT32\fP > & mapVertexOffsetCount, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::DrawLine (const \fBGUINT\fP & uVertexOffset, const \fBGUINT\fP & uVertexCount)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+point를 그린다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::DrawLineList (const \fBGUINT\fP & uVertexOffset, const \fBGUINT\fP & uVertexCount)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+line list를 그린다\&.
+.IP "\(bu" 2
+짝수번째 line만 그린다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::DrawLineListIndexed (const \fBGUINT\fP & uIndexOffset, const \fBGUINT\fP & uIndexCount)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+line list를 그린다\&.
+.IP "\(bu" 2
+짝수번째 line만 그린다\&.
+.IP "\(bu" 2
+index로 그린다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::DrawPointList (const \fBGUINT\fP & uVertexOffset, const \fBGUINT\fP & uVertexCount)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+point list를 그린다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::DrawPointListIndexed (const \fBGUINT\fP & uIndexOffset, const \fBGUINT\fP & uIndexCount)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+point list를 index로 그린다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::DrawTriangleList (const \fBGUINT\fP & uVertexOffset, const \fBGUINT\fP & uVertexCount)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+triangle list를 그린다\&.
+.IP "\(bu" 2
+3개의 vertex를 각각의 triangle로 그린다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::DrawTriangleListIndexed (const \fBGUINT\fP & uIndexOffset, const \fBGUINT\fP & uIndexCount)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+triangle list를 그린다\&.
+.IP "\(bu" 2
+3개의 vertex를 각각의 triangle로 그린다\&.
+.IP "\(bu" 2
+index로 그린다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "const \fBGBOOL\fP & CGDC::GetAbort () const"
+
+.SS "virtual void CGDC::GetAllBufferLayerItemID (const CString & strViewLayer, \fBGOUT\fP CAtlArray< \fBGID\fP > & arrID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+view layer에 포함되어 있는 모든 layer item의 ID를 가져온다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "\fBCGDCTargetView\fP * CGDC::GetLastTargetView ()"
+
+.IP "\(bu" 2
+마지막으로 그린 target view 
+.PP
+
+.SS "const \fBGBOOL\fP& CGDC::GetLoock () const"
+
+.SS "virtual \fBGUINT\fP CGDC::GetPrimitiveIndexCount (const CString & strLayerName, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+index buffer의 개수 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual \fBGUINT\fP CGDC::GetPrimitiveVertexCount (const CString & strLayerName, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual \fBGBOOL\fP CGDC::InitDC (const \fBCGDCInitData\fP & initData)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+그래픽 라이브러리를 초기화 한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::InitIndexBuffer (const CString & strLayerName, const \fBGID\fP & ID = \fC\fBGNONE_ID\fP\fP)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+index buffer를 초기화 한다\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP 
+.RE
+.PP
+
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::InitVertexBuffer (const CString & strLayerName, const \fBGID\fP & ID = \fC\fBGNONE_ID\fP\fP)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer를 초기화 한다\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP 
+.RE
+.PP
+
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual \fBGBOOL\fP CGDC::OnResize (\fBCGDCTargetView\fP * pDCTargetView, const \fBCGDCTargetViewInitData\fP & initData)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+view의 크기 조정시 호출 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual \fBGUINT32\fP* CGDC::OpenIndexBuffer (const CString & strLayerName, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+index buffer를 open한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual \fBGVERTEX\fP* CGDC::OpenVertexBuffer (const CString & strLayerName, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer를 open한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::PrepareDrawScene (\fBCGDCTargetView\fP * pDCTargetView)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+장면을 그릴 준비를 한다\&.
+.IP "  \(bu" 4
+배경을 지운다\&.
+.IP "  \(bu" 4
+object외의 모든 것을 준비한다\&. 
+.PP
+
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "void CGDC::SetAbort (const \fBGBOOL\fP & bAbort)"
+
+.IP "\(bu" 2
+어떤 동작을 중단해야 하는 경우 true로 설정한다\&. 
+.PP
+
+.SS "void CGDC::SetBackgroundColor (const \fBCGColor\fP & color)"
+
+.IP "\(bu" 2
+background color 
+.PP
+
+.SS "virtual \fBGBOOL\fP CGDC::SetCamera (\fBCGDCTargetView\fP * pDCTargetView, \fBGINOUT\fP \fBCGCamera\fP & camera)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+현재 뷰의 카메라를 설정한다\&.
+.IP "\(bu" 2
+카메라 설정후 frustum을 계산하여 camera에 set 한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "void CGDC::SetCurBufferLayer (const CAtlString & strLayerName)"
+
+.IP "\(bu" 2
+current buffer layer를 설정한다\&.
+.IP "\(bu" 2
+Draw\&.\&., CreateVertexBuffer등 사용할 buffer의 layer를 미리 지정하고 사용해야 한다\&. 
+.PP
+
+.SS "virtual void CGDC::SetCurIndexBuffer (const CString & strLayerName, const \fBPrimitiveTopology\fP & eUseVertexBuffer, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+사용할 index buffer를 설정한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual void CGDC::SetCurVertexBuffer (const CString & strLayerName, const \fBPrimitiveTopology\fP & eUseVertexBuffer, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+사용할 vertex buffer를 설정한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "void CGDC::SetLock (const \fBGBOOL\fP & bLock)"
+
+.SS "virtual void CGDC::SetPrimitiveVertexCount (const CString & strLayerName, const \fBGUINT\fP & uPrimitiveVertexCount, const \fBPrimitiveTopology\fP & ePrimitiveTopology, const \fBGID\fP & ID)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer의 개수 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SS "virtual \fBGBOOL\fP CGDC::SetWorldTransform (\fBCGDCTargetView\fP * pDCTargetView, const \fBCGMatrix\fP & matTransform)\fC [pure virtual]\fP"
+
+.IP "\(bu" 2
+world 좌표 변환 matrix를 설정한다\&. 
+.PP
+
+.PP
+Implemented in \fBCGDCDirectX11\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGBOOL\fP CGDC::m_bAbort\fC [protected]\fP"
+
+.SS "\fBCGColor\fP CGDC::m_backgroundColor\fC [protected]\fP"
+
+.SS "\fBCGDCTargetView\fP* CGDC::m_pLastTargetView\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

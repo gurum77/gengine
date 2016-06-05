@@ -1,0 +1,79 @@
+.TH "D:/MyProject/Trunk/Engine/GEngine/Src/GCommon/common/shapes.h" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/MyProject/Trunk/Engine/GEngine/Src/GCommon/common/shapes.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <vector>\fP
+.br
+\fC#include <cstddef>\fP
+.br
+\fC#include <assert\&.h>\fP
+.br
+\fC#include <cmath>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBp2t::Point\fP"
+.br
+.ti -1c
+.RI "struct \fBp2t::Edge\fP"
+.br
+.ti -1c
+.RI "class \fBp2t::Triangle\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBp2t\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBp2t::cmp\fP (const Point *a, const Point *b)"
+.br
+.ti -1c
+.RI "Point \fBp2t::operator+\fP (const Point &a, const Point &b)"
+.br
+.RI "\fIAdd two points_ component-wise\&. \fP"
+.ti -1c
+.RI "Point \fBp2t::operator\-\fP (const Point &a, const Point &b)"
+.br
+.RI "\fISubtract two points_ component-wise\&. \fP"
+.ti -1c
+.RI "Point \fBp2t::operator*\fP (double s, const Point &a)"
+.br
+.RI "\fIMultiply point by scalar\&. \fP"
+.ti -1c
+.RI "bool \fBp2t::operator==\fP (const Point &a, const Point &b)"
+.br
+.ti -1c
+.RI "bool \fBp2t::operator!=\fP (const Point &a, const Point &b)"
+.br
+.ti -1c
+.RI "double \fBp2t::Dot\fP (const Point &a, const Point &b)"
+.br
+.RI "\fIPeform the dot product on two vectors\&. \fP"
+.ti -1c
+.RI "double \fBp2t::Cross\fP (const Point &a, const Point &b)"
+.br
+.RI "\fIPerform the cross product on two vectors\&. In 2D this produces a scalar\&. \fP"
+.ti -1c
+.RI "Point \fBp2t::Cross\fP (const Point &a, double s)"
+.br
+.ti -1c
+.RI "Point \fBp2t::Cross\fP (const double s, const Point &a)"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

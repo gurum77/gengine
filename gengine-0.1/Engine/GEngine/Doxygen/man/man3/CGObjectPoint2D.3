@@ -1,0 +1,153 @@
+.TH "CGObjectPoint2D" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGObjectPoint2D \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GObjectPoint2D\&.h>\fP
+.PP
+Inherits \fBCGObjectBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetPoint2D\fP (const \fBCGPoint2D\fP &point2D)"
+.br
+.ti -1c
+.RI "void \fBSetPoint2DByXY\fP (const \fBGDOUBLE\fP &dX, const \fBGDOUBLE\fP &dY)"
+.br
+.ti -1c
+.RI "virtual void \fBMove\fP (const \fBCGVector3D\fP &vMove)"
+.br
+.ti -1c
+.RI "virtual void \fBRotate\fP (const \fBCGPoint3D\fP &ptBase, const \fBCGVector3D\fP &vAxis, const \fBCGPoint2D\fP &vAng)"
+.br
+.ti -1c
+.RI "virtual void \fBScale\fP (const \fBCGPoint3D\fP &ptBase, const \fBGDOUBLE\fP &dScale)"
+.br
+.ti -1c
+.RI "virtual void \fBCalcBoundary\fP ()"
+.br
+.ti -1c
+.RI "virtual const void \fBGetAllVertexByPrimitiveTopology\fP (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > &arrVertex) const "
+.br
+.ti -1c
+.RI "virtual const void \fBGetAllStripVertexListIndexByPrimitiveTopology\fP (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > &arrVertex, \fBGOUT\fP CAtlArray< \fBGUINT32\fP > &arrIndex) const "
+.br
+.ti -1c
+.RI "virtual CAtlString \fBGetStrType\fP () const "
+.br
+.ti -1c
+.RI "virtual \fBPrimitiveTopology\fP \fBGetPrimitiveTopology\fP () const "
+.br
+.ti -1c
+.RI "\fBCGObjectPoint2D\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~CGObjectPoint2D\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+2d point 객체 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGObjectPoint2D::CGObjectPoint2D ()"
+
+.SS "CGObjectPoint2D::~CGObjectPoint2D ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGObjectPoint2D::CalcBoundary ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "const void CGObjectPoint2D::GetAllStripVertexListIndexByPrimitiveTopology (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > & arrVertex, \fBGOUT\fP CAtlArray< \fBGUINT32\fP > & arrIndex) const\fC [virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer에 추가할 strip vertex와 list index를 가져온다\&.
+.IP "\(bu" 2
+object를 그리기 위해서는 반드시 재정의가 필요하다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "const void CGObjectPoint2D::GetAllVertexByPrimitiveTopology (\fBGOUT\fP CAtlArray< \fBGVERTEX\fP > & arrVertex) const\fC [virtual]\fP"
+
+.IP "\(bu" 2
+vertex buffer에 추가할 vertex를 가져온다\&.
+.IP "\(bu" 2
+object를 그리기 위해서는 반드시 재정의가 필요하다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "virtual \fBPrimitiveTopology\fP CGObjectPoint2D::GetPrimitiveTopology () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.IP "\(bu" 2
+object의 vertex의 primitive topology를 리턴한다\&.
+.IP "\(bu" 2
+object는 한가지 primitive topology만 가질 수 있다\&.(다양한 primitive topology가 필요하다면 object를 여러개 가지도록 하면 된다) 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "virtual CAtlString CGObjectPoint2D::GetStrType () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.IP "\(bu" 2
+object의 타입을 리턴한다\&.
+.IP "\(bu" 2
+유일한 string이어야 한다\&.
+.IP "\(bu" 2
+반드시 재정의 되어야 한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "void CGObjectPoint2D::Move (const \fBCGVector3D\fP & vMove)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object를 move한다\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP 
+.RE
+.PP
+
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "void CGObjectPoint2D::Rotate (const \fBCGPoint3D\fP & ptBase, const \fBCGVector3D\fP & vAxis, const \fBCGPoint2D\fP & vAng)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object를 rotate한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "void CGObjectPoint2D::Scale (const \fBCGPoint3D\fP & ptBase, const \fBGDOUBLE\fP & dScale)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+object를 scale한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCGObjectBase\fP\&.
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_SUPER\fP \fBGIMPLEMENT_OPERATOR_COPY_END\fP void CGObjectPoint2D::SetPoint2D (const \fBCGPoint2D\fP & point2D)"
+
+.SS "void CGObjectPoint2D::SetPoint2DByXY (const \fBGDOUBLE\fP & dX, const \fBGDOUBLE\fP & dY)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

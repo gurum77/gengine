@@ -1,0 +1,89 @@
+.TH "CGCircle3D" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGCircle3D \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GCircle3D\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetCenterPos\fP (const \fBCGPoint3D\fP &pt)"
+.br
+.ti -1c
+.RI "const \fBCGPoint3D\fP & \fBGetCenterPos\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetRadius\fP (const \fBGFLOAT\fP &fRadius)"
+.br
+.ti -1c
+.RI "const \fBGFLOAT\fP & \fBGetRadius\fP () const "
+.br
+.ti -1c
+.RI "void \fBSetNormal\fP (const \fBCGVector3D\fP &vNormal)"
+.br
+.ti -1c
+.RI "const \fBCGVector3D\fP & \fBGetNormal\fP () const "
+.br
+.ti -1c
+.RI "void \fBMove\fP (const \fBCGVector3D\fP &vMove)"
+.br
+.ti -1c
+.RI "void \fBRotate\fP (const \fBCGPoint3D\fP &ptBase, const \fBCGVector3D\fP &vAxis, const \fBCGPoint2D\fP &vAng)"
+.br
+.ti -1c
+.RI "void \fBScale\fP (const \fBCGPoint3D\fP &ptBase, const \fBGDOUBLE\fP &dScale)"
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGCircle3D\fP)"
+.br
+.ti -1c
+.RI "\fBCGCircle3D\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGCircle3D\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+3D Circle 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGCircle3D::CGCircle3D ()"
+
+.SS "CGCircle3D::~CGCircle3D ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CGCircle3D::GDEFINE_OPERATOR_COPY (\fBCGCircle3D\fP)"
+
+.SS "const \fBCGPoint3D\fP & CGCircle3D::GetCenterPos () const"
+
+.SS "const \fBCGVector3D\fP & CGCircle3D::GetNormal () const"
+
+.SS "const \fBGFLOAT\fP & CGCircle3D::GetRadius () const"
+
+.SS "void CGCircle3D::Move (const \fBCGVector3D\fP & vMove)"
+
+.SS "void CGCircle3D::Rotate (const \fBCGPoint3D\fP & ptBase, const \fBCGVector3D\fP & vAxis, const \fBCGPoint2D\fP & vAng)"
+
+.SS "void CGCircle3D::Scale (const \fBCGPoint3D\fP & ptBase, const \fBGDOUBLE\fP & dScale)"
+
+.SS "\fBGIMPLEMENT_OPERATOR_COPY_END\fP void CGCircle3D::SetCenterPos (const \fBCGPoint3D\fP & pt)"
+
+.SS "void CGCircle3D::SetNormal (const \fBCGVector3D\fP & vNormal)"
+
+.SS "void CGCircle3D::SetRadius (const \fBGFLOAT\fP & fRadius)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

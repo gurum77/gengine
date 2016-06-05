@@ -1,0 +1,67 @@
+.TH "CG3DActionCopy" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CG3DActionCopy \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <G3DActionCopy\&.h>\fP
+.PP
+Inherits \fBCG3DActionMove\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGDEFINE_REGISTE_ACTION\fP (\fBCG3DActionCopy\fP,'COPY')"
+.br
+.ti -1c
+.RI "\fBCG3DActionCopy\fP (void)"
+.br
+.ti -1c
+.RI "virtual \fB~CG3DActionCopy\fP (void)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBRun\fP ()"
+.br
+.ti -1c
+.RI "void \fBCopySelectedObject\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+copy action 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CG3DActionCopy::CG3DActionCopy (void)"
+
+.SS "CG3DActionCopy::~CG3DActionCopy (void)\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CG3DActionCopy::CopySelectedObject ()\fC [protected]\fP"
+
+.IP "\(bu" 2
+object를 copy한다\&. 
+.PP
+
+.SS "CG3DActionCopy::GDEFINE_REGISTE_ACTION (\fBCG3DActionCopy\fP, 'COPY')"
+
+.SS "void CG3DActionCopy::Run ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBCG3DActionMove\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

@@ -1,0 +1,351 @@
+.TH "CDXInterface" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CDXInterface \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits DRW_Interface\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCDXInterface\fP (\fBCG3DDB\fP &db)"
+.br
+.ti -1c
+.RI "\fB~CDXInterface\fP ()"
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP & \fBDRW_CoordToCGPoint\fP (const DRW_Coord &dw)"
+.br
+.ti -1c
+.RI "\fBCGColor\fP & \fBDRW_ColorToCGColor\fP (const DRW_Entity &data)"
+.br
+.ti -1c
+.RI "\fBCGColor\fP & \fBDRW_ColorToCGColor\fP (const DRW_Layer &data)"
+.br
+.ti -1c
+.RI "void \fBImportProperty\fP (const DRW_Entity &data, \fBGOUT\fP \fBCGObjectBase\fP &object)"
+.br
+.ti -1c
+.RI "virtual void \fBaddHeader\fP (const DRW_Header *data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddLType\fP (const DRW_LType &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddLayer\fP (const DRW_Layer &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddDimStyle\fP (const DRW_Dimstyle &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddVport\fP (const DRW_Vport &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddTextStyle\fP (const DRW_Textstyle &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddAppId\fP (const DRW_AppId &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddBlock\fP (const DRW_Block &data)"
+.br
+.ti -1c
+.RI "virtual void \fBsetBlock\fP (const int handle)"
+.br
+.ti -1c
+.RI "virtual void \fBendBlock\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBaddPoint\fP (const DRW_Point &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddLine\fP (const DRW_Line &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddRay\fP (const DRW_Ray &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddXline\fP (const DRW_Xline &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddArc\fP (const DRW_Arc &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddCircle\fP (const DRW_Circle &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddEllipse\fP (const DRW_Ellipse &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddLWPolyline\fP (const DRW_LWPolyline &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddPolyline\fP (const DRW_Polyline &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddSpline\fP (const DRW_Spline *data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddKnot\fP (const DRW_Entity &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddInsert\fP (const DRW_Insert &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddTrace\fP (const DRW_Trace &data)"
+.br
+.ti -1c
+.RI "virtual void \fBadd3dFace\fP (const DRW_3Dface &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddSolid\fP (const DRW_Solid &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddMText\fP (const DRW_MText &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddText\fP (const DRW_Text &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddDimAlign\fP (const DRW_DimAligned *data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddDimLinear\fP (const DRW_DimLinear *data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddDimRadial\fP (const DRW_DimRadial *data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddDimDiametric\fP (const DRW_DimDiametric *data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddDimAngular\fP (const DRW_DimAngular *data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddDimAngular3P\fP (const DRW_DimAngular3p *data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddDimOrdinate\fP (const DRW_DimOrdinate *data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddLeader\fP (const DRW_Leader *data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddHatch\fP (const DRW_Hatch *data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddViewport\fP (const DRW_Viewport &data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddImage\fP (const DRW_Image *data)"
+.br
+.ti -1c
+.RI "virtual void \fBlinkImage\fP (const DRW_ImageDef *data)"
+.br
+.ti -1c
+.RI "virtual void \fBaddComment\fP (const char *comment)"
+.br
+.ti -1c
+.RI "virtual void \fBwriteHeader\fP (DRW_Header &data)"
+.br
+.ti -1c
+.RI "virtual void \fBwriteBlocks\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBwriteBlockRecords\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBwriteEntities\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBwriteLTypes\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBwriteLayers\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBwriteTextstyles\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBwriteVports\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBwriteDimstyles\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBwriteAppId\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBCGPoint3D\fP \fBm_DRW_CoordToCGPoint\fP"
+.br
+.ti -1c
+.RI "\fBCGColor\fP \fBm_DRW_ColorToCGColor\fP"
+.br
+.ti -1c
+.RI "\fBGBOOL\fP \fBm_bAddToBlock\fP"
+.br
+.ti -1c
+.RI "CAtlMap< CAtlString, \fBGID\fP > \fBm_mapProperty\fP"
+.br
+.ti -1c
+.RI "CAtlMap< CAtlString, \fBCGFontProperty\fP * > \fBm_mapFontProperty\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+import, export시 interface 역할을 한다\&.
+.IP "\(bu" 2
+소스파일에 interface를 정의한 이유 - 다른 project가 interface를 참조할 필요가 없음\&.(header에 정의해봐야 참조도 안하는데, 빌드타임만 잡아 먹을 것 같아서 소스에 정의함) 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CDXInterface::CDXInterface (\fBCG3DDB\fP & db)\fC [inline]\fP"
+
+.SS "CDXInterface::~CDXInterface ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void CDXInterface::add3dFace (const DRW_3Dface & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every 3dface start 
+.SS "virtual void CDXInterface::addAppId (const DRW_AppId & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every AppId entry\&. 
+.SS "virtual void CDXInterface::addArc (const DRW_Arc & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every arc 
+.SS "virtual void CDXInterface::addBlock (const DRW_Block & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every block\&. Note: all entities added after this command go into this block until \fBendBlock()\fP is called\&.
+.PP
+\fBSee also:\fP
+.RS 4
+\fBendBlock()\fP 
+.RE
+.PP
+
+.SS "virtual void CDXInterface::addCircle (const DRW_Circle & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every circle 
+.SS "virtual void CDXInterface::addComment (const char * comment)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every comment in the DXF file (code 999)\&. 
+.SS "virtual void CDXInterface::addDimAlign (const DRW_DimAligned * data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every aligned dimension entity\&. 
+.SS "virtual void CDXInterface::addDimAngular (const DRW_DimAngular * data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every angular dimension (2 lines version) entity\&. 
+.SS "virtual void CDXInterface::addDimAngular3P (const DRW_DimAngular3p * data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every angular dimension (3 points version) entity\&. 
+.SS "virtual void CDXInterface::addDimDiametric (const DRW_DimDiametric * data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every diametric dimension entity\&. 
+.SS "virtual void CDXInterface::addDimLinear (const DRW_DimLinear * data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every linear or rotated dimension entity\&. 
+.SS "virtual void CDXInterface::addDimOrdinate (const DRW_DimOrdinate * data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every ordinate dimension entity\&. 
+.SS "virtual void CDXInterface::addDimRadial (const DRW_DimRadial * data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every radial dimension entity\&. 
+.SS "virtual void CDXInterface::addDimStyle (const DRW_Dimstyle & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every dim style\&. 
+.SS "virtual void CDXInterface::addEllipse (const DRW_Ellipse & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every ellipse 
+.SS "virtual void CDXInterface::addHatch (const DRW_Hatch * data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every hatch entity\&. 
+.SS "virtual void CDXInterface::addHeader (const DRW_Header * data)\fC [inline]\fP, \fC [virtual]\fP"
+Called when header is parsed\&. 
+.SS "virtual void CDXInterface::addImage (const DRW_Image * data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every image entity\&. 
+.SS "virtual void CDXInterface::addInsert (const DRW_Insert & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every insert\&. 
+.SS "virtual void CDXInterface::addKnot (const DRW_Entity & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every spline knot value 
+.SS "virtual void CDXInterface::addLayer (const DRW_Layer & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every layer\&. 
+.SS "virtual void CDXInterface::addLeader (const DRW_Leader * data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every leader start\&. 
+.SS "virtual void CDXInterface::addLine (const DRW_Line & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every line 
+.SS "virtual void CDXInterface::addLType (const DRW_LType & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every line Type\&. 
+.SS "virtual void CDXInterface::addLWPolyline (const DRW_LWPolyline & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every lwpolyline 
+.SS "virtual void CDXInterface::addMText (const DRW_MText & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every Multi Text entity\&. 
+.SS "virtual void CDXInterface::addPoint (const DRW_Point & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every point 
+.SS "virtual void CDXInterface::addPolyline (const DRW_Polyline & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every polyline start 
+.SS "virtual void CDXInterface::addRay (const DRW_Ray & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every ray 
+.SS "virtual void CDXInterface::addSolid (const DRW_Solid & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every solid start 
+.SS "virtual void CDXInterface::addSpline (const DRW_Spline * data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every spline 
+.SS "virtual void CDXInterface::addText (const DRW_Text & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every Text entity\&. 
+.SS "virtual void CDXInterface::addTextStyle (const DRW_Textstyle & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every text style\&. 
+.SS "virtual void CDXInterface::addTrace (const DRW_Trace & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every trace start 
+.SS "virtual void CDXInterface::addViewport (const DRW_Viewport & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every viewport entity\&. 
+.SS "virtual void CDXInterface::addVport (const DRW_Vport & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every VPORT table\&. 
+.SS "virtual void CDXInterface::addXline (const DRW_Xline & data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every xline 
+.SS "\fBCGColor\fP& CDXInterface::DRW_ColorToCGColor (const DRW_Entity & data)\fC [inline]\fP"
+
+.SS "\fBCGColor\fP& CDXInterface::DRW_ColorToCGColor (const DRW_Layer & data)\fC [inline]\fP"
+
+.SS "\fBCGPoint3D\fP& CDXInterface::DRW_CoordToCGPoint (const DRW_Coord & dw)\fC [inline]\fP"
+
+.SS "virtual void CDXInterface::endBlock ()\fC [inline]\fP, \fC [virtual]\fP"
+Called to end the current block 
+.SS "void CDXInterface::ImportProperty (const DRW_Entity & data, \fBGOUT\fP \fBCGObjectBase\fP & object)\fC [inline]\fP"
+
+.SS "virtual void CDXInterface::linkImage (const DRW_ImageDef * data)\fC [inline]\fP, \fC [virtual]\fP"
+Called for every image definition\&. 
+.SS "virtual void CDXInterface::setBlock (const int handle)\fC [inline]\fP, \fC [virtual]\fP"
+In DWG called when the following entities corresponding to a block different from the current\&. Note: all entities added after this command go into this block until \fBsetBlock()\fP is called already\&.
+.PP
+int handle are the value of DRW_Block::handleBlock added with \fBaddBlock()\fP 
+.SS "virtual void CDXInterface::writeAppId ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void CDXInterface::writeBlockRecords ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void CDXInterface::writeBlocks ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void CDXInterface::writeDimstyles ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void CDXInterface::writeEntities ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void CDXInterface::writeHeader (DRW_Header & data)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void CDXInterface::writeLayers ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void CDXInterface::writeLTypes ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void CDXInterface::writeTextstyles ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void CDXInterface::writeVports ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGBOOL\fP CDXInterface::m_bAddToBlock"
+
+.SS "\fBCGColor\fP CDXInterface::m_DRW_ColorToCGColor"
+
+.SS "\fBCGPoint3D\fP CDXInterface::m_DRW_CoordToCGPoint"
+
+.SS "CAtlMap<CAtlString, \fBCGFontProperty\fP*> CDXInterface::m_mapFontProperty"
+
+.SS "CAtlMap<CAtlString, \fBGID\fP> CDXInterface::m_mapProperty"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

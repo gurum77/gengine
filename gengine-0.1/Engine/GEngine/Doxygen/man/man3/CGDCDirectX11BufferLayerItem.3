@@ -1,0 +1,88 @@
+.TH "CGDCDirectX11BufferLayerItem" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGDCDirectX11BufferLayerItem \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GDCDirectX11BufferLayerItem\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBInitIndexBuffer\fP (const \fBPrimitiveTopology\fP &ePrimitiveTopology)"
+.br
+.ti -1c
+.RI "void \fBInitVertexBuffer\fP (const \fBPrimitiveTopology\fP &ePrimitiveTopology)"
+.br
+.ti -1c
+.RI "\fBCGDCDirectX11BufferLayerItem\fP (void)"
+.br
+.ti -1c
+.RI "\fB~CGDCDirectX11BufferLayerItem\fP (void)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBGID\fP \fBm_ID\fP"
+.br
+.ti -1c
+.RI "ID3D11Buffer * \fBmVertexBuffer\fP [\fBePrimitiveTopologyCount\fP]"
+.br
+.ti -1c
+.RI "ID3D11Buffer * \fBmIndexBuffer\fP [\fBePrimitiveTopologyCount\fP]"
+.br
+.ti -1c
+.RI "\fBGUINT\fP \fBm_uCountPrimitiveVertex\fP [\fBePrimitiveTopologyCount\fP]"
+.br
+.ti -1c
+.RI "\fBGUINT\fP \fBm_uCountPrimitiveIndex\fP [\fBePrimitiveTopologyCount\fP]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+buffer layer의 item 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGDCDirectX11BufferLayerItem::CGDCDirectX11BufferLayerItem (void)"
+
+.SS "CGDCDirectX11BufferLayerItem::~CGDCDirectX11BufferLayerItem (void)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CGDCDirectX11BufferLayerItem::InitIndexBuffer (const \fBPrimitiveTopology\fP & ePrimitiveTopology)"
+
+.IP "\(bu" 2
+index buffer를 초기화 한다\&. 
+.PP
+
+.SS "void CGDCDirectX11BufferLayerItem::InitVertexBuffer (const \fBPrimitiveTopology\fP & ePrimitiveTopology)"
+
+.IP "\(bu" 2
+vertex buffer를 초기화 한다\&. 
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGID\fP CGDCDirectX11BufferLayerItem::m_ID"
+
+.SS "\fBGUINT\fP CGDCDirectX11BufferLayerItem::m_uCountPrimitiveIndex[\fBePrimitiveTopologyCount\fP]"
+
+.SS "\fBGUINT\fP CGDCDirectX11BufferLayerItem::m_uCountPrimitiveVertex[\fBePrimitiveTopologyCount\fP]"
+
+.SS "ID3D11Buffer* CGDCDirectX11BufferLayerItem::mIndexBuffer[\fBePrimitiveTopologyCount\fP]"
+
+.SS "ID3D11Buffer* CGDCDirectX11BufferLayerItem::mVertexBuffer[\fBePrimitiveTopologyCount\fP]"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

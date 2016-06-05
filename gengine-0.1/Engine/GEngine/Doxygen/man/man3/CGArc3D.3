@@ -1,0 +1,88 @@
+.TH "CGArc3D" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGArc3D \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GArc3D\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBPos\fP { \fBePosStart\fP, \fBePosMid\fP, \fBePosEnd\fP, \fBePosCount\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetPos\fP (const \fBCGPoint3D\fP &pt, const \fBPos\fP &ePos)"
+.br
+.ti -1c
+.RI "const \fBCGPoint3D\fP & \fBGetPos\fP (const \fBPos\fP &ePos) const "
+.br
+.ti -1c
+.RI "\fBCGPoint3D\fP \fBGetCenterPos\fP () const "
+.br
+.ti -1c
+.RI "\fBGDEFINE_OPERATOR_COPY\fP (\fBCGArc3D\fP)"
+.br
+.ti -1c
+.RI "\fBCGArc3D\fP ()"
+.br
+.ti -1c
+.RI "\fB~CGArc3D\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+3점을 통과하는 이루어진 arc 
+.PP
+\fBTodo\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCGArc3D::Pos\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIePosStart \fP\fP
+.TP
+\fB\fIePosMid \fP\fP
+.TP
+\fB\fIePosEnd \fP\fP
+.TP
+\fB\fIePosCount \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CGArc3D::CGArc3D ()"
+
+.SS "CGArc3D::~CGArc3D ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "CGArc3D::GDEFINE_OPERATOR_COPY (\fBCGArc3D\fP)"
+
+.SS "\fBCGPoint3D\fP CGArc3D::GetCenterPos () const"
+
+.SS "const \fBCGPoint3D\fP & CGArc3D::GetPos (const \fBPos\fP & ePos) const"
+
+.SS "void CGArc3D::SetPos (const \fBCGPoint3D\fP & pt, const \fBPos\fP & ePos)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

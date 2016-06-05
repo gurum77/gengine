@@ -1,0 +1,200 @@
+.TH "CG3DActionSelect" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CG3DActionSelect \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <G3DActionSelect\&.h>\fP
+.PP
+Inherits \fBCG3DActionBase\fP\&.
+.PP
+Inherited by \fBCG3DActionMove\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBStep\fP { \fBeStepFirstPoint\fP, \fBeStepSecondPoint\fP }"
+.br
+.ti -1c
+.RI "enum \fBRectangle\fP { \fBeRectangleLeftBottom\fP, \fBeRectangleRightBottom\fP, \fBeRectangleRightTop\fP, \fBeRectangleLeftTop\fP, \fBeRectangleCount\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBStartAction\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBOnMouseMove\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "virtual void \fBOnLButtonDown\fP (UINT nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "virtual void \fBCreatePreview\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBFlushPreview\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBEndAction\fP ()"
+.br
+.ti -1c
+.RI "\fBGDEFINE_REGISTE_ACTION\fP (\fBCG3DActionSelect\fP,'SELECT')"
+.br
+.ti -1c
+.RI "\fBCG3DActionSelect\fP ()"
+.br
+.ti -1c
+.RI "\fB~CG3DActionSelect\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBGINT32\fP \fBm_eStep\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "CPoint \fBGetRectanglePointFromWindowPoint\fP (const \fBRectangle\fP &eRectangle, const \fBGBOOL\fP &bOrgLeftBottom) const "
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "CPoint \fBm_ptWindow\fP [2]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "\(bu" 2
+select action 
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCG3DActionSelect::Rectangle\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeRectangleLeftBottom \fP\fP
+.TP
+\fB\fIeRectangleRightBottom \fP\fP
+.TP
+\fB\fIeRectangleRightTop \fP\fP
+.TP
+\fB\fIeRectangleLeftTop \fP\fP
+.TP
+\fB\fIeRectangleCount \fP\fP
+.SS "enum \fBCG3DActionSelect::Step\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeStepFirstPoint \fP\fP
+.TP
+\fB\fIeStepSecondPoint \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CG3DActionSelect::CG3DActionSelect ()"
+
+.SS "CG3DActionSelect::~CG3DActionSelect ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CG3DActionSelect::CreatePreview ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+action에 미리보기 객체가 있는 경우 이 함수를 재정의 하여 미리보기 객체를 그리도록 구현해야 한다\&.
+.IP "\(bu" 2
+미리보기 객체를 그린다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionBase\fP\&.
+.PP
+Reimplemented in \fBCG3DActionMove\fP\&.
+.SS "void CG3DActionSelect::EndAction ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+action이 끝날때 호출되어야 하는 가상함수이다\&.
+.IP "\(bu" 2
+개발자가 직접 호출해야 한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionBase\fP\&.
+.PP
+Reimplemented in \fBCG3DActionMove\fP\&.
+.SS "void CG3DActionSelect::FlushPreview ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+action에 미리보기 객체가 있는 경우 이 함수를 재정의 하여 미리보기 객체를 view에서 지우도록 구현해야 한다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionBase\fP\&.
+.SS "CG3DActionSelect::GDEFINE_REGISTE_ACTION (\fBCG3DActionSelect\fP, 'SELECT')"
+
+.SS "CPoint CG3DActionSelect::GetRectanglePointFromWindowPoint (const \fBRectangle\fP & eRectangle, const \fBGBOOL\fP & bOrgLeftBottom) const\fC [protected]\fP"
+
+.IP "\(bu" 2
+마우스 클릭한 윈도우 좌표에서 사각형 네 모서리의 좌표를 가져온다\&. 
+.PP
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbOrgLeftBottom\fP true : 좌측하단기준, false : 좌측상단 기준 (마우스좌표가 좌측상단 기준이다) 
+.RE
+.PP
+
+.SS "void CG3DActionSelect::OnLButtonDown (UINT nFlags, CPoint point)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBCG3DActionBase\fP\&.
+.PP
+Reimplemented in \fBCG3DActionMove\fP\&.
+.SS "void CG3DActionSelect::OnMouseMove (UINT nFlags, CPoint point)\fC [virtual]\fP"
+
+.IP "\(bu" 2
+마우스 이벤트 핸들러이다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionBase\fP\&.
+.PP
+Reimplemented in \fBCG3DActionMove\fP\&.
+.SS "void CG3DActionSelect::StartAction ()\fC [virtual]\fP"
+
+.IP "\(bu" 2
+action이 시작되면서 action manager에 으해서 가장 먼저 호출되는 가상함수이다\&. 
+.PP
+
+.PP
+Reimplemented from \fBCG3DActionBase\fP\&.
+.PP
+Reimplemented in \fBCG3DActionMove\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGINT32\fP CG3DActionSelect::m_eStep"
+
+.SS "CPoint CG3DActionSelect::m_ptWindow[2]\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

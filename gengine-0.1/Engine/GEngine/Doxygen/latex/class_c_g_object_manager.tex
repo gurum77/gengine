@@ -1,0 +1,407 @@
+\hypertarget{class_c_g_object_manager}{}\section{C\+G\+Object\+Manager Class Reference}
+\label{class_c_g_object_manager}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+
+
+{\ttfamily \#include $<$G\+Object\+Manager.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_g_object_manager_aae1239b4b634d4ae811f873284504553}{Attr} \{ \hyperlink{class_c_g_object_manager_aae1239b4b634d4ae811f873284504553a358161e50130f826052028e4ec8da50e}{e\+Attr\+Display\+Only\+Text\+Outline} = 0x00000001
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ \hyperlink{class_c_g_object_manager_aa9bbad2507c26f0acdd69c2089d4d2ca}{Get\+First\+Object\+By\+Type} (const C\+Atl\+String \&str\+Type)
+\item 
+\hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ \hyperlink{class_c_g_object_manager_a536801f47f0a1bb9fb2e4006e0cf683b}{Find\+Object\+By\+I\+D} (const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&I\+D)
+\item 
+void \hyperlink{class_c_g_object_manager_a50320dfe125f0d92d54dd2db010a14ab}{Init\+Object} ()
+\item 
+void \hyperlink{class_c_g_object_manager_a0ddfa7f0ee20214ec03ff92cd3ad18e9}{Add\+Object} (\hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$p\+Obj, const \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \&b\+New\+I\+D=T\+R\+U\+E)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_object_manager_a7f94b1430f9dc37c500523d80991b0f7}{Delete\+Object} (\hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$p\+Obj)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_object_manager_a65c8a6766e7d9acdbe0edbfac551ccd9}{Delete\+Object} (C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Obj)
+\item 
+\hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ \hyperlink{class_c_g_object_manager_aadbd8a4b3c170c20cf585bf74c45635b}{Get\+Root\+Object} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+\hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ \hyperlink{class_c_g_object_manager_acc3c827b1749e6763bd50db0ca24c34f}{Get\+Parent\+Object} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+void \hyperlink{class_c_g_object_manager_a35f193396d98484653586b1539ccca13}{Get\+All\+Sub\+Object} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object)
+\item 
+void \hyperlink{class_c_g_object_manager_ae79fb2ae9538f5b80e564591418c2a03}{Get\+All\+Vertex} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+List$<$ \hyperlink{struct_g_v_e_r_t_e_x}{G\+V\+E\+R\+T\+E\+X} $>$ \&list\+Vertex)
+\item 
+void \hyperlink{class_c_g_object_manager_a63c6731fd87a6778b229d510ec64f17f}{Get\+All\+Vertex} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{struct_g_v_e_r_t_e_x}{G\+V\+E\+R\+T\+E\+X} $>$ \&arr\+Vertex, C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ $\ast$p\+Arr\+Object=N\+U\+L\+L)
+\item 
+void \hyperlink{class_c_g_object_manager_a03a77de7b5ed9db87406f194b8d26103}{Get\+All\+Vertex\+By\+Primitive\+Topology} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{struct_g_v_e_r_t_e_x}{G\+V\+E\+R\+T\+E\+X} $>$ \&arr\+Vertex, const \hyperlink{_g_types_8h_a940e3da6a9b57aae3de0b050e2a7af5e}{Primitive\+Topology} \&e\+Primitive\+Topology, const \hyperlink{_g_types_8h_a2e1a1c77d1349057202e2f34e071019c}{G\+U\+I\+N\+T32} \&i\+Start\+Vertex\+Offset=0, C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ $\ast$p\+Arr\+Object=N\+U\+L\+L)
+\item 
+void \hyperlink{class_c_g_object_manager_a9d90f00c8245946efa4358f3f9ea7081}{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{struct_g_v_e_r_t_e_x}{G\+V\+E\+R\+T\+E\+X} $>$ \&arr\+Vertex, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{_g_types_8h_a2e1a1c77d1349057202e2f34e071019c}{G\+U\+I\+N\+T32} $>$ \&arr\+Index, const \hyperlink{_g_types_8h_a940e3da6a9b57aae3de0b050e2a7af5e}{Primitive\+Topology} \&e\+Primitive\+Topology, const \hyperlink{_g_types_8h_a2e1a1c77d1349057202e2f34e071019c}{G\+U\+I\+N\+T32} \&i\+Start\+Vertex\+Offset=0, const \hyperlink{_g_types_8h_a2e1a1c77d1349057202e2f34e071019c}{G\+U\+I\+N\+T32} \&i\+Start\+Index\+Offset=0, C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ $\ast$p\+Arr\+Object=N\+U\+L\+L)
+\item 
+void \hyperlink{class_c_g_object_manager_a1aab4644036e8c519a55efe62d53e6c7}{Move\+Vertex\+Buffer\+By\+Deleting\+Object} (const \hyperlink{_g_types_8h_a2e1a1c77d1349057202e2f34e071019c}{G\+U\+I\+N\+T32} \&u\+Vertex\+Offset, const \hyperlink{_g_types_8h_a2e1a1c77d1349057202e2f34e071019c}{G\+U\+I\+N\+T32} \&u\+Vertex\+Count, const \hyperlink{_g_types_8h_a940e3da6a9b57aae3de0b050e2a7af5e}{Primitive\+Topology} \&e\+Primitive\+Topology)
+\item 
+void \hyperlink{class_c_g_object_manager_a79ea920be826a41db135be2e7f5f0e60}{Move\+Index\+Buffer\+By\+Deleting\+Object} (const \hyperlink{_g_types_8h_a2e1a1c77d1349057202e2f34e071019c}{G\+U\+I\+N\+T32} \&u\+Index\+Offset, const \hyperlink{_g_types_8h_a2e1a1c77d1349057202e2f34e071019c}{G\+U\+I\+N\+T32} \&u\+Index\+Count, const \hyperlink{_g_types_8h_a940e3da6a9b57aae3de0b050e2a7af5e}{Primitive\+Topology} \&e\+Primitive\+Topology)
+\item 
+void \hyperlink{class_c_g_object_manager_a69ba4e764882bc099418de02cfb493aa}{Update\+Vertex\+Offset} (const \hyperlink{struct_g_v_e_r_t_e_x}{G\+V\+E\+R\+T\+E\+X} $\ast$p\+Vertex, const \hyperlink{_g_types_8h_ac7dd75e8df268a0368c6cb433764fdcb}{G\+S\+I\+Z\+E} \&i\+Vertex\+Count)
+\item 
+\hyperlink{class_c_g_cube}{C\+G\+Cube} \hyperlink{class_c_g_object_manager_ad03bcee16cfe308e3e781ecdc5b20404}{Calc\+Boundary} () const 
+\item 
+const C\+Atl\+Map$<$ \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D}, \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \& \hyperlink{class_c_g_object_manager_a7f9df575bdaea017d9fcc33690a500b3}{Get\+Object\+List} () const 
+\item 
+C\+Atl\+Map$<$ \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D}, \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \& \hyperlink{class_c_g_object_manager_a64a2a3c21ada551d6ca93712efab3094}{Get\+Object\+List} ()
+\item 
+void \hyperlink{class_c_g_object_manager_a72ad01de30705286886f17479fbb5380}{Get\+All\+Object} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} $\ast$ $>$ \&arr\+Object)
+\item 
+void \hyperlink{class_c_g_object_manager_a7e3efe13a75bd4fe3c94a26a28e68eba}{Set\+Mat\+Transform} (const \hyperlink{class_c_g_matrix}{C\+G\+Matrix} \&mat\+Transform)
+\item 
+const \hyperlink{class_c_g_matrix}{C\+G\+Matrix} \& \hyperlink{class_c_g_object_manager_a5a54552ba028c732f0eeff69a1356a23}{Get\+Mat\+Transform} () const 
+\item 
+\hyperlink{class_c_g_matrix}{C\+G\+Matrix} \& \hyperlink{class_c_g_object_manager_afcacf6932c6885788f2cb7f67ca63dc0}{Get\+Mat\+Transform} ()
+\item 
+void \hyperlink{class_c_g_object_manager_a83df423f342a5e70c0463afa03889c91}{Set\+Attr} (const D\+W\+O\+R\+D32 \&dw\+Attr)
+\item 
+const D\+W\+O\+R\+D32 \& \hyperlink{class_c_g_object_manager_a1e7d91db786b73e3ccce29c14bf1edc4}{Get\+Attr} () const 
+\item 
+\hyperlink{class_c_g_object_manager_a8e1eb3b5a73ef8b1aea4fb1e7c380367}{C\+G\+Object\+Manager} ()
+\item 
+\hyperlink{class_c_g_object_manager_a18f3076244818aca39259b04c2bb9de9}{$\sim$\+C\+G\+Object\+Manager} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item 객체 관리 
+\end{DoxyItemize}
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_c_g_object_manager_aae1239b4b634d4ae811f873284504553}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Attr@{Attr}}
+\index{Attr@{Attr}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Attr}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+G\+Object\+Manager\+::\+Attr}}\label{class_c_g_object_manager_aae1239b4b634d4ae811f873284504553}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+Attr\+Display\+Only\+Text\+Outline@{e\+Attr\+Display\+Only\+Text\+Outline}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!e\+Attr\+Display\+Only\+Text\+Outline@{e\+Attr\+Display\+Only\+Text\+Outline}}\item[{\em 
+\hypertarget{class_c_g_object_manager_aae1239b4b634d4ae811f873284504553a358161e50130f826052028e4ec8da50e}{}e\+Attr\+Display\+Only\+Text\+Outline\label{class_c_g_object_manager_aae1239b4b634d4ae811f873284504553a358161e50130f826052028e4ec8da50e}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g_object_manager_a8e1eb3b5a73ef8b1aea4fb1e7c380367}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{C\+G\+Object\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Object\+Manager\+::\+C\+G\+Object\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a8e1eb3b5a73ef8b1aea4fb1e7c380367}
+\hypertarget{class_c_g_object_manager_a18f3076244818aca39259b04c2bb9de9}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!````~C\+G\+Object\+Manager@{$\sim$\+C\+G\+Object\+Manager}}
+\index{````~C\+G\+Object\+Manager@{$\sim$\+C\+G\+Object\+Manager}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{$\sim$\+C\+G\+Object\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Object\+Manager\+::$\sim$\+C\+G\+Object\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a18f3076244818aca39259b04c2bb9de9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g_object_manager_a0ddfa7f0ee20214ec03ff92cd3ad18e9}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Add\+Object@{Add\+Object}}
+\index{Add\+Object@{Add\+Object}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Add\+Object(\+C\+G\+Object\+Base $\ast$p\+Obj, const G\+B\+O\+O\+L \&b\+New\+I\+D=\+T\+R\+U\+E)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Manager\+::\+Add\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G\+Object\+Base} $\ast$}]{p\+Obj, }
+\item[{const {\bf G\+B\+O\+O\+L} \&}]{b\+New\+I\+D = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a0ddfa7f0ee20214ec03ff92cd3ad18e9}
+
+\begin{DoxyItemize}
+\item object를 등록한다. 
+\end{DoxyItemize}
+\begin{DoxyParams}{Parameters}
+{\em b\+New\+I\+D} & true \+: object에 새 I\+D를 발급한다. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_g_object_manager_ad03bcee16cfe308e3e781ecdc5b20404}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Calc\+Boundary@{Calc\+Boundary}}
+\index{Calc\+Boundary@{Calc\+Boundary}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Calc\+Boundary() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Cube} C\+G\+Object\+Manager\+::\+Calc\+Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_object_manager_ad03bcee16cfe308e3e781ecdc5b20404}
+
+\begin{DoxyItemize}
+\item 전체 객체의 boundary를 계산한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a7f94b1430f9dc37c500523d80991b0f7}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Delete\+Object@{Delete\+Object}}
+\index{Delete\+Object@{Delete\+Object}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Delete\+Object(\+C\+G\+Object\+Base $\ast$p\+Obj)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Object\+Manager\+::\+Delete\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G\+Object\+Base} $\ast$}]{p\+Obj}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a7f94b1430f9dc37c500523d80991b0f7}
+
+\begin{DoxyItemize}
+\item object를 삭제한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a65c8a6766e7d9acdbe0edbfac551ccd9}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Delete\+Object@{Delete\+Object}}
+\index{Delete\+Object@{Delete\+Object}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Delete\+Object(\+C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Obj)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Object\+Manager\+::\+Delete\+Object (
+\begin{DoxyParamCaption}
+\item[{C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Obj}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a65c8a6766e7d9acdbe0edbfac551ccd9}
+
+\begin{DoxyItemize}
+\item object 여러개를 삭제한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a536801f47f0a1bb9fb2e4006e0cf683b}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Find\+Object\+By\+I\+D@{Find\+Object\+By\+I\+D}}
+\index{Find\+Object\+By\+I\+D@{Find\+Object\+By\+I\+D}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Find\+Object\+By\+I\+D(const G\+I\+D \&\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Object\+Base} $\ast$ C\+G\+Object\+Manager\+::\+Find\+Object\+By\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+I\+D} \&}]{I\+D}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a536801f47f0a1bb9fb2e4006e0cf683b}
+
+\begin{DoxyItemize}
+\item object를 I\+D로 찾는다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a72ad01de30705286886f17479fbb5380}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Get\+All\+Object@{Get\+All\+Object}}
+\index{Get\+All\+Object@{Get\+All\+Object}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Get\+All\+Object(\+G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Manager\+::\+Get\+All\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a72ad01de30705286886f17479fbb5380}
+
+\begin{DoxyItemize}
+\item 모든 object를 배열에 담는다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a9d90f00c8245946efa4358f3f9ea7081}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology@{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology}}
+\index{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology@{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology(\+G\+O\+U\+T C\+Atl\+Array$<$ G\+V\+E\+R\+T\+E\+X $>$ \&arr\+Vertex, G\+O\+U\+T C\+Atl\+Array$<$ G\+U\+I\+N\+T32 $>$ \&arr\+Index, const Primitive\+Topology \&e\+Primitive\+Topology, const G\+U\+I\+N\+T32 \&i\+Start\+Vertex\+Offset=0, const G\+U\+I\+N\+T32 \&i\+Start\+Index\+Offset=0, C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ $\ast$p\+Arr\+Object=\+N\+U\+L\+L)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Manager\+::\+Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf G\+V\+E\+R\+T\+E\+X} $>$ \&}]{arr\+Vertex, }
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf G\+U\+I\+N\+T32} $>$ \&}]{arr\+Index, }
+\item[{const {\bf Primitive\+Topology} \&}]{e\+Primitive\+Topology, }
+\item[{const {\bf G\+U\+I\+N\+T32} \&}]{i\+Start\+Vertex\+Offset = {\ttfamily 0}, }
+\item[{const {\bf G\+U\+I\+N\+T32} \&}]{i\+Start\+Index\+Offset = {\ttfamily 0}, }
+\item[{C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ $\ast$}]{p\+Arr\+Object = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a9d90f00c8245946efa4358f3f9ea7081}
+
+\begin{DoxyItemize}
+\item 모든 object의 strip vertex와 list index를 가져온다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a35f193396d98484653586b1539ccca13}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Get\+All\+Sub\+Object@{Get\+All\+Sub\+Object}}
+\index{Get\+All\+Sub\+Object@{Get\+All\+Sub\+Object}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Get\+All\+Sub\+Object(const C\+G\+Object\+Base \&object, G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ \&arr\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Manager\+::\+Get\+All\+Sub\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object, }
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ \&}]{arr\+Object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a35f193396d98484653586b1539ccca13}
+
+\begin{DoxyItemize}
+\item compound object의 모든 sub object를 가져온다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_ae79fb2ae9538f5b80e564591418c2a03}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Get\+All\+Vertex@{Get\+All\+Vertex}}
+\index{Get\+All\+Vertex@{Get\+All\+Vertex}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Get\+All\+Vertex(\+G\+O\+U\+T C\+Atl\+List$<$ G\+V\+E\+R\+T\+E\+X $>$ \&list\+Vertex)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Manager\+::\+Get\+All\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} C\+Atl\+List$<$ {\bf G\+V\+E\+R\+T\+E\+X} $>$ \&}]{list\+Vertex}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_ae79fb2ae9538f5b80e564591418c2a03}
+
+\begin{DoxyItemize}
+\item 모든 object의 vertex를 가져온다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a63c6731fd87a6778b229d510ec64f17f}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Get\+All\+Vertex@{Get\+All\+Vertex}}
+\index{Get\+All\+Vertex@{Get\+All\+Vertex}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Get\+All\+Vertex(\+G\+O\+U\+T C\+Atl\+Array$<$ G\+V\+E\+R\+T\+E\+X $>$ \&arr\+Vertex, C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ $\ast$p\+Arr\+Object=\+N\+U\+L\+L)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Manager\+::\+Get\+All\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf G\+V\+E\+R\+T\+E\+X} $>$ \&}]{arr\+Vertex, }
+\item[{C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ $\ast$}]{p\+Arr\+Object = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a63c6731fd87a6778b229d510ec64f17f}
+\hypertarget{class_c_g_object_manager_a03a77de7b5ed9db87406f194b8d26103}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Get\+All\+Vertex\+By\+Primitive\+Topology@{Get\+All\+Vertex\+By\+Primitive\+Topology}}
+\index{Get\+All\+Vertex\+By\+Primitive\+Topology@{Get\+All\+Vertex\+By\+Primitive\+Topology}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Get\+All\+Vertex\+By\+Primitive\+Topology(\+G\+O\+U\+T C\+Atl\+Array$<$ G\+V\+E\+R\+T\+E\+X $>$ \&arr\+Vertex, const Primitive\+Topology \&e\+Primitive\+Topology, const G\+U\+I\+N\+T32 \&i\+Start\+Vertex\+Offset=0, C\+Atl\+Array$<$ C\+G\+Object\+Base $\ast$ $>$ $\ast$p\+Arr\+Object=\+N\+U\+L\+L)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Manager\+::\+Get\+All\+Vertex\+By\+Primitive\+Topology (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf G\+V\+E\+R\+T\+E\+X} $>$ \&}]{arr\+Vertex, }
+\item[{const {\bf Primitive\+Topology} \&}]{e\+Primitive\+Topology, }
+\item[{const {\bf G\+U\+I\+N\+T32} \&}]{i\+Start\+Vertex\+Offset = {\ttfamily 0}, }
+\item[{C\+Atl\+Array$<$ {\bf C\+G\+Object\+Base} $\ast$ $>$ $\ast$}]{p\+Arr\+Object = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a03a77de7b5ed9db87406f194b8d26103}
+
+\begin{DoxyItemize}
+\item 모든 object의 모든 vertex를 가져온다.
+\item e\+Primitive\+Topology별로 가져온다.
+\item vertex 추가방식별 성능 측정
+\begin{DoxyItemize}
+\item 1000 $\ast$ 1000 $\ast$ 2 개
+\item type == 0
+\begin{DoxyItemize}
+\item Time to Get\+All\+Vertex\+By\+Primitive\+Topology 0.\+258459 sec
+\item Time to Get\+All\+Vertex\+By\+Primitive\+Topology 133.\+060989 sec
+\item Time to Get\+All\+Vertex\+By\+Primitive\+Topology 0.\+272742 sec
+\end{DoxyItemize}
+\item type == 1
+\begin{DoxyItemize}
+\item Time to Get\+All\+Vertex\+By\+Primitive\+Topology 0.\+263354 sec
+\item Time to Get\+All\+Vertex\+By\+Primitive\+Topology 27.\+916691 sec
+\item Time to Get\+All\+Vertex\+By\+Primitive\+Topology 0.\+261429 sec
+\end{DoxyItemize}
+\item type == 2
+\begin{DoxyItemize}
+\item Time to Get\+All\+Vertex\+By\+Primitive\+Topology 0.\+238288 sec
+\item Time to Get\+All\+Vertex\+By\+Primitive\+Topology 5.\+606389 sec
+\item Time to Get\+All\+Vertex\+By\+Primitive\+Topology 0.\+240317 sec 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a1e7d91db786b73e3ccce29c14bf1edc4}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Get\+Attr@{Get\+Attr}}
+\index{Get\+Attr@{Get\+Attr}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Get\+Attr() const }]{\setlength{\rightskip}{0pt plus 5cm}const D\+W\+O\+R\+D32 \& C\+G\+Object\+Manager\+::\+Get\+Attr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_object_manager_a1e7d91db786b73e3ccce29c14bf1edc4}
+\hypertarget{class_c_g_object_manager_aa9bbad2507c26f0acdd69c2089d4d2ca}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Get\+First\+Object\+By\+Type@{Get\+First\+Object\+By\+Type}}
+\index{Get\+First\+Object\+By\+Type@{Get\+First\+Object\+By\+Type}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Get\+First\+Object\+By\+Type(const C\+Atl\+String \&str\+Type)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Object\+Base} $\ast$ C\+G\+Object\+Manager\+::\+Get\+First\+Object\+By\+Type (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+Type}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_aa9bbad2507c26f0acdd69c2089d4d2ca}
+
+\begin{DoxyItemize}
+\item type별 첫번째 object를 리턴한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a5a54552ba028c732f0eeff69a1356a23}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Get\+Mat\+Transform@{Get\+Mat\+Transform}}
+\index{Get\+Mat\+Transform@{Get\+Mat\+Transform}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Get\+Mat\+Transform() const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+G\+Matrix} \& C\+G\+Object\+Manager\+::\+Get\+Mat\+Transform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_object_manager_a5a54552ba028c732f0eeff69a1356a23}
+\hypertarget{class_c_g_object_manager_afcacf6932c6885788f2cb7f67ca63dc0}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Get\+Mat\+Transform@{Get\+Mat\+Transform}}
+\index{Get\+Mat\+Transform@{Get\+Mat\+Transform}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Get\+Mat\+Transform()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Matrix} \& C\+G\+Object\+Manager\+::\+Get\+Mat\+Transform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_afcacf6932c6885788f2cb7f67ca63dc0}
+\hypertarget{class_c_g_object_manager_a7f9df575bdaea017d9fcc33690a500b3}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Get\+Object\+List@{Get\+Object\+List}}
+\index{Get\+Object\+List@{Get\+Object\+List}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Get\+Object\+List() const }]{\setlength{\rightskip}{0pt plus 5cm}const C\+Atl\+Map$<$ {\bf G\+I\+D}, {\bf C\+G\+Object\+Base} $\ast$ $>$ \& C\+G\+Object\+Manager\+::\+Get\+Object\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_object_manager_a7f9df575bdaea017d9fcc33690a500b3}
+
+\begin{DoxyItemize}
+\item object list를 리턴한다.
+\item 참조용이다.(수정불가) 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a64a2a3c21ada551d6ca93712efab3094}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Get\+Object\+List@{Get\+Object\+List}}
+\index{Get\+Object\+List@{Get\+Object\+List}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Get\+Object\+List()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Atl\+Map$<$ {\bf G\+I\+D}, {\bf C\+G\+Object\+Base} $\ast$ $>$ \& C\+G\+Object\+Manager\+::\+Get\+Object\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a64a2a3c21ada551d6ca93712efab3094}
+
+\begin{DoxyItemize}
+\item 수정가능한 object list를 리턴한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_acc3c827b1749e6763bd50db0ca24c34f}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Get\+Parent\+Object@{Get\+Parent\+Object}}
+\index{Get\+Parent\+Object@{Get\+Parent\+Object}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Get\+Parent\+Object(const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Object\+Base} $\ast$ C\+G\+Object\+Manager\+::\+Get\+Parent\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_acc3c827b1749e6763bd50db0ca24c34f}
+
+\begin{DoxyItemize}
+\item object의 parent object를 리턴한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_aadbd8a4b3c170c20cf585bf74c45635b}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Get\+Root\+Object@{Get\+Root\+Object}}
+\index{Get\+Root\+Object@{Get\+Root\+Object}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Get\+Root\+Object(const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Object\+Base} $\ast$ C\+G\+Object\+Manager\+::\+Get\+Root\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_aadbd8a4b3c170c20cf585bf74c45635b}
+
+\begin{DoxyItemize}
+\item object의 최상위 object를 리턴한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a50320dfe125f0d92d54dd2db010a14ab}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Init\+Object@{Init\+Object}}
+\index{Init\+Object@{Init\+Object}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Init\+Object()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Manager\+::\+Init\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a50320dfe125f0d92d54dd2db010a14ab}
+
+\begin{DoxyItemize}
+\item 모든 object를 삭제한다.
+\item object를 하나씩 삭제하는 것 보다 빠르다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a79ea920be826a41db135be2e7f5f0e60}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Move\+Index\+Buffer\+By\+Deleting\+Object@{Move\+Index\+Buffer\+By\+Deleting\+Object}}
+\index{Move\+Index\+Buffer\+By\+Deleting\+Object@{Move\+Index\+Buffer\+By\+Deleting\+Object}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Move\+Index\+Buffer\+By\+Deleting\+Object(const G\+U\+I\+N\+T32 \&u\+Index\+Offset, const G\+U\+I\+N\+T32 \&u\+Index\+Count, const Primitive\+Topology \&e\+Primitive\+Topology)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Manager\+::\+Move\+Index\+Buffer\+By\+Deleting\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+U\+I\+N\+T32} \&}]{u\+Index\+Offset, }
+\item[{const {\bf G\+U\+I\+N\+T32} \&}]{u\+Index\+Count, }
+\item[{const {\bf Primitive\+Topology} \&}]{e\+Primitive\+Topology}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a79ea920be826a41db135be2e7f5f0e60}
+
+\begin{DoxyItemize}
+\item object 삭제에 따른 다른 object의 index buffer offset값을 이동한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a1aab4644036e8c519a55efe62d53e6c7}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Move\+Vertex\+Buffer\+By\+Deleting\+Object@{Move\+Vertex\+Buffer\+By\+Deleting\+Object}}
+\index{Move\+Vertex\+Buffer\+By\+Deleting\+Object@{Move\+Vertex\+Buffer\+By\+Deleting\+Object}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Move\+Vertex\+Buffer\+By\+Deleting\+Object(const G\+U\+I\+N\+T32 \&u\+Vertex\+Offset, const G\+U\+I\+N\+T32 \&u\+Vertex\+Count, const Primitive\+Topology \&e\+Primitive\+Topology)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Manager\+::\+Move\+Vertex\+Buffer\+By\+Deleting\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+U\+I\+N\+T32} \&}]{u\+Vertex\+Offset, }
+\item[{const {\bf G\+U\+I\+N\+T32} \&}]{u\+Vertex\+Count, }
+\item[{const {\bf Primitive\+Topology} \&}]{e\+Primitive\+Topology}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a1aab4644036e8c519a55efe62d53e6c7}
+
+\begin{DoxyItemize}
+\item object 삭제에 따른 다른 object의 vertex buffer offset값을 이동한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a83df423f342a5e70c0463afa03889c91}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Set\+Attr@{Set\+Attr}}
+\index{Set\+Attr@{Set\+Attr}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Set\+Attr(const D\+W\+O\+R\+D32 \&dw\+Attr)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Manager\+::\+Set\+Attr (
+\begin{DoxyParamCaption}
+\item[{const D\+W\+O\+R\+D32 \&}]{dw\+Attr}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a83df423f342a5e70c0463afa03889c91}
+\hypertarget{class_c_g_object_manager_a7e3efe13a75bd4fe3c94a26a28e68eba}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Set\+Mat\+Transform@{Set\+Mat\+Transform}}
+\index{Set\+Mat\+Transform@{Set\+Mat\+Transform}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Set\+Mat\+Transform(const C\+G\+Matrix \&mat\+Transform)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Manager\+::\+Set\+Mat\+Transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Matrix} \&}]{mat\+Transform}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a7e3efe13a75bd4fe3c94a26a28e68eba}
+
+\begin{DoxyItemize}
+\item object 전체에 영향을 주는 좌표변환 matrix를 설정한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_object_manager_a69ba4e764882bc099418de02cfb493aa}{}\index{C\+G\+Object\+Manager@{C\+G\+Object\+Manager}!Update\+Vertex\+Offset@{Update\+Vertex\+Offset}}
+\index{Update\+Vertex\+Offset@{Update\+Vertex\+Offset}!C\+G\+Object\+Manager@{C\+G\+Object\+Manager}}
+\subsubsection[{Update\+Vertex\+Offset(const G\+V\+E\+R\+T\+E\+X $\ast$p\+Vertex, const G\+S\+I\+Z\+E \&i\+Vertex\+Count)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Object\+Manager\+::\+Update\+Vertex\+Offset (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+V\+E\+R\+T\+E\+X} $\ast$}]{p\+Vertex, }
+\item[{const {\bf G\+S\+I\+Z\+E} \&}]{i\+Vertex\+Count}
+\end{DoxyParamCaption}
+)}\label{class_c_g_object_manager_a69ba4e764882bc099418de02cfb493aa}
+
+\begin{DoxyItemize}
+\item object들의 vertex offset을 갱신한다. 
+\end{DoxyItemize}
+\begin{DoxyParams}{Parameters}
+{\em p\+Vertex} & vertex buffer의 pointer \\
+\hline
+{\em i\+Vertex\+Count} & vertex buffer의 개수 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+D\+B/\hyperlink{_g_object_manager_8h}{G\+Object\+Manager.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+D\+B/\hyperlink{_g_object_manager_8cpp}{G\+Object\+Manager.\+cpp}\end{DoxyCompactItemize}

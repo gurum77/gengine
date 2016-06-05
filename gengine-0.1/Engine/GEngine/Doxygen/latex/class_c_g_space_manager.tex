@@ -1,0 +1,371 @@
+\hypertarget{class_c_g_space_manager}{}\section{C\+G\+Space\+Manager Class Reference}
+\label{class_c_g_space_manager}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+
+
+{\ttfamily \#include $<$G\+Space\+Manager.\+h$>$}
+
+Inheritance diagram for C\+G\+Space\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_g_space_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_g_space_manager_ad85e12e984c97163d3b89fe639e04987}{Space\+Algorithm} \{ \hyperlink{class_c_g_space_manager_ad85e12e984c97163d3b89fe639e04987a8c928d22fe87c9580896922de68935ef}{e\+Space\+Algorithm\+\_\+\+Size\+By\+Rate\+Of\+Object\+Size}, 
+\hyperlink{class_c_g_space_manager_ad85e12e984c97163d3b89fe639e04987ad639be55ad871d0e3ecafa01fc6a6893}{e\+Space\+Algorithm\+\_\+\+Size\+By\+Fix}
+ \}
+\item 
+enum \hyperlink{class_c_g_space_manager_acd1d45e0cfa5fd251c6c17f61654fbef}{Attr} \{ \hyperlink{class_c_g_space_manager_acd1d45e0cfa5fd251c6c17f61654fbefaf6578c104fcd37c846206ffdce405209}{e\+Attr\+Create\+Around\+Space} = 0x00000001, 
+\hyperlink{class_c_g_space_manager_acd1d45e0cfa5fd251c6c17f61654fbefae4e406c7f88f01471fcbf05e22fcb8fb}{e\+Attr\+All} = 0x\+F\+F\+F\+F\+F\+F\+F\+F
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_g_space}{C\+G\+Space} $\ast$ \hyperlink{class_c_g_space_manager_a71d9200f1ec5166b5ffbe603e9cac2a0}{Create\+Optimized\+Space\+For\+O\+Bject} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+const \hyperlink{class_c_g_space_manager_ad85e12e984c97163d3b89fe639e04987}{C\+G\+Space\+Manager\+::\+Space\+Algorithm} \& \hyperlink{class_c_g_space_manager_a912b679ed9d22615a8f6f2560a7fe273}{Get\+Space\+Algorithm} () const 
+\item 
+void \hyperlink{class_c_g_space_manager_ac58042529749b9c585c87827fb5e0a10}{Set\+Space\+Algorithm} (const \hyperlink{class_c_g_space_manager_ad85e12e984c97163d3b89fe639e04987}{C\+G\+Space\+Manager\+::\+Space\+Algorithm} \&e\+Space\+Algorithm)
+\item 
+\hyperlink{class_c_g_cube}{C\+G\+Cube} \hyperlink{class_c_g_space_manager_a2ef45dd7fb5d5a407827f6decbbe2c7f}{Calc\+Boundary} () const 
+\item 
+\hyperlink{class_c_g_space}{C\+G\+Space} $\ast$ \hyperlink{class_c_g_space_manager_a092a05709c8f883a0c0a196dc1bff43d}{Update\+Simple\+Space\+By\+Object} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+void \hyperlink{class_c_g_space_manager_a401e578de33371175e18c477ddbb3dec}{Unload\+Space} (\hyperlink{_g_types_8h_a3fc97b512f82d8e1a710da1235f9142a}{G\+I\+N\+O\+U\+T} \hyperlink{class_c_g_space}{C\+G\+Space} \&space)
+\item 
+void \hyperlink{class_c_g_space_manager_ad5bb441a757f01e6ad36ccb269c231ff}{Load\+Space} (\hyperlink{_g_types_8h_a3fc97b512f82d8e1a710da1235f9142a}{G\+I\+N\+O\+U\+T} \hyperlink{class_c_g_space}{C\+G\+Space} \&space)
+\item 
+void \hyperlink{class_c_g_space_manager_ac254ca9665560876f351d6c9d519307a}{Unload\+All\+Out\+Of\+View} ()
+\item 
+void \hyperlink{class_c_g_space_manager_afe4092fce27b865b4722dd9e31b2c765}{Load\+All\+In\+View} ()
+\item 
+void \hyperlink{class_c_g_space_manager_ab2c8052281b9fe925518d60ae6e05e9e}{Set\+View} (\hyperlink{class_c_g3_d_view}{C\+G3\+D\+View} $\ast$p\+View)
+\item 
+void \hyperlink{class_c_g_space_manager_a8ce8e485ec6fcbe1c0d553822cd8e6be}{Init\+Space} ()
+\item 
+\hyperlink{class_c_g_space}{C\+G\+Space} $\ast$ \hyperlink{class_c_g_space_manager_adb22f39dc9ff5d643a80b4559859cb2b}{Add\+Object} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+\hyperlink{class_c_g_space}{C\+G\+Space} $\ast$ \hyperlink{class_c_g_space_manager_aff1eb9a2479f7b840d662f399281e378}{Remove\+Object} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+\hyperlink{class_c_g_space}{C\+G\+Space} $\ast$ \hyperlink{class_c_g_space_manager_addabb24f3c9bfbc87befb98d959d0193}{Find\+Space\+By\+Object\+I\+D} (const \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D} \&I\+D)
+\item 
+\hyperlink{class_c_g_space}{C\+G\+Space} $\ast$ \hyperlink{class_c_g_space_manager_ab96fdcf104020b40cede0cfe8439d566}{Find\+Optimized\+Space\+For\+Object} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_space_manager_a6adad07bfa994d292b49175f9b531537}{Delete\+Space} (\hyperlink{class_c_g_space}{C\+G\+Space} \&space)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_space_manager_ae3beb966c501f7305adaa7e7037b7932}{Move\+Object\+To\+Space} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object, \hyperlink{class_c_g_space}{C\+G\+Space} \&to\+Space)
+\item 
+void \hyperlink{class_c_g_space_manager_a589bd71d0ccbd424c0e2e4bd4e591d20}{Find\+Space\+In\+View} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{class_c_g_space}{C\+G\+Space} $\ast$ $>$ \&arr\+Space)
+\item 
+void \hyperlink{class_c_g_space_manager_a5a5ec91ddf3252a0e965a46105100422}{Find\+Space\+Out\+Of\+View} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{class_c_g_space}{C\+G\+Space} $\ast$ $>$ \&arr\+Space)
+\item 
+void \hyperlink{class_c_g_space_manager_a60fb3254438f9c2ab1a24e8927b88fdf}{Regen\+Only\+Space} (\hyperlink{_g_types_8h_a3fc97b512f82d8e1a710da1235f9142a}{G\+I\+N\+O\+U\+T} \hyperlink{class_c_g_space}{C\+G\+Space} \&space)
+\item 
+\hyperlink{class_c_g_space_manager_a6e5c5e579baca73ff5521c6f15aa67b4}{C\+G\+Space\+Manager} ()
+\item 
+\hyperlink{class_c_g_space_manager_a4c9ac952821613668079713b39b7f5a8}{$\sim$\+C\+G\+Space\+Manager} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_g_space_manager_a0066bb24d9976fa6f552be214b59e211}{C\+G3\+D\+Test}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item space manager
+\item space가 화면에 보여야 하는지판단한다.
+\item space를 상황에 맞게 화면에 표시한다.
+\begin{DoxyItemize}
+\item 개략형상으로 보여야 하는지, 실제 모양으로 보여야 하는지 판단한다. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_c_g_space_manager_acd1d45e0cfa5fd251c6c17f61654fbef}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Attr@{Attr}}
+\index{Attr@{Attr}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Attr}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+G\+Space\+Manager\+::\+Attr}}\label{class_c_g_space_manager_acd1d45e0cfa5fd251c6c17f61654fbef}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+Attr\+Create\+Around\+Space@{e\+Attr\+Create\+Around\+Space}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!e\+Attr\+Create\+Around\+Space@{e\+Attr\+Create\+Around\+Space}}\item[{\em 
+\hypertarget{class_c_g_space_manager_acd1d45e0cfa5fd251c6c17f61654fbefaf6578c104fcd37c846206ffdce405209}{}e\+Attr\+Create\+Around\+Space\label{class_c_g_space_manager_acd1d45e0cfa5fd251c6c17f61654fbefaf6578c104fcd37c846206ffdce405209}
+}]\index{e\+Attr\+All@{e\+Attr\+All}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!e\+Attr\+All@{e\+Attr\+All}}\item[{\em 
+\hypertarget{class_c_g_space_manager_acd1d45e0cfa5fd251c6c17f61654fbefae4e406c7f88f01471fcbf05e22fcb8fb}{}e\+Attr\+All\label{class_c_g_space_manager_acd1d45e0cfa5fd251c6c17f61654fbefae4e406c7f88f01471fcbf05e22fcb8fb}
+}]\end{description}
+\end{Desc}
+\hypertarget{class_c_g_space_manager_ad85e12e984c97163d3b89fe639e04987}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Space\+Algorithm@{Space\+Algorithm}}
+\index{Space\+Algorithm@{Space\+Algorithm}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Space\+Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+G\+Space\+Manager\+::\+Space\+Algorithm}}\label{class_c_g_space_manager_ad85e12e984c97163d3b89fe639e04987}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+Space\+Algorithm\+\_\+\+Size\+By\+Rate\+Of\+Object\+Size@{e\+Space\+Algorithm\+\_\+\+Size\+By\+Rate\+Of\+Object\+Size}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!e\+Space\+Algorithm\+\_\+\+Size\+By\+Rate\+Of\+Object\+Size@{e\+Space\+Algorithm\+\_\+\+Size\+By\+Rate\+Of\+Object\+Size}}\item[{\em 
+\hypertarget{class_c_g_space_manager_ad85e12e984c97163d3b89fe639e04987a8c928d22fe87c9580896922de68935ef}{}e\+Space\+Algorithm\+\_\+\+Size\+By\+Rate\+Of\+Object\+Size\label{class_c_g_space_manager_ad85e12e984c97163d3b89fe639e04987a8c928d22fe87c9580896922de68935ef}
+}]\index{e\+Space\+Algorithm\+\_\+\+Size\+By\+Fix@{e\+Space\+Algorithm\+\_\+\+Size\+By\+Fix}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!e\+Space\+Algorithm\+\_\+\+Size\+By\+Fix@{e\+Space\+Algorithm\+\_\+\+Size\+By\+Fix}}\item[{\em 
+\hypertarget{class_c_g_space_manager_ad85e12e984c97163d3b89fe639e04987ad639be55ad871d0e3ecafa01fc6a6893}{}e\+Space\+Algorithm\+\_\+\+Size\+By\+Fix\label{class_c_g_space_manager_ad85e12e984c97163d3b89fe639e04987ad639be55ad871d0e3ecafa01fc6a6893}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g_space_manager_a6e5c5e579baca73ff5521c6f15aa67b4}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{C\+G\+Space\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Space\+Manager\+::\+C\+G\+Space\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_a6e5c5e579baca73ff5521c6f15aa67b4}
+\hypertarget{class_c_g_space_manager_a4c9ac952821613668079713b39b7f5a8}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!````~C\+G\+Space\+Manager@{$\sim$\+C\+G\+Space\+Manager}}
+\index{````~C\+G\+Space\+Manager@{$\sim$\+C\+G\+Space\+Manager}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{$\sim$\+C\+G\+Space\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Space\+Manager\+::$\sim$\+C\+G\+Space\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_a4c9ac952821613668079713b39b7f5a8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g_space_manager_adb22f39dc9ff5d643a80b4559859cb2b}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Add\+Object@{Add\+Object}}
+\index{Add\+Object@{Add\+Object}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Add\+Object(const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Space} $\ast$ C\+G\+Space\+Manager\+::\+Add\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_adb22f39dc9ff5d643a80b4559859cb2b}
+
+\begin{DoxyItemize}
+\item object 추가
+\item 첫번째 추가시 object를 포함할 수 있는 크기의 space가 생성된다.
+\item 이후 object 추가시 포함될 수 있는 포함가능 space가 있는지 검색하고, 없으면 새로운 space가 생성된다.
+\item 포함가능 space인지 판단하는 기준
+\begin{DoxyItemize}
+\item object의 크기가 space에 포함될 수 있는 크기범위 내인지 판단한다.(포함될 수 있는 object의 크기 범위가 차이가 많이 나면 space를 표시하는 수준의 zooming시 object가 제대로 보여야 하는 경우가 발생할 수 있다)
+\item 기존의 object들과 너무 멀리 떨어져 있으면 안된다.
+\end{DoxyItemize}
+\item object가 포함되면 개략형상을 갱신한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_a2ef45dd7fb5d5a407827f6decbbe2c7f}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Calc\+Boundary@{Calc\+Boundary}}
+\index{Calc\+Boundary@{Calc\+Boundary}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Calc\+Boundary() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Cube} C\+G\+Space\+Manager\+::\+Calc\+Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_space_manager_a2ef45dd7fb5d5a407827f6decbbe2c7f}
+
+\begin{DoxyItemize}
+\item space전체의 boundary를 계산한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_a71d9200f1ec5166b5ffbe603e9cac2a0}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Create\+Optimized\+Space\+For\+O\+Bject@{Create\+Optimized\+Space\+For\+O\+Bject}}
+\index{Create\+Optimized\+Space\+For\+O\+Bject@{Create\+Optimized\+Space\+For\+O\+Bject}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Create\+Optimized\+Space\+For\+O\+Bject(const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Space} $\ast$ C\+G\+Space\+Manager\+::\+Create\+Optimized\+Space\+For\+O\+Bject (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_a71d9200f1ec5166b5ffbe603e9cac2a0}
+
+\begin{DoxyItemize}
+\item object가 포함되기에 최적인 space를 새로 생성한다.
+\item quadtree에 space를 최초로 등록한다.
+\item 최적 space 조건(중요도 ★★★★★, 난이도 ★★★★★) \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000008}{Todo}]\end{DoxyRefDesc}
+
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_a6adad07bfa994d292b49175f9b531537}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Delete\+Space@{Delete\+Space}}
+\index{Delete\+Space@{Delete\+Space}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Delete\+Space(\+C\+G\+Space \&space)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Space\+Manager\+::\+Delete\+Space (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G\+Space} \&}]{space}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_a6adad07bfa994d292b49175f9b531537}
+
+\begin{DoxyItemize}
+\item space를 삭제한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_ab96fdcf104020b40cede0cfe8439d566}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Find\+Optimized\+Space\+For\+Object@{Find\+Optimized\+Space\+For\+Object}}
+\index{Find\+Optimized\+Space\+For\+Object@{Find\+Optimized\+Space\+For\+Object}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Find\+Optimized\+Space\+For\+Object(const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Space} $\ast$ C\+G\+Space\+Manager\+::\+Find\+Optimized\+Space\+For\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_ab96fdcf104020b40cede0cfe8439d566}
+
+\begin{DoxyItemize}
+\item object가 포함되기에 최적인 space를 찾는다.
+\item 없으면 N\+U\+L\+L을 리턴한다.
+\item 찾는 조건(중요도 ★★★★★, 난이도 ★★★★★)
+\begin{DoxyEnumerate}
+\item object 크기의 x배를 포함할 수 있거나 걸쳐지는 space 
+\end{DoxyEnumerate}
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_addabb24f3c9bfbc87befb98d959d0193}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Find\+Space\+By\+Object\+I\+D@{Find\+Space\+By\+Object\+I\+D}}
+\index{Find\+Space\+By\+Object\+I\+D@{Find\+Space\+By\+Object\+I\+D}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Find\+Space\+By\+Object\+I\+D(const G\+I\+D \&\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Space} $\ast$ C\+G\+Space\+Manager\+::\+Find\+Space\+By\+Object\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+I\+D} \&}]{I\+D}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_addabb24f3c9bfbc87befb98d959d0193}
+
+\begin{DoxyItemize}
+\item object I\+D를 직접 포함하고 있는 space를 찾는다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_a589bd71d0ccbd424c0e2e4bd4e591d20}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Find\+Space\+In\+View@{Find\+Space\+In\+View}}
+\index{Find\+Space\+In\+View@{Find\+Space\+In\+View}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Find\+Space\+In\+View(\+G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Space $\ast$ $>$ \&arr\+Space)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+Manager\+::\+Find\+Space\+In\+View (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf C\+G\+Space} $\ast$ $>$ \&}]{arr\+Space}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_a589bd71d0ccbd424c0e2e4bd4e591d20}
+
+\begin{DoxyItemize}
+\item view에 보일 space를 모두 찾는다.
+\item quadtree 를 통해서 찾는다. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000005}{Todo}]\end{DoxyRefDesc}
+
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_a5a5ec91ddf3252a0e965a46105100422}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Find\+Space\+Out\+Of\+View@{Find\+Space\+Out\+Of\+View}}
+\index{Find\+Space\+Out\+Of\+View@{Find\+Space\+Out\+Of\+View}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Find\+Space\+Out\+Of\+View(\+G\+O\+U\+T C\+Atl\+Array$<$ C\+G\+Space $\ast$ $>$ \&arr\+Space)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+Manager\+::\+Find\+Space\+Out\+Of\+View (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf C\+G\+Space} $\ast$ $>$ \&}]{arr\+Space}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_a5a5ec91ddf3252a0e965a46105100422}
+
+\begin{DoxyItemize}
+\item view에 보이지 않을 space를 모두 찾는다.
+\item octree를 통해서 찾는다 \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]\end{DoxyRefDesc}
+
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_a912b679ed9d22615a8f6f2560a7fe273}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Get\+Space\+Algorithm@{Get\+Space\+Algorithm}}
+\index{Get\+Space\+Algorithm@{Get\+Space\+Algorithm}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Get\+Space\+Algorithm() const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+G\+Space\+Manager\+::\+Space\+Algorithm} \& C\+G\+Space\+Manager\+::\+Get\+Space\+Algorithm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_space_manager_a912b679ed9d22615a8f6f2560a7fe273}
+\hypertarget{class_c_g_space_manager_a8ce8e485ec6fcbe1c0d553822cd8e6be}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Init\+Space@{Init\+Space}}
+\index{Init\+Space@{Init\+Space}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Init\+Space()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+Manager\+::\+Init\+Space (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_a8ce8e485ec6fcbe1c0d553822cd8e6be}
+
+\begin{DoxyItemize}
+\item space를 초기화 한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_afe4092fce27b865b4722dd9e31b2c765}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Load\+All\+In\+View@{Load\+All\+In\+View}}
+\index{Load\+All\+In\+View@{Load\+All\+In\+View}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Load\+All\+In\+View()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+Manager\+::\+Load\+All\+In\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_afe4092fce27b865b4722dd9e31b2c765}
+
+\begin{DoxyItemize}
+\item view에 보여야 하는 모든 것들을 loading 한다.
+\item loading을 하고 나면 view에 그린다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_ad5bb441a757f01e6ad36ccb269c231ff}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Load\+Space@{Load\+Space}}
+\index{Load\+Space@{Load\+Space}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Load\+Space(\+G\+I\+N\+O\+U\+T C\+G\+Space \&space)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+Manager\+::\+Load\+Space (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+I\+N\+O\+U\+T} {\bf C\+G\+Space} \&}]{space}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_ad5bb441a757f01e6ad36ccb269c231ff}
+
+\begin{DoxyItemize}
+\item space를 load한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_ae3beb966c501f7305adaa7e7037b7932}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Move\+Object\+To\+Space@{Move\+Object\+To\+Space}}
+\index{Move\+Object\+To\+Space@{Move\+Object\+To\+Space}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Move\+Object\+To\+Space(const C\+G\+Object\+Base \&object, C\+G\+Space \&to\+Space)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Space\+Manager\+::\+Move\+Object\+To\+Space (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object, }
+\item[{{\bf C\+G\+Space} \&}]{to\+Space}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_ae3beb966c501f7305adaa7e7037b7932}
+
+\begin{DoxyItemize}
+\item object를 다른 space로 이동한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_a60fb3254438f9c2ab1a24e8927b88fdf}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Regen\+Only\+Space@{Regen\+Only\+Space}}
+\index{Regen\+Only\+Space@{Regen\+Only\+Space}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Regen\+Only\+Space(\+G\+I\+N\+O\+U\+T C\+G\+Space \&space)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+Manager\+::\+Regen\+Only\+Space (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+I\+N\+O\+U\+T} {\bf C\+G\+Space} \&}]{space}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_a60fb3254438f9c2ab1a24e8927b88fdf}
+
+\begin{DoxyItemize}
+\item space를 다시 그리기를 한다.
+\item 현재 상황에 맞게 다시 그리기를 한다.
+\item 현재 상황을 판단하지는 않는다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_aff1eb9a2479f7b840d662f399281e378}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Remove\+Object@{Remove\+Object}}
+\index{Remove\+Object@{Remove\+Object}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Remove\+Object(const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Space} $\ast$ C\+G\+Space\+Manager\+::\+Remove\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_aff1eb9a2479f7b840d662f399281e378}
+
+\begin{DoxyItemize}
+\item object 삭제
+\item 현재 포함 되어 있는 space에서 object를 삭제한다.
+\item space에 object나 space가 하나도 남아 있지 않게 되면 space는 삭제된다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_ac58042529749b9c585c87827fb5e0a10}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Set\+Space\+Algorithm@{Set\+Space\+Algorithm}}
+\index{Set\+Space\+Algorithm@{Set\+Space\+Algorithm}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Set\+Space\+Algorithm(const C\+G\+Space\+Manager\+::\+Space\+Algorithm \&e\+Space\+Algorithm)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+Manager\+::\+Set\+Space\+Algorithm (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Space\+Manager\+::\+Space\+Algorithm} \&}]{e\+Space\+Algorithm}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_ac58042529749b9c585c87827fb5e0a10}
+\hypertarget{class_c_g_space_manager_ab2c8052281b9fe925518d60ae6e05e9e}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Set\+View@{Set\+View}}
+\index{Set\+View@{Set\+View}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Set\+View(\+C\+G3\+D\+View $\ast$p\+View)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+Manager\+::\+Set\+View (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G3\+D\+View} $\ast$}]{p\+View}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_ab2c8052281b9fe925518d60ae6e05e9e}
+\hypertarget{class_c_g_space_manager_ac254ca9665560876f351d6c9d519307a}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Unload\+All\+Out\+Of\+View@{Unload\+All\+Out\+Of\+View}}
+\index{Unload\+All\+Out\+Of\+View@{Unload\+All\+Out\+Of\+View}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Unload\+All\+Out\+Of\+View()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+Manager\+::\+Unload\+All\+Out\+Of\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_ac254ca9665560876f351d6c9d519307a}
+
+\begin{DoxyItemize}
+\item view를 벗어난 모든 것들을 unloading 한다.
+\item unloading하기 전에 vertex buffer에서 제외시켜야 한다.
+\item 조건
+\begin{DoxyItemize}
+\item 카메라에서 너무 멀어서 아주 작게 보이는 경우 
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_a401e578de33371175e18c477ddbb3dec}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Unload\+Space@{Unload\+Space}}
+\index{Unload\+Space@{Unload\+Space}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Unload\+Space(\+G\+I\+N\+O\+U\+T C\+G\+Space \&space)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+Manager\+::\+Unload\+Space (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+I\+N\+O\+U\+T} {\bf C\+G\+Space} \&}]{space}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_a401e578de33371175e18c477ddbb3dec}
+
+\begin{DoxyItemize}
+\item space를 unload한다.
+\item regen도 한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_manager_a092a05709c8f883a0c0a196dc1bff43d}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!Update\+Simple\+Space\+By\+Object@{Update\+Simple\+Space\+By\+Object}}
+\index{Update\+Simple\+Space\+By\+Object@{Update\+Simple\+Space\+By\+Object}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{Update\+Simple\+Space\+By\+Object(const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+G\+Space} $\ast$ C\+G\+Space\+Manager\+::\+Update\+Simple\+Space\+By\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_manager_a092a05709c8f883a0c0a196dc1bff43d}
+
+\begin{DoxyItemize}
+\item object가 소속되어 있는 space의 simple shape(개략형상)을 갱신한다. 
+\end{DoxyItemize}
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_g_space_manager_a0066bb24d9976fa6f552be214b59e211}{}\index{C\+G\+Space\+Manager@{C\+G\+Space\+Manager}!C\+G3\+D\+Test@{C\+G3\+D\+Test}}
+\index{C\+G3\+D\+Test@{C\+G3\+D\+Test}!C\+G\+Space\+Manager@{C\+G\+Space\+Manager}}
+\subsubsection[{C\+G3\+D\+Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf C\+G3\+D\+Test}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_c_g_space_manager_a0066bb24d9976fa6f552be214b59e211}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g_space_manager_8h}{G\+Space\+Manager.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g_space_manager_8cpp}{G\+Space\+Manager.\+cpp}\end{DoxyCompactItemize}

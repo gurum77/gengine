@@ -1,0 +1,116 @@
+.TH "CGMultiQuadTree< ELEMENT >" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGMultiQuadTree< ELEMENT > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GQuadTree\&.hpp>\fP
+.PP
+Inherits \fBCGQuadTree< ELEMENT >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBAddSubQuadTree\fP (\fBCGQuadTree\fP *pSubQuadTree)"
+.br
+.ti -1c
+.RI "void \fBGetAllNode\fP (CAtlList< \fBQuadTreeNode\fP< ELEMENT > * > &listRet)"
+.br
+.ti -1c
+.RI "void \fBGetAllInFileNode\fP (CAtlList< \fBQuadTreeNode\fP< ELEMENT > * > &listRet)"
+.br
+.ti -1c
+.RI "void \fBGetAllInMemoryNode\fP (CAtlList< \fBQuadTreeNode\fP< ELEMENT > * > &listRet)"
+.br
+.ti -1c
+.RI "void \fBSaveFileAllNode\fP ()"
+.br
+.ti -1c
+.RI "void \fBFindElementByRegion\fP (const \fBAABB\fP &rc, CAtlList< \fBCGQuadTreeElement\fP * > &listRet)"
+.br
+.ti -1c
+.RI "void \fBFindElementBySeg\fP (const \fBVec2f\fP &xy1, const \fBVec2f\fP &xy2, CAtlList< \fBCGQuadTreeElement\fP * > &listRet)"
+.br
+.ti -1c
+.RI "void \fBFindElementByPos\fP (const \fBVec2f\fP &xy, CAtlList< \fBCGQuadTreeElement\fP * > &listRet)"
+.br
+.ti -1c
+.RI "bool \fBIsExistElement\fP ()"
+.br
+.ti -1c
+.RI "virtual ELEMENT * \fBAddElement\fP (ELEMENT &element)"
+.br
+.ti -1c
+.RI "void \fBSetMaxElement\fP (const INT32 &nMaxElement)"
+.br
+.ti -1c
+.RI "INT32 \fBGetCountAllElement\fP () const "
+.br
+.ti -1c
+.RI "\fBCGMultiQuadTree\fP (const \fBAABB\fP &startRegion)"
+.br
+.ti -1c
+.RI "virtual \fB~CGMultiQuadTree\fP (void)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class ELEMENT>class CGMultiQuadTree< ELEMENT >"
+
+.IP "\(bu" 2
+multi quadtree
+.IP "\(bu" 2
+여러개의 quadtree를 가질 수 있다\&.
+.IP "\(bu" 2
+quadtree merge가 가능하다\&. 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class ELEMENT > \fBCGMultiQuadTree\fP< ELEMENT >::\fBCGMultiQuadTree\fP (const \fBAABB\fP & startRegion)\fC [inline]\fP"
+
+.SS "template<class ELEMENT > virtual \fBCGMultiQuadTree\fP< ELEMENT >::~\fBCGMultiQuadTree\fP (void)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class ELEMENT > virtual ELEMENT* \fBCGMultiQuadTree\fP< ELEMENT >::AddElement (ELEMENT & element)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBCGQuadTree< ELEMENT >\fP\&.
+.SS "template<class ELEMENT > void \fBCGMultiQuadTree\fP< ELEMENT >::AddSubQuadTree (\fBCGQuadTree\fP * pSubQuadTree)\fC [inline]\fP"
+
+.IP "\(bu" 2
+quadtree를 serialize한다\&.
+.IP "\(bu" 2
+sub quadtree를 추가한다\&. 
+.PP
+
+.SS "template<class ELEMENT > void \fBCGMultiQuadTree\fP< ELEMENT >::FindElementByPos (const \fBVec2f\fP & xy, CAtlList< \fBCGQuadTreeElement\fP * > & listRet)\fC [inline]\fP"
+
+.SS "template<class ELEMENT > void \fBCGMultiQuadTree\fP< ELEMENT >::FindElementByRegion (const \fBAABB\fP & rc, CAtlList< \fBCGQuadTreeElement\fP * > & listRet)\fC [inline]\fP"
+
+.SS "template<class ELEMENT > void \fBCGMultiQuadTree\fP< ELEMENT >::FindElementBySeg (const \fBVec2f\fP & xy1, const \fBVec2f\fP & xy2, CAtlList< \fBCGQuadTreeElement\fP * > & listRet)\fC [inline]\fP"
+
+.SS "template<class ELEMENT > void \fBCGMultiQuadTree\fP< ELEMENT >::GetAllInFileNode (CAtlList< \fBQuadTreeNode\fP< ELEMENT > * > & listRet)\fC [inline]\fP"
+
+.SS "template<class ELEMENT > void \fBCGMultiQuadTree\fP< ELEMENT >::GetAllInMemoryNode (CAtlList< \fBQuadTreeNode\fP< ELEMENT > * > & listRet)\fC [inline]\fP"
+
+.SS "template<class ELEMENT > void \fBCGMultiQuadTree\fP< ELEMENT >::GetAllNode (CAtlList< \fBQuadTreeNode\fP< ELEMENT > * > & listRet)\fC [inline]\fP"
+
+.SS "template<class ELEMENT > INT32 \fBCGMultiQuadTree\fP< ELEMENT >::GetCountAllElement () const\fC [inline]\fP"
+
+.SS "template<class ELEMENT > bool \fBCGMultiQuadTree\fP< ELEMENT >::IsExistElement ()\fC [inline]\fP"
+
+.SS "template<class ELEMENT > void \fBCGMultiQuadTree\fP< ELEMENT >::SaveFileAllNode ()\fC [inline]\fP"
+
+.SS "template<class ELEMENT > void \fBCGMultiQuadTree\fP< ELEMENT >::SetMaxElement (const INT32 & nMaxElement)\fC [inline]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

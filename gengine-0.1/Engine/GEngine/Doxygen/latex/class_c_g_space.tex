@@ -1,0 +1,317 @@
+\hypertarget{class_c_g_space}{}\section{C\+G\+Space Class Reference}
+\label{class_c_g_space}\index{C\+G\+Space@{C\+G\+Space}}
+
+
+{\ttfamily \#include $<$G\+Space.\+h$>$}
+
+Inheritance diagram for C\+G\+Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_g_space}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3}{Attr} \{ \\*
+\hyperlink{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3acf6bb79d895a7bb084b868d61019f197}{e\+Attr\+Loaded} = 0x00000001, 
+\hyperlink{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3ad0d64c1abdd2fb7d03be8f0bd9f0678f}{e\+Attr\+Unloaded} = 0x00000002, 
+\hyperlink{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3ac5ff0b3729c7cd9aaf56b9581e2f8d64}{e\+Attr\+Draw\+Boundary} = 0x00000004, 
+\hyperlink{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3a90afdb5a93fd313eb4b80ae4cb99ac53}{e\+Attr\+Draw\+Object} = 0x00000008, 
+\\*
+\hyperlink{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3a4e720f22aecd65dd17794988b0a818af}{e\+Attr\+Changed} = 0x00000010
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_g_types_8h_ac7dd75e8df268a0368c6cb433764fdcb}{G\+S\+I\+Z\+E} \hyperlink{class_c_g_space_a8612563e37f05d76e0fbd610aa1c2ed2}{Get\+Object\+Count} () const 
+\item 
+\hyperlink{_g_types_8h_ac7dd75e8df268a0368c6cb433764fdcb}{G\+S\+I\+Z\+E} \hyperlink{class_c_g_space_aea4630aaf3ff7bd2e77c3f1e8c436c86}{Get\+Space\+Count} () const 
+\item 
+void \hyperlink{class_c_g_space_a79fb09fa13a27b224b9bc9b8bee3791a}{Load} ()
+\item 
+void \hyperlink{class_c_g_space_a37045f179832ac5821fdbc0f8021d9f0}{Unload} ()
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_space_a0a1b1166857961a5f0d4a437f581a1e5}{Add\+Object} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_space_ab945038e043b5c832f8f2394b1f00bbd}{Remove\+Object} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+\hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \hyperlink{class_c_g_space_ad4c8e0b89b195f899e312406cf1e1ff9}{Is\+Attr} (const \hyperlink{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3}{C\+G\+Space\+::\+Attr} \&e\+Attr) const 
+\item 
+void \hyperlink{class_c_g_space_a8b05ec6f5ba6a1796eba303f5b7b382e}{Set\+Attr} (const \hyperlink{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3}{C\+G\+Space\+::\+Attr} \&e\+Attr, const \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} \&b\+Set)
+\item 
+void \hyperlink{class_c_g_space_a4041d193b8f5f02ab925d35022d49395}{Update\+Simple\+Shape} (const \hyperlink{class_c_g_object_base}{C\+G\+Object\+Base} \&object)
+\item 
+const C\+Atl\+Map$<$ \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D}, \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} $>$ \& \hyperlink{class_c_g_space_a4ed395194044d8e984eed839dbb60c3b}{Get\+Object\+Map} () const 
+\item 
+const C\+Atl\+Map$<$ \hyperlink{_g_types_8h_a5b96ecb16d8e437977d12cd40aa6f6d8}{G\+I\+D}, \hyperlink{_g_types_8h_a2901915743626352a6820c5405f556dc}{G\+B\+O\+O\+L} $>$ \& \hyperlink{class_c_g_space_a154057c3b7e9812c886348b66d36863d}{Get\+Space\+Map} () const 
+\item 
+virtual void \hyperlink{class_c_g_space_a8ccaa8a6e0b17f5b37c89ad21c35c98f}{Calc\+Boundary} ()
+\item 
+virtual \hyperlink{_g_types_8h_a940e3da6a9b57aae3de0b050e2a7af5e}{Primitive\+Topology} \hyperlink{class_c_g_space_acf43525c645839d56b678ba9c0a007ed}{Get\+Primitive\+Topology} () const 
+\item 
+const void \hyperlink{class_c_g_space_aea6ca1ceccafdcf639bdf1aba1d54522}{Get\+All\+Vertex} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{struct_g_v_e_r_t_e_x}{G\+V\+E\+R\+T\+E\+X} $>$ \&arr\+Vertex) const 
+\item 
+virtual const void \hyperlink{class_c_g_space_ae79f82d62452acb3b38f33aed1c1bb74}{Get\+All\+Vertex\+By\+Primitive\+Topology} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{struct_g_v_e_r_t_e_x}{G\+V\+E\+R\+T\+E\+X} $>$ \&arr\+Vertex) const 
+\item 
+virtual const void \hyperlink{class_c_g_space_a7059b7ff20b24aedabe611964c2e4748}{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology} (\hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{struct_g_v_e_r_t_e_x}{G\+V\+E\+R\+T\+E\+X} $>$ \&arr\+Vertex, \hyperlink{_g_types_8h_a0858ec221262e635612871d70ca233ad}{G\+O\+U\+T} C\+Atl\+Array$<$ \hyperlink{_g_types_8h_a2e1a1c77d1349057202e2f34e071019c}{G\+U\+I\+N\+T32} $>$ \&arr\+Index) const 
+\item 
+\hyperlink{class_c_g_space_ad67fd9ee3407400625a458fb203152ec}{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+O\+B\+J\+E\+C\+T} (\hyperlink{class_c_g_space}{C\+G\+Space})
+\item 
+\hyperlink{class_c_g_space_a5713060b1ea9a2340a3cf0c42096cb6c}{C\+G\+Space} ()
+\item 
+\hyperlink{class_c_g_space_a775a8a4104dd05bd8f3af5b27fbf32dc}{$\sim$\+C\+G\+Space} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item 공간정보 object
+\item space는 동적으로 생성되거나 사라진다. 따라서 unload한다고 파일로 저장되지 않는다.
+\item 파일로 저장할 경우 파일 확장자는 g3s이다. 
+\end{DoxyItemize}
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3}{}\index{C\+G\+Space@{C\+G\+Space}!Attr@{Attr}}
+\index{Attr@{Attr}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Attr}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+G\+Space\+::\+Attr}}\label{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+Attr\+Loaded@{e\+Attr\+Loaded}!C\+G\+Space@{C\+G\+Space}}\index{C\+G\+Space@{C\+G\+Space}!e\+Attr\+Loaded@{e\+Attr\+Loaded}}\item[{\em 
+\hypertarget{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3acf6bb79d895a7bb084b868d61019f197}{}e\+Attr\+Loaded\label{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3acf6bb79d895a7bb084b868d61019f197}
+}]\index{e\+Attr\+Unloaded@{e\+Attr\+Unloaded}!C\+G\+Space@{C\+G\+Space}}\index{C\+G\+Space@{C\+G\+Space}!e\+Attr\+Unloaded@{e\+Attr\+Unloaded}}\item[{\em 
+\hypertarget{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3ad0d64c1abdd2fb7d03be8f0bd9f0678f}{}e\+Attr\+Unloaded\label{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3ad0d64c1abdd2fb7d03be8f0bd9f0678f}
+}]\index{e\+Attr\+Draw\+Boundary@{e\+Attr\+Draw\+Boundary}!C\+G\+Space@{C\+G\+Space}}\index{C\+G\+Space@{C\+G\+Space}!e\+Attr\+Draw\+Boundary@{e\+Attr\+Draw\+Boundary}}\item[{\em 
+\hypertarget{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3ac5ff0b3729c7cd9aaf56b9581e2f8d64}{}e\+Attr\+Draw\+Boundary\label{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3ac5ff0b3729c7cd9aaf56b9581e2f8d64}
+}]\index{e\+Attr\+Draw\+Object@{e\+Attr\+Draw\+Object}!C\+G\+Space@{C\+G\+Space}}\index{C\+G\+Space@{C\+G\+Space}!e\+Attr\+Draw\+Object@{e\+Attr\+Draw\+Object}}\item[{\em 
+\hypertarget{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3a90afdb5a93fd313eb4b80ae4cb99ac53}{}e\+Attr\+Draw\+Object\label{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3a90afdb5a93fd313eb4b80ae4cb99ac53}
+}]\index{e\+Attr\+Changed@{e\+Attr\+Changed}!C\+G\+Space@{C\+G\+Space}}\index{C\+G\+Space@{C\+G\+Space}!e\+Attr\+Changed@{e\+Attr\+Changed}}\item[{\em 
+\hypertarget{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3a4e720f22aecd65dd17794988b0a818af}{}e\+Attr\+Changed\label{class_c_g_space_ad9e165bcfd44f2d483e7f3e045d6a3c3a4e720f22aecd65dd17794988b0a818af}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g_space_a5713060b1ea9a2340a3cf0c42096cb6c}{}\index{C\+G\+Space@{C\+G\+Space}!C\+G\+Space@{C\+G\+Space}}
+\index{C\+G\+Space@{C\+G\+Space}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{C\+G\+Space()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+C\+O\+P\+Y\+\_\+\+S\+U\+P\+E\+R} {\bf G\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+C\+O\+P\+Y\+\_\+\+E\+N\+D} C\+G\+Space\+::\+C\+G\+Space (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_a5713060b1ea9a2340a3cf0c42096cb6c}
+\hypertarget{class_c_g_space_a775a8a4104dd05bd8f3af5b27fbf32dc}{}\index{C\+G\+Space@{C\+G\+Space}!````~C\+G\+Space@{$\sim$\+C\+G\+Space}}
+\index{````~C\+G\+Space@{$\sim$\+C\+G\+Space}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{$\sim$\+C\+G\+Space()}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Space\+::$\sim$\+C\+G\+Space (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_a775a8a4104dd05bd8f3af5b27fbf32dc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g_space_a0a1b1166857961a5f0d4a437f581a1e5}{}\index{C\+G\+Space@{C\+G\+Space}!Add\+Object@{Add\+Object}}
+\index{Add\+Object@{Add\+Object}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Add\+Object(const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Space\+::\+Add\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_a0a1b1166857961a5f0d4a437f581a1e5}
+
+\begin{DoxyItemize}
+\item object를 space에 추가한다.
+\item space의 개략 형상을 갱신한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_a8ccaa8a6e0b17f5b37c89ad21c35c98f}{}\index{C\+G\+Space@{C\+G\+Space}!Calc\+Boundary@{Calc\+Boundary}}
+\index{Calc\+Boundary@{Calc\+Boundary}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Calc\+Boundary()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+::\+Calc\+Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g_space_a8ccaa8a6e0b17f5b37c89ad21c35c98f}
+
+\begin{DoxyItemize}
+\item space는 boundary를 작아지게 하지 않는다.
+\begin{DoxyItemize}
+\item 계속해서 커지기만 한다.
+\item 따라서, Init\+Boundary의 개념은 없다. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g_object_base_a9e85d6655f30b79aa434a8ad55e51371}{C\+G\+Object\+Base}.
+
+\hypertarget{class_c_g_space_ad67fd9ee3407400625a458fb203152ec}{}\index{C\+G\+Space@{C\+G\+Space}!G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+O\+B\+J\+E\+C\+T@{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+O\+B\+J\+E\+C\+T}}
+\index{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+O\+B\+J\+E\+C\+T@{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+O\+B\+J\+E\+C\+T}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+O\+B\+J\+E\+C\+T(\+C\+G\+Space)}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Space\+::\+G\+D\+E\+F\+I\+N\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+\_\+\+O\+B\+J\+E\+C\+T (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+G\+Space}}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_ad67fd9ee3407400625a458fb203152ec}
+\hypertarget{class_c_g_space_a7059b7ff20b24aedabe611964c2e4748}{}\index{C\+G\+Space@{C\+G\+Space}!Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology@{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology}}
+\index{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology@{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology(\+G\+O\+U\+T C\+Atl\+Array$<$ G\+V\+E\+R\+T\+E\+X $>$ \&arr\+Vertex, G\+O\+U\+T C\+Atl\+Array$<$ G\+U\+I\+N\+T32 $>$ \&arr\+Index) const }]{\setlength{\rightskip}{0pt plus 5cm}const void C\+G\+Space\+::\+Get\+All\+Strip\+Vertex\+List\+Index\+By\+Primitive\+Topology (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf G\+V\+E\+R\+T\+E\+X} $>$ \&}]{arr\+Vertex, }
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf G\+U\+I\+N\+T32} $>$ \&}]{arr\+Index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g_space_a7059b7ff20b24aedabe611964c2e4748}
+
+\begin{DoxyItemize}
+\item vertex buffer에 추가할 strip vertex와 list index를 가져온다.
+\item object를 그리기 위해서는 반드시 재정의가 필요하다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g_object_base_a0f72743afd6f673274209f36651cf978}{C\+G\+Object\+Base}.
+
+\hypertarget{class_c_g_space_aea6ca1ceccafdcf639bdf1aba1d54522}{}\index{C\+G\+Space@{C\+G\+Space}!Get\+All\+Vertex@{Get\+All\+Vertex}}
+\index{Get\+All\+Vertex@{Get\+All\+Vertex}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Get\+All\+Vertex(\+G\+O\+U\+T C\+Atl\+Array$<$ G\+V\+E\+R\+T\+E\+X $>$ \&arr\+Vertex) const }]{\setlength{\rightskip}{0pt plus 5cm}const void C\+G\+Space\+::\+Get\+All\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf G\+V\+E\+R\+T\+E\+X} $>$ \&}]{arr\+Vertex}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_space_aea6ca1ceccafdcf639bdf1aba1d54522}
+\hypertarget{class_c_g_space_ae79f82d62452acb3b38f33aed1c1bb74}{}\index{C\+G\+Space@{C\+G\+Space}!Get\+All\+Vertex\+By\+Primitive\+Topology@{Get\+All\+Vertex\+By\+Primitive\+Topology}}
+\index{Get\+All\+Vertex\+By\+Primitive\+Topology@{Get\+All\+Vertex\+By\+Primitive\+Topology}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Get\+All\+Vertex\+By\+Primitive\+Topology(\+G\+O\+U\+T C\+Atl\+Array$<$ G\+V\+E\+R\+T\+E\+X $>$ \&arr\+Vertex) const }]{\setlength{\rightskip}{0pt plus 5cm}const void C\+G\+Space\+::\+Get\+All\+Vertex\+By\+Primitive\+Topology (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+U\+T} C\+Atl\+Array$<$ {\bf G\+V\+E\+R\+T\+E\+X} $>$ \&}]{arr\+Vertex}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g_space_ae79f82d62452acb3b38f33aed1c1bb74}
+
+\begin{DoxyItemize}
+\item vertex buffer에 추가할 vertex를 가져온다.
+\item object를 그리기 위해서는 반드시 재정의가 필요하다. 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g_object_base_a8191037be2e80b9b39217bc9c32834c5}{C\+G\+Object\+Base}.
+
+\hypertarget{class_c_g_space_a8612563e37f05d76e0fbd610aa1c2ed2}{}\index{C\+G\+Space@{C\+G\+Space}!Get\+Object\+Count@{Get\+Object\+Count}}
+\index{Get\+Object\+Count@{Get\+Object\+Count}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Get\+Object\+Count() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+S\+I\+Z\+E} C\+G\+Space\+::\+Get\+Object\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_space_a8612563e37f05d76e0fbd610aa1c2ed2}
+
+\begin{DoxyItemize}
+\item 포함하고 있는 object의 개수를 리턴한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_a4ed395194044d8e984eed839dbb60c3b}{}\index{C\+G\+Space@{C\+G\+Space}!Get\+Object\+Map@{Get\+Object\+Map}}
+\index{Get\+Object\+Map@{Get\+Object\+Map}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Get\+Object\+Map() const }]{\setlength{\rightskip}{0pt plus 5cm}const C\+Atl\+Map$<$ {\bf G\+I\+D}, {\bf G\+B\+O\+O\+L} $>$ \& C\+G\+Space\+::\+Get\+Object\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_space_a4ed395194044d8e984eed839dbb60c3b}
+
+\begin{DoxyItemize}
+\item space에 포함되어 있는 object의 map을 리턴한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_acf43525c645839d56b678ba9c0a007ed}{}\index{C\+G\+Space@{C\+G\+Space}!Get\+Primitive\+Topology@{Get\+Primitive\+Topology}}
+\index{Get\+Primitive\+Topology@{Get\+Primitive\+Topology}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Get\+Primitive\+Topology() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Primitive\+Topology} C\+G\+Space\+::\+Get\+Primitive\+Topology (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_g_space_acf43525c645839d56b678ba9c0a007ed}
+
+\begin{DoxyItemize}
+\item object의 vertex의 primitive topology를 리턴한다.
+\item object는 한가지 primitive topology만 가질 수 있다.(다양한 primitive topology가 필요하다면 object를 여러개 가지도록 하면 된다) 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{class_c_g_object_base_ad0092032844236a27523dcb99c6ce684}{C\+G\+Object\+Base}.
+
+\hypertarget{class_c_g_space_aea4630aaf3ff7bd2e77c3f1e8c436c86}{}\index{C\+G\+Space@{C\+G\+Space}!Get\+Space\+Count@{Get\+Space\+Count}}
+\index{Get\+Space\+Count@{Get\+Space\+Count}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Get\+Space\+Count() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+S\+I\+Z\+E} C\+G\+Space\+::\+Get\+Space\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_space_aea4630aaf3ff7bd2e77c3f1e8c436c86}
+
+\begin{DoxyItemize}
+\item 포함하고 있는 space의 개수를 리턴한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_a154057c3b7e9812c886348b66d36863d}{}\index{C\+G\+Space@{C\+G\+Space}!Get\+Space\+Map@{Get\+Space\+Map}}
+\index{Get\+Space\+Map@{Get\+Space\+Map}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Get\+Space\+Map() const }]{\setlength{\rightskip}{0pt plus 5cm}const C\+Atl\+Map$<$ {\bf G\+I\+D}, {\bf G\+B\+O\+O\+L} $>$ \& C\+G\+Space\+::\+Get\+Space\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_space_a154057c3b7e9812c886348b66d36863d}
+\hypertarget{class_c_g_space_ad4c8e0b89b195f899e312406cf1e1ff9}{}\index{C\+G\+Space@{C\+G\+Space}!Is\+Attr@{Is\+Attr}}
+\index{Is\+Attr@{Is\+Attr}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Is\+Attr(const C\+G\+Space\+::\+Attr \&e\+Attr) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Space\+::\+Is\+Attr (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Space\+::\+Attr} \&}]{e\+Attr}
+\end{DoxyParamCaption}
+) const}\label{class_c_g_space_ad4c8e0b89b195f899e312406cf1e1ff9}
+
+\begin{DoxyItemize}
+\item 속성이 설정되어 있는지 판별한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_a79fb09fa13a27b224b9bc9b8bee3791a}{}\index{C\+G\+Space@{C\+G\+Space}!Load@{Load}}
+\index{Load@{Load}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Load()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+::\+Load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_a79fb09fa13a27b224b9bc9b8bee3791a}
+
+\begin{DoxyItemize}
+\item file에 저장된 object를 memory로 로딩한다.
+\item sub space의 내용까지 모두 로딩하지는 않는다.
+\item 
+\end{DoxyItemize}\hypertarget{class_c_g_space_ab945038e043b5c832f8f2394b1f00bbd}{}\index{C\+G\+Space@{C\+G\+Space}!Remove\+Object@{Remove\+Object}}
+\index{Remove\+Object@{Remove\+Object}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Remove\+Object(const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+B\+O\+O\+L} C\+G\+Space\+::\+Remove\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_ab945038e043b5c832f8f2394b1f00bbd}
+
+\begin{DoxyItemize}
+\item object를 space에서 제거한다.
+\item space의 개략 형상을 갱신한다.
+\item space의 boundary를 재계산하지 않는다.
+\begin{DoxyItemize}
+\item space는 팽창만 한다.(작아지는 것은 비용이 너무 큼) 
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{class_c_g_space_a8b05ec6f5ba6a1796eba303f5b7b382e}{}\index{C\+G\+Space@{C\+G\+Space}!Set\+Attr@{Set\+Attr}}
+\index{Set\+Attr@{Set\+Attr}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Set\+Attr(const C\+G\+Space\+::\+Attr \&e\+Attr, const G\+B\+O\+O\+L \&b\+Set)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+::\+Set\+Attr (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Space\+::\+Attr} \&}]{e\+Attr, }
+\item[{const {\bf G\+B\+O\+O\+L} \&}]{b\+Set}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_a8b05ec6f5ba6a1796eba303f5b7b382e}
+
+\begin{DoxyItemize}
+\item 속성을 설정한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_a37045f179832ac5821fdbc0f8021d9f0}{}\index{C\+G\+Space@{C\+G\+Space}!Unload@{Unload}}
+\index{Unload@{Unload}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Unload()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+::\+Unload (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_a37045f179832ac5821fdbc0f8021d9f0}
+
+\begin{DoxyItemize}
+\item memory에 로딩되어 있는 object를 파일로 저장하고, 메모리에서 모두 삭제한다. 
+\end{DoxyItemize}\hypertarget{class_c_g_space_a4041d193b8f5f02ab925d35022d49395}{}\index{C\+G\+Space@{C\+G\+Space}!Update\+Simple\+Shape@{Update\+Simple\+Shape}}
+\index{Update\+Simple\+Shape@{Update\+Simple\+Shape}!C\+G\+Space@{C\+G\+Space}}
+\subsubsection[{Update\+Simple\+Shape(const C\+G\+Object\+Base \&object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+G\+Space\+::\+Update\+Simple\+Shape (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Object\+Base} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_c_g_space_a4041d193b8f5f02ab925d35022d49395}
+
+\begin{DoxyItemize}
+\item space의 개략형상을 update한다. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]\end{DoxyRefDesc}
+
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g_space_8h}{G\+Space.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G3\+D/\hyperlink{_g_space_8cpp}{G\+Space.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,194 @@
+.TH "p2t" 3 "Sat Dec 26 2015" "Version v0.1" "GEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+p2t \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBAdvancingFront\fP"
+.br
+.ti -1c
+.RI "class \fBCDT\fP"
+.br
+.ti -1c
+.RI "struct \fBEdge\fP"
+.br
+.ti -1c
+.RI "struct \fBNode\fP"
+.br
+.ti -1c
+.RI "struct \fBPoint\fP"
+.br
+.ti -1c
+.RI "class \fBSweep\fP"
+.br
+.ti -1c
+.RI "class \fBSweepContext\fP"
+.br
+.ti -1c
+.RI "class \fBTriangle\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBOrientation\fP { \fBCW\fP, \fBCCW\fP, \fBCOLLINEAR\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBcmp\fP (const \fBPoint\fP *a, const \fBPoint\fP *b)"
+.br
+.ti -1c
+.RI "\fBPoint\fP \fBoperator+\fP (const \fBPoint\fP &a, const \fBPoint\fP &b)"
+.br
+.RI "\fIAdd two points_ component-wise\&. \fP"
+.ti -1c
+.RI "\fBPoint\fP \fBoperator\-\fP (const \fBPoint\fP &a, const \fBPoint\fP &b)"
+.br
+.RI "\fISubtract two points_ component-wise\&. \fP"
+.ti -1c
+.RI "\fBPoint\fP \fBoperator*\fP (double s, const \fBPoint\fP &a)"
+.br
+.RI "\fIMultiply point by scalar\&. \fP"
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBPoint\fP &a, const \fBPoint\fP &b)"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBPoint\fP &a, const \fBPoint\fP &b)"
+.br
+.ti -1c
+.RI "double \fBDot\fP (const \fBPoint\fP &a, const \fBPoint\fP &b)"
+.br
+.RI "\fIPeform the dot product on two vectors\&. \fP"
+.ti -1c
+.RI "double \fBCross\fP (const \fBPoint\fP &a, const \fBPoint\fP &b)"
+.br
+.RI "\fIPerform the cross product on two vectors\&. In 2D this produces a scalar\&. \fP"
+.ti -1c
+.RI "\fBPoint\fP \fBCross\fP (const \fBPoint\fP &a, double s)"
+.br
+.ti -1c
+.RI "\fBPoint\fP \fBCross\fP (const double s, const \fBPoint\fP &a)"
+.br
+.ti -1c
+.RI "\fBOrientation\fP \fBOrient2d\fP (\fBPoint\fP &pa, \fBPoint\fP &pb, \fBPoint\fP &pc)"
+.br
+.ti -1c
+.RI "bool \fBInScanArea\fP (\fBPoint\fP &pa, \fBPoint\fP &pb, \fBPoint\fP &pc, \fBPoint\fP &pd)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const double \fBPI_3div4\fP = 3 * M_PI / 4"
+.br
+.ti -1c
+.RI "const double \fBPI_div2\fP = 1\&.57079632679489661923"
+.br
+.ti -1c
+.RI "const double \fBEPSILON\fP = 1e\-12"
+.br
+.ti -1c
+.RI "const double \fBkAlpha\fP = 0\&.3"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Mason Green mason.green@gmail.com
+.RE
+.PP
+Sweep-line, Constrained Delauney Triangulation (\fBCDT\fP) See: Domiter, V\&. and Zalik, B\&.(2008)'Sweep-line algorithm for constrained Delaunay triangulation', International Journal of Geographical Information Science
+.PP
+'FlipScan' Constrained \fBEdge\fP Algorithm invented by Thomas 흂l?, thahlen@gmail.com 
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBp2t::Orientation\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fICW \fP\fP
+.TP
+\fB\fICCW \fP\fP
+.TP
+\fB\fICOLLINEAR \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "bool p2t::cmp (const \fBPoint\fP * a, const \fBPoint\fP * b)\fC [inline]\fP"
+
+.SS "double p2t::Cross (const \fBPoint\fP & a, const \fBPoint\fP & b)\fC [inline]\fP"
+
+.PP
+Perform the cross product on two vectors\&. In 2D this produces a scalar\&. 
+.SS "\fBPoint\fP p2t::Cross (const \fBPoint\fP & a, double s)\fC [inline]\fP"
+Perform the cross product on a point and a scalar\&. In 2D this produces a point\&. 
+.SS "\fBPoint\fP p2t::Cross (const double s, const \fBPoint\fP & a)\fC [inline]\fP"
+Perform the cross product on a scalar and a point\&. In 2D this produces a point\&. 
+.SS "double p2t::Dot (const \fBPoint\fP & a, const \fBPoint\fP & b)\fC [inline]\fP"
+
+.PP
+Peform the dot product on two vectors\&. 
+.SS "bool p2t::InScanArea (\fBPoint\fP & pa, \fBPoint\fP & pb, \fBPoint\fP & pc, \fBPoint\fP & pd)"
+
+.SS "bool p2t::operator!= (const \fBPoint\fP & a, const \fBPoint\fP & b)\fC [inline]\fP"
+
+.SS "\fBPoint\fP p2t::operator* (double s, const \fBPoint\fP & a)\fC [inline]\fP"
+
+.PP
+Multiply point by scalar\&. 
+.SS "\fBPoint\fP p2t::operator+ (const \fBPoint\fP & a, const \fBPoint\fP & b)\fC [inline]\fP"
+
+.PP
+Add two points_ component-wise\&. 
+.SS "\fBPoint\fP p2t::operator\- (const \fBPoint\fP & a, const \fBPoint\fP & b)\fC [inline]\fP"
+
+.PP
+Subtract two points_ component-wise\&. 
+.SS "bool p2t::operator== (const \fBPoint\fP & a, const \fBPoint\fP & b)\fC [inline]\fP"
+
+.SS "\fBOrientation\fP p2t::Orient2d (\fBPoint\fP & pa, \fBPoint\fP & pb, \fBPoint\fP & pc)"
+Forumla to calculate signed area
+.br
+ Positive if CCW
+.br
+ Negative if CW
+.br
+ 0 if collinear
+.br
+ 
+.PP
+.nf
+
+A[P1,P2,P3]  =  (x1*y2 - y1*x2) + (x2*y3 - y2*x3) + (x3*y1 - y3*x1)
+             =  (x1-x3)*(y2-y3) - (y1-y3)*(x2-x3)
+.fi
+.PP
+ 
+.SH "Variable Documentation"
+.PP 
+.SS "const double p2t::EPSILON = 1e\-12"
+
+.SS "const double p2t::kAlpha = 0\&.3"
+
+.SS "const double p2t::PI_3div4 = 3 * M_PI / 4"
+
+.SS "const double p2t::PI_div2 = 1\&.57079632679489661923"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GEngine from the source code\&.

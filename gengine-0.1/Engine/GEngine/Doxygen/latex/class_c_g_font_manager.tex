@@ -1,0 +1,108 @@
+\hypertarget{class_c_g_font_manager}{}\section{C\+G\+Font\+Manager Class Reference}
+\label{class_c_g_font_manager}\index{C\+G\+Font\+Manager@{C\+G\+Font\+Manager}}
+
+
+{\ttfamily \#include $<$G\+Font\+Manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{class_c_g_font_manager_aff72f32c3a5ad244cd85bd6bd38d733b}{Load\+Text} (const \hyperlink{class_c_g_text}{C\+G\+Text} \&text, const \hyperlink{class_c_g_font_property}{C\+G\+Font\+Property} \&font\+Property)
+\item 
+const C\+Atl\+Array$<$ \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} $>$ \& \hyperlink{class_c_g_font_manager_a72a862b1c89cbfb34f782d290148a266}{Get\+Outline\+Point} ()
+\item 
+const C\+Atl\+Array$<$ I\+N\+T32 $>$ \& \hyperlink{class_c_g_font_manager_ade2116043bda71a25835563fbb2ebce0}{Get\+Outline\+Index} ()
+\item 
+const C\+Atl\+Array$<$ \hyperlink{class_c_g_point3_d}{C\+G\+Point3\+D} $>$ \& \hyperlink{class_c_g_font_manager_a84fd8bbc47cb364348c43310e24c5b5a}{Get\+Face\+Point} ()
+\item 
+const C\+Atl\+Array$<$ I\+N\+T32 $>$ \& \hyperlink{class_c_g_font_manager_a5cb3d7deb7a594c567bc9a92444d9fd3}{Get\+Face\+Index} ()
+\item 
+C\+String \hyperlink{class_c_g_font_manager_abb189c294af28f813fa70000ee885c4d}{Find\+Font\+File\+Name} (const C\+Atl\+String \&str\+Font\+Name)
+\item 
+\hyperlink{class_c_g_font_manager_a5c3233acad13749c88baddc6d678c5bd}{C\+G\+Font\+Manager} (void)
+\item 
+virtual \hyperlink{class_c_g_font_manager_a0435c7b0f13e86e90d2ed33245627152}{$\sim$\+C\+G\+Font\+Manager} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item font manager 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_g_font_manager_a5c3233acad13749c88baddc6d678c5bd}{}\index{C\+G\+Font\+Manager@{C\+G\+Font\+Manager}!C\+G\+Font\+Manager@{C\+G\+Font\+Manager}}
+\index{C\+G\+Font\+Manager@{C\+G\+Font\+Manager}!C\+G\+Font\+Manager@{C\+G\+Font\+Manager}}
+\subsubsection[{C\+G\+Font\+Manager(void)}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Font\+Manager\+::\+C\+G\+Font\+Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_font_manager_a5c3233acad13749c88baddc6d678c5bd}
+\hypertarget{class_c_g_font_manager_a0435c7b0f13e86e90d2ed33245627152}{}\index{C\+G\+Font\+Manager@{C\+G\+Font\+Manager}!````~C\+G\+Font\+Manager@{$\sim$\+C\+G\+Font\+Manager}}
+\index{````~C\+G\+Font\+Manager@{$\sim$\+C\+G\+Font\+Manager}!C\+G\+Font\+Manager@{C\+G\+Font\+Manager}}
+\subsubsection[{$\sim$\+C\+G\+Font\+Manager(void)}]{\setlength{\rightskip}{0pt plus 5cm}C\+G\+Font\+Manager\+::$\sim$\+C\+G\+Font\+Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_g_font_manager_a0435c7b0f13e86e90d2ed33245627152}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_g_font_manager_abb189c294af28f813fa70000ee885c4d}{}\index{C\+G\+Font\+Manager@{C\+G\+Font\+Manager}!Find\+Font\+File\+Name@{Find\+Font\+File\+Name}}
+\index{Find\+Font\+File\+Name@{Find\+Font\+File\+Name}!C\+G\+Font\+Manager@{C\+G\+Font\+Manager}}
+\subsubsection[{Find\+Font\+File\+Name(const C\+Atl\+String \&str\+Font\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}C\+String C\+G\+Font\+Manager\+::\+Find\+Font\+File\+Name (
+\begin{DoxyParamCaption}
+\item[{const C\+Atl\+String \&}]{str\+Font\+Name}
+\end{DoxyParamCaption}
+)}\label{class_c_g_font_manager_abb189c294af28f813fa70000ee885c4d}
+
+\begin{DoxyItemize}
+\item 파일명에 대한 실제 폰트명을 레지스트리를 통해서 가져온다.
+\item window font의 경우이다.
+\item 레지스트리를 통해서 가져오는 것은 속도가 느리므로 자주 호출하지 않는 것이 육체적, 정신적으로 이롭다. 
+\end{DoxyItemize}\hypertarget{class_c_g_font_manager_a5cb3d7deb7a594c567bc9a92444d9fd3}{}\index{C\+G\+Font\+Manager@{C\+G\+Font\+Manager}!Get\+Face\+Index@{Get\+Face\+Index}}
+\index{Get\+Face\+Index@{Get\+Face\+Index}!C\+G\+Font\+Manager@{C\+G\+Font\+Manager}}
+\subsubsection[{Get\+Face\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}const C\+Atl\+Array$<$ I\+N\+T32 $>$ \& C\+G\+Font\+Manager\+::\+Get\+Face\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_font_manager_a5cb3d7deb7a594c567bc9a92444d9fd3}
+\hypertarget{class_c_g_font_manager_a84fd8bbc47cb364348c43310e24c5b5a}{}\index{C\+G\+Font\+Manager@{C\+G\+Font\+Manager}!Get\+Face\+Point@{Get\+Face\+Point}}
+\index{Get\+Face\+Point@{Get\+Face\+Point}!C\+G\+Font\+Manager@{C\+G\+Font\+Manager}}
+\subsubsection[{Get\+Face\+Point()}]{\setlength{\rightskip}{0pt plus 5cm}const C\+Atl\+Array$<$ {\bf C\+G\+Point3\+D} $>$ \& C\+G\+Font\+Manager\+::\+Get\+Face\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_font_manager_a84fd8bbc47cb364348c43310e24c5b5a}
+\hypertarget{class_c_g_font_manager_ade2116043bda71a25835563fbb2ebce0}{}\index{C\+G\+Font\+Manager@{C\+G\+Font\+Manager}!Get\+Outline\+Index@{Get\+Outline\+Index}}
+\index{Get\+Outline\+Index@{Get\+Outline\+Index}!C\+G\+Font\+Manager@{C\+G\+Font\+Manager}}
+\subsubsection[{Get\+Outline\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}const C\+Atl\+Array$<$ I\+N\+T32 $>$ \& C\+G\+Font\+Manager\+::\+Get\+Outline\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_font_manager_ade2116043bda71a25835563fbb2ebce0}
+\hypertarget{class_c_g_font_manager_a72a862b1c89cbfb34f782d290148a266}{}\index{C\+G\+Font\+Manager@{C\+G\+Font\+Manager}!Get\+Outline\+Point@{Get\+Outline\+Point}}
+\index{Get\+Outline\+Point@{Get\+Outline\+Point}!C\+G\+Font\+Manager@{C\+G\+Font\+Manager}}
+\subsubsection[{Get\+Outline\+Point()}]{\setlength{\rightskip}{0pt plus 5cm}const C\+Atl\+Array$<$ {\bf C\+G\+Point3\+D} $>$ \& C\+G\+Font\+Manager\+::\+Get\+Outline\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_g_font_manager_a72a862b1c89cbfb34f782d290148a266}
+\hypertarget{class_c_g_font_manager_aff72f32c3a5ad244cd85bd6bd38d733b}{}\index{C\+G\+Font\+Manager@{C\+G\+Font\+Manager}!Load\+Text@{Load\+Text}}
+\index{Load\+Text@{Load\+Text}!C\+G\+Font\+Manager@{C\+G\+Font\+Manager}}
+\subsubsection[{Load\+Text(const C\+G\+Text \&text, const C\+G\+Font\+Property \&font\+Property)}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L C\+G\+Font\+Manager\+::\+Load\+Text (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+G\+Text} \&}]{text, }
+\item[{const {\bf C\+G\+Font\+Property} \&}]{font\+Property}
+\end{DoxyParamCaption}
+)}\label{class_c_g_font_manager_aff72f32c3a5ad244cd85bd6bd38d733b}
+
+\begin{DoxyItemize}
+\item text의 기하학 정보를 로딩한다. 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+D\+B/\hyperlink{_g_font_manager_8h}{G\+Font\+Manager.\+h}\item 
+D\+:/\+My\+Project/\+Trunk/\+Engine/\+G\+Engine/\+Src/\+G\+D\+B/\hyperlink{_g_font_manager_8cpp}{G\+Font\+Manager.\+cpp}\end{DoxyCompactItemize}
